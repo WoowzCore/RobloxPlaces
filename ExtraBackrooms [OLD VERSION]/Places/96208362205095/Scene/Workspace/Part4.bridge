@@ -1,0 +1,815 @@
+Model "Dummy" PrimaryPart=@"Workspace/Part4/Dummy/HumanoidRootPart" {
+    Model "AnimSaves" {
+        KeyframeSequence "Untitled Animation Clip" #"1693490796" Loop=false Priority=Core {
+            Keyframe "Keyframe" {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "Torso" {
+                        Pose "Head"
+                        Pose "Left Arm"
+                        Pose "Left Leg" CFrame=0,0,0|0,2,0
+                        Pose "Right Arm" CFrame=0,0,0|0,4,0
+                        Pose "Right Leg" CFrame=-0.05,0,0.013|0,-5,0
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.433 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "Torso" Weight=0 {
+                        Pose "Head" CFrame=0,0,0|-4,0,0
+                        Pose "Left Arm" CFrame=0,0,0|-5,0,0
+                        Pose "Right Arm" CFrame=0,0,0|-5.012,3.985,0.349
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.967 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "Torso" Weight=0 {
+                        Pose "Head" CFrame=0,0,0|1,0,0
+                        Pose "Left Arm"
+                        Pose "Right Arm" CFrame=0,0,0|0,4.001,0
+                    }
+                }
+            }
+        }
+    }
+    Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=-382.7,19.247,166.952 Material=Wood TopSurface=Smooth {
+        Decal "Face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+        SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+    }
+    Humanoid "Humanoid" {
+        Animator "Animator"
+    }
+    Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=-382.7,17.747,166.952 TopSurface=Smooth Transparency=0.5 {
+        Motor6D "Root Hip" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/HumanoidRootPart" Part1=@"Workspace/Part4/Dummy/Torso"
+    }
+    Part "Left Arm" Size=1,2,1 BottomSurface=Smooth CFrame=-384.2,17.747,166.952 CanCollide=false TopSurface=Smooth
+    Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=-383.2,15.747,166.952 CanCollide=false TopSurface=Smooth
+    Part "Right Arm" Size=1,2,1 BottomSurface=Smooth CFrame=-381.2,17.747,166.952 CanCollide=false TopSurface=Smooth
+    Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=-382.2,15.747,166.952 CanCollide=false TopSurface=Smooth
+    Part "Torso" Size=2,2,1 BottomSurface=Smooth CFrame=-382.7,17.747,166.952 TopSurface=Smooth {
+        Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/Torso" Part1=@"Workspace/Part4/Dummy/Left Leg"
+        Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/Torso" Part1=@"Workspace/Part4/Dummy/Left Arm"
+        Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/Torso" Part1=@"Workspace/Part4/Dummy/Head"
+        Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/Torso" Part1=@"Workspace/Part4/Dummy/Right Leg"
+        Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Part4/Dummy/Torso" Part1=@"Workspace/Part4/Dummy/Right Arm"
+    }
+}
+MeshPart "MeshPart" Size=18,4.728,6 Anchored CFrame=-332.175,-36.879,493.381|-180,-85.446,-180 CollisionFidelity=PreciseConvexDecomposition Color=#F8F8F8 DoubleSided Material=Metal RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=6238708216" TextureID="http://www.roblox.com/asset/?id=6238708216" {
+    SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://6238708216" ColorMapContent="rbxassetid://6238708216" MetalnessMap="rbxassetid://6693446399" MetalnessMapContent="rbxassetid://6693446399" NormalMap="rbxassetid://6693447544" NormalMapContent="rbxassetid://6693447544" RoughnessMap="rbxassetid://6693448679" RoughnessMapContent="rbxassetid://6693448679"
+}
+MeshPart "Meshes/table clotthhhh" Size=6.118,1.942,10.329 Anchored CFrame=-230.173,-55.368,164.366 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#374234 DoubleSided Material=Fabric
+Model "Model" {
+    Model " Player Size" PrimaryPart=@"Workspace/Part4/Model/ Player Size/Head" {
+        BodyColors "Body Colors" HeadColor3=#EAB892 LeftArmColor3=#EAB892 LeftLegColor3=#EAB892 RightArmColor3=#EAB892 RightLegColor3=#EAB892 TorsoColor3=#EAB892
+        Accessory "Brooding Black" AccessoryType=Hair AttachmentPoint=0,0.15,-0.08|-5.711,0,0 {
+            Part "Handle" Size=1,0.8,1 Anchored BottomSurface=Smooth CFrame=-15.557,-37.495,173.992|4.7,31.892,-6.265 CanCollide=false TopSurface=Smooth {
+                Weld "AccessoryWeld" C0=0,0.249,-0.09|-5.711,0,0 C1=0,0.6,0 Part0=@"Workspace/Part4/Model/ Player Size/Brooding Black/Handle" Part1=@"Workspace/Part4/Model/ Player Size/Head"
+                Attachment "HairAttachment" CFrame=0,0.249,-0.09|-5.711,0,0
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=13332444" MeshId="http://www.roblox.com/asset/?id=13332444" MeshType=FileMesh Scale=1.05,1,1.05 TextureContent="http://www.roblox.com/asset/?id=13655196" TextureId="http://www.roblox.com/asset/?id=13655196"
+            }
+        }
+        Part "Head" Size=2,1,1 Anchored CFrame=-15.605,-37.839,173.958|-2.022,32.339,-2.688 Color=#EAB892 Material=Wood PivotOffset=0,-4.5,0 TopSurface=Smooth {
+            Attachment "FaceCenterAttachment"
+            Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+            Attachment "HairAttachment" CFrame=0,0.6,0
+            Attachment "HatAttachment" CFrame=0,0.6,0
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+            Decal "face" Texture="rbxassetid://14589888141" TextureContent="rbxassetid://14589888141"
+        }
+        Humanoid "Humanoid" {
+            Animator "Animator"
+            HumanoidDescription "HumanoidDescription" BodyTypeScale=0 Face=7075469 Pants=14088307719 ProportionScale=0 Shirt=14088319423 {
+                AccessoryDescription "AccessoryDescription" AccessoryType=Hair AssetId=13655562
+                BodyPartDescription "BodyPartDescription" BodyPart=RightArm Color=#EAB892
+                BodyPartDescription "BodyPartDescription" BodyPart=RightLeg Color=#EAB892
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftLeg Color=#EAB892
+                BodyPartDescription "BodyPartDescription" Color=#EAB892
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftArm Color=#EAB892
+                BodyPartDescription "BodyPartDescription" BodyPart=Torso Color=#EAB892
+            }
+        }
+        Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=-15.685,-39.322,173.933|0,-0.001,0 CanCollide=false Material=Wood TopSurface=Smooth Transparency=1 {
+            Attachment "RootAttachment"
+            Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/HumanoidRootPart" Part1=@"Workspace/Part4/Model/ Player Size/Torso"
+        }
+        Part "Left Arm" Size=1,2,1 Anchored CFrame=-17.44,-38.389,174.088|21.173,-18.748,-118.95 CanCollide=false Color=#EAB892 Material=Wood {
+            Attachment "LeftGripAttachment" CFrame=0,-1,0
+            Attachment "LeftShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Left Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-16.42,-41.28,173.933|0,-0.001,-10.136 CanCollide=false Color=#EAB892 Material=Wood {
+            Attachment "LeftFootAttachment" CFrame=0,-1,0
+        }
+        Pants "Pants" PantsTemplate="http://www.roblox.com/asset/?id=14088307684" PantsTemplateContent="http://www.roblox.com/asset/?id=14088307684"
+        Part "Right Arm" Size=1,2,1 Anchored CFrame=-14.355,-39.492,173.688|17.717,6.808,2.085 CanCollide=false Color=#EAB892 Material=Wood {
+            Attachment "RightGripAttachment" CFrame=0,-1,0
+            Attachment "RightShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Right Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-15.185,-41.322,173.933|-10,-10.001,0 CanCollide=false Color=#EAB892 Material=Wood {
+            Attachment "RightFootAttachment" CFrame=0,-1,0
+        }
+        Shirt "Shirt" ShirtTemplate="http://www.roblox.com/asset/?id=14088319376" ShirtTemplateContent="http://www.roblox.com/asset/?id=14088319376"
+        Part "Torso" Size=2,2,1 Anchored CFrame=-15.685,-39.322,173.933|0,-0.001,0 Color=#EAB892 LeftSurface=Weld Material=Wood RightSurface=Weld {
+            Attachment "BodyBackAttachment" CFrame=0,0,0.5
+            Attachment "BodyFrontAttachment" CFrame=0,0,-0.5
+            Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.429,0.896,0|90,-79.864,90 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/Torso" Part1=@"Workspace/Part4/Model/ Player Size/Left Leg"
+            Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.054,0.852,-0.232|68.8,27.282,121.254 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/Torso" Part1=@"Workspace/Part4/Model/ Player Size/Left Arm"
+            Attachment "LeftCollarAttachment" CFrame=-1,1,0
+            Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=-0.022,-0.484,-0.078|-88.288,-3.768,147.757 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/Torso" Part1=@"Workspace/Part4/Model/ Player Size/Head"
+            Attachment "NeckAttachment" CFrame=0,1,0
+            Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.523,0.985,0.084|180,80,-170 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/Torso" Part1=@"Workspace/Part4/Model/ Player Size/Right Leg"
+            Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.305,0.724,-0.01|16.941,82.88,-34.782 MaxVelocity=0.1 Part0=@"Workspace/Part4/Model/ Player Size/Torso" Part1=@"Workspace/Part4/Model/ Player Size/Right Arm"
+            Attachment "RightCollarAttachment" CFrame=1,1,0
+            Attachment "WaistBackAttachment" CFrame=0,-1,0.5
+            Attachment "WaistCenterAttachment" CFrame=0,-1,0
+            Attachment "WaistFrontAttachment" CFrame=0,-1,-0.5
+            Decal "roblox"
+        }
+    }
+    Part "Part" Size=4.4,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-17.419,-36.846,173.368|0,-0.001,0 TopSurface=Smooth Transparency=1 {
+        SurfaceGui "SurfaceGui" ClipsDescendants LightInfluence=1 MaxDistance=1000 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+            TextLabel "TextLabel" Size=0,200,0,50 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="الله بار\n" TextColor3=#000000 TextScaled TextSize=75 TextWrapped
+        }
+    }
+}
+Model "Model" {
+    UnionOperation "L" Size=0.4,9.4,5.5 Anchored CFrame=-173.994,5.215,161.117 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="441c20528e0c4c57"
+    Part "L2" Size=0.19,9.464,5.62 Anchored BottomSurface=Smooth CFrame=-173.994,5.215,161.117 CastShadow=false Color=#718C77 Material=Glass TopSurface=Smooth Transparency=0.4
+    Part "L3" Size=0.19,9.464,5.62 Anchored BottomSurface=Smooth CFrame=-173.994,5.215,156.117 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#718C77 Material=Glass TopSurface=Smooth Transparency=1
+    UnionOperation "R" Size=0.4,9.4,5.6 Anchored CFrame=-173.994,5.215,166.666 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="e019ac9449dbd869"
+    Part "R2" Size=0.19,9.464,5.565 Anchored BottomSurface=Smooth CFrame=-173.994,5.215,166.666 CastShadow=false Color=#718C77 Material=Glass TopSurface=Smooth Transparency=0.4
+    Part "R3" Size=0.19,9.464,5.565 Anchored BottomSurface=Smooth CFrame=-173.994,5.215,171.666 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#718C77 Material=Glass TopSurface=Smooth Transparency=1
+    Script "Script" @src="Scripts/Workspace/Part4/Model~2/Script.luau"
+    Part "Trigger" Size=20.17,13.032,13.637 Anchored BottomSurface=Smooth CFrame=-174.006,6.949,163.854 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1 {
+        Sound "Sound" AudioContent="rbxassetid://6091886514" RollOffMaxDistance=50 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://6091886514" Volume=1
+    }
+}
+Model "Model" {
+    Part "Part" Size=6.4,0.011,4.5 Anchored BottomSurface=Smooth CFrame=-6.175,95.673,-174.172 Color=#405663 Material=Glass TopSurface=Smooth Transparency=0.3
+    Part "Part" Size=0.1,0.3,0.1 Anchored BottomSurface=Smooth CFrame=-3.225,95.518,-176.472|0,90,0 Color=#3A393B Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,95.518,-176.322 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.1,0.3,0.1 Anchored BottomSurface=Smooth CFrame=-3.225,95.518,-171.872|0,90,0 Color=#3A393B Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,1.4,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,94.668,-172.022 Color=#4C4C4D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,93.768,-172.022 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,95.418,-172.022 Color=#3C3B3D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,1.4,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,94.668,-176.322 Color=#4C4C4D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,93.768,-176.322 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,95.418,-176.322 Color=#3C3B3D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,95.418,-176.322 Color=#3C3B3D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,95.518,-176.322 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.2,0.2,5.8 Anchored BottomSurface=Smooth CFrame=-6.175,95.568,-176.422|0,90,0 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.1,0.3,0.1 Anchored BottomSurface=Smooth CFrame=-9.125,95.518,-176.472|0,90,0 Color=#3A393B Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,1.4,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,94.668,-176.322 Color=#4C4C4D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-2.975,95.518,-172.022 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.1,0.1,4.6 Anchored BottomSurface=Smooth CFrame=-3.225,94.718,-174.222 Color=#303031 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,95.518,-172.022 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.1,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,95.418,-172.022 Color=#3C3B3D Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.3,0.2,4.5 Anchored BottomSurface=Smooth CFrame=-9.225,95.568,-174.172 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.2,0.2,5.8 Anchored BottomSurface=Smooth CFrame=-6.175,95.568,-171.922|0,90,0 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.1,0.3,0.1 Anchored BottomSurface=Smooth CFrame=-9.125,95.518,-171.872|0,90,0 Color=#3A393B Material=Metal TopSurface=Smooth
+    Part "Part" Size=4.5,0.2,0.3 Anchored BottomSurface=Smooth CFrame=-3.125,95.568,-174.172|0,90,0 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,1.4,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,94.668,-172.022 Color=#4C4C4D Material=Metal TopSurface=Smooth
+    Part "Part" Size=6,0.1,0.1 Anchored BottomSurface=Smooth CFrame=-6.175,94.718,-171.872 Color=#303031 Material=Metal TopSurface=Smooth
+    Part "Part" Size=6,0.1,0.1 Anchored BottomSurface=Smooth CFrame=-6.175,94.718,-176.472 Color=#303031 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,93.768,-172.022 Color=#434244 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.1,0.1,4.5 Anchored BottomSurface=Smooth CFrame=-9.125,94.718,-174.172 Color=#303031 Material=Metal TopSurface=Smooth
+    Part "Part" Size=5.8,0.1,4.5 Anchored BottomSurface=Smooth CFrame=-6.175,94.718,-174.172 Color=#403F41 Material=Metal TopSurface=Smooth
+    Part "Part" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-9.375,93.768,-176.322 Color=#434244 Material=Metal TopSurface=Smooth
+}
+Model "Night Stand" {
+    Part "Part" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-129.174,1.729,-148.187|0,-1.185,0 Color=#7C5C46 Material=Wood Shape=Ball TopSurface=Smooth
+    Part "Part" Size=0.57,0.43,0.7 Anchored BottomSurface=Smooth CFrame=-126.128,0.674,-150.155|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=0.57,0.43,0.7 Anchored BottomSurface=Smooth CFrame=-128.557,0.674,-150.215|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=0.57,0.43,0.7 Anchored BottomSurface=Smooth CFrame=-128.646,0.674,-145.926|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=0.57,0.43,0.7 Anchored BottomSurface=Smooth CFrame=-126.216,0.674,-145.876|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=3.2,0.2,5.4 Anchored BottomSurface=Smooth CFrame=-127.487,3.979,-148.042|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=2.7,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.685,1.739,-148.146|0,-1.185,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    Part "Part" Size=2.7,1,4.3 Anchored BottomSurface=Smooth CFrame=-127.586,1.719,-148.094|0,-1.185,0 Color=#906A51 Material=Wood TopSurface=Smooth
+    UnionOperation "Union" Size=3.97,3,5 Anchored CFrame=-127.872,2.379,-148.05|0,-1.185,0 Color=#7C5C46 Material=Wood RenderFidelity=Precise $_geo="de780907764a65bf"
+}
+Model "Oleja" {
+    Part "Head" Size=1.523,1.904,0.762 Anchored BottomSurface=Smooth CFrame=230.673,-4.397,239.849|90,-28.64,160 CanCollide=false CanQuery=false CanTouch=false Color=#3A3A3A Material=Basalt TopSurface=Smooth Transparency=1 {
+        Motor6D "Head" C0=-0.012,0.226,0.123|0,-90,0 Part0=@"Workspace/Part4/Oleja/Head" Part1=@"Workspace/Part4/Oleja/Head/Head1"
+        MeshPart "Head1" Size=1.109,1.405,1.088 Anchored CFrame=230.556,-4.474,239.632|127.212,55.56,147.943 CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise
+    }
+    Part "HumanoidRootPart" Size=0.533,3.579,0.685 Anchored BottomSurface=Smooth CFrame=230.476,-4.52,241.805|-90,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        Motor6D "Torso" C0=0.023,-0.195,0.052|0,90,0 C1=-0.131,0.206,0|0,0,-16.422 Part0=@"Workspace/Part4/Oleja/HumanoidRootPart" Part1=@"Workspace/Part4/Oleja/Torso"
+    }
+    Part "Left Arm" Size=0.876,4.76,0.838 Anchored BottomSurface=Smooth CFrame=228.828,-4.305,241.662|155.797,-37.428,-105.279 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        MeshPart "Left Arm1" Size=0.518,0.435,4.847 Anchored CFrame=228.719,-4.599,241.535|-6.84,-55.105,17.795 CanCollide=false CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise {
+            Weld "Left Arm 🡪 Left Arm" C0=0.271,0.203,0.003|-47.414,-84.497,37.026 Part0=@"Workspace/Part4/Oleja/Left Arm/Left Arm1" Part1=@"Workspace/Part4/Oleja/Left Arm"
+        }
+    }
+    Part "Left Leg" Size=0.343,4.798,0.381 Anchored BottomSurface=Smooth CFrame=228.525,-4.523,245.377|90,0,-145.578 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        MeshPart "Left Leg1" Size=1.148,4.943,0.398 Anchored CFrame=228.528,-4.146,245.384|0,55.578,-90 CanCollide=false CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise {
+            Weld "Left Leg 🡪 Left Leg" C0=0.377,0.004,-0.008|0,90,0 Part0=@"Workspace/Part4/Oleja/Left Leg/Left Leg1" Part1=@"Workspace/Part4/Oleja/Left Leg"
+        }
+    }
+    Part "Right Arm" Size=0.876,4.76,0.838 Anchored BottomSurface=Smooth CFrame=232.939,-4.519,239.434|90,0,81.781 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        MeshPart "Left Arm1" Size=0.518,0.435,4.847 Anchored CFrame=232.972,-4.473,239.656|180,71.781,90 CanCollide=false CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise {
+            Weld "Right Arm 🡪 Right Arm" C0=0.046,0.223,0.037|-80,90,0 Part0=@"Workspace/Part4/Oleja/Right Arm/Left Arm1" Part1=@"Workspace/Part4/Oleja/Right Arm"
+        }
+    }
+    Part "Right Leg" Size=0.343,4.722,0.381 Anchored BottomSurface=Smooth CFrame=229.798,-4.523,245.859|90,0,-176.578 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        MeshPart "Right Leg1" Size=1.148,4.943,0.398 Anchored CFrame=229.854,-4.146,245.904|0,86.576,-90 CanCollide=false CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise {
+            Weld "Right Leg 🡪 Right Leg" C0=0.377,0.042,-0.059|0,90,0 Part0=@"Workspace/Part4/Oleja/Right Leg/Right Leg1" Part1=@"Workspace/Part4/Oleja/Right Leg"
+        }
+    }
+    Part "Torso" Size=0.99,4.265,0.419 Anchored BottomSurface=Smooth CFrame=230.345,-4.542,242.162|90,0,-163.578 CanCollide=false CanQuery=false CanTouch=false Color=#000000 Material=Sand TopSurface=Smooth Transparency=1 {
+        Motor6D "Head" C0=0.561,2.283,-0.286|0,0,-16.422 C1=0.233,0.122,-0.018|10.58,-26.77,22.524 Part0=@"Workspace/Part4/Oleja/Torso" Part1=@"Workspace/Part4/Oleja/Head"
+        Motor6D "Left Arm" C0=0.611,1.587,-0.024|0,0,-16.422 C1=-0.192,1.825,0.097|0,-71,-50 Part0=@"Workspace/Part4/Oleja/Torso" Part1=@"Workspace/Part4/Oleja/Left Arm"
+        Motor6D "Left Leg" C0=0.209,-3.803,-0.019 C1=-0.66,0,0|0,0,-18 Part0=@"Workspace/Part4/Oleja/Torso" Part1=@"Workspace/Part4/Oleja/Left Leg"
+        Motor6D "Right Arm" C0=-0.083,1.791,-0.024|0,0,-16.422 C1=0.736,2.135,0|0,0,98.219 Part0=@"Workspace/Part4/Oleja/Torso" Part1=@"Workspace/Part4/Oleja/Right Arm"
+        Motor6D "Right Leg" C0=-0.248,-3.765,-0.019 C1=0.28,0,0|0,0,13 Part0=@"Workspace/Part4/Oleja/Torso" Part1=@"Workspace/Part4/Oleja/Right Leg"
+        MeshPart "Torso1" Size=0.439,4.041,0.724 Anchored CFrame=230.392,-4.553,241.91|0,73.578,-90 CollisionFidelity=Default Color=#000000 Material=Sand RenderFidelity=Precise {
+            Weld "Torso 🡪 Torso" C0=-0.01,-0.254,0.026|0,90,0 Part0=@"Workspace/Part4/Oleja/Torso/Torso1" Part1=@"Workspace/Part4/Oleja/Torso"
+        }
+    }
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-228.767,-34.131,286.72|90,-90,0 {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.944,-43.988,206.954|-90,40,-90 {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,259.854|90,-10,90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,219.954|-90,-30,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,289.854|180,90,0 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=8.97,7.2,7.39 Anchored CFrame=-362.964,18.347,29.38|-180,0,-180 Color=#635F62 {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92575617" MeshId="http://www.roblox.com/asset/?id=92575617" MeshType=FileMesh Scale=10,10,10 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.944,-43.988,186.864|-90,40,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,246.554|-90,80,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.619,-48.112,158.684|-90,40,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=15.62,7.2,10 Anchored CFrame=-364.296,18.347,43.938 {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92575416" MeshId="http://www.roblox.com/asset/?id=92575416" MeshType=FileMesh Scale=10,10,10 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,233.254|-90,-30,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=10.47,2.4,2 Anchored CFrame=-364.39,15.947,20.637|-180,0,-180 {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3,3,3 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,273.054|90,60,90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=15.663,3.59,2.992 Anchored CFrame=-222.08,-38.611,278.552|-180,0,0 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=4.488,4.488,4.488 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=15.663,3.59,2.992 Anchored CFrame=-222.08,-38.611,274.86|90,0,0 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=4.488,4.488,4.488 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.619,-48.112,158.684|-90,40,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.619,-48.112,143.054|-90,40,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=3.629,2.913,2.99 Anchored CFrame=-228.689,-57.252,291.495|-90,50,90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92575617" MeshId="http://www.roblox.com/asset/?id=92575617" MeshType=FileMesh Scale=4.046,4.046,4.046 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=12.688,3,2.5 Anchored CFrame=-215.619,-48.112,171.534|-90,40,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.635,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-215.944,-43.988,303.054|180,90,0 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-228.744,-57.096,299.854|-90,-20,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=3.629,2.913,2.99 Anchored CFrame=-215.999,-43.832,281.495|90,0,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92575617" MeshId="http://www.roblox.com/asset/?id=92575617" MeshType=FileMesh Scale=4.046,4.046,4.046 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=13.088,3,2.5 Anchored CFrame=-228.767,-47.431,286.72|90,-90,0 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92574938" MeshId="http://www.roblox.com/asset/?id=92574938" MeshType=FileMesh Scale=3.75,3.75,3.75 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "P2" Size=6.127,2.824,3.922 Anchored CFrame=-228.725,-57.228,286.681|0,0,-90 Material=Fabric {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=92575416" MeshId="http://www.roblox.com/asset/?id=92575416" MeshType=FileMesh Scale=3.922,3.922,3.922 TextureContent="http://www.roblox.com/asset/?id=92574747" TextureId="http://www.roblox.com/asset/?id=92574747"
+}
+Part "Part" Size=6.8,1,18.6 Anchored BottomSurface=Smooth CFrame=-209.994,-60.596,-384.902 Color=#404041 Material=Concrete TopSurface=Smooth
+Part "Part" Size=13.986,2,2 Anchored BottomSurface=Smooth CFrame=-316.337,-47.526,497.656|-90,90,0 Color=#C8C8C8 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=20.1,6,3 Anchored BottomSurface=Smooth CFrame=-223.444,-57.096,297.898 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.3,5.2,5.3 Anchored BottomSurface=Smooth CFrame=-236.75,-10.749,307.847 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,485.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.8,0.7,48.6 Anchored BottomSurface=Smooth CFrame=-72.939,21.004,180.898 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,389.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=447.613,0.641,0.641 Anchored BottomSurface=Smooth CFrame=-221.328,-45.158,-87.122|0,90,0 Color=#4C453D Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.613,0.641,0.641 Anchored BottomSurface=Smooth CFrame=-224.131,-45.158,-87.122|0,90,0 Color=#4C453D Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,365.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5.9,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-93.589,1.185,-24.64 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,485.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,9.8 Anchored BottomSurface=Smooth CFrame=-90.689,1.185,-29.49 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.3,3.2,24.3 Anchored BottomSurface=Smooth CFrame=-236.75,-9.749,432.348 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,9.9 Anchored BottomSurface=Smooth CFrame=-116.49,1.185,-29.54 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=447.613,0.641,0.641 Anchored BottomSurface=Smooth CFrame=-223.203,-45.158,-87.122|0,90,0 Color=#4C453D Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,341.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-121.444,-8.143,436.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,389.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=61.64,33.255,0.374 Anchored BottomSurface=Smooth CFrame=-71.631,17.147,176.467|0,90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Range=60 Shadows
+}
+Part "Part" Size=1,12.2,18.6 Anchored BottomSurface=Smooth CFrame=-206.194,-54.996,-384.902 Color=#404041 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1,12.2,18.6 Anchored BottomSurface=Smooth CFrame=-213.794,-54.996,-384.902 Color=#404041 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,317.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,365.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,2.3,3 Anchored BottomSurface=Smooth CFrame=-269.994,6.035,-112.102|0,90,0 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=1.3,3.2,24.3 Anchored BottomSurface=Smooth CFrame=-236.75,-9.749,478.148 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,461.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=13.986,2,2 Anchored BottomSurface=Smooth CFrame=-313.799,-47.526,497.656|0,-4.317,-90 Color=#8D8E9E Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=2.4,1,65.91 Anchored BottomSurface=Smooth CFrame=-305.204,12.384,252.383 Color=#777D7D Material=Metal TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,436.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=11.9,13,0.001 Anchored BottomSurface=Smooth CFrame=-306.443,6.385,219.398 Color=#7D7D7D Material=Mud TopSurface=Smooth Transparency=0.6
+Part "Part" Size=11.9,13.9,0.001 Anchored BottomSurface=Smooth CFrame=-306.443,5.935,285.397 Color=#7D7D7D Material=Mud TopSurface=Smooth Transparency=0.75
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-121.444,-8.143,341.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.001,13,66 Anchored BottomSurface=Smooth CFrame=-300.495,6.385,252.398 Color=#7D7D7D Material=Mud TopSurface=Smooth Transparency=0.75
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,365.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-121.444,-8.143,412.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=128.1,1,209.3 Anchored BottomSurface=Smooth CFrame=-173.444,-21.043,404.648 Color=#4E4D4F Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.1,0.1,6.9 Anchored BottomSurface=Smooth CFrame=-90.044,2.935,-31.052 Color=#69686A Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.4,0.5,3.4 Anchored BottomSurface=Smooth CFrame=-158.338,32.935,181.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+Part "Part" Size=12,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-126.54,1.185,-34.44 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=6,5.8,2.4 Anchored BottomSurface=Smooth CFrame=-37.494,32.685,-112.502|-90,0,0 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=0.1,0.6,5 Anchored BottomSurface=Smooth CFrame=-100.489,1.185,-15.09 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.7,0.1,5 Anchored BottomSurface=Smooth CFrame=-361.65,-46.065,303.9 Color=#747476 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5.685,0.1,13 Anchored BottomSurface=Smooth CFrame=-163.642,11.835,-45.1 TopSurface=Smooth
+Part "Part" Size=5.2,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-102.939,1.185,-21.54 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,0.1,6 Anchored BottomSurface=Smooth CFrame=-507.994,6.835,160.397 Color=#83816F Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,6,0.1 Anchored BottomSurface=Smooth CFrame=-507.994,3.885,157.448 Color=#83816F Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,7.4,2 Anchored BottomSurface=Smooth CFrame=182.556,0.185,-63.602 CanCollide=false CanQuery=false CanTouch=false Color=#686868 Material=Concrete TopSurface=Smooth
+Part "Part" Size=4,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-134.44,1.185,-18.64 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3.64,0.255,99.374 Anchored BottomSurface=Smooth CFrame=-121.131,33.647,182.467|0,90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Bottom Range=60 Shadows
+}
+Part "Part" Size=2,3.9,0.1 Anchored BottomSurface=Smooth CFrame=-245.5,11.835,167.35 Color=#98A6A8 Material=Concrete TopSurface=Smooth
+Part "Part" Size=4.1,0.6,0.2 Anchored BottomSurface=Smooth CFrame=-98.489,1.185,-17.59 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,3.2 Anchored BottomSurface=Smooth CFrame=-100.389,1.185,-23.09 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,2.9 Anchored BottomSurface=Smooth CFrame=-90.589,1.185,-11.14 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,9.1 Anchored BottomSurface=Smooth CFrame=-105.489,1.185,-17.04 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=15.2,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-113.039,1.185,-12.54 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-170.311,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=1.4,0.5,3.4 Anchored BottomSurface=Smooth CFrame=-137.238,32.935,181.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+Part "Part" Size=10,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-95.539,1.185,-12.64 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=10.94,0.255,106.974 Anchored BottomSurface=Smooth CFrame=-124.872,25.577,195.001|-130,-90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Top Range=60 Shadows
+}
+Part "Part" Size=6,5.8,2.4 Anchored BottomSurface=Smooth CFrame=-74.494,32.685,-112.502|-90,0,0 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=2,3.9,0.1 Anchored BottomSurface=Smooth CFrame=-245.5,11.835,160.45 Color=#98A6A8 Material=Concrete TopSurface=Smooth
+Part "Part" Size=42,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-111.539,1.185,-9.74 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,8.9 Anchored BottomSurface=Smooth CFrame=-132.49,1.185,-14.14 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=25.9,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-103.588,1.185,-34.44 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1,0.1,5 Anchored BottomSurface=Smooth CFrame=-362,-41.965,303.901 Color=#747476 Material=Concrete TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-170.195,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.1,0.6,8.9 Anchored BottomSurface=Smooth CFrame=-132.49,1.185,-30.04 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2,0.1,7 Anchored BottomSurface=Smooth CFrame=-245.5,9.935,163.9 Color=#98A6A8 Material=Concrete TopSurface=Smooth
+Part "Part" Size=13.14,0.255,113.274 Anchored BottomSurface=Smooth CFrame=-128.105,30.602,188.882|-150,-90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Top Range=60 Shadows
+}
+Part "Part" Size=0.001,1.82,2.29 Anchored BottomSurface=Smooth CFrame=-64.121,0.459,-12.807|0,0,90 CanCollide=false CanQuery=false CanTouch=false Color=#2C2B2C Material=Mud Shape=Cylinder TopSurface=Smooth Transparency=0.75
+Part "Part" Size=0.8,0.2,6 BottomSurface=Smooth CFrame=-507.994,0.985,160.398 Color=#8C4041 Material=Fabric TopSurface=Smooth
+Part "Part" Size=3,6,0.1 Anchored BottomSurface=Smooth CFrame=-507.994,3.885,163.348 Color=#83816F Material=Concrete TopSurface=Smooth
+Part "Part" Size=10.74,0.255,99.374 Anchored BottomSurface=Smooth CFrame=-121.131,30.545,176.609|-35,90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Bottom Range=60 Shadows
+}
+Part "Part" Size=2,0.1,7 Anchored BottomSurface=Smooth CFrame=-245.5,13.735,163.9 Color=#98A6A8 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.001,13,66 Anchored BottomSurface=Smooth CFrame=-312.494,6.385,252.398 Color=#7D7D7D Material=Mud TopSurface=Smooth Transparency=0.75
+Part "Part" Size=9.54,0.255,113.674 Anchored BottomSurface=Smooth CFrame=-127.802,20.368,202.162|-160,-90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Top Range=60 Shadows
+}
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-121.444,-8.143,389.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,412.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.6,22 Anchored BottomSurface=Smooth CFrame=-120.59,1.185,-23.49 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.1,0.1,5.8 Anchored BottomSurface=Smooth CFrame=-507.044,0.935,160.398 Color=#ACA992 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1,4.1,0.1 Anchored BottomSurface=Smooth CFrame=-362,-44.065,306.35 Color=#747476 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,7.4,2 Anchored BottomSurface=Smooth CFrame=189.456,0.185,-63.602 CanCollide=false CanQuery=false CanTouch=false Color=#686868 Material=Concrete TopSurface=Smooth
+Part "Part" Size=45.1,0.299,11.015 Anchored BottomSurface=Smooth CFrame=-93.444,0.665,180.905|0,-90,0 Color=#C0C6B9 Material=Pavement TopSurface=Smooth
+Part "Part" Size=13.271,0.846,1.942 Anchored BottomSurface=Smooth CFrame=-306.85,-10.163,191.188 Material=Concrete TopSurface=Smooth
+Part "Part" Size=16.2,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-108.44,1.185,-24.64 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=6.948,0.1,13 Anchored BottomSurface=Smooth CFrame=-162.974,1.935,-45.1 Material=Fabric TopSurface=Smooth
+Part "Part" Size=6.9,0.1,2 Anchored BottomSurface=Smooth CFrame=186.056,3.835,-63.602 CanCollide=false CanQuery=false CanTouch=false Color=#686868 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,10.9,8.9 BottomSurface=Smooth CFrame=-154.444,8.335,-56.052 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1,4.1,0.1 Anchored BottomSurface=Smooth CFrame=-362,-44.065,301.45 Color=#747476 Material=Concrete TopSurface=Smooth
+Part "Part" Size=73.9,0.299,6.951 Anchored BottomSurface=Smooth CFrame=-135.844,0.665,199.945 Color=#C0C6B9 Material=Pavement TopSurface=Smooth
+Part "Part" Size=1.1,10.9,1.1 Anchored BottomSurface=Smooth CFrame=-90.044,8.335,-34.952 Color=#69686A Material=Concrete TopSurface=Smooth
+Part "Part" Size=4.1,0.6,0.1 Anchored BottomSurface=Smooth CFrame=-134.49,1.185,-25.64 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-93.494,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,412.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=7,12,0.1 Anchored BottomSurface=Smooth CFrame=-217.994,-47.115,303.348 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,4,0.2 Anchored BottomSurface=Smooth CFrame=-216.894,-47.115,201.398 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.3,1.2,1.2 Anchored BottomSurface=Smooth CFrame=-216.194,-54.996,201.748|0,90,0 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,289.196|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3.31,19.91,2.39 Anchored BottomSurface=Smooth CFrame=-231.939,-50.82,186.933 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.2,1.1,0.7 Anchored BottomSurface=Smooth CFrame=-215.794,-54.965,226.748 Color=#8D8272 Material=CorrodedMetal TopSurface=Smooth
+Part "Part" Size=0.3,1.2,1.2 BottomSurface=Smooth CFrame=-215.854,-48.596,201.748|0,90,0 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.613,0.641,0.641 Anchored BottomSurface=Smooth CFrame=-217.422,-46.737,-87.122|0,90,0 Color=#A3A3A3 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,276.884|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.58,3.2,2.3 Anchored BottomSurface=Smooth CFrame=-217.144,-58.596,186.708|90,90,0 Color=#7F8772 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=2.2,1.1,0.7 Anchored BottomSurface=Smooth CFrame=-215.794,-54.965,253.148 Color=#8D8272 Material=CorrodedMetal TopSurface=Smooth
+Part "Part" Size=0.69,14.59,6.7 Anchored BottomSurface=Smooth CFrame=-213.667,-53.2,161.472 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=121.56,2,2 Anchored BottomSurface=Smooth CFrame=-231.494,-46.396,243.918|0,90,0 Color=#7D7D7D Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,147.327|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=25.113,2,2 Anchored BottomSurface=Smooth CFrame=-223.543,-47.636,169.547|90,90,0 Color=#C9F4B6 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=2.2,1.1,0.7 Anchored BottomSurface=Smooth CFrame=-215.794,-54.965,274.648 Color=#8D8272 Material=CorrodedMetal TopSurface=Smooth
+Part "Part" Size=1,12,1.01 Anchored BottomSurface=Smooth CFrame=-220.994,-47.115,302.803 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,172.169|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=446.871,3.434,3.434 Anchored BottomSurface=Smooth CFrame=-218.506,-44.076,-86.772|0,90,0 Color=#B8BAA3 Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,187.569|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.3,1.2,1.2 BottomSurface=Smooth CFrame=-216.194,-54.996,213.348|0,90,0 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,227.769|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,217.469|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-51.886,169.569|90,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-57.686,169.569|90,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,178.169|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.049,1.987,1.987 Anchored BottomSurface=Smooth CFrame=-224.154,-43.352,-86.863|90,24.783,-90 Color=#FFFFFF Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-47.286,169.569|90,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=1,12,1.01 Anchored BottomSurface=Smooth CFrame=-227.994,-47.115,302.803 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-41.986,169.569|90,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,166.327|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.3,1.2,1.2 BottomSurface=Smooth CFrame=-216.194,-54.996,296.248|0,90,0 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.049,1.987,1.987 Anchored BottomSurface=Smooth CFrame=-226.717,-43.352,-86.863|90,-17.506,-90 Color=#FFFFFF Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,317.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-121.444,-8.143,365.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,317.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,341.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,389.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,461.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-181.444,-8.143,436.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.8,32.5,0.5 Anchored BottomSurface=Smooth CFrame=-72.939,16.935,180.748 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,20.5,0.5 Anchored BottomSurface=Smooth CFrame=-72.939,11.035,197.248 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,32.7,0.9 Anchored BottomSurface=Smooth CFrame=-72.939,17.035,181.648 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,20.7,0.6 Anchored BottomSurface=Smooth CFrame=-72.939,11.035,167.898 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,31.5,0.6 Anchored BottomSurface=Smooth CFrame=-72.939,17.035,183.398 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,275.905|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=8.6,0.8,18.6 Anchored BottomSurface=Smooth CFrame=-209.994,-48.496,-384.902 Color=#404041 Material=Concrete TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,436.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=160.88,2,2 Anchored BottomSurface=Smooth CFrame=-217.194,-51.096,224.258|0,90,0 Color=#959E86 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,207.764|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.58,3.2,2.3 Anchored BottomSurface=Smooth CFrame=-217.144,-52.596,186.708|90,90,0 Color=#7F8772 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,241.969|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=8.968,2,2 Anchored BottomSurface=Smooth CFrame=-217.194,-55.601,186.708|90,90,0 Color=#959E86 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-150.444,-8.143,412.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.554,14.26,10.52 Anchored BottomSurface=Smooth CFrame=-232.487,-53.365,175.472 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=94.8,1,1 Anchored BottomSurface=Smooth CFrame=-216.194,-54.996,248.998|0,90,0 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.613,0.641,0.641 Anchored BottomSurface=Smooth CFrame=-222.219,-45.158,-87.122|0,90,0 Color=#4C453D Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.9,9.05,16.2 Anchored BottomSurface=Smooth CFrame=-233.044,-56.07,161.188 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=128.1,1,209.3 Anchored BottomSurface=Smooth CFrame=-173.444,-7.643,404.648 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=161.71,1,1 Anchored BottomSurface=Smooth CFrame=-231.894,-48.306,223.483|90,45,-90 Color=#83796A Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.1,0.6,7.2 Anchored BottomSurface=Smooth CFrame=-96.489,1.185,-21.09 CanCollide=false CanTouch=false Color=#474741 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.568,2.398,2.398 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,235.469|0,90,0 Color=#BFD3A2 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=447.049,1.987,1.987 Anchored BottomSurface=Smooth CFrame=-221.744,-43.352,-86.863|0,90,0 Color=#FFFFFF Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=1.3,1.8,27.8 Anchored BottomSurface=Smooth CFrame=-233.144,-44.315,252.498 CanCollide=false CanQuery=false CanTouch=false Color=#ECEBF0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,207.542|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=19.4,1.8,1 Anchored BottomSurface=Smooth CFrame=-223.894,-45.415,201.798 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.6,1.6,101.5 Anchored BottomSurface=Smooth CFrame=-214.794,-47.015,252.048 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.6,1,102 Anchored BottomSurface=Smooth CFrame=-214.794,-51.415,252.298 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.69,12.03,10.52 Anchored BottomSurface=Smooth CFrame=-213.667,-54.48,175.472 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.6,1,102 Anchored BottomSurface=Smooth CFrame=-214.794,-45.315,252.298 CanCollide=false CanQuery=false CanTouch=false Color=#F1F0F5 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.4,5.8,0.1 Anchored BottomSurface=Smooth CFrame=-219.794,-46.415,303.248 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=15.1,6.2,0.2 Anchored BottomSurface=Smooth CFrame=-233.444,-51.296,249.498|0,-90,0 Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3.8,1.5,0.5 Anchored BottomSurface=Smooth CFrame=-231.694,-44.565,303.048 CanCollide=false CanQuery=false CanTouch=false Color=#DFDEE2 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.4,5.8,0.1 Anchored BottomSurface=Smooth CFrame=-216.594,-50.315,303.248 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=8.9,5.2,0.5 Anchored BottomSurface=Smooth CFrame=-229.244,-40.315,270.848|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#F3F2F7 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,4,0.2 Anchored BottomSurface=Smooth CFrame=-216.894,-47.115,303.198 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=15.2,3.9,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-39.265,279.298|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#DCDBDF Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.7,1.4,34.4 Anchored BottomSurface=Smooth CFrame=-232.944,-43.915,286.098 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.7,16.4,0.1 Anchored BottomSurface=Smooth CFrame=-214.594,-51.896,238.598|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5.8,0.001,50 Anchored BottomSurface=Smooth CFrame=-232.894,-53.114,268.298 CanCollide=false CanQuery=false CanTouch=false Color=#4A4037 Material=Mud TopSurface=Smooth Transparency=0.45
+Part "Part" Size=2.2,4,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-40.415,290.398|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.3,0.1,13 Anchored BottomSurface=Smooth CFrame=-160.15,11.835,-45.1 Color=#A29669 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,227.827|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=16.7,6.1,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-40.365,253.048|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,245.113|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3.8,1.5,0.5 Anchored BottomSurface=Smooth CFrame=-216.194,-46.965,303.048 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,4,0.2 Anchored BottomSurface=Smooth CFrame=-231.794,-52.715,201.398 CanCollide=false CanQuery=false CanTouch=false Color=#EDECF1 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5.3,1.8,2.39 Anchored BottomSurface=Smooth CFrame=-230.944,-55.115,201.103 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.7,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-53.315,249.648|180,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#EFEEF3 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.5,2.8,0.2 Anchored BottomSurface=Smooth CFrame=-214.444,-50.196,294.698|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#F1F0F5 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,175.127|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=6,12,0.1 Anchored BottomSurface=Smooth CFrame=-230.494,-47.115,303.348 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=8.2,6.2,0.2 Anchored BottomSurface=Smooth CFrame=-233.444,-51.296,275.948|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.7,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-48.915,280.648|0,90,0 Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.7,16.4,0.1 Anchored BottomSurface=Smooth CFrame=-233.494,-51.896,206.498|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=7.7,6.9,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-51.465,268.748|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#F1F0F5 Material=Concrete TopSurface=Smooth
+Part "Part" Size=6,3,0.1 Anchored BottomSurface=Smooth CFrame=-224.494,-42.615,303.348 Color=#FFFFFF Material=Concrete TopSurface=Smooth
+Part "Part" Size=15.1,6.2,0.2 Anchored BottomSurface=Smooth CFrame=-233.444,-51.296,249.498|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.3,2.4,34.1 Anchored BottomSurface=Smooth CFrame=-233.144,-44.615,220.448 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5,2.9,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-51.265,278.998|0,90,0 Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.5,2.8,0.2 Anchored BottomSurface=Smooth CFrame=-233.444,-50.196,291.198|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,160.127|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.5,2.8,0.2 Anchored BottomSurface=Smooth CFrame=-214.444,-49.396,229.498|0,-90,0 Color=#EFEEF3 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,186.327|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.58,3.2,2.3 Anchored BottomSurface=Smooth CFrame=-217.144,-55.196,186.708|90,90,0 Color=#7F8772 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.2,4.5,95.3 Anchored BottomSurface=Smooth CFrame=-214.594,-56.765,248.948 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=5,2.9,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-50.965,251.298|180,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=2.4,5.8,0.1 Anchored BottomSurface=Smooth CFrame=-228.894,-50.315,303.248 CanCollide=false CanQuery=false CanTouch=false Color=#DFDEE2 Material=Concrete TopSurface=Smooth
+Part "Part" Size=4.4,6.1,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-40.365,264.298|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=23.7,5.2,0.2 Anchored BottomSurface=Smooth CFrame=-229.394,-40.315,253.648|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.97,14.91,11.81 Anchored BottomSurface=Smooth CFrame=-213.807,-53.04,185.937 CanCollide=false CanQuery=false CanTouch=false Color=#E8E8E8 Material=Concrete TopSurface=Smooth
+Part "Part" Size=4.8,2.9,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-53.465,290.798|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#F1F0F5 Material=Concrete TopSurface=Smooth
+Part "Part" Size=14,3.8,0.2 Anchored BottomSurface=Smooth CFrame=-214.494,-52.315,212.798|180,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=7.2,4.6,0.2 Anchored BottomSurface=Smooth CFrame=-229.394,-40.115,290.098|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=9.5,2.8,0.2 Anchored BottomSurface=Smooth CFrame=-233.444,-48.996,263.798|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#908872 Material=Concrete TopSurface=Smooth
+Part "Part" Size=21.8,0.001,153.2 Anchored BottomSurface=Smooth CFrame=-224.194,-60.095,220.298 CanCollide=false CanQuery=false CanTouch=false Color=#4A4037 Material=Mud TopSurface=Smooth Transparency=0.45
+Part "Part" Size=4.8,2.9,0.2 Anchored BottomSurface=Smooth CFrame=-231.194,-50.465,303.198 CanCollide=false CanQuery=false CanTouch=false Color=#CDCCD0 Material=Concrete TopSurface=Smooth
+Part "Part" Size=161.1,1.473,1.33 Anchored BottomSurface=Smooth CFrame=-231.729,-50.069,223.788|0,90,0 Color=#AFBAAB Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.214,13.845,0.2 Anchored BottomSurface=Smooth CFrame=-217.187,-43.385,261.711|0,90,0 Color=#907852 Material=Concrete TopSurface=Smooth
+Part "Part" Size=124.513,2,2 Anchored BottomSurface=Smooth CFrame=-223.543,-45.086,231.697|0,90,0 Color=#C9F4B6 Material=CorrodedMetal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=1.1,0.1,6.9 Anchored BottomSurface=Smooth CFrame=-90.044,13.735,-31.052 Color=#69686A Material=Concrete TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-103.989,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-161.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=5.38,0.001,1.85 BottomSurface=Smooth CFrame=-253.32,-135.547,122.625 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=2.55,0.001,1.33 BottomSurface=Smooth CFrame=-254.265,-135.547,124.145 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=0.71,0.001,1.85 BottomSurface=Smooth CFrame=-250.165,-135.547,122.625 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=0.81,0.001,0.26 BottomSurface=Smooth CFrame=-251.555,-135.547,124.9 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=0.51,0.001,0.42 BottomSurface=Smooth CFrame=-252.615,-135.547,123.69 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=1.51,0.001,1.33 BottomSurface=Smooth CFrame=-251.625,-135.547,124.145 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=3.2,0.1,1.9 Anchored BottomSurface=Smooth CFrame=-325.694,-39.065,298.348 Color=#727E8B Material=Metal TopSurface=Smooth
+Part "Part" Size=0.1,1.2,1.2 Anchored BottomSurface=Smooth CFrame=-333.894,-1.193,272.198|0,0,-90 Color=#80877F Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=97.8,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-121.439,21.035,197.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=1.6,0.5,2.1 Anchored BottomSurface=Smooth CFrame=-251.2,-135.298,144.95 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.5,13,0.21 Anchored BottomSurface=Smooth CFrame=-365.05,-46.615,474.5 CanCollide=false CanQuery=false CanTouch=false Color=#7E7665 Material=Metal TopSurface=Smooth
+Part "Part" Size=1.251,0.001,0.26 BottomSurface=Smooth CFrame=-253.62,-135.547,124.9 CanCollide=false CanQuery=false CanTouch=false Color=#747476 Material=Mud TopSurface=Smooth Transparency=0.65
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-129.089,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-124.544,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=56.9,17.9,2.1 Anchored BottomSurface=Smooth CFrame=-142.044,9.465,206.348 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-81.944,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-98.044,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=37.74,0.255,99.274 Anchored BottomSurface=Smooth CFrame=-121.054,14.153,159.087|-45,90,0 Color=#9AA280 Material=Neon TopSurface=Smooth {
+    SurfaceLight "SurfaceLight" Brightness=1.72 Color=#EEF7DA Face=Bottom Range=60 Shadows
+}
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-152.789,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-143.244,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-137.444,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-166.789,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-134.089,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=97.8,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-121.439,21.035,167.898 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=19.4,1,1 Anchored BottomSurface=Smooth CFrame=-333.894,-10.843,272.208|0,0,-90 Color=#989E9A Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=6.5,0.5,3.1 Anchored BottomSurface=Smooth CFrame=-230.75,-135.298,144.95 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,1.2,1.2 Anchored BottomSurface=Smooth CFrame=-333.894,-2.415,285.348|90,0,-90 Color=#80877F Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.7,0.5,2.6 Anchored BottomSurface=Smooth CFrame=-257.15,-135.298,148.2 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=97.8,0.461,0.9 Anchored BottomSurface=Smooth CFrame=-121.439,33.155,181.648 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=97.8,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-121.439,32.935,180.748 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=4,1,19.5 Anchored BottomSurface=Smooth CFrame=-346.994,-10.793,283.398|-90,0,-90 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=3.1,1,19.5 Anchored BottomSurface=Smooth CFrame=-346.044,-10.793,284.898|-90,0,0 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=0.1,1.2,1.2 Anchored BottomSurface=Smooth CFrame=-333.894,-2.415,271.428|90,0,-90 Color=#80877F Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=22.1,2,16.3 Anchored BottomSurface=Smooth CFrame=-217.444,-8.143,341.148 Color=#818083 Material=Concrete TopSurface=Smooth
+Part "Part" Size=1.1,10.9,0.1 Anchored BottomSurface=Smooth CFrame=-90.044,8.335,-27.652 Color=#69686A Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.1,0.5,5.5 Anchored BottomSurface=Smooth CFrame=-232.45,-135.298,140.65 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=97.8,0.5,0.6 Anchored BottomSurface=Smooth CFrame=-121.439,32.535,183.398 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.1,0.5,8.6 Anchored BottomSurface=Smooth CFrame=-227.45,-135.298,150.7 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=0.5,13,0.2 Anchored BottomSurface=Smooth CFrame=-365.05,-46.615,465.4 CanCollide=false CanQuery=false CanTouch=false Color=#7E7665 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.1,1.2,1.2 Anchored BottomSurface=Smooth CFrame=-333.894,-20.493,272.198|0,0,-90 Color=#80877F Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.5,0.2,101 Anchored BottomSurface=Smooth CFrame=-365.05,-41.215,455.9 CanCollide=false CanQuery=false CanTouch=false Color=#7E7665 Material=Metal TopSurface=Smooth
+Part "Part" Size=97.8,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-121.439,21.035,167.148 CanCollide=false CanQuery=false CanTouch=false CastShadow=false TopSurface=Smooth
+Part "Part" Size=1.5,0.5,2.4 Anchored BottomSurface=Smooth CFrame=-233.25,-135.298,136.8 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=3,2.3,3 Anchored BottomSurface=Smooth CFrame=-269.994,6.035,-93.102|0,90,0 Material=Concrete Shape=Wedge TopSurface=Smooth
+Part "Part" Size=14.1,1,1 Anchored BottomSurface=Smooth CFrame=-333.894,-2.415,278.348|90,0,-90 Color=#989E9A Material=Metal Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.6,0.5,2.1 Anchored BottomSurface=Smooth CFrame=-257.2,-135.298,153.95 Color=#636252 Material=Concrete TopSurface=Smooth
+Part "Part" Size=97.8,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-121.439,21.035,197.248 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-120.944,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,0.7,48.6 Anchored BottomSurface=Smooth CFrame=-72.939,12.035,180.898 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-104.844,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-87.589,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-127.944,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,20.7,0.6 Anchored BottomSurface=Smooth CFrame=-72.939,11.035,197.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-82.589,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-115.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=97.8,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-121.439,18.335,205.498 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-125.789,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-159.344,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-109.644,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-86.744,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-164.144,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-156.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-93.244,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-111.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-113.244,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-139.189,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-150.544,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-73.544,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-92.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-142.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-90.344,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=97.8,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-121.439,11.835,158.248 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-155.044,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-146.644,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-118.171,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-105.034,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=2.1,0.5,3.4 Anchored BottomSurface=Smooth CFrame=-106.089,32.735,181.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-120.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-133.744,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-128.437,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-82.158,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-73.789,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-77.444,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-101.644,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-78.589,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-94.989,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-140.084,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.8,17.9,53 Anchored BottomSurface=Smooth CFrame=-72.894,9.465,231.897 Material=Metal TopSurface=Smooth
+Part "Part" Size=1.4,0.5,3.4 Anchored BottomSurface=Smooth CFrame=-84.338,32.935,181.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-167.744,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-147.689,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-155.418,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-107.789,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=29.4,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-116.144,10.634,156.709|-45,90,0 CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=8.1,0.7,0.6 Anchored BottomSurface=Smooth CFrame=-98.989,19.633,201.85|20,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=0.662,0.5,29.799 Anchored BottomSurface=Smooth CFrame=-167.136,21.035,182.598 CanCollide=false CanQuery=false CanTouch=false Color=#A7AEB6 Material=Metal TopSurface=Smooth
+Part "Part" Size=1.4,0.5,3.4 Anchored BottomSurface=Smooth CFrame=-94.038,33.035,181.998 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Material=Metal TopSurface=Smooth
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-273.682,-60.162,-347.519|0,59.77,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-273.986,-59.536,-347.449|0,59.769,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-251.425,-60.162,-351.512|-180,85.492,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-251.635,-59.536,-351.281|-180,85.489,-180 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-251.635,-59.536,-351.281|-180,85.489,-180 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-255.378,-60.162,-335.111|0,-24.679,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-255.476,-59.536,-335.408|0,-24.679,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=22.849,0.334,22.849 Anchored CFrame=-278.841,-60.221,-363.841|0,75.045,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=10.88,2.72,5.44 Anchored BottomSurface=Smooth CFrame=-279.419,-58.909,-363.53|0,75.044,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=8.4,0.123,8.4 Anchored CFrame=-340.394,-20.591,276.498 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.85 {
+    NumberValue "ChanceDelete" Value=50
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-337.38,-53.192,398.052|0,-13.518,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-337.535,-52.567,397.778|0,-13.518,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-251.425,-60.162,-351.512|-180,85.492,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-251.635,-59.536,-351.281|-180,85.489,-180 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-292.963,-53.192,464.041|0,2.019,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-293.185,-52.567,463.818|0,2.019,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+MeshPart "Puddle" Size=10.899,0.159,10.899 Anchored CFrame=-324.656,-53.192,482.379|-180,85.492,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.45 {
+    NumberValue "ChanceDelete" Value=50
+    Part "Part" Size=5.19,1.298,2.595 Anchored BottomSurface=Smooth CFrame=-324.869,-52.567,482.609|-180,85.492,-180 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+    SurfaceAppearance "Texture" AlphaMode=Transparency ColorMap="rbxassetid://11740736666" ColorMapContent="rbxassetid://11740736666" MetalnessMap="rbxassetid://11740748336" MetalnessMapContent="rbxassetid://11740748336" NormalMap="rbxassetid://11740738664" NormalMapContent="rbxassetid://11740738664" RoughnessMap="rbxassetid://11740749117" RoughnessMapContent="rbxassetid://11740749117"
+    BoolValue "TransparencySave" Value
+}
+Model "Red Hanging Wire" {
+    Part "Part" Size=0.25,0.05,0.25 Anchored BottomSurface=Smooth CFrame=-226.565,-37.14,239.397 CanCollide=false CanQuery=false CanTouch=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment0" CFrame=0,-0.025,0|0,0,-90
+        RopeConstraint "RopeConstraint" Attachment0=@"Workspace/Part4/Red Hanging Wire/Part/Attachment0" Attachment1=@"Workspace/Part4/Red Hanging Wire/Part~2/Attachment1" Color="Really black" Length=30 Thickness=0.09 Visible
+    }
+    Part "Part" Size=0.25,0.05,0.25 Anchored BottomSurface=Smooth CFrame=-227.423,-37.14,264.232 CanCollide=false CanQuery=false CanTouch=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment1" CFrame=0,-0.025,0|0,0,-90
+    }
+}
+Model "Red Hanging Wire" {
+    Part "Part" Size=0.25,0.05,0.25 Anchored BottomSurface=Smooth CFrame=-227.48,-37.14,264.243 CanCollide=false CanQuery=false CanTouch=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment0" CFrame=0,-0.025,0|0,0,-90
+        RopeConstraint "RopeConstraint" Attachment0=@"Workspace/Part4/Red Hanging Wire~2/Part/Attachment0" Attachment1=@"Workspace/Part4/Red Hanging Wire~2/Part~2/Attachment1" Color="Really black" Length=30 Thickness=0.09 Visible
+    }
+    Part "Part" Size=0.25,0.05,0.25 Anchored BottomSurface=Smooth CFrame=-228.338,-37.14,282.324 CanCollide=false CanQuery=false CanTouch=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment1" CFrame=0,-0.025,0|0,0,-90
+    }
+}
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-146.977,27.044,190.641|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-163.176,27.119,190.738|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-151.277,27.064,190.667|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-158.876,27.099,190.712|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-85.144,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-76.044,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-166.776,27.136,190.76|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-87.444,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-99.578,26.825,190.355|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-127.177,26.953,190.521|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-154.876,27.081,190.688|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-139.077,27.008,190.593|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-134.777,26.988,190.567|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-103.878,26.845,190.381|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-170.291,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=1.599,73.9,30.5 Anchored CFrame=-135.844,0.014,173.648|0,0,-90 Color=#C0C6B9 Material=Pavement RenderFidelity=Precise $_geo="3c24bcafd11a5c2c"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-99.544,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-111.478,26.88,190.426|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-142.677,27.024,190.615|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-107.478,26.862,190.402|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-130.777,26.969,190.543|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-122.877,26.933,190.495|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=1,9,17 Anchored CFrame=-333.994,-6.615,258.898 Color=#B8B6BA Material=Concrete RenderFidelity=Precise UsePartColor $_geo="060218db5d7077e6"
+UnionOperation "Union" Size=0.9,9.181,108.97 Anchored CFrame=-233.144,-55.505,248.813 CanCollide=false Color=#CDCCD0 Material=Concrete RenderFidelity=Precise $_geo="3a24ad71d1b6257c"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-148.344,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=16.3,0.2,44 Anchored CFrame=-312.444,-36.015,336.398 CanCollide=false CanTouch=false Color=#B4B9B5 Material=Concrete UsePartColor $_geo="f4c5a48b46e4919c"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-134.944,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=1,10.43,6 Anchored CFrame=-312.994,-8.328,266.398 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="81163e35e1baf099"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-126.244,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-138.844,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-129.744,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-81.244,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=0.2,6,6 Anchored CFrame=-461.494,9.885,160.398 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="255847cfb1ce5a8b"
+UnionOperation "Union" Size=4,9,1 Anchored CFrame=-366.494,-13.615,270.898 Color=#B8B6BA Material=Concrete RenderFidelity=Precise UsePartColor $_geo="8a13b176489de03f"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-113.644,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-156.444,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=7.458,0.062,5.239 Anchored CFrame=-231.82,-135.498,150.323|0,-5,0 Color=#755C57 Material=Fabric RenderFidelity=Precise $_geo="598fa0cc40b6e8d5"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-152.844,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-96.544,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-108.644,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-92.644,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-144.344,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-104.744,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-122.744,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-118.844,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-161.244,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=19.382,2.322,0.6 Anchored CFrame=-166.144,26.759,173.448|-35,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d1ddd26554a14ab"
+UnionOperation "Union" Size=1.215,5.011,117.47 Anchored CFrame=-215.772,-50.59,239.133 Color=#83796A Material=CorrodedMetal RenderFidelity=Precise $_geo="7b7eef80323af599"
+UnionOperation "Union" Size=1.306,12.393,110.102 Anchored CFrame=-236.747,-14.346,365.149 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="01d0f72c887d2de3"
+UnionOperation "Union" Size=1.306,12.393,125.102 Anchored CFrame=-173.543,-14.346,508.651|0,90,0 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="ae33e990de5dedaf"
+UnionOperation "Union" Size=10.206,12.393,5.102 Anchored CFrame=-163.543,-14.346,503.501|0,90,0 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="850e57d76fb34bc6"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,435.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,460.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,388.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,388.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,460.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=1.306,12.393,5.102 Anchored CFrame=-236.747,-14.346,302.649 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="028f79b57756356c"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-125.793,-14.346,364.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-125.793,-14.346,411.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=3.006,12.393,27.602 Anchored CFrame=-132.097,-14.346,315.399 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="6175f784eb9efab9"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,388.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,340.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,364.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,316.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,435.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=20.314,12.393,5.102 Anchored CFrame=-163.543,-14.346,471.955|0,90,0 Color=#5D2E2F Material=Concrete RenderFidelity=Precise $_geo="3e19bde1b6fdd237"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,435.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=6.306,12.393,27.202 CFrame=-149.593,-14.346,461.151|0,90,0 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="7e9952b05c542c0e"
+UnionOperation "Union" Size=429.45,1,495 Anchored CFrame=269.011,-60.846,-551.277|0,90,0 Material=WoodPlanks RenderFidelity=Precise UsePartColor $_geo="c5f1385270089208"
+UnionOperation "Union" Size=35.866,4.355,214.622 Anchored CFrame=-307.974,-25.553,403.765 CanCollide=false Color=#5C5B68 Material=CorrodedMetal RenderFidelity=Precise UsePartColor $_geo="d980a3e0bd15a7a5"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,484.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,364.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-125.793,-14.346,388.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,316.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,484.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-154.793,-14.346,411.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-125.793,-14.346,340.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=19.658,4.355,214.622 Anchored CFrame=-341.63,-25.553,403.765 CanCollide=false Color=#5C5B68 Material=CorrodedMetal RenderFidelity=Precise UsePartColor $_geo="b246a834cafd710d"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,340.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,340.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=11.006,12.393,3.602 CFrame=-126.097,-14.346,330.399 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="c34d36ed86505d5b"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-77.179,26.721,190.22|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-115.778,26.9,190.452|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-170.299,27.136,190.76|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-79.879,26.734,190.236|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=1.306,12.393,209.202 Anchored CFrame=-110.347,-14.346,404.699 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="a6f4dafe65948179"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,316.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=0.2,6,6 Anchored CFrame=-502.494,9.885,160.398 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="255847cfb1ce5a8b"
+UnionOperation "Union" Size=1.306,12.393,21.502 Anchored CFrame=-236.747,-14.346,455.249 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="3753a9c3744ecb12"
+UnionOperation "Union" Size=1.13,10.42,7 CFrame=153.947,5.669,-103.097 CanCollide=false CanQuery=false CanTouch=false Color=#54554E Material=Concrete RenderFidelity=Precise UsePartColor $_geo="11327361fd7c5837"
+UnionOperation "Union" Size=6.306,12.393,11.102 Anchored CFrame=-116.643,-14.346,461.151|0,90,0 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="ea7df5f96cdf3444"
+UnionOperation "Union" Size=1.306,12.393,19.002 Anchored CFrame=-236.747,-14.346,499.799 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="8ce0209d69641938"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,411.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-92.278,26.791,190.311|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-119.377,26.917,190.474|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=6,9.4,1 Anchored CFrame=-187.494,5.215,170.898 Color=#676668 Material=Metal RenderFidelity=Precise UsePartColor $_geo="cc7dbfdb7dc270f7"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-74.579,26.709,190.204|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-88.678,26.775,190.289|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-125.793,-14.346,435.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-221.793,-14.346,411.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+UnionOperation "Union" Size=21,1,28.101 Anchored CFrame=-310.997,-13.043,205.448 Color=#78787A Material=Concrete RenderFidelity=Precise $_geo="b5852d6ddf6f1481"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-95.078,26.804,190.328|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=1.306,12.393,125.102 Anchored CFrame=-173.543,-14.346,300.751|0,90,0 Color=#3A3A3B Material=Concrete RenderFidelity=Precise $_geo="ae33e990de5dedaf"
+UnionOperation "Union" Size=0.101,5.8,8.09 Anchored CFrame=-509.328,0.521,160.215|0,0,-90 Color=#632C32 Material=Fabric RenderFidelity=Precise Transparency=0.8 $_geo="a849001ed721c4a4"
+UnionOperation "Union" Size=18.277,3.613,0.6 Anchored CFrame=-84.378,26.755,190.263|-37.49,-89.571,-67.508 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A7AEB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9f64475d052705ff"
+UnionOperation "Union" Size=6.8,0.001,2.5 Anchored CFrame=-209.994,-60.095,-374.352 CanCollide=false CanQuery=false CanTouch=false Color=#4A4A4B Material=Mud RenderFidelity=Precise Transparency=0.2 $_geo="17b982baee514ab6"
+UnionOperation "Union" Size=13.102,13,2.2 Anchored CFrame=-307.045,-7.615,210.399 Color=#78787A Material=Concrete RenderFidelity=Precise Transparency=0.6 $_geo="b961a340f74e7cae" {
+    NumberValue "ChanceDelete" Value=50
+}
+UnionOperation "Union" Size=7.306,12.393,1.502 CFrame=-185.793,-14.346,364.801 Color=#A3A2A5 Material=Concrete RenderFidelity=Precise $_geo="b80727c7b8e4670b"
+Model "small_table_wood" {
+    MeshPart "Meshes/table_001 (1)" Size=4.854,2.552,4.854 Anchored CFrame=208.124,-2.265,-59.792 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://8543602986" TextureID="rbxassetid://8543602986" {
+        SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://8543588788" ColorMapContent="rbxassetid://8543588788" NormalMap="rbxassetid://8543588415" NormalMapContent="rbxassetid://8543588415" RoughnessMap="rbxassetid://8543588066" RoughnessMapContent="rbxassetid://8543588066"
+    }
+}

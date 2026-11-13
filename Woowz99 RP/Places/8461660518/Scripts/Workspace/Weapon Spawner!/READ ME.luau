@@ -1,0 +1,3 @@
+-- All you need to do is place an item on top of the spawner 
+--(In this case it's AssaultRifle) And it will spawn it every so often.
+-- You can also change the spawn times in the weapon spawner

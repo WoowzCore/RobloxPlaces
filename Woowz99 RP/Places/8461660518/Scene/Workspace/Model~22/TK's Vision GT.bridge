@@ -1,0 +1,610 @@
+ModuleScript "A-Chassis Tune" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune.luau" {
+    Script " Initialize" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/ Initialize.luau" {
+        ModuleScript "MiscWeld" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/ Initialize/MiscWeld.luau"
+    }
+    ScreenGui "A-Chassis Interface" {
+        ObjectValue "Car"
+        BoolValue "ControlsOpen"
+        LocalScript "Drive" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/A-Chassis Interface/Drive.luau"
+        BoolValue "IsOn"
+        Folder "Values" {
+            NumberValue "Brake"
+            NumberValue "Gear"
+            NumberValue "Horsepower"
+            BoolValue "PBrake"
+            NumberValue "RPM"
+            NumberValue "SteerC"
+            NumberValue "SteerT"
+            BoolValue "TCS"
+            BoolValue "TCSActive"
+            NumberValue "Throttle"
+            NumberValue "Torque"
+            StringValue "TransmissionMode"
+            Vector3Value "Velocity"
+        }
+    }
+    Folder "Plugins" {
+        Frame "AC6_Controls_Module" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            LocalScript "Controls_AC6" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/AC6_Controls_Module/Controls_AC6.luau"
+            TextButton "Toggle" Position=0,50,1,-30 Size=0,120,0,27 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderColor3=#969696 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#6A6A6A TextStrokeTransparency=0.5
+            Frame "Window" Position=0.5,-250,0,-500 Size=0,500,0,400 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 ClipsDescendants {
+                TextLabel "//INSPARE" Position=1,-20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="A-Chassis 6 by //INSPARE" TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                Frame "Content" Position=0,0,0,60 Size=1,0,1,-60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+                    TextButton "Brake" Position=0,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "Brake2" Position=0,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "Clutch" Position=0,170,0,213 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrBrake" Position=2,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrClutch" Position=2,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrPBrake" Position=2,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrShiftDown" Position=2,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrShiftUp" Position=2,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrSteer" Position=2,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrThrottle" Position=2,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrToggleTCS" Position=2,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ContlrToggleTMode" Position=2,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextLabel "ControlLDZone" Position=2,200,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "ControlRDZone" Position=2,200,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerDZone" Position=1,200,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerWidth" Position=1,200,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextButton "MouseBrake" Position=1,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "MouseClutch" Position=1,170,0,113 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14
+                    TextButton "MousePBrake" Position=1,170,0,133 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14
+                    TextButton "MouseShiftDown" Position=1,170,0,93 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14
+                    TextButton "MouseShiftUp" Position=1,170,0,73 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14
+                    TextButton "MouseSteer" Position=1,170,0,53 Size=0,300,0,15 Active=false BackgroundColor3=#282828 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false Text="MouseMove" TextColor3=#B0B0B0 TextSize=14
+                    TextButton "MouseThrottle" Position=1,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "PBrake" Position=0,170,0,233 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ShiftDown" Position=0,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ShiftUp" Position=0,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "SteerLeft" Position=0,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "SteerLeft2" Position=0,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "SteerRight" Position=0,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "SteerRight2" Position=0,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextLabel "T" Position=2,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Control Width" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Right Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Left Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=2,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary] SteerRight" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]   Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]     Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]        Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Right" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,260 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text=" Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Switch Mouse Control" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=1,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,280 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextLabel "T" Position=0,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right
+                    TextButton "Throttle" Position=0,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "Throttle2" Position=0,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ToggleMouseDrive" Position=0,170,0,293 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ToggleTCS" Position=0,170,0,273 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                    TextButton "ToggleTransMode" Position=0,170,0,253 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14
+                }
+                TextLabel "Error" Position=0.5,0,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Invalid Input" TextColor3=#FF0000 TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 Visible=false
+                TextLabel "Header" Position=0,10,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=32 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Left
+                TextLabel "Overlay" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Press a key to assign or Enter to cancel]" TextColor3=#FFFFFF TextSize=28 TextStrokeColor3=#2F2F2F TextStrokeTransparency=0 Visible=false ZIndex=2
+                Frame "Tabs" Position=0,5,0,40 Size=0,490,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                    TextButton "Controller" Position=0,235,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Controller" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom
+                    TextButton "Keyboard" Position=0,5,0,0 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Keyboard" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom
+                    Frame "Line" Size=1,0,0,2 BackgroundColor3=#FFFFFF BorderSizePixel=0
+                    TextButton "Mouse" Position=0,120,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Mouse" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom
+                }
+            }
+        }
+        Frame "AC6_Stock_Gauges" Position=0,0,0,300 Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextLabel "ABS" Position=0.5,130,1,-100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            LocalScript "Gauges_AC6" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/AC6_Stock_Gauges/Gauges_AC6.luau"
+            TextLabel "Gear" Position=0.5,-120,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+            TextLabel "PBrake" Position=0.5,200,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="P" TextColor3=#FF557F TextSize=24 TextStrokeColor3=#FF557F TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "Speed" Position=0.5,250,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="0 SPS" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right
+            Frame "Speedo" Position=0.5,150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            TextLabel "TCS" Position=0.5,130,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="TCS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "TMode" Position=0.5,-165,1,-40 Size=0,40,0,20 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="A/T" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1
+            Frame "Tach" Position=0.5,-150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            Frame "ln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                Frame "Frame" Position=0,-2,0,105 Size=0,3,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+            }
+        }
+        LocalScript "AC6_Stock_Sound" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/AC6_Stock_Sound.luau" {
+            RemoteEvent "AC6_FE_Sounds" {
+                Script "Handler" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/AC6_Stock_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+            }
+            Sound "Rev" AudioContent="rbxassetid://553067894" Looped SoundId="rbxassetid://553067894" Volume=1 {
+                NumberValue "SetPitch" Value=0.05
+                NumberValue "SetRev" Value=1.4
+            }
+        }
+        LocalScript "Ignition" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/Ignition.luau" {
+            Sound "Start1" AudioContent="rbxassetid://444484119" SoundId="rbxassetid://444484119" Volume=1
+            Sound "Start2" AudioContent="rbxassetid://444484119" SoundId="rbxassetid://444484119" Volume=1
+        }
+        Frame "Inspare_Splash" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            Frame "Frame" Position=0,50,0,0 Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+                Frame "A" Position=0.5,46,0.5,-134 Size=0,88,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    Frame "Frame" Position=0,-250,0,-136 Size=0,500,0,272 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                        ImageLabel "ImageLabel" Size=0,1500,0,1088 BackgroundColor3=#FFFFFF Image="rbxassetid://423455664" ImageContent="rbxassetid://423455664" ImageTransparency=1 ZIndex=2
+                    }
+                }
+                Frame "B" Position=0.5,46,0.5,-134 Size=0,88,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    Frame "Frame" Position=0,-250,0,-136 Size=0,500,0,272 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                        ImageLabel "ImageLabel" Size=0,1500,0,1088 BackgroundColor3=#FFFFFF Image="rbxassetid://423455664" ImageContent="rbxassetid://423455664" ImageTransparency=1 ZIndex=2
+                    }
+                }
+                Frame "C" Position=0.5,46,0.5,-134 Size=0,88,0,88 BackgroundColor3=#FFAA00 BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    Frame "Frame" Position=0,-250,0,-136 Size=0,500,0,272 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                        ImageLabel "ImageLabel" Size=0,1500,0,1088 BackgroundColor3=#FFFFFF Image="rbxassetid://423455664" ImageContent="rbxassetid://423455664" ImageTransparency=1 ZIndex=2
+                    }
+                }
+                Frame "D" Position=0.5,46,0.5,-134 Size=0,88,0,88 BackgroundColor3=#FFAA00 BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    Frame "Frame" Position=0,-250,0,-136 Size=0,500,0,272 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                        ImageLabel "ImageLabel" Size=0,1500,0,1088 BackgroundColor3=#FFFFFF Image="rbxassetid://423455664" ImageContent="rbxassetid://423455664" ImageTransparency=1 ZIndex=2
+                    }
+                }
+                Frame "E" Position=0.5,46,0.5,-134 Size=0,88,0,88 BackgroundColor3=#FFAA00 BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    Frame "Frame" Position=0,-250,0,-136 Size=0,500,0,272 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                        ImageLabel "ImageLabel" Size=0,1500,0,1088 BackgroundColor3=#FFFFFF Image="rbxassetid://423455664" ImageContent="rbxassetid://423455664" ImageTransparency=1 ZIndex=2
+                    }
+                }
+            }
+            TextLabel "IN" Position=0.5,76,0.5,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="IN" TextColor3=#FFFFFF TextSize=42 TextTransparency=1 ZIndex=5
+            LocalScript "Inspare_Splash" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/Plugins/Inspare_Splash/Inspare_Splash.luau"
+            TextLabel "SPARE" Position=0.5,156,0.5,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="SPARE" TextColor3=#FFAA00 TextSize=42 TextTransparency=1 ZIndex=5
+        }
+    }
+    ModuleScript "README" @src="Scripts/Workspace/Model~22/TK's Vision GT/A-Chassis Tune/README.luau"
+}
+Model "Body" {
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.235,6.724,-495.644|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.632,6.674,-494.897|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~2" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~2/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~2/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.848,6.654,-490.113|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~3" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~3/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~3/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.418,6.714,-495.251|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~4" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~4/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~4/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.541,6.674,-489.718|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~5" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~5/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~5/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.118,6.724,-488.965|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~6" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~6/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~6/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.315,6.714,-489.332|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~7" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~7/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~7/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Headlight" Size=0.4,0.4,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-320.925,6.654,-494.482|179.924,88.998,-179.933 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.15,0,0.15,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Headlight~8" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=-1.5,0,-2,0 Size=5,0,5,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="rbxassetid://224413104" ImageContent="rbxassetid://224413104"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~8/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Headlight~8/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Brightness=10 Color=#B3E2FF Enabled=false Range=30 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Model "Model" {
+        MeshPart "Badge" Size=0.43,0.215,0.2 Anchored CFrame=-321.825,6.198,-492.268|-93.069,71.944,93.228 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://722043100" TextureID="rbxassetid://722043100"
+        Model "Carbon" {
+            MeshPart "C6" Size=8.684,3.306,15.096 Anchored CFrame=-310.685,6.999,-492.462|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.693,3.938,4.605 Anchored CFrame=-306.323,6.556,-492.538|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=7.134,2.533,17.71 Anchored CFrame=-313.019,7.617,-492.422|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.671,2.053,3.262 Anchored CFrame=-321.019,5.526,-492.282|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.693,4.068,2.929 Anchored CFrame=-305.016,6.621,-492.561|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.516,0.8,2.753 Anchored CFrame=-305.007,4.988,-492.561|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.929,3.867,10.408 Anchored CFrame=-313.808,6.532,-492.407|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+            MeshPart "C6" Size=8.702,3.287,11.982 Anchored CFrame=-310.519,6.389,-492.465|-180,89,180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+        }
+        MeshPart "Dark Metal" Size=6.052,2.805,5.446 Anchored CFrame=-319.319,6.136,-492.312|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.878,4.688,16.908 Anchored CFrame=-312.548,7.127,-492.43|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=3.035,1.206,2.046 Anchored CFrame=-304.954,5.48,-492.562|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.15 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=3.083,4.621,11.597 Anchored CFrame=-309.003,7.17,-492.492|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#6225D1 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal Reflectance=0.15 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.508,1.13,6.671 CFrame=-314.928,8.027,-492.388|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#B4D2E4 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.8
+        MeshPart "MeshPart" Size=6.509,2.514,8.069 Anchored CFrame=-314.224,6.272,-492.401|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://722085989" TextureID="rbxassetid://722085989"
+        MeshPart "MeshPart" Size=6.504,1.129,6.671 Anchored CFrame=-314.929,8.027,-492.388|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#FFFF00 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.9
+        MeshPart "MeshPart" Size=6.482,3.94,6.806 Anchored CFrame=-313.545,6.792,-492.412|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#04AFEC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.123,3.628,6.651 Anchored CFrame=-313.545,6.788,-492.412|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=Sand RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.892,1.565,16.753 Anchored CFrame=-312.37,7.326,-492.433|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=Neon RenderFidelity=Precise {
+            Decal "Decal" Face=Back Texture="rbxassetid://50273242" TextureContent="rbxassetid://50273242"
+        }
+        MeshPart "MeshPart" Size=8.688,4.088,17.152 Anchored CFrame=-313.261,6.543,-492.417|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.69,2.139,17.386 Anchored CFrame=-312.618,6.148,-492.429|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#FFFF00 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.001,1.35,0.758 Anchored CFrame=-304.67,6.159,-492.567|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.468,1.854,4.505 Anchored CFrame=-314.151,6.635,-491.45|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#FF00BF CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://722085989" TextureID="rbxassetid://722085989"
+        MeshPart "Paint" Size=6.524,2.709,6.564 Anchored CFrame=-318.796,6.304,-493.402|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#7B007B CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.686,2.711,6.579 Anchored CFrame=-318.77,6.305,-492.321|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#00FF00 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=1.713,2.708,5.688 Anchored CFrame=-318.405,6.31,-495.815|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=1.125,1.857,4.713 Anchored CFrame=-313.958,6.611,-496.073|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#7B007B CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.687,2.712,6.579 Anchored CFrame=-318.77,6.308,-492.321|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#00FF00 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.69,4.128,3.149 Anchored CFrame=-304.732,6.66,-492.566|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.716,0.802,0.94 Anchored CFrame=-304.862,7.647,-492.564|-180,89,180 CanCollide=false CollisionFidelity=Hull Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.683,2.71,6.451 Anchored CFrame=-318.834,6.308,-492.318|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=1.125,1.857,4.713 Anchored CFrame=-313.83,6.611,-488.739|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#102ADC CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=7.703,2.209,8.157 Anchored CFrame=-314.209,6.353,-492.245|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=8.442,0.927,1.17 Anchored CFrame=-320.298,5.498,-492.295|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#00FF00 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "Paint" Size=7.469,3.744,10.946 Anchored CFrame=-310.308,7.026,-492.469|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal RenderFidelity=Precise
+        MeshPart "White Metal" Size=4.845,1.187,6.636 Anchored CFrame=-308.123,7.21,-492.506|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#EDEAEA CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal Reflectance=0.314 RenderFidelity=Precise
+        MeshPart "White Metal" Size=8.69,2.162,12.398 Anchored CFrame=-310.194,7.25,-492.471|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#EDEAEA CustomPhysicalProperties=0.01,0,0,0,0 Material=Metal Reflectance=0.314 RenderFidelity=Precise
+    }
+    Seat "Seat" Size=1,1,1 Anchored CFrame=-312.614,4.684,-493.953|-179.998,89,179.998 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Transparency=1
+    Part "Shadow" Size=2.44,0.2,1.31 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-312.888,4.374,-492.658|180,-1,-179.997 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://243877420" TextureContent="rbxassetid://243877420" Transparency=0.2
+        BlockMesh "Mesh" Scale=8.5,1,9
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.308,6.584,-495.412|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.182,6.584,-495.074|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~2" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~2/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~2/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.245,6.584,-495.213|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~3" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~3/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~3/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.343,6.584,-495.692|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~4" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~4/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~4/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.15,6.584,-494.935|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~5" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~5/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~5/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.094,6.584,-490.005|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~6" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~6/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~6/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.208,6.584,-489.663|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~7" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~7/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~7/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.236,6.584,-489.523|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~8" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~8/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~8/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.233,6.584,-489.383|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~9" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~9/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~9/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.341,6.584,-495.552|-0.095,-88.998,-0.086 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~10" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~10/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~10/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.066,6.584,-490.146|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~11" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~11/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~11/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+    Part "Taillight" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-304.152,6.584,-489.864|0.094,-89.002,-179.897 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BillboardGui "BillboardGui" Size=0.12,0,0.12,0 Adornee=@"Workspace/Model~22/TK's Vision GT/Body/Taillight~12" Enabled=false SizeOffset=-0.5,0 {
+            ImageLabel "ImageLabel" Position=0,0,-0.5,0 Size=2,0,2,0 BackgroundColor3=#BFB7B1 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=67822829" ImageContent="http://www.roblox.com/asset/?id=67822829"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~12/BillboardGui/Script.luau"
+            Script "Script" @src="Scripts/Workspace/Model~22/TK's Vision GT/Body/Taillight~12/BillboardGui/Script~2.luau"
+        }
+        SpotLight "SpotLight" Angle=180 Brightness=0.3 Color=#FF0004 Enabled=false Range=9 Shadows {
+            Script "On/Off Light" @code=<<<
+                while(wait())do
+                local l = game.Lighting:GetMinutesAfterMidnight()/60 -- Get hours after midnight :3
+                script.Parent.Enabled = l<6 or l>18 -- If it's before 6AM, or after 7PM turn it on
+                end
+            >>>
+        }
+    }
+}
+VehicleSeat "DriveSeat" Size=2,1,2 Anchored BottomSurface=Smooth CFrame=-311.891,4.744,-490.811|-180,89,-180 CanCollide=false CustomPhysicalProperties=0.7,0.3,0,1,1 FrontSurface=Motor Material=SmoothPlastic MaxSpeed=0 TopSurface=Hinge Torque=0 Transparency=1 TurnSpeed=0 {
+    Rotate "Rotate" C0=0,0.5,0|-90,0,-180 C1=-1.47,-1.11,2.29|-90,0,-180 Part0=@"Workspace/Model~22/TK's Vision GT/DriveSeat" Part1=@"Workspace/Model~22/TK's Vision GT/Body/Model/Paint~10"
+}
+Model "Misc"
+Humanoid "Shadow" MaxHealth=0
+Model "Wheels" {
+    Part "FL" Size=3.002,3.002,3.002 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.915,5.605,-488.715|90,0,-1 Color=#0000FF CustomPhysicalProperties=2,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        Model "Fixed" {
+            MeshPart "Paint Caliper" Size=0.676,1.421,0.558 Anchored CFrame=-317.258,5.786,-488.674|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "Model" {
+                MeshPart "Carbon" Size=0.2,2.389,2.389 Anchored CFrame=-317.904,5.604,-488.115|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+                MeshPart "Drilled Rotor" Size=0.2,1.599,1.598 Anchored CFrame=-317.915,5.62,-488.621|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Reflectance=0.314 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=1.534,2.387,2.387 Anchored CFrame=-317.919,5.62,-488.843|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Tyre" Size=1.42,3.002,3.002 Anchored CFrame=-317.915,5.604,-488.715|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+                MeshPart "White Metal" Size=0.372,2.326,2.354 Anchored CFrame=-317.901,5.606,-488.16|87.745,-66.08,-92.467 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+            }
+        }
+    }
+    Part "FR" Size=3.002,3.002,3.002 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-318.042,5.605,-495.968|90,0,179 Color=#111111 CustomPhysicalProperties=2,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        Model "Fixed" {
+            MeshPart "Paint Caliper" Size=0.676,1.421,0.558 Anchored CFrame=-317.37,5.704,-496.032|0,-89,0 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "Model" {
+                MeshPart "Carbon" Size=0.2,2.389,2.389 Anchored CFrame=-318.051,5.605,-496.567|0,-89,0 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+                MeshPart "Drilled Rotor" Size=0.2,1.599,1.598 Anchored CFrame=-318.038,5.59,-496.062|0,-89,0 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Reflectance=0.314 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=1.534,2.387,2.387 Anchored CFrame=-318.035,5.59,-495.84|0,-89,0 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Tyre" Size=1.42,3.002,3.002 Anchored CFrame=-318.041,5.604,-495.968|0,-89,0 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+                MeshPart "White Metal" Size=0.372,2.326,2.354 Anchored CFrame=-318.047,5.605,-496.523|0,-89,0 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+            }
+        }
+    }
+    Part "RL" Size=3.002,3.002,3.002 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-307.067,5.685,-488.905|90,0,-1 Color=#111111 CustomPhysicalProperties=2,2,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        Model "Fixed" {
+            MeshPart "Paint Caliper" Size=0.676,1.421,0.558 Anchored CFrame=-307.738,5.784,-488.84|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "Model" {
+                MeshPart "Carbon" Size=0.2,2.389,2.389 Anchored CFrame=-307.056,5.685,-488.305|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+                MeshPart "Drilled Rotor" Size=0.2,1.599,1.598 Anchored CFrame=-307.07,5.67,-488.811|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Reflectance=0.314 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=1.534,2.387,2.387 Anchored CFrame=-307.073,5.67,-489.032|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Tyre" Size=1.42,3.002,3.002 Anchored CFrame=-307.066,5.684,-488.904|-180,89,180 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+                MeshPart "White Metal" Size=0.372,2.326,2.354 Anchored CFrame=-307.061,5.685,-488.349|-180,89,180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+            }
+        }
+    }
+    Part "RR" Size=3.002,3.002,3.002 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-307.193,5.685,-496.148|90,0,179 Color=#111111 CustomPhysicalProperties=2,2,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        Model "Fixed" {
+            MeshPart "Paint Caliper" Size=0.676,1.421,0.558 Anchored CFrame=-307.842,5.89,-496.189|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "Model" {
+                MeshPart "Carbon" Size=0.2,2.389,2.389 Anchored CFrame=-307.204,5.684,-496.747|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise TextureContent="rbxassetid://721253640" TextureID="rbxassetid://721253640"
+                MeshPart "Drilled Rotor" Size=0.2,1.599,1.598 Anchored CFrame=-307.192,5.7,-496.241|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Reflectance=0.314 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=1.534,2.387,2.387 Anchored CFrame=-307.188,5.7,-496.019|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Tyre" Size=1.42,3.002,3.002 Anchored CFrame=-307.193,5.684,-496.147|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+                MeshPart "White Metal" Size=0.372,2.326,2.354 Anchored CFrame=-307.206,5.686,-496.702|92.05,63.988,87.719 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 RenderFidelity=Precise
+            }
+        }
+    }
+}

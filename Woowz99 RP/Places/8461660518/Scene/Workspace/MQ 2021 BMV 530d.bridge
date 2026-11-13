@@ -1,0 +1,543 @@
+ModuleScript "A-Chassis Tune" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune.luau" {
+    ScreenGui "A-Chassis Interface" {
+        ObjectValue "Car"
+        BoolValue "ControlsOpen"
+        LocalScript "Drive" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/A-Chassis Interface/Drive.luau"
+        BoolValue "IsOn"
+        Folder "Values" {
+            BoolValue "ABS"
+            BoolValue "ABSActive"
+            BoolValue "AutoClutch" Value
+            NumberValue "Boost"
+            NumberValue "BoostSuper"
+            NumberValue "BoostTurbo"
+            NumberValue "Brake"
+            NumberValue "Clutch"
+            NumberValue "Gear"
+            NumberValue "Horsepower"
+            NumberValue "HpBoosted"
+            NumberValue "HpElectric"
+            NumberValue "HpNatural"
+            NumberValue "HpSuper"
+            NumberValue "HpTurbo"
+            BoolValue "MouseSteerOn"
+            BoolValue "PBrake"
+            NumberValue "RPM"
+            NumberValue "SteerC"
+            NumberValue "SteerT"
+            BoolValue "TCS"
+            BoolValue "TCSActive"
+            NumberValue "TCSAmt"
+            NumberValue "Throttle"
+            NumberValue "Torque"
+            NumberValue "TqBoosted"
+            NumberValue "TqElectric"
+            NumberValue "TqNatural"
+            NumberValue "TqSuper"
+            NumberValue "TqTurbo"
+            StringValue "TransmissionMode"
+            Vector3Value "Velocity"
+        }
+        NumberValue "Version" Value=4 {
+            NumberValue "Chassis" Value=14
+            NumberValue "LastMajorUpdate" Value=4
+        }
+    }
+    Script "Initialize" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Initialize.luau" {
+        ModuleScript "MiscWeld" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Initialize/MiscWeld.luau"
+    }
+    Folder "Plugins" {
+        LocalScript "AC6C_Boost_Sound" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Boost_Sound.luau" {
+            RemoteEvent "AC6_FE_Sounds" {
+                Script "Handler" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Boost_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+            }
+            Sound "BOV" AudioContent="rbxassetid://1045308909" RollOffMaxDistance=100 SoundId="rbxassetid://1045308909" Volume=0.8
+            Sound "Whine" AudioContent="rbxassetid://404779487" Looped PlaybackSpeed=2 RollOffMaxDistance=100 RollOffMinDistance=20 SoundId="rbxassetid://404779487" Volume=2
+            Sound "Whistle" AudioContent="rbxassetid://1033010834" Looped RollOffMaxDistance=100 RollOffMinDistance=20 SoundId="rbxassetid://1033010834" Volume=2
+        }
+        Frame "AC6C_Ignition" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            LocalScript "Ignition" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Ignition/Ignition.luau"
+            TextLabel "TextLabel" Size=1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Press \"F\" to turn on." TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0.9 TextWrapped Visible=false
+        }
+        Frame "AC6C_Stock_Gauges" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextLabel "ABS" Position=0.5,130,1,-100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "ABS" Position=0.5,130,1,-140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            Frame "Boost" Position=0.5,0,1,-175 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+                Frame "lns" BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0
+            }
+            Frame "CAssist" Position=0.5,-205,1,-30 Size=0,100,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#7F7F7F
+            TextButton "Clutch" Position=0.5,-205,1,-30 Size=0,100,0,3 AutoButtonColor=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="" TextColor3=#000000 TextSize=24 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right ZIndex=0 {
+                TextLabel "Assist" Position=1,-15,0,-10 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="CLUTCH" TextColor3=#FFFFFF TextSize=16 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right
+                TextButton "Auto" Position=1,5,0,0 Size=0,10,0,3 BackgroundColor3=#FFFFFF BorderColor3=#FFFFFF FontFace="SourceSansPro|Regular|Italic" Text="" TextColor3=#000000 TextSize=6 TextStrokeTransparency=0.9 TextTransparency=0.1 ZIndex=0
+                Frame "Level" Size=0,50,0,3 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ZIndex=2
+                LocalScript "LocalScript" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Stock_Gauges/Clutch/LocalScript.luau"
+            }
+            LocalScript "Gauges_AC6" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Stock_Gauges/Gauges_AC6.luau"
+            TextLabel "Gear" Position=0.5,-120,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+            TextLabel "PBrake" Position=0.5,200,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="P" TextColor3=#FF557F TextSize=24 TextStrokeColor3=#FF557F TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "PSI" Position=0.5,0,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+            TextButton "Speed" Position=0.5,150,1,-80 Size=0,100,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="0 SPS" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right ZIndex=2
+            Frame "Speedo" Position=0.5,150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            TextLabel "TCS" Position=0.5,130,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="TCS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "TMode" Position=0.5,218,1,-40 Size=0,40,0,20 AnchorPoint=0.5,0.5 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="A/T" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1
+            Frame "Tach" Position=0.5,-150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            Frame "bln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                Frame "Frame" Position=0,-2,0,40 Size=0,3,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+            }
+            Frame "ln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                Frame "Frame" Position=0,-2,0,105 Size=0,3,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+            }
+        }
+        LocalScript "AC6C_Stock_Sound" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Stock_Sound.luau" {
+            RemoteEvent "AC6_FE_Sounds" {
+                Script "Handler" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6C_Stock_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+            }
+            Sound "Elec" AudioContent="rbxassetid://406864489" Looped PlaybackSpeed=0 SoundId="rbxassetid://406864489" Volume=1 {
+                NumberValue "SetPitch" Value=0.05
+                NumberValue "SetRev" Value=1.4
+                NumberValue "SetVol" Value=0.5
+            }
+            Sound "Rev" AudioContent="rbxassetid://358130654" Looped PlaybackSpeed=0 SoundId="rbxassetid://358130654" Volume=1 {
+                NumberValue "SetPitch" Value=0.05
+                NumberValue "SetRev" Value=1.4
+                NumberValue "SetVol" Value=1.4
+            }
+        }
+        Frame "AC6_Controls_Module" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+            LocalScript "Controls_AC6" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6_Controls_Module/Controls_AC6.luau"
+            TextButton "Toggle" Position=0.5,-50,1,10 Size=0,100,0,18 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderColor3=#969696 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=16 TextStrokeColor3=#6A6A6A TextYAlignment=Bottom ZIndex=5
+            Frame "Window" Position=0.5,-250,0,-500 Size=0,500,0,400 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                TextLabel "//INSPARE" Position=1,-20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="A-Chassis 6 by //INSPARE" TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                Frame "Content" Position=0,0,0,60 Size=1,0,1,-60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+                    TextButton "Brake" Position=0,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Brake2" Position=0,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Clutch" Position=0,170,0,213 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrBrake" Position=2,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrClutch" Position=2,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrPBrake" Position=2,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftDown" Position=2,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftUp" Position=2,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrSteer" Position=2,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrThrottle" Position=2,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleABS" Position=2,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTCS" Position=2,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTMode" Position=2,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "ControlLDZone" Position=2,200,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "ControlRDZone" Position=2,200,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerDZone" Position=1,200,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerWidth" Position=1,200,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextButton "MouseBrake" Position=1,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseClutch" Position=1,170,0,113 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MousePBrake" Position=1,170,0,133 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftDown" Position=1,170,0,93 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftUp" Position=1,170,0,73 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseSteer" Position=1,170,0,53 Size=0,300,0,15 Active=false BackgroundColor3=#282828 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false Text="MouseMove" TextColor3=#B0B0B0 TextSize=14 ZIndex=3
+                    TextButton "MouseThrottle" Position=1,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "PBrake" Position=0,170,0,233 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftDown" Position=0,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftUp" Position=0,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft" Position=0,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft2" Position=0,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight" Position=0,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight2" Position=0,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "T" Position=0,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary] SteerRight" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Right" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]     Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,320 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Switch Mouse Control" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]        Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,280 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]   Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,260 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Control Width" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Right Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Left Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextButton "Throttle" Position=0,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Throttle2" Position=0,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleABS" Position=0,170,0,293 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleMouseDrive" Position=0,170,0,313 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTCS" Position=0,170,0,273 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTransMode" Position=0,170,0,253 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                }
+                TextLabel "Error" Position=0.5,0,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Invalid Input" TextColor3=#FF0000 TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 Visible=false ZIndex=3
+                TextLabel "Header" Position=0,10,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=32 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Left ZIndex=3
+                TextLabel "Overlay" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Press a key to assign or Enter to cancel]" TextColor3=#FFFFFF TextSize=28 TextStrokeColor3=#2F2F2F TextStrokeTransparency=0 Visible=false ZIndex=4
+                Frame "Tabs" Position=0,5,0,40 Size=0,490,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    TextButton "Controller" Position=0,235,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Controller" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    TextButton "Keyboard" Position=0,5,0,0 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Keyboard" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    Frame "Line" Size=1,0,0,2 BackgroundColor3=#FFFFFF BorderSizePixel=0 ZIndex=3
+                    TextButton "Mouse" Position=0,120,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Mouse" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                }
+            }
+        }
+        LocalScript "AC6_MSteer_Camera" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/AC6_MSteer_Camera.luau"
+        LocalScript "Eniiqz Mobile Support Mod (v1.1)" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/Eniiqz Mobile Support Mod (v1.1).luau" {
+            Frame "Buttons" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                ImageButton "Brake" Position=0.651,0,0.746,0 Size=0.133,0,0.228,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://5095995548" ImageContent="rbxassetid://5095995548"
+                TextButton "Downshift" Position=0.199,0,0.529,0 Size=0.064,0,0.116,0 BackgroundColor3=#3A3A3A BackgroundTransparency=0.5 BorderColor3=#000000 FontFace="GothamSSm|Regular|Normal" Text="-" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped Visible=false {
+                    UIGradient "UIGradient" Color=0:#F3FF06,1:#FF1100
+                }
+                ImageButton "Gas" Position=0.784,0,0.627,0 Size=0.098,0,0.388,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://5095995364" ImageContent="rbxassetid://5095995364"
+                ImageButton "Handbrake" Position=0.721,0,0.644,0 Size=0.062,0,0.123,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://5115025918" ImageContent="rbxassetid://5115025918"
+                TextButton "Left" Position=0.153,0,0.792,0 Size=0.088,0,0.16,0 BackgroundColor3=#3A3A3A BackgroundTransparency=0.5 BorderColor3=#000000 FontFace="GothamSSm|Regular|Normal" Text="<" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                    UIGradient "UIGradient" Color=0:#05FFEF,1:#8069FF
+                }
+                TextButton "Right" Position=0.25,0,0.792,0 Size=0.088,0,0.16,0 BackgroundColor3=#3A3A3A BackgroundTransparency=0.5 BorderColor3=#000000 FontFace="GothamSSm|Regular|Normal" Text=">" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                    UIGradient "UIGradient" Color=0:#05FFEF,1:#8069FF
+                }
+                TextButton "Upshift" Position=0.706,0,0.529,0 Size=0.064,0,0.116,0 BackgroundColor3=#3A3A3A BackgroundTransparency=0.5 BorderColor3=#000000 FontFace="GothamSSm|Regular|Normal" Text="+" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped Visible=false {
+                    UIGradient "UIGradient" Color=0:#F3FF06,1:#FF1100
+                }
+            }
+        }
+        Frame "HP_TQ_Reader" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextButton "Button" Position=0.455,0,0.86,0 Size=0,74,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextSize=14
+            TextLabel "HP" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,1 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped
+            LocalScript "HP/TQ Reader [README]" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/HP_TQ_Reader/HP%2FTQ Reader [README].luau"
+            TextLabel "MAXHP" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,0 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped
+            TextLabel "MAXTQ" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,0 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped Visible=false
+            TextLabel "TQ" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,1 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped Visible=false
+        }
+        ImageLabel "[SS6] Dynamic Friction" Position=0.045,0,0.87,0 Size=0.35,0,0.35,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageTransparency=1 {
+            Frame "Background" Size=1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                ImageLabel "L" Position=0,0,1.25,0 Size=1,0,1.25,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://719863736" ImageContent="rbxassetid://719863736"
+            }
+            LocalScript "Simulated" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/Plugins/[SS6] Dynamic Friction/Simulated.luau"
+            Frame "Tires" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                Frame "FL" Position=0.119,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "FR" Position=0.697,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RL" Position=0.119,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RR" Position=0.697,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+            }
+            UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=0.604
+            UISizeConstraint "UISizeConstraint" MaxSize=200,200 MinSize=150,150
+            Folder "WearData" {
+                NumberValue "FL"
+                NumberValue "FR"
+                NumberValue "RL"
+                NumberValue "RR"
+                NumberValue "STime"
+            }
+        }
+    }
+    ModuleScript "README" @src="Scripts/Workspace/MQ 2021 BMV 530d/A-Chassis Tune/README.luau"
+}
+Model "Body" {
+    MeshPart "Meshes/Chrome" Size=0.418,0.064,0.093 Anchored CFrame=-344.024,8.379,-378.667|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Chrome.001" Size=3.869,0.081,0.117 Anchored CFrame=-344.072,8.388,-376.79|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Chrome.002" Size=6.722,0.556,1.545 Anchored CFrame=-326.267,7.205,-376.796|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Chrome.003" Size=5.199,2.954,19.252 Anchored CFrame=-334.581,7.194,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Chrome.005" Size=7.287,0.077,0.237 Anchored CFrame=-330.182,6.68,-376.79|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/CobbBlack Textured" Size=6.944,1.582,18.556 Anchored CFrame=-334.675,7.663,-376.796|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.001" Size=6.425,3.233,19.432 Anchored CFrame=-334.756,7.043,-376.798|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.002" Size=6.926,1.051,1.474 Anchored CFrame=-326.041,5.94,-376.797|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.003" Size=6.431,4.828,18.413 Anchored CFrame=-334.737,7.639,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.004" Size=4.648,0.777,0.672 Anchored CFrame=-343.751,8.019,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.005" Size=0.562,1.138,1.511 Anchored CFrame=-339.176,9.214,-379.597|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.006" Size=0.859,1.605,4.442 Anchored CFrame=-337.86,9.264,-379.617|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.007" Size=1.773,1.84,4.683 Anchored CFrame=-333.697,9.135,-380.079|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.008" Size=1.772,1.84,4.683 Anchored CFrame=-333.697,9.135,-373.484|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.009" Size=0.562,1.138,1.511 Anchored CFrame=-339.176,9.214,-373.966|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.010" Size=0.859,1.605,4.442 Anchored CFrame=-337.86,9.264,-373.946|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.012" Size=7.229,1.87,0.609 Anchored CFrame=-327.065,6.104,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/CobbBlack Textured.013" Size=7.239,4.117,4.369 Anchored CFrame=-331.589,7.825,-376.789|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+    MeshPart "Meshes/Dark Blue" Size=7.286,0.075,0.172 Anchored CFrame=-330.183,6.679,-376.794|0,90,0 CanCollide=false CollisionFidelity=Default Color=#0010B0 Massless Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Meshes/Glass Grayscale" Size=4.583,0.616,0.35 Anchored CFrame=-343.936,7.96,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise Transparency=0.8
+    MeshPart "Meshes/Glass Grayscale.001" Size=0.603,0.084,0.64 Anchored CFrame=-332.399,8.668,-380.666|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise Transparency=0.8
+    MeshPart "Meshes/Glass Grayscale.002" Size=0.603,0.084,0.64 Anchored CFrame=-332.399,8.668,-372.897|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise Transparency=0.8
+    MeshPart "Meshes/Glass Grayscale.003" Size=6.95,1.543,18.609 Anchored CFrame=-334.677,7.664,-376.796|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise Transparency=0.8
+    MeshPart "Meshes/Glass Red" Size=5.944,0.15,0.361 Anchored CFrame=-344.077,6.606,-376.774|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=Glass RenderFidelity=Precise Transparency=0.4
+    MeshPart "Meshes/Light Blue" Size=7.285,0.076,0.23 Anchored CFrame=-330.183,6.679,-376.794|0,90,0 CanCollide=false CollisionFidelity=Default Color=#0989CF Massless Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Lower" Size=0.572,0.343,0.762 Anchored CFrame=-326.385,7.188,-379.828|0,90,0 CanCollide=false CollisionFidelity=Default Color=#595959 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Lower.001" Size=0.919,0.351,0.844 Anchored CFrame=-325.916,7.137,-374.469|0,90,0 CanCollide=false CollisionFidelity=Default Color=#595959 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Lower.002" Size=0.575,0.343,0.76 Anchored CFrame=-326.371,7.188,-373.767|0,90,0 CanCollide=false CollisionFidelity=Default Color=#595959 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Lower.003" Size=0.915,0.352,0.848 Anchored CFrame=-325.927,7.137,-379.128|0,90,0 CanCollide=false CollisionFidelity=Default Color=#595959 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper" Size=0.449,0.149,0.841 Anchored CFrame=-326.48,7.391,-373.752|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.001" Size=0.902,0.176,0.597 Anchored CFrame=-325.796,7.3,-374.535|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.002" Size=0.699,0.16,0.51 Anchored CFrame=-325.812,7.324,-374.512|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.003" Size=0.293,0.109,0.433 Anchored CFrame=-326.384,7.421,-373.767|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.004" Size=0.446,0.149,0.842 Anchored CFrame=-326.494,7.392,-379.843|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.005" Size=0.9,0.176,0.6 Anchored CFrame=-325.806,7.301,-379.062|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.006" Size=0.697,0.16,0.513 Anchored CFrame=-325.823,7.324,-379.086|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front Upper.007" Size=0.291,0.109,0.434 Anchored CFrame=-326.398,7.421,-379.828|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Front.012" Size=6.271,0.247,0.481 Anchored CFrame=-326.261,7.22,-376.798|0,90,0 CanCollide=false CollisionFidelity=Default Color=#000000 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Rear Indicators" Size=0.697,0.13,0.15 Anchored CFrame=-343.991,7.786,-378.648|0,90,0 CanCollide=false CollisionFidelity=Default Color=#414142 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Rear Indicators.001" Size=0.697,0.13,0.15 Anchored CFrame=-343.991,7.786,-374.915|0,90,0 CanCollide=false CollisionFidelity=Default Color=#414142 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Rear Indicators.002" Size=0.681,0.152,0.337 Anchored CFrame=-343.784,7.833,-374.208|0,90,0 CanCollide=false CollisionFidelity=Default Color=#414142 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Rear Indicators.003" Size=0.681,0.152,0.337 Anchored CFrame=-343.784,7.833,-379.355|0,90,0 CanCollide=false CollisionFidelity=Default Color=#414142 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Reverse" Size=3.053,0.101,0.082 Anchored CFrame=-344.046,7.774,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#5A5A5B Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Silver" Size=0.998,0.225,0.286 Anchored CFrame=-343.958,7.929,-378.535|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Silver.001" Size=0.788,0.482,0.674 Anchored CFrame=-343.628,8.094,-379.408|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Silver.002" Size=0.788,0.482,0.674 Anchored CFrame=-343.628,8.094,-374.155|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Light(s) Silver.003" Size=0.998,0.225,0.286 Anchored CFrame=-343.958,7.929,-375.028|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/Mirror" Size=0.971,0.243,0.05 Anchored CFrame=-333.181,9.418,-376.796|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Mirror.001" Size=0.671,0.484,0.234 Anchored CFrame=-332.583,8.649,-380.571|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Mirror.002" Size=0.671,0.484,0.234 Anchored CFrame=-332.583,8.649,-372.992|0,90,0 CanCollide=false CollisionFidelity=Default Color=#111111 Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+    MeshPart "Meshes/Paint" Size=4.579,0.562,6.134 Anchored CFrame=-336.502,10.133,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.001" Size=7.299,2.672,19.578 Anchored CFrame=-334.685,6.498,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.002" Size=6.423,1.205,6.001 Anchored CFrame=-328.199,7.885,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.003" Size=5.277,1.831,2.326 Anchored CFrame=-343.036,8.061,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.004" Size=1.346,4.257,4.693 Anchored CFrame=-337.665,7.869,-379.762|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.005" Size=1.831,4.369,4.935 Anchored CFrame=-333.519,7.808,-380.052|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.006" Size=1.831,4.369,4.935 Anchored CFrame=-333.519,7.808,-373.511|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.007" Size=1.346,4.257,4.701 Anchored CFrame=-337.669,7.869,-373.801|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Paint.008" Size=7.324,5.036,17.739 Anchored CFrame=-335.194,7.723,-376.787|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=SmoothPlastic Reflectance=0.025 RenderFidelity=Precise
+    MeshPart "Meshes/Red" Size=7.284,0.074,0.113 Anchored CFrame=-330.182,6.679,-376.793|0,90,0 CanCollide=false CollisionFidelity=Default Color=#C4281C Massless Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Meshes/cobbenginea_diff" Size=3.771,0.626,0.951 Anchored CFrame=-343.052,8.461,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828811089" TextureID="rbxassetid://5828811089"
+    MeshPart "Meshes/cobbenginea_diff.001" Size=6.388,2.274,17.019 Anchored CFrame=-333.774,7.846,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828811089" TextureID="rbxassetid://5828811089"
+    MeshPart "Meshes/cobbenginea_diff.002" Size=7.153,1.865,12.233 Anchored CFrame=-337.249,7.588,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828811089" TextureID="rbxassetid://5828811089"
+    MeshPart "Meshes/cobbenginea_diff.003" Size=6.07,0.866,5.048 Anchored CFrame=-328.089,7.878,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828811089" TextureID="rbxassetid://5828811089" Transparency=0.02
+    MeshPart "Meshes/cobblestonepalette" Size=5.424,3.505,6.873 Anchored CFrame=-336.596,7.284,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.001" Size=6.877,5.054,18.594 Anchored CFrame=-334.74,7.734,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.002" Size=5.932,1.035,5.011 Anchored CFrame=-327.819,7.819,-376.935|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.003" Size=0.163,0.122,0.243 Anchored CFrame=-343.649,8.327,-374.548|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.004" Size=5.105,1.761,2.821 Anchored CFrame=-342.718,7.989,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.005" Size=1.261,4.169,4.609 Anchored CFrame=-337.81,8.002,-379.698|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.006" Size=1.18,4.223,4.862 Anchored CFrame=-333.615,7.964,-379.694|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.007" Size=1.18,4.223,4.862 Anchored CFrame=-333.615,7.964,-373.868|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.008" Size=1.262,4.169,4.609 Anchored CFrame=-337.81,8.002,-373.865|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonepalette.009" Size=7.29,1.933,2.174 Anchored CFrame=-326.283,6.135,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828813062" TextureID="rbxassetid://5828813062"
+    MeshPart "Meshes/cobblestonespec_black" Size=1.458,1.434,0.521 Anchored CFrame=-333.085,8.161,-378.333|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/cobblestonespec_black.001" Size=5.773,3.998,11.328 Anchored CFrame=-336.341,8.188,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/cobblestonespec_black.002" Size=0.541,2.613,3.663 Anchored CFrame=-337.515,7.369,-379.683|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/cobblestonespec_black.003" Size=0.5,2.501,3.671 Anchored CFrame=-333.351,7.248,-379.704|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/cobblestonespec_black.004" Size=0.5,2.501,3.671 Anchored CFrame=-333.351,7.248,-373.859|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/cobblestonespec_black.005" Size=0.541,2.613,3.663 Anchored CFrame=-337.515,7.369,-373.88|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+    MeshPart "Meshes/glasslob_steklo" Size=6.062,1.73,3.233 Anchored CFrame=-332.09,9.078,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828812853" TextureID="rbxassetid://5828812853" Transparency=0.8
+    MeshPart "Meshes/glasspered_steklo" Size=0.73,1.624,3.409 Anchored CFrame=-334.073,9.154,-373.958|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813162" TextureID="rbxassetid://5828813162" Transparency=0.8
+    MeshPart "Meshes/glasspered_steklo.001" Size=0.73,1.624,3.409 Anchored CFrame=-334.073,9.154,-379.605|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813162" TextureID="rbxassetid://5828813162" Transparency=0.8
+    MeshPart "Meshes/glassshader_brake_0" Size=6.324,0.395,0.882 Anchored CFrame=-342.998,8.141,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#970000 Massless Material=SmoothPlastic Reflectance=0.02 RenderFidelity=Precise
+    MeshPart "Meshes/glassshader_brake_0.001" Size=5.958,0.15,0.35 Anchored CFrame=-344.045,6.606,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813597" TextureID="rbxassetid://5828813597"
+    MeshPart "Meshes/glassshader_brake_0.002" Size=1.362,0.074,0.05 Anchored CFrame=-339.855,9.908,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813597" TextureID="rbxassetid://5828813597"
+    MeshPart "Meshes/glassshader_brake_0.003" Size=1.362,0.074,0.05 Anchored CFrame=-339.867,9.908,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813597" TextureID="rbxassetid://5828813597"
+    MeshPart "Meshes/glassshader_turn_left_0" Size=0.594,0.084,0.638 Anchored CFrame=-332.399,8.668,-380.661|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813765" TextureID="rbxassetid://5828813765"
+    MeshPart "Meshes/glassshader_turn_right_0" Size=0.594,0.084,0.638 Anchored CFrame=-332.399,8.668,-372.901|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828813933" TextureID="rbxassetid://5828813933"
+    MeshPart "Meshes/glasszad_steklo" Size=0.715,1.441,3.847 Anchored CFrame=-338.007,9.265,-379.578|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814905" TextureID="rbxassetid://5828814905" Transparency=0.8
+    MeshPart "Meshes/glasszad_steklo.001" Size=0.715,1.441,3.848 Anchored CFrame=-338.007,9.265,-373.985|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814905" TextureID="rbxassetid://5828814905" Transparency=0.8
+    MeshPart "Meshes/glasszad_steklo.002" Size=5.224,1.188,3.103 Anchored CFrame=-340.877,9.46,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814905" TextureID="rbxassetid://5828814905" Transparency=0.8
+    MeshPart "Meshes/grille3a_diff" Size=4.464,0.897,9.497 Anchored CFrame=-335.968,8.605,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811612" TextureID="rbxassetid://5828811612"
+    MeshPart "Meshes/grille4a_diff" Size=5.367,0.186,1.372 Anchored CFrame=-329.889,8,-376.78|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811710" TextureID="rbxassetid://5828811710"
+    MeshPart "Meshes/grille5a_diff" Size=0.096,0.47,1.519 Anchored CFrame=-342.53,7.274,-379.361|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811807" TextureID="rbxassetid://5828811807"
+    MeshPart "Meshes/int_glow" Size=2.154,0.065,0.384 Anchored CFrame=-332.596,7.821,-374.944|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811906" TextureID="rbxassetid://5828811906" Transparency=0.02 {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow.001" Size=0.165,0.914,0.403 Anchored CFrame=-336.384,7.819,-379.622|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811906" TextureID="rbxassetid://5828811906" Transparency=0.02 {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow.002" Size=0.245,1.571,0.486 Anchored CFrame=-332.621,7.799,-379.732|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811906" TextureID="rbxassetid://5828811906" Transparency=0.02 {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow.003" Size=0.245,1.57,0.484 Anchored CFrame=-332.62,7.799,-373.83|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811906" TextureID="rbxassetid://5828811906" Transparency=0.02 {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow.004" Size=0.163,0.914,0.402 Anchored CFrame=-336.384,7.819,-373.941|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811906" TextureID="rbxassetid://5828811906" Transparency=0.02 {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow2" Size=5.633,0.058,0.219 Anchored CFrame=-332.233,8.128,-376.77|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow2.001" Size=0.081,0.085,2.28 Anchored CFrame=-337.41,8.398,-379.587|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow2.002" Size=0.08,0.155,2.413 Anchored CFrame=-333.571,8.195,-379.727|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow2.003" Size=0.082,0.155,2.413 Anchored CFrame=-333.571,8.195,-373.837|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/int_glow2.004" Size=0.081,0.085,2.281 Anchored CFrame=-337.411,8.398,-373.976|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise {
+        SpotLight "SpotLight" Angle=8 Brightness=50 Color=#0022FF Enabled=false Face=Top Range=5.6 Shadows
+    }
+    MeshPart "Meshes/interiora_diff" Size=1.169,0.927,0.478 Anchored CFrame=-333.091,7.956,-378.333|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/interiora_diff.001" Size=6.354,4.634,13.007 Anchored CFrame=-337.139,7.849,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/interiora_diff.002" Size=1.281,4.293,4.51 Anchored CFrame=-337.833,7.919,-379.761|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/interiora_diff.003" Size=0.74,3.29,4.242 Anchored CFrame=-333.31,7.281,-379.955|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/interiora_diff.004" Size=0.739,3.29,4.242 Anchored CFrame=-333.311,7.281,-373.608|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/interiora_diff.005" Size=1.281,4.293,4.51 Anchored CFrame=-337.833,7.919,-373.802|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812113" TextureID="rbxassetid://5828812113"
+    MeshPart "Meshes/leather_dark_perf" Size=3.949,2.889,2.322 Anchored CFrame=-334.87,7.337,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812204" TextureID="rbxassetid://5828812204"
+    MeshPart "Meshes/leather_paintable" Size=5.919,3.298,6.779 Anchored CFrame=-336.527,7.707,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_paintable.001" Size=5.833,1.157,5.52 Anchored CFrame=-332.956,7.299,-376.783|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_paintable.002" Size=0.553,1.225,3.14 Anchored CFrame=-337.469,7.71,-379.615|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_paintable.003" Size=0.379,1.275,3.448 Anchored CFrame=-333.387,7.558,-379.667|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_paintable.004" Size=0.379,1.275,3.448 Anchored CFrame=-333.387,7.558,-373.895|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_paintable.005" Size=0.552,1.225,3.14 Anchored CFrame=-337.469,7.71,-373.948|0,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828812301" TextureID="rbxassetid://5828812301"
+    MeshPart "Meshes/leather_perf" Size=5.107,3.021,3.044 Anchored CFrame=-334.961,7.403,-376.786|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828812402" TextureID="rbxassetid://5828812402"
+    MeshPart "Meshes/lighta_diff" Size=0.622,0.657,0.175 Anchored CFrame=-333.089,7.851,-378.333|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828812660" TextureID="rbxassetid://5828812660"
+    MeshPart "Meshes/lighta_red" Size=4.533,0.505,0.283 Anchored CFrame=-343.916,7.988,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828812754" TextureID="rbxassetid://5828812754"
+    MeshPart "Meshes/pebbcar_bmw_f90_2017_badge_d" Size=0.125,0.934,0.662 Anchored CFrame=-336.414,7.821,-379.598|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828810343" TextureID="rbxassetid://5828810343" Transparency=0.02
+    MeshPart "Meshes/pebbcar_bmw_f90_2017_badge_d.001" Size=0.248,1.844,1.126 Anchored CFrame=-332.727,7.882,-379.721|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828810343" TextureID="rbxassetid://5828810343" Transparency=0.02
+    MeshPart "Meshes/pebbcar_bmw_f90_2017_badge_d.002" Size=0.248,1.844,1.126 Anchored CFrame=-332.727,7.882,-373.842|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828810343" TextureID="rbxassetid://5828810343" Transparency=0.02
+    MeshPart "Meshes/pebbcar_bmw_f90_2017_badge_d.003" Size=0.125,0.934,0.662 Anchored CFrame=-336.414,7.821,-373.965|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828810343" TextureID="rbxassetid://5828810343" Transparency=0.02
+    MeshPart "Meshes/pebbcarpet" Size=5.742,3.259,13.445 Anchored CFrame=-337.121,7.14,-376.836|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828810856" TextureID="rbxassetid://5828810856"
+    MeshPart "Meshes/pebbgauges" Size=2.715,1.121,0.864 Anchored CFrame=-332.39,8.064,-377.643|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828811354" TextureID="rbxassetid://5828811354"
+    MeshPart "Meshes/pebbleshared_car_chassis_d" Size=7.304,2.831,18.83 Anchored CFrame=-334.679,6.416,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828814241" TextureID="rbxassetid://5828814241"
+    MeshPart "Meshes/pebbleshared_car_chassis_d.001" Size=7.27,2.287,3.405 Anchored CFrame=-328.486,6.313,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://5828814241" TextureID="rbxassetid://5828814241"
+    MeshPart "Meshes/plastic_plastic_grey" Size=1.214,0.907,0.363 Anchored CFrame=-333.106,7.956,-378.334|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.001" Size=5.37,0.205,0.572 Anchored CFrame=-333.883,6.143,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.002" Size=6.539,2.729,12.901 Anchored CFrame=-337.16,7.026,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.003" Size=0.585,1.033,2.777 Anchored CFrame=-337.444,7.834,-379.788|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.004" Size=0.474,0.9,3.467 Anchored CFrame=-333.501,7.81,-379.836|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.005" Size=0.474,0.791,3.467 Anchored CFrame=-333.501,7.865,-373.727|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/plastic_plastic_grey.006" Size=0.585,1.033,2.777 Anchored CFrame=-337.444,7.834,-373.775|0,90,0 CanCollide=false CollisionFidelity=Default Massless RenderFidelity=Precise TextureContent="rbxassetid://5828813255" TextureID="rbxassetid://5828813255"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse" Size=1.337,0.173,1.465 Anchored CFrame=-328.811,8.157,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse.001" Size=5.718,1.148,2.643 Anchored CFrame=-333.443,7.587,-376.806|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse.002" Size=0.094,0.251,2.483 Anchored CFrame=-337.464,8.313,-379.586|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse.003" Size=0.105,0.275,2.579 Anchored CFrame=-333.63,8.134,-379.709|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse.004" Size=0.104,0.275,2.579 Anchored CFrame=-333.63,8.134,-373.854|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/smplsticcarbon_translucide_diffuse.005" Size=0.094,0.251,2.483 Anchored CFrame=-337.464,8.313,-373.977|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://5828810716" TextureID="rbxassetid://5828810716"
+    MeshPart "Meshes/tran glassbmw_m5_18_symbols_opac" Size=3.272,0.483,0.426 Anchored CFrame=-332.629,7.748,-377.844|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810413" TextureID="rbxassetid://5828810413" Transparency=0.02
+    MeshPart "Meshes/tran glassbmw_m5_18_symbols_opac.001" Size=0.05,1.223,1.321 Anchored CFrame=-332.794,7.447,-379.689|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810413" TextureID="rbxassetid://5828810413" Transparency=0.02
+    MeshPart "Meshes/tran glassbmw_m5_18_symbols_opac.002" Size=0.05,0.374,0.932 Anchored CFrame=-332.989,7.872,-373.863|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810413" TextureID="rbxassetid://5828810413" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff" Size=5.472,3.437,6.675 Anchored CFrame=-336.495,7.613,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff.001" Size=5.826,1.744,4.608 Anchored CFrame=-333.381,7.888,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff.002" Size=0.475,1.182,3.225 Anchored CFrame=-337.576,7.933,-379.577|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff.003" Size=0.326,1.444,3.329 Anchored CFrame=-333.475,7.645,-379.641|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff.004" Size=0.326,1.444,3.329 Anchored CFrame=-333.475,7.645,-373.921|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_001_diff.005" Size=0.475,1.182,3.225 Anchored CFrame=-337.576,7.933,-373.987|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814439" TextureID="rbxassetid://5828814439" Transparency=0.02
+    MeshPart "Meshes/trans cobbstitch_steer" Size=1.198,1.188,0.317 Anchored CFrame=-333.096,8.186,-378.333|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814558" TextureID="rbxassetid://5828814558" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff" Size=5.999,0.352,1.273 Anchored CFrame=-329.819,8.144,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff.001" Size=0.808,2.902,1.864 Anchored CFrame=-338.905,7.707,-379.816|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff.002" Size=0.341,1.753,0.169 Anchored CFrame=-335.165,6.799,-380.072|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff.003" Size=0.341,1.753,0.169 Anchored CFrame=-335.165,6.799,-373.491|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff.004" Size=0.808,2.902,1.864 Anchored CFrame=-338.905,7.707,-373.747|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glassbadgea_diff.005" Size=6.388,1.937,7.566 Anchored CFrame=-335.094,6.678,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810099" TextureID="rbxassetid://5828810099" Transparency=0.02
+    MeshPart "Meshes/trans glasscar_bmw_f90_2017_badge_d" Size=0.178,0.658,0.169 Anchored CFrame=-333.286,7.962,-378.333|90,52.013,-90 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810624" TextureID="rbxassetid://5828810624" Transparency=0.02
+    MeshPart "Meshes/trans glasscar_bmw_f90_2017_badge_d.001" Size=7.072,1.114,2.149 Anchored CFrame=-326.432,7.108,-376.795|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810624" TextureID="rbxassetid://5828810624" Transparency=0.02
+    MeshPart "Meshes/trans glasscar_bmw_f90_2017_badge_d.002" Size=6.363,0.064,3.714 Anchored CFrame=-334.841,5.977,-376.781|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810624" TextureID="rbxassetid://5828810624" Transparency=0.02
+    MeshPart "Meshes/trans glasscar_bmw_f90_2017_badge_d.003" Size=0.332,0.178,0.28 Anchored CFrame=-325.491,7.561,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810624" TextureID="rbxassetid://5828810624" Transparency=0.02
+    MeshPart "Meshes/trans glasscar_bmw_f90_2017_badge_d.004" Size=0.313,0.313,0.05 Anchored CFrame=-344.189,8.427,-376.782|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810624" TextureID="rbxassetid://5828810624" Transparency=0.02
+    Seat "Seat" Size=1.261,1,1.2 Anchored BottomSurface=Smooth CFrame=-337.511,6.398,-375.223|0,-90,0 CanCollide=false Color=#1B2A35 Material=Fabric TopSurface=Smooth Transparency=1
+    Seat "Seat" Size=1.261,1,1.2 Anchored BottomSurface=Smooth CFrame=-334.188,6.398,-375.223|0,-90,0 CanCollide=false Color=#1B2A35 Material=Fabric TopSurface=Smooth Transparency=1
+    Seat "Seat" Size=1.261,1,1.2 Anchored BottomSurface=Smooth CFrame=-337.511,6.398,-376.855|0,-90,0 CanCollide=false Color=#1B2A35 Material=Fabric TopSurface=Smooth Transparency=1
+    Seat "Seat" Size=1.261,1,1.2 Anchored BottomSurface=Smooth CFrame=-337.511,6.398,-378.365|0,-90,0 CanCollide=false Color=#1B2A35 Material=Fabric TopSurface=Smooth Transparency=1
+}
+VehicleSeat "DriveSeat" Size=2,1,2 Anchored BottomSurface=Smooth CFrame=-333.896,6.175,-378.38|0,-90,0 CanCollide=false Color=#00FF00 CustomPhysicalProperties=0.01,0.3,0,1,1 FrontSurface=Motor Material=SmoothPlastic MaxSpeed=0 TopSurface=Hinge Torque=0 Transparency=1 TurnSpeed=0
+Model "Misc"
+Model "Wheels" {
+    Part "FL" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-328.395,5.824,-379.724|90,0,-180 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            MeshPart "Meshes/Chrome.004" Size=0.149,2.165,2.169 Anchored CFrame=-328.366,5.897,-380.247|0,-90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+            MeshPart "Meshes/CobbBlack Textured.011" Size=0.925,2.208,2.187 Anchored CFrame=-328.364,5.884,-379.86|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+            MeshPart "Meshes/cobblestonespec_black.006" Size=0.18,0.656,0.656 Anchored CFrame=-328.364,5.889,-380.048|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+            MeshPart "Meshes/glassbrake_disc_dif" Size=0.229,1.29,1.289 Anchored CFrame=-328.364,5.888,-379.945|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810503" TextureID="rbxassetid://5828810503"
+            MeshPart "Meshes/glasswheel2a_diff" Size=0.05,0.245,0.244 Anchored CFrame=-328.363,5.892,-380.149|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814815" TextureID="rbxassetid://5828814815"
+            MeshPart "Meshes/pebbtyre_d" Size=0.922,2.747,2.749 Anchored CFrame=-328.365,5.897,-379.865|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+        }
+        Model "SuspensionFixed"
+        Weld "Weld" C1=-48.88,3.3,-226.31|90,0,-90 Part0=@"Workspace/MQ 2021 BMV 530d/Wheels/FL"
+        Model "WheelFixed"
+    }
+    Part "FR" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-328.334,5.824,-373.798|90,0,0 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            MeshPart "Meshes/Chrome.004" Size=0.149,2.165,2.169 Anchored CFrame=-328.363,5.897,-373.275|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+            MeshPart "Meshes/CobbBlack Textured.011" Size=0.925,2.208,2.187 Anchored CFrame=-328.366,5.884,-373.663|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+            MeshPart "Meshes/cobblestonespec_black.006" Size=0.18,0.656,0.656 Anchored CFrame=-328.365,5.889,-373.474|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+            MeshPart "Meshes/glassbrake_disc_dif" Size=0.229,1.29,1.289 Anchored CFrame=-328.365,5.888,-373.577|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810503" TextureID="rbxassetid://5828810503"
+            MeshPart "Meshes/glasswheel2a_diff" Size=0.05,0.245,0.244 Anchored CFrame=-328.366,5.892,-373.373|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814815" TextureID="rbxassetid://5828814815"
+            MeshPart "Meshes/pebbtyre_d" Size=0.922,2.747,2.749 Anchored CFrame=-328.365,5.897,-373.657|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+        }
+        Model "SuspensionFixed"
+        Weld "Weld" C1=-48.88,3.3,-226.31|90,0,-90 Part0=@"Workspace/MQ 2021 BMV 530d/Wheels/FR"
+        Model "WheelFixed"
+    }
+    Part "RL" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-340.132,5.824,-379.724|90,0,-180 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            MeshPart "Meshes/Chrome.004" Size=0.149,2.165,2.169 Anchored CFrame=-340.102,5.897,-380.247|0,-90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+            MeshPart "Meshes/CobbBlack Textured.011" Size=0.925,2.208,2.187 Anchored CFrame=-340.1,5.884,-379.86|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+            MeshPart "Meshes/cobblestonespec_black.006" Size=0.18,0.656,0.656 Anchored CFrame=-340.101,5.889,-380.048|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+            MeshPart "Meshes/glassbrake_disc_dif" Size=0.229,1.29,1.289 Anchored CFrame=-340.101,5.888,-379.945|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810503" TextureID="rbxassetid://5828810503"
+            MeshPart "Meshes/glasswheel2a_diff" Size=0.05,0.245,0.244 Anchored CFrame=-340.1,5.892,-380.148|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814815" TextureID="rbxassetid://5828814815"
+            MeshPart "Meshes/pebbtyre_d" Size=0.922,2.747,2.749 Anchored CFrame=-340.101,5.897,-379.865|0,-90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+        }
+        Model "SuspensionFixed"
+        Weld "Weld" C1=-48.88,3.3,-226.31|90,0,-90 Part0=@"Workspace/MQ 2021 BMV 530d/Wheels/RL"
+        Model "WheelFixed"
+    }
+    Part "RR" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-340.07,5.824,-373.798|90,0,0 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            MeshPart "Meshes/Chrome.004" Size=0.149,2.165,2.169 Anchored CFrame=-340.1,5.897,-373.275|0,90,0 CanCollide=false CollisionFidelity=Default Color=#CDCDCD Massless Material=SmoothPlastic Reflectance=0.314 RenderFidelity=Precise
+            MeshPart "Meshes/CobbBlack Textured.011" Size=0.925,2.208,2.187 Anchored CFrame=-340.102,5.884,-373.662|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+            MeshPart "Meshes/cobblestonespec_black.006" Size=0.18,0.656,0.656 Anchored CFrame=-340.102,5.889,-373.474|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Cobblestone RenderFidelity=Precise TextureContent="rbxassetid://5828814342" TextureID="rbxassetid://5828814342"
+            MeshPart "Meshes/glassbrake_disc_dif" Size=0.229,1.29,1.289 Anchored CFrame=-340.102,5.888,-373.577|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828810503" TextureID="rbxassetid://5828810503"
+            MeshPart "Meshes/glasswheel2a_diff" Size=0.05,0.245,0.244 Anchored CFrame=-340.103,5.892,-373.373|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Glass RenderFidelity=Precise TextureContent="rbxassetid://5828814815" TextureID="rbxassetid://5828814815"
+            MeshPart "Meshes/pebbtyre_d" Size=0.922,2.747,2.749 Anchored CFrame=-340.101,5.897,-373.657|0,90,0 CanCollide=false CollisionFidelity=Default Massless Material=Pebble RenderFidelity=Precise TextureContent="rbxassetid://1539341292" TextureID="rbxassetid://1539341292"
+        }
+        Model "SuspensionFixed"
+        Weld "Weld" C1=-48.88,3.3,-226.31|90,0,-90 Part0=@"Workspace/MQ 2021 BMV 530d/Wheels/RR"
+        Model "WheelFixed"
+    }
+}

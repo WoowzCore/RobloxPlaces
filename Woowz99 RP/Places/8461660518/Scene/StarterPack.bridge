@@ -1,0 +1,12 @@
+StarterPack "StarterPack" {
+    Tool "the" Grip=0,0,0|0,-90,0 {
+        RemoteEvent "Bounce"
+        MeshPart "Handle" Size=1.788,3.437,2.31 CFrame=276.35,19.311,-148.782 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://430325596" TextureID="rbxassetid://430325596" {
+            Trail "Trail" Attachment0=@"StarterPack/the/Handle/trailpog" Attachment1=@"StarterPack/the/Handle/dasw" Color=0:#FFB22C,1:#FFB22C Lifetime=0.2 LightInfluence=1
+            Attachment "dasw" CFrame=0,-1,0
+            Attachment "trailpog" CFrame=0,1,0
+        }
+        LocalScript "LocalScript" @src="Scripts/StarterPack/the/LocalScript.luau"
+        Script "Script" @src="Scripts/StarterPack/the/Script.luau"
+    }
+}

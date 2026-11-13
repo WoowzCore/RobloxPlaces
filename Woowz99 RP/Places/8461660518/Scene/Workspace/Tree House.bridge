@@ -1,0 +1,1022 @@
+Model "Flying Carpet" {
+    Model "ColoredParts" {
+        Part "Center" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,78.256,-651.3|179.955,0,-180 CanCollide=false Color=#FF00BF FrontSurface=Glue LeftSurface=Glue Material=Marble RightSurface=Glue TopSurface=Glue Transparency=0.7 {
+            CylinderMesh "Mesh"
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,81.556,-651.302|179.955,0,-180 CanCollide=false Color=#FFFF00 FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,74.932,-651.297|179.955,0,0 CanCollide=false Color=#12EED4 FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TouchMe" Size=2.549,6.54,2.797 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,78.256,-651.3|179.955,-45,-180 CanCollide=false Color=#00FFFF FrontSurface=Glue LeftSurface=Glue Material=Marble RightSurface=Glue TopSurface=Glue Transparency=1 {
+            CylinderMesh "Mesh"
+        }
+    }
+    Part "Pipe" Size=4.719,0.2,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,74.886,-651.297|179.955,0,0 CanCollide=false Color=#00FF00 FrontSurface=Glue LeftSurface=Glue RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh" Scale=1,0.775,1
+        Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=23.637,0.114,-22.158|90.045,0,-90 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Flying Carpet/Pipe"
+    }
+    Part "Pipe" Size=4.719,0.2,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,81.602,-651.302|179.955,0,-180 CanCollide=false Color=#FF0000 FrontSurface=Glue LeftSurface=Glue Material=Concrete RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh" Scale=1,0.775,1
+    }
+    Part "Scene" Size=1.619,1.705,1.557 Anchored BackSurface=Glue BottomSurface=Glue CFrame=266.241,78.503,-651.3|89.955,0,180 CanCollide=false FrontSurface=Glue LeftSurface=Glue Material=Concrete RightSurface=Glue TopSurface=Glue {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=223079737" MeshId="http://www.roblox.com/asset/?id=223079737" MeshType=FileMesh Scale=1.125,1.125,1.125 TextureContent="http://www.roblox.com/asset/?id=223080038" TextureId="http://www.roblox.com/asset/?id=223080038"
+    }
+    Folder "Settings" {
+        BrickColorValue "RegenColor" Value="Salmon"
+        IntValue "RegenTime" Value=5
+        BrickColorValue "StartColor" Value="Lime green"
+        StringValue "WeaponName" Value="RainbowMagicCarpet"
+    }
+    Script "Settings/Instructions" @src="Scripts/Workspace/Tree House/Flying Carpet/Settings%2FInstructions.luau"
+}
+Model "Gravity Coil Giver" {
+    Part "Block" Size=5.16,6.8,3.97 Anchored BottomSurface=SmoothNoOutlines CFrame=273.009,78.19,-651.096|0,90,0 TopSurface=SmoothNoOutlines Transparency=9 {
+        CylinderMesh "Mesh"
+        PointLight "PointLight" Color=#27B4FF Shadows
+        Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-21.956,-3.401,16.869|-90,0,180 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Gravity Coil Giver/Block"
+    }
+    Part "Center" Size=5.929,0.1,5.1 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.985,81.438,-651.106|0,90,0 CanCollide=false Color=#335882 FrontSurface=Glue LeftSurface=Glue Material=Neon RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Center" Size=5.929,0.35,5.047 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.985,81.438,-651.106|0,90,0 CanCollide=false FrontSurface=Glue LeftSurface=Glue Material=Metal RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Center" Size=5.929,0.1,5.1 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.985,74.938,-651.106|0,90,0 CanCollide=false Color=#335882 FrontSurface=Glue LeftSurface=Glue Material=Neon RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Center" Size=5.929,0.35,5.047 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.983,74.965,-651.106|0,90,0 CanCollide=false FrontSurface=Glue LeftSurface=Glue Material=Metal RightSurface=Glue TopSurface=Glue {
+        Glue "Glue" C0=0,-0.175,0|90,0,0 C1=-31.01,0.5,1.03|90,0,0 F0=-2.964,-2.523,0 F1=-2.964,2.523,0 F2=2.964,2.523,0 F3=2.964,-2.523,0 Part0=@"Workspace/Tree House/Gravity Coil Giver/Center~4"
+        CylinderMesh "Mesh"
+        Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-21.966,-0.173,16.894|-90.013,0,180 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Gravity Coil Giver/Center~4"
+    }
+    Part "Giver" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.995,78.187,-651.105|0,90,0 CanCollide=false Color=#0D69AC FrontSurface=Glue LeftSurface=Glue Material=ForceField RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+        Script "Script" @src="Scripts/Workspace/Tree House/Gravity Coil Giver/Giver/Script.luau"
+    }
+    Part "Part" Size=3.03,1.02,2 Anchored BottomSurface=SmoothNoOutlines CFrame=273.1,78.106,-650.977|90,0,-90 TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshId="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=16606141" TextureId="http://www.roblox.com/asset/?id=16606141"
+    }
+}
+Model "Hat Remover" {
+    Part "Part" Size=4.9,0.2,4.8 CFrame=232.884,90.97,-706.61|99.758,-89.322,99.027 Color=#FF0000 {
+        Script "Hat Remover" @src="Scripts/Workspace/Tree House/Hat Remover/Part/Hat Remover.luau"
+        CylinderMesh "Mesh"
+        ManualWeld "Part Terrain Joint" Part1=@"Workspace/Tree House/Hat Remover/Part"
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=10.62,0.024,4.826|-90.669,-0.732,-89.894 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat Remover/Part"
+    }
+    Part "Part" Size=6,4,1 Anchored CFrame=229.285,93.767,-706.385|99.758,-89.322,99.027 CanCollide=false Transparency=1 {
+        SurfaceGui "SurfaceGui" {
+            TextBox "TextBox" Size=0,800,0,600 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=4 FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="Remove Hat" TextColor3=#FF0000 TextScaled TextSize=14 TextWrapped
+        }
+    }
+}
+Model "Hat1" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=232.634,95.473,-682.847|-0.044,-88.189,0.932 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1051545 " MeshId="http://www.roblox.com/asset/?id=1051545 " MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=1051546 " TextureId="http://www.roblox.com/asset/?id=1051546 "
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat1/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=232.579,92.142,-682.898|0.004,-0.375,-0.001 Material=Sand TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.235,95.413,-680.592|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.579,93.614,-682.898|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.264,95.414,-685.192|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=232.579,90.857,-682.858|0.004,-0.375,-0.001 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.575,95.414,-685.208|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.545,95.413,-680.609|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.925,95.414,-685.214|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.894,95.413,-680.614|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=230.929,95.414,-682.869|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.579,97.19,-682.898|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=234.269,95.414,-682.847|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=233.724,92.26,-682.87|0.004,-0.375,-0.001 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat1/Touch/Script.luau"
+    }
+}
+Model "Hat10" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=265.504,95.521,-718.361|-180,-1.809,-179.02 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=21057410" MeshId="http://www.roblox.com/asset/?id=21057410" MeshType=FileMesh Scale=1.05,1.05,1.05 TextureContent="http://www.roblox.com/asset/?id=21057378" TextureId="http://www.roblox.com/asset/?id=21057378"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat10/Hat/Rotation.luau"
+    }
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=265.514,90.901,-718.416|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.661,-0.1,37.328|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat10/Part"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=265.525,95.461,-720.066|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=265.554,97.239,-718.416|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=265.503,95.461,-716.726|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=265.554,93.661,-718.416|179.991,-89.623,179.992 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=263.248,95.461,-716.761|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=263.265,95.461,-718.451|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=263.27,95.461,-720.101|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=267.848,95.461,-716.73|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=265.554,92.187,-718.416|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.661,-1.386,37.368|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat10/Part~10"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=267.871,95.461,-720.071|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=267.865,95.461,-718.421|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=265.527,92.307,-717.271|179.991,-89.623,179.992 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat10/Touch/Script.luau"
+    }
+}
+Model "Hat11" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=248.485,95.502,-682.176|179.978,88.189,-178.994 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=19999424" MeshId="http://www.roblox.com/asset/?id=19999424" MeshType=FileMesh Scale=1.07,1.07,1.07 TextureContent="http://www.roblox.com/asset/?id=51150837" TextureId="http://www.roblox.com/asset/?id=51150837"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat11/Hat/Rotation.luau"
+    }
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=248.541,90.89,-682.165|-179.996,0.375,-179.999 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=20.423,-0.088,-12.299|-89.996,0.001,0.375 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat11/Part"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=248.54,97.219,-682.125|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=248.545,95.442,-679.815|-179.816,-89.625,-179.82 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=250.191,95.442,-682.154|-179.996,0.375,-179.999 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=248.54,92.171,-682.125|-179.996,0.375,-179.999 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=20.423,-1.369,-12.259|-89.996,0.001,0.375 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat11/Part~5"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=246.85,95.442,-682.176|-179.996,0.375,-179.999 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=248.54,93.644,-682.125|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=246.885,95.443,-684.431|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=250.195,95.442,-679.809|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=246.855,95.442,-679.831|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=248.575,95.443,-684.415|-179.816,-89.625,-179.82 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=250.225,95.442,-684.409|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=247.396,92.291,-682.153|-179.996,0.375,-179.999 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat11/Touch/Script.luau"
+    }
+}
+Model "Hat12" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=248.083,95.518,-675.762|179.978,88.189,-178.994 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=20637493" MeshId="http://www.roblox.com/asset/?id=20637493" MeshType=FileMesh Scale=1,0.9,1 TextureContent="http://www.roblox.com/asset/?id=21128612" TextureId="http://www.roblox.com/asset/?id=21128612"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat12/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=248.138,97.236,-675.711|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=246.453,95.458,-673.417|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=249.788,95.458,-675.74|-179.996,0.375,-179.999 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=249.793,95.458,-673.395|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=246.483,95.459,-678.017|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=248.138,90.903,-675.751|-179.996,0.375,-179.999 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=20.062,-0.101,-5.882|-89.996,0.001,0.375 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat12/Part~6"
+    }
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=248.138,92.187,-675.711|-179.996,0.375,-179.999 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=20.062,-1.385,-5.842|-89.996,0.001,0.375 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat12/Part~7"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=248.138,93.66,-675.711|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=249.823,95.459,-677.995|-179.996,0.375,-179.999 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=248.173,95.459,-678.001|-179.816,-89.625,-179.82 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=246.448,95.458,-675.762|-179.996,0.375,-179.999 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=248.142,95.458,-673.401|-179.816,-89.625,-179.82 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=246.993,92.307,-675.739|-179.996,0.375,-179.999 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat12/Touch/Script.luau"
+    }
+}
+Model "Hat2" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=232.635,95.52,-676.049|-0.044,-88.189,0.932 Color=#111111 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1577360" MeshId="http://www.roblox.com/asset/?id=1577360" MeshType=FileMesh Scale=1,1.3,1 TextureContent="http://www.roblox.com/asset/?id=1577349" TextureId="http://www.roblox.com/asset/?id=1577349"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat2/Hat/Rotation.luau"
+    }
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=232.579,90.902,-676.06|0.004,-0.375,-0.001 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=-4.502,-0.1,6.088|-90.004,-0.001,-179.625 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat2/Part"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.925,95.461,-678.415|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.895,95.46,-673.815|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.235,95.46,-673.793|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.545,95.46,-673.809|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.265,95.46,-678.393|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.58,93.661,-676.099|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=232.58,92.187,-676.1|0.004,-0.375,-0.001 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-17,1,13|-90,0,-180 C1=-4.502,-1.386,6.128|-90.004,-0.001,-179.625 Part0=@"Workspace/Tree House/Treehouse/Part~113" Part1=@"Workspace/Tree House/Hat2/Part~8"
+    }
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.575,95.461,-678.409|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.58,97.234,-676.099|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=230.93,95.46,-676.07|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=234.269,95.46,-676.048|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=233.725,92.307,-676.072|0.004,-0.375,-0.001 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat2/Touch/Script.luau"
+    }
+}
+Model "Hat3" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=232.417,95.472,-689.613|-0.044,-88.189,0.932 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1271547" MeshId="http://www.roblox.com/asset/?id=1271547" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=5712542" TextureId="http://www.roblox.com/asset/?id=5712542"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat3/Hat/Rotation.luau"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.708,95.412,-691.979|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=232.363,92.14,-689.663|0.004,-0.375,-0.001 Material=Sand TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=234.053,95.412,-689.612|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.018,95.412,-687.357|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.363,93.613,-689.663|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=232.362,90.853,-689.623|0.004,-0.375,-0.001 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=234.048,95.412,-691.957|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.328,95.412,-687.373|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=232.358,95.412,-691.973|0.184,89.625,-0.18 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=232.363,97.188,-689.663|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=230.678,95.412,-687.379|0.004,-0.375,-0.001 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=230.713,95.412,-689.634|0.004,-0.375,-0.001 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=233.507,92.26,-689.635|0.004,-0.375,-0.001 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat3/Touch/Script.luau"
+    }
+}
+Model "Hat4" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=247.313,95.519,-718.041|-180,-1.809,-179.02 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1285237" MeshId="http://www.roblox.com/asset/?id=1285237" MeshType=FileMesh Scale=1.1,1.1,1.1 TextureContent="http://www.roblox.com/asset/?id=1285232" TextureId="http://www.roblox.com/asset/?id=1285232"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat4/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=247.363,92.186,-718.096|179.991,-89.623,179.992 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.222,-1.385,19.18|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat4/Part"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=245.079,95.459,-719.781|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=247.313,95.459,-716.406|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=249.674,95.459,-718.101|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=245.074,95.459,-718.131|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=249.658,95.459,-716.411|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=245.058,95.459,-716.441|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=247.363,97.236,-718.096|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=247.335,95.459,-719.746|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=247.324,90.902,-718.096|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.222,-0.101,19.14|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat4/Part~10"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=249.68,95.459,-719.751|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=247.363,93.659,-718.096|179.991,-89.623,179.992 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=247.336,92.306,-716.951|179.991,-89.623,179.992 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat4/Touch/Script.luau"
+    }
+}
+Model "Hat5" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=266.515,95.52,-701.234|0,1.809,0.98 Color=#111111 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=38965549" MeshId="http://www.roblox.com/asset/?id=38965549" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=38965529" TextureId="http://www.roblox.com/asset/?id=38965529"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat5/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=266.464,97.235,-701.179|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=268.754,95.461,-701.144|180,0.377,-180 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=264.154,95.461,-701.175|180,0.377,-180 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=264.17,95.461,-702.864|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=264.148,95.461,-699.525|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=266.504,90.901,-701.179|-0.009,89.623,0.009 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=-5.431,-0.1,-38.431|-90,0,90.377 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat5/Part~6"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=266.516,95.461,-702.869|-0.009,89.623,0.009 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=266.464,92.188,-701.179|-0.009,89.623,0.009 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=-5.431,-1.387,-38.392|-90,0,90.377 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat5/Part~8"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=266.493,95.461,-699.529|-0.009,89.623,0.009 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=268.77,95.461,-702.834|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=268.748,95.461,-699.494|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=266.464,93.661,-701.179|-0.009,89.623,0.009 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=266.492,92.309,-702.324|-0.009,89.623,0.009 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat5/Touch/Script.luau"
+    }
+}
+Model "Hat6" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=272.64,95.517,-717.997|-180,-1.809,-179.02 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1285237" MeshId="http://www.roblox.com/asset/?id=1285237" MeshType=FileMesh Scale=1.1,1.1,1.1 TextureContent="http://www.roblox.com/asset/?id=67996500" TextureId="http://www.roblox.com/asset/?id=67996500"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat6/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=272.69,97.234,-718.052|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=272.65,90.904,-718.052|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.344,-0.102,44.466|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat6/Part~2"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=270.384,95.458,-716.397|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=272.661,95.458,-719.702|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=272.639,95.458,-716.362|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=270.406,95.458,-719.737|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=270.4,95.458,-718.087|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=275,95.458,-718.056|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=272.69,92.186,-718.052|179.991,-89.623,179.992 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.344,-1.385,44.506|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat6/Part~9"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=272.69,93.659,-718.052|179.991,-89.623,179.992 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=274.984,95.458,-716.366|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=275.006,95.458,-719.707|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=272.663,92.306,-716.907|179.991,-89.623,179.992 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat6/Touch/Script.luau"
+    }
+}
+Model "Hat7" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=233.398,95.519,-718.086|-180,-1.809,-179.02 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1323306" MeshId="http://www.roblox.com/asset/?id=1323306" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=1323305" TextureId="http://www.roblox.com/asset/?id=1323305" VertexColor=0.6,0.6,1
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat7/Hat/Rotation.luau"
+    }
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=235.758,95.459,-718.145|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=233.419,95.459,-719.791|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=233.449,93.661,-718.141|179.991,-89.623,179.992 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=233.397,95.459,-716.451|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=235.742,95.459,-716.456|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=233.408,90.901,-718.141|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.175,-0.1,5.225|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat7/Part~6"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=231.142,95.459,-716.486|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=233.449,92.186,-718.141|179.991,-89.623,179.992 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.175,-1.385,5.265|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat7/Part~8"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=233.449,97.237,-718.141|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=231.158,95.459,-718.176|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=235.764,95.459,-719.796|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=231.164,95.459,-719.826|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=233.421,92.306,-716.996|179.991,-89.623,179.992 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat7/Touch/Script.luau"
+    }
+}
+Model "Hat8" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=273.691,95.52,-701.084|0,1.809,0.98 Color=#F8F8F8 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=21057410" MeshId="http://www.roblox.com/asset/?id=21057410" MeshType=FileMesh Scale=1.05,1.05,1.05 TextureContent="http://www.roblox.com/asset/?id=48544900" TextureId="http://www.roblox.com/asset/?id=48544900"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat8/Hat/Rotation.luau"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=271.347,95.461,-702.714|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=273.681,90.901,-701.029|-0.009,89.623,0.009 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=-5.328,-0.1,-45.609|-90,0,90.377 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat8/Part~2"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=273.67,95.461,-699.379|-0.009,89.623,0.009 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=275.947,95.461,-702.684|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=275.931,95.461,-700.994|180,0.377,-180 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=271.325,95.461,-699.374|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=273.692,95.461,-702.719|-0.009,89.623,0.009 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=273.641,93.662,-701.029|-0.009,89.623,0.009 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=273.641,92.188,-701.029|-0.009,89.623,0.009 Material=Sand TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=-5.328,-1.387,-45.569|-90,0,90.377 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat8/Part~9"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=275.925,95.461,-699.344|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=273.641,97.237,-701.029|-0.009,89.623,0.009 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=271.331,95.461,-701.024|180,0.377,-180 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=273.669,92.307,-702.174|-0.009,89.623,0.009 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat8/Touch/Script.luau"
+    }
+}
+Model "Hat9" {
+    Part "Hat" Size=0.93,0.98,1.05 Anchored BottomSurface=Smooth CFrame=240.569,95.518,-718.066|-180,-1.809,-179.02 Color=#111111 Material=Granite TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1031410" MeshId="http://www.roblox.com/asset/?id=1031410" MeshType=FileMesh Scale=1.1,1.1,1.1 TextureContent="http://www.roblox.com/asset/?id=65268332" TextureId="http://www.roblox.com/asset/?id=65268332"
+        Script "Rotation" @src="Scripts/Workspace/Tree House/Hat9/Hat/Rotation.luau"
+    }
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=240.619,97.235,-718.12|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=242.913,95.458,-716.435|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=238.313,95.458,-716.465|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=240.59,95.458,-719.771|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=242.935,95.458,-719.775|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,2.77,4.99 Anchored BottomSurface=Smooth CFrame=240.619,92.186,-718.12|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.202,-1.385,12.435|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat9/Part~6"
+    }
+    Part "Part" Size=0.4,3.4,0.4 Anchored BottomSurface=Smooth CFrame=238.335,95.458,-719.806|179.991,-89.623,179.992 Color=#F8F8F8 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.74,0.2,4.99 Anchored BottomSurface=Smooth CFrame=240.619,93.659,-718.12|179.991,-89.623,179.992 Color=#F8F8F8 Material=Granite TopSurface=Smooth
+    Part "Part" Size=4.32,0.2,5.57 Anchored BottomSurface=Smooth CFrame=240.579,90.901,-718.121|179.991,-89.623,179.992 Material=DiamondPlate TopSurface=Smooth {
+        Weld "Weld" C0=-27,1,13|-90,0,-180 C1=22.202,-0.1,12.395|-90,0,-89.623 Part0=@"Workspace/Tree House/Treehouse/Part~205" Part1=@"Workspace/Tree House/Hat9/Part~9"
+    }
+    Part "Part" Size=0.2,3.4,4.51 Anchored BottomSurface=Smooth CFrame=240.568,95.458,-716.431|179.991,-89.623,179.992 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=238.329,95.458,-718.155|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Part" Size=0.2,3.4,3.25 Anchored BottomSurface=Smooth CFrame=242.929,95.458,-718.125|0,-0.377,0 Color=#002060 Material=Ice TopSurface=Smooth Transparency=0.7
+    Part "Touch" Size=1.85,2.29,4.57 Anchored BottomSurface=Smooth CFrame=240.591,92.306,-716.976|179.991,-89.623,179.992 Color=#0D69AC Material=Fabric TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/Tree House/Hat9/Touch/Script.luau"
+    }
+}
+Model "Korblox General Giver" {
+    Model "Extras" {
+        Part "Center" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=279.68,78.631,-636.295|0,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=Marble RightSurface=Glue TopSurface=Glue Transparency=0.7 {
+            CylinderMesh "Mesh"
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=279.68,82.177,-636.295|0,90,0 FrontSurface=Glue LeftSurface=Glue Material=Concrete RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=279.679,75.06,-636.295|180,90,0 FrontSurface=Glue LeftSurface=Glue RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=279.679,75.307,-636.295|180,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=279.68,81.931,-636.295|0,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+    }
+    Model "Korblox Set" {
+        Part "Korblox Mage Morph" Size=4,0.4,4.6 Anchored BottomSurface=Smooth CFrame=279.571,75.361,-636.288|0,0,179.988 Color=#0D69AC TopSurface=Smooth Transparency=1 {
+            Script "Script" @src="Scripts/Workspace/Tree House/Korblox General Giver/Korblox Set/Korblox Mage Morph/Script.luau" {
+                CharacterMesh "Korblox General Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://68241543" MeshId=68241543 OverlayTextureContent="rbxassetid://68241528" OverlayTextureId=68241528
+                CharacterMesh "Korblox General Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://68241558" MeshId=68241558 OverlayTextureContent="rbxassetid://68241528" OverlayTextureId=68241528
+                CharacterMesh "Korblox General Right Arm" BodyPart=RightArm MeshContent="rbxassetid://68241658" MeshId=68241658 OverlayTextureContent="rbxassetid://68241528" OverlayTextureId=68241528
+                CharacterMesh "Korblox General Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://68241677" MeshId=68241677 OverlayTextureContent="rbxassetid://68241528" OverlayTextureId=68241528
+                CharacterMesh "Korblox General Torso" BodyPart=Torso MeshContent="rbxassetid://68241695" MeshId=68241695 OverlayTextureContent="rbxassetid://68241528" OverlayTextureId=68241528
+            }
+        }
+    }
+    Model "Model" {
+        Part "Left Arm" Size=1,2,1 Anchored CFrame=278.192,78.76,-636.508 Color=#4B974B {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=68241543" MeshId="http://www.roblox.com/asset/?id=68241543" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=68241528" TextureId="http://www.roblox.com/asset/?id=68241528"
+        }
+        Part "Left Leg" Size=1,2,1 Anchored CFrame=279.192,76.76,-636.508 Color=#4B974B {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=68241558" MeshId="http://www.roblox.com/asset/?id=68241558" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=68241528" TextureId="http://www.roblox.com/asset/?id=68241528"
+        }
+        Part "Right Arm" Size=1,2,1 Anchored CFrame=281.192,78.76,-636.508 Color=#4B974B {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=68241658" MeshId="http://www.roblox.com/asset/?id=68241658" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=68241528" TextureId="http://www.roblox.com/asset/?id=68241528"
+        }
+        Part "Right Leg" Size=1,2,1 Anchored CFrame=280.192,76.76,-636.508 Color=#4B974B {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=68241677" MeshId="http://www.roblox.com/asset/?id=68241677" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=68241528" TextureId="http://www.roblox.com/asset/?id=68241528"
+        }
+        Part "Torso" Size=2,2,1 Anchored CFrame=279.692,78.76,-636.508 Color=#4B974B {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=68241695" MeshId="http://www.roblox.com/asset/?id=68241695" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=68241528" TextureId="http://www.roblox.com/asset/?id=68241528"
+        }
+    }
+}
+Model "Korblox Mage Giver" {
+    Model "Extras" {
+        Part "Center" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=283.373,78.669,-642.529|180,1.749,-179.996 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=Marble RightSurface=Glue TopSurface=Glue Transparency=0.7 {
+            CylinderMesh "Mesh"
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=283.373,82.216,-642.529|180,1.749,-179.996 FrontSurface=Glue LeftSurface=Glue Material=Concrete RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=283.372,75.099,-642.529|180,1.749,0.004 FrontSurface=Glue LeftSurface=Glue RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+            Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=6.911,0.31,-13.184|90,-0.004,-88.251 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Korblox Mage Giver/Extras/Pipe~2"
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=283.373,81.969,-642.529|180,1.749,-179.996 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=283.372,75.345,-642.529|180,1.749,0.004 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+    }
+    Model "Korblox Set" {
+        Part "Korblox Mage Morph" Size=4,0.4,4.6 Anchored BottomSurface=Smooth CFrame=283.376,75.399,-642.421|0.229,88.251,179.771 Color=#0D69AC TopSurface=Smooth Transparency=1 {
+            Script "Script" @src="Scripts/Workspace/Tree House/Korblox Mage Giver/Korblox Set/Korblox Mage Morph/Script.luau" {
+                CharacterMesh "Korblox Mage Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://74655289" MeshId=74655289 OverlayTextureContent="rbxassetid://74659605" OverlayTextureId=74659605
+                CharacterMesh "Korblox Mage Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://74655298" MeshId=74655298 OverlayTextureContent="rbxassetid://74659605" OverlayTextureId=74659605
+                CharacterMesh "Korblox Mage Right Arm" BodyPart=RightArm MeshContent="rbxassetid://74655309" MeshId=74655309 OverlayTextureContent="rbxassetid://74659605" OverlayTextureId=74659605
+                CharacterMesh "Korblox Mage Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://74655318" MeshId=74655318 OverlayTextureContent="rbxassetid://74659605" OverlayTextureId=74659605
+                CharacterMesh "Korblox Mage Torso" BodyPart=Torso MeshContent="rbxassetid://74659512" MeshId=74659512 OverlayTextureContent="rbxassetid://74659605" OverlayTextureId=74659605
+            }
+        }
+    }
+    Model "Model" {
+        Part "Part" Size=1,2,1 Anchored BackSurface=Weld BottomSurface=Weld CFrame=283.325,78.799,-644.023|0.229,88.251,-0.229 Color=#D5733D FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=74655309" MeshId="http://www.roblox.com/asset/?id=74655309" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=74659605" TextureId="http://www.roblox.com/asset/?id=74659605"
+        }
+        Part "Part" Size=1,2,1 Anchored BackSurface=Weld BottomSurface=Weld CFrame=283.234,78.799,-641.024|0.229,88.251,-0.229 Color=#D5733D FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=74655289" MeshId="http://www.roblox.com/asset/?id=74655289" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=74659605" TextureId="http://www.roblox.com/asset/?id=74659605"
+        }
+        Part "Part" Size=1,2,1 Anchored BackSurface=Weld BottomSurface=Weld CFrame=283.264,76.799,-642.024|0.229,88.251,-0.229 Color=#D5733D FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=74655298" MeshId="http://www.roblox.com/asset/?id=74655298" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=74659605" TextureId="http://www.roblox.com/asset/?id=74659605"
+        }
+        Part "Part" Size=1,2,1 Anchored BackSurface=Weld BottomSurface=Weld CFrame=283.295,76.799,-643.023|0.229,88.251,-0.229 Color=#D5733D FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=74655318" MeshId="http://www.roblox.com/asset/?id=74655318" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=74659605" TextureId="http://www.roblox.com/asset/?id=74659605"
+        }
+        Part "Part" Size=2,2,1 Anchored BackSurface=Weld BottomSurface=Weld CFrame=283.28,78.791,-642.524|0.229,88.251,-0.229 Color=#D5733D FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=74659512" MeshId="http://www.roblox.com/asset/?id=74659512" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=74659605" TextureId="http://www.roblox.com/asset/?id=74659605"
+        }
+    }
+}
+Part "Light" Size=1,1.2,1 Anchored CFrame=281.818,92.476,-629.01|-163.301,0,-180 Color=#FFFF00 Material=Concrete TopSurface=Smooth Transparency=1 {
+    PointLight "PointLight" Brightness=2 Range=60
+    SpecialMesh "SpecialMesh"
+    Weld "Weld" C0=-46.065,0.5,7|-90,0,-180 C1=-7.35,-0.6,10.51|-90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Part~18" Part1=@"Workspace/Tree House/Light"
+}
+Part "Light" Size=1,1.2,1 Anchored CFrame=228.19,98.501,-644.089|-180,30.036,180 Color=#FFFF00 Material=Concrete TopSurface=Smooth Transparency=1 {
+    PointLight "PointLight" Brightness=2 Range=60
+    SpecialMesh "SpecialMesh"
+}
+MeshPart "MeshPart" Size=7.215,12.535,2.922 CFrame=273.982,5.196,-657.636|93.468,-5.551,-90.002 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://430263092" TextureID="rbxassetid://430263092" {
+    Weld "Weld" C0=118.571,2.496,37.398|93.464,-5.549,-90 Part1=@"Workspace/Tree House/MeshPart"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=273.773,4.9,-665.981|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,2
+            Weld "Weld" C0=118.362,2.2,29.053|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model"
+        }
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=273.773,4.9,-657.81|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,4
+            Weld "Weld" C0=118.362,2.2,37.224|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~2"
+        }
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=265.602,4.9,-657.81|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,2
+            Weld "Weld" C0=110.191,2.2,37.224|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~3"
+        }
+        Part "Smooth Block Model" Size=2.043,0.817,2.043 Anchored BottomSurface=Smooth CFrame=285.008,4.9,-662.918|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,0.6
+            Weld "Weld" C0=129.597,2.2,32.117|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~4"
+        }
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=277.859,4.899,-653.725|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,2
+            Weld "Weld" C0=122.448,2.2,41.309|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~5"
+        }
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=269.688,4.899,-649.639|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,2
+            Weld "Weld" C0=114.277,2.2,45.395|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~6"
+        }
+        Part "Smooth Block Model" Size=2.043,0.817,2.043 Anchored BottomSurface=Smooth CFrame=260.496,4.9,-650.66|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,0.6
+            Weld "Weld" C0=105.084,2.2,44.373|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~7"
+        }
+        Part "Smooth Block Model" Size=2.043,0.817,2.043 Anchored BottomSurface=Smooth CFrame=282.966,4.899,-648.618|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,0.6
+            Weld "Weld" C0=127.554,2.2,46.416|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~8"
+        }
+        Part "Smooth Block Model" Size=4.085,0.817,4.085 Anchored BottomSurface=Smooth CFrame=261.517,4.901,-663.938|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=4,0.2,1
+            Weld "Weld" C0=106.106,2.2,31.096|0,90,0 Part1=@"Workspace/Tree House/Model/Model/Smooth Block Model~9"
+        }
+    }
+    Part "Smooth Block Model" Size=2.043,0.817,2.043 Anchored BottomSurface=Smooth CFrame=266.623,4.901,-669.045|0.004,90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+        CylinderMesh "Mesh" Scale=4,0.2,0.6
+        Weld "Weld" C0=111.213,2.2,25.989|0,90,0 Part1=@"Workspace/Tree House/Model/Smooth Block Model"
+    }
+}
+Part "Part" Size=33.17,17.18,2 Anchored BottomSurface=Smooth CFrame=273.073,83.089,-629.989|-180,0,-180 Color=#A05F35 TopSurface=Smooth
+Part "Part" Size=1,1.2,1 Anchored CFrame=263.729,44.014,-683.435|180,0,-180 Color=#FFFF00 Material=Concrete TopSurface=Smooth Transparency=1 {
+    PointLight "PointLight" Range=60
+    SpecialMesh "SpecialMesh"
+}
+Part "Part" Size=1,1.2,1 Anchored CFrame=229.167,116.774,-702.637|180,0,-180 Color=#FFFF00 Material=Concrete TopSurface=Smooth Transparency=1 {
+    PointLight "PointLight" Range=60
+    SpecialMesh "SpecialMesh"
+}
+Part "Part" Size=11.75,1.88,29.89 Anchored BottomSurface=Smooth CFrame=272.908,91.772,-636.679|-0.001,90,0 Color=#A05F35 TopSurface=Smooth
+Part "Part" Size=26.2,16.99,1.57 Anchored BottomSurface=Smooth CFrame=288.903,83.283,-642.429|-0.001,90,0 Color=#A05F35 TopSurface=Smooth {
+    Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-13.29,-8.495,0.975|-90,0,180 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Part~5"
+}
+Part "Part" Size=32.71,17,1.03 Anchored BottomSurface=Smooth CFrame=273.402,83.288,-655.014|-180,0,-180 Color=#A05F35 TopSurface=Smooth {
+    Weld "Weld" C0=-2,-1,1.5|0,-90,0 C1=16.364,7.514,-0.013|0,-90,0 Part0=@"Workspace/Tree House/Treehouse/Wedge~8" Part1=@"Workspace/Tree House/Part~6"
+    Weld "Weld" C0=2,-10.5,2|0,90,0 C1=16.364,-13.486,-3.013|0,-90,0 Part0=@"Workspace/Tree House/Treehouse/Part~181" Part1=@"Workspace/Tree House/Part~6"
+    Weld "Weld" C0=2,-7.5,0.5|0,90,0 C1=16.364,7.514,-0.013|0,-90,0 Part0=@"Workspace/Tree House/Treehouse/Part~250" Part1=@"Workspace/Tree House/Part~6"
+    Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-16.476,-8.499,-25.875|-90,0,90 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Part~6"
+}
+Part "Part" Size=26.59,1,34.02 Anchored BottomSurface=Smooth CFrame=272.868,74.289,-642.434|0,90,0 Color=#694028 TopSurface=Smooth {
+    Weld "Weld" C0=0.5,-6.5,2|90,0,0 C1=-9.434,0.513,-16.83|90,0,90 Part0=@"Workspace/Tree House/Treehouse/Part~91" Part1=@"Workspace/Tree House/Part~7"
+}
+Part "Power Ups" Size=8.04,4.88,1 Anchored CFrame=240.444,103.228,-669.68|-160.499,0.96,-177.289 Color=#957977 Transparency=1 {
+    SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+        TextLabel "Power Ups" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="HATS" TextColor3=#FFFFFF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+    }
+}
+Part "Power Ups" Size=8.04,8.47,1 Anchored CFrame=243.523,83.436,-632.203 Color=#957977 Transparency=1 {
+    SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+        TextLabel "Power Ups" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="POWER UPS" TextColor3=#FFFFFF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+    }
+}
+Part "Sign" Size=10.14,8.1,1 Anchored CFrame=175.38,82.651,-642.635|0,-90,0 Color=#957977 Transparency=1 {
+    SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+        TextLabel "SIGN" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="Parachute ↓  ↓  ↓  ↓ " TextColor3=#FFFFFF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+    }
+}
+SpawnLocation "SpawnLocation" Size=19.93,1.2,36.15 Anchored BackSurface=Weld BottomSurface=Weld CFrame=226.972,74.353,-641.316|0,-90,0 FrontSurface=Weld LeftSurface=Weld RightSurface=Weld TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxasset://Textures/SpawnLocation.png" TextureContent="rbxasset://Textures/SpawnLocation.png"
+}
+Model "Speed Coil Giver" {
+    Part "Block" Size=5.16,6.8,3.97 Anchored BottomSurface=SmoothNoOutlines CFrame=279.009,78.189,-651.096|0,90,0 TopSurface=SmoothNoOutlines Transparency=9 {
+        CylinderMesh "Mesh"
+        PointLight "PointLight" Color=#FF0011 Shadows
+        Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-21.956,-3.4,10.869|-90,0,180 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Speed Coil Giver/Block"
+    }
+    Part "Center" Size=5.929,0.35,5.047 Anchored BackSurface=Glue BottomSurface=Glue CFrame=278.984,74.964,-651.106|0,90,0 CanCollide=false FrontSurface=Glue LeftSurface=Glue Material=Metal RightSurface=Glue TopSurface=Glue {
+        Glue "Glue" C0=0,-0.175,0|90,0,0 C1=-31.01,0.5,7.03|90,0,0 F0=-2.964,-2.523,0 F1=-2.964,2.523,0 F2=2.964,2.523,0 F3=2.964,-2.523,0 Part0=@"Workspace/Tree House/Speed Coil Giver/Center"
+        CylinderMesh "Mesh"
+        Weld "Weld" C0=-13.295,0.5,17.01|-90,0,-180 C1=-21.966,-0.173,10.894|-90.013,0,180 Part0=@"Workspace/Tree House/Part~7" Part1=@"Workspace/Tree House/Speed Coil Giver/Center"
+    }
+    Part "Center" Size=5.929,0.1,5.1 Anchored BackSurface=Glue BottomSurface=Glue CFrame=278.985,81.437,-651.106|0,90,0 CanCollide=false Color=#750000 FrontSurface=Glue LeftSurface=Glue Material=Neon RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Center" Size=5.929,0.35,5.047 Anchored BackSurface=Glue BottomSurface=Glue CFrame=278.985,81.437,-651.106|0,90,0 CanCollide=false FrontSurface=Glue LeftSurface=Glue Material=Metal RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Center" Size=5.929,0.1,5.1 Anchored BackSurface=Glue BottomSurface=Glue CFrame=278.985,74.937,-651.106|0,90,0 CanCollide=false Color=#750000 FrontSurface=Glue LeftSurface=Glue Material=Neon RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+    }
+    Part "Giver" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=278.995,78.186,-651.105|0,90,0 CanCollide=false Color=#C4281C FrontSurface=Glue LeftSurface=Glue Material=ForceField RightSurface=Glue TopSurface=Glue {
+        CylinderMesh "Mesh"
+        Script "Script" @src="Scripts/Workspace/Tree House/Speed Coil Giver/Giver/Script.luau"
+    }
+    Part "Part" Size=3.03,1.02,2 Anchored BottomSurface=SmoothNoOutlines CFrame=279.1,78.104,-650.977|90,0,-90 TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshId="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=99170547" TextureId="http://www.roblox.com/asset/?id=99170547"
+    }
+}
+Model "Stonetroid Warrior Giver" {
+    Model "Extras" {
+        Part "Center" Size=4.099,6.54,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.491,78.625,-635.423|0,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=Marble RightSurface=Glue TopSurface=Glue Transparency=0.7 {
+            CylinderMesh "Mesh"
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.492,82.172,-635.423|0,90,0 FrontSurface=Glue LeftSurface=Glue Material=Concrete RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "Pipe" Size=4.719,0.6,4.657 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.49,75.055,-635.423|180,90,0 FrontSurface=Glue LeftSurface=Glue RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.492,81.925,-635.423|0,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+        Part "TopBottomColors" Size=4.719,0.2,4.347 Anchored BackSurface=Glue BottomSurface=Glue CFrame=272.49,75.301,-635.423|180,90,0 CanCollide=false Color=#04AFEC FrontSurface=Glue LeftSurface=Glue Material=DiamondPlate RightSurface=Glue TopSurface=Glue {
+            CylinderMesh "Mesh" Scale=1,0.775,1
+        }
+    }
+    Model "Korblox Set" {
+        Part "Korblox Mage Morph" Size=4,0.4,4.6 Anchored BottomSurface=Smooth CFrame=272.382,75.355,-635.416|0,0,179.988 Color=#0D69AC TopSurface=Smooth Transparency=1 {
+            Script "Script" @src="Scripts/Workspace/Tree House/Stonetroid Warrior Giver/Korblox Set/Korblox Mage Morph/Script.luau" {
+                CharacterMesh "Stonetroid Warrior Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://90242595" MeshId=90242595 OverlayTextureContent="rbxassetid://90232069" OverlayTextureId=90232069
+                CharacterMesh "Stonetroid Warrior Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://90242610" MeshId=90242610 OverlayTextureContent="rbxassetid://90232069" OverlayTextureId=90232069
+                CharacterMesh "Stonetroid Warrior Right Arm" BodyPart=RightArm MeshContent="rbxassetid://90242624" MeshId=90242624 OverlayTextureContent="rbxassetid://90232069" OverlayTextureId=90232069
+                CharacterMesh "Stonetroid Warrior Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://90242639" MeshId=90242639 OverlayTextureContent="rbxassetid://90232069" OverlayTextureId=90232069
+                CharacterMesh "Stonetroid Warrior Torso" BodyPart=Torso MeshContent="rbxassetid://90242654" MeshId=90242654 OverlayTextureContent="rbxassetid://90232069" OverlayTextureId=90232069
+            }
+        }
+    }
+    Model "Model" {
+        Part "Left Arm" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=270.998,78.754,-635.816 Color=#FFCC99 TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=90242595" MeshId="http://www.roblox.com/asset/?id=90242595" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=90232069" TextureId="http://www.roblox.com/asset/?id=90232069"
+        }
+        Part "Left Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=271.998,76.754,-635.816 Color=#FFCC99 TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=90242610" MeshId="http://www.roblox.com/asset/?id=90242610" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=90232069" TextureId="http://www.roblox.com/asset/?id=90232069"
+        }
+        Part "Right Arm" Size=1,2,1 Anchored BottomSurface=Weld CFrame=273.998,78.754,-635.816 Color=#FFCC99 TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=90242624" MeshId="http://www.roblox.com/asset/?id=90242624" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=90232069" TextureId="http://www.roblox.com/asset/?id=90232069"
+        }
+        Part "Right Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=272.998,76.754,-635.816 Color=#FFCC99 TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=90242639" MeshId="http://www.roblox.com/asset/?id=90242639" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=90232069" TextureId="http://www.roblox.com/asset/?id=90232069"
+        }
+        Part "Torso" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=272.414,78.754,-635.816 Color=#FFCC99 LeftSurface=Weld RightSurface=Weld TopSurface=Weld {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=90242654" MeshId="http://www.roblox.com/asset/?id=90242654" MeshType=FileMesh TextureContent="http://www.roblox.com/asset/?id=90232069" TextureId="http://www.roblox.com/asset/?id=90232069"
+        }
+    }
+}
+Model "Take a Parachute!" PrimaryPart=@"Workspace/Tree House/Take a Parachute!/Head" {
+    LocalScript "Animate" @src="Scripts/Workspace/Tree House/Take a Parachute!/Animate.luau"
+    BodyColors "Body Colors" HeadColor3=#CC8E69 LeftArmColor3=#CC8E69 LeftLegColor3=#CC8E69 RightArmColor3=#CC8E69 RightLegColor3=#CC8E69 TorsoColor3=#CC8E69
+    Part "Handle" Size=1,3,1 Anchored BottomSurface=Smooth CFrame=186.645,76.956,-634.335|0.002,-68.401,134.997 Color=#F5CD30 TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=9150279" MeshId="http://www.roblox.com/asset/?id=9150279" MeshType=FileMesh Scale=0.1,0.1,0.1 TextureContent="rbxasset://textures/PaintballGunTex128.png" TextureId="rbxasset://textures/PaintballGunTex128.png" VertexColor=0,0,0
+    }
+    Part "HatGiver" Size=2,1.2,1 Anchored BottomSurface=Smooth CFrame=185.567,78.753,-634.339|0.002,-68.401,-0.003 Color=#111111 Reflectance=0.2 TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=14132097" MeshId="http://www.roblox.com/asset/?id=14132097" MeshType=FileMesh Scale=1,1,0.95 TextureContent="http://www.roblox.com/asset/?id=14132128" TextureId="http://www.roblox.com/asset/?id=14132128" VertexColor=0,0,0
+    }
+    Part "Head" Size=2,1,1 Anchored CFrame=185.567,78.353,-634.339|0.002,-68.401,-0.003 Color=#CC8E69 TopSurface=Smooth {
+        Decal "Decal" Texture="rbxassetid://26449032" TextureContent="rbxassetid://26449032"
+        SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+    }
+    Humanoid "Humanoid" Health=0 MaxHealth=0
+    Part "Left Arm" Size=1,2,1 Anchored CFrame=185.498,76.956,-635.602|78.005,-27.704,80.432 CanCollide=false Color=#CC8E69
+    Part "Left Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=185.383,74.853,-634.804|0.002,-68.401,-0.003 CanCollide=false Color=#CC8E69
+    Pants "Pants" PantsTemplate="http://www.roblox.com/asset/?id=65000843" PantsTemplateContent="http://www.roblox.com/asset/?id=65000843"
+    Part "Right Arm" Size=1,2,1 Anchored CFrame=186.455,77.556,-633.184|105.507,34.024,62.631 CanCollide=false Color=#CC8E69
+    Part "Right Leg" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=185.751,74.853,-633.874|0.002,-68.401,-0.003 CanCollide=false Color=#CC8E69
+    Shirt "Shirt" ShirtTemplate="http://www.roblox.com/asset/?id=65000779" ShirtTemplateContent="http://www.roblox.com/asset/?id=65000779"
+    Script "Sound" @src="Scripts/Workspace/Tree House/Take a Parachute!/Sound.luau"
+    Part "Torso" Size=2,2,1 Anchored CFrame=185.567,76.853,-634.339|0.002,-68.401,-0.003 Color=#CC8E69 LeftSurface=Weld RightSurface=Weld
+}
+Model "Treehouse" {
+    Part "Part" Size=1,16,7 Anchored BottomSurface=Smooth CFrame=249.538,82.802,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,47,1 Anchored BottomSurface=Smooth CFrame=268.038,28.302,-715.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=91.97,1,7 Anchored BottomSurface=Smooth CFrame=243.023,95.815,-641.908|26.565,0,-180 Color=#694028 TopSurface=Smooth {
+        Weld "Weld" C0=0.5,-1.5,-3|-116.565,0,-180 C1=-12.015,0.501,3.5|90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Wedge~33" Part1=@"Workspace/Tree House/Treehouse/Part~3"
+        Weld "Weld" C0=0.5,-1.5,-3|-116.565,0,-180 C1=44.985,0.501,3.5|90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Wedge~14" Part1=@"Workspace/Tree House/Treehouse/Part~3"
+    }
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,38.152,-658.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=33.76,3,16 Anchored BottomSurface=Smooth CFrame=271.918,92.302,-647.001 Color=#A05F35 TopSurface=Smooth {
+        Weld "Weld" C0=0.5,-1.5,4.5|90,0,0 C1=-16.88,-1.5,5|-90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Wedge~29" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+        Weld "Weld" C0=0.5,-1.5,3|90,0,0 C1=-16.88,1.5,2|90,0,180 Part0=@"Workspace/Tree House/Treehouse/Wedge~33" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+        Weld "Weld" C0=-2,-7.5,0.5 C1=-18.88,-1.5,-8 Part0=@"Workspace/Tree House/Treehouse/Part~250" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+        Weld "Weld" C0=-0.5,-1.5,5 C1=-15.88,-1.5,8|-180,0,-180 Part0=@"Workspace/Tree House/Treehouse/Wedge~27" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+        Weld "Weld" C0=-2,10.5,2|-90,0,-180 C1=-18.88,-1.5,-5|-90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Part~181" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+        Weld "Weld" C0=0.5,-1.5,5|90,0,0 C1=-15.88,1.5,2|90,0,0 Part0=@"Workspace/Tree House/Treehouse/Part~210" Part1=@"Workspace/Tree House/Treehouse/Part~5"
+    }
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=241.538,29.654,-678.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=224.538,34.007,-662.354|-45.001,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,79,2 Anchored BottomSurface=Smooth CFrame=260.038,44.302,-721.001|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,36.654,-660.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth {
+        Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,29.152,-667.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    }
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,39.654,-657.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,23.553,-667.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,22.053,-666.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,41.152,-655.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,27.654,-669.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=208.537,34.007,-662.354|-45.001,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,25.053,-669.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,7.053,-651.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=92.13,1,14 Anchored BottomSurface=Smooth CFrame=243.103,92.431,-632.688|-163.301,0,180 Color=#694028 TopSurface=Smooth {
+        Weld "Weld" C0=0.5,-1.5,-5|-106.699,0,-180 C1=-11.935,-0.501,-4|-90,0,180 Part0=@"Workspace/Tree House/Treehouse/Wedge~27" Part1=@"Workspace/Tree House/Treehouse/Part~18"
+        Weld "Weld" C0=0.5,-1.5,-5|-106.699,0,-180 C1=45.065,-0.501,-4|-90,0,180 Part0=@"Workspace/Tree House/Treehouse/Wedge~30" Part1=@"Workspace/Tree House/Treehouse/Part~18"
+    }
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,35.152,-661.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,86,2 Anchored BottomSurface=Smooth CFrame=264.038,47.802,-748.001|-180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,79,2 Anchored BottomSurface=Smooth CFrame=242.038,44.304,-670.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=14,1,6 Anchored BottomSurface=Smooth CFrame=254.038,47.302,-717.001|-180,0,180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,43.602,-655.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=19,1,1 Anchored BottomSurface=Smooth CFrame=258.038,50.802,-715.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,45.102,-657.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,38 Anchored BottomSurface=Smooth CFrame=248.038,50.802,-734.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=22,1,25 Anchored BottomSurface=Smooth CFrame=258.038,47.302,-742.501|-180,0,180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=241.538,45.704,-646.501|180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=35,1,16 Anchored BottomSurface=Smooth CFrame=224.538,42.204,-646.501|0,0,180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,79,2 Anchored BottomSurface=Smooth CFrame=242.038,44.304,-686.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=10,1,4 Anchored BottomSurface=Smooth CFrame=249.038,47.302,-725.001|0,-90,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=207.537,45.704,-646.501|180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,27,2 Anchored BottomSurface=Smooth CFrame=207.037,54.304,-654.501|180,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,33.654,-663.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=19,1,1 Anchored BottomSurface=Smooth CFrame=258.038,50.801,-754.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,20 Anchored BottomSurface=Smooth CFrame=177.037,76.854,-642.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,58,2 Anchored BottomSurface=Smooth CFrame=207.037,33.804,-686.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,20.553,-664.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=208.537,66.058,-662.354|-45.001,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,19.053,-663.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=224.538,66.058,-662.354|-45.001,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,17.553,-661.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,67.204,-661.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,14.553,-658.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,81.803,-661.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,65.705,-663.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,75.803,-655.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,47,1 Anchored BottomSurface=Smooth CFrame=268.038,71.302,-754.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,70.204,-658.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=58,2,25 Anchored BottomSurface=Smooth CFrame=227.038,73.802,-642.501|-180,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,52 Anchored BottomSurface=Smooth CFrame=227.038,71.302,-654.501|180,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,64.204,-664.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=22,1,23 Anchored BottomSurface=Smooth CFrame=187.037,73.353,-642.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,10.053,-654.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,15 Anchored BottomSurface=Smooth CFrame=185.037,76.853,-653.001|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,32.153,-664.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,19 Anchored BottomSurface=Smooth CFrame=255.538,71.302,-642.501|0,0,-180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,16.053,-660.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,30.654,-666.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,8.553,-652.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,4,1 Anchored BottomSurface=Smooth CFrame=177.037,75.853,-653.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,11.553,-655.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=60,2,27 Anchored BottomSurface=Smooth CFrame=227.038,68.802,-642.501|-180,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,25 Anchored BottomSurface=Smooth CFrame=198.537,71.302,-642.501|-180,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,23 Anchored BottomSurface=Smooth CFrame=187.264,82.308,-653.001|-90,62.999,90 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=241.538,61.705,-678.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,21,4 Anchored BottomSurface=Smooth CFrame=199.037,80.302,-654.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,2,28 Anchored BottomSurface=Smooth CFrame=240.538,16.494,-660.733|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,13.053,-657.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,2,28 Anchored BottomSurface=Smooth CFrame=224.538,16.494,-660.733|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=224.538,49.957,-662.147|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,86.302,-666.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=5,58,6 Anchored BottomSurface=Smooth CFrame=263.247,162.439,-742.167|-56.845,2.129,168.258 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=56,1,15 Anchored BottomSurface=Smooth CFrame=255.038,107.287,-718.792|-16.699,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=246.538,95.302,-670.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=211.537,81.302,-630.501|0,90,0 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=211.537,84.302,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=227.038,81.302,-630.501|0,90,0 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,16,7 Anchored BottomSurface=Smooth CFrame=204.537,82.802,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=228.538,100.301,-683.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,15,1 Anchored BottomSurface=Smooth CFrame=199.037,98.302,-655.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,5.553,-649.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=241.538,94.303,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,23 Anchored BottomSurface=Smooth CFrame=217.264,98.257,-672.001|-90,62.999,90 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,7 Anchored BottomSurface=Smooth CFrame=268.538,92.301,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=10,1,4 Anchored BottomSurface=Smooth CFrame=267.038,90.301,-744.001|0,90,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=268.538,94.302,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,21,4 Anchored BottomSurface=Smooth CFrame=229.038,96.301,-721.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=14,1,6 Anchored BottomSurface=Smooth CFrame=262.038,90.301,-752.001 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,23 Anchored BottomSurface=Smooth CFrame=187.264,82.308,-632.001|-90,62.999,90 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,13,4 Anchored BottomSurface=Smooth CFrame=255.538,81.302,-635.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=242.538,84.302,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,9 Anchored BottomSurface=Smooth CFrame=198.537,89.302,-637.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,46 Anchored BottomSurface=Smooth CFrame=228.538,87.301,-696.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=248.538,82.157,-662.147|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,77.302,-657.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=4,22,4 Anchored BottomSurface=Smooth CFrame=199.037,80.802,-631.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=242.538,81.302,-630.501|0,90,0 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=232.538,82.157,-662.147|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,7,8 Anchored BottomSurface=Smooth CFrame=219.038,81.302,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=22,1,50 Anchored BottomSurface=Smooth CFrame=217.038,89.301,-696.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,13,4 Anchored BottomSurface=Smooth CFrame=198.537,81.302,-635.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=2,1,8 Anchored BottomSurface=Smooth CFrame=227.038,78.308,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,8 Anchored BottomSurface=Smooth CFrame=227.038,84.302,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,33 Anchored BottomSurface=Smooth CFrame=224.538,45.704,-639.001|0,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=228.538,95.301,-700.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,10,3 Anchored BottomSurface=Smooth CFrame=246.538,95.801,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=35,1,16 Anchored BottomSurface=Smooth CFrame=224.538,58.205,-678.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=16,1,8 Anchored BottomSurface=Smooth CFrame=265.038,47.302,-722.001|0,-90,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,27,2 Anchored BottomSurface=Smooth CFrame=242.038,54.304,-654.501|180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,10,4 Anchored BottomSurface=Smooth CFrame=228.538,95.801,-703.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,3,7 Anchored BottomSurface=Smooth CFrame=228.538,92.302,-683.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=34,2,26 Anchored BottomSurface=Smooth CFrame=245.038,89.802,-683.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,15 Anchored BottomSurface=Smooth CFrame=215.037,92.802,-720.001|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,38 Anchored BottomSurface=Smooth CFrame=268.038,50.802,-734.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,87.803,-667.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,46.602,-658.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,49.602,-661.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=22,1,17 Anchored BottomSurface=Smooth CFrame=258.038,90.301,-730.501 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,48.102,-660.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,15 Anchored BottomSurface=Smooth CFrame=215.037,92.803,-672.001|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,23 Anchored BottomSurface=Smooth CFrame=217.264,98.257,-720.001|-90,62.999,90 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=234.538,95.302,-670.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,7 Anchored BottomSurface=Smooth CFrame=228.538,92.301,-708.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=228.538,94.302,-708.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,7 Anchored BottomSurface=Smooth CFrame=241.538,92.301,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=228.538,97.301,-708.501 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,3,16 Anchored BottomSurface=Smooth CFrame=198.537,92.302,-647.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,48 Anchored BottomSurface=Smooth CFrame=255.038,87.301,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,4,1 Anchored BottomSurface=Smooth CFrame=207.037,91.803,-672.001 Color=#694028 TopSurface=Smooth {
+        Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=248.538,95.301,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    }
+    Part "Part" Size=1,1,47 Anchored BottomSurface=Smooth CFrame=207.037,92.803,-696.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=228.538,94.303,-683.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,7 Anchored BottomSurface=Smooth CFrame=281.538,92.301,-708.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=4,21,4 Anchored BottomSurface=Smooth CFrame=229.038,96.302,-671.001|0,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,10,4 Anchored BottomSurface=Smooth CFrame=228.538,95.801,-689.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=52,2,1 Anchored BottomSurface=Smooth CFrame=227.038,96.802,-655.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=228.538,95.301,-691.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=198.537,95.302,-650.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=228.538,97.301,-683.501 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,47,1 Anchored BottomSurface=Smooth CFrame=248.038,71.302,-754.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,68.705,-660.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,80.302,-660.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=7,44,8 Anchored BottomSurface=Smooth CFrame=245.31,153.972,-680.606|-2.126,-22.807,18.739 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=5,39,6 Anchored BottomSurface=Smooth CFrame=281.446,169.039,-674.954|49.523,-67.319,10.56 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=7,44,8 Anchored BottomSurface=Smooth CFrame=247.114,152.451,-659.57|40.401,-18.058,14.225 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=231.584,197.312,-651.154|-167.936,5.868,178.748 CanCollide=false Color=#4B974B TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=200,200,200
+    }
+    Part "Part" Size=2.06,3,9 Anchored BottomSurface=Smooth CFrame=256.068,89.302,-637.501 Color=#A05F35 TopSurface=Smooth {
+        Weld "Weld" C0=0.5,-2.5,2.5|90,0,0 C1=-1.03,-1.5,0.5|-90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Wedge~36" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+        Weld "Weld" C0=0.5,-1.5,5|90,0,0 C1=-1.03,1.5,-1.5|90,0,180 Part0=@"Workspace/Tree House/Treehouse/Wedge~27" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+        Weld "Weld" C0=2,-11,-2|-180,0,-180 C1=0.97,-19.5,4.5|-180,0,-180 Part0=@"Workspace/Tree House/Treehouse/Part~179" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+        Weld "Weld" C0=-0.5,6.5,2|-90,0,-180 C1=-1.03,-1.5,4.5|-90,0,-180 Part0=@"Workspace/Tree House/Treehouse/Part~91" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+        Weld "Weld" C0=16.88,-1.5,8|90,0,0 C1=32.73,1.5,-1.5|90,0,0 Part0=@"Workspace/Tree House/Treehouse/Part~5" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+        Weld "Weld" C0=-0.5,-1.5,4.5 C1=-0.03,1.5,-4.5|0,0,180 Part0=@"Workspace/Tree House/Treehouse/Wedge~29" Part1=@"Workspace/Tree House/Treehouse/Part~147"
+    }
+    Part "Part" Size=7,44,8 Anchored BottomSurface=Smooth CFrame=278.324,146.446,-691.731|-141.9,-22.275,-144.38 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=241.538,97.301,-721.501|0,90,0 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=5,1,6 Anchored BottomSurface=Smooth CFrame=228.538,108.301,-696.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=243.538,226.354,-693.523|180,0,180 CanCollide=false Color=#287F47 TopSurface=Smooth Transparency=0.2 {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=210,215,210
+    }
+    Part "Part" Size=34,1,15 Anchored BottomSurface=Smooth CFrame=244.038,107.288,-673.21|-163.301,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=5,44,6 Anchored BottomSurface=Smooth CFrame=253.179,172.149,-640.899|86.363,64.871,-43.116 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=34,1,7 Anchored BottomSurface=Smooth CFrame=244.038,110.816,-682.908|-153.435,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,20 Anchored BottomSurface=Smooth CFrame=228.538,110.301,-696.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=306.538,182.802,-691.001|-180,0,-154.001 CanCollide=false Color=#4B974B TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=200,200,200
+    }
+    Part "Part" Size=56,1,14 Anchored BottomSurface=Smooth CFrame=255.038,116.565,-700.847|-38.66,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=52,5,1 Anchored BottomSurface=Smooth CFrame=227.038,103.302,-655.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,10,9 Anchored BottomSurface=Smooth CFrame=251.538,95.802,-670.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=241.538,100.301,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=228.538,100.301,-708.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=222.56,191.922,-726.229|167.936,5.868,-178.748 CanCollide=false Color=#287F47 TopSurface=Smooth Transparency=0.2 {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=210,215,210
+    }
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=268.538,97.302,-721.501|0,90,0 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=2,1,14 Anchored BottomSurface=Smooth CFrame=255.038,100.302,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=222.56,194.222,-726.229|167.936,5.868,-178.748 CanCollide=false Color=#4B974B TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=200,200,200
+    }
+    Part "Part" Size=5,44,6 Anchored BottomSurface=Smooth CFrame=235.334,160.46,-733.862|-122.427,36.426,79.15 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=2,1,10 Anchored BottomSurface=Smooth CFrame=228.538,100.302,-696.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=281.538,94.302,-708.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,15,7 Anchored BottomSurface=Smooth CFrame=281.538,98.301,-715.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,16,7 Anchored BottomSurface=Smooth CFrame=275.538,98.801,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,6,16 Anchored BottomSurface=Smooth CFrame=242.038,103.801,-670.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=281.538,100.301,-708.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,8,32 Anchored BottomSurface=Smooth CFrame=228.538,104.801,-696.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,10,3 Anchored BottomSurface=Smooth CFrame=263.538,95.801,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,7 Anchored BottomSurface=Smooth CFrame=268.538,100.301,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,6,34 Anchored BottomSurface=Smooth CFrame=255.038,103.801,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=5,46,6 Anchored BottomSurface=Smooth CFrame=228.04,167.71,-642.002|157.367,-40.178,98.226 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=56,1,7 Anchored BottomSurface=Smooth CFrame=255.038,110.814,-709.094|-26.565,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,22,4 Anchored BottomSurface=Smooth CFrame=255.038,80.802,-631.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=242.538,78.308,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,21,4 Anchored BottomSurface=Smooth CFrame=255.038,80.302,-654.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,32 Anchored BottomSurface=Smooth CFrame=248.038,93.802,-737.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=16,1,8 Anchored BottomSurface=Smooth CFrame=251.038,90.301,-747.001|0,90,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,32 Anchored BottomSurface=Smooth CFrame=268.038,93.802,-737.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,6,38 Anchored BottomSurface=Smooth CFrame=227.038,87.802,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,78.803,-658.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=19,1,1 Anchored BottomSurface=Smooth CFrame=258.038,93.802,-754.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,83.302,-663.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,84.803,-664.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=16,139,14 Anchored BottomSurface=Smooth CFrame=261.355,75.07,-678.672|-31.036,77.156,36.125 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=28,2,36 Anchored BottomSurface=Smooth CFrame=245.038,84.802,-683.001|0,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,7,8 Anchored BottomSurface=Smooth CFrame=235.038,81.302,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=56,2,28 Anchored BottomSurface=Smooth CFrame=255.038,84.801,-709.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=5,47,6 Anchored BottomSurface=Smooth CFrame=305.882,173.357,-685.661|139.673,26.093,65.034 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=1,4,1 Anchored BottomSurface=Smooth CFrame=207.037,91.802,-720.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,27 Anchored BottomSurface=Smooth CFrame=244.538,87.302,-670.501|-90,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=7,44,8 Anchored BottomSurface=Smooth CFrame=258.572,143.091,-714.838|-46.97,0.899,24.102 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=228.538,110.602,-696.001 Color=#694028 Shape=Ball TopSurface=Smooth
+    Part "Part" Size=5,1,6 Anchored BottomSurface=Smooth CFrame=228.538,112.901,-696.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=243.538,228.602,-694.001|180,0,180 CanCollide=false Color=#4B974B TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=200,200,200
+    }
+    Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=281.538,97.301,-708.501 Color=#B4D2E4 Reflectance=0.2 TopSurface=Smooth Transparency=0.9 {
+        BlockMesh "Mesh" Scale=0,1,1
+    }
+    Part "Part" Size=1,29,11 Anchored BottomSurface=Smooth CFrame=273.538,105.301,-696.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,11 Anchored BottomSurface=Smooth CFrame=273.538,87.301,-696.501|-90,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,36,4 Anchored BottomSurface=Smooth CFrame=281.038,103.801,-697.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=54,2,26 Anchored BottomSurface=Smooth CFrame=255.038,89.801,-709.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=240.538,89.302,-669.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,1,20 Anchored BottomSurface=Smooth CFrame=281.538,87.301,-709.001|-180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=4,21,4 Anchored BottomSurface=Smooth CFrame=281.038,96.301,-721.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,9,1 Anchored BottomSurface=Smooth CFrame=261.538,95.301,-721.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=255.538,95.302,-650.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=231.584,195.012,-651.154|-167.936,5.868,178.748 CanCollide=false Color=#287F47 TopSurface=Smooth Transparency=0.2 {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=210,215,210
+    }
+    Part "Part" Size=1,10,6 Anchored BottomSurface=Smooth CFrame=281.538,95.801,-702.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=60,1,15 Anchored BottomSurface=Smooth CFrame=227.038,101.878,-650.545|-141.34,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,16,7 Anchored BottomSurface=Smooth CFrame=234.538,98.801,-721.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,15,7 Anchored BottomSurface=Smooth CFrame=228.538,98.301,-715.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,54.102,-666.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,3,38 Anchored BottomSurface=Smooth CFrame=227.038,76.302,-630.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,1,52 Anchored BottomSurface=Smooth CFrame=227.038,71.302,-630.501|180,-90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,33 Anchored BottomSurface=Smooth CFrame=224.538,29.654,-685.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,27,2 Anchored BottomSurface=Smooth CFrame=207.037,54.304,-638.501|180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,59.706,-669.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=12,97,14 Anchored BottomSurface=Smooth CFrame=264.622,54.975,-687.48|4.795,22.232,6.26 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,51.102,-663.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,57.102,-669.001|-180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,2,24 Anchored BottomSurface=Smooth CFrame=240.538,49.957,-662.147|-135,0,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,27,2 Anchored BottomSurface=Smooth CFrame=242.038,54.304,-638.501|180,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,33 Anchored BottomSurface=Smooth CFrame=224.538,61.705,-685.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,58,2 Anchored BottomSurface=Smooth CFrame=207.037,33.804,-670.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=207.537,29.654,-678.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,71.705,-657.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,1,7 Anchored BottomSurface=Smooth CFrame=211.537,78.308,-630.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,47,1 Anchored BottomSurface=Smooth CFrame=248.038,28.302,-715.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,15 Anchored BottomSurface=Smooth CFrame=185.037,76.854,-632.001|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,73.203,-655.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,61.204,-667.501|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=1,4,1 Anchored BottomSurface=Smooth CFrame=177.037,75.854,-632.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=1,1,14 Anchored BottomSurface=Smooth CFrame=207.537,61.705,-678.001 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=216.538,62.705,-666.001|0,0,-180 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=35,1,16 Anchored BottomSurface=Smooth CFrame=224.538,26.154,-678.001|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,52.602,-664.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=15,1,2 Anchored BottomSurface=Smooth CFrame=232.538,55.602,-667.501|180,0,0 Color=#CC8E69 TopSurface=Smooth
+    Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=306.538,180.502,-691.001|-180,0,-154.001 CanCollide=false Color=#287F47 TopSurface=Smooth Transparency=0.2 {
+        SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=111820358" MeshId="http://www.roblox.com/asset/?id=111820358" MeshType=FileMesh Scale=210,215,210
+    }
+    Part "Part" Size=1,11,7 Anchored BottomSurface=Smooth CFrame=281.538,106.301,-702.501 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,15,7 Anchored BottomSurface=Smooth CFrame=228.538,98.301,-676.501|-180,0,180 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,8,6 Anchored BottomSurface=Smooth CFrame=281.538,104.801,-709.001 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=1,16,3 Anchored BottomSurface=Smooth CFrame=232.538,98.801,-670.501|0,90,0 Color=#A05F35 TopSurface=Smooth
+    Part "Part" Size=52,1,1 Anchored BottomSurface=Smooth CFrame=227.038,99.302,-655.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=34,1,14 Anchored BottomSurface=Smooth CFrame=244.038,116.566,-691.155|-141.34,0,180 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=10,74,13 Anchored BottomSurface=Smooth CFrame=264.431,99.253,-693.343|-12.97,0.899,-3.898 Color=#7C5C46 TopSurface=Smooth
+    Part "Part" Size=4,15,1 Anchored BottomSurface=Smooth CFrame=255.038,98.302,-655.501 Color=#694028 TopSurface=Smooth
+    Part "Part" Size=2,1,13 Anchored BottomSurface=Smooth CFrame=240.538,100.303,-670.501|0,90,0 Color=#694028 TopSurface=Smooth
+    Part "Trunk" Size=17,112,17 Anchored BottomSurface=Smooth CFrame=259.538,60.802,-683.501 Color=#7C5C46 TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=264.038,68.801,-740.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=264.038,68.801,-742.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=258.038,25.802,-721.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=260.038,25.802,-727.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=260.038,25.802,-729.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=252.038,25.802,-721.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=260.038,68.801,-748.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=258.038,68.801,-748.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=260.038,25.802,-723.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=264.038,68.801,-744.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=256.038,68.801,-748.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=254.038,25.802,-721.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=256.038,25.802,-721.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=260.038,25.802,-725.001|0,90,0 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=262.038,68.801,-748.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=264.038,68.801,-746.001|-180,0,180 Color=#7C5C46 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth Style=NoSupports TopSurface=Smooth
+    WedgePart "Wedge" Size=10,13,25 Anchored BottomSurface=Smooth CFrame=252.038,11.302,-706.501 Color=#7C5C46
+    WedgePart "Wedge" Size=1,3,6 Anchored BottomSurface=Smooth CFrame=228.538,110.301,-683.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=2,17,6 Anchored BottomSurface=Smooth CFrame=194.037,82.353,-653.001|0,90,0 Color=#694028
+    WedgePart "Wedge" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=228.538,107.301,-717.001 Color=#A05F35
+    WedgePart "Wedge" Size=1,4,7 Anchored BottomSurface=Smooth CFrame=224.538,6.803,-649.001|180,0,180 Color=#694028
+    WedgePart "Wedge" Size=33.98,8,10 Anchored BottomSurface=Smooth CFrame=272.028,100.802,-650.001|-180,0,180 Color=#A05F35 {
+        Weld "Weld" C0=30,-0.5,7.5|90,0,0 C1=74.99,5.371,6.713|51.34,0,0 Part0=@"Workspace/Tree House/Treehouse/Part~213" Part1=@"Workspace/Tree House/Treehouse/Wedge~6"
+        Weld "Weld" C0=-0.5,1.5,5|-90,0,-180 C1=16.99,-4,-5|-90,0,0 Part0=@"Workspace/Tree House/Treehouse/Part~210" Part1=@"Workspace/Tree House/Treehouse/Wedge~6"
+        Weld "Weld" C0=-2,-7.5,0.5 C1=18.99,-10,5|180,0,180 Part0=@"Workspace/Tree House/Treehouse/Part~250" Part1=@"Workspace/Tree House/Treehouse/Wedge~6"
+    }
+    WedgePart "Wedge" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=228.538,107.301,-675.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=4,2,3 Anchored BottomSurface=Smooth CFrame=255.038,91.802,-653.501|-180,0,180 Color=#694028
+    WedgePart "Wedge" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=281.538,107.301,-717.001 Color=#A05F35
+    WedgePart "Wedge" Size=13,69,21 Anchored BottomSurface=Smooth CFrame=249.319,39.302,-675.408|-180,48,180 Color=#7C5C46
+    WedgePart "Wedge" Size=18,20,26 Anchored BottomSurface=Smooth CFrame=281.908,14.802,-681.65|180,-79,-180 Color=#7C5C46
+    WedgePart "Wedge" Size=10,10,27 Anchored BottomSurface=Smooth CFrame=292.477,9.802,-683.666|0.003,-88,0.003 Color=#7C5C46
+    WedgePart "Wedge" Size=1,3,9 Anchored BottomSurface=Smooth CFrame=198.537,89.302,-646.501|0,0,-180 Color=#A05F35
+    WedgePart "Wedge" Size=1,3,6 Anchored BottomSurface=Smooth CFrame=198.537,95.302,-642.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=1,5,5 Anchored BottomSurface=Smooth CFrame=198.537,85.302,-639.501|0,0,-180 Color=#A05F35
+    WedgePart "Wedge" Size=10,8,23 Anchored BottomSurface=Smooth CFrame=253.029,8.803,-652.057|-180,-13,-180 Color=#7C5C46
+    WedgePart "Wedge" Size=1,8,10 Anchored BottomSurface=Smooth CFrame=281.538,115.801,-701.001 Color=#A05F35
+    WedgePart "Wedge" Size=15,48,23 Anchored BottomSurface=Smooth CFrame=267.478,28.802,-698.593|0,-26,0 Color=#7C5C46
+    WedgePart "Wedge" Size=1,8,10 Anchored BottomSurface=Smooth CFrame=228.538,115.801,-691.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=4,2,3 Anchored BottomSurface=Smooth CFrame=199.037,91.802,-653.501|-180,0,180 Color=#694028
+    WedgePart "Wedge" Size=1,3,6 Anchored BottomSurface=Smooth CFrame=228.538,110.301,-709.001 Color=#A05F35
+    WedgePart "Wedge" Size=1,4,7 Anchored BottomSurface=Smooth CFrame=240.538,6.803,-656.001 Color=#694028
+    WedgePart "Wedge" Size=1,3,6 Anchored BottomSurface=Smooth CFrame=281.538,110.301,-709.001 Color=#A05F35
+    WedgePart "Wedge" Size=1,4,7 Anchored BottomSurface=Smooth CFrame=224.538,6.803,-656.001 Color=#694028
+    WedgePart "Wedge" Size=1,8,10 Anchored BottomSurface=Smooth CFrame=228.538,115.801,-701.001 Color=#A05F35
+    WedgePart "Wedge" Size=11,25,30 Anchored BottomSurface=Smooth CFrame=252.241,17.302,-665.343|-180,20,180 Color=#7C5C46
+    WedgePart "Wedge" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=255.538,92.302,-634.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=2,17,6 Anchored BottomSurface=Smooth CFrame=224.038,98.301,-720.001|0,90,0 Color=#694028
+    WedgePart "Wedge" Size=1,3,9 Anchored BottomSurface=Smooth CFrame=255.538,89.302,-646.501|0,0,-180 Color=#A05F35
+    WedgePart "Wedge" Size=1,3,10 Anchored BottomSurface=Smooth CFrame=198.537,92.302,-634.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=1,4,7 Anchored BottomSurface=Smooth CFrame=240.538,6.803,-649.001|180,0,180 Color=#694028
+    WedgePart "Wedge" Size=1,8,10 Anchored BottomSurface=Smooth CFrame=198.537,100.802,-650.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=1,3,6 Anchored BottomSurface=Smooth CFrame=255.538,95.302,-642.001|-180,0,180 Color=#A05F35
+    WedgePart "Wedge" Size=2,17,6 Anchored BottomSurface=Smooth CFrame=194.037,82.353,-632.001|0,90,0 Color=#694028
+    WedgePart "Wedge" Size=2,17,6 Anchored BottomSurface=Smooth CFrame=224.038,98.301,-672.001|0,90,0 Color=#694028
+    WedgePart "Wedge" Size=1,5,5 Anchored BottomSurface=Smooth CFrame=255.538,85.302,-639.501|0,0,-180 Color=#A05F35
+    WedgePart "Wedge" Size=11,39,21 Anchored BottomSurface=Smooth CFrame=252.499,24.302,-694.311|0,36,0 Color=#7C5C46
+}

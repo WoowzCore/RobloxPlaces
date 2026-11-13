@@ -1,0 +1,510 @@
+Model "IronSpiderMorph" {
+    Part "MorphPad" Size=0.398,3.853,3.898 BottomSurface=Smooth CFrame=5.798,33.599,-183.416|90,-90,0 Color=#970000 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Decal "Decal" Face=Left Texture="rbxassetid://2784545398" TextureContent="rbxassetid://2784545398"
+        Model "Iron-Spider" PrimaryPart=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Head" {
+            Part "Head" Size=2,1,1 CFrame=5.832,37.9,-180.201 Material=Metal TopSurface=Smooth {
+                Weld "HeadWeld" C0=0,0.5,0 C1=0,0.5,0 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Head" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Infinity War SpiderMan Mask/Handle"
+                SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+                Decal "face" Texture="rbxassetid://144378261" TextureContent="rbxassetid://144378261"
+            }
+            Humanoid "Humanoid"
+            Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=5.832,36.4,-180.201 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+                Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/HumanoidRootPart" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso"
+            }
+            Hat "Infinity War SpiderMan Mask" AttachmentPoint=0,0.5,0 {
+                Part "Handle" Size=1.22,1.27,1.2 BottomSurface=Smooth CFrame=5.832,37.9,-180.201 CanCollide=false Material=Metal TopSurface=Smooth {
+                    SpecialMesh "Mesh" MeshContent="rbxassetid://151354047" MeshId="rbxassetid://151354047" MeshType=FileMesh Scale=1.26,1.26,1.26 TextureContent="http://www.roblox.com/asset/?id=2950541598" TextureId="http://www.roblox.com/asset/?id=2950541598"
+                }
+            }
+            Accessory "Iron Legs/Arm" {
+                MeshPart "Handle" Size=5.041,5.231,3.029 CFrame=5.852,36.867,-178.982 CanCollide=false CollisionFidelity=Default Color=#EFB838 Material=Metal RenderFidelity=Precise TextureContent="rbxassetid://1673767605" TextureID="rbxassetid://1673767605" {
+                    Weld "AccessoryWeld" C0=-0.016,-0.509,-1.037 C1=0.004,-0.042,0.183 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Iron Legs%2FArm/Handle" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso"
+                    Attachment "BodyBackAttachment" CFrame=-0.016,-0.509,-1.037
+                    Vector3Value "OriginalSize" Value=5.041,5.231,3.029
+                }
+            }
+            Part "Left Arm" Size=1,2,1 CFrame=4.332,36.4,-180.201 CanCollide=false Color=#750000 Material=Metal
+            Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=5.332,34.4,-180.201 CanCollide=false Material=Metal
+            Pants "Pants" PantsTemplate="rbxassetid://1149516623" PantsTemplateContent="rbxassetid://1149516623"
+            CharacterMesh "ROBLOX Boy Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://279174949" MeshId=279174949
+            CharacterMesh "ROBLOX Boy Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://319336109" MeshId=319336109
+            CharacterMesh "ROBLOX Boy Right Arm" BodyPart=RightArm MeshContent="rbxassetid://279174886" MeshId=279174886
+            CharacterMesh "ROBLOX Boy Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://319336155" MeshId=319336155
+            CharacterMesh "ROBLOX Boy Torso" BodyPart=Torso MeshContent="rbxassetid://376169183" MeshId=376169183
+            Part "Right Arm" Size=1,2,1 CFrame=7.332,36.4,-180.201 CanCollide=false Color=#750000 Material=Metal
+            Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=6.332,34.4,-180.201 CanCollide=false Material=Metal
+            Shirt "Shirt" ShirtTemplate="rbxassetid://1149516156" ShirtTemplateContent="rbxassetid://1149516156"
+            LocalScript "Spider-Man Web Shooters (put in startercharacterscripts) " @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Spider-Man Web Shooters (put in startercharacterscripts).luau"
+            Part "Torso" Size=2,2,1 CFrame=5.832,36.4,-180.201 LeftSurface=Weld Material=Metal RightSurface=Weld {
+                Attachment "BodyBackAttachment" CFrame=0.004,-0.042,0.183
+                Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Left Leg"
+                Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Left Arm"
+                Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Head"
+                Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Right Leg"
+                Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Torso" Part1=@"Workspace/Morphs/IronSpiderMorph/MorphPad/Iron-Spider/Right Arm"
+            }
+        }
+        Script "MainFrame" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame.luau" {
+            NumberValue "AdditionalHipHeight"
+            Folder "Backpack"
+            Folder "CharacterScripts" {
+                LocalScript "BaseAnimateR6" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame/CharacterScripts/BaseAnimateR6.luau" {
+                    StringValue "cheer" {
+                        Animation "CheerAnim" AnimationContent="http://www.roblox.com/asset/?id=129423030" AnimationId="http://www.roblox.com/asset/?id=129423030"
+                    }
+                    StringValue "climb" {
+                        Animation "ClimbAnim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "dance1" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182435998" AnimationId="http://www.roblox.com/asset/?id=182435998" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance2" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436842" AnimationId="http://www.roblox.com/asset/?id=182436842" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance3" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436935" AnimationId="http://www.roblox.com/asset/?id=182436935" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance4" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=27789359" AnimationId="http://www.roblox.com/asset/?id=27789359" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance5" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=248263260" AnimationId="http://www.roblox.com/asset/?id=248263260" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance6" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=429699657" AnimationId="http://www.roblox.com/asset/?id=429699657" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance7" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429703734" AnimationId="http://www.roblox.com/asset/?id=429703734" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance8" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=45834924" AnimationId="http://www.roblox.com/asset/?id=45834924" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance9" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429681631" AnimationId="http://www.roblox.com/asset/?id=429681631" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "fall" {
+                        Animation "FallAnim" AnimationContent="http://www.roblox.com/asset/?id=180436148" AnimationId="http://www.roblox.com/asset/?id=180436148"
+                    }
+                    StringValue "idle" {
+                        Animation "Animation1" AnimationContent="rbxassetid://180435571" AnimationId="rbxassetid://180435571" {
+                            NumberValue "Weight" Value=9
+                        }
+                        Animation "Animation2" AnimationContent="rbxassetid://180435792" AnimationId="rbxassetid://180435792" {
+                            NumberValue "Weight" Value=1
+                        }
+                    }
+                    StringValue "jump" {
+                        Animation "JumpAnim" AnimationContent="http://www.roblox.com/asset/?id=125750702" AnimationId="http://www.roblox.com/asset/?id=125750702"
+                    }
+                    StringValue "laugh" {
+                        Animation "LaughAnim" AnimationContent="http://www.roblox.com/asset/?id=129423131" AnimationId="http://www.roblox.com/asset/?id=129423131"
+                    }
+                    StringValue "platformstand" {
+                        Animation "PlatformStandingAnim" AnimationContent="rbxassetid://0" AnimationId="rbxassetid://0"
+                    }
+                    StringValue "point" {
+                        Animation "PointAnim" AnimationContent="http://www.roblox.com/asset/?id=128853357" AnimationId="http://www.roblox.com/asset/?id=128853357"
+                    }
+                    StringValue "run" {
+                        Animation "RunAnim" AnimationContent="rbxassetid://5705289832" AnimationId="rbxassetid://5705289832"
+                    }
+                    StringValue "sit" {
+                        Animation "SitAnim" AnimationContent="http://www.roblox.com/asset/?id=178130996" AnimationId="http://www.roblox.com/asset/?id=178130996"
+                    }
+                    StringValue "spin" {
+                        Animation "SpinAnim" AnimationContent="rbxassetid://429678251" AnimationId="rbxassetid://429678251" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "swim" {
+                        Animation "Swim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "swimidle" {
+                        Animation "SwimIdle" AnimationContent="http://www.roblox.com/asset/?id=180426354" AnimationId="http://www.roblox.com/asset/?id=180426354"
+                    }
+                    StringValue "toollunge" {
+                        Animation "ToolLungeAnim" AnimationContent="http://www.roblox.com/asset/?id=129967478" AnimationId="http://www.roblox.com/asset/?id=129967478"
+                    }
+                    StringValue "toolnone" {
+                        Animation "ToolNoneAnim" AnimationContent="http://www.roblox.com/asset/?id=182393478" AnimationId="http://www.roblox.com/asset/?id=182393478"
+                    }
+                    StringValue "toolslash" {
+                        Animation "ToolSlashAnim" AnimationContent="http://www.roblox.com/asset/?id=129967390" AnimationId="http://www.roblox.com/asset/?id=129967390"
+                    }
+                    StringValue "walk" {
+                        Animation "WalkAnim" AnimationContent="rbxassetid://180426354" AnimationId="rbxassetid://180426354"
+                    }
+                    StringValue "wave" {
+                        Animation "WaveAnim" AnimationContent="http://www.roblox.com/asset/?id=128777973" AnimationId="http://www.roblox.com/asset/?id=128777973"
+                    }
+                }
+                LocalScript "PlayerScriptsGiver" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver.luau" {
+                    LocalScript "Example" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver/Example.luau" Disabled
+                }
+            }
+            Folder "GUIs" {
+                ScreenGui "EyeChangers" Enabled=false ZIndexBehavior=Sibling {
+                    TextButton "TextButton" Position=0.851,0,0.859,0 Size=0,215,0,48 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BorderColor3=#FF0000 BorderSizePixel=3 FontFace="Balthazar|Regular|Normal" Text="Infected or Normal Eyes" TextColor3=#FF0000 TextScaled TextSize=14 TextWrapped {
+                        LocalScript "LocalScript" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/LocalScript.luau" Disabled
+                        Script "Script" @src="Scripts/Workspace/Morphs/IronSpiderMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/Script.luau" Disabled
+                    }
+                }
+            }
+            Folder "Remotes"
+            Folder "StylePieces"
+        }
+        Weld "Weld" C0=0,-0.526,0|90,0,0 C1=26.561,10,-14.701|90,0,0 Part0=@"Workspace/Morphs/IronSpiderMorph/MorphPad"
+    }
+}
+Model "SpidermanMorph" {
+    Part "MorphPad" Size=0.398,3.853,3.898 BottomSurface=Smooth CFrame=1.129,33.6,-183.416|-90,90,0 Color=#750000 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+        Script "MainFrame" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame.luau" {
+            NumberValue "AdditionalHipHeight"
+            Folder "Backpack"
+            Folder "CharacterScripts" {
+                LocalScript "BaseAnimateR6" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame/CharacterScripts/BaseAnimateR6.luau" {
+                    StringValue "cheer" {
+                        Animation "CheerAnim" AnimationContent="http://www.roblox.com/asset/?id=129423030" AnimationId="http://www.roblox.com/asset/?id=129423030"
+                    }
+                    StringValue "climb" {
+                        Animation "ClimbAnim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "dance1" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182435998" AnimationId="http://www.roblox.com/asset/?id=182435998" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance2" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436842" AnimationId="http://www.roblox.com/asset/?id=182436842" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance3" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436935" AnimationId="http://www.roblox.com/asset/?id=182436935" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance4" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=27789359" AnimationId="http://www.roblox.com/asset/?id=27789359" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance5" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=248263260" AnimationId="http://www.roblox.com/asset/?id=248263260" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance6" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=429699657" AnimationId="http://www.roblox.com/asset/?id=429699657" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance7" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429703734" AnimationId="http://www.roblox.com/asset/?id=429703734" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance8" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=45834924" AnimationId="http://www.roblox.com/asset/?id=45834924" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance9" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429681631" AnimationId="http://www.roblox.com/asset/?id=429681631" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "fall" {
+                        Animation "FallAnim" AnimationContent="http://www.roblox.com/asset/?id=180436148" AnimationId="http://www.roblox.com/asset/?id=180436148"
+                    }
+                    StringValue "idle" {
+                        Animation "Animation1" AnimationContent="rbxassetid://180435571" AnimationId="rbxassetid://180435571" {
+                            NumberValue "Weight" Value=9
+                        }
+                        Animation "Animation2" AnimationContent="rbxassetid://180435792" AnimationId="rbxassetid://180435792" {
+                            NumberValue "Weight" Value=1
+                        }
+                    }
+                    StringValue "jump" {
+                        Animation "JumpAnim" AnimationContent="http://www.roblox.com/asset/?id=125750702" AnimationId="http://www.roblox.com/asset/?id=125750702"
+                    }
+                    StringValue "laugh" {
+                        Animation "LaughAnim" AnimationContent="http://www.roblox.com/asset/?id=129423131" AnimationId="http://www.roblox.com/asset/?id=129423131"
+                    }
+                    StringValue "platformstand" {
+                        Animation "PlatformStandingAnim" AnimationContent="rbxassetid://0" AnimationId="rbxassetid://0"
+                    }
+                    StringValue "point" {
+                        Animation "PointAnim" AnimationContent="http://www.roblox.com/asset/?id=128853357" AnimationId="http://www.roblox.com/asset/?id=128853357"
+                    }
+                    StringValue "run" {
+                        Animation "RunAnim" AnimationContent="rbxassetid://5705289832" AnimationId="rbxassetid://5705289832"
+                    }
+                    StringValue "sit" {
+                        Animation "SitAnim" AnimationContent="http://www.roblox.com/asset/?id=178130996" AnimationId="http://www.roblox.com/asset/?id=178130996"
+                    }
+                    StringValue "spin" {
+                        Animation "SpinAnim" AnimationContent="rbxassetid://429678251" AnimationId="rbxassetid://429678251" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "swim" {
+                        Animation "Swim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "swimidle" {
+                        Animation "SwimIdle" AnimationContent="http://www.roblox.com/asset/?id=180426354" AnimationId="http://www.roblox.com/asset/?id=180426354"
+                    }
+                    StringValue "toollunge" {
+                        Animation "ToolLungeAnim" AnimationContent="http://www.roblox.com/asset/?id=129967478" AnimationId="http://www.roblox.com/asset/?id=129967478"
+                    }
+                    StringValue "toolnone" {
+                        Animation "ToolNoneAnim" AnimationContent="http://www.roblox.com/asset/?id=182393478" AnimationId="http://www.roblox.com/asset/?id=182393478"
+                    }
+                    StringValue "toolslash" {
+                        Animation "ToolSlashAnim" AnimationContent="http://www.roblox.com/asset/?id=129967390" AnimationId="http://www.roblox.com/asset/?id=129967390"
+                    }
+                    StringValue "walk" {
+                        Animation "WalkAnim" AnimationContent="rbxassetid://180426354" AnimationId="rbxassetid://180426354"
+                    }
+                    StringValue "wave" {
+                        Animation "WaveAnim" AnimationContent="http://www.roblox.com/asset/?id=128777973" AnimationId="http://www.roblox.com/asset/?id=128777973"
+                    }
+                }
+                LocalScript "PlayerScriptsGiver" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver.luau" {
+                    LocalScript "Example" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver/Example.luau" Disabled
+                }
+            }
+            Folder "GUIs" {
+                ScreenGui "EyeChangers" Enabled=false ZIndexBehavior=Sibling {
+                    TextButton "TextButton" Position=0.851,0,0.859,0 Size=0,215,0,48 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BorderColor3=#FF0000 BorderSizePixel=3 FontFace="Balthazar|Regular|Normal" Text="Infected or Normal Eyes" TextColor3=#FF0000 TextScaled TextSize=14 TextWrapped {
+                        LocalScript "LocalScript" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/LocalScript.luau" Disabled
+                        Script "Script" @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/Script.luau" Disabled
+                    }
+                }
+            }
+            Folder "Remotes"
+            Folder "StylePieces"
+        }
+        Model "Spiderman" PrimaryPart=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Head" {
+            Part "Head" Size=2,1,1 CFrame=1.163,37.901,-180.201 TopSurface=Smooth {
+                Weld "HeadWeld" C0=0,0.5,0 C1=0,0.5,0 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Head" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/SpidermanMask/Handle"
+                SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+                Decal "face" Texture="rbxassetid://144378261" TextureContent="rbxassetid://144378261"
+            }
+            Humanoid "Humanoid"
+            Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=1.163,36.401,-180.201 CanCollide=false TopSurface=Smooth Transparency=1 {
+                Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/HumanoidRootPart" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso"
+            }
+            Part "Left Arm" Size=1,2,1 CFrame=-0.337,36.401,-180.201 CanCollide=false Color=#750000
+            Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=0.663,34.401,-180.201 CanCollide=false
+            Pants "Pants" PantsTemplate="http://www.roblox.com/asset/?id=383352941" PantsTemplateContent="http://www.roblox.com/asset/?id=383352941"
+            CharacterMesh "ROBLOX Boy Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://279174949" MeshId=279174949
+            CharacterMesh "ROBLOX Boy Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://319336109" MeshId=319336109
+            CharacterMesh "ROBLOX Boy Right Arm" BodyPart=RightArm MeshContent="rbxassetid://279174886" MeshId=279174886
+            CharacterMesh "ROBLOX Boy Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://319336155" MeshId=319336155
+            CharacterMesh "ROBLOX Boy Torso" BodyPart=Torso MeshContent="rbxassetid://376169183" MeshId=376169183
+            Part "Right Arm" Size=1,2,1 CFrame=2.663,36.401,-180.201 CanCollide=false Color=#750000
+            Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=1.663,34.401,-180.201 CanCollide=false
+            Shirt "Shirt" ShirtTemplate="http://www.roblox.com/asset/?id=383352811" ShirtTemplateContent="http://www.roblox.com/asset/?id=383352811"
+            LocalScript "Spider-Man Web Shooters (put in startercharacterscripts) " @src="Scripts/Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Spider-Man Web Shooters (put in startercharacterscripts).luau"
+            Hat "SpidermanMask" AttachmentPoint=0,0.5,0 {
+                Part "Handle" Size=1.22,1.27,1.2 BottomSurface=Smooth CFrame=1.163,37.901,-180.201 CanCollide=false TopSurface=Smooth {
+                    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=151354047 " MeshId="http://www.roblox.com/asset/?id=151354047 " MeshType=FileMesh Scale=1.316,1.316,1.316 TextureContent="http://www.roblox.com/asset/?id=8460736644" TextureId="http://www.roblox.com/asset/?id=8460736644"
+                }
+            }
+            Part "Torso" Size=2,2,1 CFrame=1.163,36.401,-180.201 LeftSurface=Weld RightSurface=Weld {
+                Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Left Leg"
+                Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Left Arm"
+                Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Head"
+                Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Right Leg"
+                Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Torso" Part1=@"Workspace/Morphs/SpidermanMorph/MorphPad/Spiderman/Right Arm"
+            }
+        }
+        Weld "Weld" C0=0,-0.526,0|90,0,0 C1=26.561,10,-14.701|90,0,0 Part0=@"Workspace/Morphs/SpidermanMorph/MorphPad"
+    }
+}
+Model "VenomMorph" {
+    Part "MorphPad" Size=0.398,3.853,3.898 BottomSurface=Smooth CFrame=-3.493,33.6,-183.416|-90,90,0 Color=#111111 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+        Script "MainFrame" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame.luau" {
+            NumberValue "AdditionalHipHeight"
+            Folder "Backpack"
+            Folder "CharacterScripts" {
+                LocalScript "BaseAnimateR6" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame/CharacterScripts/BaseAnimateR6.luau" {
+                    StringValue "cheer" {
+                        Animation "CheerAnim" AnimationContent="http://www.roblox.com/asset/?id=129423030" AnimationId="http://www.roblox.com/asset/?id=129423030"
+                    }
+                    StringValue "climb" {
+                        Animation "ClimbAnim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "dance1" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182435998" AnimationId="http://www.roblox.com/asset/?id=182435998" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance2" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436842" AnimationId="http://www.roblox.com/asset/?id=182436842" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance3" {
+                        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=182436935" AnimationId="http://www.roblox.com/asset/?id=182436935" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance4" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=27789359" AnimationId="http://www.roblox.com/asset/?id=27789359" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance5" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=248263260" AnimationId="http://www.roblox.com/asset/?id=248263260" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance6" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=429699657" AnimationId="http://www.roblox.com/asset/?id=429699657" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance7" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429703734" AnimationId="http://www.roblox.com/asset/?id=429703734" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance8" {
+                        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=45834924" AnimationId="http://www.roblox.com/asset/?id=45834924" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "dance9" {
+                        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=429681631" AnimationId="http://www.roblox.com/asset/?id=429681631" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "fall" {
+                        Animation "FallAnim" AnimationContent="http://www.roblox.com/asset/?id=180436148" AnimationId="http://www.roblox.com/asset/?id=180436148"
+                    }
+                    StringValue "idle" {
+                        Animation "Animation1" AnimationContent="rbxassetid://180435571" AnimationId="rbxassetid://180435571" {
+                            NumberValue "Weight" Value=9
+                        }
+                        Animation "Animation2" AnimationContent="rbxassetid://180435792" AnimationId="rbxassetid://180435792" {
+                            NumberValue "Weight" Value=1
+                        }
+                    }
+                    StringValue "jump" {
+                        Animation "JumpAnim" AnimationContent="http://www.roblox.com/asset/?id=125750702" AnimationId="http://www.roblox.com/asset/?id=125750702"
+                    }
+                    StringValue "laugh" {
+                        Animation "LaughAnim" AnimationContent="http://www.roblox.com/asset/?id=129423131" AnimationId="http://www.roblox.com/asset/?id=129423131"
+                    }
+                    StringValue "platformstand" {
+                        Animation "PlatformStandingAnim" AnimationContent="rbxassetid://0" AnimationId="rbxassetid://0"
+                    }
+                    StringValue "point" {
+                        Animation "PointAnim" AnimationContent="http://www.roblox.com/asset/?id=128853357" AnimationId="http://www.roblox.com/asset/?id=128853357"
+                    }
+                    StringValue "run" {
+                        Animation "RunAnim" AnimationContent="rbxassetid://5705289832" AnimationId="rbxassetid://5705289832"
+                    }
+                    StringValue "sit" {
+                        Animation "SitAnim" AnimationContent="http://www.roblox.com/asset/?id=178130996" AnimationId="http://www.roblox.com/asset/?id=178130996"
+                    }
+                    StringValue "spin" {
+                        Animation "SpinAnim" AnimationContent="rbxassetid://429678251" AnimationId="rbxassetid://429678251" {
+                            NumberValue "Weight" Value=10
+                        }
+                    }
+                    StringValue "swim" {
+                        Animation "Swim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                    }
+                    StringValue "swimidle" {
+                        Animation "SwimIdle" AnimationContent="http://www.roblox.com/asset/?id=180426354" AnimationId="http://www.roblox.com/asset/?id=180426354"
+                    }
+                    StringValue "toollunge" {
+                        Animation "ToolLungeAnim" AnimationContent="http://www.roblox.com/asset/?id=129967478" AnimationId="http://www.roblox.com/asset/?id=129967478"
+                    }
+                    StringValue "toolnone" {
+                        Animation "ToolNoneAnim" AnimationContent="http://www.roblox.com/asset/?id=182393478" AnimationId="http://www.roblox.com/asset/?id=182393478"
+                    }
+                    StringValue "toolslash" {
+                        Animation "ToolSlashAnim" AnimationContent="http://www.roblox.com/asset/?id=129967390" AnimationId="http://www.roblox.com/asset/?id=129967390"
+                    }
+                    StringValue "walk" {
+                        Animation "WalkAnim" AnimationContent="rbxassetid://180426354" AnimationId="rbxassetid://180426354"
+                    }
+                    StringValue "wave" {
+                        Animation "WaveAnim" AnimationContent="http://www.roblox.com/asset/?id=128777973" AnimationId="http://www.roblox.com/asset/?id=128777973"
+                    }
+                }
+                LocalScript "PlayerScriptsGiver" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver.luau" {
+                    LocalScript "Example" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame/CharacterScripts/PlayerScriptsGiver/Example.luau" Disabled
+                }
+            }
+            Folder "GUIs" {
+                ScreenGui "EyeChangers" Enabled=false ZIndexBehavior=Sibling {
+                    TextButton "TextButton" Position=0.851,0,0.859,0 Size=0,215,0,48 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BorderColor3=#FF0000 BorderSizePixel=3 FontFace="Balthazar|Regular|Normal" Text="Infected or Normal Eyes" TextColor3=#FF0000 TextScaled TextSize=14 TextWrapped {
+                        LocalScript "LocalScript" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/LocalScript.luau" Disabled
+                        Script "Script" @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/MainFrame/GUIs/EyeChangers/TextButton/Script.luau" Disabled
+                    }
+                }
+            }
+            Folder "Remotes"
+            Folder "StylePieces"
+        }
+        Model "Venom" PrimaryPart=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Head" {
+            Part "Head" Size=2,1,1 CFrame=-3.459,37.901,-180.201 Color=#111111 TopSurface=Smooth {
+                Weld "HeadWeld" C0=0,0.5,0 C1=0,0.5,0 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Head" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/VenomHead/Handle"
+                SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+                Decal "face" Texture="rbxassetid://144378261" TextureContent="rbxassetid://144378261"
+            }
+            Humanoid "Humanoid"
+            Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=-3.459,36.401,-180.201 CanCollide=false Color=#111111 TopSurface=Smooth Transparency=1 {
+                Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/HumanoidRootPart" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso"
+            }
+            Part "Left Arm" Size=1,2,1 CFrame=-4.959,36.401,-180.201 CanCollide=false Color=#111111
+            Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=-3.959,34.401,-180.201 CanCollide=false Color=#111111
+            Pants "Pants" PantsTemplate="http://www.roblox.com/asset/?id=1257840412" PantsTemplateContent="http://www.roblox.com/asset/?id=1257840412"
+            CharacterMesh "ROBLOX Boy Left Arm" BodyPart=LeftArm MeshContent="rbxassetid://279174949" MeshId=279174949
+            CharacterMesh "ROBLOX Boy Left Leg" BodyPart=LeftLeg MeshContent="rbxassetid://319336109" MeshId=319336109
+            CharacterMesh "ROBLOX Boy Right Arm" BodyPart=RightArm MeshContent="rbxassetid://279174886" MeshId=279174886
+            CharacterMesh "ROBLOX Boy Right Leg" BodyPart=RightLeg MeshContent="rbxassetid://319336155" MeshId=319336155
+            CharacterMesh "ROBLOX Boy Torso" BodyPart=Torso MeshContent="rbxassetid://376169183" MeshId=376169183
+            Part "Right Arm" Size=1,2,1 CFrame=-1.959,36.401,-180.201 CanCollide=false Color=#111111
+            Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=-2.959,34.401,-180.201 CanCollide=false Color=#111111
+            Shirt "Shirt" ShirtTemplate="http://www.roblox.com/asset/?id=1257824305" ShirtTemplateContent="http://www.roblox.com/asset/?id=1257824305"
+            LocalScript "Spider-Man Web Shooters (put in startercharacterscripts) " @src="Scripts/Workspace/Morphs/VenomMorph/MorphPad/Venom/Spider-Man Web Shooters (put in startercharacterscripts).luau"
+            Part "Torso" Size=2,2,1 CFrame=-3.459,36.401,-180.201 Color=#111111 LeftSurface=Weld RightSurface=Weld {
+                Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Left Leg"
+                Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Left Arm"
+                Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Head"
+                Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Right Leg"
+                Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Torso" Part1=@"Workspace/Morphs/VenomMorph/MorphPad/Venom/Right Arm"
+            }
+            Hat "VenomHead" AttachmentPoint=0,0.5,0 {
+                Part "Handle" Size=1.22,1.27,1.2 BottomSurface=Smooth CFrame=-3.459,37.901,-180.201 CanCollide=false Locked TopSurface=Smooth {
+                    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=151354047 " MeshId="http://www.roblox.com/asset/?id=151354047 " MeshType=FileMesh Scale=1.26,1.26,1.26 TextureContent="http://www.roblox.com/asset/?id=152101690" TextureId="http://www.roblox.com/asset/?id=152101690"
+                }
+            }
+        }
+        Weld "Weld" C0=0,-0.526,0|90,0,0 C1=26.561,10,-14.701|90,0,0 Part0=@"Workspace/Morphs/VenomMorph/MorphPad"
+    }
+}

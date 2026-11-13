@@ -1,0 +1,536 @@
+Folder "Animations" {
+    Animation "Driver_Seated" AnimationContent="rbxassetid://3360694441" AnimationId="rbxassetid://3360694441"
+    Animation "Passenger_Seated" AnimationContent="rbxassetid://3360695880" AnimationId="rbxassetid://3360695880"
+}
+Folder "BindableEvents" {
+    BindableEvent "ForceExitSeat"
+}
+Model "Body" PrimaryPart=@"Workspace/Police Car~4/Body/Center" {
+    MeshPart "Center" Size=8.208,0.053,9.105 CFrame=-26.348,4.808,129.871|0,5,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise Transparency=1 {
+        Attachment "BodyAttachmentFL" CFrame=-3.75,2.11,-3.216|0,0,90
+        Attachment "BodyAttachmentFR" CFrame=3.75,2.11,-3.216|-180,0,90
+        Attachment "BodyAttachmentRL" CFrame=-3.75,2.11,1.284|0,0,90
+        Attachment "BodyAttachmentRR" CFrame=3.75,2.11,1.284|-180,0,90
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/hood"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_blue"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/F_bumper"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/glass"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/exhaust"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_red"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/R_glass"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/LF_fender"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_white"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/R_bumper"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_red_tail"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/LR_fender"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/trim_black"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_blue_front"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/interior"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/RR_fender"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_blue1"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack1"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_dark_red"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_white"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_red_front"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_red"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/RF_fender"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/light_rack_glass"
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Body/Center" Part1=@"Workspace/Police Car~4/Body/roof"
+        Attachment "SeatFR" CFrame=1.708,0.625,-1.013
+        Attachment "SeatRL" CFrame=-1.708,0.625,2.737
+        Attachment "SeatRR" CFrame=1.708,0.625,2.737
+        Attachment "VehicleSeat" CFrame=-1.708,0.625,-1.013
+    }
+    Model "FL" PrimaryPart=@"Workspace/Police Car~4/Body/FL/tire" {
+        MeshPart "LF_wheel" Size=1.017,2.311,2.311 CFrame=-30.48,4.9,123.96|0,5,0 CanCollide=false CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "LF_wheel_trim" Size=0.126,2.094,2.178 CFrame=-30.924,4.867,124|0,5,0 CanCollide=false CollisionFidelity=Default Color=#DCDBDE CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "tire" Size=1.243,3,3 CFrame=-30.371,4.9,123.951|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 RenderFidelity=Precise TextureContent="rbxassetid://5163261393" TextureID="rbxassetid://5163261393" {
+            WeldConstraint "FLWeld" Part0=@"Workspace/Police Car~4/Body/FL/tire" Part1=@"Workspace/Police Car~4/Body/FL/LF_wheel_trim"
+            WeldConstraint "FLWeld" Part0=@"Workspace/Police Car~4/Body/FL/tire" Part1=@"Workspace/Police Car~4/Body/FL/LF_wheel"
+        }
+    }
+    Model "FLdoor" PrimaryPart=@"Workspace/Police Car~4/Body/FLdoor/LF_door" {
+        MeshPart "LF_door" Size=0.414,2.924,4.987 CFrame=-30.413,6.386,128.876|0,5,0 CanCollide=false CollisionFidelity=Default Color=#FFFFFF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+            Attachment "DoorAttachment" CFrame=0.213,0.532,-1.871|0,0,90
+            WeldConstraint "FLdoorWeld" Part0=@"Workspace/Police Car~4/Body/FLdoor/LF_door" Part1=@"Workspace/Police Car~4/Body/FLdoor/LF_door_glass"
+            WeldConstraint "FLdoorWeld" Part0=@"Workspace/Police Car~4/Body/FLdoor/LF_door" Part1=@"Workspace/Police Car~4/Body/FLdoor/LF_door_mirror"
+            WeldConstraint "FLdoorWeld" Part0=@"Workspace/Police Car~4/Body/FLdoor/LF_door" Part1=@"Workspace/Police Car~4/Body/FLdoor/LF_door_int"
+            Decal "frontleftdoor" Face=Left Texture="rbxassetid://2957628811" TextureContent="rbxassetid://2957628811"
+        }
+        MeshPart "LF_door_glass" Size=1.071,1.718,4.414 CFrame=-29.781,8.528,129.247|0,5,0 CanCollide=false CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+        MeshPart "LF_door_int" Size=1.274,3.306,4.987 CFrame=-30.494,6.577,128.883|0,5,0 CanCollide=false CollisionFidelity=Default Color=#4B4B4C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "LF_door_mirror" Size=0.684,0.348,0.181 CFrame=-30.889,7.961,127.355|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 Reflectance=1 RenderFidelity=Precise
+    }
+    Model "FR" PrimaryPart=@"Workspace/Police Car~4/Body/FR/tire" {
+        MeshPart "RF_wheel" Size=1.017,2.311,2.311 CFrame=-23.307,4.9,123.333|0,5,0 CanCollide=false CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RF_wheel_trim" Size=0.126,2.094,2.178 CFrame=-22.863,4.867,123.294|0,5,0 CanCollide=false CollisionFidelity=Default Color=#DCDBDE CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "tire" Size=1.243,3,3 CFrame=-23.415,4.9,123.343|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 RenderFidelity=Precise TextureContent="rbxassetid://5163260272" TextureID="rbxassetid://5163260272" {
+            WeldConstraint "FRWeld" Part0=@"Workspace/Police Car~4/Body/FR/tire" Part1=@"Workspace/Police Car~4/Body/FR/RF_wheel_trim"
+            WeldConstraint "FRWeld" Part0=@"Workspace/Police Car~4/Body/FR/tire" Part1=@"Workspace/Police Car~4/Body/FR/RF_wheel"
+        }
+    }
+    Model "FRdoor" PrimaryPart=@"Workspace/Police Car~4/Body/FRdoor/RF_door" {
+        MeshPart "RF_door" Size=0.415,2.924,4.987 CFrame=-22.518,6.386,128.185|0,5,0 CanCollide=false CollisionFidelity=Default Color=#FFFFFF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+            Attachment "DoorAttachment" CFrame=-0.213,0.532,-1.871|-180,0,90
+            WeldConstraint "FRdoorWeld" Part0=@"Workspace/Police Car~4/Body/FRdoor/RF_door" Part1=@"Workspace/Police Car~4/Body/FRdoor/RF_door_int"
+            WeldConstraint "FRdoorWeld" Part0=@"Workspace/Police Car~4/Body/FRdoor/RF_door" Part1=@"Workspace/Police Car~4/Body/FRdoor/RF_door_glass"
+            WeldConstraint "FRdoorWeld" Part0=@"Workspace/Police Car~4/Body/FRdoor/RF_door" Part1=@"Workspace/Police Car~4/Body/FRdoor/RF_door_mirror"
+            Decal "frdoor" Face=Right Texture="rbxassetid://2957628359" TextureContent="rbxassetid://2957628359"
+        }
+        MeshPart "RF_door_glass" Size=1.071,1.718,4.414 CFrame=-23.078,8.532,128.656|0,5,0 CanCollide=false CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+        MeshPart "RF_door_int" Size=1.276,3.304,4.987 CFrame=-22.438,6.577,128.177|0,5,0 CanCollide=false CollisionFidelity=Default Color=#4B4B4C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RF_door_mirror" Size=0.684,0.348,0.181 CFrame=-22.314,7.961,126.604|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 Reflectance=1 RenderFidelity=Precise
+    }
+    MeshPart "F_bumper" Size=7.691,2.331,2.029 CFrame=-27.16,5.849,120.595|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "front" Texture="rbxassetid://2904814947" TextureContent="rbxassetid://2904814947"
+    }
+    MeshPart "LF_fender" Size=0.822,2.798,5.328 CFrame=-30.643,6.082,123.887|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "flfender" Face=Left Texture="rbxassetid://2957628265" TextureContent="rbxassetid://2957628265"
+    }
+    MeshPart "LR_fender" Size=1.245,3.124,5.63 CFrame=-29.379,6.425,137.185|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "rearl fender" Face=Left Texture="rbxassetid://2957629252" TextureContent="rbxassetid://2957629252"
+    }
+    MeshPart "RF_fender" Size=0.822,2.798,5.328 CFrame=-23.159,6.082,123.232|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "fRfender" Face=Right Texture="rbxassetid://2957628457" TextureContent="rbxassetid://2957628457"
+    }
+    Model "RL" PrimaryPart=@"Workspace/Police Car~4/Body/RL/tire" {
+        MeshPart "LR_wheel" Size=1.017,2.311,2.311 CFrame=-29.561,4.9,136.296|0,5,0 CanCollide=false CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "LR_wheel_trim" Size=0.126,2.094,2.178 CFrame=-30.005,4.867,136.334|0,5,0 CanCollide=false CollisionFidelity=Default Color=#DCDBDE CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "tire" Size=1.243,3,3 CFrame=-29.452,4.9,136.286|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 RenderFidelity=Precise TextureContent="rbxassetid://5163259863" TextureID="rbxassetid://5163259863" {
+            WeldConstraint "RLWeld" Part0=@"Workspace/Police Car~4/Body/RL/tire" Part1=@"Workspace/Police Car~4/Body/RL/LR_wheel_trim"
+            WeldConstraint "RLWeld" Part0=@"Workspace/Police Car~4/Body/RL/tire" Part1=@"Workspace/Police Car~4/Body/RL/LR_wheel"
+        }
+    }
+    Model "RLdoor" PrimaryPart=@"Workspace/Police Car~4/Body/RLdoor/LR_door" {
+        MeshPart "LR_door" Size=0.727,3.18,3.589 CFrame=-29.989,6.561,133.163|0,5,0 CanCollide=false CollisionFidelity=Default Color=#FFFFFF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+            Attachment "DoorAttachment" CFrame=0.164,0.356,-1.679|0,0,90
+            WeldConstraint "RLdoorWeld" Part0=@"Workspace/Police Car~4/Body/RLdoor/LR_door" Part1=@"Workspace/Police Car~4/Body/RLdoor/LR_door_glass"
+            WeldConstraint "RLdoorWeld" Part0=@"Workspace/Police Car~4/Body/RLdoor/LR_door" Part1=@"Workspace/Police Car~4/Body/RLdoor/LR_door_int"
+            Decal "Rearleft door" Face=Left Texture="rbxassetid://2957629358" TextureContent="rbxassetid://2957629358"
+        }
+        MeshPart "LR_door_glass" Size=0.882,1.502,3.526 CFrame=-29.388,8.602,133.12|0,5,0 CanCollide=false CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+        MeshPart "LR_door_int" Size=0.886,3.18,3.589 CFrame=-29.909,6.561,133.156|0,5,0 CanCollide=false CollisionFidelity=Default Color=#4B4B4C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Model "RR" PrimaryPart=@"Workspace/Police Car~4/Body/RR/tire" {
+        MeshPart "RR_wheel" Size=1.017,2.311,2.311 CFrame=-22.069,4.9,135.641|0,5,0 CanCollide=false CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RR_wheel_trim" Size=0.126,2.094,2.178 CFrame=-21.625,4.867,135.601|0,5,0 CanCollide=false CollisionFidelity=Default Color=#DCDBDE CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "tire" Size=1.243,3,3 CFrame=-22.177,4.9,135.65|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 RenderFidelity=Precise TextureContent="rbxassetid://5163260513" TextureID="rbxassetid://5163260513" {
+            WeldConstraint "RRWeld" Part0=@"Workspace/Police Car~4/Body/RR/tire" Part1=@"Workspace/Police Car~4/Body/RR/RR_wheel_trim"
+            WeldConstraint "RRWeld" Part0=@"Workspace/Police Car~4/Body/RR/tire" Part1=@"Workspace/Police Car~4/Body/RR/RR_wheel"
+        }
+    }
+    MeshPart "RR_fender" Size=1.245,3.124,5.63 CFrame=-22.094,6.425,136.548|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "rearR fender" Face=Right Texture="rbxassetid://2957629485" TextureContent="rbxassetid://2957629485"
+    }
+    Model "RRdoor" PrimaryPart=@"Workspace/Police Car~4/Body/RRdoor/RR_door" {
+        MeshPart "RR_door" Size=0.727,3.18,3.589 CFrame=-22.192,6.561,132.481|0,5,0 CanCollide=false CollisionFidelity=Default Color=#FFFFFF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+            Attachment "DoorAttachment" CFrame=-0.163,0.356,-1.679|-180,0,90
+            WeldConstraint "RRdoorWeld" Part0=@"Workspace/Police Car~4/Body/RRdoor/RR_door" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_glass"
+            WeldConstraint "RRdoorWeld" Part0=@"Workspace/Police Car~4/Body/RRdoor/RR_door" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_int"
+            Decal "rrdoor" Face=Right Texture="rbxassetid://2957629662" TextureContent="rbxassetid://2957629662"
+        }
+        MeshPart "RR_door_glass" Size=0.882,1.502,3.526 CFrame=-22.788,8.599,132.544|0,5,0 CanCollide=false CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+        MeshPart "RR_door_int" Size=0.886,3.18,3.589 CFrame=-22.271,6.561,132.488|0,5,0 CanCollide=false CollisionFidelity=Default Color=#4B4B4C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    MeshPart "R_bumper" Size=7.586,2.605,1.013 CFrame=-25.512,6.856,139.432|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "Rear" Face=Back Texture="rbxassetid://2957629134" TextureContent="rbxassetid://2957629134"
+    }
+    MeshPart "R_glass" Size=7.22,0.902,0.501 CFrame=-25.529,7.515,139.237|0,5,0 CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+    MeshPart "exhaust" Size=5.394,0.269,0.633 CFrame=-25.507,5.22,139.487|0,5,0 CollisionFidelity=Default Color=#C1C0C3 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "glass" Size=7.076,1.69,12.359 CFrame=-26.253,8.669,130.966|0,5,0 CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.5
+    MeshPart "hood" Size=8.096,1.236,6.562 CFrame=-26.947,7.418,123.026|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "hood" Face=Top Texture="rbxassetid://2957628940" TextureContent="rbxassetid://2957628940"
+    }
+    MeshPart "interior" Size=8.554,4.671,12.355 CFrame=-26.253,7.259,130.967|0,5,0 CollisionFidelity=Default Color=#4B4B4C CustomPhysicalProperties=0.01,0.2,0.5,1,1 RenderFidelity=Precise
+    MeshPart "light_blue1" Size=6.954,1.324,18.63 CFrame=-26.453,7.15,130.145|0,5,0 CollisionFidelity=Default Color=#0055FF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_dark_red" Size=7.22,0.902,0.683 CFrame=-25.537,7.515,139.146|0,5,0 CollisionFidelity=Default Color=#790000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_rack1" Size=4.819,4.787,12.152 CFrame=-26.768,7.398,125.079|0,5,0 CanCollide=false CollisionFidelity=Default Color=#000000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "light_rack_blue" Size=4.563,0.126,0.522 CFrame=-26.598,9.818,130.834|0,5,0 CollisionFidelity=Default Color=#0055FF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_rack_blue_front" Size=2.644,0.128,0.068 CFrame=-27.276,6.179,119.222|0,5,0 CollisionFidelity=Default Color=#0055FF CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_rack_glass" Size=5.42,0.2,0.753 CFrame=-26.267,9.818,130.805|0,5,0 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise Transparency=0.6
+    MeshPart "light_rack_red" Size=4.614,0.126,0.522 CFrame=-25.91,9.818,130.774|0,5,0 CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_rack_red_front" Size=1.755,0.128,0.068 CFrame=-27.276,6.179,119.222|0,5,0 CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_rack_white" Size=1.277,0.126,0.522 CFrame=-26.267,9.818,130.805|0,5,0 CollisionFidelity=Default Color=#E6E5E8 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_red" Size=0.812,0.302,0.583 CFrame=-23.925,6.639,120.866|0,5,0 CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_red_tail" Size=7.103,0.802,0.485 CFrame=-25.532,7.501,139.207|0,5,0 CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "light_white" Size=7.476,1.805,1.314 CFrame=-27.129,6.005,120.948|0,5,0 CollisionFidelity=Default Color=#D1D0D3 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Neon RenderFidelity=Precise
+    MeshPart "roof" Size=7.871,2.01,14.197 CFrame=-26.123,8.697,132.447|0,5,0 CollisionFidelity=Default Color=#3C3C3C CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "roof" Face=Top Texture="rbxassetid://2904850696" TextureContent="rbxassetid://2904850696"
+    }
+    MeshPart "trim_black" Size=8.558,4.707,20.333 CFrame=-26.349,7.008,129.871|0,5,0 CollisionFidelity=Default Color=#2A2A2B CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+}
+Model "Chassis" PrimaryPart=@"Workspace/Police Car~4/Chassis/FloorPanel" {
+    Part "FloorPanel" Size=4,0.2,11.9 BottomSurface=Smooth CFrame=-26.348,5.013,129.871|0,5,0 CanCollide=false Color=#EDEAEA CustomPhysicalProperties=15,0.35,0.25,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=0.5 {
+        WeldConstraint "BodyWeld" Part0=@"Workspace/Police Car~4/Chassis/FloorPanel" Part1=@"Workspace/Police Car~4/Body/Center"
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Part "RedressMount" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-26.266,5.6,130.716|0.001,5,0.027 CanCollide=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 TopSurface=Smooth {
+        Attachment "RedressAttachment" CFrame=0,0,0|0,90,0
+        AlignOrientation "RedressOrientation" AlignType=Parallel Attachment0=@"Workspace/Police Car~4/Chassis/RedressMount/RedressAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/RedressMount/RedressTarget" Enabled=false MaxTorque=1000000 Responsiveness=20
+        AlignPosition "RedressPosition" Attachment0=@"Workspace/Police Car~4/Chassis/RedressMount/RedressAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/RedressMount/RedressTarget" Enabled=false MaxForce=1000000 Responsiveness=20
+        Attachment "RedressTarget" CFrame=0,0,0|0,90,0
+        WeldConstraint "Weld" Part0=@"Workspace/Police Car~4/Chassis/RedressMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Seat "SeatFR" Size=1,0.25,1 BottomSurface=Smooth CFrame=-24.735,5.433,128.713|0,5,0 Color=#1B2A35 Disabled TopSurface=Smooth Transparency=1 {
+        HingeConstraint "DoorHinge" ActuatorType=Servo AngularSpeed=1.35 Attachment0=@"Workspace/Police Car~4/Body/FRdoor/RF_door/DoorAttachment" Attachment1=@"Workspace/Police Car~4/Body/Center/BodyAttachmentFR" ServoMaxTorque=1000000
+        WeldConstraint "DoorLatchWeld" Part0=@"Workspace/Police Car~4/Chassis/SeatFR" Part1=@"Workspace/Police Car~4/Body/FRdoor/RF_door"
+        Attachment "ExitPosition" CFrame=7,0,0
+        Attachment "PromptLocation" CFrame=1.94,6,0.12 {
+            ProximityPrompt "EndorsedVehicleProximityPromptV1" ActionText="Get in" GamepadKeyCode=ButtonY ObjectText="Jeep" RequiresLineOfSight=false Style=Custom
+        }
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SeatFR" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Seat "SeatRL" Size=1,0.25,1 BottomSurface=Smooth CFrame=-27.811,5.432,132.746|0,5,0 Color=#1B2A35 Disabled TopSurface=Smooth Transparency=1 {
+        HingeConstraint "DoorHinge" ActuatorType=Servo AngularSpeed=1.35 Attachment0=@"Workspace/Police Car~4/Body/RLdoor/LR_door/DoorAttachment" Attachment1=@"Workspace/Police Car~4/Body/Center/BodyAttachmentRL" ServoMaxTorque=1000000
+        WeldConstraint "DoorLatchWeld" Part0=@"Workspace/Police Car~4/Chassis/SeatRL" Part1=@"Workspace/Police Car~4/Body/RLdoor/LR_door"
+        Attachment "ExitPosition" CFrame=-7,0,0
+        Attachment "PromptLocation" CFrame=-1.87,6,0 {
+            ProximityPrompt "EndorsedVehicleProximityPromptV1" ActionText="Drive" GamepadKeyCode=ButtonY ObjectText="Jeep" RequiresLineOfSight=false Style=Custom
+        }
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SeatRL" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Seat "SeatRR" Size=1,0.25,1 BottomSurface=Smooth CFrame=-24.408,5.433,132.448|0,5,0 Color=#1B2A35 Disabled TopSurface=Smooth Transparency=1 {
+        HingeConstraint "DoorHinge" ActuatorType=Servo AngularSpeed=1.35 Attachment0=@"Workspace/Police Car~4/Body/RRdoor/RR_door/DoorAttachment" Attachment1=@"Workspace/Police Car~4/Body/Center/BodyAttachmentRR" ServoMaxTorque=1000000
+        WeldConstraint "DoorLatchWeld" Part0=@"Workspace/Police Car~4/Chassis/SeatRR" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door"
+        Attachment "ExitPosition" CFrame=7,0,0
+        Attachment "PromptLocation" CFrame=1.87,6,0 {
+            ProximityPrompt "EndorsedVehicleProximityPromptV1" ActionText="Drive" GamepadKeyCode=ButtonY ObjectText="Jeep" RequiresLineOfSight=false Style=Custom
+        }
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SeatRR" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Part "SteeringRack" Size=0.4,0.4,1 BottomSurface=Smooth CFrame=-26.753,5.111,125.242|-179.794,84.998,179.797 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth {
+        Attachment "SteeringRackAttachment" CFrame=0.4,0,0|90,0,90
+        Attachment "TieRodAttachmentL" CFrame=0,0,0|0,-90,0
+        Attachment "TieRodAttachmentR" CFrame=0,0,0|0,90,0
+    }
+    Part "SteeringRackMount" Size=0.4,0.4,0.4 BottomSurface=Smooth CFrame=-26.787,5.131,124.842|179.993,85,-179.993 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth {
+        Attachment "SteeringRackAttachment" CFrame=0,0,0|90,0,90
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SteeringRackMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Model "SuspensionFL" PrimaryPart=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" {
+        Part "SteeringKnuckleArm" Size=2,0.4,0.4 BottomSurface=Smooth CFrame=-29.784,5.1,124.603|-179.771,84.996,179.773 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=0.5 {
+            Part "Arm" Size=0.4,0.2,0.2 BottomSurface=Smooth CFrame=-29.506,5.1,125.483|-179.998,-5.004,179.98 CanCollide=false Color=#635F62 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+                Attachment "TieRodAttachment" CFrame=-0.2,0,0|0,-90,0
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/SteeringKnuckleArm/Arm" Part1=@"Workspace/Police Car~4/Chassis/SuspensionFL/SteeringKnuckleArm"
+            }
+            Attachment "KnuckleAttachment" CFrame=0.7,0.2,-0.4|-90,90,0
+            Attachment "MotorAttachment" CFrame=0.7,-0.2,-0.4|-90,90,0
+        }
+        Part "StroutMount" Size=1,0.4,0.4 BottomSurface=Smooth CFrame=-29.645,7.328,123.888|179.914,85,-179.914 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=1 {
+            Attachment "KnuckleAttachmentL" CFrame=0,-2,-0.6|-90,90,0
+            WeldConstraint "StrutMountWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/StroutMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+            Attachment "StrutSpringAttachmentL" CFrame=0,-0.2,-0.2|90,-90,0
+        }
+        Part "Wheel" Size=0.6,3,3 BottomSurface=Smooth CFrame=-30.691,4.9,123.979|180,-5,-179.999 Color=#635F62 CustomPhysicalProperties=2,2,0.1,3,1 Shape=Cylinder TopSurface=Smooth Transparency=1 {
+            Attachment "MotorAttachment" CFrame=-0.4,0,0
+            NoCollisionConstraint "NoCollide_F_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/F_bumper"
+            NoCollisionConstraint "NoCollide_LF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/LF_fender"
+            NoCollisionConstraint "NoCollide_LR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/LR_fender"
+            NoCollisionConstraint "NoCollide_RF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/RF_fender"
+            NoCollisionConstraint "NoCollide_RR_door" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door"
+            NoCollisionConstraint "NoCollide_RR_door_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_glass"
+            NoCollisionConstraint "NoCollide_RR_door_int" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_int"
+            NoCollisionConstraint "NoCollide_RR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/RR_fender"
+            NoCollisionConstraint "NoCollide_R_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/R_bumper"
+            NoCollisionConstraint "NoCollide_R_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/R_glass"
+            NoCollisionConstraint "NoCollide_exhaust" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/exhaust"
+            NoCollisionConstraint "NoCollide_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/glass"
+            NoCollisionConstraint "NoCollide_hood" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/hood"
+            NoCollisionConstraint "NoCollide_interior" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/interior"
+            NoCollisionConstraint "NoCollide_light_blue1" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_blue1"
+            NoCollisionConstraint "NoCollide_light_dark_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_dark_red"
+            NoCollisionConstraint "NoCollide_light_rack_blue" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue"
+            NoCollisionConstraint "NoCollide_light_rack_blue_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue_front"
+            NoCollisionConstraint "NoCollide_light_rack_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red"
+            NoCollisionConstraint "NoCollide_light_rack_red_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red_front"
+            NoCollisionConstraint "NoCollide_light_rack_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_white"
+            NoCollisionConstraint "NoCollide_light_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red"
+            NoCollisionConstraint "NoCollide_light_red_tail" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red_tail"
+            NoCollisionConstraint "NoCollide_light_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_white"
+            NoCollisionConstraint "NoCollide_roof" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/roof"
+            NoCollisionConstraint "NoCollide_trim_black" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/trim_black"
+            WeldConstraint "WheelWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel" Part1=@"Workspace/Police Car~4/Body/FL/tire"
+        }
+    }
+    Model "SuspensionFR" PrimaryPart=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" {
+        Part "SteeringKnuckleArm" Size=2,0.4,0.4 BottomSurface=Smooth CFrame=-23.88,5.1,124.087|0.227,-84.996,0.225 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=0.5 {
+            Part "Arm" Size=0.4,0.2,0.2 BottomSurface=Smooth CFrame=-24.001,5.1,125.001|-179.998,-5.004,179.98 CanCollide=false Color=#635F62 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+                Attachment "TieRodAttachment" CFrame=0.2,0,0|0,90,0
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/SteeringKnuckleArm/Arm" Part1=@"Workspace/Police Car~4/Chassis/SuspensionFR/SteeringKnuckleArm"
+            }
+            Attachment "KnuckleAttachment" CFrame=-0.7,0.2,-0.4|-90,90,0
+            Attachment "MotorAttachment" CFrame=-0.701,-0.2,-0.45|90,-90,0
+        }
+        Part "StroutMount" Size=1,0.4,0.4 BottomSurface=Smooth CFrame=-24.141,7.332,123.406|-0.028,-85,-0.028 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=1 {
+            Attachment "KnuckleAttachmentR" CFrame=0,-2,-0.6|-90,90,0
+            WeldConstraint "StrutMountWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/StroutMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+            Attachment "StrutSpringAttachmentR" CFrame=0,-0.2,-0.2|-90,90,0
+        }
+        Part "Wheel" Size=0.6,3,3 BottomSurface=Smooth CFrame=-23.095,4.9,123.315|0,5,-0.001 Color=#635F62 CustomPhysicalProperties=2,2,0.1,3,1 Shape=Cylinder TopSurface=Smooth Transparency=1 {
+            Attachment "MotorAttachment" CFrame=-0.4,0,0|-180,0,180
+            NoCollisionConstraint "NoCollide_F_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/F_bumper"
+            NoCollisionConstraint "NoCollide_LF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/LF_fender"
+            NoCollisionConstraint "NoCollide_LR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/LR_fender"
+            NoCollisionConstraint "NoCollide_RF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/RF_fender"
+            NoCollisionConstraint "NoCollide_RR_door" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door"
+            NoCollisionConstraint "NoCollide_RR_door_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_glass"
+            NoCollisionConstraint "NoCollide_RR_door_int" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_int"
+            NoCollisionConstraint "NoCollide_RR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/RR_fender"
+            NoCollisionConstraint "NoCollide_R_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/R_bumper"
+            NoCollisionConstraint "NoCollide_R_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/R_glass"
+            NoCollisionConstraint "NoCollide_exhaust" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/exhaust"
+            NoCollisionConstraint "NoCollide_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/glass"
+            NoCollisionConstraint "NoCollide_hood" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/hood"
+            NoCollisionConstraint "NoCollide_interior" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/interior"
+            NoCollisionConstraint "NoCollide_light_blue1" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_blue1"
+            NoCollisionConstraint "NoCollide_light_dark_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_dark_red"
+            NoCollisionConstraint "NoCollide_light_rack_blue" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue"
+            NoCollisionConstraint "NoCollide_light_rack_blue_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue_front"
+            NoCollisionConstraint "NoCollide_light_rack_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red"
+            NoCollisionConstraint "NoCollide_light_rack_red_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red_front"
+            NoCollisionConstraint "NoCollide_light_rack_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_white"
+            NoCollisionConstraint "NoCollide_light_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red"
+            NoCollisionConstraint "NoCollide_light_red_tail" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red_tail"
+            NoCollisionConstraint "NoCollide_light_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_white"
+            NoCollisionConstraint "NoCollide_roof" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/roof"
+            NoCollisionConstraint "NoCollide_trim_black" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/trim_black"
+            WeldConstraint "WheelWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel" Part1=@"Workspace/Police Car~4/Body/FR/tire"
+        }
+    }
+    Model "SuspensionRL" PrimaryPart=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" {
+        Part "StroutMount" Size=1,0.4,0.4 BottomSurface=Smooth CFrame=-28.727,7.328,136.222|179.983,85,-179.981 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=1 {
+            Attachment "MotorAttachment" CFrame=0,-2.428,-0.65|-89.998,90,0
+            WeldConstraint "StrutMountWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/StroutMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+            Attachment "StrutSpringAttachmentL" CFrame=0,-0.2,-0.2|-90,90,0
+        }
+        Part "Wheel" Size=0.6,3,3 BottomSurface=Smooth CFrame=-29.773,4.9,136.314|180,-5,-179.999 Color=#635F62 CustomPhysicalProperties=2,2,0.1,3,1 Shape=Cylinder TopSurface=Smooth Transparency=1 {
+            Attachment "MotorAttachment" CFrame=-0.4,0,0
+            NoCollisionConstraint "NoCollide_F_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/F_bumper"
+            NoCollisionConstraint "NoCollide_LF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/LF_fender"
+            NoCollisionConstraint "NoCollide_LR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/LR_fender"
+            NoCollisionConstraint "NoCollide_RF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RF_fender"
+            NoCollisionConstraint "NoCollide_RR_door" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door"
+            NoCollisionConstraint "NoCollide_RR_door_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_glass"
+            NoCollisionConstraint "NoCollide_RR_door_int" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_int"
+            NoCollisionConstraint "NoCollide_RR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RR_fender"
+            NoCollisionConstraint "NoCollide_R_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/R_bumper"
+            NoCollisionConstraint "NoCollide_R_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/R_glass"
+            NoCollisionConstraint "NoCollide_exhaust" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/exhaust"
+            NoCollisionConstraint "NoCollide_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/glass"
+            NoCollisionConstraint "NoCollide_hood" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/hood"
+            NoCollisionConstraint "NoCollide_interior" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/interior"
+            NoCollisionConstraint "NoCollide_light_blue1" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_blue1"
+            NoCollisionConstraint "NoCollide_light_dark_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_dark_red"
+            NoCollisionConstraint "NoCollide_light_rack_blue" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue"
+            NoCollisionConstraint "NoCollide_light_rack_blue_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue_front"
+            NoCollisionConstraint "NoCollide_light_rack_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red"
+            NoCollisionConstraint "NoCollide_light_rack_red_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red_front"
+            NoCollisionConstraint "NoCollide_light_rack_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_white"
+            NoCollisionConstraint "NoCollide_light_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red"
+            NoCollisionConstraint "NoCollide_light_red_tail" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red_tail"
+            NoCollisionConstraint "NoCollide_light_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/light_white"
+            NoCollisionConstraint "NoCollide_roof" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/roof"
+            NoCollisionConstraint "NoCollide_trim_black" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/trim_black"
+            WeldConstraint "WheelWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel" Part1=@"Workspace/Police Car~4/Body/RL/tire"
+        }
+    }
+    Model "SuspensionRR" PrimaryPart=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" {
+        Part "StrutMount" Size=1,0.4,0.4 BottomSurface=Smooth CFrame=-22.903,7.332,135.713|0.03,-85,0.03 CanCollide=false Color=#635F62 CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth Transparency=0.5 {
+            Attachment "MotorAttachment" CFrame=0,-2.432,-0.65|89.994,-90,0
+            WeldConstraint "StrutMountWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/StrutMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+            Attachment "StrutSpringAttachmentR" CFrame=0,-0.2,-0.2|-90,90,0
+        }
+        Part "Wheel" Size=0.6,3,3 BottomSurface=Smooth CFrame=-21.857,4.9,135.621|0,5,-0.001 Color=#635F62 CustomPhysicalProperties=2,2,0.1,3,1 Shape=Cylinder TopSurface=Smooth Transparency=1 {
+            Attachment "MotorAttachment" CFrame=-0.4,0,0|-180,0,180
+            NoCollisionConstraint "NoCollide_F_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/F_bumper"
+            NoCollisionConstraint "NoCollide_LF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/LF_fender"
+            NoCollisionConstraint "NoCollide_LR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/LR_fender"
+            NoCollisionConstraint "NoCollide_RF_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RF_fender"
+            NoCollisionConstraint "NoCollide_RR_door" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door"
+            NoCollisionConstraint "NoCollide_RR_door_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_glass"
+            NoCollisionConstraint "NoCollide_RR_door_int" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RRdoor/RR_door_int"
+            NoCollisionConstraint "NoCollide_RR_fender" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RR_fender"
+            NoCollisionConstraint "NoCollide_R_bumper" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/R_bumper"
+            NoCollisionConstraint "NoCollide_R_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/R_glass"
+            NoCollisionConstraint "NoCollide_exhaust" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/exhaust"
+            NoCollisionConstraint "NoCollide_glass" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/glass"
+            NoCollisionConstraint "NoCollide_hood" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/hood"
+            NoCollisionConstraint "NoCollide_interior" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/interior"
+            NoCollisionConstraint "NoCollide_light_blue1" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_blue1"
+            NoCollisionConstraint "NoCollide_light_dark_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_dark_red"
+            NoCollisionConstraint "NoCollide_light_rack_blue" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue"
+            NoCollisionConstraint "NoCollide_light_rack_blue_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_blue_front"
+            NoCollisionConstraint "NoCollide_light_rack_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red"
+            NoCollisionConstraint "NoCollide_light_rack_red_front" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_red_front"
+            NoCollisionConstraint "NoCollide_light_rack_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_rack_white"
+            NoCollisionConstraint "NoCollide_light_red" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red"
+            NoCollisionConstraint "NoCollide_light_red_tail" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_red_tail"
+            NoCollisionConstraint "NoCollide_light_white" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/light_white"
+            NoCollisionConstraint "NoCollide_roof" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/roof"
+            NoCollisionConstraint "NoCollide_trim_black" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/trim_black"
+            WeldConstraint "WheelWeld" Part0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel" Part1=@"Workspace/Police Car~4/Body/RR/tire"
+        }
+    }
+    Part "TorsionBar" Size=2.5,0.4,0.4 BottomSurface=Smooth CFrame=-25.902,6.211,134.974|-179.999,-5,-0.026 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+        Part "TorsionBar" Size=2,0.2,0.2 BottomSurface=Smooth CFrame=-24.088,6.213,135.62|-179.977,40,179.966 CanCollide=false Color=#CDCDCD CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+            WeldConstraint "TorsionArmWeld" Part0=@"Workspace/Police Car~4/Chassis/TorsionBar/TorsionBar" Part1=@"Workspace/Police Car~4/Chassis/TorsionBar"
+            Attachment "TorsionSpringAttachment" CFrame=-1,0,0|-180,0,-180
+        }
+        Part "TorsionBar" Size=2,0.2,0.2 BottomSurface=Smooth CFrame=-27.575,6.211,135.925|-0.026,50,0.04 CanCollide=false Color=#CDCDCD CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+            WeldConstraint "TorsionArmWeld" Part0=@"Workspace/Police Car~4/Chassis/TorsionBar/TorsionBar~2" Part1=@"Workspace/Police Car~4/Chassis/TorsionBar"
+            Attachment "TorsionSpringAttachment" CFrame=-1,0,0|-180,0,-180
+        }
+        Attachment "TorsionBarAttachment" CFrame=0,0,0|180,0,0
+        HingeConstraint "TorsionBarHinge" Attachment0=@"Workspace/Police Car~4/Chassis/TorsionBarMount~2/TorsionBarAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/TorsionBar/TorsionBarAttachment" LimitsEnabled UpperAngle=38
+    }
+    Part "TorsionBar" Size=2.5,0.4,0.4 BottomSurface=Smooth CFrame=-26.806,6.211,124.645|-179.998,-4.999,-0.024 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+        Part "TorsionBar" Size=2,0.2,0.2 BottomSurface=Smooth CFrame=-28.619,6.211,124.003|-179.977,40.001,-0.031 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+            WeldConstraint "TorsionArmWeld" Part0=@"Workspace/Police Car~4/Chassis/TorsionBar~2/TorsionBar" Part1=@"Workspace/Police Car~4/Chassis/TorsionBar~2"
+            Attachment "TorsionSpringAttachment" CFrame=-1,0,0|-180,0,-180
+        }
+        Part "TorsionBar" Size=2,0.2,0.2 BottomSurface=Smooth CFrame=-25.132,6.213,123.697|-0.023,49.999,-179.963 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.35,0.25,1,1 Material=DiamondPlate Shape=Cylinder TopSurface=Smooth {
+            WeldConstraint "TorsionArmWeld" Part0=@"Workspace/Police Car~4/Chassis/TorsionBar~2/TorsionBar~2" Part1=@"Workspace/Police Car~4/Chassis/TorsionBar~2"
+            Attachment "TorsionSpringAttachment" CFrame=-1,0,0|-180,0,-180
+        }
+        Attachment "TorsionBarAttachment" CFrame=0,0,0|180,0,0
+        HingeConstraint "TorsionBarHinge" Attachment0=@"Workspace/Police Car~4/Chassis/TorsionBarMount/TorsionBarAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/TorsionBar~2/TorsionBarAttachment" LimitsEnabled LowerAngle=-38
+    }
+    Part "TorsionBarMount" Size=0.4,1.1,0.4 BottomSurface=Smooth CFrame=-26.806,5.681,124.643|179.989,85,-179.988 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth {
+        Attachment "TorsionBarAttachment" CFrame=0,0.55,0|0,-90,0
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/TorsionBarMount" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Part "TorsionBarMount" Size=0.4,1.1,0.4 BottomSurface=Smooth CFrame=-25.899,5.681,134.971|-179.95,85,179.951 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=20,0.3,0.5,1,1 Material=DiamondPlate TopSurface=Smooth {
+        Attachment "TorsionBarAttachment" CFrame=0,0.55,0|0,-90,0
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/TorsionBarMount~2" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    VehicleSeat "VehicleSeat" Size=1,0.25,1 BottomSurface=Smooth CFrame=-28.138,5.432,129.01|0,5,0 Color=#1B2A35 Disabled HeadsUpDisplay=false MaxSpeed=200 TopSurface=Smooth Transparency=1 {
+        HingeConstraint "DoorHinge" ActuatorType=Servo AngularSpeed=1.35 Attachment0=@"Workspace/Police Car~4/Body/FLdoor/LF_door/DoorAttachment" Attachment1=@"Workspace/Police Car~4/Body/Center/BodyAttachmentFL" ServoMaxTorque=1000000
+        WeldConstraint "DoorLatchWeld" Part0=@"Workspace/Police Car~4/Chassis/VehicleSeat" Part1=@"Workspace/Police Car~4/Body/FLdoor/LF_door"
+        Attachment "ExitPosition" CFrame=-7,0,0
+        Attachment "PromptLocation" CFrame=-1.87,6,0 {
+            ProximityPrompt "EndorsedVehicleProximityPromptV1" ActionText="Drive" GamepadKeyCode=ButtonY ObjectText="Jeep" RequiresLineOfSight=false Style=Custom
+        }
+        WeldConstraint "SeatToChassisWeld" Part0=@"Workspace/Police Car~4/Chassis/VehicleSeat" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Part "Weight" Size=4.1,0.8,0.8 BottomSurface=Smooth CFrame=-25.931,4.78,134.622|0.001,5,0.027 CanCollide=false Color=#00FF00 CustomPhysicalProperties=40,0.35,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth Transparency=1 {
+        Trail "Trail" LightInfluence=1
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/Weight" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+    Part "Weight" Size=4.1,0.8,0.8 BottomSurface=Smooth CFrame=-26.893,4.781,123.627|0.001,5,0.028 CanCollide=false Color=#00FF00 CustomPhysicalProperties=50,0.35,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Police Car~4/Chassis/Weight~2" Part1=@"Workspace/Police Car~4/Chassis/FloorPanel"
+    }
+}
+Folder "Constraints" {
+    CylindricalConstraint "MotorFL" AngularActuatorType=Motor Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFL/SteeringKnuckleArm/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel/MotorAttachment" InclinationAngle=90 LimitsEnabled LowerLimit=-1 MotorMaxTorque=2000 UpperLimit=1
+    CylindricalConstraint "MotorFR" AngularActuatorType=Motor Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFR/SteeringKnuckleArm/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel/MotorAttachment" InclinationAngle=90 LimitsEnabled LowerLimit=-1 MotorMaxTorque=2000 UpperLimit=1
+    CylindricalConstraint "MotorRL" AngularActuatorType=Motor Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRL/StroutMount/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel/MotorAttachment" InclinationAngle=90 LimitsEnabled LowerLimit=-1 MotorMaxTorque=2000 UpperLimit=1
+    CylindricalConstraint "MotorRR" AngularActuatorType=Motor Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRR/StrutMount/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel/MotorAttachment" InclinationAngle=90 LimitsEnabled LowerLimit=-1 MotorMaxTorque=2000 UpperLimit=1
+    HingeConstraint "SteeringArmHingeL" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFL/StroutMount/KnuckleAttachmentL" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFL/SteeringKnuckleArm/KnuckleAttachment" LimitsEnabled LowerAngle=-40 UpperAngle=24
+    HingeConstraint "SteeringArmHingeR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFR/StroutMount/KnuckleAttachmentR" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFR/SteeringKnuckleArm/KnuckleAttachment" LimitsEnabled LowerAngle=-24 UpperAngle=40
+    PrismaticConstraint "SteeringPrismatic" ActuatorType=Servo Attachment0=@"Workspace/Police Car~4/Chassis/SteeringRackMount/SteeringRackAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SteeringRack/SteeringRackAttachment" LimitsEnabled LowerLimit=-0.55 ServoMaxForce=200000 Speed=10 UpperLimit=0.55
+    RodConstraint "SteeringTieRodL" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFL/SteeringKnuckleArm/Arm/TieRodAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SteeringRack/TieRodAttachmentL" Color="Dark stone grey" Length=2.563 Thickness=0.2 Visible
+    RodConstraint "SteeringTieRodR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFR/SteeringKnuckleArm/Arm/TieRodAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SteeringRack/TieRodAttachmentR" Color="Dark stone grey" Length=2.563 Thickness=0.2 Visible
+    SpringConstraint "StrutSpringFL" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFL/StroutMount/StrutSpringAttachmentL" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel/MotorAttachment" Coils=6 Color="Dark stone grey" Damping=650 FreeLength=2.8 MaxLength=3 MinLength=0.2 Radius=0.15 Stiffness=5000 Thickness=0.2
+    SpringConstraint "StrutSpringFR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFR/StroutMount/StrutSpringAttachmentR" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel/MotorAttachment" Coils=6 Color="Dark stone grey" Damping=650 FreeLength=2.8 MaxLength=3 MinLength=0.2 Radius=0.15 Stiffness=5000 Thickness=0.2
+    SpringConstraint "StrutSpringRL" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRL/StroutMount/StrutSpringAttachmentL" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel/MotorAttachment" Coils=6 Color="Dark stone grey" Damping=650 FreeLength=2.8 MaxLength=3 MinLength=0.2 Radius=0.15 Stiffness=5000 Thickness=0.2
+    SpringConstraint "StrutSpringRR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRR/StrutMount/StrutSpringAttachmentR" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel/MotorAttachment" Coils=6 Color="Dark stone grey" Damping=650 FreeLength=2.8 MaxLength=3 MinLength=0.2 Radius=0.15 Stiffness=5000 Thickness=0.2
+    SpringConstraint "TorsionBarSpringFL" Attachment0=@"Workspace/Police Car~4/Chassis/TorsionBar~2/TorsionBar/TorsionSpringAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/SuspensionFL/Wheel/MotorAttachment" Coils=0 Color="Dark stone grey" Damping=50 FreeLength=1.698 Radius=0 Stiffness=2000 Thickness=0.2
+    SpringConstraint "TorsionBarSpringFR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionFR/Wheel/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/TorsionBar~2/TorsionBar~2/TorsionSpringAttachment" Coils=0 Color="Dark stone grey" Damping=50 FreeLength=1.7 Radius=0 Stiffness=2000 Thickness=0.2
+    SpringConstraint "TorsionBarSpringRL" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRL/Wheel/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/TorsionBar/TorsionBar~2/TorsionSpringAttachment" Coils=0 Color="Dark stone grey" Damping=50 FreeLength=1.796 Radius=0 Stiffness=2000 Thickness=0.2
+    SpringConstraint "TorsionBarSpringRR" Attachment0=@"Workspace/Police Car~4/Chassis/SuspensionRR/Wheel/MotorAttachment" Attachment1=@"Workspace/Police Car~4/Chassis/TorsionBar/TorsionBar/TorsionSpringAttachment" Coils=0 Color="Dark stone grey" Damping=50 FreeLength=1.797 Radius=0 Stiffness=2000 Thickness=0.2
+}
+Folder "Effects" {
+    Sound "Accelerate" AudioContent="rbxassetid://6414492911" SoundId="rbxassetid://6414492911"
+    Sound "Engine" AudioContent="rbxassetid://6417138409" Looped RollOffMaxDistance=350 RollOffMinDistance=20 SoundId="rbxassetid://6417138409" Volume=0.4
+    Sound "EngineHigh" AudioContent="rbxassetid://6417165160" Looped RollOffMaxDistance=350 RollOffMinDistance=20 SoundId="rbxassetid://6417165160" Volume=0.4
+    Sound "EngineLow" AudioContent="rbxassetid://6417179625" Looped RollOffMaxDistance=350 RollOffMinDistance=20 SoundId="rbxassetid://6417179625" Volume=0.4
+    Sound "EngineStart" AudioContent="rbxassetid://6417189222" RollOffMaxDistance=350 RollOffMinDistance=25 SoundId="rbxassetid://6417189222" Volume=3
+    Sound "EngineStop" AudioContent="rbxassetid://6417192842" RollOffMaxDistance=350 RollOffMinDistance=20 SoundId="rbxassetid://6417192842" Volume=3
+    Sound "Idle" AudioContent="rbxassetid://6417198859" Looped RollOffMaxDistance=350 RollOffMinDistance=20 SoundId="rbxassetid://6417198859" Volume=3
+    Sound "OpenCloseDoor" AudioContent="rbxassetid://6417203767" SoundId="rbxassetid://6417203767"
+    Trail "TireTrail" Color=0:#000000,1:#000000 Lifetime=15 LightInfluence=1 MinLength=0 TextureMode=Wrap Transparency=0:0.7,0.8:0.7,1:1
+}
+Folder "Remotes" {
+    RemoteEvent "ExitSeat"
+    RemoteEvent "ForceExitSeat"
+    RemoteEvent "SetThrottle"
+}
+Folder "Scripts" {
+    ModuleScript "Chassis" @src="Scripts/Workspace/Police Car~4/Scripts/Chassis.luau"
+    LocalScript "Driver" @src="Scripts/Workspace/Police Car~4/Scripts/Driver.luau" Disabled {
+        NumberValue "AngularMotorVelocity"
+        ObjectValue "CarValue"
+        NumberValue "ForwardVelocity"
+        NumberValue "HandBrake"
+        NumberValue "Redress"
+        ObjectValue "SeatingModuleReference"
+        NumberValue "Steering"
+        NumberValue "Throttle"
+    }
+    ModuleScript "Effects" @src="Scripts/Workspace/Police Car~4/Scripts/Effects.luau"
+    ModuleScript "InputImageLibrary" @src="Scripts/Workspace/Police Car~4/Scripts/InputImageLibrary.luau" {
+        ModuleScript "Spritesheet" @src="Scripts/Workspace/Police Car~4/Scripts/InputImageLibrary/Spritesheet.luau"
+        Folder "Spritesheets" {
+            Folder "XboxOne" {
+                ModuleScript "Dark" @src="Scripts/Workspace/Police Car~4/Scripts/InputImageLibrary/Spritesheets/XboxOne/Dark.luau"
+                ModuleScript "Light" @src="Scripts/Workspace/Police Car~4/Scripts/InputImageLibrary/Spritesheets/XboxOne/Light.luau"
+            }
+        }
+    }
+    ModuleScript "Keymap" @src="Scripts/Workspace/Police Car~4/Scripts/Keymap.luau"
+    ModuleScript "LocalVehicleGui" @src="Scripts/Workspace/Police Car~4/Scripts/LocalVehicleGui.luau" {
+        ScreenGui "VehicleGui" Enabled=false ResetOnSpawn=false {
+            ObjectValue "Car"
+            Frame "SpeedoFrame" Size=0,100,0,100 AnchorPoint=0.5,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                Frame "OffFrame" Position=1,0,0,0 Size=1,0,1,0 AnchorPoint=1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants {
+                    ImageLabel "Speedo" Position=1,0,0,0 Size=0,100,1,0 AnchorPoint=1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031"
+                }
+                Frame "OnFrame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants {
+                    ImageLabel "Speedo" Size=0,100,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ZIndex=2
+                }
+                TextLabel "SpeedText" Position=0,0,1,0 Size=0,200,0,50 AnchorPoint=1,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="HighwayGothic|Regular|Normal" TextColor3=#FFFFFF TextSize=14 TextXAlignment=Right TextYAlignment=Bottom
+                TextLabel "UnitText" Size=0,200,0,50 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="HighwayGothic|Regular|Normal" Text="MPH" TextColor3=#BDBEBE TextSize=14 TextXAlignment=Left TextYAlignment=Bottom
+            }
+            Frame "TouchControlFrame" Size=1,0,1,0 BackgroundTransparency=1 {
+                ImageButton "AccelerateButton" Position=0.89,0,0.85,0 Size=0.12,0,0.12,0 AutoButtonColor=false BackgroundTransparency=1 Image="rbxassetid://2693948762" ImageContent="rbxassetid://2693948762" SizeConstraint=RelativeYY Visible=false {
+                    ImageLabel "Pressed" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" ImageTransparency=1
+                }
+                ImageButton "BrakeButton" Position=0.89,0,0.85,0 Size=0.12,0,0.12,0 AutoButtonColor=false BackgroundTransparency=1 Image="rbxassetid://2693948762" ImageContent="rbxassetid://2693948762" SizeConstraint=RelativeYY Visible=false {
+                    ImageLabel "Pressed" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" ImageTransparency=1
+                }
+                ImageButton "ExitButton" Position=0.89,0,0.85,0 Size=0.12,0,0.12,0 AutoButtonColor=false BackgroundTransparency=1 Image="rbxassetid://2693948762" ImageContent="rbxassetid://2693948762" SizeConstraint=RelativeYY {
+                    ImageLabel "KeyImage" Position=0.12,0,0.12,0 Size=0.4,0,0.4,0 AnchorPoint=1,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://2935912536" ImageContent="rbxassetid://2935912536" {
+                        TextLabel "ButtonText" Position=0.5,0,0.5,0 Size=0.7,0,0.7,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Text="E" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=7
+                    }
+                    ImageLabel "Pressed" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" ImageTransparency=1
+                }
+            }
+        }
+    }
+    LocalScript "LocalVehiclePromptGui" @src="Scripts/Workspace/Police Car~4/Scripts/LocalVehiclePromptGui.luau" {
+        BillboardGui "ButtonGuiPrototype" Size=0,500,0,500 Active AlwaysOnTop ClipsDescendants Enabled=false ResetOnSpawn=false {
+            ImageLabel "BackgroundConsole" Position=0.5,0,0.5,0 Size=0,136,0,66 AnchorPoint=1,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 Image="rbxassetid://2790371148" ImageColor3=#000000 ImageContent="rbxassetid://2790371148" ImageTransparency=0.5 ScaleType=Slice SliceCenter=32,32,224,224 Visible=false ZIndex=3 {
+                ImageLabel "borderPixel" Position=0.5,0,0.5,0 Size=1,2,1,2 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 Image="rbxassetid://2790371148" ImageColor3=#000000 ImageContent="rbxassetid://2790371148" ImageTransparency=0.5 ScaleType=Slice SliceCenter=32,32,224,224 ZIndex=2
+            }
+            ImageLabel "BackgroundDesktop" Size=0,200,0,100 AnchorPoint=1,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 Image="rbxassetid://2790389767" ImageColor3=#000000 ImageContent="rbxassetid://2790389767" ImageTransparency=0.5 ScaleType=Slice SliceCenter=8,8,248,248 Visible=false ZIndex=3 {
+                ImageLabel "borderPixel" Position=0.5,0,0.5,0 Size=1,2,1,2 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 Image="rbxassetid://2790389767" ImageColor3=#000000 ImageContent="rbxassetid://2790389767" ImageTransparency=0.5 ScaleType=Slice SliceCenter=8,8,248,248 ZIndex=2
+            }
+            ImageButton "ButtonImage" Position=0.5,0,0.5,0 Size=0.6,0,0.6,0 AnchorPoint=0.5,0.5 BackgroundTransparency=1 Image="rbxassetid://2244003392" ImageContent="rbxassetid://2244003392" Selectable=false ZIndex=5 {
+                ImageLabel "Pressed" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" ImageTransparency=1 ZIndex=4
+            }
+            ImageLabel "ButtonPrompt" Size=0,100,0,100 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" Visible=false ZIndex=6 {
+                TextLabel "TextLabel" Position=0.5,0,0.5,0 Size=0.7,0,0.7,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Text="E" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=7
+            }
+            ImageButton "FlipImage" Position=0.5,0,0.5,0 Size=0.6,0,0.6,0 AnchorPoint=0.5,0.5 BackgroundTransparency=1 Image="rbxassetid://2244003392" ImageContent="rbxassetid://2244003392" Selectable=false Visible=false ZIndex=5 {
+                ImageLabel "Pressed" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://924320031" ImageContent="rbxassetid://924320031" ImageTransparency=1 ZIndex=4
+            }
+        }
+        ObjectValue "CarValue"
+    }
+    ModuleScript "LocalVehicleSeating" @src="Scripts/Workspace/Police Car~4/Scripts/LocalVehicleSeating.luau"
+    LocalScript "Passenger" @src="Scripts/Workspace/Police Car~4/Scripts/Passenger.luau" Disabled {
+        ObjectValue "CarValue"
+    }
+    Script "Vehicle" @src="Scripts/Workspace/Police Car~4/Scripts/Vehicle.luau"
+    ModuleScript "VehicleSeating" @src="Scripts/Workspace/Police Car~4/Scripts/VehicleSeating.luau"
+}

@@ -1,0 +1,18 @@
+ReplicatedStorage "ReplicatedStorage" {
+    ModuleScript "RaycastHitboxV3" @src="Scripts/ReplicatedStorage/RaycastHitboxV3.luau" {
+        Folder "CastLogics" {
+            ModuleScript "CastAttachment" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/CastLogics/CastAttachment.luau"
+            ModuleScript "CastLinkAttachment" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/CastLogics/CastLinkAttachment.luau"
+            ModuleScript "CastVectorPoint" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/CastLogics/CastVectorPoint.luau"
+            Folder "Debug" {
+                ModuleScript "Debugger" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/CastLogics/Debug/Debugger.luau"
+            }
+        }
+        ModuleScript "HitboxObject" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/HitboxObject.luau"
+        ModuleScript "MainHandler" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/MainHandler.luau"
+        Folder "Tools" {
+            ModuleScript "Signal" @src="Scripts/ReplicatedStorage/RaycastHitboxV3/Tools/Signal.luau"
+        }
+    }
+    RemoteEvent "Tier1"
+}

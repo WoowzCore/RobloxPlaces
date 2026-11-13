@@ -1,0 +1,20 @@
+grp1 = script.Parent.G1:GetChildren()
+while true do
+wait(0)
+if script.Parent.on.Value == true then
+	wait(0.35)
+	for i = 1,#grp1 do
+	grp1[i].Transparency = 0
+	end
+	
+	wait(0.35)
+	for i = 1,#grp1 do
+	grp1[i].Transparency = 1
+	end
+	
+else
+	for i = 1,#grp1 do
+	grp1[i].Transparency = 1
+	end
+end
+end

@@ -1,0 +1,685 @@
+Folder "City" @file="Scene/Workspace/BigCity Folder/City.bridge"
+Model "FerrisWheel" {
+    Model "Gondola1" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,65.693,-1115.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola1/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke1/Spoke1_Attachment1"
+        }
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,57.943,-1111.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,57.943,-1119.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,57.943,-1119.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,62.193,-1109.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,62.193,-1109.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,57.943,-1111.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,57.943,-1121.241 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,56.443,-1115.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,62.193,-1121.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,57.943,-1109.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,62.193,-1121.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,65.443,-1115.491 Color=#04AFEC TopSurface=Smooth
+    }
+    Model "Gondola2" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,74.693,-1136.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola2/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke2/Spoke2_Attachment1"
+        }
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,66.943,-1140.241 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,65.443,-1136.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,71.193,-1130.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,71.193,-1142.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,71.193,-1142.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,74.443,-1136.491 Color=#04AFEC TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,66.943,-1140.241 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,66.943,-1130.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,66.943,-1132.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,66.943,-1142.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,66.943,-1132.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,71.193,-1130.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+    }
+    Model "Gondola3" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,65.693,-1159.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola3/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke3/Spoke3_Attachment1"
+        }
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,57.943,-1163.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,57.943,-1155.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,57.943,-1163.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,62.193,-1153.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,62.193,-1165.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,56.443,-1159.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,62.193,-1165.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,57.943,-1153.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,57.943,-1155.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,57.943,-1165.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,62.193,-1153.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,65.443,-1159.491 Color=#04AFEC TopSurface=Smooth
+    }
+    Model "Gondola4" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,44.693,-1167.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola4/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke4/Spoke4_Attachment1"
+        }
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,44.443,-1167.491 Color=#04AFEC TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,36.943,-1173.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,41.193,-1161.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,41.193,-1173.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,36.943,-1163.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,41.193,-1161.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,41.193,-1173.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,36.943,-1171.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,36.943,-1163.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,36.943,-1161.741 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,35.443,-1167.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,36.943,-1171.241 TopSurface=Smooth
+    }
+    Model "Gondola5" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,23.193,-1158.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola5/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke1/Spoke1_Attachment2"
+        }
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,15.443,-1162.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,15.443,-1154.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,19.693,-1152.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,15.443,-1162.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,19.693,-1164.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,19.693,-1152.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,15.443,-1152.741 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,22.943,-1158.491 Color=#04AFEC TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,15.443,-1154.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,15.443,-1164.241 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,13.943,-1158.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,19.693,-1164.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+    }
+    Model "Gondola6" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,14.193,-1136.991 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0|-180,0,-180
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola6/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke2/Spoke2_Attachment2"
+        }
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,4.943,-1136.991 Material=Metal TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,10.693,-1142.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,10.693,-1131.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,6.443,-1140.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,10.693,-1142.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,10.693,-1131.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,6.443,-1133.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,6.443,-1133.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,6.443,-1140.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,6.443,-1142.741 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,6.443,-1131.241 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,13.943,-1136.991 Color=#04AFEC TopSurface=Smooth
+    }
+    Model "Gondola7" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,23.193,-1115.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0|-180,0,-180
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola7/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke3/Spoke3_Attachment2"
+        }
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,13.943,-1115.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,15.443,-1111.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,15.443,-1119.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,19.693,-1109.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,19.693,-1121.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,22.943,-1115.491 Color=#04AFEC TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,19.693,-1121.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,15.443,-1121.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,15.443,-1119.241 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,15.443,-1109.741 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,15.443,-1111.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,19.693,-1109.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+    }
+    Model "Gondola8" {
+        Part "Connector" Size=7.5,1,1 Anchored BottomSurface=Smooth CFrame=-637.611,44.693,-1106.491 Color=#635F62 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-3.75,0,0|-180,0,-180
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/BigCity Folder/FerrisWheel/Gondola8/Connector/Attachment0" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/Wheel1/Spoke4/Spoke4_Attachment2"
+        }
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,41.193,-1100.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,36.943,-1112.241 TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,36.943,-1110.241 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,41.193,-1112.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-634.611,36.943,-1102.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-634.611,41.193,-1100.741|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,36.943,-1110.241 TopSurface=Smooth
+        Part "Part" Size=6.5,2.5,0.5 Anchored BottomSurface=Smooth CFrame=-637.611,36.943,-1100.741 TopSurface=Smooth
+        Part "Part" Size=6,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-640.611,41.193,-1112.241|0,0,90 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,35.443,-1106.491 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.5,2.5,3.5 Anchored BottomSurface=Smooth CFrame=-640.611,36.943,-1102.741 TopSurface=Smooth
+        Part "Part" Size=6.5,0.5,12 Anchored BottomSurface=Smooth CFrame=-637.611,44.443,-1106.491 Color=#04AFEC TopSurface=Smooth
+    }
+    Model "MainSupport" PrimaryPart=@"Workspace/BigCity Folder/FerrisWheel/MainSupport/SupportAxle" {
+        Part "Part" Size=6,3,7 Anchored BottomSurface=Smooth CFrame=-645.361,6.193,-1150.491 Material=Cobblestone TopSurface=Smooth
+        Part "Part" Size=6,3,7 Anchored BottomSurface=Smooth CFrame=-645.361,6.193,-1123.491 Material=Cobblestone TopSurface=Smooth
+        Part "Part" Size=3,41,2 Anchored BottomSurface=Smooth CFrame=-645.361,24.489,-1129.638|-20,0,0 Color=#04AFEC Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=3,41,2 Anchored BottomSurface=Smooth CFrame=-645.361,24.489,-1144.345|20,0,0 Color=#04AFEC Material=DiamondPlate TopSurface=Smooth
+        Part "SupportAxle" Size=4,4,4 Anchored BottomSurface=Smooth CFrame=-645.361,44.693,-1136.991 Color=#5B5D69 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            HingeConstraint "MainMotor" ActuatorType=Motor AngularVelocity=0.314 Attachment0=@"Workspace/BigCity Folder/FerrisWheel/MainSupport/SupportAxle/SupportAttachment" Attachment1=@"Workspace/BigCity Folder/FerrisWheel/WheelAxle/WheelAttachment"
+            Attachment "SupportAttachment" CFrame=2,0,0
+        }
+    }
+    Model "SecondSupport" PrimaryPart=@"Workspace/BigCity Folder/FerrisWheel/SecondSupport/Part" {
+        Part "Part" Size=4,4,4 Anchored BottomSurface=Smooth CFrame=-629.361,44.693,-1136.991 Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=6,3,7 Anchored BottomSurface=Smooth CFrame=-629.361,6.193,-1150.491 Material=Cobblestone TopSurface=Smooth
+        Part "Part" Size=3,41,2 Anchored BottomSurface=Smooth CFrame=-629.361,24.489,-1129.638|-20,0,0 Color=#04AFEC Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=3,41,2 Anchored BottomSurface=Smooth CFrame=-629.361,24.489,-1144.345|20,0,0 Color=#04AFEC Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=6,3,7 Anchored BottomSurface=Smooth CFrame=-629.361,6.193,-1123.491 Material=Cobblestone TopSurface=Smooth
+    }
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=-645.361,32.388,-1129.32|-20,-90,0 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=-629.361,32.388,-1129.32|-20,-90,0 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=-645.361,32.352,-1144.82|20,-90,0 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,42,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=-629.361,32.352,-1144.82|20,-90,0 FrontSurface=Smooth LeftSurface=Smooth RightSurface=Smooth TopSurface=Smooth
+    Model "Wheel1" {
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,70.73,-1126.206|-157.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,33.908,-1163.027|67.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,70.727,-1147.776|157.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,55.476,-1163.025|112.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,33.909,-1110.958|-67.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,18.658,-1126.207|-22.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,55.476,-1110.958|-112.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Hub" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-641.861,18.657,-1147.777|22.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Spoke1" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-641.861,44.692,-1136.993|135,0,0 Material=Metal TopSurface=Smooth {
+            Attachment "Spoke1_Attachment1" CFrame=0,0,-29.698
+            Attachment "Spoke1_Attachment2" CFrame=0,0,30.406
+        }
+        Part "Spoke2" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-641.861,44.693,-1136.993|90,0,0 Material=Metal TopSurface=Smooth {
+            Attachment "Spoke2_Attachment1" CFrame=0,0,-30
+            Attachment "Spoke2_Attachment2" CFrame=0,0,30.5|0,0,180
+        }
+        Part "Spoke3" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-641.861,44.693,-1136.991|-135,0,0 Material=Metal TopSurface=Smooth {
+            Attachment "Spoke3_Attachment1" CFrame=0,0,29.699
+            Attachment "Spoke3_Attachment2" CFrame=0,0,-30.406|90,0,180
+        }
+        Part "Spoke4" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-641.861,44.693,-1136.991 Material=Metal TopSurface=Smooth {
+            Attachment "Spoke4_Attachment1" CFrame=0,0,-30
+            Attachment "Spoke4_Attachment2" CFrame=0.5,0,30.501|-180,0,180
+        }
+    }
+    Model "Wheel2" {
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,55.471,-1110.952|-112.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-633.361,44.692,-1136.99|-135,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,33.907,-1110.953|-67.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-633.361,44.693,-1136.991 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,55.477,-1163.027|112.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,33.908,-1163.027|67.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,18.648,-1147.775|22.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,70.731,-1126.205|-157.5,0,-180 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-633.361,44.686,-1136.989|135,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,70.728,-1147.775|157.5,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,62 Anchored BottomSurface=Smooth CFrame=-633.361,44.683,-1136.991|90,0,0 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1,1,23.344 Anchored BottomSurface=Smooth CFrame=-633.361,18.647,-1126.207|-22.5,0,-180 Material=Metal TopSurface=Smooth
+    }
+    Part "WheelAxle" Size=12,4,4 Anchored BottomSurface=Smooth CFrame=-637.361,44.693,-1136.991 Shape=Cylinder TopSurface=Smooth {
+        Sound "Sound" AudioContent="rbxassetid://1839261153" Looped Playing RollOffMaxDistance=100 SoundId="rbxassetid://1839261153" Volume=1
+        Attachment "WheelAttachment" CFrame=-6,0,0
+    }
+}
+Folder "Trees" {
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-925.795,14.075,-1095.461|-21.218,-79.789,-21.631 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-925.801,13.934,-1095.444|-21.217,-79.79,-19.727 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-929.607,14.401,-1102.413|-21.215,-79.789,-14.653 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-929.611,14.401,-1102.416|-21.215,-79.789,-14.653 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-929.535,15.253,-1098.345|-0.363,-80.072,-85.201 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-929.502,15.271,-1098.352|1.662,-80.029,7.879 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-928.78,8.734,-1098.406|11.784,36.583,168.8 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-930.347,10.899,-1099.002|120.725,-50.006,126.351 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.522,7.417,8.075 Anchored CFrame=-662.925,14.366,-1100.235|-180,-61.49,90 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.631,6.631,7.122 Anchored CFrame=-662.898,14.382,-1100.22|179.261,-61.495,-179.563 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.474,4.474,4.474 Anchored CFrame=-660.731,13.94,-1103.119|-172.432,-61.21,-172.27 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.08,5.009,5.08 Anchored CFrame=-660.73,13.94,-1103.116|-172.432,-61.21,-172.27 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.207,8.016,1.238 Anchored CFrame=-662.565,8.751,-1100.217|-2.97,-40.02,174.638 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-643.79,17.214,-873.337|6.16,-51.33,6.068 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-643.821,17.19,-873.314|5.598,-51.366,-85.456 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-646.172,16.657,-877.502|-0.233,-51.579,1.066 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-646.176,16.657,-877.504|-0.233,-51.579,1.066 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-643.245,9.787,-874.007|-1.942,26.813,-179.119 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.08,5.009,5.08 Anchored CFrame=-596.392,13.27,-1067.668|178.752,-7.926,177.994 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.631,6.631,7.122 Anchored CFrame=-600.03,13.484,-1067.717|174.727,-7.767,177.444 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.474,4.474,4.474 Anchored CFrame=-596.389,13.27,-1067.671|178.752,-7.926,177.994 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.522,7.417,8.075 Anchored CFrame=-600.032,13.466,-1067.746|175.083,-7.783,86.406 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.207,8.016,1.238 Anchored CFrame=-599.486,7.913,-1067.015|156.717,-86.04,-22.494 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=6.631,6.631,7.122 Anchored CFrame=-678.301,14.382,-1172.275|179.648,-0.006,-178.914 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.522,7.417,8.075 Anchored CFrame=-678.3,14.366,-1172.305|180,0,90 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.08,5.009,5.08 Anchored CFrame=-674.722,13.94,-1171.752|-176.363,0.069,-178.916 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.474,4.474,4.474 Anchored CFrame=-674.719,13.94,-1171.754|-176.363,0.069,-178.916 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.207,8.016,1.238 Anchored CFrame=-678.144,8.751,-1171.98|-168.78,-78.233,7.539 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-589.817,17.535,-1173.947|0.498,-44.993,1.438 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-589.846,17.515,-1173.919|0,-45,-90 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-592.682,16.95,-1177.792|-5.143,-44.954,-2.55 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-592.686,16.95,-1177.793|-5.143,-44.954,-2.55 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-589.688,10.072,-1174.369|-2.725,33.422,178.051 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=6.165,6.165,6.165 Anchored CFrame=-600.194,17.545,-1132.265|-7.771,62.024,7.96 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.429,5.429,5.429 Anchored CFrame=-598.75,16.341,-1141.675|-7.772,62.024,0.986 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.137,9.137,9.814 Anchored CFrame=-597.264,18.155,-1136.302|0.758,62.316,0.415 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.114,6.029,6.114 Anchored CFrame=-598.739,16.17,-1141.673|-7.771,62.024,2.888 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=10.365,10.221,11.128 Anchored CFrame=-597.228,18.133,-1136.281|0,62.312,-90 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7,6.902,7 Anchored CFrame=-600.195,17.545,-1132.27|-7.771,62.024,7.96 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.664,11.045,1.706 Anchored CFrame=-598.332,10.278,-1136.158|166.016,-0.054,-1.64 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.778,6.258,0.798 Anchored CFrame=-597.158,12.976,-1134.641|33.528,22.56,-20.774 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-589.681,15.326,-1107.452|-91.08,-86.363,-89.994 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-590.275,15.83,-1103.368|88.852,-89.647,89.939 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-587.121,14.329,-1100.003|-91.092,-86.362,-96.98 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-590.309,15.812,-1103.369|90,-90,0 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-587.13,14.188,-1100|-91.092,-86.363,-95.078 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-589.678,15.326,-1107.449|-91.08,-86.363,-89.994 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-589.548,9.314,-1103.884|15.715,26.854,171.13 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-590.992,11.546,-1104.544|134.623,-44.22,138.241 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=4.824,4.756,4.824 Anchored CFrame=-930.868,12.378,-934.794|-178.536,84.333,179.792 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.249,4.249,4.249 Anchored CFrame=-930.867,12.378,-934.792|-178.536,84.333,179.792 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.297,6.297,6.763 Anchored CFrame=-930.689,12.777,-938.227|146.158,83.085,-145.099 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.143,7.043,7.668 Anchored CFrame=-930.661,12.76,-938.229|148.634,83.28,121.356 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.146,7.611,1.176 Anchored CFrame=-931.277,7.456,-938.034|-178.257,5.927,-0.175 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-635.809,14.401,-866.589|-4.499,-35.129,3.663 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-628.183,14.075,-864.404|-4.499,-35.129,-3.312 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-635.804,14.401,-866.59|-4.499,-35.129,3.663 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-632.864,15.253,-863.778|-0.076,-34.816,-84.888 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-628.175,13.934,-864.388|-4.499,-35.129,-1.409 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-632.845,15.271,-863.806|0.35,-34.777,6.442 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-633.903,10.899,-863.663|60.469,-50.581,52.295 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-632.376,8.734,-864.357|51.587,77.919,124.927 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-588.465,14.983,-1069.191|-7.694,-5.922,-4.085 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-584.315,15.209,-1068.099|-4.045,-6.169,-94.786 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-588.469,14.983,-1069.189|-7.694,-5.922,-4.085 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-584.309,15.225,-1068.136|-3.691,-6.192,-3.662 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-585.005,8.613,-1068.093|3.845,72.123,168.078 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-862.521,15.389,-1208.596|3.871,-6.733,1.706 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-862.526,15.368,-1208.562|3.516,-6.743,-89.421 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-866.633,14.894,-1209.736|-0.146,-6.835,1.231 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-866.637,14.894,-1209.734|-0.146,-6.835,1.231 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-862.597,8.785,-1209.361|-5.468,71.492,-174.809 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-927.861,15.389,-1207.396|3.871,-6.733,1.706 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-927.866,15.368,-1207.362|3.516,-6.743,-89.421 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-931.977,14.894,-1208.534|-0.146,-6.835,1.231 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-931.973,14.894,-1208.536|-0.146,-6.835,1.231 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-927.937,8.785,-1208.161|-5.468,71.492,-174.809 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-877.389,15.538,-1167.211|-179.936,-9.928,95.167 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-880.273,14.361,-1163.47|-176.27,-9.512,179.897 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-873.321,14.687,-1167.283|-176.271,-9.512,-173.128 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-877.383,15.556,-1167.177|179.708,-9.966,-173.809 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-880.29,14.22,-1163.477|-176.271,-9.512,-178.2 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-873.319,14.687,-1167.286|-176.271,-9.512,-173.128 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-876.732,11.185,-1168.023|144.202,19.17,-168.13 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-877.329,9.019,-1166.455|15.384,-51.82,-171.908 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.087,5.087,5.087 Anchored CFrame=-992.87,49.18,-941.221|-166.749,73.747,166.541 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.713,9.577,10.427 Anchored CFrame=-988.301,50.514,-938.44|-179.777,73.761,94.942 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.729,5.649,5.729 Anchored CFrame=-992.866,49.021,-941.241|-166.749,73.747,168.444 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.777,5.777,5.777 Anchored CFrame=-987.709,49.55,-933.867|-166.75,73.747,173.517 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.559,6.468,6.559 Anchored CFrame=-987.713,49.55,-933.87|-166.75,73.747,173.517 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.562,8.562,9.196 Anchored CFrame=-988.338,50.535,-938.428|178.972,73.721,-172.772 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.729,5.864,0.748 Anchored CFrame=-987.304,45.583,-937.802|66.331,52.898,-62.66 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.559,10.35,1.599 Anchored CFrame=-989.143,43.131,-938.278|167.096,-42.749,-12.952 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-965.701,13.882,-1068.841|-3.926,-20.424,-2.092 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-970.068,15.06,-1067.044|-0.067,-20.072,-84.867 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-973.631,14.208,-1069.014|-3.925,-20.424,4.883 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-973.627,14.209,-1069.016|-3.925,-20.424,4.883 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-965.689,13.742,-1068.827|-3.925,-20.424,-0.189 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-970.057,15.078,-1067.076|0.306,-20.033,6.347 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-971.043,10.706,-1066.669|47.896,-41.869,34.995 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-969.743,8.541,-1067.729|126.896,78.167,48.398 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.147,8.147,8.75 Anchored CFrame=-714.064,47.837,-836.027|146.124,83.087,-145.065 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.497,5.497,5.497 Anchored CFrame=-714.294,47.321,-831.583|-178.556,84.337,179.812 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.241,6.154,6.241 Anchored CFrame=-714.296,47.321,-831.586|-178.556,84.337,179.812 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.242,9.113,9.921 Anchored CFrame=-714.028,47.815,-836.03|148.6,83.283,121.39 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.483,9.848,1.521 Anchored CFrame=-714.825,40.954,-835.778|-178.257,5.931,-0.173 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-929.157,16.657,-1117.462|-178.783,-83.164,-177.543 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-929.155,16.657,-1117.458|-178.783,-83.164,-177.543 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-930.475,17.19,-1112.84|152.581,-82.399,62.952 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-930.436,17.214,-1112.834|150.236,-82.238,151.714 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-929.577,9.787,-1112.919|-1.827,-18.421,179.427 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-978.536,15.902,-1075.231|134.376,80.892,-132.748 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-978.283,16.432,-1080.029|121.604,77.664,-120.192 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-978.539,15.902,-1075.235|134.376,80.892,-132.748 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-978.248,16.405,-1080.032|122.456,77.967,147.889 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-979.959,9.151,-1079.751|-178.882,5.403,6.555 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-617.772,16.268,-932.411|120.932,-76.797,30.838 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-617.737,16.296,-932.405|120.136,-76.496,121.149 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-616.392,15.92,-937.029|131.755,-79.706,132.525 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-616.394,15.92,-937.033|131.755,-79.706,132.525 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-615.87,9.056,-932.491|0.801,-18.492,-172.284 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-862.894,17.476,-1168.15|176.484,6.743,90.579 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-858.276,16.943,-1166.831|-179.854,6.835,-178.769 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-862.9,17.499,-1168.112|176.129,6.733,-178.294 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-858.272,16.943,-1166.833|-179.854,6.835,-178.769 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-862.815,10.072,-1167.253|-174.532,-71.492,5.191 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=4.249,4.249,4.249 Anchored CFrame=-865.473,46.292,-832.266|-178.556,84.337,179.812 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.297,6.297,6.763 Anchored CFrame=-865.296,46.691,-835.701|146.124,83.087,-145.065 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.143,7.043,7.668 Anchored CFrame=-865.268,46.674,-835.703|148.6,83.283,121.39 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.824,4.756,4.824 Anchored CFrame=-865.475,46.293,-832.268|-178.556,84.337,179.812 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.146,7.611,1.176 Anchored CFrame=-865.884,41.371,-835.508|-178.257,5.931,-0.173 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=6.631,6.631,7.122 Anchored CFrame=-668.93,13.484,-829.837|174.727,-7.767,177.444 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.474,4.474,4.474 Anchored CFrame=-665.289,13.27,-829.79|178.752,-7.926,177.994 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.08,5.009,5.08 Anchored CFrame=-665.292,13.27,-829.788|178.752,-7.926,177.994 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.522,7.417,8.075 Anchored CFrame=-668.932,13.466,-829.866|175.083,-7.783,86.406 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.207,8.016,1.238 Anchored CFrame=-668.386,7.913,-829.134|156.717,-86.04,-22.494 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-873.702,14.894,-1209.439|-179.855,-2.632,-178.745 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-877.946,15.368,-1209.921|176.504,-2.707,90 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-877.945,15.389,-1209.887|176.151,-2.713,-178.931 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-873.699,14.894,-1209.441|-179.855,-2.632,-178.745 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-877.745,8.785,-1209.145|-169.006,-80.873,10.863 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.261,5.261,5.261 Anchored CFrame=-932.401,22.432,-854.91|-179.855,-5.665,-178.737 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.972,5.889,5.972 Anchored CFrame=-932.404,22.433,-854.908|-179.855,-5.665,-178.737 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.844,8.721,9.494 Anchored CFrame=-936.657,22.905,-855.164|176.491,-5.734,89.814 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.796,7.796,8.373 Anchored CFrame=-936.654,22.926,-855.13|176.136,-5.739,-179.135 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.419,9.424,1.456 Anchored CFrame=-936.416,16.338,-854.402|-163.673,-83.823,16.241 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.33,8.214,8.33 Anchored CFrame=-529.663,42.855,-889.94|171.965,58.719,-164.643 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=12.335,12.163,13.242 Anchored CFrame=-531.728,44.173,-895.394|165.413,57.584,109.839 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.461,6.461,6.461 Anchored CFrame=-538.429,43.318,-897.235|171.966,58.719,-171.618 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.337,7.337,7.337 Anchored CFrame=-529.657,42.853,-889.938|171.965,58.719,-164.643 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.276,7.174,7.276 Anchored CFrame=-538.458,43.117,-897.253|171.966,58.719,-169.716 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=10.874,10.874,11.679 Anchored CFrame=-531.767,44.205,-895.368|164.801,57.457,-158.559 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.926,7.447,0.95 Anchored CFrame=-531.164,37.794,-894.707|85.883,48.572,-89.111 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.98,13.144,2.031 Anchored CFrame=-533.979,35.042,-894.57|172.596,-59.132,-4.561 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.562,8.562,9.196 Anchored CFrame=-538.669,47.108,-822.601|9.498,31.273,3.578 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.729,5.649,5.729 Anchored CFrame=-537.184,46.251,-827.87|4.854,30.94,0.906 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.713,9.577,10.427 Anchored CFrame=-538.648,47.082,-822.571|9.086,31.25,-87.295 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.087,5.087,5.087 Anchored CFrame=-537.199,46.41,-827.847|4.853,30.94,-0.996 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.777,5.777,5.777 Anchored CFrame=-542.944,46.044,-820.94|4.854,30.94,5.978 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.559,6.468,6.559 Anchored CFrame=-542.943,46.045,-820.945|4.854,30.94,5.978 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.559,10.35,1.599 Anchored CFrame=-539.297,39.893,-824.343|175.595,30.583,4.048 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.729,5.864,0.748 Anchored CFrame=-539.189,42.06,-822.126|41.354,-2.723,-2.201 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-575.182,14.597,-875.121|-3.575,48.588,5.462 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-575.181,14.597,-875.125|-3.575,48.588,5.462 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-571.94,15.229,-877.872|2.462,48.811,0.925 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-571.914,15.21,-877.848|1.928,48.804,-89.759 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-572.304,8.599,-878.205|-173.929,52.674,-6.7 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.562,8.562,9.196 Anchored CFrame=-889.357,16.087,-866.166|178.973,73.721,-172.772 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.777,5.777,5.777 Anchored CFrame=-888.727,15.102,-861.604|-166.75,73.747,173.517 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.713,9.577,10.427 Anchored CFrame=-889.319,16.067,-866.177|-179.777,73.761,94.942 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.087,5.087,5.087 Anchored CFrame=-893.889,14.733,-868.958|-166.749,73.747,166.541 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.729,5.649,5.729 Anchored CFrame=-893.884,14.574,-868.978|-166.749,73.747,168.444 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.559,6.468,6.559 Anchored CFrame=-888.731,15.103,-861.607|-166.75,73.747,173.517 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.729,5.864,0.748 Anchored CFrame=-888.323,11.136,-865.539|66.331,52.898,-62.66 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.559,10.35,1.599 Anchored CFrame=-890.161,8.683,-866.015|167.096,-42.749,-12.952 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-885.244,15.525,-1123.239|179.528,-52.466,-174.133 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-885.272,15.507,-1123.26|-179.897,-52.428,95.237 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-882.321,14.655,-1126.061|-174.035,-51.881,-169.046 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-884.888,14.188,-1118.547|-174.035,-51.881,-174.118 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-882.322,14.655,-1126.065|-174.035,-51.881,-169.046 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-884.871,14.329,-1118.553|-174.034,-51.881,-176.02 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-884.717,8.988,-1122.744|9.591,-10.189,177.599 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-885.336,11.153,-1124.302|144.919,-15.99,167.598 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.984,8.984,9.649 Anchored CFrame=-881.632,50.468,-835.264|176.105,9.228,-178.122 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.882,6.786,6.882 Anchored CFrame=-876.967,49.9,-833.75|-179.853,9.336,-178.774 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=10.192,10.049,10.941 Anchored CFrame=-881.624,50.444,-835.303|176.462,9.239,90.734 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.062,6.062,6.062 Anchored CFrame=-876.963,49.899,-833.751|-179.853,9.336,-178.774 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.636,10.86,1.678 Anchored CFrame=-881.584,42.877,-834.383|-175.157,-69,4.528 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-704.159,14.04,-949.884|-90.826,86.409,97.989 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-701.479,13.336,-942.448|-90.835,86.41,104.973 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-704.15,13.902,-949.919|-90.825,86.41,99.891 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-700.912,14.729,-946.323|-176.177,89.059,99.2 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-700.946,14.747,-946.32|164.793,88.937,-150.687 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-701.475,13.335,-942.445|-90.835,86.41,104.973 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-701.682,8.281,-947.273|177.252,-27.79,-8.99 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-700.222,10.309,-946.151|59.157,44.761,-42.84 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=6.882,6.786,6.882 Anchored CFrame=-957.402,24.062,-925.918|-179.853,9.335,-178.775 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.984,8.984,9.649 Anchored CFrame=-962.067,24.631,-927.432|176.105,9.227,-178.123 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.062,6.062,6.062 Anchored CFrame=-957.398,24.062,-925.919|-179.853,9.335,-178.775 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=10.192,10.049,10.941 Anchored CFrame=-962.059,24.607,-927.471|176.462,9.238,90.734 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.636,10.86,1.678 Anchored CFrame=-962.018,17.04,-926.551|-175.158,-69.002,4.526 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.087,5.087,5.087 Anchored CFrame=-786.095,45.803,-814.965|-176.177,-15.809,-179.677 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.713,9.577,10.427 Anchored CFrame=-783.314,47.137,-819.535|-179.935,-16.239,95.174 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.777,5.777,5.777 Anchored CFrame=-778.741,46.172,-820.127|-176.177,-15.809,-172.702 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.729,5.649,5.729 Anchored CFrame=-786.115,45.643,-814.97|-176.177,-15.809,-177.774 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.562,8.562,9.196 Anchored CFrame=-783.302,47.157,-819.497|179.7,-16.277,-173.842 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.559,6.468,6.559 Anchored CFrame=-778.744,46.172,-820.123|-176.177,-15.809,-172.702 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.729,5.864,0.748 Anchored CFrame=-782.676,42.205,-820.531|145.289,14.015,-171.929 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.559,10.35,1.599 Anchored CFrame=-783.152,39.753,-818.693|13.582,-45.708,-174.302 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.603,7.497,7.603 Anchored CFrame=-897.162,18.285,-1135.725|-0.245,-53.835,1.051 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=11.258,11.101,12.086 Anchored CFrame=-894.696,18.887,-1130.895|5.893,-53.61,-85.085 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.924,9.924,10.659 Anchored CFrame=-894.659,18.914,-1130.92|6.483,-53.572,6.476 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.697,6.697,6.697 Anchored CFrame=-897.166,18.285,-1135.727|-0.245,-53.835,1.051 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.807,11.997,1.853 Anchored CFrame=-894.015,10.528,-1131.651|-1.906,24.558,-179.203 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=5.058,4.988,5.058 Anchored CFrame=-874.181,13.934,-1045.634|-21.217,-79.79,-19.727 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=4.491,4.491,4.491 Anchored CFrame=-874.175,14.075,-1045.651|-21.218,-79.789,-21.631 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.791,5.71,5.791 Anchored CFrame=-877.987,14.401,-1052.603|-21.215,-79.789,-14.653 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.559,7.559,8.119 Anchored CFrame=-877.882,15.271,-1048.542|1.662,-80.029,7.879 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.101,5.101,5.101 Anchored CFrame=-877.991,14.401,-1052.606|-21.215,-79.789,-14.653 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.576,8.456,9.206 Anchored CFrame=-877.915,15.253,-1048.535|-0.363,-80.072,-85.201 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=0.644,5.177,0.66 Anchored CFrame=-878.727,10.899,-1049.192|120.725,-50.006,126.351 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Meshes/Post" Size=1.376,9.138,1.412 Anchored CFrame=-877.16,8.734,-1048.596|11.784,36.583,168.8 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-653.215,15.209,-830.219|-4.045,-6.169,-94.786 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-657.369,14.983,-831.308|-7.694,-5.922,-4.085 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-657.365,14.983,-831.311|-7.694,-5.922,-4.085 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-653.209,15.225,-830.255|-3.691,-6.192,-3.662 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-653.905,8.613,-830.213|3.845,72.123,168.078 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=8.789,8.789,9.44 Anchored CFrame=-878.816,17.214,-1063.024|150.236,-82.238,151.714 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.931,5.931,5.931 Anchored CFrame=-877.537,16.657,-1067.652|-178.783,-83.164,-177.543 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=6.733,6.639,6.733 Anchored CFrame=-877.535,16.657,-1067.648|-178.783,-83.164,-177.543 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=9.971,9.832,10.704 Anchored CFrame=-878.855,17.19,-1063.03|152.581,-82.399,62.952 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.6,10.624,1.641 Anchored CFrame=-877.957,9.787,-1063.11|-1.827,-18.421,179.427 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+    Model "CandyTree" {
+        Model "Leaves" {
+            MeshPart "Leaves" Size=7.816,7.816,8.394 Anchored CFrame=-969.516,15.389,-1167.78|173.013,56.552,-172.91 CollisionFidelity=Hull Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.274,5.274,5.274 Anchored CFrame=-967.743,14.894,-1163.896|-179.735,56.835,-178.973 CollisionFidelity=Hull Color=#9DBF7D Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=8.866,8.742,9.518 Anchored CFrame=-969.487,15.368,-1167.798|173.648,56.593,95.474 CollisionFidelity=Default Color=#A8BD99 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Leaves" Size=5.987,5.904,5.987 Anchored CFrame=-967.746,14.894,-1163.897|-179.735,56.835,-178.973 CollisionFidelity=Default Color=#B1E5A6 Material=SmoothPlastic RenderFidelity=Precise
+        }
+        Model "Trunk" {
+            MeshPart "Meshes/Post" Size=1.423,9.448,1.46 Anchored CFrame=-970.053,8.785,-1167.231|-178.136,-21.56,0.69 CollisionFidelity=Hull Color=#AF9483 Material=SmoothPlastic RenderFidelity=Precise
+        }
+    }
+}

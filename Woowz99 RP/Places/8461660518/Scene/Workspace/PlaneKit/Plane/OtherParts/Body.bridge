@@ -1,0 +1,1096 @@
+Model "Contrail" {
+    Part "Part" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-773.62,15.441,-592.562|-180,0,-90 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Script "Script" @code=<<<
+            while wait(5) do
+             if script.Parent.Position.Y >= 3000 then
+              script.Parent.Smoke.Enabled = true
+              else
+              script.Parent.Smoke.Enabled = false
+              end
+             end
+        >>>
+        ParticleEmitter "Smoke" Size=0:2.25,0.401:10,1:10 Enabled=false Lifetime=20,20 Rate=50 RotSpeed=20,20 Rotation=50,50 Speed=-50,-50 SpreadAngle=0.1,0.1 Texture="http://www.roblox.com/asset/?id=242445104" TextureContent="http://www.roblox.com/asset/?id=242445104" Transparency=0:1,0.1:0.256,1:1
+    }
+    Part "Part" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-773.619,15.441,-626.976|-180,0,-90 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Script "Script" @code=<<<
+            while wait(5) do
+             if script.Parent.Position.Y >= 3000 then
+              script.Parent.Smoke.Enabled = true
+              else
+              script.Parent.Smoke.Enabled = false
+              end
+             end
+        >>>
+        ParticleEmitter "Smoke" Size=0:2.25,0.401:10,1:10 Enabled=false Lifetime=20,20 Rate=50 RotSpeed=20,20 Rotation=50,50 Speed=-50,-50 SpreadAngle=0.1,0.1 Texture="http://www.roblox.com/asset/?id=242445104" TextureContent="http://www.roblox.com/asset/?id=242445104" Transparency=0:1,0.1:0.256,1:1
+    }
+}
+Seat "CopilotSeat" Size=1.9,0.2,1 Anchored BottomSurface=Smooth CFrame=-681.896,21.49,-607.834|0,-90,0 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth Transparency=1 {
+    Script "ArmsR15" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/ArmsR15.luau"
+    Script "ArmsR6" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/ArmsR6.luau"
+    Script "CoSetup" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/CoSetup.luau"
+    ScreenGui "System" {
+        Frame "Menu" Position=0.044,0,0.294,0 Size=0,150,0,367 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=10 {
+            RemoteEvent "AirBrakeFE"
+            TextButton "CargoDoor" Position=0,75,0.2,150 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Cargo Doors" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/CargoDoor/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.CargoDoorFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "CargoDoorFE"
+            TextLabel "Credit" Size=0,150,0,67 BackgroundColor3=#646464 BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="First Officer System by FrankAvi_Boi" TextColor3=#FFFFFF TextSize=18 TextWrapped
+            TextButton "DoorLock" Position=0,0,0.2,150 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Door Locks" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/DoorLock/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.DoorLockFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "DoorLockFE"
+            TextButton "Engine1" Position=0,0,0.2,225 Size=0,75,0,68 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Engine 1" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Engine1/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.Engine1FE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "Engine1FE"
+            TextButton "Engine2" Position=0,75,0.2,225 Size=0,75,0,68 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Engine 2" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Engine2/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.Engine2FE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "Engine2FE"
+            TextButton "Flap" Position=0,75,0.2,0 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Flaps [0]" TextColor3=#FFFFFF TextSize=17 {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Flap/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.FlapFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "FlapFE"
+            TextButton "Freeze" Position=1.15,0,0.85,0 Size=0,150,0,65 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Freeze" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Freeze/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.FreezeFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "FreezeFE"
+            TextButton "Gear" Position=0,0,0.2,0 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Gears" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Gear/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.GearFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "GearFE"
+            Frame "LightSystem" Position=1.133,0,0,0 Size=0,150,0,292 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=10 {
+                TextButton "Beacon" Position=0.5,0,0.482,0 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Beacon" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/Beacon/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.BeaconFE:FireServer()
+                        end)
+                    >>>
+                }
+                RemoteEvent "BeaconFE"
+                RemoteEvent "HeadFE"
+                TextButton "HeadLight" Position=0,0,0.251,0 Size=0,75,0,67 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Head Light" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/HeadLight/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.HeadFE:FireServer()
+                        end)
+                    >>>
+                }
+                RemoteEvent "LandingFE"
+                TextButton "LandingLight" Position=0.5,0,0.251,0 Size=0,75,0,67 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Landing Lights" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/LandingLight/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.LandingFE:FireServer()
+                        end)
+                    >>>
+                }
+                ObjectValue "LocalHeadLight" Value=@"Workspace/PlaneKit/Plane/AnimationParts/NGear/Wheel/WeldPart~3"
+                ObjectValue "LocalLight" Value=@"Workspace/PlaneKit/Plane/OtherParts/Body/Lights"
+                RemoteEvent "LogoFE"
+                TextButton "LogoLight" Position=0.5,0,0.738,0 Size=0,75,0,76 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Logo Light" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/LogoLight/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.LogoFE:FireServer()
+                        end)
+                    >>>
+                }
+                RemoteEvent "NavFE"
+                TextButton "Navigation" Position=0,0,0.482,0 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Navigation" TextColor3=#FFFFFF TextSize=16 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/Navigation/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.NavFE:FireServer()
+                        end)
+                    >>>
+                }
+                TextButton "Strobe" Position=0,0,0.738,0 Size=0,75,0,76 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Strobe" TextColor3=#FFFFFF TextSize=18 TextWrapped {
+                    Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/LightSystem/Strobe/Function.luau"
+                    LocalScript "Remote" @code=<<<
+                        script.Parent.MouseButton1Click:Connect(function()
+                        	script.Parent.Parent.StrobeFE:FireServer()
+                        end)
+                    >>>
+                }
+                RemoteEvent "StrobeFE"
+                TextLabel "Title" Size=0,150,0,67 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Light System" TextColor3=#FFFFFF TextSize=20
+            }
+            ObjectValue "LocalAnim" Value=@"Workspace/PlaneKit/Plane/AnimationParts"
+            ObjectValue "Main" Value=@"Workspace/PlaneKit/Plane/MainParts/Main"
+            TextButton "Reverse" Position=0,75,0.2,75 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Reverse Thrust" TextColor3=#FFFFFF TextSize=16 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Reverse/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.ReverseFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "ReverseFE"
+            TextButton "Spoiler" Position=0,0,0.2,75 Size=0,75,0,75 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Spoiler [Unarmed]" TextColor3=#FFFFFF TextSize=16 TextWrapped {
+                Script "Function" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/CopilotSeat/System/Menu/Spoiler/Function.luau"
+                LocalScript "Remote" @code=<<<
+                    script.Parent.MouseButton1Click:Connect(function()
+                    	script.Parent.Parent.SpoilerFE:FireServer()
+                    end)
+                >>>
+            }
+            RemoteEvent "SpoilerFE"
+        }
+    }
+}
+Part "Cruise" Size=14.2,1,61 Anchored BottomSurface=Smooth CFrame=-726.758,10.991,-609.797|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+    Script "Script" @code=<<<
+        while wait() do
+        	if script.Parent.Position.Y >= 1000 then
+        		script.Parent.CanCollide = true
+        	else
+        		script.Parent.CanCollide = false
+        	end
+        end
+    >>>
+}
+Seat "JumpSeat" Size=1.9,0.2,0.5 Anchored BottomSurface=Smooth CFrame=-683.946,21.19,-612.135|0,-90,0 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth Transparency=1 {
+    Script "ArmsR15" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/JumpSeat/ArmsR15.luau"
+    Script "ArmsR6" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/JumpSeat/ArmsR6.luau"
+}
+Model "Lights" {
+    Part "Beacon1" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-729.201,28.866,-609.798|0,0,-90 Color=#C4022F Material=Metal TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Color=#FF003B Enabled=false Range=5
+        BillboardGui "Red" Size=8,0,8,0 Active Enabled=false ExtentsOffset=0,1,0 {
+            ImageLabel "Red" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820012" ImageContent="http://www.roblox.com/asset/?id=145820012"
+        }
+    }
+    Part "Beacon2" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-734.201,14.825,-609.798|0,0,-90 Color=#C4022F Material=Metal TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Color=#FF003B Enabled=false Range=5
+        BillboardGui "Red" Size=8,0,8,0 Active Enabled=false ExtentsOffset=0,-1,0 {
+            ImageLabel "Red" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820012" ImageContent="http://www.roblox.com/asset/?id=145820012"
+        }
+    }
+    Script "BeaconScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Lights/BeaconScript.luau"
+    BoolValue "BeaconValue"
+    Part "Glass" Size=0.5,0.25,0.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-797.16,26.424,-609.798|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.5 {
+        SpecialMesh "Mesh" MeshType=Sphere
+    }
+    UnionOperation "Glass" Size=1.015,0.363,0.335 Anchored CFrame=-748.297,23.069,-667.026|5.002,-63.01,0.003 Color=#F8F8F8 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="9ef97f5764fa1853"
+    UnionOperation "Glass" Size=1.015,0.363,0.335 Anchored CFrame=-748.303,23.069,-552.569|174.999,-63.005,179.998 Color=#F8F8F8 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="c0888ef4f03abba0"
+    UnionOperation "Glass" Size=0.425,0.669,1.914 Anchored CFrame=-720.328,18.251,-616.952|5.924,32.369,-3.18 Color=#F8F8F8 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="18c68ab2e07eb781"
+    UnionOperation "Glass" Size=0.418,0.669,1.914 Anchored CFrame=-720.322,18.251,-602.639|174.076,32.371,-176.82 Color=#F8F8F8 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="0796191d92cff717"
+    BoolValue "HeadValue"
+    UnionOperation "Landing1" Size=1.525,0.563,0.5 Anchored CFrame=-720.917,18.264,-616.658|5.002,-55.011,0.003 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7834eff23822ff7c" {
+        Attachment "Attachment0" CFrame=0.025,0,0
+        Attachment "Attachment1" CFrame=10.025,0,-35.4
+        Beam "Dynamic" Attachment0=@"Workspace/PlaneKit/Plane/OtherParts/Body/Lights/Landing1/Attachment0" Attachment1=@"Workspace/PlaneKit/Plane/OtherParts/Body/Lights/Landing1/Attachment1" Enabled=false FaceCamera Texture="rbxassetid://901813002" TextureContent="rbxassetid://901813002" TextureLength=0.985 TextureSpeed=0 Transparency=0:0.65,1:0.65 Width1=25
+        SurfaceLight "Light" Angle=40 Brightness=1.5 Enabled=false Range=40
+    }
+    UnionOperation "Landing2" Size=0.114,0.49,0.49 Anchored CFrame=-717.282,15.57,-613.636|24.254,6.281,103.65 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="eab1bd5e467ce872" {
+        SurfaceLight "Light" Angle=40 Brightness=1.5 Enabled=false Face=Left Range=50
+        BillboardGui "White" Size=8,0,8,0 Active Enabled=false ExtentsOffset=0,-1,0 {
+            ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+        }
+    }
+    UnionOperation "Landing3" Size=0.114,0.49,0.49 Anchored CFrame=-717.282,15.57,-605.96|155.746,6.281,76.353 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="eab1bd5e467ce872" {
+        SurfaceLight "Light" Angle=40 Brightness=1.5 Enabled=false Face=Right Range=50
+        BillboardGui "White" Size=8,0,8,0 Active Enabled=false ExtentsOffset=0,-1,0 {
+            ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+        }
+    }
+    UnionOperation "Landing4" Size=1.525,0.563,0.5 Anchored CFrame=-720.918,18.264,-602.937|174.999,-55.007,179.998 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b5d6a7b47fda0634" {
+        Attachment "Attachment0" CFrame=0.025,0,0
+        Attachment "Attachment1" CFrame=-9.975,0,-35.4
+        Beam "Dynamic" Attachment0=@"Workspace/PlaneKit/Plane/OtherParts/Body/Lights/Landing4/Attachment0" Attachment1=@"Workspace/PlaneKit/Plane/OtherParts/Body/Lights/Landing4/Attachment1" Enabled=false FaceCamera Texture="rbxassetid://901813002" TextureContent="rbxassetid://901813002" TextureLength=0.985 TextureSpeed=0 Transparency=0:0.65,1:0.65 Width1=25
+        SurfaceLight "Light" Angle=40 Brightness=1.5 Enabled=false Range=40
+    }
+    BoolValue "LandingValue"
+    UnionOperation "Logo1" Size=0.054,0.233,0.233 Anchored CFrame=-798.607,28.263,-628.733|56.43,13.771,-115.041 CanCollide=false Color=#FFFFCC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="7ab1083efcd05ace" {
+        SurfaceLight "Light" Angle=40 Enabled=false Face=Left Range=50
+    }
+    UnionOperation "Logo2" Size=0.054,0.233,0.233 Anchored CFrame=-798.609,28.263,-590.862|123.568,13.772,-64.955 CanCollide=false Color=#FFFFCC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="7ab1083efcd05ace" {
+        SurfaceLight "Light" Angle=40 Enabled=false Face=Right Range=50
+    }
+    UnionOperation "LogoL1" Size=0.054,0.233,0.233 Anchored CFrame=-798.607,28.312,-628.727|-172.998,-20.006,-90 Color=#FFFFCC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f40851c1b64acd4f"
+    UnionOperation "LogoL2" Size=0.054,0.233,0.233 Anchored CFrame=-798.609,28.263,-590.862|172.998,20.007,-90 Color=#FFFFCC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f40851c1b64acd4f"
+    BoolValue "LogoValue"
+    Part "NavGreen" Size=0.4,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-748.136,22.992,-552.796|174.999,-63.005,179.998 Color=#00FF00 Material=Metal TopSurface=Smooth {
+        BillboardGui "Green" Size=8,0,8,0 Active Enabled=false {
+            ImageLabel "Green" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820145" ImageContent="http://www.roblox.com/asset/?id=145820145"
+        }
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Color=#00FF00 Enabled=false Range=5
+    }
+    Part "NavRed" Size=0.4,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-748.13,22.992,-666.799|5.002,-63.01,0.003 Color=#C4281C Material=Metal TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Color=#FF0000 Enabled=false Range=5
+        BillboardGui "Red" Size=8,0,8,0 Active Enabled=false {
+            ImageLabel "Red" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820012" ImageContent="http://www.roblox.com/asset/?id=145820012"
+        }
+    }
+    BoolValue "NavValue"
+    Part "Plate" Size=0.2,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-729.201,28.766,-609.798|0,0,-90 Color=#CDCDCD Material=Metal Shape=Cylinder TopSurface=Smooth
+    Part "Plate" Size=0.2,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-734.201,14.925,-609.798|0,0,-90 Color=#CDCDCD Material=Metal Shape=Cylinder TopSurface=Smooth
+    UnionOperation "Plate" Size=0.4,0.571,0.571 Anchored CFrame=-717.302,15.645,-613.599|24.251,6.28,-76.349 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="320f909279cc2d00"
+    UnionOperation "Plate" Size=0.4,0.571,0.571 Anchored CFrame=-717.302,15.645,-605.996|155.746,6.281,76.353 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="320f909279cc2d00"
+    UnionOperation "Plate" Size=0.19,0.271,0.271 Anchored CFrame=-798.609,28.222,-590.858|172.998,20.007,-90 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="33378363fed378eb"
+    UnionOperation "Plate" Size=0.19,0.271,0.271 Anchored CFrame=-798.607,28.272,-628.732|-172.998,-20.006,-90 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="33378363fed378eb"
+    Part "Strobe1" Size=0.3,0.15,0.2 Anchored BottomSurface=Smooth CFrame=-748.497,23.164,-552.291|170.432,-55.87,-163.946 Color=#F8F8F8 Material=Metal TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Enabled=false Range=5
+        BillboardGui "White" Size=8,0,8,0 Active Enabled=false {
+            ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+        }
+    }
+    Part "Strobe2" Size=0.3,0.15,0.2 Anchored BottomSurface=Smooth CFrame=-748.49,23.164,-667.305|9.57,-55.874,-16.053 Color=#F8F8F8 Material=Metal TopSurface=Smooth {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Enabled=false Range=5
+        BillboardGui "White" Size=8,0,8,0 Active Enabled=false {
+            ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+        }
+    }
+    Part "Strobe3" Size=0.45,0.2,0.25 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-797.16,26.424,-609.798|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Sphere
+        PointLight "PointLight" Enabled=false Range=5
+        BillboardGui "White" Size=8,0,8,0 Active Enabled=false ExtentsOffset=0.5,0,1 {
+            ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+        }
+    }
+    Script "StrobeScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Lights/StrobeScript.luau"
+    BoolValue "StrobeValue"
+}
+Model "Model" {
+    UnionOperation "Union" Size=24.58,0.854,0.755 Anchored CFrame=-792.484,27.231,-623.387|7.003,-57.511,0.004 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="77dc859d0481628e"
+    UnionOperation "Union" Size=22.141,0.845,3.869 Anchored CFrame=-797.958,26.969,-621.215|7.003,-70.009,0.005 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="5b8086a712b1da24"
+    UnionOperation "Union" Size=25.278,0.883,7.672 Anchored CFrame=-794.254,27.241,-623.585|7.003,-70.009,0.005 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="96f0b48807f67aa7"
+    UnionOperation "Union" Size=8.7,0.237,0.58 Anchored CFrame=-797.102,26.479,-615.806|7.004,-76.258,0.006 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e7ef2572ad2b706e"
+}
+Model "Model" {
+    Model "CFM56-5" {
+        Model "Model" {
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-114.993,0.004,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-124.992,0.005,179.993 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-94.998,0.001,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-90,0,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-85.002,-0.001,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-119.992,0.004,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-104.996,0.002,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-109.994,0.003,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.179,15.453,-627.149|-99.997,0.002,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=1.455,2.738,2.738 Anchored CFrame=-721.922,15.453,-627.149|-174.999,0.009,179.999 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b3bdc0c60a8d5526"
+        }
+        Model "Model" {
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-159.994,0.008,179.997 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-99.997,0.002,179.991 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-129.991,0.006,179.993 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-85.002,-0.001,179.991 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-144.992,0.007,179.995 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=1.899,1.198,1.198 Anchored CFrame=-727.45,15.454,-627.149|-174.999,0.009,179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="4707d40051e8a314"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.8,15.453,-627.149|-114.993,0.004,179.992 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+        }
+        UnionOperation "Union" Size=0.599,5.305,5.305 Anchored CFrame=-722.735,15.453,-627.149|-174.999,0.009,179.999 Color=#B4D2E4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="56a8e8238453cdd7"
+        UnionOperation "Union" Size=0.086,5.819,5.819 Anchored CFrame=-720.214,15.453,-627.148|-174.999,0.009,179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="ca31023f709a16c6"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-722.944,15.453,-627.149|-174.999,0.009,179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-720.719,15.453,-627.148|-174.999,0.009,179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+        UnionOperation "Union" Size=0.505,5.647,5.647 Anchored CFrame=-720.424,15.453,-627.148|-174.999,0.009,179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="d60839394d978000"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-721.832,15.453,-627.149|-174.999,0.009,179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+        UnionOperation "Union" Size=0.086,5.819,5.819 Anchored CFrame=-724.057,15.453,-627.149|-174.999,0.009,179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="3dc36726179b603a"
+        UnionOperation "Union" Size=0.513,3.423,3.423 Anchored CFrame=-726.757,15.454,-627.149|-174.999,0.009,179.999 Color=#A3A2A5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="22b5788e385e5c34"
+        UnionOperation "Union" Size=0.084,3.371,3.371 Anchored CFrame=-727.057,15.445,-627.15|-174.999,0.009,179.999 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="cf6d18b03b611049"
+        UnionOperation "Union" Size=3.252,1.797,1.968 Anchored CFrame=-724.614,15.463,-627.152|-174.999,0.009,179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab7fb23af7343c87"
+        UnionOperation "Union" Size=1.711,2.653,2.653 Anchored CFrame=-723.505,15.453,-627.149|-174.999,0.009,179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="cdc6fe1e8581876b"
+        UnionOperation "Union" Size=2.139,3.252,3.252 Anchored CFrame=-725.431,15.453,-627.149|-174.999,0.009,179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="6416544ff975dfcb"
+        UnionOperation "Union" Size=3.337,5.476,5.476 Anchored CFrame=-722.344,15.453,-627.149|-174.999,0.009,179.999 Color=#A3A2A5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b674c150394277ef"
+    }
+    Part "Part" Size=0.1,0.7,0.8 Anchored BottomSurface=Smooth CFrame=-721.337,15.523,-623.357|-5.005,-85.005,-0.006 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://604349207" TextureContent="rbxassetid://604349207"
+    }
+    Part "Part" Size=0.6,3.812,3.812 Anchored BottomSurface=Smooth CFrame=-728.65,15.162,-627.172|5.001,0,0 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=0.1,0.7,0.8 Anchored BottomSurface=Smooth CFrame=-721.34,16.188,-630.891|-165.005,-84.999,179.999 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://604341399" TextureContent="rbxassetid://604341399"
+    }
+    UnionOperation "Union" Size=2.95,4.352,4.464 Anchored CFrame=-728.377,15.162,-627.183|-174.999,0.052,-179.997 Color=#A3A2A5 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="86a24d8ee8eff80f"
+    UnionOperation "Union" Size=0.3,0.6,0.758 Anchored CFrame=-727.54,12.82,-627.388|-85.026,-82.501,-90.025 Color=#6F7173 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2ff610e0ff8ade39"
+    UnionOperation "Union" Size=0.5,5,5 Anchored CFrame=-719.904,15.434,-627.155|5.001,0,0 Color=#7F8E64 Material=Metal RenderFidelity=Precise UsePartColor $_geo="23ec8f39c5fed070"
+    UnionOperation "Union" Size=7.9,6.603,6.447 Anchored CFrame=-720.449,15.61,-627.139|4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="046685262e2b0e78"
+    UnionOperation "Union" Size=6.563,5.771,0.634 Anchored CFrame=-717.034,15.602,-627.14|-85.075,-87.501,-90.074 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="3e6b6003ecb57240"
+    UnionOperation "Union" Size=4.595,1.275,1.275 Anchored CFrame=-730.65,15.162,-627.172|-174.999,0.052,-179.997 Color=#787878 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="cde8723e0788c539"
+    UnionOperation "Union" Size=7.775,6.499,11.172 Anchored CFrame=-722.813,15.61,-627.139|4.998,-90,0 Color=#6F7173 Material=Metal RenderFidelity=Precise UsePartColor $_geo="76c70cf1b30bfd7b"
+    UnionOperation "Union" Size=4.968,5.026,1.82 Anchored CFrame=-718.569,15.439,-627.154|-85.075,-87.501,-90.074 Color=#C0C1C7 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2fad70cb30d0b0d1" {
+        Texture "Texture" Color3=#828282 Face=Back StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Left StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Top StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Bottom StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Right StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+    }
+    UnionOperation "Union" Size=0.794,0.05,2.793 Anchored CFrame=-721.056,17.038,-623.44|155.007,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9dd4d75ca3c882c8"
+    UnionOperation "Union" Size=3.508,3.508,3.326 Anchored CFrame=-730.491,15.161,-627.171|4.998,-90,0 Color=#828282 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="7bb2ae5aaf8d25c3"
+    UnionOperation "Union" Size=7.742,3.139,0.1 Anchored CFrame=-721.347,13.87,-627.291|4.998,-90,0 Color=#C4281C Material=Metal RenderFidelity=Precise UsePartColor $_geo="c0ad1251f6408ee6"
+    UnionOperation "Union" Size=7.814,6.564,4.225 Anchored CFrame=-721.547,15.576,-627.142|4.998,-90,0 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="6e39813bb964a29f"
+    UnionOperation "Union" Size=5,5.1,2.402 Anchored CFrame=-718.561,15.439,-627.154|-85.075,-87.501,-90.074 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b3fabf0b166986a2"
+}
+Model "Model" {
+    Part "Part" Size=0.2,0.8,2 Anchored BottomSurface=Smooth CFrame=-720.934,18.276,-616.551|5.924,32.369,-3.18 Color=#5B5D69 Material=Metal TopSurface=Smooth
+    Part "Text" Size=6.6,6.7,0.2 Anchored BottomSurface=Smooth CFrame=-744.544,21.427,-653.154|-84.037,0.277,-65.013 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=100,100 LightInfluence=1 {
+            TextLabel "TextLabel" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="UR-PSC" TextColor3=#000000 TextSize=48
+        }
+    }
+    UnionOperation "Union" Size=1.203,1.418,7.216 Anchored CFrame=-732.561,17.146,-626.997|4.998,-90,0 Color=#828282 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="30e1fc1e024ae554"
+    UnionOperation "Union" Size=7.443,0.125,7.484 Anchored CFrame=-732.71,19.491,-625.147|5.002,-62.51,0.003 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9d190c6a695b2ea1"
+    UnionOperation "Union" Size=17.298,2.074,16.594 Anchored CFrame=-730.938,18.114,-620.59|5.002,-71.009,0.004 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9935cb48b3b25801"
+    UnionOperation "Union" Size=4.513,10.218,0.487 Anchored CFrame=-751.055,27.255,-667.778|56.707,-56.466,51.768 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="59bb89464e4e76af"
+    UnionOperation "Union" Size=2.2,0.275,0.206 Anchored CFrame=-752.552,23.031,-666.523|5.001,0,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="af91ea9a4ece91f2"
+    UnionOperation "Union" Size=4.82,11.124,4.241 Anchored CFrame=-753.178,26.843,-667.367|56.707,-56.466,51.768 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="3fe7442fc127e0d2"
+    UnionOperation "Union" Size=13.122,0.575,1.156 Anchored CFrame=-748.35,21.529,-651.857|5.002,-72.509,0.004 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="96aee92b858c52b6"
+    UnionOperation "Union" Size=44.806,1.222,12.591 Anchored CFrame=-741.053,20.87,-647.206|5.002,-71.009,0.004 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="878930213a2f1134"
+    UnionOperation "Union" Size=39.246,0.125,6.773 Anchored CFrame=-741.497,21.092,-643.459|5.002,-62.51,0.003 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9de08aa2b5264b5b"
+    UnionOperation "Union" Size=11.178,1.767,3.503 Anchored CFrame=-739.395,19.231,-636.52|5.002,-71.009,0.004 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3ee1402bf284cc38"
+    UnionOperation "Union" Size=7.767,0.292,0.522 Anchored CFrame=-748.082,21.248,-649.413|5.002,-72.509,0.004 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0977256df744450f"
+    UnionOperation "Union" Size=1.9,2.789,18.157 Anchored CFrame=-728.774,18.238,-626.902|4.998,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise $_geo="e32a2ff5912da65a"
+    UnionOperation "Union" Size=12.227,0.565,2.357 Anchored CFrame=-739.007,18.909,-621.16|4.999,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e775daa9bb4f4ad9"
+    UnionOperation "Union" Size=42.4,1.089,1.679 Anchored CFrame=-738.625,20.856,-647.205|5.002,-63.01,0.003 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5d6dea86ff69a618"
+    UnionOperation "Union" Size=13.159,1.502,2.058 Anchored CFrame=-723.334,18.34,-619.89|5.002,-55.011,0.003 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="8c3a6f277d4f0409"
+    UnionOperation "Union" Size=4.1,0.65,14.4 Anchored CFrame=-732.985,18.653,-618.071|4.999,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="9ecde75032bf8e61" {
+        Decal "B737OverWingExit3" Face=Top Texture="rbxassetid://3067696716" TextureContent="rbxassetid://3067696716"
+    }
+    UnionOperation "Union" Size=1.365,1.7,3.55 Anchored CFrame=-736.26,18.021,-624.357|4.999,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="77b3f43bcf3df23c"
+}
+Model "Model" {
+    Part "Part" Size=0.2,0.8,2 Anchored BottomSurface=Smooth CFrame=-720.935,18.276,-603.045|174.076,32.371,-176.82 Color=#5B5D69 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=4.1,0.65,14.4 Anchored CFrame=-732.986,18.653,-601.524|-4.998,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f43c1894b7ad7df6" {
+        Decal "B737OverWingExit1" Face=Top Texture="rbxassetid://3067696035" TextureContent="rbxassetid://3067696035"
+    }
+    UnionOperation "Union" Size=7.438,0.125,7.484 Anchored CFrame=-732.71,19.497,-594.444|174.999,-62.505,-0.002 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9629a7ece67a1cf2"
+    UnionOperation "Union" Size=4.513,10.218,0.487 Anchored CFrame=-751.06,27.261,-551.802|123.301,-56.464,128.242 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="2109868e1895802f"
+    UnionOperation "Union" Size=1.203,1.418,7.216 Anchored CFrame=-732.563,17.139,-592.597|-4.998,-90,0 Color=#828282 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="5c69771dcb89fd5d"
+    UnionOperation "Union" Size=13.121,0.575,1.156 Anchored CFrame=-748.355,21.536,-567.734|174.999,-72.503,-0.002 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="655a64379a83cbbe"
+    UnionOperation "Union" Size=1.365,1.7,3.55 Anchored CFrame=-736.262,18.028,-595.234|-4.998,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0fc04e724a8a4a2c"
+    UnionOperation "Union" Size=39.251,0.125,6.774 Anchored CFrame=-741.499,21.099,-576.133|174.999,-62.505,-0.002 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e6dc82717cd62623"
+    UnionOperation "Union" Size=7.766,0.291,0.521 Anchored CFrame=-748.086,21.254,-570.177|174.999,-72.503,-0.002 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="c83d0bb5c2ef79c3"
+    UnionOperation "Union" Size=42.4,1.089,1.679 Anchored CFrame=-738.63,20.863,-572.383|174.999,-63.005,-0.002 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="bae2f096c0bb059c"
+    UnionOperation "Union" Size=1.9,2.789,18.042 Anchored CFrame=-728.834,18.231,-592.693|-4.998,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0c9133718eb9328c"
+    UnionOperation "Union" Size=44.811,1.222,12.592 Anchored CFrame=-741.056,20.876,-572.385|174.999,-71.003,-0.002 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="95d0779ae1d705ac"
+    UnionOperation "Union" Size=12.225,0.565,2.357 Anchored CFrame=-739.008,18.916,-598.43|-4.998,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="bc2e985e6a181ab8"
+    UnionOperation "Union" Size=4.82,11.124,4.241 Anchored CFrame=-753.183,26.849,-552.213|123.301,-56.464,128.242 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="f10391f8ed248464"
+    UnionOperation "Union" Size=13.159,1.502,2.058 Anchored CFrame=-723.335,18.347,-599.699|174.999,-55.007,-0.002 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="ca23ecb54ef84738"
+    UnionOperation "Union" Size=2.2,0.275,0.206 Anchored CFrame=-752.557,23.036,-553.056|174.999,0,180 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="32948588e44b493c"
+    UnionOperation "Union" Size=11.178,1.767,3.503 Anchored CFrame=-739.398,19.238,-583.07|174.999,-71.003,179.998 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="cf74e20424319057"
+    UnionOperation "Union" Size=17.293,2.074,16.595 Anchored CFrame=-730.938,18.121,-599.001|174.999,-71.003,-0.002 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4f2e082839ffed18"
+}
+Model "Model" {
+    Model "Model" {
+        UnionOperation "Union" Size=0.682,2.966,1.333 Anchored CFrame=-727.419,23.192,-603.486|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3f8c23de85e8fba3"
+        UnionOperation "Union" Size=0.704,3.236,1.618 Anchored CFrame=-727.419,23.191,-603.594|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3266f2e88b94bbf3"
+        UnionOperation "Union" Size=0.755,3.266,1.633 Anchored CFrame=-727.419,23.191,-603.523|0.001,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="97d8e2d37da63118"
+        UnionOperation "Union" Size=1,1.4,0.308 Anchored CFrame=-727.435,23.65,-603.487 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="1844251d7635859f"
+    }
+    Model "Model" {
+        UnionOperation "Union" Size=1,1.4,0.308 Anchored CFrame=-730.535,23.65,-603.487 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="1844251d7635859f"
+        UnionOperation "Union" Size=0.755,3.266,1.633 Anchored CFrame=-730.52,23.191,-603.523|0.001,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="97d8e2d37da63118"
+        UnionOperation "Union" Size=0.682,2.966,1.333 Anchored CFrame=-730.52,23.192,-603.486|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3f8c23de85e8fba3"
+        UnionOperation "Union" Size=0.704,3.236,1.618 Anchored CFrame=-730.52,23.191,-603.594|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3266f2e88b94bbf3"
+    }
+    Model "Model" {
+        UnionOperation "Union" Size=0.755,3.266,1.633 Anchored CFrame=-730.519,23.192,-616.073|0.001,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="dee27464b6c4ce3f"
+        UnionOperation "Union" Size=0.682,2.966,1.333 Anchored CFrame=-730.519,23.192,-616.109|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f859a3ae361c067a"
+        UnionOperation "Union" Size=0.704,3.236,1.618 Anchored CFrame=-730.519,23.191,-615.997|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3622bd20b2d3dbc1"
+        UnionOperation "Union" Size=1,1.4,0.308 Anchored CFrame=-730.534,23.65,-616.108 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="42e4afbe526ce43e"
+    }
+    Model "Model" {
+        UnionOperation "Union" Size=0.682,2.966,1.333 Anchored CFrame=-727.419,23.192,-616.109|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f859a3ae361c067a"
+        UnionOperation "Union" Size=0.704,3.236,1.618 Anchored CFrame=-727.419,23.191,-615.997|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3622bd20b2d3dbc1"
+        UnionOperation "Union" Size=1,1.4,0.308 Anchored CFrame=-727.434,23.65,-616.108 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="42e4afbe526ce43e"
+        UnionOperation "Union" Size=0.755,3.266,1.633 Anchored CFrame=-727.419,23.192,-616.073|0.001,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="dee27464b6c4ce3f"
+    }
+}
+Model "Model" {
+    Model "CFM56-5" {
+        Model "Model" {
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-99.997,0.002,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-119.992,0.004,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-109.994,0.003,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-114.993,0.004,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-124.992,0.005,179.993 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-134.991,0.006,179.994 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-104.996,0.002,179.992 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=1.455,2.738,2.738 Anchored CFrame=-721.924,15.483,-592.424|174.999,0.009,-179.999 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b3bdc0c60a8d5526"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-94.998,0.001,179.991 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+            UnionOperation "Union" Size=0.428,5.305,5.305 Anchored CFrame=-722.181,15.483,-592.424|-129.991,0.006,179.993 Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab9cd75fd5428db7"
+        }
+        Model "Model" {
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.424|-139.991,0.007,179.994 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.424|-154.993,0.008,179.996 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=1.899,1.198,1.198 Anchored CFrame=-727.452,15.483,-592.425|174.999,0.009,-179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="4707d40051e8a314"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.424|-109.994,0.003,179.992 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.424|-124.992,0.005,179.993 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.425|-94.998,0.001,179.991 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+            UnionOperation "Union" Size=0.257,3.166,3.166 Anchored CFrame=-726.802,15.483,-592.424|-169.997,0.009,179.998 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6976419ac4249a03"
+        }
+        UnionOperation "Union" Size=0.086,5.819,5.819 Anchored CFrame=-720.216,15.483,-592.423|174.999,0.009,-179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="ca31023f709a16c6"
+        UnionOperation "Union" Size=1.711,2.653,2.653 Anchored CFrame=-723.507,15.483,-592.424|174.999,0.009,-179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="cdc6fe1e8581876b"
+        UnionOperation "Union" Size=2.139,3.252,3.252 Anchored CFrame=-725.433,15.483,-592.424|174.999,0.009,-179.999 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="6416544ff975dfcb"
+        UnionOperation "Union" Size=0.513,3.423,3.423 Anchored CFrame=-726.759,15.483,-592.424|174.999,0.009,-179.999 Color=#A3A2A5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="22b5788e385e5c34"
+        UnionOperation "Union" Size=0.084,3.371,3.371 Anchored CFrame=-727.059,15.474,-592.424|174.999,0.009,-179.999 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="cf6d18b03b611049"
+        UnionOperation "Union" Size=0.599,5.305,5.305 Anchored CFrame=-722.737,15.483,-592.424|174.999,0.009,-179.999 Color=#B4D2E4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="56a8e8238453cdd7"
+        UnionOperation "Union" Size=3.252,1.797,1.968 Anchored CFrame=-724.616,15.492,-592.429|174.999,0.009,-179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ab7fb23af7343c87"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-721.834,15.483,-592.424|174.999,0.009,-179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+        UnionOperation "Union" Size=0.505,5.647,5.647 Anchored CFrame=-720.426,15.483,-592.423|174.999,0.009,-179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="d60839394d978000"
+        UnionOperation "Union" Size=0.086,5.819,5.819 Anchored CFrame=-724.059,15.483,-592.424|174.999,0.009,-179.999 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="3dc36726179b603a"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-720.721,15.483,-592.424|174.999,0.009,-179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+        UnionOperation "Union" Size=3.337,5.476,5.476 Anchored CFrame=-722.346,15.483,-592.424|174.999,0.009,-179.999 Color=#A3A2A5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b674c150394277ef"
+        UnionOperation "Union" Size=0.086,5.647,5.647 Anchored CFrame=-722.946,15.483,-592.424|174.999,0.009,-179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9616f2d99ea16d4f"
+    }
+    Part "Part" Size=0.1,0.7,0.8 Anchored BottomSurface=Smooth CFrame=-721.342,16.188,-588.703|-15.014,-85.005,-0.018 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://604349207" TextureContent="rbxassetid://604349207"
+    }
+    Part "Part" Size=0.6,3.812,3.812 Anchored BottomSurface=Smooth CFrame=-728.652,15.191,-592.397|-5.001,0,0 Color=#1B2A35 Material=Metal Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=0.1,0.7,0.8 Anchored BottomSurface=Smooth CFrame=-721.338,15.523,-596.237|-175.002,-84.999,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://604341399" TextureContent="rbxassetid://604341399"
+    }
+    UnionOperation "Union" Size=4.595,1.275,1.275 Anchored CFrame=-730.652,15.191,-592.396|174.999,0.052,-179.997 Color=#787878 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="cde8723e0788c539"
+    UnionOperation "Union" Size=2.95,4.352,4.464 Anchored CFrame=-728.379,15.19,-592.407|174.999,0.052,-179.997 Color=#A3A2A5 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="86a24d8ee8eff80f"
+    UnionOperation "Union" Size=0.3,0.6,0.758 Anchored CFrame=-727.542,12.848,-592.203|-95.023,-82.5,-90.025 Color=#6F7173 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2ff610e0ff8ade39"
+    UnionOperation "Union" Size=4.968,5.026,1.82 Anchored CFrame=-718.571,15.467,-592.427|-95.072,-87.5,-90.073 Color=#C0C1C7 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2fad70cb30d0b0d1" {
+        Texture "Texture" Color3=#828282 StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Bottom StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Left StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Back StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Right StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+        Texture "Texture" Color3=#828282 Face=Top StudsPerTileU=0.3 StudsPerTileV=0.3 Texture="rbxassetid://271862469" TextureContent="rbxassetid://271862469"
+    }
+    UnionOperation "Union" Size=0.5,5,5 Anchored CFrame=-719.906,15.463,-592.427|-5.001,0,0 Color=#7F8E64 Material=Metal RenderFidelity=Precise UsePartColor $_geo="23ec8f39c5fed070"
+    UnionOperation "Union" Size=7.814,6.564,4.225 Anchored CFrame=-721.549,15.605,-592.438|-4.998,-90,0 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="6e39813bb964a29f"
+    UnionOperation "Union" Size=3.508,3.508,3.326 Anchored CFrame=-730.493,15.191,-592.395|-4.998,-90,0 Color=#828282 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="7bb2ae5aaf8d25c3"
+    UnionOperation "Union" Size=5,5.1,2.402 Anchored CFrame=-718.563,15.467,-592.427|-95.072,-87.5,-90.073 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b3fabf0b166986a2"
+    UnionOperation "Union" Size=7.742,3.139,0.1 Anchored CFrame=-721.349,13.899,-592.289|-4.998,-90,0 Color=#C4281C Material=Metal RenderFidelity=Precise UsePartColor $_geo="c0ad1251f6408ee6"
+    UnionOperation "Union" Size=6.563,5.771,0.634 Anchored CFrame=-717.036,15.63,-592.441|-95.072,-87.5,-90.073 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="3e6b6003ecb57240"
+    UnionOperation "Union" Size=0.757,0.05,2.752 Anchored CFrame=-721.078,17.074,-596.157|24.993,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f57ecc7658468909"
+    UnionOperation "Union" Size=7.775,6.499,11.172 Anchored CFrame=-722.815,15.638,-592.441|-4.998,-90,0 Color=#6F7173 Material=Metal RenderFidelity=Precise UsePartColor $_geo="76c70cf1b30bfd7b"
+    UnionOperation "Union" Size=7.9,6.603,6.447 Anchored CFrame=-720.451,15.638,-592.441|-4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="046685262e2b0e78"
+}
+Model "Model" {
+    Part "Part" Size=0.22,1.932,2.972 Anchored BottomSurface=Smooth CFrame=-692.728,25.631,-615.294|173.754,-87.551,146.986 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337813513" TextureContent="rbxassetid://3337813513"
+    }
+    Part "Part" Size=33.59,1,2.67 Anchored BottomSurface=Smooth CFrame=-711.675,25.657,-614.839|-57.347,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+    Part "Part" Size=19.227,0.566,1.45 Anchored BottomSurface=Smooth CFrame=-704.559,21.639,-616.093|-98.83,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://3337709468" TextureContent="rbxassetid://3337709468"
+    }
+    Part "Part" Size=19.227,0.566,1.45 Anchored BottomSurface=Smooth CFrame=-704.22,21.639,-603.488|-81.17,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://3337709468" TextureContent="rbxassetid://3337709468"
+    }
+    Part "Part" Size=0.945,9.45,9.45 Anchored BottomSurface=Smooth CFrame=-792.095,39.321,-609.737|-0.886,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337790080" TextureContent="rbxassetid://3337790080"
+    }
+    Part "Part" Size=0.247,2.47,2.47 Anchored BottomSurface=Smooth CFrame=-752.77,26.465,-551.451|4.258,88.966,4.521 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337790080" TextureContent="rbxassetid://3337790080"
+    }
+    Part "Part" Size=0.247,2.47,2.47 Anchored BottomSurface=Smooth CFrame=-752.763,26.465,-668.138|20.305,-89.784,29.085 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337782155" TextureContent="rbxassetid://3337782155"
+    }
+    Part "Part" Size=0.22,1.932,2.972 Anchored BottomSurface=Smooth CFrame=-692.589,25.631,-604.289|172.206,88.036,161.016 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337813513" TextureContent="rbxassetid://3337813513"
+    }
+    Part "Part" Size=0.945,9.45,9.45 Anchored BottomSurface=Smooth CFrame=-792.095,39.321,-609.877|178.297,-89.624,177.55 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://3337782155" TextureContent="rbxassetid://3337782155"
+    }
+    Part "Part" Size=33.59,1,2.67 Anchored BottomSurface=Smooth CFrame=-711.225,25.657,-604.765|-122.653,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+    UnionOperation "Union" Size=1.41,13.394,8.046 Anchored CFrame=-772.955,31.199,-609.798|90.004,-49.853,90.005 Color=#E7E7EC Material=Metal RenderFidelity=Precise $_geo="e59939c8dbe94c3b"
+    UnionOperation "Union" Size=3.062,2.751,3.779 Anchored CFrame=-764.055,17.513,-605.583|0,-90,0 Color=#FFF203 Material=Metal RenderFidelity=Precise UsePartColor $_geo="fe04729ca530f0fe"
+    UnionOperation "Union" Size=2.817,3.977,4.333 Anchored CFrame=-764.452,18.239,-605.461|90.004,-49.853,90.005 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="86b227bd941dd579"
+    UnionOperation "Union" Size=1.228,22.664,0.474 Anchored CFrame=-787.983,42.434,-609.798|90.004,-50.001,90.005 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="71f9a95ee50a1aa1"
+    UnionOperation "Union" Size=13.3,13.115,14.128 Anchored CFrame=-767.001,22.093,-609.798|0,-90,0 Color=#FFF203 Material=Metal RenderFidelity=Precise UsePartColor $_geo="66dc6cd57b2aa238"
+    UnionOperation "Union" Size=12.741,2.71,1.582 Anchored CFrame=-772.57,23.276,-609.798|90.004,-49.853,90.005 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="72dfcb67c0af150c"
+    UnionOperation "Union" Size=25.274,24.296,1.439 Anchored CFrame=-788.481,39.704,-609.798 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="a01b4010d5a37b42"
+    UnionOperation "Union" Size=1.653,1.594,0.736 Anchored CFrame=-766.534,16.775,-605.736|90.004,-49.853,90.005 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="63b8bc7812837934"
+    UnionOperation "Union" Size=1.433,25.637,5.819 Anchored CFrame=-796.213,39.035,-609.798|90.008,-67.501,90.008 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="680c371883b79a0b"
+    UnionOperation "Union" Size=13.089,1.8,2.358 Anchored CFrame=-769.541,23.65,-609.798|0,-90,0 Color=#FFF203 Material=Metal RenderFidelity=Precise UsePartColor $_geo="54314c38a98e5bf7"
+    UnionOperation "Union" Size=13.071,3.573,1.445 Anchored CFrame=-770.906,23.65,-609.798|90.004,-49.853,90.005 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="f26fedeb757000f6"
+    UnionOperation "Union" Size=13.089,3.941,3.042 Anchored CFrame=-765.108,24.025,-609.798|90.004,-49.853,90.005 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="de445dbeee63fe57"
+    UnionOperation "Union" Size=13.3,21.351,13.752 Anchored CFrame=-763.749,24.711,-609.798|90.004,-49.853,90.005 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="4d6378ea8ef3c07b"
+    UnionOperation "Union" Size=1.407,3.221,5.797 Anchored CFrame=-773.839,30.074,-609.798|0,-90,0 Color=#FFF203 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3aef916c09ff43ba"
+    UnionOperation "Union" Size=13.089,1.8,2.339 Anchored CFrame=-767.192,23.651,-609.798|0.001,90,0 Color=#FFF203 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3a9cb908699d8c13"
+    UnionOperation "Union" Size=12.918,18.279,8.907 Anchored CFrame=-774.691,20.109,-609.798|90.004,-49.853,90.005 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="54803b035901b142"
+}
+Model "Model" {
+    UnionOperation "Union" Size=24.583,0.853,0.753 Anchored CFrame=-792.485,27.166,-596.202|172.999,-57.507,-0.003 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="ce83dad563c915e9"
+    UnionOperation "Union" Size=22.145,0.845,3.871 Anchored CFrame=-797.959,26.904,-598.374|172.999,-70.003,-0.003 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="42396f070c891191"
+    UnionOperation "Union" Size=25.279,0.883,7.674 Anchored CFrame=-794.255,27.175,-596.006|172.999,-70.003,-0.003 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="48d24be8ebc0e21e"
+    UnionOperation "Union" Size=8.7,0.237,0.58 Anchored CFrame=-797.103,26.413,-603.785|173,-76.252,179.997 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ef49ac8ebfedaf27"
+}
+Model "Model" {
+    Part "Text" Size=3.4,3.5,0.2 Anchored BottomSurface=Smooth CFrame=-782.103,25.489,-614.147|5.925,10.364,-0.758 CanCollide=false Color=#F8F8F8 Material=Metal TopSurface=Smooth Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=100,100 LightInfluence=1 {
+            TextLabel "TextLabel" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="UR-PSC" TextColor3=#FFFFFF TextSize=40 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0.5
+        }
+    }
+    Part "Text" Size=3.4,3.5,0.2 Anchored BottomSurface=Smooth CFrame=-782.103,25.489,-605.444|174.082,10.001,-178.657 CanCollide=false Color=#F8F8F8 Material=Metal TopSurface=Smooth Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=100,100 LightInfluence=1 {
+            TextLabel "TextLabel" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="UR-PSC" TextColor3=#FFFFFF TextSize=40 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0.5
+        }
+    }
+    UnionOperation "Union" Size=13.077,3.665,4.83 Anchored CFrame=-736.533,16.879,-609.819|0,-90,0 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91711b7d10c609b8"
+    UnionOperation "Union" Size=0.767,1,0.05 Anchored CFrame=-704.892,15.049,-609.798|0,0,180 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f7ebe0bc433c31b0"
+    UnionOperation "Union" Size=1.65,3.7,4.6 Anchored CFrame=-700.862,17.514,-605.582|24.994,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="83226ad26b84c8e6"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-734.76,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-747.561,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=12.829,5.2,61.6 Anchored CFrame=-727.359,18.05,-609.798|0,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="a73082205ef999ce"
+    UnionOperation "Union" Size=4.826,5.589,3.727 Anchored CFrame=-674.319,20.421,-609.798|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="c563aa3ce08c57cd"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-699.257,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=13.026,1.8,14.298 Anchored CFrame=-766.012,23.65,-609.798|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="8f25511499bbbcb5"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-692.857,23.65,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3fdb0e186608af6b"
+    UnionOperation "Union" Size=0.5,0.2,0.5 Anchored CFrame=-678.079,21.95,-606.513|0,15.005,-180 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="e4f60ac90640882a"
+    UnionOperation "Union" Size=10.981,0.65,3.2 Anchored CFrame=-776.972,20.564,-609.787|0,-90,0 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="46da5b8baf86942d"
+    UnionOperation "Union" Size=13.089,1.8,4.8 Anchored CFrame=-724.059,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="07851023749727f7"
+    UnionOperation "Union" Size=1.685,6.1,3.4 Anchored CFrame=-687.657,22.9,-604.819|0.001,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="54f0c37460d65495"
+    UnionOperation "Union" Size=13.3,3.6,2 Anchored CFrame=-730.559,23.15,-609.798|0.001,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5f0fac83451fc284"
+    UnionOperation "Union" Size=7.995,1.773,5.818 Anchored CFrame=-680.249,24.119,-609.798|-180,90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.4 UsePartColor $_geo="19dc87d19538179f"
+    UnionOperation "Union" Size=4.888,5.656,0.05 Anchored CFrame=-676.181,20.412,-609.798|0,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="1c13f920c9888f89"
+    UnionOperation "Union" Size=3.355,5.027,4.44 Anchored CFrame=-795.083,25.184,-609.798|0,-90,0 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="10c90b911e85117c"
+    UnionOperation "Union" Size=4.838,5.603,2.55 Anchored CFrame=-674.894,20.417,-609.798|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7de790c92b57293e"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-760.362,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=1.392,0.9,0.8 Anchored CFrame=-796.082,24.446,-609.797 Color=#A3A2A5 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="50ad0b49b838d268"
+    UnionOperation "Union" Size=13.3,8.1,61.6 Anchored CFrame=-727.359,24.701,-609.798|0,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="c058b9cf259879e7"
+    UnionOperation "Union" Size=1.652,6.5,3.4 Anchored CFrame=-688.656,23.1,-614.924|0.001,90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ec67944349dc5296"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-718.459,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="fbc4da758b18694e"
+    UnionOperation "Union" Size=14.5,4.896,37.6 Anchored CFrame=-732.259,17.392,-609.797|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="cb1e38d21efeaf5a"
+    UnionOperation "Union" Size=10.067,9.791,13.7 Anchored CFrame=-786.013,23.399,-609.798|0,-90,0 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="a70a48510782fe05"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-753.961,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=62.5,1.8,12.989 Anchored CFrame=-727.609,23.65,-609.798 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="f65fd7b8227d4d0b"
+    UnionOperation "Union" Size=3.5,1.445,1.4 Anchored CFrame=-783.963,19.595,-609.798|-180,0,-162.5 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="bf2163c0b1cd1505"
+    UnionOperation "Union" Size=1.815,6.5,3.4 Anchored CFrame=-776.962,23.1,-614.613|0.001,90,0 CanCollide=false Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="206c7fa618722ea0"
+    UnionOperation "Union" Size=0.45,0.4,0.4 Anchored CFrame=-678.133,20.15,-606.524|0,-75.008,180 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="82e435535932cf2c"
+    UnionOperation "Union" Size=0.9,2.795,0.881 Anchored CFrame=-796.009,25.225,-609.801|90.004,-50.001,90.005 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="30fcb91db80d0a83"
+    UnionOperation "Union" Size=13.3,13.3,20.373 Anchored CFrame=-686.37,22.1,-609.798|0,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="8846e95b41ebc36b"
+    UnionOperation "Union" Size=0.767,1,0.05 Anchored CFrame=-751.595,15.049,-609.798|0,0,180 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f7ebe0bc433c31b0"
+    UnionOperation "Union" Size=0.5,0.2,0.5 Anchored CFrame=-678.078,21.95,-613.083|-180,15.005,-180 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="e4f60ac90640882a"
+    UnionOperation "Union" Size=13.034,1.8,6.202 Anchored CFrame=-692.758,23.65,-609.798|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="bae5b2193ecfac60"
+    UnionOperation "Union" Size=0.767,1,0.05 Anchored CFrame=-733.594,29.151,-609.798|-180,0,180 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f7ebe0bc433c31b0"
+    UnionOperation "Union" Size=6.034,3.718,3.068 Anchored CFrame=-683.208,17.493,-609.798 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="e09a20262baebe97"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-705.658,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=6.388,3.4,0.719 Anchored CFrame=-787.625,25.589,-609.798|0,-90,0 Color=#DFDFDE Material=Metal RenderFidelity=Precise UsePartColor $_geo="df6b44203b8a28ad"
+    UnionOperation "Union" Size=6.048,1.97,8.139 Anchored CFrame=-680.234,24.117,-609.798|-180,0,180 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="f345fa6b3f907050"
+    UnionOperation "Union" Size=1.431,2.989,0.886 Anchored CFrame=-796.256,24.974,-609.798|90.008,-68.501,90.009 Color=#A3A2A5 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="a9fc15a4f6adc742"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-741.16,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=0.45,0.4,0.4 Anchored CFrame=-678.133,20.15,-613.071|-180,-75.002,-180 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="82e435535932cf2c"
+    UnionOperation "Union" Size=0.767,1,0.05 Anchored CFrame=-762.896,29.151,-609.798|-180,0,180 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f7ebe0bc433c31b0"
+    UnionOperation "Union" Size=13.089,1.8,6.4 Anchored CFrame=-712.058,23.651,-609.798|0.001,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9122288311afa0c2"
+    UnionOperation "Union" Size=4.1,0.65,11.768 Anchored CFrame=-688.217,20.564,-609.864 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="461b03e64a45a3e3"
+    UnionOperation "Union" Size=1.796,6.1,3.4 Anchored CFrame=-776.863,22.9,-604.955|0.001,-90,0 CanCollide=false Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="99f317d29361b5c1"
+    UnionOperation "Union" Size=13.3,3.6,2 Anchored CFrame=-727.459,23.15,-609.798|0.001,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5f0fac83451fc284"
+}
+Model "Model" {
+    Model "Cockpit" {
+        Model "CockpitDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                UnionOperation "P1" Size=0.1,6.4,2.5 Anchored CFrame=-684.501,23.55,-609.802 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="7fb647445dabce79"
+                UnionOperation "P2" Size=2.1,4.4,0.3 Anchored CFrame=-684.501,22.75,-609.802|0,-90,0 Color=#A9ABB6 Material=Metal RenderFidelity=Precise UsePartColor $_geo="77410579cf55c8c2"
+                UnionOperation "P3" Size=0.1,0.35,0.35 Anchored CFrame=-684.501,25.351,-609.802 Color=#ABADB9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0aec9cdb49ade6fe"
+                UnionOperation "P4" Size=0.05,0.25,0.25 Anchored CFrame=-684.501,25.351,-609.802 Color=#1B2A35 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=0.3 UsePartColor $_geo="522eda27034d0b82"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Cockpit/CockpitDoor/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                UnionOperation "P1" Size=0.1,6.4,2.5 Anchored CFrame=-685.701,23.55,-608.601|0,90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="846777e393fe0a38"
+                UnionOperation "P2" Size=2.1,4.4,0.3 Anchored CFrame=-685.701,22.75,-608.601 CanCollide=false Color=#A9ABB6 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="5f34cc16c5a885c3"
+                UnionOperation "P3" Size=0.1,0.35,0.35 Anchored CFrame=-685.701,25.351,-608.601|0,90,0 CanCollide=false Color=#ABADB9 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="79f41fd4a090fe3f"
+                UnionOperation "P4" Size=0.05,0.25,0.25 Anchored CFrame=-685.701,25.351,-608.601|0,90,0 CanCollide=false Color=#1B2A35 Material=Metal Reflectance=0.3 RenderFidelity=Precise Transparency=1 UsePartColor $_geo="82b14e3483bc0683"
+            }
+        }
+        MeshPart "MeshPart" Size=0.599,2.528,0.997 Anchored CFrame=-683.735,21.794,-606.672|0.007,0,0 CanCollide=false CollisionFidelity=Default Material=Metal RenderFidelity=Precise TextureContent="rbxassetid://433101903" TextureID="rbxassetid://433101903"
+        Model "Model" {
+            UnionOperation "Union" Size=1.4,0.587,2.112 Anchored CFrame=-683.007,22.371,-611.755|-90,0,-90.003 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="a1a54342c0d4163c"
+            UnionOperation "Union" Size=1,0.15,0.35 Anchored CFrame=-682.929,23.742,-611.755|-89.999,10,-90.003 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c49d2353c4aa803b"
+            UnionOperation "Union" Size=0.967,0.537,0.844 Anchored CFrame=-682.817,24.183,-611.755|-89.999,10,-90.003 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="addbba8c82663f5d"
+            UnionOperation "Union" Size=1.6,0.1,2 Anchored CFrame=-682.602,22.7,-611.755|-90.001,-10,-90.003 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="662debcc69cad2d8"
+            UnionOperation "Union" Size=1.6,2.569,2.202 Anchored CFrame=-682.118,22.391,-611.755|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="8d678850fb63f453"
+            UnionOperation "Union" Size=1.6,0.4,1.544 Anchored CFrame=-681.688,21.406,-611.755|0,-90,0 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1c0ba50bd572b115"
+            UnionOperation "Union" Size=0.8,0.9,1.2 Anchored CFrame=-682.016,20.756,-611.755|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="12166a8a59d554ef"
+        }
+        Model "Model" {
+            UnionOperation "Union" Size=1.6,0.4,1.544 Anchored CFrame=-681.688,21.406,-607.853|0,-90,0 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1c0ba50bd572b115"
+            UnionOperation "Union" Size=1.6,0.1,2 Anchored CFrame=-682.602,22.7,-607.853|-90.001,-10,-90.003 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="662debcc69cad2d8"
+            UnionOperation "Union" Size=0.8,0.9,1.2 Anchored CFrame=-682.017,20.756,-607.853|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="12166a8a59d554ef"
+            UnionOperation "Union" Size=1.6,2.569,2.202 Anchored CFrame=-682.118,22.391,-607.853|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="8d678850fb63f453"
+            UnionOperation "Union" Size=1.4,0.587,2.112 Anchored CFrame=-683.007,22.371,-607.853|-90,0,-90.003 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="a1a54342c0d4163c"
+            UnionOperation "Union" Size=1,0.15,0.35 Anchored CFrame=-682.929,23.742,-607.853|-89.999,10,-90.003 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c49d2353c4aa803b"
+            UnionOperation "Union" Size=0.967,0.537,0.844 Anchored CFrame=-682.818,24.183,-607.853|-89.999,10,-90.003 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="addbba8c82663f5d"
+        }
+        UnionOperation "Union" Size=1.308,1.676,6.75 Anchored CFrame=-678.997,21.186,-609.798 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="147e77c174cfa87f"
+        UnionOperation "Union" Size=0.158,0.422,0.253 Anchored CFrame=-681.221,22.19,-609.93|-90,30.001,-90.002 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="e5c9070339455913"
+        UnionOperation "Union" Size=2.3,0.3,0.1 Anchored CFrame=-679.771,23.457,-609.804|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="e4aadb558aad71ee"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.506,-610.531|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=2.4,0.1,2.7 Anchored CFrame=-681.214,25.833,-609.797|-90.006,-62.501,-90.007 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="08501fe147a50eca"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-611.639|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=0.158,0.651,0.166 Anchored CFrame=-680.828,22.008,-610.18|-90.004,-37.501,-90.006 CanCollide=false Color=#EDEAEA Material=Metal RenderFidelity=Precise UsePartColor $_geo="d34ff9350d3e4d5e"
+        UnionOperation "Union" Size=0.195,1.053,0.437 Anchored CFrame=-681.45,22.039,-609.94|90.009,-60.001,90.009 CanCollide=false Color=#EDEAEA Material=Metal RenderFidelity=Precise $_geo="b8871762ccbe87d9"
+        UnionOperation "Union" Size=0.15,0.2,0.3 Anchored CFrame=-682.082,21.68,-610.197|0,-90,0 CanCollide=false Color=#1B2A35 Material=Metal Reflectance=0.1 RenderFidelity=Precise $_geo="d49d04e222316417"
+        UnionOperation "Union" Size=2.5,0.643,3.5 Anchored CFrame=-680.764,25.939,-609.797|-90.006,-62.501,-90.007 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="225e05f9a04ee5c8"
+        UnionOperation "Union" Size=0.158,0.422,0.253 Anchored CFrame=-681.221,22.19,-609.715|-89.996,30.001,-90.005 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="8a05b0f349c87b1a"
+        UnionOperation "Union" Size=2.895,0.654,5.637 Anchored CFrame=-678.353,23.373,-609.797 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f7ab09bc5208125d"
+        UnionOperation "Union" Size=1.3,0.725,0.725 Anchored CFrame=-683.736,21.544,-606.709|-90,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="b545358671595f76"
+        UnionOperation "Union" Size=0.329,0.421,0.421 Anchored CFrame=-679.199,24.598,-609.797|-90,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="bb98e6f8128de3f7"
+        UnionOperation "Union" Size=0.111,0.05,0.335 Anchored CFrame=-681.527,21.664,-609.897|-90.014,-77.501,-90.015 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f2ce197fe48edb6e"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-611.389|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.406,-609.806|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.5,1,1.75 Anchored CFrame=-679.171,20.85,-611.741|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c51b592e2d332a75"
+        UnionOperation "Union" Size=0.5,0.722,0.144 Anchored CFrame=-679.013,20.897,-611.216|-90.006,-60.001,-90.006 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="81d79a72f223a000"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.406,-609.456|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.406,-608.931|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.45,1.086,0.971 Anchored CFrame=-683.869,21.505,-607.848|179.993,0,180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise $_geo="39768f0428f8ef93"
+        UnionOperation "Union" Size=0.475,0.2,0.35 Anchored CFrame=-680.249,21.614,-610.547|90.012,-75.001,90.012 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d271d50a03176139"
+        UnionOperation "Union" Size=0.475,0.2,0.35 Anchored CFrame=-680.249,21.614,-609.047|90.012,-75.001,90.012 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d271d50a03176139"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.506,-610.832|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.775,1.25,0.35 Anchored CFrame=-680.621,22.638,-611.742|89.976,82.5,-179.976 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ef36457fd1b60994"
+        UnionOperation "Union" Size=3.65,0.35,0.1 Anchored CFrame=-679.211,22.979,-609.829|-90.018,-80,-90.019 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4ae2d517219d8a3b"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-608.205|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-611.889|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=0.5,1,1.75 Anchored CFrame=-679.171,20.85,-607.853|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c51b592e2d332a75"
+        UnionOperation "Union" Size=0.2,0.3,0.3 Anchored CFrame=-679.565,21.739,-607.203|90.002,-35.001,-179.999 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="80d44cdfbcd4900d"
+        UnionOperation "Union" Size=0.53,0.23,0.1 Anchored CFrame=-679.765,23.407,-608.09|4.998,-90,0 CanCollide=false Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3e437015f0b0dcd0"
+        UnionOperation "Union" Size=0.5,0.722,0.144 Anchored CFrame=-679.014,20.897,-608.379|-90.006,-60.001,-90.006 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="81d79a72f223a000"
+        UnionOperation "Union" Size=0.192,0.128,1.1 Anchored CFrame=-679.454,22.349,-609.222|90.009,-70.001,90.009 CanCollide=false Color=#9597A2 Material=Metal RenderFidelity=Precise $_geo="85302059f464f655"
+        UnionOperation "Union" Size=6.064,0.801,2.047 Anchored CFrame=-680.695,25.451,-609.798|0,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="5e05cf1fb7cef75d"
+        UnionOperation "Union" Size=0.5,0.722,0.144 Anchored CFrame=-679.013,20.897,-612.233|-90.006,-60.001,-90.006 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="81d79a72f223a000"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.506,-608.781|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.53,0.23,0.1 Anchored CFrame=-679.764,23.407,-611.505|-4.998,-90,0 CanCollide=false Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3d9b2090f6857ac7"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-607.955|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=5.7,2.165,1.022 Anchored CFrame=-679.722,22.506,-609.797|-90.018,-80,-90.019 CanCollide=false Color=#1B2A35 Material=Metal Reflectance=0.05 RenderFidelity=Precise UsePartColor $_geo="8d7ba08ccc7eb38a"
+        UnionOperation "Union" Size=0.9,3.486,1.471 Anchored CFrame=-684.011,22.853,-612.176|179.993,0,180 CanCollide=false Color=#BBB3B2 Material=Metal RenderFidelity=Precise UsePartColor $_geo="88156303172d9b49"
+        UnionOperation "Union" Size=0.775,1.25,0.35 Anchored CFrame=-680.622,22.638,-607.853|89.976,82.5,-179.976 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ef36457fd1b60994"
+        UnionOperation "Union" Size=0.6,1.6,5.777 Anchored CFrame=-679.017,22.508,-609.797|-180,0,-170 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d29680babfb0847"
+        UnionOperation "Union" Size=3.914,0.539,0.1 Anchored CFrame=-679.771,23.387,-609.806|4.998,-90,0 CanCollide=false Color=#C4281C Material=Metal RenderFidelity=Precise UsePartColor $_geo="7b256d8bfbc4fc46"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.406,-610.156|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.2,0.3,0.3 Anchored CFrame=-679.564,21.739,-612.405|90.002,-35.001,-179.999 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="80d44cdfbcd4900d"
+        UnionOperation "Union" Size=6.624,2.899,9.162 Anchored CFrame=-681.089,21.8,-609.866 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="dea49598990fc972"
+        UnionOperation "Union" Size=1.5,1.3,0.75 Anchored CFrame=-682.706,21.015,-609.797|0,-90,0 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="11884c8b6e88df21"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.506,-609.081|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.18,0.171,0.171 Anchored CFrame=-679.557,21.747,-607.705|-180,0,-139.999 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="85fcabb8640a5b6c"
+        UnionOperation "Union" Size=0.68,0.205,0.68 Anchored CFrame=-680.447,20.448,-607.853|0,-90,0 CanCollide=false Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4347c844e7fcfa61"
+        UnionOperation "Union" Size=2.4,0.3,0.3 Anchored CFrame=-680.446,21.55,-611.742|-90,90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="6004953f5fa90bc5"
+        UnionOperation "Union" Size=0.778,0.89,0.89 Anchored CFrame=-681.161,21.588,-609.772|0,-90,0 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="3ee7218bdb0bc401"
+        UnionOperation "Union" Size=5.706,0.622,9.043 Anchored CFrame=-681.548,23.043,-609.866 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f3da119af84d0c80"
+        UnionOperation "Union" Size=0.68,0.205,0.68 Anchored CFrame=-680.446,20.448,-611.742|0,-90,0 CanCollide=false Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4347c844e7fcfa61"
+        UnionOperation "Union" Size=2.4,0.3,0.3 Anchored CFrame=-680.447,21.55,-607.853|-90,90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="6004953f5fa90bc5"
+        UnionOperation "Union" Size=1.257,0.983,0.983 Anchored CFrame=-681.161,21.443,-609.799|0,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="9cc6f2ad6bb2480a"
+        UnionOperation "Union" Size=3.319,0.487,0.1 Anchored CFrame=-679.771,23.413,-609.789|-4.998,-90,0 CanCollide=false Color=#FFB000 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d6c76ae3b5fd9945"
+        UnionOperation "Union" Size=0.127,0.121,0.121 Anchored CFrame=-679.857,23.406,-610.682|-180,0,-180 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f1ca13ae1c1806a2"
+        UnionOperation "Union" Size=0.461,0.832,0.473 Anchored CFrame=-679.205,24.816,-609.797|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="2a9de742796d75b6"
+        UnionOperation "Union" Size=0.158,0.584,0.158 Anchored CFrame=-680.95,22.019,-609.474|-90.005,-55.001,-90.006 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="441ad29170475326"
+        UnionOperation "Union" Size=0.15,0.2,0.3 Anchored CFrame=-682.082,21.68,-609.797|0,-90,0 CanCollide=false Color=#1B2A35 Material=Metal Reflectance=0.1 RenderFidelity=Precise $_geo="d49d04e222316417"
+        UnionOperation "Union" Size=0.195,1.053,0.437 Anchored CFrame=-681.45,22.039,-609.704|90.009,-60.001,90.009 CanCollide=false Color=#EDEAEA Material=Metal RenderFidelity=Precise $_geo="b8871762ccbe87d9"
+        UnionOperation "Union" Size=7.691,7.053,9.451 Anchored CFrame=-680.651,23.877,-609.798|-180,0,180 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="83393a6eafbee986"
+        UnionOperation "Union" Size=0.15,0.2,0.3 Anchored CFrame=-682.082,21.68,-609.397|0,-90,0 CanCollide=false Color=#1B2A35 Material=Metal Reflectance=0.1 RenderFidelity=Precise $_geo="d49d04e222316417"
+        UnionOperation "Union" Size=0.111,0.05,0.335 Anchored CFrame=-681.527,21.664,-609.747|-90.014,-77.501,-90.015 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f2ce197fe48edb6e"
+        UnionOperation "Union" Size=2.24,1.7,4.58 Anchored CFrame=-680.891,21.2,-609.797|0,-90,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="9a7a48387d824a9c"
+        UnionOperation "Union" Size=0.5,0.722,0.144 Anchored CFrame=-679.014,20.897,-607.362|-90.006,-60.001,-90.006 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="81d79a72f223a000"
+    }
+    Model "Model" {
+        Model "FASeat" {
+            UnionOperation "PartBOTTOM" Size=1.402,0.175,1.246 Anchored CFrame=-686.576,21.854,-607.589|0.01,90,0 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise Transparency=1 $_geo="346baf460487bd1b"
+            UnionOperation "PartMIDDLE" Size=1.402,0.175,1.246 Anchored CFrame=-686.03,22.4,-607.589|90.01,0.009,-90.001 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise $_geo="346baf460487bd1b"
+            Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat/Script.luau"
+            Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat/Script~2.luau"
+            Seat "Seat" Size=1.285,0.156,0.21 Anchored CFrame=-686.407,21.621,-607.606|0.009,90,0 Color=#A34B4B Material=Metal TopSurface=Smooth Transparency=1 {
+                BlockMesh "Mesh"
+                Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat/Seat/Script.luau"
+            }
+            UnionOperation "Union" Size=1.402,3.802,0.238 Anchored CFrame=-685.984,22.594,-607.588|0.012,90,0 Color=#C4281C Material=Metal RenderFidelity=Precise $_geo="6c8123fb162e0941"
+        }
+        Model "FASeat" {
+            UnionOperation "PartBOTTOM" Size=1.402,0.175,1.246 Anchored CFrame=-686.576,21.854,-605.888|0.01,90,0 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise Transparency=1 $_geo="346baf460487bd1b"
+            UnionOperation "PartMIDDLE" Size=1.402,0.175,1.246 Anchored CFrame=-686.03,22.399,-605.888|90.01,0.009,-90.001 CanCollide=false Color=#CACBD1 Material=Metal RenderFidelity=Precise $_geo="346baf460487bd1b"
+            Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat~2/Script.luau"
+            Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat~2/Script~2.luau"
+            Seat "Seat" Size=1.285,0.156,0.21 Anchored CFrame=-686.407,21.62,-605.905|0.009,90,0 Color=#A34B4B Material=Metal TopSurface=Smooth Transparency=1 {
+                BlockMesh "Mesh"
+                Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/FASeat~2/Seat/Script.luau"
+            }
+            UnionOperation "Union" Size=1.402,3.802,0.238 Anchored CFrame=-685.984,22.593,-605.888|0.012,90,0 Color=#C4281C Material=Metal RenderFidelity=Precise $_geo="6c8123fb162e0941"
+        }
+        UnionOperation "Floor" Size=102.15,0.3,12.546 Anchored CFrame=-727.884,20.2,-609.798 Color=#435267 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f5fe2338d38d9a06" {
+            Texture "Texture" Face=Top Texture="rbxassetid://378911401" TextureContent="rbxassetid://378911401" Transparency=0.85
+        }
+        Model "MoodLight" {
+            Part "Light" Size=77.4,1.2,0.2 Anchored CFrame=-733.16,25.498,-604.279|-25.007,0,180 CanCollide=false Color=#B1A7FF Material=Metal Transparency=1 {
+                SurfaceGui "GlowGUI" CanvasSize=100,100 {
+                    ImageLabel "Glow" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=264973323" ImageContent="http://www.roblox.com/asset/?id=264973323"
+                }
+            }
+            Part "Light" Size=77.4,1.2,0.2 Anchored CFrame=-733.159,25.498,-615.317|-154.993,0,0 CanCollide=false Color=#B1A7FF Material=Metal Transparency=1 {
+                SurfaceGui "GlowGUI" CanvasSize=100,100 {
+                    ImageLabel "Glow" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=264973323" ImageContent="http://www.roblox.com/asset/?id=264973323"
+                }
+            }
+            Part "Light" Size=74,0.2,2.4 Anchored BottomSurface=Smooth CFrame=-733.059,28.064,-609.776|-180,0,180 CanCollide=false Color=#FFFFFF Material=Metal TopSurface=Smooth Transparency=1 {
+                SurfaceLight "SurfaceLight" Face=Bottom Range=10
+            }
+            Part "Light" Size=73.8,1.4,0.2 Anchored CFrame=-733.159,28.205,-610.763|-90,0,180 CanCollide=false Color=#B1A7FF Material=Metal Transparency=1 {
+                SurfaceGui "GlowGUI" CanvasSize=100,100 {
+                    ImageLabel "Glow" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=264973323" ImageContent="http://www.roblox.com/asset/?id=264973323"
+                }
+            }
+            Part "Light" Size=73.8,1.4,0.2 Anchored CFrame=-733.159,28.205,-608.833|-90,0,0 CanCollide=false Color=#B1A7FF Material=Metal Transparency=1 {
+                SurfaceGui "GlowGUI" CanvasSize=100,100 {
+                    ImageLabel "Glow" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=264973323" ImageContent="http://www.roblox.com/asset/?id=264973323"
+                }
+            }
+            Part "Part" Size=1.4,0.1,5.7 Anchored BottomSurface=Smooth CFrame=-691.447,27.908,-609.798|0,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth Transparency=0.4
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-751.036,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-751.035,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-748.111,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-748.651,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-748.65,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-748.11,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-724.434,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-724.434,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-722.048,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-722.049,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-721.508,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-721.509,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-731.085,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-731.084,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-728.699,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-728.699,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-728.159,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-728.159,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-704.482,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-704.483,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-702.098,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-701.557,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-702.097,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-701.558,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-737.735,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-737.734,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-735.349,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-735.35,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-734.809,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-734.81,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-698.092,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-698.092,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,4.34 Anchored CFrame=-696.582,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="687945c3315dbb52"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-695.517,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-695.517,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,4.34 Anchored CFrame=-696.582,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="5f46fe39d7a4b865"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-711.133,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-711.133,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-708.748,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-708.208,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-708.208,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-708.748,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-757.686,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-757.686,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-755.301,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-754.761,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-755.301,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-754.761,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-770.987,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-770.987,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-768.602,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-768.602,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-768.062,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-768.062,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-717.784,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-717.783,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-714.858,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-715.398,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-714.858,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-715.398,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-744.385,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-744.385,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-741.46,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-742,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-742,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-741.46,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+        }
+        Model "OVB" {
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-764.337,26,-605.207|-4.998,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            Part "Part" Size=1.03,0.05,1.26 Anchored BottomSurface=Smooth CFrame=-764.336,26,-614.412|4.999,-90,0 Color=#F8F8F8 Material=Metal TopSurface=Smooth
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-761.412,26.078,-605.099|-90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3c80685b6d2cc247"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-761.951,26.847,-606.278|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="c756f5b1fc19ea74"
+            UnionOperation "Union" Size=3.523,1.967,6.629 Anchored CFrame=-761.951,26.847,-613.341|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise $_geo="fedca5ce6017c378"
+            UnionOperation "Union" Size=0.42,0.611,0.611 Anchored CFrame=-761.411,26.078,-614.521|90,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e0d8922c75076e6d"
+        }
+        Part "Part" Size=0.36,0.21,77.38 Anchored BottomSurface=Smooth CFrame=-733.125,26.184,-606.023|-58.425,-90,0 Color=#111111 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.36,0.21,77.38 Anchored BottomSurface=Smooth CFrame=-733.124,26.184,-613.596|58.425,90,0 Color=#111111 Material=Metal TopSurface=Smooth
+        Model "RestRoomDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,6.2,2.1 Anchored BottomSurface=Smooth CFrame=-685.651,23.45,-611.151|0,-90,0 Color=#9FA1AC Material=Metal TopSurface=Smooth
+                Part "P2" Size=0.15,5.9,1.8 Anchored BottomSurface=Smooth CFrame=-685.651,23.45,-611.151|0,-90,0 Color=#CACBD1 Material=Metal TopSurface=Smooth
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-685.951,23.6,-611.145|-90,0,89.997 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="252aaa301b3359c2"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/RestRoomDoor/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,6.2,2.1 Anchored BottomSurface=Smooth CFrame=-685.007,23.45,-610.146|0,-20.007,0 CanCollide=false Color=#9FA1AC Material=Metal TopSurface=Smooth Transparency=1
+                Part "P2" Size=0.15,5.9,1.8 Anchored BottomSurface=Smooth CFrame=-685.007,23.45,-610.146|0,-20.007,0 CanCollide=false Color=#CACBD1 Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-685.104,23.6,-609.862|-90,0,159.993 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f4648173d44a6583"
+            }
+        }
+        Model "RestRoomDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-773.457,24,-608.444|0,90,0 Color=#9FA1AC Material=Metal TopSurface=Smooth
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-773.457,24,-608.444|0,90,0 Color=#CACBD1 Material=Metal TopSurface=Smooth
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-773.957,23.6,-608.444|-90,0,89.997 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="252aaa301b3359c2"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/RestRoomDoor~2/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-772.257,24,-609.644 CanCollide=false Color=#9FA1AC Material=Metal TopSurface=Smooth Transparency=1
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-772.257,24,-609.644 CanCollide=false Color=#CACBD1 Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-772.257,23.6,-610.144|-90,0,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f4648173d44a6583"
+            }
+        }
+        Model "RestRoomDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-692.852,24,-608.444|0,90,0 Color=#9FA1AC Material=Metal TopSurface=Smooth
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-692.852,24,-608.444|0,90,0 Color=#CACBD1 Material=Metal TopSurface=Smooth
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-693.352,23.6,-608.444|-90,0,89.997 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="252aaa301b3359c2"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/RestRoomDoor~3/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-691.552,24,-609.644 CanCollide=false Color=#9FA1AC Material=Metal TopSurface=Smooth Transparency=1
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-691.552,24,-609.644 CanCollide=false Color=#CACBD1 Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-691.552,23.6,-610.144|-90,0,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f4648173d44a6583"
+            }
+        }
+        Model "RestRoomDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-773.457,24,-611.145|0,90,0 Color=#9FA1AC Material=Metal TopSurface=Smooth
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-773.457,24,-611.145|0,90,0 Color=#CACBD1 Material=Metal TopSurface=Smooth
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-772.957,23.6,-611.145|90,0,-89.997 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="252aaa301b3359c2"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/RestRoomDoor~4/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-774.657,24,-610.044 CanCollide=false Color=#9FA1AC Material=Metal TopSurface=Smooth Transparency=1
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-774.657,24,-610.044 CanCollide=false Color=#CACBD1 Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-774.657,23.6,-609.544|90,0,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f4648173d44a6583"
+            }
+        }
+        Model "RestRoomDoor" {
+            Model "Closed" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-692.852,24,-611.145|0,90,0 Color=#9FA1AC Material=Metal TopSurface=Smooth
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-692.852,24,-611.145|0,90,0 Color=#CACBD1 Material=Metal TopSurface=Smooth
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-692.352,23.6,-611.145|90,0,-89.997 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="252aaa301b3359c2"
+            }
+            Script "DoorScript" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/Model~10/Model/RestRoomDoor~5/DoorScript.luau"
+            Model "Open" {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+                Part "P1" Size=0.1,7.3,2.5 Anchored BottomSurface=Smooth CFrame=-694.052,24,-610.044 CanCollide=false Color=#9FA1AC Material=Metal TopSurface=Smooth Transparency=1
+                Part "P2" Size=0.15,7,2.2 Anchored BottomSurface=Smooth CFrame=-694.052,24,-610.044 CanCollide=false Color=#CACBD1 Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "P3" Size=0.75,0.7,0.3 Anchored CFrame=-694.052,23.6,-609.544|90,0,0 CanCollide=false Color=#9FA1AC Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="f4648173d44a6583"
+            }
+        }
+        Model "Toilet" {
+            Model "Model" {
+                Part "Part" Size=0.1,1.402,1.887 Anchored CFrame=-692.738,21.108,-615.127|-0.051,-90,0 Color=#CACBD1 Material=Metal
+                UnionOperation "Union" Size=2.566,0.08,1.924 Anchored CFrame=-692.757,23.058,-615.121|-95.015,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d82937de5602eab"
+                UnionOperation "Union" Size=2.432,0.176,1.925 Anchored CFrame=-692.757,21.809,-613.848|-0.051,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a9559b1a61ea7c"
+                UnionOperation "Union" Size=2.566,1.523,1.924 Anchored CFrame=-692.757,21.047,-613.884|-0.051,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d3ab8112e1c1dac2"
+            }
+            Seat "Seat" Size=0.472,0.641,0.367 Anchored BackSurface=Weld BottomSurface=Weld CFrame=-692.773,21.376,-614.249|179.966,0.001,180 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Weld Transparency=1
+        }
+        Model "Toilet" {
+            Model "Model" {
+                Part "Part" Size=0.1,1.402,1.887 Anchored CFrame=-692.777,21.117,-604.559|0.051,90,0 Color=#CACBD1 Material=Metal
+                UnionOperation "Union" Size=2.432,0.176,1.925 Anchored CFrame=-692.759,21.817,-605.839|0.051,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a9559b1a61ea7c"
+                UnionOperation "Union" Size=2.566,1.523,1.924 Anchored CFrame=-692.759,21.055,-605.802|0.051,90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d3ab8112e1c1dac2"
+                UnionOperation "Union" Size=2.566,0.08,1.924 Anchored CFrame=-692.759,23.067,-604.565|95.015,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d82937de5602eab"
+            }
+            Seat "Seat" Size=0.472,0.641,0.367 Anchored BackSurface=Weld BottomSurface=Weld CFrame=-692.743,21.384,-605.437|0.034,-0.001,0 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Weld Transparency=1
+        }
+        Model "Toilet" {
+            Model "Model" {
+                Part "Part" Size=0.1,1.402,1.887 Anchored CFrame=-685.638,21.111,-614.025|-0.051,-90,0 Color=#CACBD1 Material=Metal
+                UnionOperation "Union" Size=2.566,0.08,1.924 Anchored CFrame=-685.657,23.061,-614.019|-95.015,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d82937de5602eab"
+                UnionOperation "Union" Size=2.432,0.176,1.925 Anchored CFrame=-685.657,21.811,-612.746|-0.051,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a9559b1a61ea7c"
+                UnionOperation "Union" Size=2.566,1.523,1.924 Anchored CFrame=-685.657,21.049,-612.783|-0.051,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d3ab8112e1c1dac2"
+            }
+            Seat "Seat" Size=0.472,0.641,0.367 Anchored BackSurface=Weld BottomSurface=Weld CFrame=-685.673,21.378,-613.147|179.966,0.001,180 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Weld Transparency=1
+        }
+        Model "Toilet" {
+            Model "Model" {
+                Part "Part" Size=0.1,1.402,1.887 Anchored CFrame=-773.483,21.117,-604.559|0.051,90,0 Color=#CACBD1 Material=Metal
+                UnionOperation "Union" Size=2.432,0.176,1.925 Anchored CFrame=-773.464,21.817,-605.839|0.051,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a9559b1a61ea7c"
+                UnionOperation "Union" Size=2.566,0.08,1.924 Anchored CFrame=-773.464,23.067,-604.565|95.015,90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d82937de5602eab"
+                UnionOperation "Union" Size=2.566,1.523,1.924 Anchored CFrame=-773.465,21.055,-605.802|0.051,90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d3ab8112e1c1dac2"
+            }
+            Seat "Seat" Size=0.472,0.641,0.367 Anchored BackSurface=Weld BottomSurface=Weld CFrame=-773.448,21.384,-605.437|0.034,-0.001,0 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Weld Transparency=1
+        }
+        Model "Toilet" {
+            Model "Model" {
+                Part "Part" Size=0.1,1.402,1.887 Anchored CFrame=-773.444,21.108,-615.127|-0.051,-90,0 Color=#CACBD1 Material=Metal
+                UnionOperation "Union" Size=2.566,1.523,1.924 Anchored CFrame=-773.462,21.047,-613.884|-0.051,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d3ab8112e1c1dac2"
+                UnionOperation "Union" Size=2.566,0.08,1.924 Anchored CFrame=-773.462,23.058,-615.121|-95.015,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d82937de5602eab"
+                UnionOperation "Union" Size=2.432,0.176,1.925 Anchored CFrame=-773.462,21.809,-613.848|-0.051,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a9559b1a61ea7c"
+            }
+            Seat "Seat" Size=0.472,0.641,0.367 Anchored BackSurface=Weld BottomSurface=Weld CFrame=-773.478,21.376,-614.249|179.966,0.001,180 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Weld Transparency=1
+        }
+        UnionOperation "Union" Size=0.3,0.35,75.2 Anchored CFrame=-733.589,28.111,-609.797|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise $_geo="2ebef4850d5cb45c"
+        UnionOperation "Union" Size=77.305,1.136,12.875 Anchored CFrame=-733.152,20.888,-609.798 Color=#5B5D69 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f408ac46a242242d"
+        UnionOperation "Union" Size=13.1,8.3,61.6 Anchored CFrame=-727.359,24.5,-609.798|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c5e509020c01e329"
+        UnionOperation "Union" Size=1.665,5.6,3.4 Anchored CFrame=-687.657,23.15,-604.887|0.001,-90,0 CanCollide=false Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="29afee615d44e33e"
+        UnionOperation "Union" Size=12.863,1.8,4.8 Anchored CFrame=-770.761,23.65,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="015a7eb4fa1ef5ef"
+        UnionOperation "Union" Size=13.075,8.287,20.8 Anchored CFrame=-768.562,24.494,-609.798|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="d95d3e5e7723f36e"
+        UnionOperation "Union" Size=2.9,0.1,11.655 Anchored CFrame=-773.457,20.321,-609.798 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3911c6730d503463"
+        UnionOperation "Union" Size=7.049,1.421,13.981 Anchored CFrame=-764.471,16.315,-609.798|0,-90,0 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="938841a7f9c02103"
+        UnionOperation "Union" Size=12.903,1.8,6.399 Anchored CFrame=-692.856,23.65,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="c5d9fe5a30e203c9"
+        UnionOperation "Union" Size=1.679,3.7,4.6 Anchored CFrame=-700.862,17.562,-605.685|24.994,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="02743de61564bcf5"
+        UnionOperation "Union" Size=3.3,8.041,4.898 Anchored CFrame=-773.457,24.371,-606.094 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="0d1dd2b8c2ada218"
+        UnionOperation "Union" Size=2.9,0.1,12.431 Anchored CFrame=-692.852,20.325,-609.798 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="32a0ca544c3d22c9"
+        UnionOperation "Union" Size=2.9,0.05,77.3 Anchored CFrame=-733.154,20.345,-609.8|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="ca9a7cab2ef8ea79"
+        UnionOperation "Union" Size=0.831,6.143,92.392 Anchored CFrame=-732.688,28.186,-609.798|-90,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="9cfeb4b6eb8f4194"
+        UnionOperation "Union" Size=1.445,6,3.4 Anchored CFrame=-776.962,23.35,-614.677|0,-90,0 CanCollide=false Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3def3202b6193f05"
+        UnionOperation "Union" Size=13.1,3.6,2 Anchored CFrame=-730.559,23.15,-609.798|0.001,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="d7d3bdeff9a26e69"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-699.257,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-741.16,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=13.1,3.6,2 Anchored CFrame=-727.459,23.15,-609.798|0.001,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="d7d3bdeff9a26e69"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-734.76,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-760.361,23.652,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-712.058,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=1.427,5.6,3.4 Anchored CFrame=-776.863,23.15,-604.891|0,-90,0 CanCollide=false Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f2b27d40e29560f1"
+        UnionOperation "Union" Size=3.3,8.042,4.899 Anchored CFrame=-773.457,24.371,-613.501 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="037e114bff7355d4"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-718.459,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebbdcfbfb4440cad"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-705.658,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=4.77,0.5,19.4 Anchored CFrame=-700.857,15.9,-609.798|0,-90,0 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f427c55dde72842e"
+        UnionOperation "Union" Size=1.6,3.69,4.6 Anchored CFrame=-764.466,17.555,-605.658|24.994,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3d80e76e0722f12d"
+        UnionOperation "Union" Size=2.1,0.1,3.911 Anchored CFrame=-685.651,20.325,-613.107 Color=#9FA1AC Material=Metal RenderFidelity=Precise UsePartColor $_geo="b6877d5b83232a68"
+        UnionOperation "Union" Size=13.114,8.307,12.059 Anchored CFrame=-690.527,24.504,-609.797|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="136389f47efc81cb"
+        UnionOperation "Union" Size=3.3,8.042,5.114 Anchored CFrame=-692.852,24.371,-605.986 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="8cb377f45296f6e4"
+        UnionOperation "Union" Size=2,7.143,6.302 Anchored CFrame=-684.901,23.922,-607.898 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="b65d420937fa076d"
+        UnionOperation "Union" Size=12.889,1.8,4.8 Anchored CFrame=-724.059,23.652,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="21f5935a3e6e3d2c"
+        UnionOperation "Union" Size=12.889,1.8,4.8 Anchored CFrame=-765.962,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="21f5935a3e6e3d2c"
+        UnionOperation "Union" Size=1.632,6,3.4 Anchored CFrame=-688.656,23.35,-614.857|0.001,90,0 CanCollide=false Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="8eaf05365022d9a6"
+        UnionOperation "Union" Size=2.5,7.336,4.065 Anchored CFrame=-685.651,24.018,-613.084 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="e3e7281fd239c5e8"
+        UnionOperation "Union" Size=12.057,4.1,19.6 Anchored CFrame=-700.857,17.6,-609.798|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3cb07fcd7cbea3c4"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-747.561,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        UnionOperation "Union" Size=3.3,8.042,5.114 Anchored CFrame=-692.851,24.372,-613.609 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="91f9712c68a92b24"
+        UnionOperation "Union" Size=12.029,4.088,14.181 Anchored CFrame=-764.471,17.606,-609.798|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3329797c50379ff0"
+        UnionOperation "Union" Size=12.889,1.8,6.4 Anchored CFrame=-753.961,23.651,-609.798|0.001,90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="ebac9703284b6ece"
+        Model "Vents" {
+            Model "Vents" {
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-750.387,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-730.385,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-760.387,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-765.388,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-725.385,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-720.385,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-715.384,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-710.384,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-770.388,20.943,-603.805|179.779,-85.632,170.308 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="02ee8393c4846f32"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-700.383,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-755.387,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-695.61,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-745.386,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-740.386,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-735.386,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-705.383,20.899,-603.545|9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="a5b37b55f3a38547"
+            }
+            Model "Vents" {
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-735.385,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-725.384,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-720.384,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-740.385,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-765.387,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-770.387,20.943,-615.819|0.221,-85.638,9.692 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-750.386,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-760.387,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-730.385,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="974299b99395f22e"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-705.383,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-745.385,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-700.382,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-710.383,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-695.61,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-715.384,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+                UnionOperation "Union" Size=0.08,1,2.05 Anchored CFrame=-755.386,20.899,-616.079|-9.498,-90,0 Color=#4E505A Material=Metal RenderFidelity=Precise $_geo="b1b910b7aaea18c0"
+            }
+        }
+    }
+}
+Part "SENSOR" Size=1.444,1.444,1.444 Anchored BottomSurface=Smooth CFrame=-681.32,23.821,-609.798|0,0,0.008 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+    Sound "FT10" AudioContent="http://www.roblox.com/asset/?id=226032838" SoundId="http://www.roblox.com/asset/?id=226032838" Volume=1
+    Sound "FT100" AudioContent="http://www.roblox.com/asset/?id=226032824" SoundId="http://www.roblox.com/asset/?id=226032824" Volume=1
+    Sound "FT1000" AudioContent="http://www.roblox.com/asset/?id=226032800" SoundId="http://www.roblox.com/asset/?id=226032800" Volume=1
+    Sound "FT20" AudioContent="http://www.roblox.com/asset/?id=226032836" SoundId="http://www.roblox.com/asset/?id=226032836" Volume=1
+    Sound "FT200" AudioContent="http://www.roblox.com/asset/?id=226032819" SoundId="http://www.roblox.com/asset/?id=226032819" Volume=1
+    Sound "FT2500" AudioContent="http://www.roblox.com/asset/?id=226032790" SoundId="http://www.roblox.com/asset/?id=226032790" Volume=1
+    Sound "FT30" AudioContent="http://www.roblox.com/asset/?id=226032831" SoundId="http://www.roblox.com/asset/?id=226032831" Volume=1
+    Sound "FT300" AudioContent="http://www.roblox.com/asset/?id=226032814" SoundId="http://www.roblox.com/asset/?id=226032814" Volume=1
+    Sound "FT40" AudioContent="http://www.roblox.com/asset/?id=226032829" SoundId="http://www.roblox.com/asset/?id=226032829" Volume=1
+    Sound "FT400" AudioContent="http://www.roblox.com/asset/?id=226032811" SoundId="http://www.roblox.com/asset/?id=226032811" Volume=1
+    Sound "FT50" AudioContent="http://www.roblox.com/asset/?id=226032826" SoundId="http://www.roblox.com/asset/?id=226032826" Volume=1
+    Sound "FT500" AudioContent="http://www.roblox.com/asset/?id=226032803" SoundId="http://www.roblox.com/asset/?id=226032803" Volume=1
+    Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/OtherParts/Body/SENSOR/Script.luau"
+    Sound "TLF" AudioContent="http://www.roblox.com/asset/?id=226103016" SoundId="http://www.roblox.com/asset/?id=226103016" Volume=1
+    Sound "TLG" AudioContent="http://www.roblox.com/asset/?id=226102978" SoundId="http://www.roblox.com/asset/?id=226102978" Volume=1
+}
+Model "seats" @file="Scene/Workspace/PlaneKit/Plane/OtherParts/Body/seats.bridge"

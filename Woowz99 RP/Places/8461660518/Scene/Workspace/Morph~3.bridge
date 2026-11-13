@@ -1,0 +1,1067 @@
+Model "" {
+    Model "Arm1" {
+        Part "Head" Size=0.284,1.166,0.278 Anchored BottomSurface=Smooth CFrame=-141.827,399.63,583.555|179.913,0.315,-9.963 CanCollide=false Color=#2DF800 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Middle" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-141.66,399.549,583.635|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-141.561,398.538,583.753|-90.145,-9.97,89.666 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-141.555,398.511,583.637|-90.145,-9.97,89.666 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-141.546,398.46,583.505|-90.145,-9.97,89.666 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.178,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-141.6,398.766,583.684|179.911,0.32,80.037 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.54,0.141,0.64 Anchored BottomSurface=Smooth CFrame=-141.6,398.766,583.555|-90.145,-9.97,89.666 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-141.566,398.582,583.381|-90.145,-9.97,89.666 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Model "Arm2" {
+        Part "Head" Size=0.284,1.166,0.278 Anchored BottomSurface=Smooth CFrame=-144.402,399.617,583.54|179.91,0.32,-169.966 CanCollide=false Color=#2DF800 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Middle" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-144.66,399.551,583.618|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1
+        Part "Part" Size=0.178,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-144.631,398.754,583.667|179.912,0.322,100.032 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.54,0.141,0.64 Anchored BottomSurface=Smooth CFrame=-144.63,398.754,583.538|-90.031,10.032,89.669 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-144.676,398.499,583.62|-90.031,10.032,89.669 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-144.662,398.57,583.363|-90.031,10.032,89.669 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-144.672,398.526,583.735|-90.031,10.032,89.669 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.101,0.097,0.708 Anchored BottomSurface=Smooth CFrame=-144.684,398.448,583.488|-90.031,10.032,89.669 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Model "Chest" {
+        Part "Head" Size=0.284,1.166,0.278 Anchored BottomSurface=Smooth CFrame=-144.085,400.766,583.54|179.91,0.32,-159.966 CanCollide=false Color=#2DF800 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Head" Size=0.284,1.166,0.278 Anchored BottomSurface=Smooth CFrame=-142.143,400.78,583.551|179.911,0.312,-19.962 CanCollide=false Color=#2DF800 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Head" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=-143.158,401.051,583.624|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        MeshPart "MeshPart" Size=0.05,0.333,0.051 Anchored CFrame=-142.887,402.49,584.085|-87.502,-4.329,-59.896 CanCollide=false CollisionFidelity=Default Color=#956518 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.05,0.333,0.051 Anchored CFrame=-143.009,402.75,584.008|-89.996,-19.999,-90.006 CanCollide=false CollisionFidelity=Default Color=#956518 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.05,0.333,0.051 Anchored CFrame=-143.391,402.49,584.084|-87.494,4.325,-120.104 CanCollide=false CollisionFidelity=Default Color=#956518 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.075,0.49,0.073 Anchored CFrame=-143.086,401.806,584.009|115.339,9.054,85.738 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.075,0.49,0.083 Anchored CFrame=-143.082,401.787,584|115.339,9.054,85.738 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic RenderFidelity=Precise
+        Part "Middle" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=-143.16,399.55,583.626|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1
+        UnionOperation "Torso" Size=2.274,1.476,1.476 Anchored CFrame=-143.132,400.326,583.558|90.002,90,0 CanCollide=false Color=#2DF800 Material=SmoothPlastic RenderFidelity=Precise $_geo="c73c810a3b322704"
+        UnionOperation "Union" Size=0.313,0.254,0.301 Anchored CFrame=-142.875,402.257,584.056|-179.988,80.004,179.988 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise $_geo="736fd61ded2bdb3c"
+        UnionOperation "Union" Size=0.216,0.535,0.22 Anchored CFrame=-143.132,402.179,584.123|0,90,0 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic RenderFidelity=Precise $_geo="98662e9165f04d5d"
+        UnionOperation "Union" Size=1.252,1.547,1.325 Anchored CFrame=-143.132,402.103,583.536|0,90,0 CanCollide=false Color=#F3D6A6 Material=SmoothPlastic RenderFidelity=Precise $_geo="5e72d269c47c7dc3"
+        UnionOperation "Union" Size=0.313,0.254,0.301 Anchored CFrame=-143.392,402.257,584.056|-0.013,79.994,0.012 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise $_geo="736fd61ded2bdb3c"
+    }
+    Part "Head" Size=4,1,4 Anchored BottomSurface=Smooth CFrame=-143.325,396.937,587.672 Color=#00FF00 TopSurface=Smooth {
+        Script "Arm1" @src="Scripts/Workspace/Morph~3/_/Head/Arm1.luau"
+        Script "Arm2" @src="Scripts/Workspace/Morph~3/_/Head/Arm2.luau"
+        Script "Face Remover" @src="Scripts/Workspace/Morph~3/_/Head/Face Remover.luau"
+        Script "HatRemover" @src="Scripts/Workspace/Morph~3/_/Head/HatRemover.luau"
+        Script "HatRemover" @src="Scripts/Workspace/Morph~3/_/Head/HatRemover~2.luau"
+        Script "HatRemover" @src="Scripts/Workspace/Morph~3/_/Head/HatRemover~3.luau"
+        Script "Leg1" @src="Scripts/Workspace/Morph~3/_/Head/Leg1.luau"
+        Script "Leg2" @src="Scripts/Workspace/Morph~3/_/Head/Leg2.luau"
+        Script "PresentScript" @src="Scripts/Workspace/Morph~3/_/Head/PresentScript.luau"
+        Script "Script" @src="Scripts/Workspace/Morph~3/_/Head/Script.luau"
+        Script "Script" @src="Scripts/Workspace/Morph~3/_/Head/Script~2.luau"
+        Script "Torso" @src="Scripts/Workspace/Morph~3/_/Head/Torso.luau"
+    }
+    Humanoid "Humanoid" Health=0 MaxHealth=0 NameOcclusion=NoOcclusion
+    Model "Leg1" {
+        Part "Head" Size=0.284,1.398,0.278 Anchored BottomSurface=Smooth CFrame=-142.729,397.33,583.553|179.911,0.316,0.037 CanCollide=false Color=#0010F8 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Head" Size=0.284,1.398,0.278 Anchored BottomSurface=Smooth CFrame=-142.728,398.781,583.551|179.911,0.316,0.037 CanCollide=false Color=#0010F8 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Middle" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-142.661,397.549,583.632|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1
+        Part "Part" Size=0.671,0.252,0.469 Anchored BottomSurface=Smooth CFrame=-142.722,396.53,583.775|6.934,89.674,-7.025 Color=#946D37 Material=SmoothPlastic TopSurface=Smooth
+    }
+    Model "Leg2" {
+        Part "Head" Size=0.284,1.398,0.278 Anchored BottomSurface=Smooth CFrame=-143.52,398.781,583.546|179.911,0.316,0.037 CanCollide=false Color=#0010F8 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Head" Size=0.284,1.398,0.278 Anchored BottomSurface=Smooth CFrame=-143.521,397.331,583.549|179.911,0.316,0.037 CanCollide=false Color=#0010F8 TopSurface=Smooth {
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Part "Middle" Size=1,2,1 Anchored BottomSurface=Smooth CFrame=-143.661,397.55,583.627|179.911,0.33,-179.956 Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1
+        Part "Part" Size=0.671,0.252,0.469 Anchored BottomSurface=Smooth CFrame=-143.526,396.531,583.771|6.934,89.674,-7.025 Color=#946D37 Material=SmoothPlastic TopSurface=Smooth
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~2.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~2/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~3.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~3/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~4.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~4/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~5.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~5/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~6.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~6/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~7.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~7/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~8.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~8/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~9.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~9/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~10.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~10/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~11.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~11/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~12.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~12/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~13.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~13/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~14.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~14/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~15.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~15/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~16.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~16/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~17.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~17/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~18.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~18/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~19.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~19/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~20.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~20/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~21.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~21/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~22.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~22/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~23.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~23/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~24.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~24/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~25.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~25/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~26.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~26/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~27.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~27/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~28.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~28/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~29.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~29/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~30.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~30/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~31.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~31/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~32.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~32/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~33.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~33/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~34.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~34/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~35.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~35/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~36.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~36/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~37.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~37/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~38.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~38/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~39.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~39/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~40.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~40/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~41.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~41/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~42.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~42/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~43.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~43/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~44.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~44/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~45.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~45/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~46.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~46/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~47.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~47/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~48.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~48/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~49.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~49/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~50.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~50/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~51.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~51/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~52.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~52/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~53.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~53/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~54.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~54/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~55.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~55/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~56.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~56/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~57.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~57/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~58.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~58/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~59.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~59/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~60.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~60/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~61.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~61/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~62.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~62/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~63.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~63/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~64.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~64/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~65.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~65/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~66.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~66/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~67.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~67/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~68.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~68/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~69.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~69/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~70.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~70/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~71.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~71/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~72.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~72/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~73.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~73/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~74.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~74/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~75.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~75/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~76.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~76/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~77.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~77/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~78.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~78/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~79.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~79/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~80.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~80/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~81.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~81/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~82.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~82/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~83.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~83/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~84.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~84/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~85.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~85/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~86.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~86/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~87.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~87/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~88.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~88/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~89.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~89/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~90.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~90/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~91.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~91/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~92.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~92/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~93.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~93/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~94.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~94/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~95.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~95/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~96.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~96/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~97.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~97/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~98.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~98/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~99.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~99/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~100.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~100/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~101.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~101/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~102.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~102/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~103.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~103/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~104.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~104/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~105.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~105/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~106.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~106/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~107.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~107/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~108.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~108/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~109.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~109/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~110.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~110/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~111.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~111/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~112.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~112/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~113.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~113/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~114.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~114/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~115.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~115/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~116.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~116/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~117.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~117/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~118.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~118/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~119.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~119/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~120.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~120/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~121.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~121/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~122.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~122/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~123.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~123/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~124.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~124/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~125.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~125/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~126.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~126/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~127.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~127/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~128.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~128/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~129.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~129/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~130.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~130/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~131.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~131/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~132.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~132/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~133.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~133/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~134.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~134/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~135.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~135/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~136.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~136/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~137.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~137/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~138.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~138/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~139.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~139/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~140.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~140/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~141.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~141/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~142.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~142/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~143.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~143/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~144.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~144/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~145.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~145/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~146.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~146/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~147.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~147/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~148.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~148/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~149.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~149/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~150.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~150/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~151.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~151/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~152.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~152/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~153.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~153/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~154.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~154/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~155.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~155/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~156.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~156/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~157.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~157/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~158.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~158/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~159.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~159/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~160.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~160/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~161.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~161/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~162.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~162/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~163.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~163/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~164.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~164/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~165.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~165/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~166.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~166/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~167.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~167/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~168.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~168/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~169.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~169/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~170.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~170/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~171.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~171/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~172.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~172/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~173.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~173/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~174.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~174/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~175.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~175/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~176.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~176/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~177.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~177/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~178.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~178/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~179.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~179/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~180.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~180/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~181.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~181/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~182.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~182/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~183.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~183/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~184.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~184/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~185.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~185/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~186.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~186/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~187.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~187/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~188.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~188/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~189.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~189/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~190.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~190/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~191.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~191/4D Being/Wildfire.luau"
+    }
+}
+Script "Script" @src="Scripts/Workspace/Morph~3/Script~192.luau" {
+    Model "4D Being" {
+        Script "Wildfire" @src="Scripts/Workspace/Morph~3/Script~192/4D Being/Wildfire.luau"
+    }
+}

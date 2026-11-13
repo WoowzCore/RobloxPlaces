@@ -1,0 +1,579 @@
+Model "AnimationParts" {
+    Model "CDoor1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-700.798,18.91,-604.291|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-700.798,18.91,-604.291|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.485,3.3,4.2 Anchored CFrame=-700.861,17.48,-605.511|24.994,-90,0 Color=#F0F0F0 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d946d3f44c20f519"
+        UnionOperation "WeldPart" Size=1.468,3.261,4.15 Anchored CFrame=-700.861,17.519,-605.594|24.994,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="d6e87a505251dc23"
+    }
+    Model "CDoor2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-764.502,18.91,-604.291|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-764.502,18.91,-604.291|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.457,3.223,4.136 Anchored CFrame=-764.465,17.512,-605.548|24.994,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="3642203f9b90d8e8"
+        UnionOperation "WeldPart" Size=2.724,4.158,4.258 Anchored CFrame=-764.417,17.492,-605.502|90.004,-49.853,90.005 Color=#F0F0F0 Material=Metal RenderFidelity=Precise $_geo="13d8d686dd861a63"
+    }
+    BoolValue "CargoDoor"
+    BoolValue "DoorLock"
+    Model "Engine1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-719.61,15.454,-627.148|0,90,0 Material=Metal TopSurface=Smooth
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-719.61,15.454,-627.148|0,90,0 Material=Metal TopSurface=Smooth
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.335,-626.648|65.007,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.503,-626.384|50.009,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.651,-628.073|139.991,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.213,-628.335|169.997,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.614,-627.05|-85.002,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.601,-627.363|-99.997,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.507,-627.661|-114.993,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.339,-627.925|-129.991,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.108,-628.136|-144.992,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.241,-626.947|80.003,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.191,-626.237|-40.009,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.927,-626.068|-25.007,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.402,-626.467|-55.008,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.915,-628.241|154.993,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.44,-627.842|124.992,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.734,-626.173|35.008,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.295,-627.565|109.994,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.525,-628.349|-174.999,0,164.991 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.316,-625.961|5.002,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.831,-628.281|-159.994,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,14.227,-627.259|94.998,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.629,-625.974|-10.003,0,164.991 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,16.547,-626.745|-70.006,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.544,15.011,-626.029|20.006,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        UnionOperation "WeldPart" Size=0.058,1.012,1.012 Anchored CFrame=-719.79,15.453,-627.148|-174.999,0.009,179.999 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ff0124d56eb52a4f"
+        UnionOperation "WeldPart" Size=0.406,1.419,1.419 Anchored CFrame=-720.015,15.453,-627.148|-174.999,0.009,179.999 Color=#7B8474 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1080c89f455646fc"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|124.992,0.005,-179.993 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|109.995,0.003,-179.992 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.717,0.97,0.97 Anchored CFrame=-719.41,15.453,-627.148|-174.999,0.009,179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e9925e51712eb3f6"
+        UnionOperation "WeldPart" Size=0.058,0.916,0.916 Anchored CFrame=-719.672,15.455,-627.145|-174.999,0.009,179.999 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="0118ac50882c7dfa"
+        UnionOperation "WeldPart" Size=0.171,3.765,3.765 Anchored CFrame=-720.596,15.453,-627.149|-174.999,0.009,179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d1ea56004c08f6b0"
+        UnionOperation "WeldPart" Size=0.058,0.916,0.916 Anchored CFrame=-719.672,15.455,-627.145|139.991,0.007,-179.994 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="0118ac50882c7dfa"
+        UnionOperation "WeldPart" Size=0.515,0.383,0.384 Anchored CFrame=-719.057,15.459,-627.214|-174.999,0.009,179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="a2441cd503777e2f"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|94.998,0.001,-179.991 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.977,2.396,2.396 Anchored CFrame=-720.706,15.453,-627.148|-174.999,0.009,179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7c8d8a66de67fe58"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|154.993,0.008,-179.996 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|169.997,0.009,-179.998 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.154,15.456,-627.142|139.991,0.007,-179.994 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+    }
+    BoolValue "Engine1Value"
+    Model "Engine2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-719.412,15.483,-592.423|0,90,0 Material=Metal TopSurface=Smooth
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-719.412,15.483,-592.423|0,90,0 Material=Metal TopSurface=Smooth
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.242,-591.244|10.003,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.345,-593.618|174.999,0,164.991 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.68,-591.506|40.009,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.554,-591.23|-5.002,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.643,-592.529|-94.998,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.943,-591.338|25.007,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.324,-592.014|70.006,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.04,-593.55|159.994,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.658,-593.605|-169.997,0,164.991 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.364,-592.931|114.993,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.576,-592.834|-109.994,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.532,-593.195|129.991,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.86,-591.298|-20.006,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.536,-591.918|-65.007,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.256,-592.32|85.002,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.368,-591.654|-50.009,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.431,-593.112|-124.992,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.763,-593.406|144.992,0,164.988 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,15.956,-593.51|-154.993,0,164.99 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.27,-592.632|99.997,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.137,-591.443|-35.008,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,14.468,-591.737|55.008,0,164.987 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.63,-592.216|-80.003,0,164.986 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        MeshPart "WeldPart" Size=0.968,0.58,2.501 Anchored CFrame=-720.546,16.22,-593.342|-139.991,0,164.989 CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|129.991,0.006,-179.993 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.171,3.765,3.765 Anchored CFrame=-720.598,15.483,-592.424|174.999,0.009,-179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="d1ea56004c08f6b0"
+        UnionOperation "WeldPart" Size=0.058,0.916,0.916 Anchored CFrame=-719.674,15.485,-592.42|174.999,0.009,-179.999 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="0118ac50882c7dfa"
+        UnionOperation "WeldPart" Size=0.717,0.97,0.97 Anchored CFrame=-719.412,15.483,-592.423|174.999,0.009,-179.999 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e9925e51712eb3f6"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|99.997,0.002,-179.991 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.406,1.419,1.419 Anchored CFrame=-720.016,15.483,-592.423|174.999,0.009,-179.999 Color=#7B8474 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1080c89f455646fc"
+        UnionOperation "WeldPart" Size=0.058,0.916,0.916 Anchored CFrame=-719.674,15.485,-592.42|129.991,0.006,-179.993 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="0118ac50882c7dfa"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|85.002,-0.001,-179.991 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.977,2.396,2.396 Anchored CFrame=-720.708,15.483,-592.423|174.999,0.009,-179.999 Color=#ABA89E Material=Metal RenderFidelity=Precise UsePartColor $_geo="7c8d8a66de67fe58"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|159.994,0.008,-179.997 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.058,1.012,1.012 Anchored CFrame=-719.792,15.483,-592.423|174.999,0.009,-179.999 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ff0124d56eb52a4f"
+        UnionOperation "WeldPart" Size=0.515,0.383,0.384 Anchored CFrame=-719.058,15.477,-592.489|174.999,0.009,-179.999 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="a2441cd503777e2f"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|114.993,0.004,-179.992 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+        UnionOperation "WeldPart" Size=0.058,1.412,1.412 Anchored CFrame=-720.156,15.487,-592.418|144.992,0.007,-179.995 CanCollide=false Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="ea27b12cd66d9f98"
+    }
+    BoolValue "Engine2Value"
+    Model "F1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-739.046,16.583,-621.295|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-739.046,16.583,-621.295|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "T" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-740.45,18.521,-619.656|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-740.45,18.521,-619.656|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            UnionOperation "WeldPart" Size=7.606,0.422,1.306 Anchored CFrame=-741.143,18.327,-619.712|4.999,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="fa8a7e8acf390d3a"
+        }
+        UnionOperation "WeldPart" Size=11.251,0.664,3.71 Anchored CFrame=-739.941,18.38,-621.596|4.999,-90,0 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="73ff8ac9c75706dd"
+    }
+    Model "F2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.834,17.964,-635.905|5.001,19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.834,17.964,-635.905|5.001,19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "T" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-743.313,20.167,-637.455|5.001,16.505,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-743.313,20.167,-637.455|5.001,16.505,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            UnionOperation "WeldPart" Size=17.588,0.621,1.401 Anchored CFrame=-744.009,19.947,-637.224|5.002,-73.508,0.004 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f80bcf3224ca4f7a"
+        }
+        UnionOperation "WeldPart" Size=19.98,0.849,3.47 Anchored CFrame=-743.018,19.748,-636.144|5.002,-71.009,0.004 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="4ad6c499a140e42b"
+    }
+    Model "F3" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-739.047,16.583,-598.301|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-739.047,16.583,-598.301|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "T" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-740.451,18.521,-599.94|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-740.451,18.521,-599.94|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            UnionOperation "WeldPart" Size=7.61,0.422,1.305 Anchored CFrame=-741.144,18.333,-599.88|-4.998,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="42c388e95b73bd93"
+        }
+        UnionOperation "WeldPart" Size=11.255,0.664,3.71 Anchored CFrame=-739.942,18.387,-597.997|-4.998,-90,0 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="582baaf432a54f80"
+    }
+    Model "F4" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.837,17.964,-583.691|-5.002,-19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.837,17.964,-583.691|-5.002,-19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "T" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-743.316,20.167,-582.141|-5.002,-16.505,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-743.316,20.167,-582.141|-5.002,-16.505,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            UnionOperation "WeldPart" Size=17.587,0.621,1.4 Anchored CFrame=-744.012,19.953,-582.367|174.999,-73.502,179.998 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="975dc62bf86adacb"
+        }
+        UnionOperation "WeldPart" Size=19.98,0.849,3.47 Anchored CFrame=-743.021,19.755,-583.447|174.999,-71.003,179.998 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="dbd6bbe27125dcf3"
+    }
+    Model "FF1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.095,18.829,-624.296|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.095,18.829,-624.296|5.002,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.5,1.7,6.55 Anchored CFrame=-741.31,18.021,-624.357|4.999,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2dd09abc264a3cbe"
+    }
+    Model "FF2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.294,18.695,-636.27|5.001,19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.294,18.695,-636.27|5.001,19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=2.911,1.762,6.142 Anchored CFrame=-745.751,19.552,-640.155|5.002,-71.009,0.004 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1fab5640cc1a01e4"
+        UnionOperation "WeldPart" Size=3.064,1.762,6.668 Anchored CFrame=-743.074,18.64,-631.614|5.002,-71.009,0.004 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="014d67397c607667"
+    }
+    Model "FF3" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.097,18.829,-595.3|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.097,18.829,-595.3|-5.001,0,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.5,1.7,6.55 Anchored CFrame=-741.312,18.028,-595.234|-4.998,-90,0 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7e5b7dbb4ba369c2"
+    }
+    Model "FF4" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.297,18.695,-583.326|-5.002,-19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.297,18.695,-583.326|-5.002,-19.006,-0.001 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=2.911,1.762,6.142 Anchored CFrame=-745.755,19.559,-579.435|174.999,-71.003,179.998 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="074371f915e4eb12"
+        UnionOperation "WeldPart" Size=3.064,1.762,6.668 Anchored CFrame=-743.076,18.647,-587.977|174.999,-71.003,179.998 Color=#DDDEE4 Material=Metal RenderFidelity=Precise UsePartColor $_geo="895445f6a894783c"
+    }
+    Model "FLDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-687.343,23.31,-615.24|94.999,0,-89.997 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-687.343,23.31,-615.24|94.999,0,-89.997 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        ClickDetector "ClickDetector" MaxActivationDistance=10
+        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/AnimationParts/FLDoor/Script.luau"
+        UnionOperation "WeldPart" Size=1.244,5.6,2.8 Anchored CFrame=-688.716,23.191,-615.097|0.001,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="fd2e60d050647de2"
+        UnionOperation "WeldPart" Size=1.085,5.2,2.4 Anchored CFrame=-688.716,23.191,-615.15|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ad3aeefa77f4e1c1"
+        UnionOperation "WeldPart" Size=1.213,5.55,2.775 Anchored CFrame=-688.716,23.191,-615.03|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="f203650da1fcf136"
+        UnionOperation "WeldPart" Size=0.357,0.8,0.8 Anchored CFrame=-688.758,24.203,-615.343|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="c896b65dff7a8b1e"
+    }
+    Model "FRDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-686.344,23.31,-604.656|-94.998,0,-90.003 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-686.344,23.31,-604.656|-94.998,0,-90.003 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        ClickDetector "ClickDetector" MaxActivationDistance=10
+        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/AnimationParts/FRDoor/Script.luau"
+        UnionOperation "WeldPart" Size=1.111,4.8,2.4 Anchored CFrame=-687.717,22.991,-604.59|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="6fc6c2712b856ac7"
+        UnionOperation "WeldPart" Size=0.486,0.8,0.8 Anchored CFrame=-687.658,24.203,-604.462|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="5562abfeb7f6cbed"
+        UnionOperation "WeldPart" Size=1.277,5.2,2.8 Anchored CFrame=-687.717,22.991,-604.646|0.001,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="af90de54665390a6"
+        UnionOperation "WeldPart" Size=1.245,5.15,2.773 Anchored CFrame=-687.717,22.991,-604.71|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="b0fb9d36f828ccbf"
+    }
+    NumberValue "Flap"
+    BoolValue "Gear" Value
+    Model "LGDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.42,17.905,-620.464|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.42,17.905,-620.464|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "Door" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.607,17.764,-618.913|89.963,85,-82.465 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.607,17.764,-618.913|89.963,85,-82.465 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Model "Door" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.446,17.606,-616.863|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.446,17.606,-616.863|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "WeldPart" Size=0.446,0.258,1.688 Anchored CFrame=-736.304,17.572,-616.639|0,90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="00653165bb89f1a2"
+                UnionOperation "WeldPart" Size=1.226,1.751,1.7 Anchored CFrame=-736.304,16.744,-616.266|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7023decb0ca73a7e"
+            }
+            UnionOperation "WeldPart" Size=2.087,0.389,1.688 Anchored CFrame=-736.304,17.673,-617.907|0,90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="92c9ef2210c6c2f4"
+        }
+        UnionOperation "WeldPart" Size=1.523,0.344,1.688 Anchored CFrame=-736.304,17.817,-619.712|0,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="bbfa6a4dff79b12b"
+    }
+    Model "LGear" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.299,18.394,-619.776|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.299,18.394,-619.776|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "Gear" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.299,18.394,-619.726|0,0,-95 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.299,18.394,-619.726|0,0,-95 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Model "Strut" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.851,15.531,-619.426|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.851,15.531,-619.426|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "WeldPart" Size=4.4,0.314,0.214 Anchored CFrame=-736.695,16.736,-617.687|-90.037,-85,-55.045 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ae70200d5e8c5e20"
+            }
+            UnionOperation "WeldPart" Size=1.7,4.572,0.744 Anchored CFrame=-736.465,16.501,-619.725|0,0,-5 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="55d367698717c237"
+            Model "Wheel" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.981,14.036,-619.726|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.981,14.036,-619.726|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "WeldPart" Size=2.4,0.5,2.1 Anchored BottomSurface=Smooth CFrame=-685.747,11.591,-609.754|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+                    ParticleEmitter "Smoke" Size=0:1,1:5.063 EmissionDirection=Back Enabled=false Lifetime=3,3 LightInfluence=1 Rate=50 RotSpeed=10,10 Rotation=60,60 Speed=10,10 SpreadAngle=3,3 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.101:0.25,1:1 ZOffset=2
+                }
+                UnionOperation "WeldPart" Size=3.9,1.3,3.9 Anchored CFrame=-737.085,12.256,-618.371|-90.037,-85,-0.037 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="159ee8fbcf9a6017"
+                UnionOperation "WeldPart" Size=2.275,1.3,2.275 Anchored CFrame=-737.085,12.256,-618.371|-90.037,-85,-0.037 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4ddcd0eaf51f8d8f"
+                UnionOperation "WeldPart" Size=2.635,2.2,0.87 Anchored CFrame=-737.01,13.132,-619.725|-90.037,-85,-0.037 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1ad16e2691335746"
+                UnionOperation "WeldPart" Size=2.275,1.5,2.275 Anchored CFrame=-737.084,12.256,-621.172|-90.037,-85,179.963 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e4faf6bee26e7800"
+                UnionOperation "WeldPart" Size=3.9,1.3,3.9 Anchored CFrame=-737.084,12.256,-621.072|-90.037,-85,-0.037 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="159ee8fbcf9a6017"
+            }
+        }
+    }
+    Model "NGDoorL" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-683.098,16.152,-611.258|-89.976,82.501,89.975 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-683.098,16.152,-611.258|-89.976,82.501,89.975 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.5,0.305,0.2 Anchored CFrame=-684.958,15.756,-610.548|0,-90,0 Color=#C4281C Material=Metal RenderFidelity=Precise UsePartColor $_geo="32b0e0457a9d85a8"
+        UnionOperation "WeldPart" Size=1.5,1.063,5.9 Anchored CFrame=-683.208,16.073,-610.548|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="c1a788a73b70a819"
+        UnionOperation "WeldPart" Size=1.475,1.045,5.8 Anchored CFrame=-683.208,16.088,-610.548|0,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="71ea7316a4317d71"
+    }
+    Model "NGDoorR" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-683.098,16.152,-608.357|90.024,-82.501,90.025 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-683.098,16.152,-608.357|90.024,-82.501,90.025 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=1.5,1.063,5.9 Anchored CFrame=-683.208,16.073,-609.047|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f8dc56c0877c3347"
+        UnionOperation "WeldPart" Size=1.5,0.305,0.2 Anchored CFrame=-684.958,15.756,-609.047|0,-90,0 Color=#C4281C Material=Metal RenderFidelity=Precise UsePartColor $_geo="f5dfdfbdd5732781"
+        UnionOperation "WeldPart" Size=1.475,1.045,5.8 Anchored CFrame=-683.208,16.089,-609.047|0,-90,0 Color=#CDCDCD Material=Metal RenderFidelity=Precise UsePartColor $_geo="7095940b10854082"
+    }
+    Model "NGear" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-685.633,16.695,-609.797 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-685.633,16.695,-609.797 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=0.9,0.23,0.23 Anchored CFrame=-685.132,14.944,-609.564|-180,12.504,0 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="d29a3fda3b744799"
+        UnionOperation "WeldPart" Size=0.1,0.983,2.8 Anchored CFrame=-685.632,15.536,-609.797 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="66b6c4758a46a93c"
+        UnionOperation "WeldPart" Size=0.9,0.23,0.23 Anchored CFrame=-685.132,14.944,-610.031|0,12.504,0 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="d29a3fda3b744799"
+        UnionOperation "WeldPart" Size=2.7,0.6,0.6 Anchored CFrame=-685.632,15.594,-609.797|0,0,90 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="36a0c3a2a523764f"
+        Model "Wheel" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-685.633,14.095,-609.797 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-685.633,14.095,-609.797 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "WeldPart" Size=4.3,0.5,3.9 Anchored BottomSurface=Smooth CFrame=-737.15,10.49,-619.708|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+                ParticleEmitter "Smoke" Size=0:1,1:5.063 EmissionDirection=Back Enabled=false Lifetime=3,3 LightInfluence=1 Rate=50 RotSpeed=10,10 Rotation=60,60 Speed=10,10 SpreadAngle=3,3 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.101:0.25,1:1 ZOffset=2
+            }
+            Part "WeldPart" Size=1.3,0.35,0.35 Anchored BottomSurface=Smooth CFrame=-685.632,13.694,-609.797|0,0,90 Color=#D4D5DB Material=Metal Reflectance=0.3 Shape=Cylinder TopSurface=Smooth
+            Part "WeldPart" Size=0.05,0.422,0.423 Anchored BottomSurface=Smooth CFrame=-685.328,12.844,-609.797 CanCollide=false Color=#F8F8F8 Material=Metal Shape=Cylinder TopSurface=Smooth {
+                Attachment "Attachment0" CFrame=0.025,0,0
+                Attachment "Attachment1" CFrame=34.125,1,0
+                Beam "Dynamic" Attachment0=@"Workspace/PlaneKit/Plane/AnimationParts/NGear/Wheel/WeldPart~3/Attachment0" Attachment1=@"Workspace/PlaneKit/Plane/AnimationParts/NGear/Wheel/WeldPart~3/Attachment1" Enabled=false FaceCamera Texture="rbxassetid://901813002" TextureContent="rbxassetid://901813002" TextureLength=0.985 TextureSpeed=0 Transparency=0:0.65,1:0.65 Width1=15
+                SurfaceLight "Light" Angle=40 Brightness=1.5 Enabled=false Face=Right Range=50
+                SpecialMesh "Mesh" MeshType=Cylinder Scale=0.722,1,1
+                BillboardGui "White" Size=8,0,8,0 Active Enabled=false {
+                    ImageLabel "White" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=145820175" ImageContent="http://www.roblox.com/asset/?id=145820175"
+                }
+            }
+            UnionOperation "WeldPart" Size=0.45,0.2,1.19 Anchored CFrame=-686.275,13.287,-609.797|-90.003,-45.001,89.995 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="47048b33f77fa9bb"
+            UnionOperation "WeldPart" Size=1.225,0.7,1.225 Anchored CFrame=-685.729,12.415,-610.52|-90,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b1daa240ecd93ef1"
+            UnionOperation "WeldPart" Size=2.1,0.7,2.1 Anchored CFrame=-685.729,12.415,-610.52|-90,-90,0 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="54295ab106a0b5f1"
+            UnionOperation "WeldPart" Size=1.225,0.7,1.225 Anchored CFrame=-685.729,12.415,-609.069|-90,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="b1daa240ecd93ef1"
+            UnionOperation "WeldPart" Size=0.45,0.2,1.172 Anchored CFrame=-686.281,13.995,-609.797|90.003,-45.001,90.005 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="f688343968b9c8db"
+            UnionOperation "WeldPart" Size=2.1,0.7,2.1 Anchored CFrame=-685.729,12.415,-609.069|-90,-90,0 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="54295ab106a0b5f1"
+            UnionOperation "WeldPart" Size=1.163,0.896,0.896 Anchored CFrame=-685.732,12.394,-609.797|90,0,90.003 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="1a10bb42661cae90"
+            UnionOperation "WeldPart" Size=0.361,0.52,0.52 Anchored CFrame=-685.382,12.844,-609.797 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="f68eb4a143d294a7"
+            UnionOperation "WeldPart" Size=0.8,0.49,0.49 Anchored CFrame=-685.632,12.744,-609.797|0,0,90 Color=#D4D5DB Material=Metal RenderFidelity=Precise UsePartColor $_geo="2163033d21444588"
+        }
+    }
+    Model "RGDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.421,17.905,-599.132|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.421,17.905,-599.132|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "Door" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.608,17.764,-600.682|-90.037,-85,-82.539 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.608,17.764,-600.682|-90.037,-85,-82.539 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Model "Door" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.447,17.607,-602.733|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.447,17.607,-602.733|-90.037,-85,-90.037 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "WeldPart" Size=0.445,0.258,1.688 Anchored CFrame=-736.305,17.578,-602.956|0,90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="40dad28679ba5887"
+                UnionOperation "WeldPart" Size=1.225,1.757,1.7 Anchored CFrame=-736.305,16.747,-603.328|0,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="3442996aa0c9f5fe"
+            }
+            UnionOperation "WeldPart" Size=2.089,0.389,1.688 Anchored CFrame=-736.305,17.68,-601.688|0,90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="a66047bbafae537a"
+        }
+        UnionOperation "WeldPart" Size=1.523,0.344,1.688 Anchored CFrame=-736.305,17.824,-599.882|0,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="fcbf81cb421b9819"
+    }
+    Model "RGear" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.3,18.394,-599.82|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.3,18.394,-599.82|0,90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Model "Gear" {
+            Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.3,18.394,-599.87|0,0,-95 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.3,18.394,-599.87|0,0,-95 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+            Model "Strut" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.852,15.531,-600.17|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.852,15.531,-600.17|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                UnionOperation "WeldPart" Size=4.4,0.314,0.214 Anchored CFrame=-736.696,16.736,-601.907|-90.036,-85,54.972 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ae70200d5e8c5e20"
+            }
+            UnionOperation "WeldPart" Size=1.7,4.572,0.744 Anchored CFrame=-736.466,16.501,-599.87|0,0,-5 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="55d367698717c237"
+            Model "Wheel" {
+                Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.983,14.036,-599.87|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-736.983,14.036,-599.87|89.963,85,-89.963 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+                Part "WeldPart" Size=4.3,0.5,3.9 Anchored BottomSurface=Smooth CFrame=-737.151,10.49,-599.9|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1 {
+                    ParticleEmitter "Smoke" Size=0:1,1:5.063 EmissionDirection=Back Enabled=false Lifetime=3,3 LightInfluence=1 Rate=50 RotSpeed=10,10 Rotation=60,60 Speed=10,10 SpreadAngle=3,3 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.101:0.25,1:1 ZOffset=2
+                }
+                UnionOperation "WeldPart" Size=3.9,1.3,3.9 Anchored CFrame=-737.086,12.256,-601.223|-90.037,-85,-0.037 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="159ee8fbcf9a6017"
+                UnionOperation "WeldPart" Size=2.275,1.3,2.275 Anchored CFrame=-737.086,12.256,-601.223|-90.037,-85,-0.037 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="4ddcd0eaf51f8d8f"
+                UnionOperation "WeldPart" Size=2.635,2.2,0.87 Anchored CFrame=-737.012,13.132,-599.87|-90.037,-85,-0.037 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="1ad16e2691335746"
+                UnionOperation "WeldPart" Size=3.9,1.3,3.9 Anchored CFrame=-737.086,12.256,-598.522|-90.037,-85,-0.037 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="159ee8fbcf9a6017"
+                UnionOperation "WeldPart" Size=2.275,1.5,2.275 Anchored CFrame=-737.086,12.256,-598.422|-90.037,-85,-0.037 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e4faf6bee26e7800"
+            }
+        }
+    }
+    Model "RLDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-775.649,23.31,-615.44|90,0,-89.997 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-775.649,23.31,-615.44|90,0,-89.997 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        ClickDetector "ClickDetector" MaxActivationDistance=10
+        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/AnimationParts/RLDoor/Script.luau"
+        UnionOperation "WeldPart" Size=1.166,5.6,2.8 Anchored CFrame=-777.022,23.191,-614.874|0.001,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e518eb4910b504f1"
+        UnionOperation "WeldPart" Size=1.097,5.55,2.775 Anchored CFrame=-777.022,23.19,-614.786|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="d9a5012a421682ed"
+        UnionOperation "WeldPart" Size=0.234,0.8,0.8 Anchored CFrame=-777.064,24.203,-615.124|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="e6e1f2afb183b10b"
+        UnionOperation "WeldPart" Size=0.935,5.2,2.4 Anchored CFrame=-777.022,23.191,-614.954|0,-90,0 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="4952ed211707b7ca"
+    }
+    Model "RRDoor" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-775.55,23.31,-604.135|-90,0,-90.003 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-775.55,23.31,-604.135|-90,0,-90.003 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        ClickDetector "ClickDetector" MaxActivationDistance=10
+        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/AnimationParts/RRDoor/Script.luau"
+        UnionOperation "WeldPart" Size=0.238,0.8,0.8 Anchored CFrame=-776.965,24.203,-604.456|0,-90,0 Color=#111111 Material=Metal RenderFidelity=Precise Transparency=0.5 UsePartColor $_geo="75575feae0ed4510"
+        UnionOperation "WeldPart" Size=0.916,4.8,2.4 Anchored CFrame=-776.923,22.992,-604.614|0,-90,0 Color=#0083CB Material=Metal RenderFidelity=Precise UsePartColor $_geo="7b36048621c94a30"
+        UnionOperation "WeldPart" Size=1.148,5.2,2.8 Anchored CFrame=-776.923,22.991,-604.694|0.001,-90,0 Color=#CACBD1 Material=Metal RenderFidelity=Precise UsePartColor $_geo="74b6ae72835ac6f5"
+        UnionOperation "WeldPart" Size=1.078,5.15,2.773 Anchored CFrame=-776.923,22.99,-604.782|0,-90,0 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="b2561d158413e7d1"
+    }
+    Model "RThrust" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-726.258,15.392,-609.797|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-726.258,15.392,-609.797|0,-90,0 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=2.3,6.047,3.568 Anchored CFrame=-727.777,15.284,-592.411|-4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e2a649e19a9e4473"
+        UnionOperation "WeldPart" Size=2.3,6.047,3.568 Anchored CFrame=-727.775,15.255,-627.17|4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="e2a649e19a9e4473"
+        UnionOperation "WeldPart" Size=7.773,6.389,5.426 Anchored CFrame=-726.386,15.503,-627.148|4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="215db9b62c7a397f"
+        UnionOperation "WeldPart" Size=7.773,6.389,5.426 Anchored CFrame=-726.388,15.531,-592.432|-4.998,-90,0 Color=#F8F8F8 Material=Metal RenderFidelity=Precise UsePartColor $_geo="215db9b62c7a397f"
+    }
+    BoolValue "Reverser"
+    Model "S1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.5,19.009,-621.423|-174.999,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.5,19.009,-621.423|-174.999,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=8.1,0.421,1.696 Anchored CFrame=-739.338,18.85,-621.327|4.999,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="13a6ef7ba2712d61"
+        UnionOperation "WeldPart" Size=2.836,0.483,1.695 Anchored CFrame=-739.338,18.6,-618.71|4.999,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="94a8b201f50bffdc" {
+            Decal "B737OverWingExit4" Face=Top Texture="rbxassetid://3067697063" TextureContent="rbxassetid://3067697063"
+        }
+    }
+    Model "S2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.563,20.503,-637.468|-174.999,-19.006,-179.999 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.563,20.503,-637.468|-174.999,-19.006,-179.999 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=19.856,0.557,2.049 Anchored CFrame=-742.219,20.216,-636.276|5.002,-71.009,0.004 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7bc8897283b986d5"
+    }
+    Model "S3" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.501,19.009,-598.173|174.999,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.501,19.009,-598.173|174.999,0,180 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=2.836,0.483,1.695 Anchored CFrame=-739.339,18.6,-600.884|-4.998,-90,0 CanCollide=false Color=#F8F8F8 Material=Metal RenderFidelity=Precise Transparency=1 UsePartColor $_geo="bd5a6aca331cb619" {
+            Decal "B737OverWingExit2" Face=Top Texture="rbxassetid://3067696398" TextureContent="rbxassetid://3067696398"
+        }
+        UnionOperation "WeldPart" Size=8.1,0.421,1.696 Anchored CFrame=-739.339,18.857,-598.264|-4.998,-90,0 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="2d30262a782a681a"
+    }
+    Model "S4" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.567,20.502,-582.128|174.998,19.006,-179.999 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-741.567,20.502,-582.128|174.998,19.006,-179.999 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=19.856,0.557,2.049 Anchored CFrame=-742.222,20.223,-583.314|174.999,-71.003,179.998 Color=#DEDFE5 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ac249670b49fdf36"
+    }
+    Model "SL1" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-722.558,18.216,-620.377|8.053,34.97,-1.752 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-722.558,18.216,-620.377|8.053,34.97,-1.752 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=13.173,1.267,2.07 Anchored CFrame=-723.329,17.697,-619.949|5.002,-55.011,0.003 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="341546cba3dd41f8"
+    }
+    Model "SL2" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.846,20.652,-647.031|-173.876,-27.003,-179.489 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.846,20.652,-647.031|-173.876,-27.003,-179.489 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=42.4,0.679,1.796 Anchored CFrame=-738.573,21.142,-647.207|5.002,-63.01,0.003 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="8d32d69de41054a8"
+    }
+    Model "SL3" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-722.559,18.216,-599.219|-8.054,-34.972,-1.752 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-722.559,18.216,-599.219|-8.054,-34.972,-1.752 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=13.173,1.267,2.07 Anchored CFrame=-723.33,17.704,-599.64|174.999,-55.007,-0.002 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="9cc9c00dcb98f656"
+    }
+    Model "SL4" {
+        Part "A" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.85,20.652,-572.565|173.876,27.004,-179.489 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        Part "B" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-738.85,20.652,-572.565|173.876,27.004,-179.489 CanCollide=false Material=Metal TopSurface=Smooth Transparency=1
+        UnionOperation "WeldPart" Size=42.4,0.679,1.796 Anchored CFrame=-738.578,21.15,-572.382|174.999,-63.005,179.998 Color=#CACBD1 Material=Metal Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="ef11f45caace5eb1"
+    }
+    Script "SmokeScript" @src="Scripts/Workspace/PlaneKit/Plane/AnimationParts/SmokeScript.luau" {
+        ObjectValue "One" Value=@"Workspace/PlaneKit/Plane/AnimationParts/NGear/Wheel/WeldPart"
+        ObjectValue "Three" Value=@"Workspace/PlaneKit/Plane/AnimationParts/RGear/Gear/Wheel/WeldPart"
+        ObjectValue "Two" Value=@"Workspace/PlaneKit/Plane/AnimationParts/LGear/Gear/Wheel/WeldPart"
+    }
+    NumberValue "Spoiler"
+}
+BoolValue "AutoCrash"
+Humanoid "CSGFix"
+BoolValue "Cloned"
+Script "Crash" @src="Scripts/Workspace/PlaneKit/Plane/Crash.luau"
+BoolValue "Dead" {
+    BoolValue "Stop"
+}
+ObjectValue "EDIT_THESE" {
+    NumberValue "Acceleration" Value=0.35
+    BoolValue "AltitudeRestrictions" Value {
+        IntValue "MaxAltitude" Value=30000
+        IntValue "MinAltitude" Value=-10
+        BoolValue "SetByOrigin" Value
+    }
+    BoolValue "CanCrash" {
+        NumberValue "Force" Value=200
+        NumberValue "SpinSpeed" Value=3
+        BoolValue "VisualFX" Value
+    }
+    ObjectValue "Hotkeys" {
+        StringValue "Engine" Value="E"
+        StringValue "Gear" Value="G"
+        StringValue "SpeedDown" Value="S"
+        StringValue "SpeedUp" Value="W"
+    }
+    IntValue "MaxBank" Value=60
+    IntValue "MaxSpeed" Value=900
+    StringValue "PlaneName" Value="Plane"
+    IntValue "SpeedDifferential" Value=150
+    IntValue "StallSpeed" Value=150
+    NumberValue "ThrottleIncrease"
+    Script "_README_" @src="Scripts/Workspace/PlaneKit/Plane/EDIT_THESE/_README_.luau" Disabled
+}
+Model "MainParts" {
+    Model "LandingGear"
+    Part "Main" Size=3.5,0.2,3.5 Anchored BottomSurface=Smooth CFrame=-732.259,17.392,-609.797|-90.074,-87.501,-90.074 Color=#5B5D69 Material=Metal TopSurface=Smooth Transparency=1 {
+        Folder "FE" {
+            RemoteEvent "GearFE"
+            RemoteEvent "OffFE"
+            RemoteEvent "OnFE"
+            RemoteEvent "SlowDownFE"
+            RemoteEvent "SpeedUpFE"
+        }
+        Fire "Fire" Size=15 Color=#FF8000 Enabled=false SecondaryColor=#FF0000
+        BodyGyro "Gyro" D=150 MaxTorque=0,0,0 P=150
+        BodyVelocity "Move" MaxForce=0,0,0 Velocity=0,0,0
+        Folder "Scripts" {
+            LocalScript "ControllerLocal" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/Main/Scripts/ControllerLocal.luau" Disabled {
+                LocalScript "PlayDelay" Disabled @code=<<<
+                    wait(1)
+                    while true do
+                    	script.Parent:Play()
+                    wait(7.5)
+
+                    end
+                >>>
+                LocalScript "PlayNormal" Disabled @code=<<<
+                    while true do
+                    	wait()
+                    	script.Parent:Play()
+                    	wait(7.5)
+                    end
+                >>>
+            }
+            Script "Gear" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/Main/Scripts/Gear.luau"
+            Script "SoundPitch" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/Main/Scripts/SoundPitch.luau"
+            Script "SoundScript" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/Main/Scripts/SoundScript.luau"
+        }
+        Smoke "Smoke" Size=12 Color=#333333 Enabled=false RiseVelocity=10
+        Folder "Variables" {
+            NumberValue "BasePitch" Value=1
+            BoolValue "Freeze"
+            NumberValue "MaxPitch" Value=1.5
+            BoolValue "On"
+            NumberValue "Throttle"
+        }
+    }
+    Seat "MainSeat" Size=1.9,0.2,1 Anchored BottomSurface=Smooth CFrame=-681.896,21.49,-611.735|0,-90,0 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth Transparency=1 {
+        Script "ArmsR15" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/ArmsR15.luau"
+        Script "ArmsR6" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/ArmsR6.luau"
+        Script "Handling" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/Handling.luau"
+        HopperBin "Plane" {
+            BoolValue "CurrentSelect"
+            BoolValue "Deselect0"
+            BoolValue "Deselect1"
+            LocalScript "FixCam" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/Plane/FixCam.luau"
+            LocalScript "Main" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/Plane/Main.luau"
+            ObjectValue "Plane"
+            ScreenGui "PlaneGui" {
+                Frame "Panel" Position=0.232,0,0,0 Size=0,703,0,101 BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderSizePixel=0 {
+                    TextLabel "Altitude" Position=0.009,0,0.522,0 Size=0,167,0,42 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text=" Altitude" TextColor3=#FFFFFF TextSize=20 TextXAlignment=Left {
+                        TextLabel "Value" Position=0.623,0,0.262,0 Size=0,35,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="0" TextColor3=#FFFFFF TextSize=23
+                    }
+                    Frame "Controls" Position=0,0,1.5,0 Size=0,260,0,180 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=6 {
+                        TextBox "C0" Position=0,6,0,30 Size=0,248,0,20 Active=false BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=2 ClearTextOnFocus=false FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Selectable=false ShowNativeInput=false Text="Mouse" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Left {
+                            TextLabel "Info" Position=0.698,0,0,0 Size=0,75,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Maneuver" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Right
+                        }
+                        TextBox "C1" Position=0,6,0,60 Size=0,248,0,20 Active=false BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=2 ClearTextOnFocus=false FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Selectable=false ShowNativeInput=false Text="Key" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Left {
+                            TextLabel "Info" Position=0.698,0,0,0 Size=0,75,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Engine" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Right
+                        }
+                        TextBox "C2" Position=0,6,0,90 Size=0,248,0,20 Active=false BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=2 ClearTextOnFocus=false FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Selectable=false ShowNativeInput=false Text="Key" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Left {
+                            TextLabel "Info" Position=0.698,0,0,0 Size=0,75,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Accelerate" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Right
+                        }
+                        TextBox "C3" Position=0,6,0,120 Size=0,248,0,20 Active=false BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=2 ClearTextOnFocus=false FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Selectable=false ShowNativeInput=false Text="Key" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Left {
+                            TextLabel "Info" Position=0.698,0,0,0 Size=0,75,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Decelerate" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Right
+                        }
+                        TextBox "C4" Position=0,6,0,150 Size=0,248,0,20 Active=false BackgroundColor3=#C8C8C8 BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=2 ClearTextOnFocus=false FontFace="Zekton|Regular|Normal" PlaceholderColor3=#B2B2B2 Selectable=false ShowNativeInput=false Text="Key" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Left {
+                            TextLabel "Info" Position=0.698,0,0,0 Size=0,75,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Gear" TextColor3=#FFFFFF TextSize=18 TextXAlignment=Right
+                        }
+                        TextLabel "Title" Position=0.115,0,0,0 Size=0,200,0,23 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=20
+                    }
+                    TextButton "ControlsButton" Position=0.009,0,1.099,0 Size=0,167,0,20 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderColor3=#C8C8C8 BorderSizePixel=5 FontFace="Zekton|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=20
+                    Frame "Off" Position=0.754,0,0.05,0 Size=0,79,0,90 BackgroundColor3=#FF0000 BorderSizePixel=0 ZIndex=2 {
+                        TextLabel "Msg" Size=0,79,0,90 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Engine off" TextColor3=#FFFFFF TextSize=25 TextWrapped ZIndex=2
+                        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/Plane/PlaneGui/Panel/Off/Script.luau"
+                    }
+                    Frame "On" Position=0.754,0,0.05,0 Size=0,79,0,90 BackgroundColor3=#00FF00 BorderSizePixel=0 {
+                        TextLabel "Msg" Size=0,79,0,90 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Engine on" TextColor3=#FFFFFF TextSize=25 TextWrapped
+                        Script "Script" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/MainSeat/Plane/PlaneGui/Panel/On/Script.luau"
+                    }
+                    TextLabel "Speed" Position=0.009,0,0.048,0 Size=0,167,0,42 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text=" Speed" TextColor3=#FFFFFF TextSize=20 TextXAlignment=Left {
+                        TextLabel "Value" Position=0.623,0,0.262,0 Size=0,35,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="0" TextColor3=#FFFFFF TextSize=23
+                    }
+                    Frame "Stall" Position=0.875,0,0.525,0 Size=0,82,0,42 BackgroundColor3=#FF0000 BorderSizePixel=0 ZIndex=2 {
+                        TextLabel "Msg" Size=0,82,0,42 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Stall!" TextColor3=#FFFFFF TextSize=25 ZIndex=2
+                    }
+                    Frame "StallOff" Position=0.875,0,0.525,0 Size=0,82,0,42 BackgroundColor3=#6E6E6E BorderSizePixel=0 {
+                        TextLabel "Msg" Size=0,82,0,42 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Stall!" TextColor3=#FFFFFF TextSize=25
+                    }
+                    Frame "Taxi" Position=0.875,0,0.05,0 Size=0,82,0,42 BackgroundColor3=#00FF00 BorderSizePixel=0 ZIndex=2 {
+                        TextLabel "Msg" Size=0,82,0,42 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Taxi" TextColor3=#FFFFFF TextSize=25 ZIndex=2
+                    }
+                    Frame "Taxiing" Position=0.875,0,0.05,0 Size=0,82,0,42 BackgroundColor3=#6E6E6E BorderSizePixel=0 {
+                        TextLabel "Msg" Size=0,82,0,42 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Taxi" TextColor3=#FFFFFF TextSize=25
+                    }
+                    TextLabel "Throttle" Position=0.255,0,0.048,0 Size=0,345,0,90 BackgroundColor3=#6E6E6E BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text=" Throttle" TextColor3=#FFFFFF TextSize=25 TextXAlignment=Left {
+                        Frame "Bar" Position=0.272,0,0.362,0 Size=0,241,0,30 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 {
+                            Frame "Amount" Size=0,0,1,0 BackgroundColor3=#00AA00 BorderSizePixel=0
+                            Frame "StallLine" Size=0,1,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 ZIndex=2
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Part "SetupMsg" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-729.259,39.394,-609.797|0,-90,0 CanCollide=false Color=#00FF00 Material=Metal TopSurface=Smooth Transparency=1 {
+        BillboardGui "Bill" Size=0,1000,0,100 Active ClipsDescendants Enabled=false MaxDistance=300 ZIndexBehavior=Sibling {
+            TextLabel "Text" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Setting up the plane" TextColor3=#FFFFFF TextSize=50
+        }
+        Script "Del" Disabled @code=<<<
+            wait(5)
+            script.Parent:Destroy()
+        >>>
+        Script "Meg" @src="Scripts/Workspace/PlaneKit/Plane/MainParts/SetupMsg/Meg.luau"
+        Script "Visible" @code=<<<
+            script.Parent.Bill.Enabled = true
+        >>>
+    }
+    Part "Sound1" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-721.11,15.454,-627.148|0,90,0 Material=Metal TopSurface=Smooth {
+        Sound "Normal" AudioContent="rbxassetid://245490827" Looped SoundId="rbxassetid://245490827" Volume=0
+        Sound "OFF" AudioContent="http://www.roblox.com/asset/?id=212781446" SoundId="http://www.roblox.com/asset/?id=212781446" Volume=3
+        Sound "ON" AudioContent="http://www.roblox.com/asset/?id=212781386" SoundId="http://www.roblox.com/asset/?id=212781386" Volume=3
+        Sound "Reverse" AudioContent="rbxassetid://237052293" Looped SoundId="rbxassetid://237052293" Volume=0
+    }
+    Part "Sound2" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-721.112,15.454,-592.448|0,90,0 Material=Metal TopSurface=Smooth {
+        Sound "Normal" AudioContent="rbxassetid://245490827" Looped SoundId="rbxassetid://245490827" Volume=0
+        Sound "OFF" AudioContent="http://www.roblox.com/asset/?id=212781446" SoundId="http://www.roblox.com/asset/?id=212781446" Volume=3
+        Sound "ON" AudioContent="http://www.roblox.com/asset/?id=212781386" SoundId="http://www.roblox.com/asset/?id=212781386" Volume=3
+        Sound "Reverse" AudioContent="rbxassetid://237052293" Looped SoundId="rbxassetid://237052293" Volume=0
+    }
+}
+ObjectValue "Origin"
+Model "OtherParts" {
+    Model "Body" @file="Scene/Workspace/PlaneKit/Plane/OtherParts/Body.bridge"
+}
+Script "Setup" @src="Scripts/Workspace/PlaneKit/Plane/Setup.luau"
+Script "Weld" @src="Scripts/Workspace/PlaneKit/Plane/Weld.luau" Disabled
+BoolValue "Welded"
+Script "_README_" @src="Scripts/Workspace/PlaneKit/Plane/_README_.luau" Disabled

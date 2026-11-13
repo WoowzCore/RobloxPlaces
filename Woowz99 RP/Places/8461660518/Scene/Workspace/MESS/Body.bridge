@@ -1,0 +1,1111 @@
+Model "ANPRs" {
+    MeshPart "Color" Size=1.954,0.655,0.978 Anchored CFrame=36.772,9.751,159.286|5.087,0,0 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2102357584" TextureID="rbxassetid://2102357584"
+    MeshPart "Color" Size=1.699,0.651,1.025 Anchored CFrame=33.331,9.741,159.291|5.087,0,0 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2102357584" TextureID="rbxassetid://2102357584"
+}
+Model "Brakes" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=1.937,0.076,0.05 Anchored CFrame=34.973,9.289,152.897 CanCollide=false Color=#FF0000 Material=Neon RenderFidelity=Precise {
+            SurfaceLight "Light" Angle=180 Brightness=3 Color=#AA0000 Enabled=false Range=10
+        }
+        MeshPart "MeshPart" Size=0.422,1.469,0.25 Anchored CFrame=38.368,6.564,152.633 CanCollide=false Color=#750000 Material=Neon RenderFidelity=Precise {
+            SurfaceLight "Light" Angle=180 Brightness=3 Color=#AA0000 Enabled=false Range=10
+        }
+        MeshPart "MeshPart" Size=0.422,1.47,0.25 Anchored CFrame=31.579,6.564,152.633 CanCollide=false Color=#750000 Material=Neon RenderFidelity=Precise {
+            SurfaceLight "Light" Angle=180 Brightness=3 Color=#AA0000 Enabled=false Range=10
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Brakes/_main.luau"
+    BoolValue "on"
+}
+MeshPart "CAGE" Size=6.463,4.917,0.05 Anchored CFrame=35.017,6.952,157.899|-179.976,0,-180 CanCollide=false Color=#1E1E1E Material=SmoothPlastic RenderFidelity=Precise
+Model "Headlight" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.349,0.346,0.22 Anchored CFrame=31.928,6.317,171.848 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise {
+            SpotLight "Light" Angle=50 Brightness=10 Enabled=false Face=Back Range=57 Shadows
+        }
+        MeshPart "MeshPart" Size=0.349,0.346,0.219 Anchored CFrame=37.961,6.317,171.856 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise {
+            SpotLight "Light" Angle=50 Brightness=10 Enabled=false Face=Back Range=57 Shadows
+        }
+        MeshPart "MeshPart" Size=7.211,1.47,0.25 Anchored CFrame=34.974,6.564,152.671 CanCollide=false Color=#111111 Material=Neon RenderFidelity=Precise {
+            SpotLight "Light" Color=#A34B4B Enabled=false Range=18 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Headlight/_main.luau"
+    BoolValue "on"
+}
+Model "Highlight" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=6.816,0.454,0.811 Anchored CFrame=34.971,5.818,171.98 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Brightness=10 Enabled=false Face=Back Range=60 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Highlight/_main.luau"
+    BoolValue "on"
+}
+Model "Left" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.748,0.214,0.398 Anchored CFrame=37.928,5.483,172.123 CanCollide=false Color=#FFB000 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Color=#FFAA00 Enabled=false Face=Back Range=25 Shadows
+        }
+        MeshPart "MeshPart" Size=0.422,1.469,0.25 Anchored CFrame=38.368,6.564,152.658 CanCollide=false Color=#FF0000 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Color=#FF5959 Enabled=false Range=25 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Left/_main.luau"
+    BoolValue "on"
+}
+Model "Livery" {
+    Part "Part" Size=0.24,1.74,12.59 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.705,5.542,162.683|-180,0,178.443 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="POLICE" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,0.38,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.406,7.118,154.99|1.595,-1.068,-16.375 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="EMERGENCY" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.33,0.41,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.6,6.716,154.405|-178.953,-1.694,160.532 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="CALL-911" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,0.38,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.565,6.996,154.65|-178.935,-0.743,163.54 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="EMERGENCY" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.2,0.28,1.9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=37.225,5.579,152.44|-180,-84.083,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="SUPERVISOR" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,0.68,4.39 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=34.919,7.028,171.746|-77.138,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="POLICE" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,1.74,12.59 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.207,5.746,162.683|0,0,-1.557 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="POLICE" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.2,0.28,3.42 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.402,7.217,159.945|0.839,0.149,-35.123 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="SUPERVISOR" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.33,0.41,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.347,6.831,155.176|0,0,-11.522 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="CALL-911" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=1.19,1.02,0.05 Anchored BottomSurface=Smooth CFrame=38.798,6.015,165.718|90,86.318,-90 Color=#F8F8F8 TopSurface=Smooth Transparency=1
+    Part "Part" Size=0.24,0.61,7.89 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.507,4.052,162.638|-179.58,0,-157.656 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="SERVER THE COMMUNITY SINCE 2019" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,1.61,13.61 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=35.058,9.374,163.45|95.5,-90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="17" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.38,0.59,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.325,6.671,168.709|2.619,-1.675,-24.25 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="17-145" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.2,0.28,1.9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=32.714,5.051,152.46|0,-84.139,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="17-145" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.38,0.59,3.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.604,6.603,168.803|-179.277,2.401,156.296 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="17-145" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.24,2.21,13.61 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=34.98,9.462,156.972|87.933,-90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="145" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Part" Size=0.2,0.28,3.42 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.494,7.189,159.953|-179.39,-1.18,144.894 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=2 {
+        SurfaceGui "SurfaceGui" CanvasSize=400,60 Face=Left {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="SUPERVISOR" TextColor3=#B17600 TextScaled TextSize=36 TextStrokeColor3=#B17600 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+}
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=37.224,6.355,152.318|-179.98,11.839,0 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=31.651,7.487,161.089|-90,-71.405,90 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=35.472,6.582,173.12|0.002,0,-179.999 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=34.368,6.582,173.12|0.002,0,-179.999 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=33.458,5.18,173.696|-90.001,-90,0 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=38.267,7.483,161.129|-90,71.405,-90 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=39.004,7.716,165.628|0,32.436,-180 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=36.394,5.18,173.696|90.001,90,0 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=32.733,6.355,152.335|-179.979,-8.989,0 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=6.699,4.978,1.982 Anchored CFrame=34.807,7.006,161.769|0,2.645,0 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2642396562" TextureID="rbxassetid://2642396562"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=30.875,7.716,165.611|0,-33.912,-180 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+MeshPart "MeshPart" Size=0.628,0.186,0.162 Anchored CFrame=31.276,3.258,159.405|-180,-90,0 RenderFidelity=Precise TextureContent="rbxassetid://2583087914" TextureID="rbxassetid://2583087914"
+Model "Model"
+Model "Model" {
+    Part "Part" Size=0.13,0.46,0.6 Anchored BottomSurface=Smooth CFrame=34.915,9.568,155.141|-0.015,89.123,-90 Color=#111111 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=0.13,0.73,1 Anchored BottomSurface=Smooth CFrame=34.905,9.498,155.135|-0.015,89.123,-90 Color=#111111 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth
+    UnionOperation "Union" Size=0.179,1.995,0.13 Anchored CFrame=33.242,10.314,154.885|179.986,-89.118,-180 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise $_geo="f956422efcacd3f3"
+    UnionOperation "Union" Size=0.179,1.995,0.13 Anchored CFrame=36.552,10.314,154.936|179.986,-89.118,-180 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise $_geo="f956422efcacd3f3"
+    UnionOperation "Union" Size=0.179,1.995,0.13 Anchored CFrame=34.927,10.314,155.851|179.986,-89.118,-180 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise $_geo="f956422efcacd3f3"
+}
+Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~3/Smooth Block Model" {
+    Part "Smooth Block Model" Size=0.171,0.171,0.171 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.019,9.459,154.581|-7.122,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Smooth {
+        CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+    }
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.019,11.133,154.258|72.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.018,11.744,154.04|67.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.018,12.333,153.77|62.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.019,10.506,154.421|77.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.171,0.107,0.171 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.019,9.585,154.565|-7.122,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Smooth {
+        CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+    }
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.019,9.867,154.53|82.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=37.018,12.896,153.45|57.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+}
+Model "Model" {
+    MeshPart "MeshPart" Size=3.857,0.25,1.266 Anchored CFrame=35.03,9.785,161.886 RenderFidelity=Precise TextureContent="rbxassetid://2813734927" TextureID="rbxassetid://2813734927"
+    MeshPart "MeshPart" Size=5.506,0.603,1.266 Anchored CFrame=35.096,9.617,161.886 RenderFidelity=Precise TextureContent="rbxassetid://2813734927" TextureID="rbxassetid://2813734927"
+    MeshPart "MeshPart" Size=5.831,0.245,1.257 Anchored CFrame=34.95,9.788,161.889 RenderFidelity=Precise TextureContent="rbxassetid://2813734927" TextureID="rbxassetid://2813734927" Transparency=0.6
+    MeshPart "MeshPart" Size=5.529,0.603,1.266 Anchored CFrame=34.817,9.617,161.886 RenderFidelity=Precise TextureContent="rbxassetid://2813734927" TextureID="rbxassetid://2813734927"
+}
+Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~5/Smooth Block Model" {
+    Part "Smooth Block Model" Size=0.171,0.171,0.171 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.806,9.458,154.582|-7.122,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Smooth {
+        CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+    }
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.805,11.743,154.041|67.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.805,12.332,153.771|62.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.806,9.866,154.531|82.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.806,11.132,154.259|72.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.805,12.895,153.451|57.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.651,0.05,0.05 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.806,10.505,154.422|77.877,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld Shape=Cylinder TopSurface=Smooth
+    Part "Smooth Block Model" Size=0.171,0.107,0.171 Anchored BackSurface=Weld BottomSurface=Weld CFrame=32.806,9.584,154.566|-7.122,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=Metal RightSurface=Weld TopSurface=Smooth {
+        CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+    }
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.948,7.823,165.541|-180,-54.998,179.998 CanCollide=false Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,0.62,0.868
+        }
+        Part "Part" Size=0.18,0.356,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.942,7.557,165.544|-180,-54.998,179.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,1,0.868
+        }
+        Part "Part" Size=0.171,0.171,0.171 Anchored BottomSurface=Smooth CFrame=31.948,7.904,165.542|179.647,-55.317,-179.973 CanCollide=false Color=#F8F8F8 Reflectance=1 Shape=Ball TopSurface=Smooth
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.938,7.112,165.548|-180,-54.998,179.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.23,0 Scale=0.868,0.31,0.868
+        }
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=31.939,7.29,165.546|-180,-54.998,179.998 CanCollide=false Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.09,0 Scale=0.868,0.062,0.868
+        }
+    }
+    Model "Model" {
+        Part "Part" Size=0.18,0.356,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=37.994,7.557,165.683|0.002,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,1,0.868
+        }
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=37.998,7.823,165.678|0.002,-90,0 CanCollide=false Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,0.62,0.868
+        }
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=37.993,7.112,165.688|0.002,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.23,0 Scale=0.868,0.31,0.868
+        }
+        Part "Part" Size=0.18,0.287,0.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=37.993,7.29,165.686|0.002,-90,0 CanCollide=false Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.09,0 Scale=0.868,0.062,0.868
+        }
+        Part "Part" Size=0.171,0.171,0.171 Anchored BottomSurface=Smooth CFrame=37.998,7.904,165.678|32.383,-89.626,32.699 CanCollide=false Color=#F8F8F8 Reflectance=1 Shape=Ball TopSurface=Smooth
+    }
+}
+Model "Model" {
+    MeshPart "Ammo Box Rifle" Size=0.706,1.247,1.793 Anchored CFrame=33.535,5.867,154.374|0,-90,0 CanCollide=false RenderFidelity=Precise TextureContent="rbxassetid://685852155" TextureID="rbxassetid://685852155"
+    MeshPart "Meshes/Medkit" Size=1.688,0.866,1.29 Anchored CFrame=34.16,6.812,155.449|-180,0,-180 CanCollide=false RenderFidelity=Precise TextureContent="rbxassetid://504966509" TextureID="rbxassetid://504966509"
+    UnionOperation "Union" Size=1.94,1.369,4.45 Anchored CFrame=34.97,7.197,156.837|-1.48,-89.923,-2.495 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="b977da77d11a9916"
+    UnionOperation "Union" Size=1.94,1.369,4.45 Anchored CFrame=34.968,5.878,155.667|-1.48,-89.923,-2.495 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="b977da77d11a9916"
+    Model "latex gloves" {
+        MeshPart "MeshPart" Size=0.499,0.746,0.181 Anchored CFrame=36.305,7.012,155.262|-170.334,2.576,-165.218 CanCollide=false Color=#335882 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.499,0.746,0.181 Anchored CFrame=36.305,7.012,155.325|178.703,4.829,-179.945 CanCollide=false Color=#335882 Material=SmoothPlastic RenderFidelity=Precise
+        Part "Part" Size=1.499,0.181,0.87 Anchored BottomSurface=Smooth CFrame=36.051,6.676,155.427|-180,0,-180 CanCollide=false Color=#2C651D Material=SmoothPlastic TopSurface=Smooth
+        Part "Part" Size=0.362,0.181,0.543 Anchored BottomSurface=Smooth CFrame=35.648,6.782,155.667|-0.001,90,0 CanCollide=false TopSurface=Smooth Transparency=1 {
+            SurfaceGui "SurfaceGui" CanvasSize=200,50 Face=Top {
+                TextBox "TextBox" Size=0,200,0,50 BackgroundColor3=#FF0004 BackgroundTransparency=1.02 FontFace="SourceSansPro|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="SKINTX" TextScaled TextSize=14 TextWrapped
+            }
+        }
+        Part "Part" Size=0.416,0.181,0.317 Anchored BottomSurface=Smooth CFrame=35.648,6.782,155.654|-180,0,-180 CanCollide=false Color=#2C651D Material=SmoothPlastic TopSurface=Smooth
+        Part "Part" Size=0.263,0.181,0.543 Anchored BottomSurface=Smooth CFrame=36.227,6.772,155.717|-0.001,90,0 CanCollide=false TopSurface=Smooth Transparency=1 {
+            SurfaceGui "SurfaceGui" CanvasSize=200,50 Face=Top {
+                TextBox "TextBox" Size=0,200,0,50 BackgroundColor3=#FF0004 BackgroundTransparency=1.02 FontFace="SourceSansPro|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="Latex Examination Gloves" TextScaled TextSize=12 TextWrapped
+            }
+        }
+        UnionOperation "Union" Size=1.494,0.373,0.865 Anchored CFrame=36.051,6.676,155.43|-180,0,-180 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="0d979f8abd9afb3b"
+    }
+}
+Model "Model" {
+    UnionOperation "Union" Size=3.544,1.893,0.138 Anchored CFrame=31.94,8.209,159.623|-92.275,-68.311,-92.305 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise UsePartColor $_geo="ed682946d75ac58d"
+}
+Model "Model" {
+    MeshPart "Color" Size=7.053,0.863,5.194 Anchored CFrame=34.95,7.078,170.105 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=1.7,5.627,4.934 Anchored CFrame=31.323,6.538,164.285 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=1.69,5.627,4.936 Anchored CFrame=38.589,6.538,164.295 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=1.22,5.617,4.409 Anchored CFrame=38.354,6.545,159.783 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=8.041,6.073,20.016 Anchored CFrame=34.949,6.534,161.791 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise {
+        Decal "white" Face=Top Texture="rbxassetid://470025936" TextureContent="rbxassetid://470025936"
+    }
+    MeshPart "Color" Size=8.037,1.986,2.802 Anchored CFrame=34.946,4.744,171.831 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=6.147,4.635,2.128 Anchored CFrame=34.974,7.139,153.108 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Color" Size=1.305,5.638,4.424 Anchored CFrame=31.605,6.534,159.782 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+    Model "Lights"
+    MeshPart "MeshPart" Size=0.674,2.025,4.69 Anchored CFrame=38.134,8.227,164.173 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.305,5.628,4.438 Anchored CFrame=38.312,6.55,159.783 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.516,1.494,0.616 Anchored CFrame=36.714,7.132,164.943 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.661,1.94,4.224 Anchored CFrame=31.79,8.279,159.771 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.661,1.94,4.224 Anchored CFrame=38.127,8.279,159.779 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=6.066,4.033,1.362 Anchored CFrame=34.974,7.342,153.011 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=4.424,2.528,7.606 Anchored CFrame=35.742,5.624,163.268 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=5.611,1.622,0.99 Anchored CFrame=34.95,5.854,172.504 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=5.58,1.556,0.95 Anchored CFrame=34.95,5.814,172.498 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=8.036,3.551,2.805 Anchored CFrame=34.946,4.811,171.828 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.305,5.628,4.438 Anchored CFrame=31.605,6.55,159.775 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=7.997,6.346,7.562 Anchored CFrame=34.966,6.323,158.757 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=7.998,5.972,4.713 Anchored CFrame=34.969,6.482,154.127 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=6.963,1.937,15.209 Anchored CFrame=34.962,8.27,159.924 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise Transparency=0.5
+    MeshPart "MeshPart" Size=3.733,5.808,4.269 Anchored CFrame=35.129,6.244,166.82 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.947,0.092,0.129 Anchored CFrame=34.973,9.297,152.957 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2128782405" TextureID="rbxassetid://2128782405"
+    MeshPart "MeshPart" Size=1.779,5.635,4.965 Anchored CFrame=38.549,6.542,164.295 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.687,2.025,4.689 Anchored CFrame=31.777,8.227,164.163 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.788,5.635,4.962 Anchored CFrame=31.363,6.542,164.286 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=3.986,6.01,3.093 Anchored CFrame=32.961,6.143,166.009 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.61,1.783,3.243 Anchored CFrame=31.808,8.285,159.824 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise Transparency=0.5
+    MeshPart "MeshPart" Size=7.63,2.14,20.169 Anchored CFrame=34.972,6.349,162.392 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise Transparency=0.9
+    MeshPart "MeshPart" Size=5.933,3.722,2.844 Anchored CFrame=34.95,6.309,159.31 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.163,1.076,0.76 Anchored CFrame=31.343,6.045,171.38 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2129119905" TextureID="rbxassetid://2129119905"
+    MeshPart "MeshPart" Size=7.596,6.369,4.582 Anchored CFrame=34.959,6.327,162.791 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=3.983,6.01,4.484 Anchored CFrame=36.943,6.143,166.712 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=8.036,3.329,2.879 Anchored CFrame=34.947,5.083,171.261 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=8.036,3.818,3.065 Anchored CFrame=34.947,5.413,169.257 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=7.577,1.438,1.613 Anchored CFrame=34.945,5.998,171.67 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=6.796,3.295,14.315 Anchored CFrame=34.971,6.013,159.913 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=7.604,1.647,0.652 Anchored CFrame=34.973,6.572,152.679 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2129183045" TextureID="rbxassetid://2129183045"
+    MeshPart "MeshPart" Size=8.036,4.359,5.777 Anchored CFrame=34.95,5.534,167.748 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=7.327,1.206,1.329 Anchored CFrame=34.93,5.98,171.668 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2128782405" TextureID="rbxassetid://2128782405"
+    MeshPart "MeshPart" Size=0.164,1.076,0.76 Anchored CFrame=38.523,6.045,171.38 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2129119905" TextureID="rbxassetid://2129119905"
+    MeshPart "MeshPartL" Size=7.138,0.208,0.507 Anchored CFrame=34.974,6.603,152.673 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+}
+Model "Model" {
+    UnionOperation "Union" Size=0.102,1.891,3.543 Anchored CFrame=37.87,8.285,159.745|-179.443,-1.445,158.325 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0b79014fd47f35f4"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=0.202,0.202,0.202 Anchored BottomSurface=Smooth CFrame=38.039,7.867,165.647|31.555,-89.618,31.872 CanCollide=false Color=#F8F8F8 Reflectance=1 Shape=Ball TopSurface=Smooth
+        Part "Part" Size=0.212,0.339,0.339 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.033,7.141,165.656|0.002,-90,0 CanCollide=false Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.09,0 Scale=0.868,0.062,0.868
+        }
+        Part "Part" Size=0.212,0.339,0.339 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.033,6.931,165.659|0.002,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Offset=0,0.23,0 Scale=0.868,0.31,0.868
+        }
+        Part "Part" Size=0.212,0.42,0.339 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.035,7.456,165.652|0.002,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,1,0.868
+        }
+        Part "Part" Size=0.212,0.339,0.339 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=38.039,7.771,165.646|0.002,-90,0 CanCollide=false Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.868,0.62,0.868
+        }
+    }
+}
+Model "Model"
+Model "Model" {
+    Model "Model" {
+        UnionOperation "Union" Size=0.146,0.605,1.241 Anchored CFrame=34.985,6.188,152.367|0.259,90,0 CanCollide=false Color=#FFFF00 CustomPhysicalProperties=0.7,0.7,0,1,1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="5b2c45e83f5fca06" {
+            SurfaceGui "ls" Active=false CanvasSize=100,50 {
+                TextLabel "ID" Position=0,15,0,0 Size=0,70,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="" TextColor3=#000000 TextSize=24 ZIndex=2 {
+                    Script "Script" @code=<<<
+                        Sentences = {"555","234","23","","232","306","14","244","232","64","433","621","534","2","10","9","222","45","123","32","88","16","19","22","23","24","254","21","211","765","88","900","381","839","322","23","54"}
+                        while true do 
+                        script.Parent.Text = Sentences[math.random(1,#Sentences)]
+                        wait(9999999999999999999999999) 
+                        end
+                    >>>
+                }
+            }
+        }
+    }
+    Part "Sign" Size=1.33,0.534,0.086 Anchored CFrame=34.98,6.189,152.331|2.653,0,0.008 CanCollide=false Color=#FFFF00 Transparency=1 {
+        ManualWeld "Sign Terrain Joint" Part1=@"Workspace/MESS/Body/Model~13/Sign"
+        SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+            TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Text="OSPD " TextColor3=#000000 TextSize=48
+        }
+    }
+}
+Model "Model" {
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model/Smooth Block Model~3" {
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=36.765,9.9,160.962|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+            Weld "Weld" C0=0,-0.141,0|90,0,0 C1=0,0.081,0|90,0,0 Part0=@"Workspace/MESS/Body/Model~14/Model/Smooth Block Model" Part1=@"Workspace/MESS/Body/Model~14/Model/Smooth Block Model~3"
+        }
+        Part "Smooth Block Model" Size=0.146,0.091,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=36.765,9.788,160.975|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+        }
+        Part "Smooth Block Model" Size=0.146,0.146,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=36.765,9.68,160.989|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~2/Smooth Block Model~6" {
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.133,159.57|-10.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.858,159.612|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+            Weld "Weld" C0=0,-0.141,0|90,0,0 C1=0,0.081,0|90,0,0 Part0=@"Workspace/MESS/Body/Model~14/Model~2/Smooth Block Model~2" Part1=@"Workspace/MESS/Body/Model~14/Model~2/Smooth Block Model~6"
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.939,159.36|-19.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.405,159.514|-13.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.091,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.746,159.625|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+        }
+        Part "Smooth Block Model" Size=0.146,0.146,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.638,159.639|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.674,159.444|-16.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~3/Part~2" {
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=37.458,9.422,157.538|0.027,0.007,-90.006 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.506,0.529,0.576
+        }
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=37.458,9.537,157.538|0.027,-90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Ball TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere Scale=0.53,0.53,0.53
+        }
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=37.458,9.516,157.538|0.027,0.007,-90.006 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.091,0.529,0.576
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~4/Smooth Block Model~2" {
+        Part "Smooth Block Model" Size=0.146,0.091,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.763,159.722|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+        }
+        Part "Smooth Block Model" Size=0.146,0.146,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.655,159.736|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.876,159.709|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+            Weld "Weld" C0=0,-0.141,0|90,0,0 C1=0,0.081,0|90,0,0 Part0=@"Workspace/MESS/Body/Model~14/Model~4/Smooth Block Model~3" Part1=@"Workspace/MESS/Body/Model~14/Model~4/Smooth Block Model~2"
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~5/Smooth Block Model~2" {
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,11.478,159.898|-25.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.146,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.663,160.386|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.158,160.317|-10.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.091,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.771,160.373|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.699,160.191|-16.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.43,160.261|-13.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,10.964,160.107|-19.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,11.224,160.01|-22.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=34.85,9.883,160.359|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+            Weld "Weld" C0=0,-0.141,0|90,0,0 C1=0,0.081,0|90,0,0 Part0=@"Workspace/MESS/Body/Model~14/Model~5/Smooth Block Model~9" Part1=@"Workspace/MESS/Body/Model~14/Model~5/Smooth Block Model~2"
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~6/Part~2" {
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=32.335,9.517,157.539|0.027,0.007,-90.006 CanCollide=false Color=#635F62 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.091,0.529,0.576
+        }
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=32.336,9.537,157.539|0.027,-90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Ball TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Sphere Scale=0.53,0.53,0.53
+        }
+        Part "Part" Size=0.312,0.312,0.312 Anchored BottomSurface=Smooth CFrame=32.335,9.423,157.538|0.027,0.007,-90.006 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal Shape=Cylinder TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.506,0.529,0.576
+        }
+    }
+    Model "Model" PrimaryPart=@"Workspace/MESS/Body/Model~14/Model~7/Smooth Block Model~2" {
+        Part "Smooth Block Model" Size=0.146,0.091,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.788,160.975|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.43,1.2,0.43
+        }
+        Part "Smooth Block Model" Size=0.146,0.146,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.68,160.989|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.774,1.032,0.774
+        }
+        Part "Smooth Block Model" Size=0.146,0.282,0.146 Anchored BackSurface=Weld BottomSurface=Weld CFrame=33.152,9.9,160.962|-7.096,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=Weld LeftSurface=Weld Material=SmoothPlastic RightSurface=Weld TopSurface=Smooth {
+            CylinderMesh "Mesh" Offset=0,-0.1,0 Scale=0.086,1.2,0.086
+            Weld "Weld" C0=0,-0.141,0|90,0,0 C1=0,0.081,0|90,0,0 Part0=@"Workspace/MESS/Body/Model~14/Model~7/Smooth Block Model~3" Part1=@"Workspace/MESS/Body/Model~14/Model~7/Smooth Block Model~2"
+        }
+    }
+    UnionOperation "Union" Size=1.191,0.177,0.177 Anchored CFrame=34.859,9.943,158.464|-179.973,0,89.99 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.4,0.25,1,1 Material=Metal RenderFidelity=Precise $_geo="06c3dcc22efeb975"
+}
+Part "Part" Size=0.913,0.702,0.05 Anchored CFrame=38.139,8.386,155.018|-90.026,69.35,90 CanCollide=false CustomPhysicalProperties=0.1,0.3,0.5,1,1 Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://1595749541" TextureContent="rbxassetid://1595749541"
+}
+Part "Part" Size=0.913,0.702,0.05 Anchored CFrame=31.753,8.28,154.927|-89.974,-69.35,-90 CanCollide=false CustomPhysicalProperties=0.1,0.3,0.5,1,1 Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://1595749541" TextureContent="rbxassetid://1595749541"
+}
+Part "Part" Size=0.913,0.452,0.05 Anchored CFrame=34.916,8.212,152.779|-159.35,-0.009,179.975 CanCollide=false CustomPhysicalProperties=0.1,0.3,0.5,1,1 Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://1595749541" TextureContent="rbxassetid://1595749541"
+}
+Model "Reverse" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.426,0.207,0.111 Anchored CFrame=31.645,6.604,152.537 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Enabled=false Range=25 Shadows
+        }
+        MeshPart "MeshPart" Size=0.426,0.207,0.138 Anchored CFrame=38.303,6.604,152.532 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Enabled=false Range=25 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Reverse/_main.luau"
+    BoolValue "on"
+}
+Model "Right" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.422,1.47,0.25 Anchored CFrame=31.579,6.564,152.658 CanCollide=false Color=#FF0000 Material=Neon RenderFidelity=Precise {
+            SpotLight "Light" Color=#FF5959 Enabled=false Range=25 Shadows
+        }
+        MeshPart "MeshPart" Size=0.748,0.214,0.398 Anchored CFrame=31.97,5.483,172.123 CanCollide=false Color=#FFB000 Material=Neon RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Color=#FFAA00 Enabled=false Face=Back Range=25 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/MESS/Body/Right/_main.luau"
+    BoolValue "on"
+}
+Seat "Seat" Size=1.04,0.26,0.52 Anchored BottomSurface=Smooth CFrame=35.16,5.03,159.306|-180,0,-180 CanCollide=false Color=#1B2A35 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=1.04,0.26,0.52 Anchored BottomSurface=Smooth CFrame=36.8,5.03,159.306|-180,0,-180 CanCollide=false Color=#1B2A35 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=1.04,0.26,0.52 Anchored BottomSurface=Smooth CFrame=33.01,5.03,159.306|-180,0,-180 CanCollide=false Color=#1B2A35 TopSurface=Smooth Transparency=1
+Model "SpitFire" {
+    MeshPart "MeshPart" Size=0.772,0.62,0.5 Anchored CFrame=35.731,8.608,153.137|-179.995,0.017,180 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1636032691" TextureID="rbxassetid://1636032691"
+}
+Model "SpitFire" {
+    MeshPart "MeshPart" Size=0.772,0.62,0.5 Anchored CFrame=33.99,8.729,164.939|-0.005,-0.017,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1636032691" TextureID="rbxassetid://1636032691"
+}
+Model "SpitFire" {
+    MeshPart "MeshPart" Size=0.772,0.62,0.5 Anchored CFrame=35.857,8.729,164.94|-0.005,-0.017,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1636032691" TextureID="rbxassetid://1636032691"
+}
+Model "SpitFire" {
+    MeshPart "MeshPart" Size=0.772,0.62,0.5 Anchored CFrame=34.313,8.608,153.136|-179.995,0.017,180 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1636032691" TextureID="rbxassetid://1636032691"
+}
+UnionOperation "Union" Size=0.762,0.188,0.295 Anchored CFrame=34.72,6.416,163.813|0,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=1,0.4,0.25,1,1 Material=SmoothPlastic RenderFidelity=Precise $_geo="70fa3217227fc358" {
+    ManualWeld "Union Terrain Joint" Part1=@"Workspace/MESS/Body/Union"
+}
+Model "Westin" PrimaryPart=@"Workspace/MESS/Body/Westin/Mid Bars~2" {
+    UnionOperation "Bar" Size=0.305,3.38,1.523 Anchored CFrame=33.635,5.046,173.372|6.002,0,-180 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="bee4aa0ac48882b7"
+    UnionOperation "Bar" Size=0.305,3.38,1.523 Anchored CFrame=36.25,5.046,173.372|6.002,0,-180 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="bee4aa0ac48882b7"
+    UnionOperation "Mid Bars" Size=0.475,0.238,2.377 Anchored CFrame=34.95,5.042,173.846|0.002,90,0 Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="27fcaf7af47b8387"
+    UnionOperation "Mid Bars" Size=2.282,3.233,0.452 Anchored CFrame=34.966,5.072,173.144|-179.998,0,-180 Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="19e6d9878d7db1fc"
+    Model "Pitbar" PrimaryPart=@"Workspace/MESS/Body/Westin/Pitbar/Wedge~2" {
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.589,4.25,172.461|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.589,4.154,172.461|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.25,4.631,173.05|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.252,4.155,173.049|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.588,4.725,172.462|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.587,4.82,172.463|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.251,4.25,173.049|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.25,4.726,173.051|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.25,4.821,173.051|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.588,4.63,172.462|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=31.588,4.345,172.461|179.572,-74.933,-0.648 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=32.251,4.346,173.05|0.7,-85.067,-179.539 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        WedgePart "Wedge" Size=0.342,0.761,0.285 Anchored BottomSurface=Smooth CFrame=33.104,4.727,173.906|-179.998,0,90 Color=#111111 Material=SmoothPlastic
+        WedgePart "Wedge" Size=0.342,0.761,0.285 Anchored BottomSurface=Smooth CFrame=33.104,4.252,173.905|-179.998,0,90 Color=#111111 Material=SmoothPlastic
+    }
+    Model "Pitbar" PrimaryPart=@"Workspace/MESS/Body/Westin/Pitbar~2/Wedge" {
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.184,4.25,172.462|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.522,4.344,173.051|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.52,4.819,173.049|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.183,4.63,172.461|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.184,4.345,172.462|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.522,4.249,173.051|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.521,4.629,173.05|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.183,4.725,172.461|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.185,4.154,172.463|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.521,4.724,173.049|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=37.522,4.153,173.051|-0.696,85.067,0.46 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        UnionOperation "Union" Size=1.797,0.164,2.494 Anchored CFrame=38.183,4.82,172.461|-179.568,74.933,179.352 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a066fa426482883"
+        WedgePart "Wedge" Size=0.342,0.761,0.285 Anchored BottomSurface=Smooth CFrame=36.668,4.723,173.906|-179.998,0,-90 Color=#111111 Material=SmoothPlastic
+        WedgePart "Wedge" Size=0.342,0.761,0.285 Anchored BottomSurface=Smooth CFrame=36.668,4.247,173.905|-179.998,0,-90 Color=#111111 Material=SmoothPlastic
+    }
+    UnionOperation "Protect" Size=1.801,0.426,3.552 Anchored CFrame=36.25,5.129,173.307|-110.563,0,90 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="8322679d92a5e356"
+    UnionOperation "Protect" Size=1.801,0.426,3.552 Anchored CFrame=33.635,5.129,173.307|-110.563,0,90 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="8322679d92a5e356"
+    MeshPart "Speaker" Size=0.77,0.712,0.796 Anchored CFrame=35.694,4.627,173.543 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099652342" TextureID="rbxassetid://2099652342"
+    MeshPart "Speaker" Size=0.77,0.712,0.796 Anchored CFrame=34.174,4.627,173.543 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099652342" TextureID="rbxassetid://2099652342"
+    UnionOperation "Union" Size=3.481,1.007,6.998 Anchored CFrame=35.134,5.365,172.428|-112.386,70.622,159.885 Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="4a99e97be14b6c8a"
+    Model "Wing Wrap" {
+        UnionOperation "Union" Size=3.733,1.796,1.05 Anchored CFrame=32.163,6.235,172.078|-84.241,-1.834,155.386 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="515a8edd02c7aeb4"
+    }
+    Model "Wing Wrap" {
+        UnionOperation "Union" Size=3.424,2.653,1.419 Anchored CFrame=37.638,6.25,172.167|-63.965,2.994,85.269 Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="8bd8d1b6f3f11cf1"
+    }
+}
+Model "lightbar1" {
+    Script "Ends" @src="Scripts/Workspace/MESS/Body/lightbar1/Ends.luau"
+    Model "G1" {
+        Part "Part" Size=0.184,0.137,0.585 Anchored BottomSurface=Weld CFrame=33.997,9.786,162.367|180,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G2" {
+        Part "Part" Size=0.184,0.197,0.615 Anchored BottomSurface=Weld CFrame=34.622,9.8,161.371|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.119,0|-90,0,-180 C1=0.417,2.057,-0.643|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G2/Part"
+        }
+        Part "Part" Size=0.184,0.157,0.575 Anchored BottomSurface=Weld CFrame=35.89,9.803,161.379|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.119,0|-90,0,-180 C1=-1.496,2.062,-0.663|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G2/Part~2"
+        }
+        Part "Part" Size=0.184,0.137,0.645 Anchored BottomSurface=Weld CFrame=36.49,9.792,162.363|178.697,89.443,1.267 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.12,0.445 Anchored BottomSurface=Weld CFrame=35.474,6.58,173.119|-179.998,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.12,0.815 Anchored BottomSurface=Weld CFrame=32.561,9.801,161.554|0.013,-62.927,179.99 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G3" {
+        Part "Part" Size=0.184,0.14,0.455 Anchored BottomSurface=Weld CFrame=36.386,5.193,173.693|-90,0,-0.036 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.12,0.445 Anchored BottomSurface=Weld CFrame=33.469,5.161,173.705|-90,0,179.964 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.147,0.585 Anchored BottomSurface=Weld CFrame=35.878,9.769,162.364|180,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G4" {
+        Part "Part" Size=0.184,0.147,0.595 Anchored BottomSurface=Weld CFrame=33.392,9.79,162.369|180,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.15,0.635 Anchored BottomSurface=Weld CFrame=36.51,9.805,161.366|-1.065,-89.54,178.916 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.119,0|-90,0,-180 C1=-1.423,2.066,-0.634|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G4/Part~2"
+        }
+        Part "Part" Size=0.184,0.15,0.855 Anchored BottomSurface=Weld CFrame=32.554,9.808,162.173|0.03,61.669,179.978 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.12,0.455 Anchored BottomSurface=Weld CFrame=34.358,6.578,173.11|-179.998,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.167,0.615 Anchored BottomSurface=Weld CFrame=33.363,9.795,161.366|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.119,0|-90,0,-180 C1=1.639,2.06,-0.619|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G4/Part~5"
+        }
+        Part "Part" Size=0.184,0.147,0.195 Anchored BottomSurface=Weld CFrame=37.735,9.781,161.857|179.995,0,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G5" {
+        Part "Part" Size=0.184,0.15,0.525 Anchored BottomSurface=Weld CFrame=38.264,7.468,161.145|-179.989,-0.001,-21.358 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.15,0.435 Anchored BottomSurface=Weld CFrame=39.004,7.71,165.619|-179.986,57.195,0.005 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.178,0.19,0.645 Anchored BottomSurface=Weld CFrame=35.288,9.801,161.389|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.115,0|-90,0,-180 C1=-0.221,2.068,-0.652|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G5/Part~3"
+        }
+        Part "Part" Size=0.184,0.147,0.625 Anchored BottomSurface=Weld CFrame=35.668,8.622,153.197|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.099,0|-90,0,-180 C1=0.816,2.408,2.402|90.038,-0.013,89.443 Part0=@"Workspace/MESS/Body/lightbar1/G5/Part~4"
+        }
+        Part "Part" Size=0.184,0.15,0.615 Anchored BottomSurface=Weld CFrame=34.033,8.725,164.876|-179.979,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.147,0.475 Anchored BottomSurface=Weld CFrame=37.222,6.359,152.324|-179.994,-78.442,0.006 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.099,0|-90,0,-180 C1=0.816,2.408,2.402|90.038,-0.013,89.443 Part0=@"Workspace/MESS/Body/lightbar1/G5/Part~6"
+        }
+        Part "Part" Size=0.184,0.17,0.19 Anchored BottomSurface=Weld CFrame=32.191,9.79,161.876|-0.004,0,-180 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G6" {
+        Part "Part" Size=0.184,0.12,0.815 Anchored BottomSurface=Weld CFrame=37.335,9.792,161.562|-179.976,-60.552,0.006 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.157,0.645 Anchored BottomSurface=Weld CFrame=33.999,9.794,161.364|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.119,0|-90,0,-180 C1=1.067,2.061,-0.615|89.981,0.003,-90.557 Part0=@"Workspace/MESS/Body/lightbar1/G6/Part~2"
+        }
+    }
+    Model "G7" {
+        Part "Part" Size=0.184,0.167,0.605 Anchored BottomSurface=Weld CFrame=34.274,8.619,153.201|-180,-90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.099,0|-90,0,-180 C1=-0.964,2.412,2.403|90.038,-0.013,89.443 Part0=@"Workspace/MESS/Body/lightbar1/G7/Part"
+        }
+        Part "Part" Size=0.184,0.17,0.825 Anchored BottomSurface=Weld CFrame=37.358,9.787,162.188|-180,61.442,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FF0000 BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#FF0000 Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.177,0.605 Anchored BottomSurface=Weld CFrame=35.281,9.788,162.366|179.999,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#FF0000 ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.137,0.455 Anchored BottomSurface=Weld CFrame=30.866,7.714,165.608|0.027,57.939,179.988 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.177,0.605 Anchored BottomSurface=Weld CFrame=34.65,9.789,162.366|179.999,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#00AAFF ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.117,0.435 Anchored BottomSurface=Weld CFrame=32.734,6.37,152.335|-0.015,-80.562,179.985 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+            Weld "Weld" C0=0,0.099,0|-90,0,-180 C1=-0.964,2.412,2.403|90.038,-0.013,89.443 Part0=@"Workspace/MESS/Body/lightbar1/G7/Part~6"
+        }
+        Part "Part" Size=0.184,0.137,0.605 Anchored BottomSurface=Weld CFrame=35.9,8.731,164.871|-179.981,90,0 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+        Part "Part" Size=0.184,0.137,0.455 Anchored BottomSurface=Weld CFrame=31.634,7.499,161.06|2.943,-1.044,160.514 CanCollide=false Material=SmoothPlastic RightSurface=Weld TopSurface=Weld Transparency=1 {
+            SurfaceGui "Lighto" CanvasSize=10,10 Face=Right {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#009CEA BorderSizePixel=0 {
+                    ImageLabel "ImageLabel" Position=0,-8,0,-16 Size=0,27,0,40 BackgroundColor3=#009CEA BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=194949171" ImageColor3=#009CEA ImageContent="http://www.roblox.com/asset/?id=194949171" Selectable SizeConstraint=RelativeXX SliceCenter=1,0,1,1
+                }
+            }
+            BlockMesh "Part"
+            Script "Script" @code=<<<
+                while wait() do
+                if script.Parent.Lighto.Enabled == true then script.Parent.SpotLight.Enabled = true
+                elseif script.Parent.Lighto.Enabled == false then script.Parent.SpotLight.Enabled = false
+                end
+                end
+            >>>
+            SpotLight "SpotLight" Color=#009CEA Enabled=false Face=Right Range=38 Shadows
+        }
+    }
+    Model "G8"
+    Script "Middle" @src="Scripts/Workspace/MESS/Body/lightbar1/Middle.luau"
+    Script "Mids" @src="Scripts/Workspace/MESS/Body/lightbar1/Mids.luau"
+    Script "_main" @src="Scripts/Workspace/MESS/Body/lightbar1/_main.luau"
+    Part "middle" Size=10.643,0.568,5.565 Anchored BottomSurface=Smooth CFrame=34.596,10.313,162.133|178.9,89.543,1.092 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth Transparency=2 {
+        Sound "Airhorn" AudioContent="http://www.roblox.com/asset/?id=288436308" Looped SoundId="http://www.roblox.com/asset/?id=288436308" Volume=1
+        Sound "Beep" AudioContent="http://www.roblox.com/asset/?id=138081500" PlaybackSpeed=1.5 SoundId="http://www.roblox.com/asset/?id=138081500" Volume=0.05
+        Sound "Manual" AudioContent="http://www.roblox.com/asset/?id=288436068" Looped SoundId="http://www.roblox.com/asset/?id=288436068" Volume=1
+        BlockMesh "Part" Scale=1.2,0.2,1.03
+        Sound "Priority" AudioContent="http://www.roblox.com/asset/?id=288436130" Looped SoundId="http://www.roblox.com/asset/?id=288436130" Volume=1
+        Sound "Wail" AudioContent="http://www.roblox.com/asset/?id=288436068" Looped SoundId="http://www.roblox.com/asset/?id=288436068" Volume=1
+        Sound "Yelp" AudioContent="http://www.roblox.com/asset/?id=288436087" Looped SoundId="http://www.roblox.com/asset/?id=288436087" Volume=1
+    }
+    BoolValue "on"
+}

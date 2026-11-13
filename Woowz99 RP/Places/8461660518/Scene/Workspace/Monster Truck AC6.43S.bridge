@@ -1,0 +1,985 @@
+ModuleScript "A-Chassis Tune" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune.luau" {
+    ScreenGui "A-Chassis Interface" {
+        ObjectValue "Car"
+        BoolValue "ControlsOpen"
+        LocalScript "Drive" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/A-Chassis Interface/Drive.luau"
+        BoolValue "IsOn"
+        Folder "Values" {
+            BoolValue "ABS"
+            BoolValue "ABSActive"
+            NumberValue "Brake"
+            NumberValue "Gear"
+            NumberValue "Horsepower"
+            BoolValue "MouseSteerOn"
+            BoolValue "PBrake"
+            NumberValue "RPM"
+            NumberValue "SteerC"
+            NumberValue "SteerT"
+            BoolValue "TCS"
+            BoolValue "TCSActive"
+            NumberValue "Throttle"
+            NumberValue "Torque"
+            StringValue "TransmissionMode"
+            Vector3Value "Velocity"
+        }
+    }
+    Script "Initialize" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Initialize.luau" {
+        ModuleScript "MiscWeld" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Initialize/MiscWeld.luau"
+    }
+    Folder "Plugins" {
+        Frame "AC6_Controls_Module" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+            LocalScript "Controls_AC6" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/AC6_Controls_Module/Controls_AC6.luau"
+            TextButton "Toggle" Position=0.5,-50,1,10 Size=0,100,0,18 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderColor3=#969696 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=16 TextStrokeColor3=#6A6A6A TextYAlignment=Bottom ZIndex=5
+            Frame "Window" Position=0.5,-250,0,-500 Size=0,500,0,400 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                TextLabel "//INSPARE" Position=1,-20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="A-Chassis 6 by //INSPARE" TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                Frame "Content" Position=0,0,0,60 Size=1,0,1,-60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+                    TextButton "Brake" Position=0,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Brake2" Position=0,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Clutch" Position=0,170,0,213 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrBrake" Position=2,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrClutch" Position=2,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrPBrake" Position=2,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftDown" Position=2,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftUp" Position=2,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrSteer" Position=2,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrThrottle" Position=2,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleABS" Position=2,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTCS" Position=2,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTMode" Position=2,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "ControlLDZone" Position=2,200,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "ControlRDZone" Position=2,200,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerDZone" Position=1,200,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerWidth" Position=1,200,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextButton "MouseBrake" Position=1,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseClutch" Position=1,170,0,113 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MousePBrake" Position=1,170,0,133 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftDown" Position=1,170,0,93 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftUp" Position=1,170,0,73 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseSteer" Position=1,170,0,53 Size=0,300,0,15 Active=false BackgroundColor3=#282828 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false Text="MouseMove" TextColor3=#B0B0B0 TextSize=14 ZIndex=3
+                    TextButton "MouseThrottle" Position=1,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "PBrake" Position=0,170,0,233 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftDown" Position=0,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftUp" Position=0,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft" Position=0,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft2" Position=0,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight" Position=0,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight2" Position=0,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "T" Position=0,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary] SteerRight" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Right" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]     Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,320 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Switch Mouse Control" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]        Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,280 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]   Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,260 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Control Width" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Right Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Left Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextButton "Throttle" Position=0,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Throttle2" Position=0,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleABS" Position=0,170,0,293 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleMouseDrive" Position=0,170,0,313 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTCS" Position=0,170,0,273 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTransMode" Position=0,170,0,253 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                }
+                TextLabel "Error" Position=0.5,0,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Invalid Input" TextColor3=#FF0000 TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 Visible=false ZIndex=3
+                TextLabel "Header" Position=0,10,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=32 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Left ZIndex=3
+                TextLabel "Overlay" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Press a key to assign or Enter to cancel]" TextColor3=#FFFFFF TextSize=28 TextStrokeColor3=#2F2F2F TextStrokeTransparency=0 Visible=false ZIndex=4
+                Frame "Tabs" Position=0,5,0,40 Size=0,490,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    TextButton "Controller" Position=0,235,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Controller" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    TextButton "Keyboard" Position=0,5,0,0 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Keyboard" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    Frame "Line" Size=1,0,0,2 BackgroundColor3=#FFFFFF BorderSizePixel=0 ZIndex=3
+                    TextButton "Mouse" Position=0,120,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Mouse" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                }
+            }
+        }
+        LocalScript "AC6_MSteer_Camera" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/AC6_MSteer_Camera.luau"
+        Frame "AC6_Stock_Gauges" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextLabel "ABS" Position=0.5,130,1,-140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "ABS" Position=0.5,130,1,-100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            LocalScript "Gauges_AC6" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/AC6_Stock_Gauges/Gauges_AC6.luau"
+            TextLabel "Gear" Position=0.5,-120,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+            TextLabel "PBrake" Position=0.5,200,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="P" TextColor3=#FF557F TextSize=24 TextStrokeColor3=#FF557F TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextButton "Speed" Position=0.5,150,1,-80 Size=0,100,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="0 SPS" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right ZIndex=2
+            Frame "Speedo" Position=0.5,150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            TextLabel "TCS" Position=0.5,130,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="TCS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "TMode" Position=0.5,-165,1,-40 Size=0,40,0,20 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="A/T" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1
+            Frame "Tach" Position=0.5,-150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            Frame "ln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                Frame "Frame" Position=0,-2,0,105 Size=0,3,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+            }
+        }
+        LocalScript "AC6_Stock_Sound" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/AC6_Stock_Sound.luau" {
+            RemoteEvent "AC6_FE_Sounds" {
+                Script "Handler" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/AC6_Stock_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+            }
+            Sound "Rev" AudioContent="rbxassetid://1535016979" Looped PlaybackSpeed=0 SoundId="rbxassetid://1535016979" Volume=4 {
+                NumberValue "SetPitch" Value=0.05
+                NumberValue "SetRev" Value=1.4
+            }
+        }
+        TextButton "ActiveAero" Position=1,-180,1,-100 Size=0,150,0,30 BackgroundColor3=#FFFFFF FontFace="SourceSansPro|Regular|Normal" Style=RobloxRoundDropdownButton Text="Aero: Dynamic" TextSize=18 {
+            LocalScript "ActiveAero" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/ActiveAero/ActiveAero.luau"
+        }
+        LocalScript "Backfire [FE+]" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/Backfire [FE+].luau" {
+            RemoteEvent "Backfire_FE" {
+                Script "Handler" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/Backfire [FE+]/Backfire_FE/Handler.luau" Disabled
+            }
+        }
+        LocalScript "Backfire [FE+]" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/Backfire [FE+]~2.luau" {
+            RemoteEvent "Backfire_FE" {
+                Script "Handler" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/Backfire [FE+]~2/Backfire_FE/Handler.luau" Disabled
+            }
+        }
+        LocalScript "BrakeHeat" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/BrakeHeat.luau"
+        LocalScript "Lights" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/Lights.luau"
+        LocalScript "SteeringWheel" @code=<<<
+            local car = script.Parent.Car.Value
+            script.Parent.Values.SteerC.Changed:connect(function()
+            	local ex = 1
+            	if script.Parent.Values.SteerC.Value<0 then ex=-1 end
+            	car.Misc.SW.SS.Motor.DesiredAngle = script.Parent.Values.SteerC.Value^2*math.rad(-90)*ex
+            end)
+        >>>
+        ImageLabel "[SS6] Dynamic Friction" Position=0.045,0,0.87,0 Size=0.35,0,0.35,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageTransparency=1 {
+            Frame "Background" Size=1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                ImageLabel "L" Position=0,0,1.25,0 Size=1,0,1.25,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://719863736" ImageContent="rbxassetid://719863736"
+            }
+            LocalScript "Simulated" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/Plugins/[SS6] Dynamic Friction/Simulated.luau"
+            Frame "Tires" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                Frame "FL" Position=0.119,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "FR" Position=0.697,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RL" Position=0.119,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RR" Position=0.697,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+            }
+            UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=0.604
+            UISizeConstraint "UISizeConstraint" MaxSize=200,200 MinSize=150,150
+            Folder "WearData" {
+                NumberValue "FL"
+                NumberValue "FR"
+                NumberValue "RL"
+                NumberValue "RR"
+                NumberValue "STime"
+            }
+        }
+    }
+    ModuleScript "README" @src="Scripts/Workspace/Monster Truck AC6.43S/A-Chassis Tune/README.luau"
+}
+Model "Body" {
+    Model "Exhaust" {
+        Part "BFLight1" Size=0.177,0.177,0.177 Anchored BottomSurface=Smooth CFrame=-167.912,14.006,50.4|90,0,0 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+            SpotLight "SpotLight" Angle=120 Brightness=70 Color=#FFAA00 Enabled=false Face=Top Range=7
+        }
+        Part "Backfire1" Size=0.177,0.49,0.177 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.912,13.887,50.53|90,0,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Sound "Backfire1" AudioContent="rbxassetid://1332257518" SoundId="rbxassetid://1332257518" Volume=5 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+            }
+            Sound "Backfire2" AudioContent="rbxassetid://1405312506" SoundId="rbxassetid://1405312506" Volume=8 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+            }
+            ParticleEmitter "Fire" Size=0:0.726:0.33,0.493:0,1:0 Color=0:#FF5500,1:#FF5500 Enabled=false Lifetime=0.13,0.2 LightEmission=0.95 LockedToPart Rate=5000 Speed=10,10 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=242102147" TextureContent="http://www.roblox.com/asset/?id=242102147"
+        }
+    }
+    Model "Exhaust2" {
+        Part "BFLight1" Size=0.177,0.177,0.177 Anchored BottomSurface=Smooth CFrame=-167.568,13.793,50.372|90,0,0 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+            SpotLight "SpotLight" Angle=120 Brightness=70 Color=#FFAA00 Enabled=false Face=Top Range=7
+        }
+        Part "BFLight2" Size=0.177,0.177,0.177 Anchored BottomSurface=Smooth CFrame=-168.254,13.793,50.54|90,0,0 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+            SpotLight "SpotLight" Angle=120 Brightness=70 Color=#FFAA00 Enabled=false Face=Top Range=7
+        }
+        Part "Backfire1" Size=0.177,0.49,0.177 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.568,13.673,50.502|90,0,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Sound "Backfire1" AudioContent="rbxassetid://1332257518" SoundId="rbxassetid://1332257518" Volume=5 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+            }
+            Sound "Backfire2" AudioContent="rbxassetid://1405312506" SoundId="rbxassetid://1405312506" Volume=8 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+            }
+            ParticleEmitter "Fire" Size=0:0.726:0.33,0.493:0,1:0 Color=0:#FF5500,1:#FF5500 Enabled=false Lifetime=0.13,0.2 LightEmission=0.95 LockedToPart Rate=5000 Speed=10,10 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=242102147" TextureContent="http://www.roblox.com/asset/?id=242102147"
+        }
+        Part "Backfire2" Size=0.177,0.49,0.177 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-168.254,13.673,50.67|90,0,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Sound "Backfire1" AudioContent="rbxassetid://1332257518" SoundId="rbxassetid://1332257518" Volume=5 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+            }
+            Sound "Backfire2" AudioContent="rbxassetid://1405312506" SoundId="rbxassetid://1405312506" Volume=8 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+            }
+            ParticleEmitter "Fire" Size=0:0.726:0.33,0.493:0,1:0 Color=0:#FF5500,1:#FF5500 Enabled=false Lifetime=0.13,0.2 LightEmission=0.95 LockedToPart Rate=5000 Speed=10,10 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=242102147" TextureContent="http://www.roblox.com/asset/?id=242102147"
+        }
+    }
+    Part "FL" Size=0.2,0.4,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-171.767,14.725,37.617|-73.26,58.525,160.575 CanCollide=false Color=#0D69AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+    Part "FR" Size=0.2,0.4,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-164.08,14.725,37.617|73.26,58.525,-160.575 CanCollide=false Color=#0D69AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+    Part "HK" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.896,15.486,35.535|0,90,0 CanCollide=false Color=#750000 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+    Model "Lights" {
+        MeshPart "B" Size=6.052,0.266,0.092 Anchored CFrame=-167.915,14.764,33.743|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "HB" Size=6.052,0.266,0.092 Anchored CFrame=-167.915,14.764,33.743|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        Part "L" Size=1.107,0.779,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.928,14.195,31.942|-0.009,0.009,0 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            BlockMesh "Mesh" Scale=1,1,0.82
+            SurfaceLight "SpotLight" Angle=100 Brightness=3 Color=#55AAFF Enabled=false Range=30
+        }
+        Part "L2" Size=1.107,0.779,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.928,14.195,31.843|-0.009,0.009,0 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            BlockMesh "Mesh" Scale=1,1,0.82
+            SurfaceLight "SpotLight" Angle=100 Brightness=3 Color=#55AAFF Enabled=false Range=50
+        }
+        MeshPart "RunL" Size=6.642,0.59,1.411 Anchored CFrame=-167.915,14.739,33.345|-180,0,-180 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RunR" Size=6.642,0.59,1.411 Anchored CFrame=-167.915,14.739,33.345|-180,0,-180 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Model "Model" {
+        MeshPart "MeshPart" Size=7.977,0.162,0.616 Anchored CFrame=-167.915,14.271,34.412|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532869301" TextureID="rbxassetid://1532869301"
+        MeshPart "MeshPart" Size=8.03,3.913,9.173 Anchored CFrame=-167.915,14.759,41.295|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=7.953,0.129,0.58 Anchored CFrame=-167.915,13.758,44.695|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533001281" TextureID="rbxassetid://1533001281"
+        MeshPart "MeshPart" Size=3.017,1.478,2.013 Anchored CFrame=-168.959,15.136,39.288|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533608416" TextureID="rbxassetid://1533608416"
+        MeshPart "MeshPart" Size=3.42,2.709,13.61 Anchored CFrame=-169.651,15.382,41.28|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.993,0.387,0.792 Anchored CFrame=-167.915,15.491,49.732|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533665113" TextureID="rbxassetid://1533665113"
+        MeshPart "MeshPart" Size=0.907,1.811,1.839 Anchored CFrame=-171.476,14.524,43.92|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.049,1.518,14.265 Anchored CFrame=-167.915,16.254,42.324|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=5.496,0.06,0.05 Anchored CFrame=-167.915,13.694,39.469|-180,0,-180 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533777930" TextureID="rbxassetid://1533777930" Transparency=0.02
+        MeshPart "MeshPart" Size=6.971,0.426,0.887 Anchored CFrame=-167.915,15.512,49.859|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.9
+        MeshPart "MeshPart" Size=3.538,1.241,3.051 Anchored CFrame=-167.883,15.36,45.651|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=6.776,1.683,14.858 Anchored CFrame=-167.914,15.802,42.307|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=1.414,0.64,1.027 Anchored CFrame=-167.922,13.744,50.334|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.05,0.05,0.126 Anchored CFrame=-167.96,14.775,39.353|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#0000FF CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.297,1.529,1.82 Anchored CFrame=-167.915,14.42,33.784|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532996173" TextureID="rbxassetid://1532996173"
+        MeshPart "MeshPart" Size=8.259,4.074,8.424 Anchored CFrame=-167.914,14.863,46.408|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=6.86,2.733,5.718 Anchored CFrame=-167.915,14.219,39.865|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://141343524" TextureID="rbxassetid://141343524"
+        MeshPart "MeshPart" Size=1.365,0.05,0.058 Anchored CFrame=-167.915,15.313,50.308|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533179212" TextureID="rbxassetid://1533179212" Transparency=0.02
+        MeshPart "MeshPart" Size=7.025,1.466,8.432 Anchored CFrame=-167.915,16.039,39.479|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+        MeshPart "MeshPart" Size=1.498,3.34,12.303 Anchored CFrame=-164.527,14.579,43.559|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=8.025,2.759,5.363 Anchored CFrame=-167.913,14.197,34.862|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=3.394,2.663,1.358 Anchored CFrame=-168.757,15.447,39.218|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.616,0.276,0.388 Anchored CFrame=-167.915,14.865,38.784|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.578,0.747,1.451 Anchored CFrame=-170.297,14.89,49.673|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=6.624,4.055,7.247 Anchored CFrame=-168.073,14.895,40.099|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532996173" TextureID="rbxassetid://1532996173"
+        MeshPart "MeshPart" Size=0.261,0.171,0.273 Anchored CFrame=-167.915,14.36,31.86|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532864922" TextureID="rbxassetid://1532864922"
+        MeshPart "MeshPart" Size=0.966,0.458,0.253 Anchored CFrame=-167.915,13.75,50.346|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.373,0.563,0.217 Anchored CFrame=-167.919,14.939,50.294|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.907,1.811,1.839 Anchored CFrame=-164.353,14.524,43.92|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.012,2.025,2.886 Anchored CFrame=-167.911,13.808,33.624|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.274,0.542,14.698 Anchored CFrame=-167.915,14.948,41.415|-180,0,-180 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533009621" TextureID="rbxassetid://1533009621"
+        MeshPart "MeshPart" Size=4.321,2.387,4.061 Anchored CFrame=-167.915,15.221,46.269|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.196,1.117,1.187 Anchored CFrame=-164.992,13.606,33.193|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.735,0.605,3.022 Anchored CFrame=-167.914,13.098,33.185|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532863453" TextureID="rbxassetid://1532863453"
+        MeshPart "MeshPart" Size=6.991,2.495,12.774 Anchored CFrame=-167.915,14.51,43.915|-180,0,-180 CanCollide=false Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.329,0.515,0.536 Anchored CFrame=-167.915,13.768,50.529|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533012768" TextureID="rbxassetid://1533012768"
+        MeshPart "MeshPart" Size=8.109,3.638,16.64 Anchored CFrame=-167.915,14.738,40.654|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533091439" TextureID="rbxassetid://1533091439"
+        MeshPart "MeshPart" Size=6.795,0.671,1.562 Anchored CFrame=-167.915,14.772,33.323|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=0.892,1.217,1.35 Anchored CFrame=-164.359,14.805,44.161|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.742,0.355,0.216 Anchored CFrame=-167.915,15.47,47.39|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533282510" TextureID="rbxassetid://1533282510"
+        MeshPart "MeshPart" Size=8.037,1.912,3.614 Anchored CFrame=-167.915,13.864,33.26|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=0.892,1.504,1.558 Anchored CFrame=-171.47,14.661,44.057|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.643,1.664,3.957 Anchored CFrame=-168.423,15.124,45.975|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=1.37,0.05,0.131 Anchored CFrame=-167.915,15.319,50.309|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533452132" TextureID="rbxassetid://1533452132"
+        MeshPart "MeshPart" Size=3.087,2.164,3.544 Anchored CFrame=-167.11,15.64,45.769|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=2.547,1.698,3.955 Anchored CFrame=-167.395,15.138,45.974|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=7.167,1.367,1.451 Anchored CFrame=-167.827,15.074,49.673|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=1.437,0.58,0.233 Anchored CFrame=-169.432,13.614,37.802|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.057,2.739,11.225 Anchored CFrame=-167.915,14.388,44.886|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.1,2.749,14.006 Anchored CFrame=-166.518,15.362,41.478|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.299,0.409,0.454 Anchored CFrame=-166.765,13.168,32.54|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.149,0.313,1.318 Anchored CFrame=-166.771,15.518,35.757|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=6.287,3.367,5.269 Anchored CFrame=-167.915,14.847,39.612|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533815481" TextureID="rbxassetid://1533815481"
+        MeshPart "MeshPart" Size=1.307,0.646,1.361 Anchored CFrame=-171.002,13.979,49.48|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=5.098,3.365,1.244 Anchored CFrame=-167.915,14.846,41.818|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://141343524" TextureID="rbxassetid://141343524"
+        MeshPart "MeshPart" Size=0.083,0.064,0.138 Anchored CFrame=-166.23,14.709,34.135|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#FFFF7F CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.137,1.332,1.627 Anchored CFrame=-167.915,15.091,49.807|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=1.498,3.34,12.303 Anchored CFrame=-171.302,14.579,43.559|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=4.111,2.718,3.721 Anchored CFrame=-168.266,15.344,45.929|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+        MeshPart "MeshPart" Size=8.038,2.226,5.292 Anchored CFrame=-167.915,14.495,35.552|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=8.257,2.999,9.239 Anchored CFrame=-167.915,14.302,42.006|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532999589" TextureID="rbxassetid://1532999589"
+        MeshPart "MeshPart" Size=7.155,0.234,15.92 Anchored CFrame=-167.915,12.92,40.576|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532997896" TextureID="rbxassetid://1532997896"
+        MeshPart "MeshPart" Size=7.025,3.481,7.029 Anchored CFrame=-167.915,15.038,36.057|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.514,2.025,3.486 Anchored CFrame=-168.167,13.808,33.323|-180,0,-180 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.502,0.409,0.454 Anchored CFrame=-167.962,13.168,32.54|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.055,0.05,0.05 Anchored CFrame=-167.914,14.703,39.595|-180,0,-180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533777930" TextureID="rbxassetid://1533777930" Transparency=0.02
+        MeshPart "MeshPart" Size=6.2,4.006,4.271 Anchored CFrame=-167.915,14.871,41.559|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.787,4.071,7.31 Anchored CFrame=-167.338,14.903,40.174|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532996173" TextureID="rbxassetid://1532996173"
+        MeshPart "MeshPart" Size=5.922,1.095,3.427 Anchored CFrame=-167.915,16.153,38.016|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533679841" TextureID="rbxassetid://1533679841"
+        MeshPart "MeshPart" Size=6.782,0.662,1.542 Anchored CFrame=-167.915,14.782,33.322|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522" Transparency=0.6
+        MeshPart "MeshPart" Size=2.906,2.478,2.049 Anchored CFrame=-168.99,15.432,39.59|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533178894" TextureID="rbxassetid://1533178894" Transparency=0.02
+        MeshPart "MeshPart" Size=5.223,2.929,2.854 Anchored CFrame=-167.915,15.178,40.299|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.844,0.05,0.05 Anchored CFrame=-167.916,14.986,38.726|-180,0,-180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533179212" TextureID="rbxassetid://1533179212" Transparency=0.02
+        MeshPart "MeshPart" Size=1.099,1.007,1.578 Anchored CFrame=-167.915,14.295,40.079|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#970000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.334,1.772,5.323 Anchored CFrame=-167.915,13.754,39.994|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533618891" TextureID="rbxassetid://1533618891"
+        MeshPart "MeshPart" Size=1.342,2.166,0.859 Anchored CFrame=-167.915,14.556,50.372|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=3.348,0.296,0.05 Anchored CFrame=-167.915,16.193,42.006|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533817566" TextureID="rbxassetid://1533817566"
+        MeshPart "MeshPart" Size=2.303,0.204,2.09 Anchored CFrame=-167.942,15.326,46.136|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#750000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.652,1.214,1.622 Anchored CFrame=-167.915,14.728,38.63|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533178894" TextureID="rbxassetid://1533178894" Transparency=0.2
+        MeshPart "MeshPart" Size=0.264,0.055,0.183 Anchored CFrame=-167.989,15.737,46.455|-180,0,-180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533068013" TextureID="rbxassetid://1533068013"
+        MeshPart "MeshPart" Size=8.006,2.843,3.628 Anchored CFrame=-167.915,14.291,49.046|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=1.348,0.526,0.246 Anchored CFrame=-169.462,15.437,38.422|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533844712" TextureID="rbxassetid://1533844712"
+        MeshPart "MeshPart" Size=0.764,0.054,0.116 Anchored CFrame=-167.914,16.606,39.532|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.101,1.11,2.005 Anchored CFrame=-167.915,14.169,49.63|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#AA00AA CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.025,1.466,8.432 Anchored CFrame=-167.915,16.039,39.479|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+        MeshPart "MeshPart" Size=5.461,2.858,1.143 Anchored CFrame=-167.915,14.262,41.821|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533610125" TextureID="rbxassetid://1533610125"
+        MeshPart "MeshPart" Size=7.057,0.492,1.029 Anchored CFrame=-167.915,15.51,49.983|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.9
+        MeshPart "MeshPart" Size=7.351,0.087,2.066 Anchored CFrame=-167.915,13.494,39.88|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533024231" TextureID="rbxassetid://1533024231"
+        MeshPart "MeshPart" Size=6.223,0.066,0.05 Anchored CFrame=-167.915,14.46,49.928|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.864,0.404,2.419 Anchored CFrame=-167.969,15.662,45.249|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532996173" TextureID="rbxassetid://1532996173"
+        MeshPart "MeshPart" Size=3.501,0.146,0.297 Anchored CFrame=-168.771,15.544,35.627|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=6.089,0.299,0.11 Anchored CFrame=-167.915,14.764,33.703|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#CACBD1 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.307,0.646,1.361 Anchored CFrame=-164.827,13.979,49.48|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+        MeshPart "MeshPart" Size=2.336,0.074,0.05 Anchored CFrame=-167.915,13.959,31.776|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+        MeshPart "MeshPart" Size=0.199,0.05,0.083 Anchored CFrame=-166.797,15.475,37.918|153.571,5.466,180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533778866" TextureID="rbxassetid://1533778866" Transparency=0.2
+        MeshPart "springs" Size=3.092,0.477,0.36 Anchored CFrame=-167.915,15.436,47.393|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#C4281C CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Model "Monster Trcuk Stand" @file="Scene/Workspace/Monster Truck AC6.43S/Body/Monster Trcuk Stand.bridge"
+    Script "Motors" @src="Scripts/Workspace/Monster Truck AC6.43S/Body/Motors.luau"
+    Script "Motors" @src="Scripts/Workspace/Monster Truck AC6.43S/Body/Motors~2.luau"
+    Script "Motors" @src="Scripts/Workspace/Monster Truck AC6.43S/Body/Motors~3.luau"
+    Script "Motors" @src="Scripts/Workspace/Monster Truck AC6.43S/Body/Motors~4.luau"
+    Part "RRE" Size=0.359,0.359,0.359 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.914,16.813,43.966|180,90,0 CanCollide=false Color=#0D69AC CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+    Part "SW" Size=0.2,0.2,0.2 Anchored CFrame=-169.457,15.24,39.511|-21.273,0.001,-0.002 CanCollide=false Color=#970000 Transparency=1
+    Seat "Seat" Size=1.71,1,1.71 Anchored BottomSurface=Smooth CFrame=-166.418,12.607,41.735 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 TopSurface=Smooth Transparency=101
+    Model "TK" {
+        MeshPart "Brake" Size=6.943,0.426,0.774 Anchored CFrame=-167.915,15.512,49.915|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#750000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RB" Size=6.943,0.426,0.774 Anchored CFrame=-167.915,15.512,49.915|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#750000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RLeft" Size=1.247,0.246,0.753 Anchored CFrame=-170.75,15.588,49.808|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#AA5500 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "RRight" Size=1.247,0.246,0.753 Anchored CFrame=-165.079,15.588,49.808|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#AA5500 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "Reverse" Size=4.437,0.371,0.094 Anchored CFrame=-167.915,15.526,50.069|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "left" Size=0.331,0.281,0.411 Anchored CFrame=-170.356,14.668,33.074|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "right" Size=0.331,0.281,0.411 Anchored CFrame=-165.473,14.668,33.074|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+    }
+}
+VehicleSeat "DriveSeat" Size=2,1,2 Anchored BottomSurface=Smooth CFrame=-169.445,13.406,41.736|-14.001,0,0 CanCollide=false CustomPhysicalProperties=0.01,0.3,0,1,1 FrontSurface=Motor Material=SmoothPlastic MaxSpeed=0 TopSurface=Hinge Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "AudioPlayer Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/AudioPlayer Gui Giver.luau"
+    Script "AudioPlayer Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/AudioPlayer Gui Giver~2.luau"
+    Script "AudioPlayer Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/AudioPlayer Gui Giver~3.luau"
+    BoolValue "DL"
+    BoolValue "DSL" Value
+    RemoteEvent "FE_Lights" {
+        Script "Handler" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/FE_Lights/Handler.luau"
+    }
+    RemoteEvent "Filter" {
+        Script "Receiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Filter/Receiver.luau"
+    }
+    RemoteEvent "Filter" {
+        Script "Receiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Filter~2/Receiver.luau"
+    }
+    Script "Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Gui Giver.luau" Disabled {
+        Script "TheFix" @code=<<<
+            wait(2)
+            script.Parent.Disabled = false
+        >>>
+    }
+    Script "Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Gui Giver~2.luau" {
+        Script "TheFix" @code=<<<
+            wait(2)
+            script.Parent.Disabled = false
+        >>>
+    }
+    Script "Gui Giver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Gui Giver~3.luau" {
+        Script "TheFix" @code=<<<
+            wait(2)
+            script.Parent.Disabled = false
+        >>>
+    }
+    Sound "Horn" AudioContent="rbxassetid://148913095" Looped SoundId="rbxassetid://148913095" Volume=10 {
+        Script "Control" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Horn/Control.luau" {
+            ScreenGui "G" {
+                LocalScript "Horn" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Horn/Control/G/Horn.luau" Disabled
+                ObjectValue "src"
+            }
+        }
+    }
+    NumberValue "Horsepower"
+    BoolValue "Indicator"
+    BoolValue "Indicator"
+    BoolValue "IsOn"
+    BoolValue "IsOn"
+    BoolValue "L"
+    BoolValue "LI"
+    BoolValue "LI"
+    BoolValue "LI"
+    BoolValue "Lights"
+    NumberValue "ODO"
+    BoolValue "Occupied"
+    Script "Odometer" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Odometer.luau" Disabled
+    BoolValue "PSL"
+    BoolValue "PSL"
+    BoolValue "RI"
+    BoolValue "RI"
+    BoolValue "RI"
+    NumberValue "RPM"
+    ScreenGui "SS3" {
+        Sound "Blink" AudioContent="rbxassetid://190126363" PlaybackSpeed=0.7 SoundId="rbxassetid://190126363" Volume=0.3
+        ObjectValue "CarSeat"
+        Folder "DashInfoSpeed" {
+            BoolValue "Info" Value
+            BoolValue "MPG"
+            BoolValue "Speed"
+            BoolValue "Version"
+        }
+        NumberValue "Dist" Value=10000
+        LocalScript "FE_Lights" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3/FE_Lights.luau"
+        ImageLabel "Frame" Position=1,-250,1,-200 Size=0,200,0,200 BackgroundColor3=#AAA9AC BackgroundTransparency=1 Image="rbxassetid://77155281" ImageContent="rbxassetid://77155281"
+        Frame "Full" Position=0,-20,0,0 BackgroundColor3=#AAA9AC BackgroundTransparency=1 {
+            ImageLabel "DotB" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CD281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17719826" ImageContent="http://www.roblox.com/asset/?id=17719826" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#ACABAE BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotG" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CC281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718489" ImageContent="http://www.roblox.com/asset/?id=17718489" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#ABAAAD BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotO" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CB281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718492" ImageContent="http://www.roblox.com/asset/?id=17718492" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#AAA9AC BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotP" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CB281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718483" ImageContent="http://www.roblox.com/asset/?id=17718483" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#AAA9AC BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+        }
+        LocalScript "GuiScript" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3/GuiScript.luau" Disabled {
+            Script "TheFix" @code=<<<
+                wait(2)
+                script.Parent.Disabled = false
+            >>>
+        }
+        Frame "HUB" Position=0,0,0,600 Size=0,140,0,30 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 {
+            ImageLabel "BreakerImage" Position=0,40,0,-40 Size=0,60,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://240664703" ImageColor3=#FF0000 ImageContent="rbxassetid://240664703" ImageTransparency=0.25 Rotation=719 Visible=false ZIndex=2
+            ImageLabel "Left" Position=0,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+            ImageLabel "Light" Position=0.4,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=151673087" ImageContent="http://www.roblox.com/asset/?id=151673087" Visible=false ZIndex=2
+            TextButton "Limiter" Position=0,0,0,-110 Size=0,140,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Engine Start/Stop" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+            ImageLabel "Right" Position=0.2,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+        }
+        Frame "Infotainment" Position=1,-140,0,300 Size=0,140,0,200 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 Visible=false {
+            Frame "Music" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current song:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Song" Position=0,0,0.3,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Lorde - Tennis Court (Flume Remix)" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Volume" Position=0,0,0.65,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="100%" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            Frame "Performance" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current RPM:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current whp:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Label" Position=0,0,0.5,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="TCS OFF" TextScaled TextSize=14 TextWrapped Visible=false ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                TextLabel "RPM" Position=0,0,0.8,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="800" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Speed" Position=0,0,0.3,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="50" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            TextLabel "Time" Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="14:00:00" TextScaled TextSize=24 TextWrapped ZIndex=2
+            Frame "Weather" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current weather:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Temperature" Position=0,0,0.65,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="66*" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Weather" Position=0,0,0.3,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Partly cloudy" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+        }
+        Frame "Music" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+            Frame "mg" Position=0.5,-250,0.5,-35 Size=0,500,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                TextBox "Input" Position=0.3,0,0,0 Size=0.7,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Inconsolata|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left
+                ImageButton "Play" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://283666551" ImageContent="rbxassetid://283666551"
+                ImageButton "Stop" Position=0,90,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://186016998" ImageContent="rbxassetid://186016998"
+            }
+        }
+        BoolValue "Names" Value
+        Frame "Palette" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+            Frame "Blue" Position=0.5,-200,0.7,-50 Size=0,400,0,100 BackgroundColor3=#0000FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="B" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="1" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+            Frame "Green" Position=0.5,-200,0.6,-50 Size=0,400,0,100 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="G" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+            Frame "Red" Position=0.5,-200,0.5,-50 Size=0,400,0,100 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="R" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+        }
+        LocalScript "Radar" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3/Radar.luau"
+        Folder "Radios" {
+            BoolValue "FMFour"
+            BoolValue "FMOne" Value
+            BoolValue "FMThree"
+            BoolValue "FMTwo"
+        }
+        Frame "Tracker" Position=1,-140,0,630 Size=0,140,0,30 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 {
+            TextButton "HN" Position=0,75,0,-100 Size=0,65,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="Hide names" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+            TextButton "SN" Position=0,0,0,-100 Size=0,65,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="Show names" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+        }
+        StringValue "nxtcam" Value="car"
+    }
+    ScreenGui "SS3" {
+        Sound "Blink" AudioContent="rbxassetid://190126363" PlaybackSpeed=0.7 SoundId="rbxassetid://190126363" Volume=0.3
+        ObjectValue "CarSeat"
+        Folder "DashInfoSpeed" {
+            BoolValue "Info" Value
+            BoolValue "MPG"
+            BoolValue "Speed"
+            BoolValue "Version"
+        }
+        NumberValue "Dist" Value=10000
+        LocalScript "FE_Lights" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3~2/FE_Lights.luau"
+        TextButton "FL" Position=0,0,1,-50 Size=0,50,0,50 BackgroundColor3=#222222 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="FL" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.9 TextWrapped
+        TextButton "FR" Position=0,50,1,-50 Size=0,50,0,50 BackgroundColor3=#222222 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="FR" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.9 TextWrapped
+        ImageLabel "Frame" Position=1,-250,1,-200 Size=0,200,0,200 BackgroundColor3=#AAA9AC BackgroundTransparency=1 Image="rbxassetid://77155281" ImageContent="rbxassetid://77155281"
+        Frame "Full" Position=0,-20,0,0 BackgroundColor3=#AAA9AC BackgroundTransparency=1 {
+            ImageLabel "DotB" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CD281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17719826" ImageContent="http://www.roblox.com/asset/?id=17719826" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#ACABAE BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotG" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CC281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718489" ImageContent="http://www.roblox.com/asset/?id=17718489" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#ABAAAD BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotO" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CB281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718492" ImageContent="http://www.roblox.com/asset/?id=17718492" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#AAA9AC BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+            ImageLabel "DotP" Position=-0.5,0,0.5,0 Size=0,10,0,10 BackgroundColor3=#CB281C BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=17718483" ImageContent="http://www.roblox.com/asset/?id=17718483" {
+                TextLabel "nam" Position=0.25,0,-0.9,0 BackgroundColor3=#AAA9AC BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextSize=14
+            }
+        }
+        LocalScript "GuiScript" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3~2/GuiScript.luau" Disabled {
+            Script "TheFix" @code=<<<
+                wait(2)
+                script.Parent.Disabled = false
+            >>>
+        }
+        Frame "HUB" Position=0,0,0,600 Size=0,140,0,30 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 {
+            ImageLabel "BreakerImage" Position=0,40,0,-40 Size=0,60,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://240664703" ImageColor3=#FF0000 ImageContent="rbxassetid://240664703" ImageTransparency=0.25 Rotation=719 Visible=false ZIndex=2
+            ImageLabel "Left" Position=0,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+            ImageLabel "Light" Position=0.4,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=151673087" ImageContent="http://www.roblox.com/asset/?id=151673087" Visible=false ZIndex=2
+            TextButton "Limiter" Position=0,0,0,-110 Size=0,140,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Engine Start/Stop" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+            ImageLabel "Right" Position=0.2,0,0,-40 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+        }
+        Frame "Infotainment" Position=1,-140,0,300 Size=0,140,0,200 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 Visible=false {
+            Frame "Music" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current song:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Song" Position=0,0,0.3,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Lorde - Tennis Court (Flume Remix)" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Volume" Position=0,0,0.65,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="100%" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            Frame "Performance" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current RPM:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current whp:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Label" Position=0,0,0.5,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="TCS OFF" TextScaled TextSize=14 TextWrapped Visible=false ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                TextLabel "RPM" Position=0,0,0.8,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="800" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Speed" Position=0,0,0.3,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="50" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            TextLabel "Time" Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="14:00:00" TextScaled TextSize=24 TextWrapped ZIndex=2
+            Frame "Weather" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                ImageLabel "Background" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://290472278" ImageContent="rbxassetid://290472278"
+                TextLabel "Label" Position=0,0,0.2,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Current weather:" TextScaled TextSize=14 TextWrapped ZIndex=2
+                ImageLabel "Left" Position=0,0,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                ImageLabel "Right" Position=0,100,0.83,0 Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Temperature" Position=0,0,0.65,0 Size=1,0,0.2,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="66*" TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextLabel "Weather" Position=0,0,0.3,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Zekton|Regular|Normal" Text="Partly cloudy" TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+        }
+        Frame "Music" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+            Frame "mg" Position=0.5,-250,0.5,-35 Size=0,500,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                TextBox "Input" Position=0.3,0,0,0 Size=0.7,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Inconsolata|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left
+                ImageButton "Play" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://283666551" ImageContent="rbxassetid://283666551"
+                ImageButton "Stop" Position=0,90,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://186016998" ImageContent="rbxassetid://186016998"
+            }
+        }
+        BoolValue "Names" Value
+        Frame "Palette" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+            Frame "Blue" Position=0.5,-200,0.7,-50 Size=0,400,0,100 BackgroundColor3=#0000FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="B" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="1" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+            Frame "Green" Position=0.5,-200,0.6,-50 Size=0,400,0,100 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="G" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+            Frame "Red" Position=0.5,-200,0.5,-50 Size=0,400,0,100 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Check" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://33714981" ImageContent="rbxassetid://33714981"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="R" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                TextBox "Val" Position=0.25,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" PlaceholderColor3=#B2B2B2 Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+        }
+        LocalScript "Radar" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SS3~2/Radar.luau"
+        Folder "Radios" {
+            BoolValue "FMFour"
+            BoolValue "FMOne" Value
+            BoolValue "FMThree"
+            BoolValue "FMTwo"
+        }
+        Frame "Tracker" Position=1,-140,0,630 Size=0,140,0,30 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 {
+            TextButton "HN" Position=0,75,0,-100 Size=0,65,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="Hide names" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+            TextButton "SN" Position=0,0,0,-100 Size=0,65,0,30 BackgroundColor3=#000000 BackgroundTransparency=0.6 BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="Show names" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped
+        }
+        Frame "Windows" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+            Frame "FL" Position=0.5,-200,0.5,-50 Size=0,400,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="FL" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            Frame "FR" Position=0.5,-200,0.6,-50 Size=0,400,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="FR" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            Frame "RL" Position=0.5,-200,0.7,-50 Size=0,400,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="RF" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+            Frame "RR" Position=0.5,-200,0.8,-50 Size=0,400,0,70 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="RW" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+            }
+        }
+        StringValue "nxtcam" Value="car"
+    }
+    ScreenGui "SUNDIAG_V2" {
+        LocalScript "BoV" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SUNDIAG_V2/BoV.luau"
+        ObjectValue "CarSeat"
+    }
+    ScreenGui "SUNDIAG_V3" {
+        LocalScript "BoV" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/SUNDIAG_V3/BoV.luau"
+        ObjectValue "CarSeat"
+    }
+    BoolValue "TL"
+    BoolValue "TL"
+    NumberValue "Temp" Value=40
+    Folder "Windows" {
+        BoolValue "FL"
+        BoolValue "FR"
+        Script "Receiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/Windows/Receiver.luau"
+    }
+    Script "sunDiagGiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/sunDiagGiver.luau"
+    Script "sunDiagGiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/sunDiagGiver~2.luau"
+    Script "sunDiagGiver" @src="Scripts/Workspace/Monster Truck AC6.43S/DriveSeat/sunDiagGiver~3.luau"
+}
+Model "Misc" {
+    Model "FL" {
+        Model "Door" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FL/Door/Body.luau"
+            MeshPart "MeshPart" Size=1.834,2.706,4.443 Anchored CFrame=-171.593,14.824,40.148|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+            MeshPart "MeshPart" Size=0.626,0.684,2.927 Anchored CFrame=-170.952,15.043,39.932|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://141343524" TextureID="rbxassetid://141343524"
+            MeshPart "MeshPart" Size=1.509,2.704,5.581 Anchored CFrame=-171.782,14.75,40.199|-180,0,-180 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+            MeshPart "MeshPart" Size=1.099,0.596,4.257 Anchored CFrame=-171.95,15.759,40.482|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.907,1.534,4.311 Anchored CFrame=-171.104,14.834,40.384|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.085,0.05,0.188 Anchored CFrame=-170.937,13.884,41.255|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#750000 CustomPhysicalProperties=0.01,0,0,0,0 Material=Neon RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.216,0.331,3.161 Anchored CFrame=-170.891,14.695,40.537|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533178894" TextureID="rbxassetid://1533178894" Transparency=0.02
+            MeshPart "MeshPart" Size=0.768,2.04,4.167 Anchored CFrame=-171.035,14.782,40.077|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533236706" TextureID="rbxassetid://1533236706"
+            MeshPart "MeshPart" Size=0.174,0.576,1.009 Anchored CFrame=-170.766,14.108,38.571|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533241517" TextureID="rbxassetid://1533241517"
+            MeshPart "MeshPart" Size=0.32,2.025,3.133 Anchored CFrame=-170.871,14.787,40.573|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533239736" TextureID="rbxassetid://1533239736"
+            MeshPart "MeshPart" Size=0.493,0.798,0.188 Anchored CFrame=-171.181,15.708,38.337|-180,0,-180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533238034" TextureID="rbxassetid://1533238034"
+            Part "Part" Size=0.05,0.22,0.88 Anchored BottomSurface=Smooth CFrame=-171.734,15.359,42.094 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=12 {
+                    Script "Script" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FL/Door/Part/ClickDetector/Script.luau"
+                }
+                Sound "DoorClose" AudioContent="http://www.roblox.com/asset/?id=142897445" SoundId="http://www.roblox.com/asset/?id=142897445"
+                Sound "DoorOpen" AudioContent="http://www.roblox.com/asset/?id=142897419" SoundId="http://www.roblox.com/asset/?id=142897419"
+            }
+            Part "SS" Size=0.2,0.4,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-171.768,14.725,37.617|-73.26,58.525,160.575 CanCollide=false Color=#0D69AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "WD" Size=0.2,0.2,0.2 CFrame=-164.423,13.434,40.319|-180,0,-180 CanCollide=false Color=#750000 Transparency=1
+        }
+        Model "Window" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FL/Window/Body.luau"
+            Part "SS" Size=0.2,0.2,0.2 CFrame=-164.423,13.435,40.319|-180,0,-180 CanCollide=false Color=#750000 Transparency=1
+            MeshPart "window" Size=1.026,1.348,3.927 Anchored CFrame=-170.897,15.99,40.335|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+            MeshPart "window" Size=1.026,1.348,3.927 Anchored CFrame=-170.897,15.99,40.335|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+        }
+    }
+    Model "FR" {
+        Model "Door" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FR/Door/Body.luau"
+            MeshPart "MeshPart" Size=0.907,1.533,4.311 Anchored CFrame=-164.725,14.834,40.384|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=1.499,2.698,5.581 Anchored CFrame=-164.052,14.747,40.199|-180,0,-180 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+            MeshPart "MeshPart" Size=0.768,2.04,4.167 Anchored CFrame=-164.794,14.782,40.077|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533121509" TextureID="rbxassetid://1533121509"
+            MeshPart "MeshPart" Size=1.837,2.706,4.443 Anchored CFrame=-164.235,14.824,40.148|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533036070" TextureID="rbxassetid://1533036070"
+            MeshPart "MeshPart" Size=0.174,0.576,1.009 Anchored CFrame=-165.063,14.108,38.571|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533190992" TextureID="rbxassetid://1533190992"
+            MeshPart "MeshPart" Size=0.325,2.025,3.124 Anchored CFrame=-164.956,14.787,40.568|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533125052" TextureID="rbxassetid://1533125052"
+            MeshPart "MeshPart" Size=0.626,0.684,2.927 Anchored CFrame=-164.877,15.043,39.932|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#694C2C CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://141343524" TextureID="rbxassetid://141343524"
+            MeshPart "MeshPart" Size=1.1,0.587,4.275 Anchored CFrame=-163.877,15.755,40.473|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.206,0.311,3.161 Anchored CFrame=-164.933,14.705,40.537|-180,0,-180 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533178894" TextureID="rbxassetid://1533178894" Transparency=0.02
+            MeshPart "MeshPart" Size=0.085,0.05,0.188 Anchored CFrame=-164.892,13.884,41.255|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#750000 CustomPhysicalProperties=0.01,0,0,0,0 Material=Neon RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.493,0.798,0.188 Anchored CFrame=-164.648,15.708,38.337|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533192367" TextureID="rbxassetid://1533192367"
+            Part "Part" Size=0.05,0.22,0.88 Anchored BottomSurface=Smooth CFrame=-164.115,15.359,42.094 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=12 {
+                    Script "Script" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FR/Door/Part/ClickDetector/Script.luau"
+                }
+                Sound "DoorClose" AudioContent="http://www.roblox.com/asset/?id=142897445" SoundId="http://www.roblox.com/asset/?id=142897445"
+                Sound "DoorOpen" AudioContent="http://www.roblox.com/asset/?id=142897419" SoundId="http://www.roblox.com/asset/?id=142897419"
+            }
+            Part "SS" Size=0.2,0.4,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-164.08,14.725,37.617|73.26,58.525,-160.575 CanCollide=false Color=#0D69AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "WD" Size=0.2,0.2,0.2 CFrame=-171.398,13.435,40.319|-180,0,-180 CanCollide=false Color=#750000 Transparency=1
+        }
+        Model "Window" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/FR/Window/Body.luau"
+            Part "SS" Size=0.2,0.2,0.2 CFrame=-171.398,13.435,40.319|-180,0,-180 CanCollide=false Color=#750000 Transparency=1
+            MeshPart "window" Size=1.026,1.348,3.927 Anchored CFrame=-164.932,15.99,40.335|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+            MeshPart "window" Size=1.026,1.348,3.927 Anchored CFrame=-164.932,15.99,40.335|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.4
+        }
+    }
+    Model "HK" {
+        Model "Door" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/HK/Door/Body.luau"
+            Part "H" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.883,14.596,32.286|-177.039,-90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=12 {
+                    Script "Script" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/HK/Door/H/ClickDetector/Script.luau"
+                }
+                Sound "DoorClose" AudioContent="http://www.roblox.com/asset/?id=142897445" SoundId="http://www.roblox.com/asset/?id=142897445"
+                Sound "DoorOpen" AudioContent="http://www.roblox.com/asset/?id=142897419" SoundId="http://www.roblox.com/asset/?id=142897419"
+            }
+            MeshPart "MeshPart" Size=4.069,0.989,2.86 Anchored CFrame=-167.915,14.917,33.904|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=4.595,0.808,2.683 Anchored CFrame=-167.915,14.892,33.786|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.47,1.1,3.42 Anchored CFrame=-167.915,15.043,33.892|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+            Part "SS" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.897,15.486,35.535|0,90,0 CanCollide=false Color=#750000 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        }
+    }
+    Model "RRE" {
+        Model "Trunk" {
+            Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/RRE/Trunk/Body.luau"
+            Part "H" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.884,15.897,49.276|-177.039,-90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=12 {
+                    Script "Script" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/RRE/Trunk/H/ClickDetector/Script.luau"
+                }
+                Sound "DoorClose" AudioContent="http://www.roblox.com/asset/?id=189965801" SoundId="http://www.roblox.com/asset/?id=189965801" Volume=1
+                Sound "DoorOpen" AudioContent="rbxassetid://189965788" SoundId="rbxassetid://189965788" Volume=1
+            }
+            Model "Parts" {
+                MeshPart "MeshPart" Size=6.016,1.152,6.094 Anchored CFrame=-167.915,16.334,46.804|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.523,0.472,3.381 Anchored CFrame=-167.915,16.417,46.286|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise Transparency=0.3
+                MeshPart "MeshPart" Size=6.016,1.143,6.09 Anchored CFrame=-167.915,16.342,46.806|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+                MeshPart "MeshPart" Size=0.05,0.207,0.128 Anchored CFrame=-167.908,15.727,49.528|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#9FA1AC CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            }
+            Part "SS" Size=0.359,0.359,0.359 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.914,16.813,43.966|180,90,0 CanCollide=false Color=#0D69AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        }
+    }
+    Model "SW" {
+        Script "Body" @src="Scripts/Workspace/Monster Truck AC6.43S/Misc/SW/Body.luau"
+        MeshPart "MeshPart" Size=0.143,0.159,0.068 Anchored CFrame=-169.457,15.287,39.579|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533857161" TextureID="rbxassetid://1533857161"
+        MeshPart "MeshPart" Size=0.105,0.055,0.05 Anchored CFrame=-169.457,14.979,39.675|-180,0,-180 CanCollide=false CollisionFidelity=Hull CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533778866" TextureID="rbxassetid://1533778866" Transparency=0.02
+        MeshPart "MeshPart" Size=1.309,1.467,0.558 Anchored CFrame=-169.457,15.296,39.511|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1532996173" TextureID="rbxassetid://1532996173"
+        MeshPart "MeshPart" Size=1.575,0.95,0.402 Anchored CFrame=-169.457,15.328,39.505|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#C4281C CustomPhysicalProperties=0.01,0,0,0,0 Material=Neon RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.302,1.216,0.394 Anchored CFrame=-169.457,15.293,39.511|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533862015" TextureID="rbxassetid://1533862015"
+        MeshPart "MeshPart" Size=1.088,0.132,0.088 Anchored CFrame=-169.458,15.206,39.552|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533178894" TextureID="rbxassetid://1533178894" Transparency=0.02
+        MeshPart "MeshPart" Size=1.155,0.81,0.577 Anchored CFrame=-169.457,15.086,39.316|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.224,0.742,0.604 Anchored CFrame=-169.457,14.935,39.486|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#C4281C CustomPhysicalProperties=0.01,0,0,0,0 Material=Fabric RenderFidelity=Precise
+        Part "SS" Size=0.2,0.2,0.2 Anchored CFrame=-169.457,15.24,39.511|-21.273,0.001,-0.002 CanCollide=false Color=#970000 Transparency=1
+    }
+    Model "Spoiler" {
+        Model "A" {
+            Part "A1" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.894,13.922,51.759|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "A2" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.894,14.665,49.902|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "A3" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.894,13.922,51.759|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        }
+        Model "B" {
+            UnionOperation "B" Size=0.566,0.072,2.342 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.884,15.736,51.74|-157.087,90,0 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 $_geo="2e6fcd910e32e428"
+            Part "B1" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,15.662,51.925|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "B2" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,14.362,51.405|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "B3" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,15.662,51.925|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        }
+        Model "Base" {
+            UnionOperation "Union" Size=0.184,1.693,0.018 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-169.006,14.829,51.549|-157.087,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 UsePartColor $_geo="2a380fe5d238cf69"
+        }
+        Model "C" {
+            UnionOperation "C" Size=0.47,2.305,0.072 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.884,15.596,51.611|112.913,0,90 CanCollide=false Color=#5B5D69 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 $_geo="28ae719aa34a1ed9"
+            Part "C1" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,15.622,51.645|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "C2" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,14.322,51.125|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+            Part "C3" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.885,15.622,51.645|-158.192,90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        }
+        Part "D" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.884,15.897,49.276|-177.039,-90,0 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        Model "Wing" {
+            MeshPart " Brake" Size=2.199,0.05,0.169 Anchored CFrame=-167.914,15.714,50.565|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.208,0.062,0.175 Anchored CFrame=-167.914,15.709,50.57|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.9
+            MeshPart "MeshPart" Size=6.948,0.405,1.465 Anchored CFrame=-167.915,15.817,49.927|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise TextureContent="rbxassetid://1372638522" TextureID="rbxassetid://1372638522"
+            MeshPart "MeshPart" Size=2.641,0.438,0.827 Anchored CFrame=-167.915,15.537,50.242|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.207,0.078,0.497 Anchored CFrame=-167.914,15.717,50.399|-180,0,-180 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1533337923" TextureID="rbxassetid://1533337923"
+            UnionOperation "Union" Size=0.079,2.355,0.407 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-167.884,15.699,51.429|112.913,0,90 CanCollide=false Color=#5B5D69 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 $_geo="6748c51b2d4abab8"
+        }
+    }
+}
+Model "Wheels" {
+    Part "FL" Size=9,9,9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-174.997,7.503,32.406|90,0.001,90 Color=#111111 CustomPhysicalProperties=0.1,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/FL/Parts/CCW LM5T/Union" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-173.476,7.503,32.405|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-173.476,7.503,32.405|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-173.476,7.503,32.405|-0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-173.476,7.503,32.405|-0.031,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-176.496,7.503,32.405|179.969,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-176.496,7.503,32.405|179.969,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-176.496,7.503,32.405|-0.03,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-176.496,7.503,32.405|179.969,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/FL/Parts/CCW LM5T~3/Union" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-175.516,7.503,32.405|-0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-175.516,7.503,32.405|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-175.516,7.503,32.405|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-175.516,7.503,32.405|-0.031,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Part "Tire" Size=7.7,7.7,7.7 Anchored BottomSurface=Smooth CFrame=-174.996,7.503,32.405|179.973,-0.023,179.998 CanCollide=false Color=#111111 CustomPhysicalProperties=0.5,0.4,0,1,1 Material=Sand Shape=Ball TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://434291938" MeshId="rbxassetid://434291938" MeshType=FileMesh Scale=6,6,6
+            }
+        }
+        Model "SuspensionFixed"
+        Model "WheelFixed"
+    }
+    Part "FR" Size=9,9,9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-161.006,7.503,32.406|90,0.001,-90 Color=#111111 CustomPhysicalProperties=0.1,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/FR/Parts/CCW LM5T/MeshPart~2" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-160.585,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-160.585,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-160.585,7.503,32.405|0.033,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-160.585,7.503,32.405|-179.967,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/FR/Parts/CCW LM5T~2/MeshPart~2" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-162.645,7.503,32.405|0.033,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/FR/Parts/CCW LM5T~3/MeshPart~2" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-162.645,7.503,32.405|0.033,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-162.645,7.503,32.405|-179.967,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-159.505,7.503,32.405|0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-159.505,7.503,32.405|0.033,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-159.505,7.503,32.405|0.033,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-159.505,7.503,32.405|0.033,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Part "Tire" Size=7.7,7.7,7.7 Anchored BottomSurface=Smooth CFrame=-161.005,7.503,32.405|0.029,0.023,-0.002 CanCollide=false Color=#111111 CustomPhysicalProperties=0.5,0.4,0,1,1 Material=Sand Shape=Ball TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://434291938" MeshId="rbxassetid://434291938" MeshType=FileMesh Scale=6,6,6
+            }
+        }
+        Model "SuspensionFixed"
+        Model "WheelFixed"
+    }
+    Part "RL" Size=9,9,9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-174.997,7.503,47.59|90,0.001,90 Color=#111111 CustomPhysicalProperties=0.1,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/RL/Parts/CCW LM5T/Union" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-173.416,7.502,47.59|-0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-173.416,7.502,47.59|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-173.416,7.502,47.59|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-173.416,7.502,47.59|-0.031,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-176.496,7.502,47.59|179.969,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-176.496,7.502,47.59|-0.03,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-176.496,7.502,47.59|179.969,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-176.496,7.502,47.59|179.969,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/RL/Parts/CCW LM5T~3/Union" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-175.196,7.502,47.59|-0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-175.196,7.502,47.59|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-175.196,7.502,47.59|-0.031,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-175.196,7.502,47.59|-0.031,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Part "Tire" Size=7.7,7.7,7.7 Anchored BottomSurface=Smooth CFrame=-174.996,7.502,47.59|179.973,-0.023,179.998 CanCollide=false Color=#111111 CustomPhysicalProperties=0.5,0.4,0,1,1 Material=Sand Shape=Ball TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://434291938" MeshId="rbxassetid://434291938" MeshType=FileMesh Scale=6,6,6
+            }
+        }
+        Model "SuspensionFixed"
+        Model "WheelFixed"
+    }
+    Part "RR" Size=9,9,9 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-161.006,7.503,47.59|90,0.001,-90 Color=#111111 CustomPhysicalProperties=0.1,1.5,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.5,1
+        Model "Parts" {
+            Model "CCW LM5T" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-159.505,7.502,47.59|0.033,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-159.505,7.502,47.59|0.032,90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-159.505,7.502,47.59|0.033,0.023,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-159.505,7.502,47.59|0.033,0.023,90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/RR/Parts/CCW LM5T~2/MeshPart~2" {
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-161.035,7.502,47.59|-179.967,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-161.035,7.502,47.59|-179.967,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-161.035,7.502,47.59|0.033,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-161.035,7.502,47.59|-179.967,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Model "CCW LM5T" PrimaryPart=@"Workspace/Monster Truck AC6.43S/Wheels/RR/Parts/CCW LM5T~3/MeshPart~2" {
+                MeshPart "MeshPart" Size=3.738,3.746,0.612 Anchored CFrame=-162.455,7.502,47.59|0.033,-90,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.455,7.502,47.59|-179.967,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=3.289,4.088,4.087 Anchored CFrame=-162.455,7.502,47.59|-179.967,-0.023,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise
+                UnionOperation "Union" Size=4.178,0.121,4.178 Anchored CFrame=-162.455,7.502,47.59|-179.967,-0.023,-90 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.6 RenderFidelity=Precise UsePartColor $_geo="affe26f01e5a6870"
+            }
+            Part "Tire" Size=9,9,9 Anchored BottomSurface=Smooth CFrame=-161.005,7.502,47.59|0.029,0.023,-0.002 CanCollide=false Color=#111111 CustomPhysicalProperties=0.5,0.4,0,1,1 Material=Sand Shape=Ball TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://434291938" MeshId="rbxassetid://434291938" MeshType=FileMesh Scale=6,6,6
+            }
+        }
+        Model "SuspensionFixed"
+        Model "WheelFixed"
+    }
+}

@@ -1,0 +1,631 @@
+Model "BilliardsTable" PrimaryPart=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Base" {
+    UnionOperation "Base" Size=7.497,1.315,13.814 Anchored CFrame=-444.889,6.115,-967.41|-180,0.008,0 Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="98f97dd7be93392e"
+    Model "BilliardStick" PrimaryPart=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Handle" {
+        UnionOperation "Handle" Size=0.194,2.664,0.194 Anchored CFrame=-447.44,7.036,-962.808|-90.831,-1.026,-15.017 Color=#C4281C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="ca0fbfc3c9d25818" {
+            Weld "Weld" C0=6.016,-11.633,-7.378|-87.376,-59.974,-177.589 C1=6.016,-13.704,-7.378|-87.376,-59.974,-177.589 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Handle" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~4"
+        }
+        UnionOperation "Union" Size=0.179,0.09,0.179 Anchored CFrame=-447.839,7.051,-961.319|-90.831,-1.026,-15.017 Color=#1B2A35 RenderFidelity=Precise $_geo="f2f0a14c1c3f5e64" {
+            Weld "Weld" C0=6.016,-10.091,-7.378|-87.376,-59.974,-177.589 C1=6.016,-11.633,-7.378|-87.376,-59.974,-177.589 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Handle"
+        }
+        UnionOperation "Union" Size=0.194,2.692,0.194 Anchored CFrame=-447.438,7.036,-962.816|-90.831,-1.026,-15.017 Color=#E7E7EC Material=Marble RenderFidelity=Precise $_geo="045bf12b9369be10" {
+            Weld "Weld" C0=6.016,-11.642,-7.378|-87.376,-59.974,-177.589 C1=6.016,-10.091,-7.378|-87.376,-59.974,-177.589 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union"
+        }
+        UnionOperation "Union" Size=4.06,0.158,0.158 Anchored CFrame=-446.562,7.005,-966.081|-90.831,-1.026,-105.017 Color=#D7C59A Material=Wood RenderFidelity=Precise UsePartColor $_geo="b2d0ad467f0c071b" {
+            Weld "Weld" C0=15.023,6.016,-7.378|88.484,-29.991,-0.62 C1=6.016,-17.319,-7.378|-87.376,-59.974,-177.589 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~3" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~5"
+        }
+        UnionOperation "Union" Size=0.197,7.178,0.197 Anchored CFrame=-446.904,7.017,-964.807|-90.831,-1.026,-15.017 Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="c541e7c13ac11758" {
+            Weld "Weld" C0=6.016,-13.704,-7.378|-87.376,-59.974,-177.589 C1=15.023,6.016,-7.378|88.484,-29.991,-0.62 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~4" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~3"
+        }
+        UnionOperation "Union" Size=0.101,0.065,0.101 Anchored CFrame=-445.967,6.983,-968.299|-90.831,-1.026,-15.017 Color=#A05F35 Material=Wood RenderFidelity=Precise $_geo="46f672e5bfbe8972" {
+            Weld "Weld" C0=6.016,-17.319,-7.378|-87.376,-59.974,-177.589 C1=6.017,-11.467,-7.378|-87.376,-59.974,-177.589 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~5" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/BilliardStick/Union~6"
+        }
+        UnionOperation "Union" Size=0.188,1.221,0.188 Anchored CFrame=-447.483,7.038,-962.647|-90.831,-1.026,-15.017 Color=#5B5D69 Material=Slate RenderFidelity=Precise Transparency=0.14 UsePartColor $_geo="e19794fad400f55b"
+    }
+    Model "Diamonds" {
+        UnionOperation "Diamonds" Size=15.078,0.05,7.861 Anchored CFrame=-444.891,7.081,-967.416|0,90,0 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=0.39 $_geo="ede34c6edf4cc46d" {
+            Weld "Weld" C0=0.948,-3.359,-1.388|-180,0,-180 C1=0.956,-2.394,-1.398|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Diamonds/Diamonds" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Union"
+        }
+        UnionOperation "Diamonds" Size=15.167,0.05,7.95 Anchored CFrame=-444.891,7.079,-967.417|0,90,0 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise $_geo="18c2ab7eaf442800" {
+            Weld "Weld" C0=0.948,-3.357,-1.388|-180,0,-180 C1=0.948,-3.359,-1.388|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Diamonds/Diamonds~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Diamonds/Diamonds"
+        }
+    }
+    Model "Felt" {
+        UnionOperation "Felt" Size=14.501,0.132,7.251 Anchored CFrame=-444.897,6.838,-967.408|0,90,0 Color=#6225D1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="191d6c5f2674e109" {
+            Weld "Weld" C0=0.956,-3.117,-1.382|-180,0,-180 C1=0.946,3.275,-2.163|0,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~3"
+        }
+        UnionOperation "Felt" Size=13.672,0.191,0.161 Anchored CFrame=-441.351,6.996,-967.402|-180,90,0 Color=#6225D1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="fcbee61e0ed1f451" {
+            Weld "Weld" C0=-0.961,3.275,-4.928|-180,0,0 C1=0.956,-3.117,-1.382|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt"
+        }
+        UnionOperation "Felt" Size=13.671,0.191,0.158 Anchored CFrame=-448.442,6.996,-967.419|-180,-90,0 Color=#6225D1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="df611fc3e57eb40b" {
+            Weld "Weld" C0=0.946,3.275,-2.163|0,0,-180 C1=1.374,3.275,-8.119|180,90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~3" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~5"
+        }
+        UnionOperation "Felt" Size=6.423,0.191,0.174 Anchored CFrame=-444.888,6.996,-974.572|-180,0.008,0 Color=#6225D1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="e5eb3057afa148a4" {
+            Weld "Weld" C0=-1.39,3.275,-6.208|-180,-90,0 C1=-0.961,3.275,-4.928|-180,0,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~4" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~2"
+        }
+        UnionOperation "Felt" Size=6.43,0.191,0.174 Anchored CFrame=-444.906,6.996,-960.245|0,-0.008,-180 Color=#6225D1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="38ea6866d798c984" {
+            Weld "Weld" C0=1.374,3.275,-8.119|180,90,0 C1=0.948,-3.357,-1.388|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~5" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Diamonds/Diamonds~2"
+        }
+    }
+    Model "Legs" {
+        UnionOperation "Leg" Size=0.802,1.67,0.797 Anchored CFrame=-442.391,4.556,-972.632|0,-0.008,0 Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="e8796d80d45c4d5d" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=3.872,-0.835,24.497|-90,0,-89.992 Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg"
+            Weld "Weld" C0=-3.887,-0.835,4.268|0,-90,0 C1=6.205,-1.703,-3.889|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~5"
+        }
+        UnionOperation "Leg" Size=0.934,0.066,0.934 Anchored CFrame=-442.389,5.425,-972.636|0,90,0 CanCollide=false Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="1ad3e0904c789602" {
+            Weld "Weld" C0=-4.272,-1.703,-3.889|-180,0,-180 C1=-1.39,3.275,-6.208|-180,-90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Felt/Felt~4"
+        }
+        UnionOperation "Leg" Size=0.802,1.67,0.797 Anchored CFrame=-442.393,4.556,-962.159|0,-0.008,0 Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="e8796d80d45c4d5d" {
+            Weld "Weld" C0=-3.887,-0.835,-6.205|0,-90,0 C1=-4.272,-1.703,1.078|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~3" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~8"
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=3.872,-0.835,14.025|-90,0,-89.992 Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~3"
+        }
+        UnionOperation "Leg" Size=0.934,0.066,0.934 Anchored CFrame=-447.358,5.425,-962.16|0,90,0 CanCollide=false Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="1ad3e0904c789602" {
+            Weld "Weld" C0=6.205,-1.703,1.078|-180,0,-180 C1=-3.887,-0.835,4.268|0,-90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~4" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg"
+        }
+        UnionOperation "Leg" Size=0.934,0.066,0.934 Anchored CFrame=-442.39,5.425,-962.159|0,90,0 CanCollide=false Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="1ad3e0904c789602" {
+            Weld "Weld" C0=6.205,-1.703,-3.889|-180,0,-180 C1=-4.272,-1.703,-3.889|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~5" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~2"
+        }
+        UnionOperation "Leg" Size=0.802,1.67,0.797 Anchored CFrame=-447.357,4.556,-962.16|-180,0.008,180 Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="e8796d80d45c4d5d" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=-8.836,-0.835,-14.025|-90,0,90.008 Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~6"
+            Weld "Weld" C0=-1.078,-0.835,6.205|0,90,0 C1=-3.887,-0.835,-6.205|0,-90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~6" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~3"
+        }
+        UnionOperation "Leg" Size=0.802,1.67,0.797 Anchored CFrame=-447.356,4.556,-972.633|-180,0.008,180 Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="e8796d80d45c4d5d" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=-8.836,-0.835,-24.497|-90,0,90.008 Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~7"
+            Weld "Weld" C0=-1.078,-0.835,-4.268|0,90,0 C1=-1.078,-0.835,6.205|0,90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~7" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~6"
+        }
+        UnionOperation "Leg" Size=0.934,0.066,0.934 Anchored CFrame=-447.356,5.425,-972.637|0,90,0 CanCollide=false Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="1ad3e0904c789602" {
+            Weld "Weld" C0=-4.272,-1.703,1.078|-180,0,-180 C1=6.205,-1.703,1.078|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~8" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~4"
+        }
+    }
+    Model "Pockets" {
+        UnionOperation "Pockets" Size=0.723,0.526,0.7 Anchored CFrame=-441.287,6.852,-960.165|0,44.992,0 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb63e76db9950afc" {
+            Weld "Weld" C0=2.267,-3.131,-9.328|-180,-45,-180 C1=-8.122,-2.626,-2.167 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~9"
+        }
+        UnionOperation "Pockets" Size=0.594,0.526,0.723 Anchored CFrame=-448.808,6.852,-967.446|-180,0.008,180 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb12992fc194556d" {
+            Weld "Weld" C0=-2.529,-3.131,0.919|0,90,0 C1=-0.935,-2.626,-2.362 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~3"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-448.641,6.347,-967.43|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=-0.935,-2.626,-2.362 C1=6.215,-2.626,-2.167 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~3" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~7"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-441.342,6.347,-974.579|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=6.215,-2.626,4.936 C1=-0.935,-2.626,5.125 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~4" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~6"
+        }
+        UnionOperation "Pockets" Size=0.594,0.526,0.723 Anchored CFrame=-440.996,6.852,-967.411|0,-0.008,0 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb12992fc194556d" {
+            Weld "Weld" C0=-5.283,-3.131,-0.953|0,-90,0 C1=6.215,-2.626,4.936 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~5" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~4"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-441.154,6.347,-967.429|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=-0.935,-2.626,5.125 C1=-8.122,-2.626,4.936 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~6" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~10"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-448.445,6.347,-974.58|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=6.215,-2.626,-2.167 C1=-4.21,-3.131,-7.377|0,-45,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~7" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~11"
+        }
+        UnionOperation "Pockets" Size=0.723,0.526,0.7 Anchored CFrame=-448.518,6.852,-974.656|180,-44.992,180 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb63e76db9950afc" {
+            Weld "Weld" C0=2.864,-3.131,-6.033|0,45,0 C1=2.267,-3.131,-9.328|-180,-45,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~8" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-448.447,6.347,-960.243|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=-8.122,-2.626,-2.167 C1=-1.078,-0.835,-4.268|0,90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~9" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Legs/Leg~7"
+        }
+        UnionOperation "Pockets" Size=0.738,1.088,0.747 Anchored CFrame=-441.344,6.347,-960.242|0,-90,0 Color=#6A3909 RenderFidelity=Precise UsePartColor $_geo="54d291edf82b4cb4" {
+            Weld "Weld" C0=-8.122,-2.626,4.936 C1=-2.529,-3.131,0.919|0,90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~10" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~2"
+        }
+        UnionOperation "Pockets" Size=0.723,0.526,0.7 Anchored CFrame=-448.52,6.852,-960.172|0,-45.008,0 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb63e76db9950afc" {
+            Weld "Weld" C0=-4.21,-3.131,-7.377|0,-45,0 C1=2.864,-3.131,-6.033|0,45,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~11" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~8"
+        }
+        UnionOperation "Pockets" Size=0.723,0.526,0.7 Anchored CFrame=-441.28,6.852,-974.644|-180,45.008,180 Color=#6A3909 Material=Metal RenderFidelity=Precise $_geo="bb63e76db9950afc" {
+            Weld "Weld" C0=-0.907,-3.131,-7.975|-180,45,-180 C1=-5.283,-3.131,-0.953|0,-90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~12" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~5"
+        }
+    }
+    Model "PoolBalls" {
+        UnionOperation "1" Size=0.276,0.276,0.276 Anchored CFrame=-444.306,7.042,-963.449|-180,0.008,180 Color=#F8D96D Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="1cbc8ce55dfb0e1e" {
+            Decal "Decal" Face=Top Texture="rbxassetid://345971978" TextureContent="rbxassetid://345971978"
+        }
+        UnionOperation "10" Size=0.276,0.276,0.276 Anchored CFrame=-444.312,7.042,-962.431|90,0,-179.992 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Back Texture="rbxassetid://346004052" TextureContent="rbxassetid://346004052"
+            Decal "Decal" Texture="rbxassetid://346003646" TextureContent="rbxassetid://346003646"
+            Decal "Decal" Face=Right Texture="rbxassetid://346004052" TextureContent="rbxassetid://346004052"
+            Decal "Decal" Face=Left Texture="rbxassetid://346004052" TextureContent="rbxassetid://346004052"
+        }
+        UnionOperation "11" Size=0.276,0.276,0.276 Anchored CFrame=-444.164,7.042,-963.198|90,0,-179.992 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Back Texture="rbxassetid://346006647" TextureContent="rbxassetid://346006647"
+            Decal "Decal" Texture="rbxassetid://346006630" TextureContent="rbxassetid://346006630"
+            Decal "Decal" Face=Right Texture="rbxassetid://346006647" TextureContent="rbxassetid://346006647"
+            Decal "Decal" Texture="rbxassetid://346006630" TextureContent="rbxassetid://346006630"
+            Decal "Decal" Face=Left Texture="rbxassetid://346006647" TextureContent="rbxassetid://346006647"
+        }
+        UnionOperation "12" Size=0.276,0.276,0.276 Anchored CFrame=-444.879,7.042,-962.438|90,0,-179.992 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Left Texture="rbxassetid://346007386" TextureContent="rbxassetid://346007386"
+            Decal "Decal" Texture="rbxassetid://346007290" TextureContent="rbxassetid://346007290"
+            Decal "Decal" Face=Right Texture="rbxassetid://346007386" TextureContent="rbxassetid://346007386"
+            Decal "Decal" Face=Back Texture="rbxassetid://346007386" TextureContent="rbxassetid://346007386"
+        }
+        UnionOperation "13" Size=0.276,0.276,0.276 Anchored CFrame=-443.872,7.042,-962.679|90,0,-179.992 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Left Texture="rbxassetid://346006199" TextureContent="rbxassetid://346006199"
+            Decal "Decal" Texture="rbxassetid://346006193" TextureContent="rbxassetid://346006193"
+            Decal "Decal" Face=Right Texture="rbxassetid://346006199" TextureContent="rbxassetid://346006199"
+            Decal "Decal" Face=Back Texture="rbxassetid://346006199" TextureContent="rbxassetid://346006199"
+        }
+        UnionOperation "14" Size=0.276,0.276,0.276 Anchored CFrame=-444.602,7.042,-962.943|-90,0,-0.008 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise $_geo="e7fe77da8c6d5f1b" {
+            Decal "Decal" Texture="rbxassetid://345998393" TextureContent="rbxassetid://345998393"
+            Decal "Decal" Face=Right Texture="rbxassetid://345998393" TextureContent="rbxassetid://345998393"
+            Decal "Decal" Face=Back Texture="rbxassetid://345997816" TextureContent="rbxassetid://345997816"
+            Decal "Decal" Face=Left Texture="rbxassetid://345998393" TextureContent="rbxassetid://345998393"
+            Decal "Decal" Face=Right Texture="rbxassetid://345998393" TextureContent="rbxassetid://345998393"
+        }
+        UnionOperation "15" Size=0.276,0.276,0.276 Anchored CFrame=-444.17,7.042,-962.681|90,0,-179.992 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Back Texture="rbxassetid://346005536" TextureContent="rbxassetid://346005536"
+            Decal "Decal" Face=Right Texture="rbxassetid://346005536" TextureContent="rbxassetid://346005536"
+            Decal "Decal" Face=Left Texture="rbxassetid://346005536" TextureContent="rbxassetid://346005536"
+            Decal "Decal" Texture="rbxassetid://346005531" TextureContent="rbxassetid://346005531"
+        }
+        UnionOperation "2" Size=0.276,0.276,0.276 Anchored CFrame=-444.034,7.042,-962.438|-180,0.008,180 Color=#2154B9 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346001651" TextureContent="rbxassetid://346001651"
+        }
+        UnionOperation "3" Size=0.276,0.276,0.276 Anchored CFrame=-444.46,7.042,-963.204|-180,0.008,180 Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346006390" TextureContent="rbxassetid://346006390"
+        }
+        UnionOperation "4" Size=0.276,0.276,0.276 Anchored CFrame=-444.463,7.042,-962.685|-180,0.008,180 Color=#7B007B Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346007056" TextureContent="rbxassetid://346007056"
+        }
+        UnionOperation "5" Size=0.276,0.276,0.276 Anchored CFrame=-444.593,7.042,-962.435|-180,0.008,180 Color=#FFAF00 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346007714" TextureContent="rbxassetid://346007714"
+        }
+        UnionOperation "6" Size=0.276,0.276,0.276 Anchored CFrame=-444.018,7.049,-962.944|-180,0.008,180 Color=#348E40 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346002113" TextureContent="rbxassetid://346002113"
+        }
+        UnionOperation "7" Size=0.276,0.276,0.276 Anchored CFrame=-443.75,7.042,-962.431|-180,0.008,180 Color=#750000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346004940" TextureContent="rbxassetid://346004940"
+        }
+        UnionOperation "8" Size=0.276,0.276,0.276 Anchored CFrame=-444.306,7.042,-962.949|-180,0.008,180 Color=#111111 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="56ce7966edfd0eb1" {
+            Decal "Decal" Face=Top Texture="rbxassetid://346001804" TextureContent="rbxassetid://346001804"
+        }
+        UnionOperation "9" Size=0.276,0.276,0.276 Anchored CFrame=-444.752,7.055,-962.692|-90,90,0 Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise $_geo="e7fe77da8c6d5f1b" {
+            Decal "Decal" Texture="rbxassetid://409428678" TextureContent="rbxassetid://409428678"
+            Decal "Decal" Face=Right Texture="rbxassetid://409428678" TextureContent="rbxassetid://409428678"
+            Decal "Decal" Face=Left Texture="rbxassetid://402697873" TextureContent="rbxassetid://402697873"
+            Decal "Decal" Face=Back Texture="rbxassetid://409428678" TextureContent="rbxassetid://409428678"
+        }
+        UnionOperation "Cue" Size=0.276,0.276,0.276 Anchored CFrame=-445.433,7.042,-966.08|-180,0.008,180 Color=#E7E7EC Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="1cbc8ce55dfb0e1e"
+        UnionOperation "Rack" Size=1.509,0.174,1.683 Anchored CFrame=-444.313,6.991,-962.945|0,-90,0 Color=#6A3909 Material=Wood RenderFidelity=Precise UsePartColor $_geo="789dac634c4d80aa"
+    }
+    Model "Rails" {
+        UnionOperation "Rails" Size=15.113,0.427,7.859 Anchored CFrame=-444.897,6.746,-967.407|0,90,0 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="6c604ad90d88247b" {
+            Weld "Weld" C0=0.957,-3.025,-1.382|-180,0,-180 C1=6.55,-3.305,1.378 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~5"
+        }
+        UnionOperation "Rails" Size=14.397,0.132,0.513 Anchored CFrame=-441.013,7.026,-967.416|0,90,0 Color=#111111 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise UsePartColor $_geo="98766d09a30343cf" {
+            Weld "Weld" C0=0.948,-3.305,-5.267|-180,0,-180 C1=8.466,-3.305,-1.378|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~2" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~3"
+        }
+        UnionOperation "Rails" Size=0.513,0.132,7.15 Anchored CFrame=-444.903,7.026,-959.898|0,90,0 Color=#111111 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise UsePartColor $_geo="be495556b1d6ab5d" {
+            Weld "Weld" C0=8.466,-3.305,-1.378|-180,0,-180 C1=-0.907,-3.131,-7.975|-180,45,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~3" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Pockets/Pockets~12"
+        }
+        UnionOperation "Rails" Size=14.432,0.132,0.513 Anchored CFrame=-448.779,7.026,-967.447|0,90,0 Color=#111111 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise UsePartColor $_geo="3ac265ef383793f8" {
+            Weld "Weld" C0=0.918,-3.305,2.5|-180,0,180 C1=0.957,-3.025,-1.382|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~4" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails"
+        }
+        UnionOperation "Rails" Size=0.513,0.132,7.15 Anchored CFrame=-444.901,7.026,-974.915|0,-90,0 Color=#111111 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise UsePartColor $_geo="be495556b1d6ab5d" {
+            Weld "Weld" C0=6.55,-3.305,1.378 C1=0.948,-3.305,-5.267|-180,0,-180 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~5" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Rails/Rails~2"
+        }
+    }
+    UnionOperation "Union" Size=11.18,1.315,5.636 Anchored CFrame=-444.881,6.115,-967.408|0,90,0 CanCollide=false Color=#6A3909 Material=SmoothPlastic Reflectance=0.14 RenderFidelity=Precise $_geo="115a26d392b02ad4" {
+        Weld "Weld" C0=0.956,-2.394,-1.398|-180,0,-180 C1=-1.39,2.394,0.954|-180,-90,0 Part0=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Union" Part1=@"Workspace/Model~40/Furniture/Laundry Room/BilliardsTable/Base"
+    }
+}
+Model "Model" {
+    Model "#NBK || iPhone" {
+        Part "Brick" Size=0.2,0.25,0.53 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.197,8.541,-948.759|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,0.5,1
+        }
+        Part "Brick" Size=0.2,0.8,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.777,8.541,-949.148|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,1,0.1
+        }
+        Part "Brick" Size=0.2,0.8,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.376,8.541,-949.309|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,1,0.1
+        }
+        Part "Brick" Size=0.2,0.25,0.53 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.949,8.541,-949.686|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,0.5,1
+        }
+        Part "Brick" Size=0.2,0.8,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.077,8.541,-949.228|-179.994,-75,90.001 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.15,1,1
+        }
+        Part "Brick" Size=0.2,0.2,0.64 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.96,8.541,-949.663|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,0.5,1
+        }
+        Part "Brick" Size=0.2,0.2,0.64 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.193,8.541,-948.794|-179.995,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.2,0.5,1
+        }
+        Part "Brick" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.196,8.552,-948.784|-179.995,-75,90.001 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.1,0.08,0.5
+        }
+        Part "Brick" Size=0.2,0.8,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.077,8.53,-949.228|-179.994,-75,90.001 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=0.09,1,1
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.689,8.541,-949.632|-179.994,-75,-179.999 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.2,0.5
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.955,8.562,-949.682|-179.994,-75,-179.999 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.05,0.45
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.465,8.541,-948.818|-179.994,-75,-179.999 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.2,0.5
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.211,8.541,-949.772|-179.994,-75,-179.999 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.2,0.5
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.955,8.561,-949.682|-179.994,-75,-179.999 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.05,0.5
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.099,8.558,-948.758|-179.994,-75,-179.999 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.05,0.1
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-450.944,8.541,-948.68|-179.994,-75,-179.999 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.2,0.5
+        }
+        Part "Cylinder" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-451.423,8.53,-948.824|-179.994,-75,-179.999 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1,0.1,0.25
+        }
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.412,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.412,7.321,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.392,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.392,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.802,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.802,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.462,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.462,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.392,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.392,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.492,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.492,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.492,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.492,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.832,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.832,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.462,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.462,5.251,-949.475|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.912,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.912,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.912,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.912,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.412,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.412,7.321,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.802,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.802,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Book" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-446.722,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-446.722,9.271,-949.474|178.95,0,180 Color=#69665C Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Model" {
+        Model "Model" {
+            Model "Model" {
+                UnionOperation "Union" Size=0.2,0.056,1.8 Anchored CFrame=-448.111,13.658,-948.898|-79.267,-10.545,-44.007 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="ec50aaed47c4a350"
+                UnionOperation "Union" Size=0.2,0.056,1.8 Anchored CFrame=-447.545,13.658,-948.895|-79.267,10.545,44.006 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="ec50aaed47c4a350"
+                UnionOperation "Union" Size=0.2,0.056,1.8 Anchored CFrame=-448.111,13.658,-949.461|-100.724,-10.545,-135.994 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="ec50aaed47c4a350"
+                UnionOperation "Union" Size=0.2,0.056,1.8 Anchored CFrame=-447.545,13.658,-949.463|-100.724,10.545,135.993 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="ec50aaed47c4a350"
+            }
+            Model "Model" {
+                Model "Model" {
+                    UnionOperation "Union" Size=0.2,0.056,2.2 Anchored CFrame=-447.833,13.828,-948.893|-74.996,0,0 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="18ea148a35508481"
+                    UnionOperation "Union" Size=0.2,0.056,2.2 Anchored CFrame=-447.833,13.828,-949.493|-104.996,0,180 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="18ea148a35508481"
+                }
+                Model "Model" {
+                    UnionOperation "Union" Size=0.2,0.056,2.2 Anchored CFrame=-448.139,13.828,-949.187|-89.996,-15,-90 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="18ea148a35508481"
+                    UnionOperation "Union" Size=0.2,0.056,2.2 Anchored CFrame=-447.539,13.828,-949.187|-89.996,15,90 Color=#7C9C6B Material=SmoothPlastic RenderFidelity=Precise $_geo="18ea148a35508481"
+                }
+            }
+        }
+        Part "Part" Size=1,1,1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-447.833,12.43,-949.143|-179.996,0,180 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Grass RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.99,1,1
+        }
+        Part "Part" Size=1,0.2,1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-447.833,12.03,-949.143|-179.996,0,180 Color=#69665C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1.01,1,1.01
+        }
+        Part "Part" Size=1,0.2,1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-447.833,12.43,-949.143|-179.996,0,180 Color=#69665C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=1.01,1,1.01
+        }
+        UnionOperation "Union" Size=1,1,1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-447.833,12.43,-949.143|-179.996,0,180 Color=#BBB3B2 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="7204b7b868f5927b"
+        UnionOperation "Union" Size=1.01,0.2,1.01 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-447.833,12.85,-949.143|-179.996,0,180 Color=#69665C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="53a4330236fac5da"
+    }
+    Model "Model" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-450.292,5.312,-949.454|178.95,0,170.652 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-450.292,5.311,-949.475|178.95,0,170.652 Color=#BBB3B2 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Model "Model" {
+        Part "Light" Size=0.8,0.343,0.867 Anchored BottomSurface=Smooth CFrame=-449.7,13.888,-950.318|0,54.943,0.003 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic TopSurface=Smooth Transparency=0.7 {
+            CylinderMesh "Mesh" Scale=0.9,0.259,0.9
+            RemoteEvent "ROBLOXInteractionEvent"
+        }
+        Part "Part" Size=0.343,0.356,0.371 Anchored BottomSurface=Smooth CFrame=-449.7,14.555,-950.318|0,54.943,0.003 CanCollide=false CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic Reflectance=0.1 TopSurface=Smooth {
+            CylinderMesh "Mesh" Scale=0.13,1,0.13
+        }
+        Part "Part" Size=0.343,0.356,0.371 Anchored CFrame=-449.701,14.191,-950.317|-179.998,35.055,0 CanCollide=false Color=#F5CD30 Material=SmoothPlastic {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=1376459" MeshId="http://www.roblox.com/asset/?id=1376459" MeshType=FileMesh Scale=0.356,0.356,0.385 TextureContent="http://www.roblox.com/asset/?id=115369680" TextureId="http://www.roblox.com/asset/?id=115369680"
+        }
+        UnionOperation "Part" Size=0.8,0.533,0.867 Anchored CFrame=-449.7,14.111,-950.318|0,54.943,0.003 Color=#F1E7C7 CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="90c9d5646f839a78"
+        UnionOperation "Union" Size=0.053,1.742,0.058 Anchored CFrame=-450.098,14.339,-949.751|-0.006,54.943,-59.977 Color=#A3A2A5 CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise $_geo="05d2f9a8e764fa71"
+        UnionOperation "Union" Size=1.02,2.275,0.867 Anchored CFrame=-450.557,13.026,-949.098|0,54.943,0.003 Color=#A3A2A5 CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise $_geo="1fa4f28c81fdd5c8"
+        UnionOperation "Union" Size=0.05,0.178,0.05 Anchored CFrame=-450.276,14.158,-949.498|-102.367,8.546,55.871 Color=#A3A2A5 CustomPhysicalProperties=0.7,0.3,0,1,1 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise $_geo="aa7656b9a110ed63"
+    }
+    Model "Model" {
+        Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.332,9.182,-949.453|178.95,0,170.652 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.332,9.181,-949.474|178.95,0,170.652 Color=#BBB3B2 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    }
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.202,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-450.702,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-446.682,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.072,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.572,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.572,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.152,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.052,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-449.202,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.072,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.462,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.462,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.752,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-451.152,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-450.782,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.092,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-450.782,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.092,9.272,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-450.702,7.322,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.052,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.122,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-447.752,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-446.682,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    Part "Part" Size=0.32,1.52,1.08 Anchored BottomSurface=Smooth CFrame=-448.122,5.252,-949.454|178.95,0,180 Color=#F2F3F3 Material=SmoothPlastic TopSurface=Smooth
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-450.782,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-450.702,7.321,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-450.702,7.321,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-446.682,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.572,9.271,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.052,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.202,9.271,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.052,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.202,9.271,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.752,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-449.572,9.271,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-446.682,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.072,7.321,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.152,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.072,7.321,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.752,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.2,8.6,2 Anchored CFrame=-451.853,8.02,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="c5c40dbb46ce8ac1" {
+        Weld "Weld" C0=0.35,-0.35,7.2|0,90,0 C1=-13.13,-4.399,-1|0.004,0,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Model/Union~17"
+        Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=-13.33,-4.299,-1|-89.996,0,90 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Model/Union~17"
+    }
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.092,9.271,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-450.782,5.251,-949.475|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=5.2,0.2,2 Anchored CFrame=-449.153,6.42,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="f2c94a842825de9f"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.092,9.271,-949.474|178.95,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.462,9.271,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.122,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=5.2,0.2,2 Anchored CFrame=-449.153,4.42,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="4ff61e4f86797a02"
+    UnionOperation "Union" Size=5.2,0.2,2 Anchored CFrame=-449.153,8.42,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="4ff61e4f86797a02"
+    UnionOperation "Union" Size=5.2,0.2,2 Anchored CFrame=-449.153,10.22,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="f2c94a842825de9f"
+    UnionOperation "Union" Size=5.2,0.2,2 Anchored CFrame=-449.153,11.82,-949.133|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="f2c94a842825de9f"
+    UnionOperation "Union" Size=0.2,8.6,2 Anchored CFrame=-446.453,8.02,-949.134|-179.996,0,180 Color=#F8F8F8 Material=Wood RenderFidelity=Precise UsePartColor $_geo="1603f810a3f990f3" {
+        Weld "Weld" C0=0.35,-0.35,7.2|0,90,0 C1=-7.73,-4.399,-1|0.004,0,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Model/Union~28"
+        Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=-7.93,-4.299,-1|-89.996,0,90 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Model/Union~28"
+    }
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-451.152,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-447.462,9.271,-949.474|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+    UnionOperation "Union" Size=0.4,1.6,1.2 Anchored CFrame=-448.122,5.251,-949.475|178.95,0,180 Color=#B9C4B1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73a1c65c24b06269"
+}
+Model "Washer Dryer Combo" {
+    Model "Dryer" {
+        Model "Model" {
+            Model "Model" {
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-444.522,9.995,-950.808|9.305,0,-180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-444.415,9.953,-950.815|-170.695,0,180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.14,0.216,0.05 Anchored BottomSurface=Smooth CFrame=-444.107,9.981,-950.809|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.647
+                }
+                Part "Part" Size=0.14,0.216,0.05 Anchored BottomSurface=Smooth CFrame=-444.808,9.981,-950.809|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.647
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-444.609,9.931,-950.819|9.305,0,-180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.517,0.065,0.05 Anchored BottomSurface=Smooth CFrame=-444.458,10.055,-950.791|-170.695,0,180 CanCollide=false Color=#36383F Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.862
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-444.328,9.911,-950.822|-170.695,0,180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+            }
+            Part "Part" Size=0.862,0.237,0.05 Anchored BottomSurface=Smooth CFrame=-444.458,9.98,-950.803|-170.695,0,180 CanCollide=false Color=#5B5D69 Material=SmoothPlastic TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=1,1,0.431
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.05,0.28,0.28 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.412,9.851,-950.809|99.001,0,90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Cylinder Scale=0.431,1,1
+            }
+            Part "Part" Size=0.065,0.194,0.194 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.412,9.854,-950.831|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        }
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-444.477,8.725,-949.947|-180,0,-56.002 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.841,0.485,0.05 Anchored BottomSurface=Smooth CFrame=-443.423,9.983,-950.786|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Face=Back Texture="rbxassetid://1060453344" TextureContent="rbxassetid://1060453344"
+            BlockMesh "Mesh" Scale=1,1,0.647
+        }
+        Part "Part" Size=0.065,0.108,0.108 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.046,9.755,-950.818|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-444.684,9.704,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=3.234,1.38,2.587 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.466,4.531,-949.452|-180,0,180 Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-442.374,8.649,-949.947|-180,0,-117.001 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=3.169,0.05,2.544 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.455,5.243,-949.452|-180,0,180 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,0.862,1
+        }
+        Part "Part" Size=0.108,2.587,2.587 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.467,8.062,-948.966|90,-29,-90 Color=#CCCDD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.1 RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.108,2.76,2.76 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.466,8.067,-950.928|-180,90,0 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.8 RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines Transparency=0.6
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-444.21,9.704,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-444.921,9.704,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=0.065,0.108,0.108 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.8,9.755,-950.818|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.647,0.604,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-444.298,8.604,-949.009|-180,0,-56.002 CanCollide=false Color=#696B79 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,1,0.862
+        }
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.466,6.838,-949.947|-180,0,180 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=3.148,1.294,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-443.466,4.531,-948.158|180,0,180 CanCollide=false Color=#E7E7EC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,1,0.862
+            Weld "Weld" C0=0.35,-0.35,7.2|0,90,0 C1=-4.743,-0.91,-0.024 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Dryer/Part~15"
+        }
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-444.447,9.704,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        UnionOperation "Union" Size=3.148,4.829,0.086 Anchored CFrame=-443.466,7.722,-948.136|-180,0,180 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="fafe4a6ff991c0ae"
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-444.975,3.787,-950.637|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.066,-6.452,-2.503|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Dryer/Union~2"
+        }
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-444.975,3.787,-948.266|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.066,-6.452,-0.132|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Dryer/Union~3"
+        }
+        UnionOperation "Union" Size=2.587,4.916,3.234 Anchored CFrame=-443.466,7.722,-949.452|-180,90,0 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="c4c98edad17c155f"
+        UnionOperation "Union" Size=0.647,0.237,0.05 Anchored CFrame=-442.259,9.98,-950.792|-170.695,0,180 Color=#5B5D69 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="ab254d4905f12058"
+        UnionOperation "Union" Size=0.564,1.81,0.148 Anchored CFrame=-442.388,8.045,-951.112|-180,0,180 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="f558ce8352f8821c"
+        UnionOperation "Union" Size=0.216,2.975,2.975 Anchored CFrame=-443.466,8.067,-950.982|-180,90,0 Color=#CACBD1 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise $_geo="dd8eee58740f06c3"
+        UnionOperation "Union" Size=0.216,4.916,3.234 Anchored CFrame=-443.466,7.722,-950.853|-180,90,0 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="0eb6a8f93aba1dac"
+        UnionOperation "Union" Size=2.048,2.76,2.76 Anchored CFrame=-443.466,8.067,-949.85|-180,90,0 Color=#686A71 Material=SmoothPlastic Reflectance=0.4 RenderFidelity=Precise UsePartColor $_geo="fa5bb12b9e55115a"
+        UnionOperation "Union" Size=0.733,2.321,2.32 Anchored CFrame=-443.466,9.815,-950.797|-171,45,-90 Color=#ACAFBA Material=SmoothPlastic RenderFidelity=Precise $_geo="735b0a910d396542"
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-441.957,3.787,-950.637|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.066,-3.434,-2.503|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Dryer/Union~11"
+        }
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-441.957,3.787,-948.266|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.066,-3.434,-0.132|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Dryer/Union~12"
+        }
+    }
+    Model "Washer" {
+        Model "Model" {
+            Model "Model" {
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-441.282,9.929,-950.819|9.305,0,-180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.517,0.065,0.05 Anchored BottomSurface=Smooth CFrame=-441.131,10.053,-950.791|-170.695,0,180 CanCollide=false Color=#36383F Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.862
+                }
+                Part "Part" Size=0.14,0.216,0.05 Anchored BottomSurface=Smooth CFrame=-440.781,9.979,-950.809|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.647
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-441.088,9.951,-950.815|-170.695,0,180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-441.196,9.993,-950.808|9.305,0,-180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+                Part "Part" Size=0.14,0.216,0.05 Anchored BottomSurface=Smooth CFrame=-441.481,9.979,-950.809|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=1,1,0.647
+                }
+                Part "Part" Size=0.05,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-441.002,9.909,-950.822|-170.695,0,180 CanCollide=false Color=#12EED4 Material=Neon TopSurface=Smooth {
+                    BlockMesh "Mesh" Scale=0.862,0.862,0.431
+                }
+            }
+            Part "Part" Size=0.862,0.237,0.05 Anchored BottomSurface=Smooth CFrame=-441.131,9.978,-950.803|-170.695,0,180 CanCollide=false Color=#5B5D69 Material=SmoothPlastic TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=1,1,0.431
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.05,0.28,0.28 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.085,9.849,-950.809|99.001,0,90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Cylinder Scale=0.431,1,1
+            }
+            Part "Part" Size=0.065,0.194,0.194 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.085,9.852,-950.831|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        }
+        Part "Part" Size=0.345,1.25,0.086 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-439.497,7.752,-948.977|-180,0,119 Color=#A7A8AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.5 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.065,0.108,0.108 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-439.719,9.752,-950.818|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.108,1.294,1.294 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.119,8.097,-948.966|90,-29,-90 Color=#A7A8AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.5 RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=3.169,0.05,2.544 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.128,5.24,-949.452|-180,0,180 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,0.862,1
+        }
+        Part "Part" Size=0.345,1.25,0.086 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.107,8.809,-948.977|-180,0,-178.001 Color=#A7A8AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.5 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=3.148,1.294,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.139,4.529,-948.158|180,0,180 CanCollide=false Color=#E7E7EC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,1,0.862
+            Weld "Weld" C0=0.35,-6.55,0.4|0,90,0 C1=-2.216,-0.908,-0.024 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Part~6"
+            Weld "Weld" C0=0.35,-0.35,7.2|0,90,0 C1=-1.416,-0.908,-0.024 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Part~6"
+        }
+        Part "Part" Size=0.668,0.496,0.065 Anchored BottomSurface=Smooth CFrame=-438.964,5.616,-950.803|173,0,180 Color=#9FA1AC TopSurface=Smooth
+        Part "Part" Size=0.841,0.485,0.05 Anchored BottomSurface=Smooth CFrame=-440.096,9.981,-950.786|-170.695,0,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Face=Back Texture="rbxassetid://1060453344" TextureContent="rbxassetid://1060453344"
+            BlockMesh "Mesh" Scale=1,1,0.647
+        }
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-441.15,8.722,-949.947|-180,0,-56.002 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=3.234,1.38,2.587 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.139,4.529,-949.452|180,0,180 Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=2.1,-0.9,-0.2|-180,0,-180 C1=-1.616,-0.908,3.282|0,90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Part~10"
+            Weld "Weld" C0=0.2,-6.6,-0.2|-180,0,-180 C1=-1.616,-0.908,-0.918|0,90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Part~10"
+        }
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-439.048,8.647,-949.947|-180,0,-117.001 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.345,1.25,0.086 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.792,7.755,-948.977|-180,0,63.999 Color=#A7A8AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.5 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.151,0.431,0.431 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.119,8.097,-948.988|90,-29,-90 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.065,0.108,0.108 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.473,9.752,-950.818|99.001,0,90 Color=#DEDFE5 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-440.883,9.701,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=0.129,0.172,1.854 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.139,6.836,-949.947|-180,0,180 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.4 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.108,2.76,2.76 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-440.139,8.065,-950.928|-180,90,0 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.8 RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines Transparency=0.6
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-441.12,9.701,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-441.357,9.701,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        Part "Part" Size=0.151,0.108,0.05 Anchored BottomSurface=Smooth CFrame=-441.595,9.701,-950.849|-170.695,0,180 CanCollide=false Color=#ACAFBA TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.431
+        }
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-441.648,3.785,-950.637|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.064,-3.126,-2.503|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union"
+        }
+        UnionOperation "Union" Size=0.733,2.321,2.32 Anchored CFrame=-440.139,9.813,-950.797|-171,45,-90 Color=#ACAFBA Material=SmoothPlastic RenderFidelity=Precise $_geo="735b0a910d396542"
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-441.648,3.785,-948.266|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.064,-3.126,-0.132|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~3"
+        }
+        UnionOperation "Union" Size=0.216,2.975,2.975 Anchored CFrame=-440.139,8.065,-950.982|-180,90,0 Color=#CACBD1 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise $_geo="dd8eee58740f06c3"
+        UnionOperation "Union" Size=2.587,4.916,3.234 Anchored CFrame=-440.139,7.72,-949.452|-180,90,0 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="c4c98edad17c155f" {
+            Weld "Weld" C0=0.2,-6.6,-0.2|-180,0,-180 C1=0.918,4.099,1.616|180,0,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~5"
+            Weld "Weld" C0=2.1,-0.9,-0.2|-180,0,-180 C1=-3.282,4.099,1.616|180,0,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~5"
+        }
+        UnionOperation "Union" Size=0.647,0.237,0.05 Anchored CFrame=-438.932,9.978,-950.792|-170.695,0,180 Color=#5B5D69 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="ab254d4905f12058"
+        UnionOperation "Union" Size=3.148,4.829,0.086 Anchored CFrame=-440.139,7.72,-948.136|-180,0,180 Color=#E7E7EC Material=Metal RenderFidelity=Precise UsePartColor $_geo="fafe4a6ff991c0ae"
+        UnionOperation "Union" Size=0.216,4.916,3.234 Anchored CFrame=-440.139,7.72,-950.853|-180,90,0 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="0eb6a8f93aba1dac" {
+            Weld "Weld" C0=2.1,-0.9,-0.2|-180,0,-180 C1=-1.881,4.099,1.616|180,0,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~8"
+        }
+        UnionOperation "Union" Size=2.048,2.76,2.76 Anchored CFrame=-440.139,8.065,-949.85|-180,90,0 Color=#686A71 Material=SmoothPlastic Reflectance=0.4 RenderFidelity=Precise UsePartColor $_geo="fa5bb12b9e55115a"
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-438.63,3.785,-948.266|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.064,-0.107,-0.132|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~10"
+            Weld "Weld" C0=0.2,-6.6,-0.2|-180,0,-180 C1=0.164,-0.107,0.268|-90,0,90 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~10"
+        }
+        UnionOperation "Union" Size=0.108,0.216,0.216 Anchored CFrame=-438.63,3.785,-950.637|-180,0,90 Color=#9FA1AC Material=Metal RenderFidelity=Precise $_geo="4bc7d42f01670f54" {
+            Weld "Weld" C0=2.1,-0.9,-0.2|-180,0,-180 C1=0.164,-0.107,2.096|-90,0,90 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~11"
+            Weld "Weld" C0=-22.55,0.1,7.55|-90,0,-180 C1=0.064,-0.107,-2.503|-180,-90,0 Part1=@"Workspace/Model~40/Furniture/Laundry Room/Washer Dryer Combo/Washer/Union~11"
+        }
+        UnionOperation "Union" Size=0.564,1.81,0.148 Anchored CFrame=-441.174,8.045,-951.112 Color=#EDEAEA Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="f558ce8352f8821c"
+    }
+}

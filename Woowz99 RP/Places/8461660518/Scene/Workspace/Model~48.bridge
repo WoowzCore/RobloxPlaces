@@ -1,0 +1,844 @@
+Model "AC6.52S2 // INSPARE" PrimaryPart=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Wheels/FL" {
+    ModuleScript "A-Chassis Tune" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune.luau" {
+        ScreenGui "A-Chassis Interface" {
+            ObjectValue "Car"
+            BoolValue "ControlsOpen"
+            LocalScript "Drive" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/A-Chassis Interface/Drive.luau"
+            BoolValue "IsOn"
+            Folder "Values" {
+                BoolValue "ABS"
+                BoolValue "ABSActive"
+                NumberValue "Brake"
+                NumberValue "Gear"
+                NumberValue "Horsepower"
+                BoolValue "MouseSteerOn"
+                BoolValue "PBrake"
+                NumberValue "RPM"
+                NumberValue "SteerC"
+                NumberValue "SteerT"
+                BoolValue "TCS"
+                BoolValue "TCSActive"
+                NumberValue "Throttle"
+                NumberValue "Torque"
+                StringValue "TransmissionMode"
+                Vector3Value "Velocity"
+            }
+        }
+        Script "Initialize" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Initialize.luau" {
+            ModuleScript "MiscWeld" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Initialize/MiscWeld.luau"
+        }
+        Folder "Plugins" {
+            Frame "AC6_Controls_Module" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+                LocalScript "Controls_AC6" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/AC6_Controls_Module/Controls_AC6.luau"
+                TextButton "Toggle" Position=0.5,-50,1,10 Size=0,100,0,18 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderColor3=#969696 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=16 TextStrokeColor3=#6A6A6A TextYAlignment=Bottom ZIndex=5
+                Frame "Window" Position=0.5,-250,0,-500 Size=0,500,0,400 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    TextLabel "//INSPARE" Position=1,-20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="A-Chassis 6 by //INSPARE" TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    Frame "Content" Position=0,0,0,60 Size=1,0,1,-60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+                        TextButton "Brake" Position=0,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "Brake2" Position=0,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "Clutch" Position=0,170,0,213 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrBrake" Position=2,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrClutch" Position=2,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrPBrake" Position=2,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrShiftDown" Position=2,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrShiftUp" Position=2,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrSteer" Position=2,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrThrottle" Position=2,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrToggleABS" Position=2,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrToggleTCS" Position=2,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ContlrToggleTMode" Position=2,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextLabel "ControlLDZone" Position=2,200,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                            ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                        }
+                        TextLabel "ControlRDZone" Position=2,200,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                            ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                        }
+                        TextLabel "MSteerDZone" Position=1,200,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                            ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                        }
+                        TextLabel "MSteerWidth" Position=1,200,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                            ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                        }
+                        TextButton "MouseBrake" Position=1,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "MouseClutch" Position=1,170,0,113 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "MousePBrake" Position=1,170,0,133 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "MouseShiftDown" Position=1,170,0,93 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "MouseShiftUp" Position=1,170,0,73 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "MouseSteer" Position=1,170,0,53 Size=0,300,0,15 Active=false BackgroundColor3=#282828 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false Text="MouseMove" TextColor3=#B0B0B0 TextSize=14 ZIndex=3
+                        TextButton "MouseThrottle" Position=1,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "PBrake" Position=0,170,0,233 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ShiftDown" Position=0,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ShiftUp" Position=0,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "SteerLeft" Position=0,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "SteerLeft2" Position=0,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "SteerRight" Position=0,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "SteerRight2" Position=0,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextLabel "T" Position=0,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary] SteerRight" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Right" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]     Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,320 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Switch Mouse Control" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]        Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,280 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]   Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,260 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=0,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Control Width" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Right Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Left Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=1,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextLabel "T" Position=2,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                        TextButton "Throttle" Position=0,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "Throttle2" Position=0,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ToggleABS" Position=0,170,0,293 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ToggleMouseDrive" Position=0,170,0,313 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ToggleTCS" Position=0,170,0,273 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                        TextButton "ToggleTransMode" Position=0,170,0,253 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    }
+                    TextLabel "Error" Position=0.5,0,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Invalid Input" TextColor3=#FF0000 TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 Visible=false ZIndex=3
+                    TextLabel "Header" Position=0,10,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=32 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Left ZIndex=3
+                    TextLabel "Overlay" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Press a key to assign or Enter to cancel]" TextColor3=#FFFFFF TextSize=28 TextStrokeColor3=#2F2F2F TextStrokeTransparency=0 Visible=false ZIndex=4
+                    Frame "Tabs" Position=0,5,0,40 Size=0,490,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                        TextButton "Controller" Position=0,235,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Controller" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                        TextButton "Keyboard" Position=0,5,0,0 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Keyboard" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                        Frame "Line" Size=1,0,0,2 BackgroundColor3=#FFFFFF BorderSizePixel=0 ZIndex=3
+                        TextButton "Mouse" Position=0,120,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Mouse" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    }
+                }
+            }
+            LocalScript "AC6_MSteer_Camera" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/AC6_MSteer_Camera.luau"
+            Frame "AC6_Stock_Gauges" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+                TextLabel "ABS" Position=0.5,130,1,-140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+                TextLabel "ABS" Position=0.5,130,1,-100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+                LocalScript "Gauges_AC6" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/AC6_Stock_Gauges/Gauges_AC6.luau"
+                TextLabel "Gear" Position=0.5,-120,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+                TextLabel "PBrake" Position=0.5,200,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="P" TextColor3=#FF557F TextSize=24 TextStrokeColor3=#FF557F TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+                TextButton "Speed" Position=0.5,150,1,-80 Size=0,100,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="0 SPS" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right ZIndex=2
+                Frame "Speedo" Position=0.5,150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                        Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                    }
+                }
+                TextLabel "TCS" Position=0.5,130,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="TCS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+                TextLabel "TMode" Position=0.5,-165,1,-40 Size=0,40,0,20 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="A/T" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1
+                Frame "Tach" Position=0.5,-150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                    Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                        Frame "Frame" Position=0,-2,0,-10 Size=0,4,0,110 BackgroundColor3=#FF0000 BackgroundTransparency=0.1 BorderSizePixel=0 ZIndex=2
+                    }
+                }
+                Frame "ln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                    Frame "Frame" Position=0,-2,0,105 Size=0,3,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                    TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+                }
+            }
+            LocalScript "AC6_Stock_Sound" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/AC6_Stock_Sound.luau" {
+                RemoteEvent "AC6_FE_Sounds" {
+                    Script "Handler" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/AC6_Stock_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+                }
+                Sound "Rev" Looped PlaybackSpeed=0 Volume=1 {
+                    NumberValue "SetPitch" Value=0.05
+                    NumberValue "SetRev" Value=1.4
+                }
+            }
+            ImageLabel "[SS6] Dynamic Friction" Position=0.045,0,0.87,0 Size=0.35,0,0.35,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageTransparency=1 {
+                LocalScript "Simulated" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/Plugins/[SS6] Dynamic Friction/Simulated.luau"
+                UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=0.604
+                UISizeConstraint "UISizeConstraint" MaxSize=200,200 MinSize=150,150
+                Folder "WearData" {
+                    NumberValue "FL"
+                    NumberValue "FR"
+                    NumberValue "RL"
+                    NumberValue "RR"
+                    NumberValue "STime"
+                }
+            }
+        }
+        ModuleScript "README" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/A-Chassis Tune/README.luau"
+    }
+    Model "Body" {
+        Model "Mazda 3" {
+            Model "Body" {
+                MeshPart "Color" Size=7.536,2.388,2.677 Anchored CFrame=-336.284,23.411,-990.578|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Color" Size=7.81,3.894,7.712 Anchored CFrame=-342.517,24.236,-995.967|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Color" Size=7.872,3.404,4.096 Anchored CFrame=-346.551,24.1,-999.451|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "Color" Size=7.536,3.917,7.166 Anchored CFrame=-339.856,24.151,-993.666|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "HLL" Size=6.485,0.688,1.485 Anchored CFrame=-336.291,24.002,-990.549|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic RenderFidelity=Precise
+                MeshPart "MeshPart" Size=7.588,4.162,17.132 Anchored CFrame=-341.689,24.251,-995.255|179.997,-49.151,-179.993 CanCollide=false Color=#111111 Material=Glass RenderFidelity=Precise
+                MeshPart "MeshPart" Size=7.078,0.694,2.011 Anchored CFrame=-336.431,23.965,-990.705|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Glass RenderFidelity=Precise
+                MeshPart "MeshPart" Size=6.436,0.569,1.23 Anchored CFrame=-336.23,23.962,-990.496|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#CACBD1 Material=Glass Reflectance=1 RenderFidelity=Precise Transparency=0.4
+                MeshPart "MeshPart" Size=6.132,1.402,8.851 Anchored CFrame=-341.681,25.51,-995.247|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Glass Reflectance=0.3 RenderFidelity=Precise
+                MeshPart "MeshPart" Size=7.867,2.261,15.656 Anchored CFrame=-341.746,23.329,-995.306|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Glass RenderFidelity=Precise
+                MeshPart "MeshPart" Size=7.254,1.165,16.205 Anchored CFrame=-341.806,24.281,-995.317|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=Glass Reflectance=1 RenderFidelity=Precise
+                MeshPart "RRL" Size=6.961,1.893,1.676 Anchored CFrame=-347.422,24.051,-1000.211|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#970000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+                MeshPart "RevL" Size=6.75,0.127,0.585 Anchored CFrame=-347.011,24.788,-999.86|179.997,-49.151,-179.993 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic RenderFidelity=Precise
+                Seat "Seat" Size=1.481,0.148,0.741 Anchored BottomSurface=Smooth CFrame=-342.084,22.407,-993.145|179.937,-48.988,179.918 CanCollide=false Color=#1B2A35 FrontSurface=Hinge TopSurface=Motor {
+                    Script "Script" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Seat/Script.luau"
+                }
+                Seat "Seat" Size=1.481,0.148,0.741 Anchored BottomSurface=Smooth CFrame=-342.253,22.149,-997.213|179.937,-48.988,179.918 CanCollide=false Color=#1B2A35 FrontSurface=Hinge TopSurface=Motor {
+                    RotateV "RotateV" BaseAngle=0.003 C0=0,0.074,0|-90,0,-180 C1=-1.11,-1.11,1.63|-90,0,-180 Part0=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Seat~2" Part1=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/MeshPart~5"
+                    Script "Script" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Seat~2/Script.luau"
+                }
+                Seat "Seat" Size=1.481,0.148,0.741 Anchored BottomSurface=Smooth CFrame=-344.094,22.223,-995.066|179.937,-48.988,179.918 CanCollide=false Color=#1B2A35 FrontSurface=Hinge TopSurface=Motor {
+                    RotateV "RotateV" BaseAngle=0.003 C0=0,0.074,0|-90,0,-180 C1=1.71,-1.94,0.6|-90,0,-180 Part0=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Seat~3" Part1=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Color~2"
+                    Script "Script" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Body/Mazda 3/Body/Seat~3/Script.luau"
+                }
+            }
+        }
+    }
+    VehicleSeat "DriveSeat" Size=2,0.05,2 Anchored BottomSurface=Smooth CFrame=-339.675,22.598,-995.622|179.997,-49,-179.993 CanCollide=false CustomPhysicalProperties=0.01,0.3,0,1,1 FrontSurface=Motor Material=SmoothPlastic MaxSpeed=0 TopSurface=Hinge Torque=0 TurnSpeed=0 {
+        BoolValue "Deployed"
+        Script "Gui Giver" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Gui Giver.luau" Disabled {
+            Script "TheFix" @code=<<<
+                wait(2)
+                script.Parent.Disabled = false
+            >>>
+        }
+        BoolValue "InsaneMode"
+        BoolValue "Lights"
+        Sound "Off" AudioContent="http://www.roblox.com/asset/?id=174967918" SoundId="http://www.roblox.com/asset/?id=174967918"
+        IntValue "Power"
+        ScreenGui "Screen" {
+            BoolValue "CC"
+            ObjectValue "CarSeat"
+            BoolValue "F"
+            Frame "Fob" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                Frame "Cannon" Position=0.5,-200,0.7,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://232022450" ImageContent="rbxassetid://232022450"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="C" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                Frame "Doors" Position=0.5,-200,0.6,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://232022450" ImageContent="rbxassetid://232022450"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="D" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                Frame "Pass" Position=0.5,-200,0.8,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://232022450" ImageContent="rbxassetid://232022450"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="P" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                ImageButton "Unlock" Position=0.3,0,0.1,0 Size=0.4,0,0.4,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://411647128" ImageContent="rbxassetid://411647128"
+                Frame "User" Position=0.5,-200,0.5,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://232022450" ImageContent="rbxassetid://232022450"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="U" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+            }
+            Frame "Gauges" Position=1,-50,1,-80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Visible=false {
+                ImageLabel "Circle" Position=1,-240,1,-300 Size=0,300,0,300 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=27061035" ImageContent="http://www.roblox.com/asset/?id=27061035" {
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-70 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=70 Text="0" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=30 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-30 Text="100" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=50 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-50 Text="120" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=90 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-90 Text="160" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=10 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-10 Text="80" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=70 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-70 Text="140" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-30 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=30 Text="40" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-50 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=50 Text="20" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-10 {
+                        TextLabel "TextLabel" Position=0.1,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=10 Text="60" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "OrientationP" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-60 {
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=60 Text="450" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "OrientationP" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-40 {
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=40 Text="300" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "OrientationP" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-20 {
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=20 Text="150" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "OrientationP" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=20 {
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-20 Text="30" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "OrientationP" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=40 {
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-40 Text="60" TextColor3=#FFFFFF TextSize=24
+                    }
+                    Frame "Zero" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                        TextLabel "Gear" Position=0.45,0,0.8,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=24
+                        TextLabel "LM" Position=0.55,0,0.8,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="S" TextColor3=#FFFFFF TextSize=24
+                        TextLabel "Left" Position=0.25,0,0.3,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="<" TextColor3=#55FF00 TextSize=24 Visible=false ZIndex=3
+                        TextButton "Limiter" Position=0.25,0,0.6,0 Size=0.5,0,0,30 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="" TextColor3=#FFFFFF TextScaled TextSize=24 TextWrapped ZIndex=3
+                        TextLabel "Right" Position=0.65,0,0.3,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text=">" TextColor3=#55FF00 TextSize=24 Visible=false ZIndex=3
+                        TextLabel "TextLabel" Position=0.8,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="0" TextColor3=#FFFFFF TextSize=24
+                        TextLabel "Time" Position=0.45,0,0.3,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="00:00:00" TextColor3=#FFFFFF TextSize=24 ZIndex=3
+                        TextLabel "Unit" Position=0.6,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="kWh" TextColor3=#FFFFFF TextSize=24 ZIndex=3
+                        TextLabel "Unit" Position=0.3,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="MPH" TextColor3=#FFFFFF TextSize=24 ZIndex=3
+                    }
+                }
+                ImageLabel "Circle2" Position=1,-175,1,-235 Size=0,170,0,170 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=27061035" ImageContent="http://www.roblox.com/asset/?id=27061035" ZIndex=2
+                ImageLabel "NeedleP" Position=1,-240,1,-300 Size=0,300,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#00FFFF Image="rbxassetid://182007270" ImageColor3=#FFA400 ImageContent="rbxassetid://182007270" Rotation=-90 ZIndex=2
+                ImageLabel "NeedleS" Position=1,-240,1,-300 Size=0,300,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#00FFFF Image="rbxassetid://182007270" ImageColor3=#FF0000 ImageContent="rbxassetid://182007270" Rotation=20 ZIndex=2
+                LocalScript "Needles" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Screen/Gauges/Needles.luau"
+                Frame "SPS" BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+                    ImageLabel "A" Size=0,30,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://346331765" ImageColor3=#DFDDD7 ImageContent="rbxassetid://346331765"
+                    ImageLabel "B" Position=0,-35,0,0 Size=0,30,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://346331765" ImageColor3=#DFDDD7 ImageContent="rbxassetid://346331765"
+                    ImageLabel "C" Position=0,-70,0,0 Size=0,30,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://346331765" ImageColor3=#DFDDD7 ImageContent="rbxassetid://346331765"
+                    ImageLabel "D" Position=0,-105,0,0 Size=0,30,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://346331765" ImageColor3=#DFDDD7 ImageContent="rbxassetid://346331765"
+                    LocalScript "Script" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Screen/Gauges/SPS/Script.luau"
+                    TextLabel "Text" Position=0,-105,0,50 Size=0,135,0,25 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Text="MPH" TextColor3=#00FFFF TextScaled TextSize=96 TextStrokeColor3=#00B2B4 TextStrokeTransparency=0.7 TextWrapped
+                }
+            }
+            LocalScript "GuiScript" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Screen/GuiScript.luau" Disabled {
+                Script "TheFix" @code=<<<
+                    wait(2)
+                    script.Parent.Disabled = false
+                >>>
+            }
+            Frame "HUB" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                TextLabel "CREATOR" Position=0.4,0,0.6,0 Size=0.2,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="By Itzt, phily241, and DanPops" TextColor3=#FFFFFD TextSize=60 TextStrokeColor3=#00B2B4 TextTransparency=1
+                ImageLabel "IL" Position=0.43,0,0.2,0 Size=0,220,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://339659743" ImageContent="rbxassetid://339659743" ImageTransparency=1
+                TextLabel "SST" Position=0.4,0,0.5,0 Size=0.2,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="" TextColor3=#FFFFFD TextSize=96 TextStrokeColor3=#00B2B4
+            }
+            LocalScript "OtherControlsScript" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Screen/OtherControlsScript.luau" Disabled {
+                Script "TheFix" @code=<<<
+                    wait(2)
+                    script.Parent.Disabled = false
+                    script:Destroy()
+                >>>
+            }
+            LocalScript "SoundScript" Disabled @code=<<<
+                while true do
+                	wait()
+                	local carSeat = script.Parent.CarSeat.Value
+                	speed = math.floor(math.sqrt((carSeat.Velocity.x^2)+(carSeat.Velocity.y^2)+(carSeat.Velocity.z^2)))
+                	carSeat.Sound.Pitch = (speed/50)+0
+                end
+            >>> {
+                Script "TheFix" @code=<<<
+                    wait(2)
+                    script.Parent.Disabled = false
+                >>>
+            }
+            LocalScript "SoundScript 2" Disabled @code=<<<
+                while true do
+                	wait()
+                	local carSeat = script.Parent.CarSeat.Value
+                	speed = math.floor(math.sqrt((carSeat.Velocity.x^2)+(carSeat.Velocity.y^2)+(carSeat.Velocity.z^2)))	
+                	carSeat.Sound2.Pitch = (speed/50)-.3
+                end
+            >>> {
+                Script "TheFix" @code=<<<
+                    wait(2)
+                    script.Parent.Disabled = false
+                >>>
+            }
+            LocalScript "SoundScript Wind" Disabled @code=<<<
+                while true do
+                	wait()
+                	local carSeat = script.Parent.CarSeat.Value
+                	speed = math.floor(math.sqrt((carSeat.Velocity.x^2)+(carSeat.Velocity.y^2)+(carSeat.Velocity.z^2)))	
+                	carSeat.Wind.Pitch = (speed/200)-.2
+                end
+            >>> {
+                Script "TheFix" @code=<<<
+                    wait(2)
+                    script.Parent.Disabled = false
+                >>>
+            }
+            Sound "TickTock" AudioContent="rbxassetid://295654516" SoundId="rbxassetid://295654516" Volume=0.3
+            Sound "TickTock" AudioContent="rbxassetid://190126363" SoundId="rbxassetid://190126363" Volume=0.3
+            Sound "TickTock" AudioContent="rbxassetid://295654516" SoundId="rbxassetid://295654516" Volume=0.3
+            Sound "Typewriter" AudioContent="rbxassetid://172065335" SoundId="rbxassetid://172065335" Volume=0.6
+            Frame "Windows" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                Frame "FL" Position=0.5,-200,0.5,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="FL" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                Frame "FR" Position=0.5,-200,0.6,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="FR" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                Frame "RL" Position=0.5,-200,0.7,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="RL" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+                Frame "RR" Position=0.5,-200,0.8,-50 Size=0,400,0,100 BackgroundColor3=#1787FF BackgroundTransparency=0.7 BorderSizePixel=0 ClipsDescendants {
+                    ImageButton "Lock" Position=0,25,0.5,-25 Size=0,50,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://435196221" ImageContent="rbxassetid://435196221"
+                    TextLabel "TextLabel" Position=0.55,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="RR" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped ZIndex=2
+                }
+            }
+        }
+        Script "Script - Positioner" @code=<<<
+            script.Parent.ChildAdded:connect(function(child) 
+            	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+            		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+            		local S=script.L:Clone() S.Parent=P.PlayerGui 
+            		S.Seat.Value=script.Parent 
+            		S.Disabled=false 
+            	end 
+            end)
+        >>> {
+            LocalScript "L" @src="Scripts/Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/DriveSeat/Script - Positioner/L.luau" Disabled {
+                ObjectValue "Seat"
+            }
+        }
+        Sound "Sound" AudioContent="http://www.roblox.com/asset/?id=181395821" Looped PlaybackSpeed=0.3 SoundId="http://www.roblox.com/asset/?id=181395821" Volume=0.1
+        Sound "Sound2" AudioContent="http://www.roblox.com/asset/?id=181395821" Looped PlaybackSpeed=0 SoundId="http://www.roblox.com/asset/?id=181395821" Volume=0.1
+        Sound "Startup" AudioContent="rbxassetid://402899121" SoundId="rbxassetid://402899121"
+        Sound "Stop" AudioContent="rbxassetid://268260239" SoundId="rbxassetid://268260239"
+        Sound "Wind" AudioContent="http://www.roblox.com/asset/?id=188608071" Looped PlaybackSpeed=0 SoundId="http://www.roblox.com/asset/?id=188608071"
+        BoolValue "WindowFL"
+        BoolValue "WindowFR"
+        BoolValue "WindowRL"
+        BoolValue "WindowRR"
+    }
+    Model "Misc"
+    Model "Wheels" PrimaryPart=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Wheels/FL" {
+        Part "FL" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-335.506,23.073,-994.305|89.991,-0.004,-139 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+            CylinderMesh "Mesh" Scale=1,0.5,1
+            Model "Parts" {
+                Model "FL" {
+                    MeshPart "MeshPart" Size=0.872,1.867,1.807 Anchored CFrame=-335.506,23.073,-994.305|-0.058,49,0.078 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Glass RenderFidelity=Precise
+                    MeshPart "Tire" Size=2.63,2.63,0.843 Anchored CFrame=-335.506,23.073,-994.305|0.045,-41.014,0.072 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Concrete RenderFidelity=Precise
+                }
+            }
+            Model "SuspensionFixed"
+            Model "WheelFixed"
+        }
+        Part "FR" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-339.851,23.075,-989.303|89.991,-0.004,41 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+            CylinderMesh "Mesh" Scale=1,0.5,1
+            Model "Parts" {
+                Model "FR" {
+                    MeshPart "MeshPart" Size=0.872,1.867,1.807 Anchored CFrame=-339.851,23.075,-989.302|179.942,-49,179.922 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Glass RenderFidelity=Precise
+                    MeshPart "Tire" Size=2.63,2.63,0.843 Anchored CFrame=-339.851,23.075,-989.302|-179.955,41.013,179.928 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Concrete RenderFidelity=Precise
+                }
+            }
+            Model "SuspensionFixed"
+            Model "WheelFixed"
+        }
+        Part "RL" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-343.643,23.073,-1001.514|89.991,-0.004,-139 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+            CylinderMesh "Mesh" Scale=1,0.5,1
+            Model "Parts" {
+                Model "RL" {
+                    MeshPart "MeshPart" Size=0.911,1.951,1.889 Anchored CFrame=-343.642,23.073,-1001.514|-0.058,49,0.078 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Glass RenderFidelity=Precise
+                    MeshPart "Tire" Size=2.669,2.669,1.006 Anchored CFrame=-343.642,23.073,-1001.514|0.045,-41.013,0.072 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Concrete RenderFidelity=Precise {
+                        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-29.562,-1.304,25.903|-90.034,0.043,131.013 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Wheels/RL/Parts/RL/Tire"
+                    }
+                }
+            }
+            Model "SuspensionFixed"
+            Model "WheelFixed"
+        }
+        Part "RR" Size=2.6,2.6,2.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-348.162,23.074,-996.307|89.991,-0.004,41 Color=#111111 CustomPhysicalProperties=0.1,0.7,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Ball TopSurface=SmoothNoOutlines Transparency=1 {
+            CylinderMesh "Mesh" Scale=1,0.5,1
+            Model "Parts" {
+                Model "RR" {
+                    MeshPart "MeshPart" Size=0.911,1.951,1.889 Anchored CFrame=-348.161,23.074,-996.307|179.942,-49,179.922 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=Glass RenderFidelity=Precise
+                    MeshPart "Tire" Size=2.669,2.669,1.054 Anchored CFrame=-348.161,23.074,-996.307|-179.955,41.013,179.928 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Concrete RenderFidelity=Precise {
+                        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=29.569,-1.309,-19.009|-89.966,-0.043,-48.987 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/AC6.52S2 %2F%2F INSPARE/Wheels/RR/Parts/RR/Tire"
+                    }
+                }
+            }
+            Model "SuspensionFixed"
+            Model "WheelFixed"
+        }
+    }
+}
+Model "Light" {
+    Part "Light" Size=2,0.2,2 Anchored BottomSurface=Smooth CFrame=-357.808,21.437,-975.117 Color=#EDEAEA Material=SmoothPlastic Reflectance=0.4 TopSurface=Smooth {
+        CylinderMesh "Mesh" Scale=1,1.01,1
+        PointLight "PointLight" Range=40
+        Weld "Weld" C0=25.7,-0.1,23.4|90,0,0 C1=-25.137,0.094,25.149|90,0,90 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Light/Light"
+    }
+    Part "Part" Size=2.4,0.2,2.4 Anchored BottomSurface=Smooth CFrame=-357.808,21.437,-975.117 Color=#111111 Material=SmoothPlastic TopSurface=Smooth {
+        CylinderMesh "Mesh"
+        Weld "Weld" C0=25.7,-0.1,23.4|90,0,0 C1=-25.137,0.094,25.149|90,0,90 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Light/Part"
+    }
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-366.645,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-364.846,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-339.645,8.131,-949.468|-180,0,-180 Color=#111111 RightSurface=SmoothNoOutlines
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-341.446,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-345.045,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-343.246,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-348.645,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-346.846,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-354.045,8.131,-949.468|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-355.846,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-350.445,8.131,-949.468|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-352.245,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-357.645,8.131,-1001.868|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-359.446,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-343.245,8.131,-1001.868|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-345.045,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-377.445,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-375.645,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-370.245,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-368.445,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-363.045,8.031,-949.468|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-361.245,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-377.445,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-375.645,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-363.045,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-361.245,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-366.645,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-364.846,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-348.645,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-346.845,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-372.045,8.131,-949.468|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-373.845,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-368.445,8.131,-949.468|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-370.245,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-354.045,8.131,-1001.868|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored CFrame=-355.845,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-372.045,8.131,-1001.868|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-373.846,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    UnionOperation "C" Size=5.065,5.332,0.533 Anchored CFrame=-339.316,24.405,-953.273|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="8f586d25055ff875" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-48.096,-2.674,43.63|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/C"
+    }
+    UnionOperation "S" Size=4.266,5.332,0.533 Anchored CFrame=-339.375,24.405,-971.043|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="08ecfc8b481d1af4" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-30.325,-2.674,43.571|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/S"
+    }
+    UnionOperation "a" Size=3.199,3.732,0.533 Anchored CFrame=-339.375,23.605,-958.045|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="1bbe49355d86af8b" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-43.323,-1.874,43.571|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/a"
+    }
+    UnionOperation "h" Size=3.199,5.332,0.533 Anchored CFrame=-339.347,24.405,-975.561|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="c6c34c99d9a75346" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-25.807,-2.674,43.598|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/h"
+    }
+    UnionOperation "o" Size=3.199,3.732,0.533 Anchored CFrame=-339.294,23.605,-979.331|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="7a0d3ba2e60385dd" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-22.037,-1.874,43.651|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/o"
+    }
+    UnionOperation "p" Size=3.199,5.332,0.533 Anchored CFrame=-339.234,24.405,-983.625|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="a4dbc88afb979f7f" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-17.743,-2.674,43.711|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/p"
+    }
+    UnionOperation "r" Size=1.866,3.732,0.533 Anchored CFrame=-339.312,23.605,-961.417|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="1bdad8197cf7444c" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-39.951,-1.874,43.634|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/r"
+    }
+    UnionOperation "s" Size=3.199,3.732,0.533 Anchored CFrame=-339.288,23.605,-964.698|0,-90,0 Color=#F8F8F8 RenderFidelity=Precise UsePartColor $_geo="e981e260cd29c4ee" {
+        Weld "Weld" C0=-25.7,0.1,23.4|-90,0,-180 C1=-36.67,-1.874,43.657|-90,0,-180 Part0=@"Workspace/Model~48/Part~110" Part1=@"Workspace/Model~48/Model~20/s"
+    }
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-337.845,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-336.045,8.131,-1001.868|-180,0,-180 Color=#111111
+}
+Model "Model" {
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-350.446,8.131,-1001.868|-180,0,-180 Color=#111111
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-352.245,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+}
+Model "Model" {
+    Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-359.445,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+    Part "Part" Size=0.2,7.2,1 Anchored CFrame=-357.645,8.131,-949.468|-180,0,-180 Color=#111111
+}
+Part "Part" Size=10.8,0.2,0.6 Anchored BottomSurface=SmoothNoOutlines CFrame=-334.845,9.231,-954.368|-90,0,90 Color=#564236 LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-381.045,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-997.668|0,-90,0 Color=#111111
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,13.231,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-336.045,8.131,-949.468|-180,0,-180 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-992.268|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=10.8,3.2,0.8 Anchored BackSurface=SmoothNoOutlines CFrame=-335.345,4.731,-954.368|0,90,0 Color=#9FA1AC LeftSurface=SmoothNoOutlines Material=Cobblestone {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=-283.569,-1.6,-194.464|-90,0,90 Part1=@"Workspace/Model~48/Part~7"
+}
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-994.068|0,-90,0 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored CFrame=-337.845,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,15.631,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=10.8,0.2,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-334.845,6.831,-954.368|-90,0,90 Color=#564236 Material=Wood
+Part "Part" Size=10.8,0.2,0.6 Anchored BottomSurface=SmoothNoOutlines CFrame=-334.845,10.831,-954.368|-90,0,90 Color=#564236 Material=Wood
+Part "Part" Size=10.8,0.2,0.6 Anchored BottomSurface=Smooth CFrame=-334.845,8.431,-954.368|-90,0,90 Color=#564236 LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,14.831,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.2,0.6 Anchored BottomSurface=SmoothNoOutlines CFrame=-334.845,11.631,-954.368|-90,0,90 Color=#564236 Material=Wood
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-979.668|0,-90,0 Color=#111111
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-339.645,8.131,-1001.868|-180,0,-180 Color=#111111
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-341.446,8.031,-1001.868|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,19.631,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=1,7.2,1 Anchored CFrame=-383.445,8.131,-1001.868 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=0.2,8.54,1 Anchored CFrame=-335.445,7.461,-959.868|0,-90,0 Color=#111111 {
+    Weld "Weld" C0=5.4,-2.6,0.4|0,90,0 C1=0.1,-0.93,-0.5|0,-90,0 Part0=@"Workspace/Model~48/Part~27" Part1=@"Workspace/Model~48/Part~21"
+    Weld "Weld" C0=5.4,-1.6,0.4|0,90,0 C1=0.1,-4.33,-0.5|0,-90,0 Part0=@"Workspace/Model~48/Part~7" Part1=@"Workspace/Model~48/Part~21"
+}
+Part "Part" Size=9.88,8.37,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,7.346,-964.798|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.131,-972.468|0,-90,0 Color=#111111
+Part "Part" Size=2,7.6,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,10.931,-983.968|90,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,21.231,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=0.2,8.43,1 Anchored CFrame=-335.445,7.516,-969.883|0,-90,0 Color=#111111
+Part "Part" Size=10.8,5.2,0.8 Anchored BackSurface=SmoothNoOutlines CFrame=-335.345,9.131,-954.368|0,90,0 Color=#111111 LeftSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-963.468|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=12.8,1.6,2 Anchored BottomSurface=SmoothNoOutlines CFrame=-334.945,12.531,-996.968|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,18.031,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,18.831,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,16.431,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored CFrame=-383.445,8.031,-985.068|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=3.4,7,1 Anchored CFrame=-383.445,8.031,-956.268|0,-90,0 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-954.468|0,-90,0 Color=#111111
+Part "Part" Size=0.2,8.8,52.2 Anchored CFrame=-382.845,17.331,-975.068 Color=#111111 LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored CFrame=-383.445,8.031,-952.668|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=31,8.8,0.2 Anchored CFrame=-336.045,17.331,-964.668|0,-90,0 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,14.031,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=51.6,8.8,0.2 Anchored CFrame=-336.045,17.331,-975.568|0,-90,0 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-381.045,8.031,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-382.845,8.131,-949.468|-180,0,-180 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=1,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.131,-950.468|0,-90,0 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=52.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.045,18.031,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=31.2,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,19.631,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,20.431,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=2.8,3.8,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,8.031,-981.568|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,15.631,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,13.231,-948.868 Color=#564236 Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,8.031,-999.468|0,-90,0 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+Part "Part" Size=2.8,5.6,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.446,9.131,-989.168|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,14.831,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-974.268|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-335.445,8.131,-997.668|0,-90,0 Color=#111111
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,14.031,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,14.031,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,20.431,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=10.8,0.2,0.6 Anchored BottomSurface=SmoothNoOutlines CFrame=-334.845,10.031,-954.368|-90,0,90 Color=#564236 LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,16.431,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-967.068|0,-90,0 Color=#F8F8F8 TopSurface=Smooth Transparency=0.5
+Part "Part" Size=3.4,7,1 Anchored CFrame=-335.445,8.031,-995.868|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,13.231,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.2,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=Smooth CFrame=-334.845,7.631,-954.368|-90,0,90 Color=#564236 LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=31.2,0.6,0.2 Anchored CFrame=-335.845,17.231,-964.568|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-335.445,8.131,-994.068|0,-90,0 Color=#111111
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,21.231,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-961.668|0,-90,0 Color=#111111
+Part "Part" Size=20.4,0.23,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,3.246,-969.968|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=5.4,-1.6,0.4|0,90,0 C1=10.2,-0.115,-0.5|0,-90,0 Part0=@"Workspace/Model~48/Part~7" Part1=@"Workspace/Model~48/Part~68"
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=299.169,-0.115,194.365|-90,0,-90 Part1=@"Workspace/Model~48/Part~68"
+    Weld "Weld" C0=1.4,-1.5,0.5|0,90,0 C1=-10.2,-0.115,0.5|0,90,0 Part0=@"Workspace/Model~48/Part~83" Part1=@"Workspace/Model~48/Part~68"
+}
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-379.245,8.131,-949.468|-180,0,-180 Color=#111111
+Part "Part" Size=10.22,8.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,7.431,-975.058|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5 {
+    Weld "Weld" C0=1.4,-1.5,0.5|0,90,0 C1=-5.11,-4.3,0.5|0,90,0 Part0=@"Workspace/Model~48/Part~83" Part1=@"Workspace/Model~48/Part~70"
+    Weld "Weld" C0=-1,3.8,0.5|-90,0,-180 C1=-5.11,4.5,0.5|90,90,0 Part0=@"Workspace/Model~48/Part~24" Part1=@"Workspace/Model~48/Part~70"
+    Weld "Weld" C0=1.4,-1.9,0.5|0,90,0 C1=-5.11,-1.3,0.5|0,90,0 Part0=@"Workspace/Model~48/Part~47" Part1=@"Workspace/Model~48/Part~70"
+}
+Part "Part" Size=49,1.6,2 Anchored BottomSurface=SmoothNoOutlines CFrame=-360.445,12.531,-1002.368 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=53.4,1.4,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,3.831,-975.668|0,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=-304.869,-0.7,-146.365|-90,0,90 Part1=@"Workspace/Model~48/Part~72"
+}
+Part "Part" Size=46.98,8.39,1 Anchored BackSurface=SmoothNoOutlines CFrame=-359.435,17.536,-949.468 Color=#111111 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=50.8,0.23,48.01 Anchored BackSurface=SmoothNoOutlines CFrame=-359.14,3.246,-976.108|0,-90,0 Color=#5B5D69 FrontSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=305.309,-0.115,170.67|-90,0,-90 Part1=@"Workspace/Model~48/Part~74"
+}
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,21.231,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-8.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~75"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-8.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~75"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~66" Part1=@"Workspace/Model~48/Part~75"
+}
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,14.831,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=46.8,8.8,0.2 Anchored CFrame=-359.545,17.331,-1001.268 Color=#111111 FrontSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-359.345,18.031,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-359.345,20.431,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,16.431,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-3.5,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~80"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~32" Part1=@"Workspace/Model~48/Part~80"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-3.5,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~80"
+}
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,14.031,-1001.468 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,19.631,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~126" Part1=@"Workspace/Model~48/Part~82"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-6.7,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~82"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-6.7,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~82"
+}
+Part "Part" Size=2.8,3,1 Anchored CFrame=-335.445,4.631,-981.568|0,-90,0 Color=#9FA1AC Material=Cobblestone RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=310.769,-1.5,194.365|-90,0,-90 Part1=@"Workspace/Model~48/Part~83"
+}
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,14.831,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-1.9,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~84"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~52" Part1=@"Workspace/Model~48/Part~84"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-1.9,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~84"
+}
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,18.031,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-5.1,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~85"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-5.1,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~85"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~122" Part1=@"Workspace/Model~48/Part~85"
+}
+Part "Part" Size=48,1.4,1 Anchored BackSurface=SmoothNoOutlines CFrame=-358.945,3.831,-1001.868 Color=#F8F8F8 FrontSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=-170.865,-0.7,331.069|-90,0,-180 Part1=@"Workspace/Model~48/Part~86"
+}
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,13.231,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-0.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~87"
+    Weld "Weld" C0=6.4,-0.8,1|0,90,0 C1=-5.409,-1.5,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~29" Part1=@"Workspace/Model~48/Part~87"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~62" Part1=@"Workspace/Model~48/Part~87"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-0.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~87"
+}
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,16.431,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,18.031,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,19.631,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines {
+    Decal "Decal"
+}
+Part "Part" Size=0.05,6.6,4.8 Anchored BackSurface=Weld BottomSurface=Smooth CFrame=-335.43,6.631,-985.368 CanCollide=false Color=#F8F8F8 LeftSurface=SmoothNoOutlines Reflectance=-1 RightSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5 {
+    Decal "Decal" Face=Left Texture="rbxassetid://24800844" TextureContent="rbxassetid://24800844"
+    Decal "Decal" Face=Right Texture="rbxassetid://24800844" TextureContent="rbxassetid://24800844"
+    Weld "Weld" C0=-1.4,-1.5,-0.5|0,-90,0 C1=0.485,-3.5,2.4|-180,0,-180 Part0=@"Workspace/Model~48/Part~83" Part1=@"Workspace/Model~48/Part~91"
+    Weld "Weld" C0=-1.4,-1.9,-0.5|0,-90,0 C1=0.485,-0.5,2.4|-180,0,-180 Part0=@"Workspace/Model~48/Part~47" Part1=@"Workspace/Model~48/Part~91"
+    Weld "Weld" C0=1.4,-2.8,0.5|0,90,0 C1=-0.515,-0.3,-2.4 Part0=@"Workspace/Model~48/Part~51" Part1=@"Workspace/Model~48/Part~91"
+    Weld "Weld" C0=1,-3.8,0.5|0,90,0 C1=-0.515,3.3,-2.4|90,0,0 Part0=@"Workspace/Model~48/Part~24" Part1=@"Workspace/Model~48/Part~91"
+}
+Part "Part" Size=47,1.6,3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-359.446,12.531,-948.468 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=43.78,1.6,2 Anchored BackSurface=SmoothNoOutlines BottomSurface=Smooth CFrame=-334.945,12.531,-968.858|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=-0.1,4.27,0.5|-90,0,-180 C1=8.89,-0.8,1|-90,0,-180 Part0=@"Workspace/Model~48/Part~21" Part1=@"Workspace/Model~48/Part~93"
+    Weld "Weld" C0=-0.1,4.215,0.5|-90,0,-180 C1=-1.124,-0.8,1|-90,0,-180 Part0=@"Workspace/Model~48/Part~26" Part1=@"Workspace/Model~48/Part~93"
+    Weld "Weld" C0=-5.4,2.6,0.4|-90,0,-180 C1=19.89,-0.8,0|-90,0,0 Part0=@"Workspace/Model~48/Part~27" Part1=@"Workspace/Model~48/Part~93"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=19.09,0.4,1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~93"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=19.69,0.4,1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~93"
+    Weld "Weld" C0=23.5,-0.8,1.5|0,90,0 C1=21.89,-0.8,1|-180,0,-180 Part0=@"Workspace/Model~48/Part~92" Part1=@"Workspace/Model~48/Part~93"
+}
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,14.831,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,14.031,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=52.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.045,21.231,-975.168|0,90,0 Color=#564236 Material=Wood
+Part "Part" Size=52.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.045,17.231,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-359.345,20.431,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-359.345,21.231,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-335.445,8.131,-1001.268|0,-90,0 Color=#111111
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,17.231,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=10.8,1.4,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,3.831,-995.968|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=325.169,-0.7,194.365|-90,0,-90 Part1=@"Workspace/Model~48/Part~102"
+}
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,13.231,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=47.2,1.4,1 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,3.831,-949.468|-180,0,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth {
+    Weld "Weld" C0=-204.62,0.895,313.76|-90,0,-180 C1=170.464,-0.7,-278.669|-90,0,0 Part1=@"Workspace/Model~48/Part~104"
+}
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines CFrame=-359.345,18.831,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,18.831,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-335.445,8.031,-992.268|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-983.268|0,-90,0 Color=#111111
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,17.231,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-4.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~109"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~123" Part1=@"Workspace/Model~48/Part~109"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-4.3,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~109"
+}
+Part "Part" Size=51.4,0.2,46.8 Anchored BackSurface=SmoothNoOutlines CFrame=-359.545,21.631,-975.668|0,-90,0 Color=#111111 TopSurface=SmoothNoOutlines
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,18.831,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=47.2,0.6,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-359.345,15.631,-948.868 Color=#564236 Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=52.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.045,16.431,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=52.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.045,20.431,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-999.468|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-965.268|0,-90,0 Color=#111111
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-976.068|0,-90,0 Color=#111111
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-981.468|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,18.831,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored CFrame=-383.445,8.031,-959.868|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=1,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.131,-949.468 Color=#111111
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,18.031,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,17.231,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,15.631,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=0.2,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.131,-968.868|0,-90,0 Color=#111111
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,19.631,-995.968|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-970.668|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,15.631,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~48" Part1=@"Workspace/Model~48/Part~128"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-2.7,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~128"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-2.7,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~128"
+}
+Part "Part" Size=0.2,7.2,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.131,-986.868|0,-90,0 Color=#111111
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-988.668|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=10.8,0.6,0.2 Anchored CFrame=-335.845,14.031,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-1.1,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~131"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~56" Part1=@"Workspace/Model~48/Part~131"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-1.1,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~131"
+}
+Part "Part" Size=52.8,0.6,0.2 Anchored CFrame=-383.045,13.231,-975.168|0,90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines
+Part "Part" Size=2.88,3.51,1 Anchored CFrame=-335.445,4.676,-989.128|0,-90,0 Color=#9FA1AC Material=Cobblestone RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=5.4,-0.7,0.5|0,90,0 C1=-1.44,-1.545,0.5|0,90,0 Part0=@"Workspace/Model~48/Part~102" Part1=@"Workspace/Model~48/Part~133"
+    Weld "Weld" C0=1.7,-3.5,0.5|0,90,0 C1=-1.44,-0.145,0.5|0,90,0 Part0=@"Workspace/Model~48/Part~107" Part1=@"Workspace/Model~48/Part~133"
+}
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,18.831,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood TopSurface=SmoothNoOutlines {
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-5.9,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~134"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-5.9,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~134"
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~119" Part1=@"Workspace/Model~48/Part~134"
+}
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-990.468|0,-90,0 Color=#111111
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-1001.268|0,-90,0 Color=#111111
+Part "Part" Size=10.8,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-335.845,20.431,-985.159|0,-90,0 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood {
+    Weld "Weld" C0=5.4,-0.3,0.1|0,90,0 C1=-5.409,-0.3,0.1|0,90,0 Part0=@"Workspace/Model~48/Part~46" Part1=@"Workspace/Model~48/Part~137"
+    Weld "Weld" C0=15.5,-4.4,-0.1|-180,0,-180 C1=35.991,-7.5,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~38" Part1=@"Workspace/Model~48/Part~137"
+    Weld "Weld" C0=25.8,-4.4,-0.1|-180,0,-180 C1=35.391,-7.5,0.1|-180,0,-180 Part0=@"Workspace/Model~48/Part~40" Part1=@"Workspace/Model~48/Part~137"
+}
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-995.868|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,14.831,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=-359.345,17.231,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=54.4,1.6,2 Anchored BottomSurface=SmoothNoOutlines CFrame=-383.945,12.531,-974.168|0,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=3.4,7,1 Anchored BackSurface=SmoothNoOutlines CFrame=-383.445,8.031,-977.868|0,-90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines TopSurface=Smooth Transparency=0.5
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,16.431,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,21.231,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,19.631,-1001.468 Color=#564236 Material=Wood
+Part "Part" Size=47.2,0.6,0.2 Anchored CFrame=-359.345,15.631,-1001.468 Color=#564236 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines
+Part "Part" Size=0.2,7.2,1 Anchored CFrame=-383.445,8.131,-958.068|0,-90,0 Color=#111111
+Part "Sign" Size=4,2,1 Anchored CFrame=-335.195,9.51,-954.127|0,-90,0 Color=#957977 Transparency=1 {
+    Script "Script" @code=<<<
+        local part = script.Parent
+        local cf = part.CFrame * CFrame.new(0,-.2,0)
+
+        while wait() do
+        	part.CFrame = cf * CFrame.Angles(math.sin((time()*3))/8,0,0) * CFrame.new(0,.2,0)
+        end
+    >>>
+    ManualWeld "Sign Terrain Joint" Part1=@"Workspace/Model~48/Sign"
+    SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+        TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 FontFace="SourceSansPro|Bold|Normal" Text="Youtube" TextColor3=#FFFFFF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+    }
+}

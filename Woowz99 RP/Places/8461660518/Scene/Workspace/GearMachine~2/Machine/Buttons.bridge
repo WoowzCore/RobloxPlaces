@@ -1,0 +1,1136 @@
+Model "Building" {
+    Part "Button_MidasGlove" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-257.857,5.921,453.531|-90,0,-180 Color=#8C5B9F TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://17386312" TextureContent="rbxassetid://17386312"
+        NumberValue "ItemID" Value=17407931
+    }
+    Part "Button_PaintBucket" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-257.857,7.921,453.531|-90,0,-180 Color=#8C5B9F TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://15959435" TextureContent="rbxassetid://15959435"
+        NumberValue "ItemID" Value=18474459
+    }
+}
+Model "Explosive" {
+    Part "Button_2010Fireworks" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://20064127" TextureContent="rbxassetid://20064127"
+        NumberValue "ItemID" Value=20064349
+    }
+    Part "Button_BadBunny" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24723579" TextureContent="rbxassetid://24723579"
+        NumberValue "ItemID" Value=24839406
+    }
+    Part "Button_BlackholeBomb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27295735" TextureContent="rbxassetid://27295735"
+        NumberValue "ItemID" Value=28277486
+    }
+    Part "Button_CoconutBomb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24396621" TextureContent="rbxassetid://24396621"
+        NumberValue "ItemID" Value=24396804
+    }
+    Part "Button_FWAwe" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29932555" TextureContent="rbxassetid://29932555"
+        NumberValue "ItemID" Value=29959768
+    }
+    Part "Button_FWFinale" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29933751" TextureContent="rbxassetid://29933751"
+        NumberValue "ItemID" Value=29959897
+    }
+    Part "Button_FWSalute" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29935971" TextureContent="rbxassetid://29935971"
+        NumberValue "ItemID" Value=29959911
+    }
+    Part "Button_FuseBomb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11565733" TextureContent="rbxassetid://11565733"
+        NumberValue "ItemID" Value=11563251
+    }
+    Part "Button_HotPotato" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25268602" TextureContent="rbxassetid://25268602"
+        NumberValue "ItemID" Value=25741198
+    }
+    Part "Button_Pickaxe" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22148132" TextureContent="rbxassetid://22148132"
+        NumberValue "ItemID" Value=22158176
+    }
+    Part "Button_PumpkinBomb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13377334" TextureContent="rbxassetid://13377334"
+        NumberValue "ItemID" Value=14130887
+    }
+    Part "Button_PumpkinLauncher" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://36323844" TextureContent="rbxassetid://36323844"
+        NumberValue "ItemID" Value=36913594
+    }
+    Part "Button_R80" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12552175" TextureContent="rbxassetid://12552175"
+        NumberValue "ItemID" Value=12562495
+    }
+    Part "Button_RemoteMine" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://28516273" TextureContent="rbxassetid://28516273"
+        NumberValue "ItemID" Value=33383241
+    }
+    Part "Button_RocketLauncher" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://31613709" TextureContent="rbxassetid://31613709"
+        NumberValue "ItemID" Value=32356064
+    }
+    Part "Button_RomanCandle" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12559287" TextureContent="rbxassetid://12559287"
+        NumberValue "ItemID" Value=12562390
+    }
+    Part "Button_SubspaceTripmine" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11987521" TextureContent="rbxassetid://11987521"
+        NumberValue "ItemID" Value=11999247
+    }
+    Part "Button_TNT" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12894577" TextureContent="rbxassetid://12894577"
+        NumberValue "ItemID" Value=12902404
+    }
+    Part "Button_TeddyTrap" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,3.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12218172" TextureContent="rbxassetid://12218172"
+        NumberValue "ItemID" Value=12890798
+    }
+    Part "Button_TixBomb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,5.921,453.531|-90,0,-180 Color=#C4281C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19360478" TextureContent="rbxassetid://19360478"
+        NumberValue "ItemID" Value=19644347
+    }
+}
+Model "Melee" @file="Scene/Workspace/GearMachine~2/Machine/Buttons/Melee.bridge"
+Model "Musical" {
+    Part "Button_Banjo" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-220.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12856262" TextureContent="rbxassetid://12856262"
+        NumberValue "ItemID" Value=12909278
+    }
+    Part "Button_BlueStratobloxxer" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-226.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12503958" TextureContent="rbxassetid://12503958"
+        NumberValue "ItemID" Value=12504077
+    }
+    Part "Button_Bugle" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-210.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://32316702" TextureContent="rbxassetid://32316702"
+        NumberValue "ItemID" Value=33683368
+    }
+    Part "Button_Cowbell" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-220.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://20006662" TextureContent="rbxassetid://20006662"
+        NumberValue "ItemID" Value=20373160
+    }
+    Part "Button_DrumKit" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-210.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33682770" TextureContent="rbxassetid://33682770"
+        NumberValue "ItemID" Value=33866728
+    }
+    Part "Button_EgyptGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-222.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13021270" TextureContent="rbxassetid://13021270"
+        NumberValue "ItemID" Value=18482562
+    }
+    Part "Button_GridironGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-214.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12888183" TextureContent="rbxassetid://12888183"
+        NumberValue "ItemID" Value=15470222
+    }
+    Part "Button_JungleGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-224.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://12890134" TextureContent="rbxassetid://12890134"
+        NumberValue "ItemID" Value=13206856
+    }
+    Part "Button_Maraca" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-218.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://21339489" TextureContent="rbxassetid://21339489"
+        NumberValue "ItemID" Value=21351465
+    }
+    Part "Button_MariachiGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-222.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26639670" TextureContent="rbxassetid://26639670"
+        NumberValue "ItemID" Value=26673760
+    }
+    Part "Button_NinjaGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-226.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13018520" TextureContent="rbxassetid://13018520"
+        NumberValue "ItemID" Value=13841367
+    }
+    Part "Button_RedStratobloxxer" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-228.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://10504683" TextureContent="rbxassetid://10504683"
+        NumberValue "ItemID" Value=11419882
+    }
+    Part "Button_Roblocaster" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-224.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://14115908" TextureContent="rbxassetid://14115908"
+        NumberValue "ItemID" Value=14492601
+    }
+    Part "Button_RocketGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-228.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13023796" TextureContent="rbxassetid://13023796"
+        NumberValue "ItemID" Value=13477940
+    }
+    Part "Button_Saxophone" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-212.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://30257857" TextureContent="rbxassetid://30257857"
+        NumberValue "ItemID" Value=30393653
+    }
+    Part "Button_SkeleGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-216.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13033637" TextureContent="rbxassetid://13033637"
+        NumberValue "ItemID" Value=13478015
+    }
+    Part "Button_Snowglobe" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-208.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19390252" TextureContent="rbxassetid://19390252"
+        NumberValue "ItemID" Value=19111894
+    }
+    Part "Button_Snowglobe2" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-208.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19390223" TextureContent="rbxassetid://19390223"
+        NumberValue "ItemID" Value=19381970
+    }
+    Part "Button_SpookyGuitar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-218.857,5.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13061743" TextureContent="rbxassetid://13061743"
+        NumberValue "ItemID" Value=13206887
+    }
+    Part "Button_Tambourine" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-216.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://21341578" TextureContent="rbxassetid://21341578"
+        NumberValue "ItemID" Value=21392417
+    }
+    Part "Button_USAVuvuzela" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-212.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29525420" TextureContent="rbxassetid://29525420"
+        NumberValue "ItemID" Value=29532111
+    }
+    Part "Button_Vuvuzela" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-214.857,3.921,453.531|-90,0,-180 Color=#FFB000 Reflectance=0.3 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29086168" TextureContent="rbxassetid://29086168"
+        NumberValue "ItemID" Value=29345958
+    }
+}
+Model "Powerup" {
+    Part "Button_Atomizer" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-221.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://35231550" TextureContent="rbxassetid://35231550"
+        NumberValue "ItemID" Value=35293856
+    }
+    Part "Button_Bionoculars" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-219.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27039817" TextureContent="rbxassetid://27039817"
+        NumberValue "ItemID" Value=27133214
+    }
+    Part "Button_Bloxiade" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-211.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://17237572" TextureContent="rbxassetid://17237572"
+        NumberValue "ItemID" Value=17237662
+    }
+    Part "Button_BloxyCola" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-231.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://10472127" TextureContent="rbxassetid://10472127"
+        NumberValue "ItemID" Value=10472779
+    }
+    Part "Button_Broomstick" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-208.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://36365752" TextureContent="rbxassetid://36365752"
+        NumberValue "ItemID" Value=36913601
+    }
+    Part "Button_CeramicPotion" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-225.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22117085" TextureContent="rbxassetid://22117085"
+        NumberValue "ItemID" Value=22152171
+    }
+    Part "Button_ChocolateBunny" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-219.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24791126" TextureContent="rbxassetid://24791126"
+        NumberValue "ItemID" Value=24791472
+    }
+    Part "Button_Compass" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-220.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://14657127" TextureContent="rbxassetid://14657127"
+        NumberValue "ItemID" Value=14864611
+    }
+    Part "Button_ElevatorSummoner" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-223.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34239865" TextureContent="rbxassetid://34239865"
+        NumberValue "ItemID" Value=35683911
+    }
+    Part "Button_EpicJuice" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-213.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://38161409" TextureContent="rbxassetid://38161409"
+        NumberValue "ItemID" Value=38861951
+    }
+    Part "Button_Epicsauce" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-215.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29691646" TextureContent="rbxassetid://29691646"
+        NumberValue "ItemID" Value=31314931
+    }
+    Part "Button_FirstAidKit" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-230.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13319305" TextureContent="rbxassetid://13319305"
+        NumberValue "ItemID" Value=15397778
+    }
+    Part "Button_GPS" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-218.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://15666388" TextureContent="rbxassetid://15666388"
+        NumberValue "ItemID" Value=15668963
+    }
+    Part "Button_GrabStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-222.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33360688" TextureContent="rbxassetid://33360688"
+        NumberValue "ItemID" Value=33382711
+    }
+    Part "Button_GrapplingGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-212.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://30327988" TextureContent="rbxassetid://30327988"
+        NumberValue "ItemID" Value=30393548
+    }
+    Part "Button_GravCoil" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-207.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16619617" TextureContent="rbxassetid://16619617"
+        NumberValue "ItemID" Value=16688968
+    }
+    Part "Button_GravityGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-225.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34302761" TextureContent="rbxassetid://34302761"
+        NumberValue "ItemID" Value=34901961
+    }
+    Part "Button_GravityHammer" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-231.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33685977" TextureContent="rbxassetid://33685977"
+        NumberValue "ItemID" Value=33866846
+    }
+    Part "Button_GreenBalloon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-209.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27471616" TextureContent="rbxassetid://27471616"
+        NumberValue "ItemID" Value=27494652
+    }
+    Part "Button_HealPotion" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-229.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11418339" TextureContent="rbxassetid://11418339"
+        NumberValue "ItemID" Value=11419319
+    }
+    Part "Button_Jetpack" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-210.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://31310254" TextureContent="rbxassetid://31310254"
+        NumberValue "ItemID" Value=31314966
+    }
+    Part "Button_MagicBunny" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-214.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24715894" TextureContent="rbxassetid://24715894"
+        NumberValue "ItemID" Value=24841520
+    }
+    Part "Button_Mindgrapes" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-209.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16941323" TextureContent="rbxassetid://16941323"
+        NumberValue "ItemID" Value=16951083
+    }
+    Part "Button_Ninja" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-228.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29688402" TextureContent="rbxassetid://29688402"
+        NumberValue "ItemID" Value=30847779
+    }
+    Part "Button_PortalGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-229.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34312296" TextureContent="rbxassetid://34312296"
+        NumberValue "ItemID" Value=34870758
+    }
+    Part "Button_Pwny" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-213.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26415203" TextureContent="rbxassetid://26415203"
+        NumberValue "ItemID" Value=26777410
+    }
+    Part "Button_QuickPotion" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-223.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://20606435" TextureContent="rbxassetid://20606435"
+        NumberValue "ItemID" Value=20642023
+    }
+    Part "Button_Radar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-216.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29516227" TextureContent="rbxassetid://29516227"
+        NumberValue "ItemID" Value=29532138
+    }
+    Part "Button_RainbowPony" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-215.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26415326" TextureContent="rbxassetid://26415326"
+        NumberValue "ItemID" Value=26417031
+    }
+    Part "Button_RedBalloon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-211.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26721793" TextureContent="rbxassetid://26721793"
+        NumberValue "ItemID" Value=27477255
+    }
+    Part "Button_SlatePotion" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-227.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11448091" TextureContent="rbxassetid://11448091"
+        NumberValue "ItemID" Value=11450664
+    }
+    Part "Button_Smore" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-217.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22789394" TextureContent="rbxassetid://22789394"
+        NumberValue "ItemID" Value=22788972
+    }
+    Part "Button_StaffWoodlands" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-226.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11384456" TextureContent="rbxassetid://11384456"
+        NumberValue "ItemID" Value=11373617
+    }
+    Part "Button_StarbloxLatte" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-221.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://15930781" TextureContent="rbxassetid://15930781"
+        NumberValue "ItemID" Value=15932306
+    }
+    Part "Button_StepGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-227.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34813669" TextureContent="rbxassetid://34813669"
+        NumberValue "ItemID" Value=34898883
+    }
+    Part "Button_TreatBag" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-207.857,33.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid:// 35955931 " TextureContent="rbxassetid:// 35955931 "
+        NumberValue "ItemID" Value=37347141
+    }
+    Part "Button_VineStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-224.857,31.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29330963" TextureContent="rbxassetid://29330963"
+        NumberValue "ItemID" Value=30847733
+    }
+    Part "Button_WizardOrb" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-217.857,29.921,453.531|-90,0,-180 Color=#6E99CA TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://38161543" TextureContent="rbxassetid://38161543"
+        NumberValue "ItemID" Value=38327125
+    }
+}
+Model "Ranged" {
+    Part "Button_8BitBarrel" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29874079" TextureContent="rbxassetid://29874079"
+        NumberValue "ItemID" Value=31839260
+    }
+    Part "Button_AtomicPistol" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13465932" TextureContent="rbxassetid://13465932"
+        NumberValue "ItemID" Value=13838639
+    }
+    Part "Button_AweStar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://18009573" TextureContent="rbxassetid://18009573"
+        NumberValue "ItemID" Value=18010691
+    }
+    Part "Button_BigHeadGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26773860" TextureContent="rbxassetid://26773860"
+        NumberValue "ItemID" Value=26774629
+    }
+    Part "Button_BlowDryer" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11716958" TextureContent="rbxassetid://11716958"
+        NumberValue "ItemID" Value=11719016
+    }
+    Part "Button_BluePaintballGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25908055" TextureContent="rbxassetid://25908055"
+        NumberValue "ItemID" Value=26017478
+    }
+    Part "Button_Blunderbuss" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29328651" TextureContent="rbxassetid://29328651"
+        NumberValue "ItemID" Value=30847685
+    }
+    Part "Button_CaptainFlintlock" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16973563" TextureContent="rbxassetid://16973563"
+        NumberValue "ItemID" Value=17237675
+    }
+    Part "Button_Chakram" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://18479915" TextureContent="rbxassetid://18479915"
+        NumberValue "ItemID" Value=18479966
+    }
+    Part "Button_CobraStar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22769079" TextureContent="rbxassetid://22769079"
+        NumberValue "ItemID" Value=22788064
+    }
+    Part "Button_Crossbow" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16215840 " TextureContent="rbxassetid://16215840 "
+        NumberValue "ItemID" Value=16216702
+    }
+    Part "Button_CupcakeLauncher" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34250152" TextureContent="rbxassetid://34250152"
+        NumberValue "ItemID" Value=34399318
+    }
+    Part "Button_Disintergrex" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://18267658" TextureContent="rbxassetid://18267658"
+        NumberValue "ItemID" Value=18268645
+    }
+    Part "Button_EmeraldScatterblaster" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22967672" TextureContent="rbxassetid://22967672"
+        NumberValue "ItemID" Value=22969230
+    }
+    Part "Button_FireStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://32794212" TextureContent="rbxassetid://32794212"
+        NumberValue "ItemID" Value=32858741
+    }
+    Part "Button_Flamethrower" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33799241" TextureContent="rbxassetid://33799241"
+        NumberValue "ItemID" Value=33879504
+    }
+    Part "Button_Flashbang" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16978693" TextureContent="rbxassetid://16978693"
+        NumberValue "ItemID" Value=16979083
+    }
+    Part "Button_Flintlock" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13508020" TextureContent="rbxassetid://13508020"
+        NumberValue "ItemID" Value=16726984
+    }
+    Part "Button_FreezeRay" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25974580" TextureContent="rbxassetid://25974580"
+        NumberValue "ItemID" Value=26013203
+    }
+    Part "Button_GrannyCrossbow" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16973292" TextureContent="rbxassetid://16973292"
+        NumberValue "ItemID" Value=16986649
+    }
+    Part "Button_GreenPaintballGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27126838" TextureContent="rbxassetid://27126838"
+        NumberValue "ItemID" Value=27245855
+    }
+    Part "Button_Handcannon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33649924" TextureContent="rbxassetid://33649924"
+        NumberValue "ItemID" Value=33867016
+    }
+    Part "Button_Heartbreak" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22117281" TextureContent="rbxassetid://22117281"
+        NumberValue "ItemID" Value=22152195
+    }
+    Part "Button_HypnoGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://35280910" TextureContent="rbxassetid://35280910"
+        NumberValue "ItemID" Value=35366155
+    }
+    Part "Button_IceStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19703910" TextureContent="rbxassetid://19703910"
+        NumberValue "ItemID" Value=19704064
+    }
+    Part "Button_IceStaff2" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://32628536" TextureContent="rbxassetid://32628536"
+        NumberValue "ItemID" Value=32858662
+    }
+    Part "Button_IcicleCannon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://20518488" TextureContent="rbxassetid://20518488"
+        NumberValue "ItemID" Value=20519646
+    }
+    Part "Button_MagentaPaintballGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27131581" TextureContent="rbxassetid://27131581"
+        NumberValue "ItemID" Value=30649735
+    }
+    Part "Button_MorphGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://28910004" TextureContent="rbxassetid://28910004"
+        NumberValue "ItemID" Value=29099749
+    }
+    Part "Button_NoobTube" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27469657" TextureContent="rbxassetid://27469657"
+        NumberValue "ItemID" Value=27474371
+    }
+    Part "Button_NovaWand" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27840160" TextureContent="rbxassetid://27840160"
+        NumberValue "ItemID" Value=27860496
+    }
+    Part "Button_NuclearIcicleGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://22971044" TextureContent="rbxassetid://22971044"
+        NumberValue "ItemID" Value=22971409
+    }
+    Part "Button_OrangePaintballGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://36045862" TextureContent="rbxassetid://36045862"
+        NumberValue "ItemID" Value=36107470
+    }
+    Part "Button_PBLauncher" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://29467199" TextureContent="rbxassetid://29467199"
+        NumberValue "ItemID" Value=29532089
+    }
+    Part "Button_PhaserLaser" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-248.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://16428992" TextureContent="rbxassetid://16428992"
+        NumberValue "ItemID" Value=16469499
+    }
+    Part "Button_PulseLaser" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11948818" TextureContent="rbxassetid://11948818"
+        NumberValue "ItemID" Value=11999279
+    }
+    Part "Button_PumpkinStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://36828771" TextureContent="rbxassetid://36828771"
+        NumberValue "ItemID" Value=36913598
+    }
+    Part "Button_RebelIncinitron" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23826252" TextureContent="rbxassetid://23826252"
+        NumberValue "ItemID" Value=22920072
+    }
+    Part "Button_RedPaintballGun" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,10.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid:// 26011351" TextureContent="rbxassetid:// 26011351"
+        NumberValue "ItemID" Value=26014536
+    }
+    Part "Button_Revolver" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25301918" TextureContent="rbxassetid://25301918"
+        NumberValue "ItemID" Value=25317304
+    }
+    Part "Button_RoboArm" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-236.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://35231485" TextureContent="rbxassetid://35231485"
+        NumberValue "ItemID" Value=35366215
+    }
+    Part "Button_Scatterblaster" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13506760" TextureContent="rbxassetid://13506760"
+        NumberValue "ItemID" Value=21420014
+    }
+    Part "Button_ShadowNinjaStar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-252.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11113226" TextureContent="rbxassetid://11113226"
+        NumberValue "ItemID" Value=11115851
+    }
+    Part "Button_SilverNinjaStar" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://11377211" TextureContent="rbxassetid://11377211"
+        NumberValue "ItemID" Value=11377306
+    }
+    Part "Button_SilverSnowflake" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-246.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19254138" TextureContent="rbxassetid://19254138"
+        NumberValue "ItemID" Value=19643249
+    }
+    Part "Button_Slingshot" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://33225037" TextureContent="rbxassetid://33225037"
+        NumberValue "ItemID" Value=33382537
+    }
+    Part "Button_Snowball" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19326518" TextureContent="rbxassetid://19326518"
+        NumberValue "ItemID" Value=19328185
+    }
+    Part "Button_SnowballCannon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19362375 " TextureContent="rbxassetid://19362375 "
+        NumberValue "ItemID" Value=19704172
+    }
+    Part "Button_StaffOfPower" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://34813616" TextureContent="rbxassetid://34813616"
+        NumberValue "ItemID" Value=35682284
+    }
+    Part "Button_StaffSparks" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://10758325" TextureContent="rbxassetid://10758325"
+        NumberValue "ItemID" Value=10760425
+    }
+    Part "Button_StaffWinds" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://18434778" TextureContent="rbxassetid://18434778"
+        NumberValue "ItemID" Value=18462637
+    }
+    Part "Button_SuperGDisruptor" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-244.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://13505853" TextureContent="rbxassetid://13505853"
+        NumberValue "ItemID" Value=14516975
+    }
+    Part "Button_TurkeyCannon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-250.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://40478842" TextureContent="rbxassetid://40478842"
+        NumberValue "ItemID" Value=40504724
+    }
+    Part "Button_WarRock" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://10884137" TextureContent="rbxassetid://10884137"
+        NumberValue "ItemID" Value=10884288
+    }
+    Part "Button_WarTurkey" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,16.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://18465411" TextureContent="rbxassetid://18465411"
+        NumberValue "ItemID" Value=18466105
+    }
+    Part "Button_WaterBalloon" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-240.857,8.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://28605868" TextureContent="rbxassetid://28605868"
+        NumberValue "ItemID" Value=29100543
+    }
+    Part "Button_WitchWand" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-234.857,18.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://36324036" TextureContent="rbxassetid://36324036"
+        NumberValue "ItemID" Value=37347098
+    }
+    Part "Button_WizardWand" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-238.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://31656179" TextureContent="rbxassetid://31656179"
+        NumberValue "ItemID" Value=32355966
+    }
+    Part "Button_YellowSnowball" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,12.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://19703453" TextureContent="rbxassetid://19703453"
+        NumberValue "ItemID" Value=19703476
+    }
+    Part "Button_ZombieStaff" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-242.857,14.921,453.531|-90,0,-180 Color=#635F62 TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://26414820" TextureContent="rbxassetid://26414820"
+        NumberValue "ItemID" Value=26421972
+    }
+}
+Model "Social" @file="Scene/Workspace/GearMachine~2/Machine/Buttons/Social.bridge"
+Model "Special" {
+    Part "Button_CTFGarlic" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,28.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://37241763" TextureContent="rbxassetid://37241763"
+        NumberValue "ItemID" Value=37694914
+    }
+    Part "Button_CTFSilverDust" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,28.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://37241790" TextureContent="rbxassetid://37241790"
+        NumberValue "ItemID" Value=37694889
+    }
+    Part "Button_EggBasket" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,26.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24710915" TextureContent="rbxassetid://24710915"
+        NumberValue "ItemID" Value=24814192
+    }
+    Part "Button_EggCompass" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,26.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24826609" TextureContent="rbxassetid://24826609"
+        NumberValue "ItemID" Value=24903474
+    }
+    Part "Button_EggMagnet" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,24.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24835167" TextureContent="rbxassetid://24835167"
+        NumberValue "ItemID" Value=24903441
+    }
+    Part "Button_Eggdentifier" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,24.921,453.531|-90,0,-180 Color=#4B974B TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24832783" TextureContent="rbxassetid://24832783"
+        NumberValue "ItemID" Value=24903431
+    }
+}
+Model "Transport" {
+    Part "Button_SB-BC" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,21.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27901987" TextureContent="rbxassetid://27901987"
+        NumberValue "ItemID" Value=27902388
+    }
+    Part "Button_SB-OBC" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,19.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27901917" TextureContent="rbxassetid://27901917"
+        NumberValue "ItemID" Value=27902406
+    }
+    Part "Button_SB-TBC" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,19.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27901963" TextureContent="rbxassetid://27901963"
+        NumberValue "ItemID" Value=27902398
+    }
+    Part "Button_SBBlueYonder" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,11.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23545613" TextureContent="rbxassetid://23545613"
+        NumberValue "ItemID" Value=23153735
+    }
+    Part "Button_SBDastardly" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,13.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23545599" TextureContent="rbxassetid://23545599"
+        NumberValue "ItemID" Value=23153742
+    }
+    Part "Button_SBGreen" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,11.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23154591" TextureContent="rbxassetid://23154591"
+        NumberValue "ItemID" Value=23156134
+    }
+    Part "Button_SBJealous" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,15.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://24326973" TextureContent="rbxassetid://24326973"
+        NumberValue "ItemID" Value=23922939
+    }
+    Part "Button_SBLava" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,15.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23926545" TextureContent="rbxassetid://23926545"
+        NumberValue "ItemID" Value=23532796
+    }
+    Part "Button_SBOrange" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,13.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://23153868" TextureContent="rbxassetid://23153868"
+        NumberValue "ItemID" Value=23155792
+    }
+    Part "Button_SBRoblox" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,21.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://27902024" TextureContent="rbxassetid://27902024"
+        NumberValue "ItemID" Value=27902303
+    }
+    Part "Button_SBScribbly" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-258.857,17.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25244178" TextureContent="rbxassetid://25244178"
+        NumberValue "ItemID" Value=24294377
+    }
+    Part "Button_SBUnstoppable" Size=2,0.4,2 Anchored BottomSurface=Smooth CFrame=-256.857,17.121,453.531|-90,0,-180 Color=#6B327C TopSurface=Smooth {
+        ClickDetector "ClickDetector" MaxActivationDistance=35 {
+            BoolValue "Debounce"
+        }
+        Decal "Decal" Face=Top Texture="rbxassetid://25244861" TextureContent="rbxassetid://25244861"
+        NumberValue "ItemID" Value=24294400
+    }
+}

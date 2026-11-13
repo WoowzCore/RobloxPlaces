@@ -1,0 +1,520 @@
+NumberValue "Ammo" Value=200
+Part "B1" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=0.2,0,0 Scale=0.929,1,0.929
+}
+Part "B2" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=0.1,0,0.173 Scale=0.929,1,0.929
+}
+Part "B3" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=-0.1,0,0.173 Scale=0.929,1,0.929
+}
+Part "B4" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=-0.2,0,0 Scale=0.929,1,0.929
+}
+Part "B5" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=-0.1,0,-0.173 Scale=0.929,1,0.929
+}
+Part "B6" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Offset=0.1,0,-0.173 Scale=0.929,1,0.929
+}
+LocalScript "BackupWeld" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/BackupWeld.luau"
+LocalScript "BackupWeld" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/BackupWeld~2.luau"
+LocalScript "BackupWeld" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/BackupWeld~3.luau"
+Script "Bullet" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/Bullet.luau" Disabled
+Part "C1" Size=0.629,0.2,0.629 BottomSurface=Smooth CFrame=-592.716,5.076,-14.947|-0.003,-1.015,-90.037 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.429,1
+}
+Part "C2" Size=0.629,0.2,0.629 BottomSurface=Smooth CFrame=-593.002,5.076,-14.952|-0.003,-1.015,-90.037 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.429,1
+}
+Part "C3" Size=0.629,0.2,0.629 BottomSurface=Smooth CFrame=-593.288,5.076,-14.957|-0.003,-1.015,-90.037 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.429,1
+}
+Part "C4" Size=0.629,0.2,0.629 BottomSurface=Smooth CFrame=-594.245,5.075,-14.974|-0.003,-1.015,-90.037 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.857,1
+}
+Part "Center" Size=0.2,2.643,0.2 BottomSurface=Smooth CFrame=-593.937,5.075,-14.969|-0.003,-1.015,-90.037 TopSurface=Smooth Transparency=1 {
+    BlockMesh "Mesh" Scale=0.929,1,0.929
+}
+LocalScript "Crouch" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/Crouch.luau"
+Part "Flash" Size=0.2,0.286,0.2 BottomSurface=Smooth CFrame=-592.437,5.291,-14.941|-0.003,-1.015,-90.037 Color=#DA8541 TopSurface=Smooth Transparency=1 {
+    SpecialMesh "Mesh" MeshType=Sphere Scale=1.857,3,1.857
+    Smoke "Smoke" Enabled=false RiseVelocity=2
+}
+LocalScript "GuiScript" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/GuiScript.luau"
+LocalScript "GuiScript(backup)" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/GuiScript(backup).luau"
+Part "Handle" @file="Scene/Workspace/gun spawner _minigun_/Minigun V2/Handle.bridge" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.811,5.931,-15.065|90.002,-0.012,91.007 Color=#111111 TopSurface=Smooth
+NumberValue "Heat"
+Part "Heater" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-593.938,5.075,-14.969|-0.003,-1.015,0.013 Color=#1B2A35 TopSurface=Smooth Transparency=1 {
+    BlockMesh "Mesh" Scale=0.714,0.714,0.714
+}
+SpecialMesh "Larm" MeshContent="http://www.roblox.com/asset/?id=27111419" MeshId="http://www.roblox.com/asset/?id=27111419" MeshType=FileMesh
+NumberValue "Left"
+Part "Mag" Size=0.2,0.33,0.2 BottomSurface=Smooth CFrame=-596.332,4.548,-16.031|120.008,0.52,-89.116 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.491,1,0.107
+}
+Part "Mag2" Size=0.2,0.33,0.2 BottomSurface=Smooth CFrame=-596.331,4.634,-16.064|120.008,0.52,-89.116 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.223,1,0.491
+}
+Part "Mag3" Size=1.17,0.42,0.473 BottomSurface=Smooth CFrame=-596.338,4.104,-15.719|120.008,0.52,-89.116 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh"
+}
+NumberValue "MaxAmmo" Value=200
+ScreenGui "OverheatBar" {
+    Frame "HeatBack" Position=0,15,0,15 Size=0,150,0,10 BackgroundColor3=#FFFFFF BorderColor3=#000000 ZIndex=2 {
+        TextLabel "HeatLabel" Position=0,75,0,5 BackgroundColor3=#000000 BorderColor3=#000000 Text="Heat" ZIndex=4
+    }
+    Frame "HeatFrame" Position=0,10,0,10 Size=0,160,0,20
+    Frame "HeatRed" Position=0,15,0,15 Size=0,100,0,10 BackgroundColor3=#FF0000 ZIndex=3
+}
+LocalScript "PaintballShooter" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/PaintballShooter.luau" {
+    Sound "Ding" AudioContent="http://www.roblox.com/asset/?id=2766581" PlaybackSpeed=0.679 SoundId="http://www.roblox.com/asset/?id=2766581" Volume=1
+    Sound "Fire" AudioContent="rbxasset://sounds//paintball.wav" PlaybackSpeed=2 SoundId="rbxasset://sounds//paintball.wav" Volume=1
+}
+Part "Part" Size=0.804,0.2,0.625 BottomSurface=Smooth CFrame=-596.879,5.046,-15.044|90.006,0.014,-89 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.179,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.297,4.443,-14.735|88.277,59.973,152.011 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.429 BottomSurface=Smooth CFrame=-597.531,5.52,-15.061|2.129,89,-2.122 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.446,1
+}
+Part "Part" Size=0.2,0.268,0.2 BottomSurface=Smooth CFrame=-595.069,5.673,-15.325|-177.869,-89,2.125 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.446,1,0.446
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.767,5.931,-15.064|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.536,0.223
+}
+Part "Part" Size=0.2,0.625,0.2 BottomSurface=Smooth CFrame=-597.361,5.305,-15.057|90.007,0.014,90.999 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,0.357
+}
+Part "Part" Size=0.2,0.58,0.2 BottomSurface=Smooth CFrame=-597.531,5.184,-15.059|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,0.357
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.801,-15.059|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.134,0.134
+}
+Part "Part" Size=0.67,1.004,0.67 BottomSurface=Smooth CFrame=-596.222,4.667,-14.619|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh"
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.432,5.801,-15.059|-177.871,-89,-177.878 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.134,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.249,4.53,-14.646|88.276,59.973,-72.994 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.631,-15.059|-177.862,-89,-177.869 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.223,0.134
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.702,5.324,-15.22|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.786,0.67,1.786
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.432,5.747,-15.059|-177.871,-89,2.122 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.223,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.086,5.235,-14.387|-177.871,-89,2.122 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.714,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.587,-15.059|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.223,0.134
+}
+Part "Part" Size=0.2,0.348,0.268 BottomSurface=Smooth CFrame=-597.611,5.739,-15.061|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,1
+}
+Part "Part" Size=0.268,0.58,0.268 BottomSurface=Smooth CFrame=-595.896,5.262,-15.339|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.5,1,1.5
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.268,4.494,-14.667|88.277,59.972,-57.988 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.402,1.138,0.402 BottomSurface=Smooth CFrame=-596.222,4.667,-14.619|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh"
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.703,-15.059|-177.862,-89,2.131 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.223,0.134
+}
+Part "Part" Size=0.268,0.268,0.2 BottomSurface=Smooth CFrame=-596.24,5.285,-14.838|135.007,0.726,-179.295 Color=#111111 TopSurface=Smooth {
+    Decal "Decal" Texture="rbxassetid://19736495" TextureContent="rbxassetid://19736495"
+    BlockMesh "Mesh" Scale=1,1,0.357
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.432,5.587,-15.058|-177.862,-89,-177.869 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.223,0.179
+}
+Part "Part" Size=0.67,1.004,0.67 BottomSurface=Smooth CFrame=-596.208,4.667,-15.423|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh"
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.472,5.85,-15.06|2.129,89,-2.122 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.357,0.045
+}
+Part "Part" Size=0.2,0.268,0.2 BottomSurface=Smooth CFrame=-595.08,5.673,-14.699|-177.869,-89,2.125 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.446,1,0.446
+}
+Part "Part" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.341,5.15,-15.442|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.491,1,2.455
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.459,5.828,-15.058|-177.862,-89,-177.869 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.134,0.089
+}
+Part "Part" Size=0.2,0.2,0.33 BottomSurface=Smooth CFrame=-597.579,5.949,-15.061|-177.862,-89,-177.869 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.357,1
+}
+Part "Part" Size=0.893,0.2,0.714 BottomSurface=Smooth CFrame=-595.433,5.047,-15.018|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.893,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.073,4.659,-15.19|105.012,0.276,90.975 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.288,4.453,-14.909|88.276,59.973,-148.019 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.229,4.549,-15.096|-166.91,8.426,28.932 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.402,1.138,0.402 BottomSurface=Smooth CFrame=-596.208,4.667,-15.423|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh"
+}
+Part "Part" Size=0.804,0.2,0.625 BottomSurface=Smooth CFrame=-595.567,5.047,-15.02|90.006,0.014,-89 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.446,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.273,4.479,-14.943|88.277,59.973,-133.022 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.615,5.515,-15.061|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.737,0.179,0.58
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.789,5.824,-15.065|-89.993,-0.014,89.001 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.446,0.536
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.9,-15.059|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.134,0.134
+}
+Part "Part" Size=0.2,1.116,0.2 BottomSurface=Smooth CFrame=-595.725,5.507,-15.175|90.006,0.014,76.004 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,0.134
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.437,5.515,-15.059|2.129,89,-2.122 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.737,0.179,0.58
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.086,5.191,-14.449|-0.003,-1.015,-90.037 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.79,5.55,-15.064|90.007,0.014,90.999 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.446,0.759
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.905,4.855,-14.979|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.446,0.045,0.446
+}
+Part "Part" Size=0.2,0.2,0.268 BottomSurface=Smooth CFrame=-597.7,5.452,-15.063|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.223,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.065,5.236,-15.592|90.007,0.014,1.015 Color=#CDCDCD TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.446,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.445,5.779,-15.059|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.089,0.313
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.305,4.428,-14.824|88.276,59.973,-178.006 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.085,5.235,-14.43|90.006,0.014,-178.985 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.446,0.223
+}
+Part "Part" Size=0.268,0.268,0.2 BottomSurface=Smooth CFrame=-595.882,5.287,-14.831|135.007,0.727,-179.292 Color=#111111 TopSurface=Smooth {
+    Decal "Decal" Texture="rbxassetid://25401482" TextureContent="rbxassetid://25401482"
+    BlockMesh "Mesh" Scale=1,1,0.357
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.458,5.872,-15.058|-177.862,-89,2.131 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.134,0.089
+}
+Part "Part" Size=0.2,0.536,0.2 BottomSurface=Smooth CFrame=-595.074,5.764,-15.012|-89.994,-0.014,178.985 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.446,1.1,0.446
+}
+Part "Part" Size=0.893,0.268,0.2 BottomSurface=Smooth CFrame=-595.075,5.494,-15.012|90.007,0.014,90.999 Color=#CDCDCD TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,1,0.446
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.167,4.636,-14.635|89.43,30.009,-88.846 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.795,0.2 BottomSurface=Smooth CFrame=-597.295,5.046,-15.051|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.714,1,0.714
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.201,4.607,-14.637|89.007,44.995,-88.586 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,1.116,0.2 BottomSurface=Smooth CFrame=-595.77,5.508,-14.891|90.006,0.014,105.997 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,0.134
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.269,4.488,-15.137|-138.869,21.476,21.512 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.268,0.357 BottomSurface=Smooth CFrame=-595.066,5.361,-15.503|90.007,0.014,90.999 Color=#CDCDCD TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.446,1,1
+}
+Part "Part" Size=0.67,0.2,0.67 BottomSurface=Smooth CFrame=-596.61,4.667,-15.43|90.006,0.014,-89 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.05,0.335,1.05
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.463,5.747,-15.059|2.131,89,-2.125 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.223,0.134
+}
+Part "Part" Size=0.2,0.268,0.357 BottomSurface=Smooth CFrame=-595.084,5.36,-14.52|90.007,0.014,90.999 Color=#CDCDCD TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.446,1,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.083,4.869,-14.583|2.102,89,-47.112 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.07,4.775,-15.382|135.011,0.727,90.733 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.754,5.349,-15.064|-89.994,-0.014,89 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.804,0.804
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.295,4.439,-15.302|-72.263,28.588,-9.615 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.015,4.665,-14.633|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.335,0.893,0.335
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.201,4.584,-14.985|88.276,59.973,-88.006 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.208,4.589,-15.092|-179.996,1.018,30.016 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.071,4.712,-15.28|-177.869,-89,167.117 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.298,4.436,-15.257|-89.412,30.011,-1.175 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.08,4.717,-14.752|2.132,89,-17.134 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.021,4.838,-14.982|89.429,30.009,-88.846 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.256,4.494,-15.412|88.277,59.973,-118.016 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.939,4.86,-15.087|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.294,4.444,-15.212|-106.663,29.189,7.397 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.187,4.607,-15.44|89.007,44.995,-88.586 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.065,4.816,-15.09|89.008,44.994,-88.591 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.153,4.637,-15.44|89.429,30.009,-88.846 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.027,4.842,-15.089|89.43,30.009,-88.85 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.077,4.628,-14.958|75.553,-30.27,-88.893 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.904,4.855,-15.087|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.446,0.045,0.446
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.067,4.963,-15.507|150.006,0.886,90.532 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.235,4.53,-15.432|88.277,59.973,-103.01 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.67,0.2,0.67 BottomSurface=Smooth CFrame=-596.623,4.666,-14.626|90.006,0.014,-89 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.05,0.335,1.05
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.079,4.663,-14.842|74.999,-0.25,-89.044 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.231,4.549,-14.983|88.277,59.973,-103.014 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.88,4.666,-14.63|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.67,0.446,0.67
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.082,4.78,-14.65|44.993,-0.708,-89.319 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.813,4.666,-14.629|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.339,0.223,1.339
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.286,4.452,-15.345|-55.889,25.101,-17.053 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.075,4.614,-15.083|2.332,89.001,-167.317 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.068,4.865,-15.45|-177.893,-89,137.092 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.066,5.07,-15.548|-177.869,-89,107.127 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.085,5.074,-14.484|2.13,89,-77.138 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.212,4.568,-15.44|88.276,59.973,-88.002 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.619,5.385,-15.061|2.131,89,-2.125 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,0.446,0.536
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.253,4.512,-14.968|88.277,59.973,-118.02 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.126,4.657,-14.635|89.738,15.016,-88.965 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.285,4.464,-14.697|88.277,59.973,-42.986 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.112,4.657,-15.439|89.738,15.016,-88.965 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.223,0.2 BottomSurface=Smooth CFrame=-597.134,4.7,-14.983|179.995,1.012,30.016 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,1,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.984,4.857,-15.088|89.739,15.016,-88.97 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.227,4.568,-14.637|88.276,59.973,-88.002 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.299,4.435,-14.868|88.276,59.973,-163.012 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.284,4.462,-15.171|-123.296,26.229,15.176 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.978,4.852,-14.981|89.739,15.016,-88.965 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597,4.666,-15.437|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.335,0.893,0.335
+}
+Part "Part" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.342,5.261,-15.347|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.786,1,1.786
+}
+Part "Part" Size=0.2,0.804,0.2 BottomSurface=Smooth CFrame=-596.646,5.507,-15.044|90.006,0.014,91 Color=#111111 TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=0.67,1,0.134
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.932,4.854,-14.98|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.8,4.666,-15.433|90.007,0.014,-89.001 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.339,0.223,1.339
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.304,4.429,-14.778|88.277,59.973,167.004 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.223,0.2 BottomSurface=Smooth CFrame=-597.013,5.381,-15.05|-177.862,-89,2.131 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,1,0.357
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.065,5.235,-15.638|2.129,89,177.878 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.714,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.083,4.967,-14.525|29.993,-0.872,-89.533 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.084,5.431,-15.052|2.138,89,-2.131 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.893,0.357
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.251,4.513,-15.111|-153.329,15.387,26.112 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.568,5.324,-15.217|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.518,0.67,1.518
+}
+Part "Part" Size=0.2,0.223,0.2 BottomSurface=Smooth CFrame=-597.14,4.705,-15.091|-179.995,1.017,30.016 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,1,0.223
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.432,5.9,-15.059|-177.868,-89,2.125 Color=#111111 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.67,0.134,0.179
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-595.066,5.185,-15.575|179.997,1.015,90.037 Color=#002060 Reflectance=0.1 TopSurface=Smooth {
+    SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.116,0.179
+}
+Part "Part" Size=0.268,0.268,0.268 BottomSurface=Smooth CFrame=-596.633,5.261,-15.352|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.4,1,1.4
+}
+Part "Part" Size=0.268,0.268,0.2 BottomSurface=Smooth CFrame=-596.596,5.286,-14.844|135.007,0.727,-179.295 Color=#111111 TopSurface=Smooth {
+    Decal "Decal" Texture="rbxassetid://64841612" TextureContent="rbxassetid://64841612"
+    BlockMesh "Mesh" Scale=1,1,0.357
+}
+Part "Part" Size=0.893,0.2,0.714 BottomSurface=Smooth CFrame=-595.299,5.047,-15.016|90.007,0.014,-89.001 Color=#CDCDCD TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1,0.446,1
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.82,5.92,-15.065|90.423,-22.622,-88.917 Color=#FF0000 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.67,0.045,0.446
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.059,4.812,-14.982|89.008,44.995,-88.588 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.67,0.2,0.67 BottomSurface=Smooth CFrame=-595.806,4.667,-15.416|90.007,0.014,-89.001 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.05,0.335,1.05
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.85,5.932,-15.067|90.423,-22.622,-88.917 Color=#FF0000 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.536,0.268,0.357
+}
+Part "Part" Size=0.804,1.25,0.625 BottomSurface=Smooth CFrame=-596.236,5.047,-15.033|90.001,-0.02,-88.99 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh"
+}
+Part "Part" Size=0.67,0.2,0.67 BottomSurface=Smooth CFrame=-595.82,4.667,-14.611|90.007,0.014,-89.001 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=1.05,0.335,1.05
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-596.866,4.666,-15.435|90.006,0.014,-89 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.67,0.446,0.67
+}
+Part "Part" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=-597.273,4.473,-15.383|88.277,59.972,-133.019 Color=#111111 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.223,0.29,0.223
+}
+Part "Part" Size=0.2,0.268,0.2 BottomSurface=Smooth CFrame=-597.255,5.046,-15.05|-0.003,-1.015,-90.037 TopSurface=Smooth {
+    CylinderMesh "Mesh" Scale=0.893,1,0.893
+}
+SpecialMesh "Rarm" MeshContent="http://www.roblox.com/asset/?id=27111864" MeshId="http://www.roblox.com/asset/?id=27111864" MeshType=FileMesh
+NumberValue "Recoil" {
+    Script "Script" @src="Scripts/Workspace/gun spawner _minigun_/Minigun V2/Recoil/Script.luau"
+}
+Part "S1" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.341,5.131,-15.459|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.786
+}
+Part "S10" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.333,4.689,-15.918|105.008,0.276,-89.025 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S11" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.332,4.638,-15.969|105.008,0.276,-89.025 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S12" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.332,4.587,-16.019|105.008,0.276,-89.025 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S2" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.34,5.096,-15.521|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.786
+}
+Part "S3" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.339,5.06,-15.583|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.786
+}
+Part "S4" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.338,5.024,-15.646|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S5" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.249,4.98,-15.699|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S6" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.336,4.926,-15.744|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S7" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.336,4.863,-15.78|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S8" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.335,4.801,-15.815|90.006,0.014,-89 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+Part "S9" Size=0.2,0.313,0.2 BottomSurface=Smooth CFrame=-596.334,4.74,-15.867|105.008,0.276,-89.025 Color=#FDEA8D TopSurface=Smooth Transparency=1 {
+    CylinderMesh "Mesh" Scale=0.357,1,1.071
+}
+NumberValue "Spin"
+NumberValue "StoredAmmo" Value=500

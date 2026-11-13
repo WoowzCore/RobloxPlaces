@@ -1,0 +1,87 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=1.468 CharacterJumpPower=14 CharacterMaxSlopeAngle=89 CharacterUseJumpPower CharacterWalkSpeed=13 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        Script "DS" @src="Scripts/StarterPlayer/StarterCharacterScripts/DS.luau"
+        Script "GoreH" @src="Scripts/StarterPlayer/StarterCharacterScripts/GoreH.luau" {
+            Sound "Gib_Sound" AudioContent="rbxassetid://3848986758" SoundId="rbxassetid://3848986758" Volume=1
+            Script "HeadDecap" Disabled @code=<<<
+                local p = script.Parent.Parent.Head
+                local blood = game.Lighting.headblood
+
+                for i = 1,20 do
+                	blood.Position = p.Position
+                	blood:Clone().Parent = workspace.ignore
+                end
+            >>>
+            NumberValue "Health" Value=40
+            NumberValue "MaxHealth"
+        }
+        Script "GoreLA" @src="Scripts/StarterPlayer/StarterCharacterScripts/GoreLA.luau" {
+            Sound "Gib_Sound" AudioContent="rbxassetid://3848986758" SoundId="rbxassetid://3848986758" Volume=1
+            Script "HeadDecap" Disabled @code=<<<
+                local p = script.Parent.Parent ["Left Arm"]
+                local blood = game.Lighting.headblood
+
+                for i = 1,10 do
+                	blood.Position = p.Position
+                	blood:Clone().Parent = workspace.ignore
+                end
+            >>>
+            NumberValue "Health" Value=40
+        }
+        Script "GoreLL" @src="Scripts/StarterPlayer/StarterCharacterScripts/GoreLL.luau" {
+            Sound "Gib_Sound" AudioContent="rbxassetid://3848986758" SoundId="rbxassetid://3848986758" Volume=1
+            Script "HeadDecap" Disabled @code=<<<
+                local p = script.Parent.Parent ["Left Leg"]
+                local blood = game.Lighting.headblood
+
+                for i = 1,10 do
+                	blood.Position = p.Position
+                	blood:Clone().Parent = workspace.ignore
+                end
+            >>>
+            NumberValue "Health" Value=40
+        }
+        Script "GoreRA" @src="Scripts/StarterPlayer/StarterCharacterScripts/GoreRA.luau" {
+            Sound "Gib_Sound" AudioContent="rbxassetid://3848986758" SoundId="rbxassetid://3848986758" Volume=1
+            Script "HeadDecap" Disabled @code=<<<
+                local p = script.Parent.Parent ["Right Arm"]
+                local blood = game.Lighting.headblood
+
+                for i = 1,10 do
+                	blood.Position = p.Position
+                	blood:Clone().Parent = workspace.ignore
+                end
+            >>>
+            NumberValue "Health" Value=40
+        }
+        Script "GoreRL" @src="Scripts/StarterPlayer/StarterCharacterScripts/GoreRL.luau" {
+            Sound "Gib_Sound" AudioContent="rbxassetid://3848986758" SoundId="rbxassetid://3848986758" Volume=1
+            Script "HeadDecap" Disabled @code=<<<
+                local p = script.Parent.Parent ["Right Leg"]
+                local blood = game.Lighting.headblood
+
+                for i = 1,10 do
+                	blood.Position = p.Position
+                	blood:Clone().Parent = workspace.ignore
+                end
+            >>>
+            NumberValue "Health" Value=40
+        }
+        Script "HeadBlood" @src="Scripts/StarterPlayer/StarterCharacterScripts/HeadBlood.luau"
+        Script "IgnoreTable" @code=<<<
+            wait(1)
+            warn("-------------------")
+            warn("Succesfully Loaded!, Made By Aetehel.")
+            warn("-------------------")
+            script.Parent.Parent = workspace.ignore
+        >>>
+        Script "IgnoreTable" @code=<<<
+            wait(1)
+            warn("Dummy Script Loaded.")
+            script.Parent.Parent = workspace.ignore
+        >>>
+        Script "NewMain" @src="Scripts/StarterPlayer/StarterCharacterScripts/NewMain.luau"
+    }
+    Model "StarterPlayer  > StarterCharacterScripts"
+    StarterPlayerScripts "StarterPlayerScripts"
+}

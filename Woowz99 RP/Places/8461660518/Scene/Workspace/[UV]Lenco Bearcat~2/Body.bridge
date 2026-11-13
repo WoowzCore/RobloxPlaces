@@ -1,0 +1,568 @@
+Model "Lightbar" {
+    Part "A1" Size=0.31,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-34.749,12.764,102.024|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "A2" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-35.214,12.434,97.418|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "A3" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-35.843,12.433,90.406|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "A4" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-36.37,9.573,83.997|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "A5" Size=0.31,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-25.944,12.728,101.234|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "A6" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-26.255,12.378,96.664|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "A7" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-26.881,12.377,89.692|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "A8" Size=0.45,0.08,0.05 Anchored BottomSurface=Smooth CFrame=-27.435,9.537,83.195|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Script "A_main" @src="Scripts/Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/A_main.luau"
+    Part "B1" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-26.509,12.581,101.656|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "B2" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-27.007,12.583,101.701|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "B3" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-27.485,12.585,101.744|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "B4" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-27.983,12.587,101.789|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "B5" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-32.595,12.605,102.203|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "B6" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-33.093,12.607,102.247|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "B7" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-33.581,12.609,102.291|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "B8" Size=0.05,0.1,0.41 Anchored BottomSurface=Smooth CFrame=-34.079,12.611,102.336|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Script "B_main" @src="Scripts/Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/B_main.luau"
+    Part "C1" Size=0.05,0.14,0.45 Anchored BottomSurface=Smooth CFrame=-33.465,9.039,79.69|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "C2" Size=0.05,0.14,0.45 Anchored BottomSurface=Smooth CFrame=-31.023,9.03,79.491|-2.565,-84.866,-2.552 Color=#BE6862 Material=Neon TopSurface=Smooth
+    Part "C3" Size=0.05,0.14,0.45 Anchored BottomSurface=Smooth CFrame=-33.465,9.039,79.69|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "C4" Size=0.05,0.14,0.45 Anchored BottomSurface=Smooth CFrame=-31.023,9.03,79.491|-2.565,-84.866,-2.552 Color=#F8F8F8 Material=Neon TopSurface=Smooth
+    Script "C_main" @src="Scripts/Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/C_main.luau"
+    Part "D1" Size=0.05,0.14,0.48 Anchored BottomSurface=Smooth CFrame=-29.65,12.877,86.838|-2.565,-84.866,-2.552 Color=#EDEAEA Material=Neon TopSurface=Smooth
+    Part "D2" Size=0.05,0.14,0.48 Anchored BottomSurface=Smooth CFrame=-30.248,12.88,86.891|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "D3" Size=0.05,0.14,0.48 Anchored BottomSurface=Smooth CFrame=-32.997,12.891,87.138|-2.565,-84.866,-2.552 Color=#00FF00 Material=Neon TopSurface=Smooth
+    Part "D4" Size=0.05,0.14,0.48 Anchored BottomSurface=Smooth CFrame=-33.624,12.893,87.194|-2.565,-84.866,-2.552 Color=#F8F8F8 Material=Neon TopSurface=Smooth
+    Script "D_main" @src="Scripts/Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/D_main.luau"
+    BoolValue "On" Value
+    RemoteEvent "RemoteEvent"
+    Script "Strobes" @src="Scripts/Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/Strobes.luau"
+    MeshPart "middle" Size=1.401,0.057,0.372 Anchored CFrame=-33.455,8.33,80.006|-2.517,-84.877,-2.498 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise Transparency=1 {
+        Sound "Airhorn" AudioContent="rbxassetid://6759805753" Looped SoundId="rbxassetid://6759805753" Volume=10
+        Sound "Beep" AudioContent="http://www.roblox.com/asset/?id=138081500" SoundId="http://www.roblox.com/asset/?id=138081500" Volume=0.05
+        Sound "Priority" AudioContent="rbxassetid://515517854" Looped SoundId="rbxassetid://515517854" Volume=1
+        Sound "PriorityR" AudioContent="rbxassetid://227991639" Looped SoundId="rbxassetid://227991639" Volume=1
+        Sound "Wail" AudioContent="rbxassetid://515517738" Looped SoundId="rbxassetid://515517738" Volume=1
+        Sound "WailR" AudioContent="rbxassetid://227991754" Looped SoundId="rbxassetid://227991754" Volume=1
+        Sound "Yelp" AudioContent="rbxassetid://515517789" Looped SoundId="rbxassetid://515517789" Volume=1
+        Sound "YelpR" AudioContent="rbxassetid://227991772" Looped SoundId="rbxassetid://227991772" Volume=1
+        ManualWeld "middle-to-MeshPart Strong Joint" C0=-0.804,0.132,0.289|-90,0,-180 C1=-3.266,-2.335,5.487|-90.004,-0.007,-0.009 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Lightbar/middle"
+    }
+}
+Model "Model" {
+    Model "Color" {
+        MeshPart "MeshPart" Size=0.695,0.709,8.941 Anchored CFrame=-31.514,9.305,88.135|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.321,0.42,12.648 Anchored CFrame=-31.728,10.323,85.693|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=16.932,2.26,8.797 Anchored CFrame=-31.047,11.188,93.472|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.5
+        MeshPart "MeshPart" Size=9.776,0.265,8.577 Anchored CFrame=-30.872,12.585,95.472|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#D5733D Material=Neon RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.619,5.535,8.161 Anchored CFrame=-30.421,10.7,101.332|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=15.781,4.006,10.119 Anchored CFrame=-30.992,7.884,94.097|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.612,2.032,10.155 Anchored CFrame=-32.219,7.631,80.072|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=14.67,0.894,8.256 Anchored CFrame=-31.277,12.957,94.368|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.258,0.701,4.258 Anchored CFrame=-31.062,13.271,93.295|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=23.662,8.625,10.142 Anchored CFrame=-31.287,10.017,90.707|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=18.785,3.267,10.12 Anchored CFrame=-31.365,7.527,89.84|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.281,0.403,12.562 Anchored CFrame=-31.722,10.322,85.755|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=3.887,0.697,3.485 Anchored CFrame=-33.788,9.926,82.129|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.835,1.024,0.862 Anchored CFrame=-35.468,9.573,98.324|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=13.215,0.062,7.568 Anchored CFrame=-30.909,13.417,95.049|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=16.894,6.155,8.797 Anchored CFrame=-31.048,9.829,93.456|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.409,3.079,9.384 Anchored CFrame=-31.577,10.593,88.137|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.062,0.494,8.044 Anchored CFrame=-30.307,8.558,101.929|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.622,2.475,1.095 Anchored CFrame=-34.668,7.118,96.284|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=23.362,7.244,9.565 Anchored CFrame=-31.279,9.846,90.817|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=8.573,3.394,9.083 Anchored CFrame=-30.812,10.675,96.162|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=9.166,6.276,8.794 Anchored CFrame=-30.711,10.023,97.333|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.281,0.665,9.164 Anchored CFrame=-31.236,9.254,91.313|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic Reflectance=0.4 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.524,0.279,4.432 Anchored CFrame=-31.049,13.715,93.455|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=22.45,7.161,8.87 Anchored CFrame=-31.263,9.461,91.004|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.264,0.358,12.614 Anchored CFrame=-31.725,10.324,85.723|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#D5733D Material=Neon RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.281,0.403,12.562 Anchored CFrame=-31.722,10.322,85.755|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=19.62,9.256,8.771 Anchored CFrame=-31.818,9.362,92.684|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.715,1.729,1.729 Anchored CFrame=-32.301,6.618,79.139|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.169,3.584,9.039 Anchored CFrame=-32.261,7.704,79.591|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.946,1.414,12.633 Anchored CFrame=-31.718,10.527,85.803|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=5.331,1.389,4.909 Anchored CFrame=-31.057,13.649,93.357|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2F2F2F Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Model "Interipor" {
+        MeshPart "1" Size=0.062,0.168,0.385 Anchored CFrame=-33.484,9.041,79.697|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "LIGHT" Size=0.136,0.76,0.963 Anchored CFrame=-35.998,8.855,80.757|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "LIGHT" Size=0.136,0.76,0.963 Anchored CFrame=-28.379,8.855,80.091|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.471,2.234,2.487 Anchored CFrame=-31.705,8.991,86.09|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2C2A2B Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=3.137,4.988,5.111 Anchored CFrame=-32.181,10.478,86.465|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2C2A2B Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.246,0.39,0.815 Anchored CFrame=-31.655,11.749,86.82|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.752,1.904,8.799 Anchored CFrame=-32.188,8.445,80.434|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#8C878B Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.839,2.402,8.105 Anchored CFrame=-31.682,9.334,86.58|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2C2A2B Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.556,1.195,1.782 Anchored CFrame=-31.418,8.07,88.375|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.832,1.606,1.309 Anchored CFrame=-33.743,7.782,86.169|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.393,2.268,8.697 Anchored CFrame=-31.354,10.311,89.959|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.68,5.55,8.677 Anchored CFrame=-31.372,10.709,89.751|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#2C2A2B Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.065,0.28,2.985 Anchored CFrame=-32.258,9.041,79.625|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=4.611,3.691,6.544 Anchored CFrame=-31.395,9.322,89.492|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#272526 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    MeshPart "MeshPart" Size=0.355,0.247,6.952 Anchored CFrame=-31.528,13.077,87.968|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=Glass RenderFidelity=Precise Transparency=0.85
+    Model "Random" {
+        MeshPart "MeshPart" Size=17.19,7.483,12.648 Anchored CFrame=-31.035,10.667,93.604|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#1F1D1E Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.062,0.494,8.044 Anchored CFrame=-30.307,8.558,101.929|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.595,1.712,0.062 Anchored CFrame=-35.435,10.914,90.581|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.062,5.117,0.073 Anchored CFrame=-30.304,10.125,101.913|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Model "chassis" {
+        MeshPart "MeshPart" Size=22.225,3.711,9.161 Anchored CFrame=-31.149,6.781,90.223|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=24.308,9.065,12.618 Anchored CFrame=-31.25,9.458,91.155|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise
+    }
+}
+Model "Package" {
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-36.309,9.578,83.981|177.435,84.866,-177.448 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-35.143,12.439,97.4|177.435,84.866,-177.448 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-26.94,12.373,89.686|-2.565,-84.866,-2.552 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-26.313,12.373,96.668|-2.565,-84.866,-2.552 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-27.494,9.542,83.19|-2.565,-84.866,-2.552 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    MeshPart "Color" Size=0.508,0.114,0.146 Anchored CFrame=-35.772,12.438,90.398|177.435,84.866,-177.448 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099115205" TextureID="rbxassetid://2099115205"
+    Model "Feniex" {
+        MeshPart "MeshPart" Size=1.946,0.105,0.209 Anchored CFrame=-27.246,12.584,101.632|179.996,-5.146,-179.753 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1958713162" TextureID="rbxassetid://1958713162" {
+            Weld "Weld" C0=-256,10,256|-90,0,-180 C1=55.188,-0.078,-313.949|-90.001,0.018,-0.017 Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Feniex/MeshPart"
+        }
+    }
+    Model "Feniex" {
+        MeshPart "MeshPart" Size=1.946,0.105,0.209 Anchored CFrame=-33.332,12.609,102.178|179.996,-5.146,-179.753 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1958713162" TextureID="rbxassetid://1958713162" {
+            Weld "Weld" C0=-256,10,256|-90,0,-180 C1=55.188,-0.078,-313.949|-90.001,0.018,-0.017 Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Feniex~2/MeshPart"
+        }
+    }
+    Model "Gun Rack - Finny ;D" {
+        Model "Gun Rack" {
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-27.792,10.389,89.597|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,0.161|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=-0.154,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/ACOG5"
+                ManualWeld "Union-to-ACOG8 Strong Joint" C0=-0.04,-0.095,0.04 C1=-0.074,0.269,0.034|170.27,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/ACOG8"
+            }
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-27.652,10.903,90.039|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.335,0.029,0.33|-90,0,-180 C1=0.021,0.24,-0.319|-90,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~2" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~5"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-27.765,8.059,90.458|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=1.14,0.168,0.37 Anchored CFrame=-27.681,8.092,90.009|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="10e253b496f65ae4"
+            UnionOperation "Union" Size=0.053,0.607,0.66 Anchored CFrame=-27.633,10.953,90.133|-2.566,-84.867,-92.553 Color=#9FA1AC Material=DiamondPlate RenderFidelity=Precise UsePartColor $_geo="4fa133d0b41a6965"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-27.789,8.059,90.189|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-27.652,11.009,90.039|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=0.335,-0.029,0.33|90,0,0 C1=-0.027,-0.431,-0.319|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~5"
+            }
+            UnionOperation "Union" Size=0.16,0.68,0.33 Anchored CFrame=-27.68,10.659,89.677|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="96e2d1f54010f046"
+            UnionOperation "Union" Size=0.18,0.05,0.05 Anchored CFrame=-27.395,10.948,89.938|177.434,84.867,-87.447 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="3739f7fbd34a20f4"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-27.603,10.388,89.58|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,-0.029|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.036,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/ACOG5"
+            }
+            UnionOperation "Union" Size=1.93,2.71,0.79 Anchored CFrame=-27.538,9.143,89.991|177.434,84.867,-177.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="f502645b032082c5" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=-0.669,-0.839,-0.503|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/Union~6"
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=0.669,0.503,0.829|0,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/Union~3"
+            }
+            MeshPart "round-carpet" Size=1.02,0.15,0.39 Anchored CFrame=-27.585,8.079,90.412|177.434,84.867,-177.447 CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+                ManualWeld "round-carpet-to-Union Strong Joint" C0=-0.51,0.075,0.195|-90,0,-180 C1=-0.427,-0.514,-0.161|-95,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Gun Rack/round-carpet" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D/Model/Union~8"
+            }
+        }
+        Model "Model" {
+            UnionOperation "ACOG" Size=0.568,0.353,0.254 Anchored CFrame=-27.654,10.083,89.799|-2.566,-84.867,87.447 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="694b74bddbe3af4d"
+            Part "ACOG2" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.667,9.698,89.748|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.153,0.153,0.25
+            }
+            Part "ACOG3" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.666,9.986,89.748|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.16,0.16,3.625
+            }
+            Part "ACOG4" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.7,10.092,89.654|-63.025,-78.81,27.425 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+            }
+            Part "ACOG5" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.665,10.239,89.748|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.188,0.188,0.5
+            }
+            Part "ACOG6" Size=0.2,0.559,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-27.666,9.996,89.748|177.434,84.867,2.553 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+                CylinderMesh "Mesh" Scale=0.811,1,7.5
+            }
+            Part "ACOG7" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.666,9.949,89.748|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.175,0.175,0.375
+            }
+            Part "ACOG8" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-27.665,10.27,89.75|-80.331,1.091,5.016 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.192,0.192,0.4
+            }
+            UnionOperation "ACOG_MILS" Size=0.005,0.175,0.175 Anchored CFrame=-27.666,9.996,89.75|-2.566,-84.867,87.447 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise $_geo="8903ba21e643ab4f"
+            UnionOperation "Mag" Size=0.136,0.828,0.492 Anchored CFrame=-27.572,10.248,90.808|-90.023,0.228,5.128 CanCollide=false Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="72975be327fb80d8"
+            Part "Part" Size=0.2,0.2,0.2 Anchored CFrame=-27.603,8.736,90.389|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal {
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+            }
+            UnionOperation "Union" Size=0.39,0.714,0.17 Anchored CFrame=-27.579,9.544,90.717|-2.571,-84.867,52.444 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="298fd996fd5731e8"
+            UnionOperation "Union" Size=1.42,0.28,0.28 Anchored CFrame=-27.625,11.152,90.135|-2.566,-84.867,87.447 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="6927315902f9dc45"
+            UnionOperation "Union" Size=1.31,0.36,0.13 Anchored CFrame=-27.625,11.167,90.135|-0.003,5.128,-90.229 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="1dbdf257655b20ca"
+            UnionOperation "Union" Size=0.284,0.6,1.499 Anchored CFrame=-27.635,9.59,90.286|89.977,-0.228,174.872 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="cc90b93197a4a7e8"
+            UnionOperation "Union" Size=0.112,0.112,1.888 Anchored CFrame=-27.622,11.587,90.138|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0a160f4f1a4b687b"
+            UnionOperation "Union" Size=1.31,0.38,0.13 Anchored CFrame=-27.626,11.167,90.125|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="bd4ed9acb4ac3720"
+            UnionOperation "Union" Size=0.33,0.24,0.154 Anchored CFrame=-27.655,10.185,90.111|-179.164,-75.126,-89.111 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="ec8fcd6c166147e6"
+            UnionOperation "Union" Size=0.88,0.802,0.225 Anchored CFrame=-27.591,8.581,90.425|-1.301,-79.869,88.702 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="84dc63c4f54e8b5b"
+            UnionOperation "Union" Size=1.022,0.688,0.344 Anchored CFrame=-27.689,9.931,90.287|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="136fc767fe4ead79"
+        }
+    }
+    Model "Gun Rack - Finny ;D" {
+        Model "Gun Rack" {
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-32.301,8.077,90.594|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-32.164,10.921,90.444|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.335,0.029,0.33|-90,0,-180 C1=0.021,0.24,-0.319|-90,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~2" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~9"
+            }
+            UnionOperation "Union" Size=1.93,2.71,0.79 Anchored CFrame=-32.05,9.161,90.395|177.434,84.867,-177.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="f502645b032082c5" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=0.669,0.503,0.829|0,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~3" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/Union~7"
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=-0.669,-0.839,-0.503|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~3" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/Union"
+            }
+            UnionOperation "Union" Size=0.18,0.05,0.05 Anchored CFrame=-31.906,10.966,90.343|177.434,84.867,-87.447 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="3739f7fbd34a20f4"
+            UnionOperation "Union" Size=0.16,0.68,0.33 Anchored CFrame=-32.192,10.677,90.082|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="96e2d1f54010f046"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-32.115,10.406,89.985|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,-0.029|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~6" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.036,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~6" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/ACOG5"
+            }
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-32.164,11.027,90.444|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=0.335,-0.029,0.33|90,0,0 C1=-0.027,-0.431,-0.319|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~9"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-32.277,8.077,90.863|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.053,0.607,0.66 Anchored CFrame=-32.145,10.972,90.538|-2.566,-84.867,-92.553 Color=#9FA1AC Material=DiamondPlate RenderFidelity=Precise UsePartColor $_geo="4fa133d0b41a6965"
+            UnionOperation "Union" Size=1.14,0.168,0.37 Anchored CFrame=-32.193,8.11,90.413|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="10e253b496f65ae4"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-32.304,10.407,90.002|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,0.161|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=-0.154,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/ACOG5"
+                ManualWeld "Union-to-ACOG8 Strong Joint" C0=-0.04,-0.095,0.04 C1=-0.074,0.269,0.034|170.27,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/ACOG8"
+            }
+            MeshPart "round-carpet" Size=1.02,0.15,0.39 Anchored CFrame=-32.096,8.097,90.817|177.434,84.867,-177.447 CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+                ManualWeld "round-carpet-to-Union Strong Joint" C0=-0.51,0.075,0.195|-90,0,-180 C1=-0.427,-0.514,-0.161|-95,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Gun Rack/round-carpet" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~2/Model/Union~2"
+            }
+        }
+        Model "Model" {
+            UnionOperation "ACOG" Size=0.568,0.353,0.254 Anchored CFrame=-32.166,10.101,90.204|-2.566,-84.867,87.447 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="694b74bddbe3af4d"
+            Part "ACOG2" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.179,9.717,90.153|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.153,0.153,0.25
+            }
+            Part "ACOG3" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.178,10.004,90.153|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.16,0.16,3.625
+            }
+            Part "ACOG4" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.212,10.11,90.059|-63.025,-78.81,27.425 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+            }
+            Part "ACOG5" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.177,10.257,90.153|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.188,0.188,0.5
+            }
+            Part "ACOG6" Size=0.2,0.559,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-32.178,10.014,90.153|177.434,84.867,2.553 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+                CylinderMesh "Mesh" Scale=0.811,1,7.5
+            }
+            Part "ACOG7" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.178,9.967,90.153|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.175,0.175,0.375
+            }
+            Part "ACOG8" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-32.177,10.288,90.155|-80.331,1.091,5.016 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.192,0.192,0.4
+            }
+            UnionOperation "ACOG_MILS" Size=0.005,0.175,0.175 Anchored CFrame=-32.178,10.014,90.155|-2.566,-84.867,87.447 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise $_geo="8903ba21e643ab4f"
+            UnionOperation "Mag" Size=0.136,0.828,0.492 Anchored CFrame=-32.084,10.266,91.213|-90.023,0.228,5.128 CanCollide=false Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="72975be327fb80d8"
+            Part "Part" Size=0.2,0.2,0.2 Anchored CFrame=-32.115,8.754,90.794|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal {
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+            }
+            UnionOperation "Union" Size=1.31,0.38,0.13 Anchored CFrame=-32.138,11.185,90.53|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="bd4ed9acb4ac3720"
+            UnionOperation "Union" Size=0.88,0.802,0.225 Anchored CFrame=-32.103,8.599,90.829|-1.301,-79.869,88.702 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="84dc63c4f54e8b5b"
+            UnionOperation "Union" Size=0.39,0.714,0.17 Anchored CFrame=-32.091,9.562,91.122|-2.571,-84.867,52.444 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="298fd996fd5731e8"
+            UnionOperation "Union" Size=1.022,0.688,0.344 Anchored CFrame=-32.201,9.949,90.692|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="136fc767fe4ead79"
+            UnionOperation "Union" Size=0.112,0.112,1.888 Anchored CFrame=-32.134,11.605,90.543|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0a160f4f1a4b687b"
+            UnionOperation "Union" Size=0.33,0.24,0.154 Anchored CFrame=-32.167,10.203,90.516|-179.164,-75.126,-89.111 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="ec8fcd6c166147e6"
+            UnionOperation "Union" Size=1.31,0.36,0.13 Anchored CFrame=-32.137,11.185,90.54|-0.003,5.128,-90.229 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="1dbdf257655b20ca"
+            UnionOperation "Union" Size=0.284,0.6,1.499 Anchored CFrame=-32.147,9.609,90.691|89.977,-0.228,174.872 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="cc90b93197a4a7e8"
+            UnionOperation "Union" Size=1.42,0.28,0.28 Anchored CFrame=-32.137,11.17,90.54|-2.566,-84.867,87.447 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="6927315902f9dc45"
+        }
+    }
+    Model "Gun Rack - Finny ;D" {
+        Model "Gun Rack" {
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-30.63,10.915,90.306|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.335,0.029,0.33|-90,0,-180 C1=0.021,0.24,-0.319|-90,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~10"
+            }
+            UnionOperation "Union" Size=1.93,2.71,0.79 Anchored CFrame=-30.516,9.155,90.258|177.434,84.867,-177.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="f502645b032082c5" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=0.669,0.503,0.829|0,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~2" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/Union~7"
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=-0.669,-0.839,-0.503|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~2" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/Union~3"
+            }
+            UnionOperation "Union" Size=1.14,0.168,0.37 Anchored CFrame=-30.659,8.104,90.276|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="10e253b496f65ae4"
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-30.63,11.021,90.306|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=0.335,-0.029,0.33|90,0,0 C1=-0.027,-0.431,-0.319|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~4" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~10"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-30.581,10.4,89.847|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,-0.029|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~5" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.036,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~5" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/ACOG5"
+            }
+            UnionOperation "Union" Size=0.18,0.05,0.05 Anchored CFrame=-30.373,10.959,90.205|177.434,84.867,-87.447 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="3739f7fbd34a20f4"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-30.77,10.401,89.864|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,0.161|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=-0.154,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/ACOG5"
+                ManualWeld "Union-to-ACOG8 Strong Joint" C0=-0.04,-0.095,0.04 C1=-0.074,0.269,0.034|170.27,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/ACOG8"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-30.743,8.071,90.725|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.16,0.68,0.33 Anchored CFrame=-30.658,10.671,89.944|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="96e2d1f54010f046"
+            UnionOperation "Union" Size=0.053,0.607,0.66 Anchored CFrame=-30.611,10.965,90.401|-2.566,-84.867,-92.553 Color=#9FA1AC Material=DiamondPlate RenderFidelity=Precise UsePartColor $_geo="4fa133d0b41a6965"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-30.767,8.071,90.456|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            MeshPart "round-carpet" Size=1.02,0.15,0.39 Anchored CFrame=-30.563,8.091,90.679|177.434,84.867,-177.447 CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+                ManualWeld "round-carpet-to-Union Strong Joint" C0=-0.51,0.075,0.195|-90,0,-180 C1=-0.427,-0.514,-0.161|-95,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Gun Rack/round-carpet" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~3/Model/Union"
+            }
+        }
+        Model "Model" {
+            UnionOperation "ACOG" Size=0.568,0.353,0.254 Anchored CFrame=-30.632,10.095,90.067|-2.566,-84.867,87.447 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="694b74bddbe3af4d"
+            Part "ACOG2" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.645,9.71,90.015|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.153,0.153,0.25
+            }
+            Part "ACOG3" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.644,9.998,90.015|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.16,0.16,3.625
+            }
+            Part "ACOG4" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.678,10.104,89.921|-63.025,-78.81,27.425 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+            }
+            Part "ACOG5" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.643,10.251,90.015|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.188,0.188,0.5
+            }
+            Part "ACOG6" Size=0.2,0.559,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-30.644,10.008,90.016|177.434,84.867,2.553 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+                CylinderMesh "Mesh" Scale=0.811,1,7.5
+            }
+            Part "ACOG7" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.644,9.961,90.015|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.175,0.175,0.375
+            }
+            Part "ACOG8" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-30.643,10.282,90.017|-80.331,1.091,5.016 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.192,0.192,0.4
+            }
+            UnionOperation "ACOG_MILS" Size=0.005,0.175,0.175 Anchored CFrame=-30.644,10.008,90.018|-2.566,-84.867,87.447 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise $_geo="8903ba21e643ab4f"
+            UnionOperation "Mag" Size=0.136,0.828,0.492 Anchored CFrame=-30.55,10.26,91.076|-90.023,0.228,5.128 CanCollide=false Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="72975be327fb80d8"
+            Part "Part" Size=0.2,0.2,0.2 Anchored CFrame=-30.581,8.748,90.656|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal {
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+            }
+            UnionOperation "Union" Size=0.88,0.802,0.225 Anchored CFrame=-30.569,8.593,90.692|-1.301,-79.869,88.702 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="84dc63c4f54e8b5b"
+            UnionOperation "Union" Size=1.022,0.688,0.344 Anchored CFrame=-30.667,9.943,90.555|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="136fc767fe4ead79"
+            UnionOperation "Union" Size=1.31,0.38,0.13 Anchored CFrame=-30.604,11.179,90.392|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="bd4ed9acb4ac3720"
+            UnionOperation "Union" Size=0.33,0.24,0.154 Anchored CFrame=-30.633,10.197,90.378|-179.164,-75.126,-89.111 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="ec8fcd6c166147e6"
+            UnionOperation "Union" Size=0.112,0.112,1.888 Anchored CFrame=-30.6,11.599,90.405|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0a160f4f1a4b687b"
+            UnionOperation "Union" Size=0.39,0.714,0.17 Anchored CFrame=-30.557,9.556,90.984|-2.571,-84.867,52.444 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="298fd996fd5731e8"
+            UnionOperation "Union" Size=1.31,0.36,0.13 Anchored CFrame=-30.603,11.179,90.402|-0.003,5.128,-90.229 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="1dbdf257655b20ca"
+            UnionOperation "Union" Size=1.42,0.28,0.28 Anchored CFrame=-30.603,11.164,90.402|-2.566,-84.867,87.447 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="6927315902f9dc45"
+            UnionOperation "Union" Size=0.284,0.6,1.499 Anchored CFrame=-30.613,9.602,90.554|89.977,-0.228,174.872 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="cc90b93197a4a7e8"
+        }
+    }
+    Model "Gun Rack - Finny ;D" {
+        Model "Gun Rack" {
+            UnionOperation "Union" Size=1.93,2.71,0.79 Anchored CFrame=-34.888,9.173,90.65|177.434,84.867,-177.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="f502645b032082c5" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=-0.669,-0.839,-0.503|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/Union"
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=0.669,0.503,0.829|0,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/Union~2"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-35.115,8.089,91.118|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-35.139,8.089,90.849|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.053,0.607,0.66 Anchored CFrame=-34.983,10.983,90.793|-2.566,-84.867,-92.553 Color=#9FA1AC Material=DiamondPlate RenderFidelity=Precise UsePartColor $_geo="4fa133d0b41a6965"
+            UnionOperation "Union" Size=1.14,0.168,0.37 Anchored CFrame=-35.032,8.121,90.668|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="10e253b496f65ae4"
+            UnionOperation "Union" Size=0.18,0.05,0.05 Anchored CFrame=-34.745,10.977,90.597|177.434,84.867,-87.447 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="3739f7fbd34a20f4"
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-35.002,11.039,90.699|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=0.335,-0.029,0.33|90,0,0 C1=-0.027,-0.431,-0.319|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~7" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~4"
+            }
+            UnionOperation "Union" Size=0.16,0.68,0.33 Anchored CFrame=-35.031,10.688,90.337|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="96e2d1f54010f046"
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-35.003,10.932,90.699|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.335,0.029,0.33|-90,0,-180 C1=0.021,0.24,-0.319|-90,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~9" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~4"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-34.954,10.418,90.239|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,-0.029|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.036,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/ACOG5"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-35.143,10.419,90.256|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,0.161|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=-0.154,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/ACOG5"
+                ManualWeld "Union-to-ACOG8 Strong Joint" C0=-0.04,-0.095,0.04 C1=-0.074,0.269,0.034|170.27,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/Union~11" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/ACOG8"
+            }
+            MeshPart "round-carpet" Size=1.02,0.15,0.39 Anchored CFrame=-34.935,8.108,91.071|177.434,84.867,-177.447 CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+                ManualWeld "round-carpet-to-Union Strong Joint" C0=-0.51,0.075,0.195|-90,0,-180 C1=-0.427,-0.514,-0.161|-95,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Gun Rack/round-carpet" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~4/Model/Union~7"
+            }
+        }
+        Model "Model" {
+            UnionOperation "ACOG" Size=0.568,0.353,0.254 Anchored CFrame=-35.005,10.113,90.459|-2.566,-84.867,87.447 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="694b74bddbe3af4d"
+            Part "ACOG2" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.018,9.728,90.408|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.153,0.153,0.25
+            }
+            Part "ACOG3" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.017,10.016,90.408|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.16,0.16,3.625
+            }
+            Part "ACOG4" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.051,10.122,90.314|-63.025,-78.81,27.425 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+            }
+            Part "ACOG5" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.016,10.268,90.408|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.188,0.188,0.5
+            }
+            Part "ACOG6" Size=0.2,0.559,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-35.017,10.026,90.408|177.434,84.867,2.553 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+                CylinderMesh "Mesh" Scale=0.811,1,7.5
+            }
+            Part "ACOG7" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.017,9.978,90.408|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.175,0.175,0.375
+            }
+            Part "ACOG8" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-35.015,10.299,90.41|-80.331,1.091,5.016 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.192,0.192,0.4
+            }
+            UnionOperation "ACOG_MILS" Size=0.005,0.175,0.175 Anchored CFrame=-35.017,10.026,90.41|-2.566,-84.867,87.447 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise $_geo="8903ba21e643ab4f"
+            UnionOperation "Mag" Size=0.136,0.828,0.492 Anchored CFrame=-34.923,10.278,91.468|-90.023,0.228,5.128 CanCollide=false Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="72975be327fb80d8"
+            Part "Part" Size=0.2,0.2,0.2 Anchored CFrame=-34.953,8.766,91.048|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal {
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+            }
+            UnionOperation "Union" Size=1.31,0.38,0.13 Anchored CFrame=-34.976,11.197,90.784|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="bd4ed9acb4ac3720"
+            UnionOperation "Union" Size=1.31,0.36,0.13 Anchored CFrame=-34.975,11.197,90.794|-0.003,5.128,-90.229 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="1dbdf257655b20ca"
+            UnionOperation "Union" Size=0.284,0.6,1.499 Anchored CFrame=-34.986,9.62,90.946|89.977,-0.228,174.872 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="cc90b93197a4a7e8"
+            UnionOperation "Union" Size=0.112,0.112,1.888 Anchored CFrame=-34.973,11.617,90.798|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0a160f4f1a4b687b"
+            UnionOperation "Union" Size=1.022,0.688,0.344 Anchored CFrame=-35.04,9.961,90.947|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="136fc767fe4ead79"
+            UnionOperation "Union" Size=0.39,0.714,0.17 Anchored CFrame=-34.93,9.574,91.377|-2.571,-84.867,52.444 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="298fd996fd5731e8"
+            UnionOperation "Union" Size=0.88,0.802,0.225 Anchored CFrame=-34.942,8.61,91.084|-1.301,-79.869,88.702 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="84dc63c4f54e8b5b"
+            UnionOperation "Union" Size=0.33,0.24,0.154 Anchored CFrame=-35.006,10.215,90.771|-179.164,-75.126,-89.111 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="ec8fcd6c166147e6"
+            UnionOperation "Union" Size=1.42,0.28,0.28 Anchored CFrame=-34.975,11.182,90.794|-2.566,-84.867,87.447 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="6927315902f9dc45"
+        }
+    }
+    Model "Gun Rack - Finny ;D" {
+        Model "Gun Rack" {
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-31.397,11.024,90.375|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=0.335,-0.029,0.33|90,0,0 C1=-0.027,-0.431,-0.319|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~4"
+            }
+            UnionOperation "Union" Size=0.671,0.059,0.66 Anchored CFrame=-31.397,10.918,90.375|177.434,84.867,-177.447 Color=#1B2A35 Material=DiamondPlate RenderFidelity=Precise $_geo="aca7f09d75ced558" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.335,0.029,0.33|-90,0,-180 C1=0.021,0.24,-0.319|-90,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~2" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~4"
+            }
+            UnionOperation "Union" Size=1.93,2.71,0.79 Anchored CFrame=-31.283,9.158,90.327|177.434,84.867,-177.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="f502645b032082c5" {
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=0.669,0.503,0.829|0,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~3" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/Union"
+                ManualWeld "Union-to-Union Strong Joint" C0=-0.965,1.355,0.395|-90,0,-180 C1=-0.669,-0.839,-0.503|-90,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~3" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/Union~2"
+            }
+            UnionOperation "Union" Size=0.053,0.607,0.66 Anchored CFrame=-31.378,10.968,90.47|-2.566,-84.867,-92.553 Color=#9FA1AC Material=DiamondPlate RenderFidelity=Precise UsePartColor $_geo="4fa133d0b41a6965"
+            UnionOperation "Union" Size=0.18,0.05,0.05 Anchored CFrame=-31.14,10.963,90.274|177.434,84.867,-87.447 Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="3739f7fbd34a20f4"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-31.537,10.404,89.933|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,0.161|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~6" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=-0.154,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~6" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/ACOG5"
+                ManualWeld "Union-to-ACOG8 Strong Joint" C0=-0.04,-0.095,0.04 C1=-0.074,0.269,0.034|170.27,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~6" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/ACOG8"
+            }
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-31.51,8.074,90.794|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.16,0.68,0.33 Anchored CFrame=-31.425,10.674,90.013|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="96e2d1f54010f046"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-31.534,8.074,90.525|-0.003,5.128,89.771 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0"
+            UnionOperation "Union" Size=0.08,0.191,0.08 CFrame=-31.348,10.403,89.916|177.434,84.867,-87.447 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="1ea96749741bb7a0" {
+                ManualWeld "Union-to-ACOG Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.265,0.31,-0.029|-180,-90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/ACOG"
+                ManualWeld "Union-to-ACOG5 Strong Joint" C0=-0.04,-0.095,-0.04|0,-90,0 C1=0.036,0.257,0.11|-180,0,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/Union~10" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/ACOG5"
+            }
+            UnionOperation "Union" Size=1.14,0.168,0.37 Anchored CFrame=-31.426,8.107,90.345|177.434,84.867,-177.447 Color=#111111 Material=DiamondPlate RenderFidelity=Precise $_geo="10e253b496f65ae4"
+            MeshPart "round-carpet" Size=1.02,0.15,0.39 Anchored CFrame=-31.33,8.094,90.748|177.434,84.867,-177.447 CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+                ManualWeld "round-carpet-to-Union Strong Joint" C0=-0.51,0.075,0.195|-90,0,-180 C1=-0.427,-0.514,-0.161|-95,90,0 Part0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Gun Rack/round-carpet" Part1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Gun Rack - Finny ;D~5/Model/Union~3"
+            }
+        }
+        Model "Model" {
+            UnionOperation "ACOG" Size=0.568,0.353,0.254 Anchored CFrame=-31.399,10.098,90.136|-2.566,-84.867,87.447 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="694b74bddbe3af4d"
+            Part "ACOG2" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.412,9.714,90.084|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.153,0.153,0.25
+            }
+            Part "ACOG3" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.411,10.001,90.084|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.16,0.16,3.625
+            }
+            Part "ACOG4" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.445,10.107,89.99|-63.025,-78.81,27.425 CanCollide=false Color=#C4281C Material=Metal TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+            }
+            Part "ACOG5" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.41,10.254,90.084|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.188,0.188,0.5
+            }
+            Part "ACOG6" Size=0.2,0.559,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-31.411,10.011,90.085|177.434,84.867,2.553 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+                CylinderMesh "Mesh" Scale=0.811,1,7.5
+            }
+            Part "ACOG7" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.411,9.964,90.084|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.175,0.175,0.375
+            }
+            Part "ACOG8" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-31.41,10.285,90.086|-80.331,1.091,5.016 CanCollide=false Color=#1B2A35 Material=Metal TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.192,0.192,0.4
+            }
+            UnionOperation "ACOG_MILS" Size=0.005,0.175,0.175 Anchored CFrame=-31.411,10.011,90.087|-2.566,-84.867,87.447 CanCollide=false Color=#111111 Material=Metal RenderFidelity=Precise $_geo="8903ba21e643ab4f"
+            UnionOperation "Mag" Size=0.136,0.828,0.492 Anchored CFrame=-31.317,10.263,91.144|-90.023,0.228,5.128 CanCollide=false Color=#635F62 Material=Metal RenderFidelity=Precise UsePartColor $_geo="72975be327fb80d8"
+            Part "Part" Size=0.2,0.2,0.2 Anchored CFrame=-31.348,8.751,90.725|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal {
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+            }
+            UnionOperation "Union" Size=1.31,0.36,0.13 Anchored CFrame=-31.37,11.182,90.471|-0.003,5.128,-90.229 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="1dbdf257655b20ca"
+            UnionOperation "Union" Size=1.31,0.38,0.13 Anchored CFrame=-31.371,11.182,90.461|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="bd4ed9acb4ac3720"
+            UnionOperation "Union" Size=0.88,0.802,0.225 Anchored CFrame=-31.336,8.596,90.761|-1.301,-79.869,88.702 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="84dc63c4f54e8b5b"
+            UnionOperation "Union" Size=0.39,0.714,0.17 Anchored CFrame=-31.324,9.559,91.053|-2.571,-84.867,52.444 Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="298fd996fd5731e8"
+            UnionOperation "Union" Size=0.112,0.112,1.888 Anchored CFrame=-31.367,11.602,90.474|-90.023,0.228,5.128 CanCollide=false Color=#1B2A35 Material=Metal RenderFidelity=Precise UsePartColor $_geo="0a160f4f1a4b687b"
+            UnionOperation "Union" Size=1.022,0.688,0.344 Anchored CFrame=-31.434,9.946,90.623|-2.566,-84.867,87.447 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="136fc767fe4ead79"
+            UnionOperation "Union" Size=0.284,0.6,1.499 Anchored CFrame=-31.38,9.606,90.622|89.977,-0.228,174.872 Color=#1B2A35 Material=Metal RenderFidelity=Precise $_geo="cc90b93197a4a7e8"
+            UnionOperation "Union" Size=1.42,0.28,0.28 Anchored CFrame=-31.37,11.167,90.471|-2.566,-84.867,87.447 Color=#7F8E64 Material=Metal RenderFidelity=Precise $_geo="6927315902f9dc45"
+            UnionOperation "Union" Size=0.33,0.24,0.154 Anchored CFrame=-31.4,10.2,90.447|-179.164,-75.126,-89.111 Color=#635F62 Material=Metal RenderFidelity=Precise $_geo="ec8fcd6c166147e6"
+        }
+    }
+    Model "Laptop Screen" {
+        Part "Front" Size=0.168,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-32.232,8.985,87.43|164.196,-2.282,177.114 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.1,0.2,0.5,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            BlockMesh "Mesh" Scale=1,0.935,0.935
+            SurfaceGui "SGUI" CanvasSize=250,50 LightInfluence=1 {
+                TextBox "Identifier" Position=0,2,0,2 Size=1.1,-30,1,0 BackgroundColor3=#FFFFFF BorderColor3=#FFFFFF FontFace="Arial|Bold|Normal" PlaceholderColor3=#B2B2B2 Text="2017" TextColor3=#000000 TextSize=56
+            }
+        }
+        Part "Part" Size=1.374,1.112,0.14 Anchored BottomSurface=Smooth CFrame=-31.625,9.553,87.175|164.196,-2.282,177.108 CanCollide=false Color=#0010B0 Material=Neon TopSurface=Smooth {
+            Decal "😂meme😂" Texture="rbxassetid://6759645869" TextureContent="rbxassetid://6759645869"
+        }
+        Part "Part" Size=1.374,1.112,0.14 Anchored BottomSurface=Smooth CFrame=-31.626,9.547,87.154|164.196,-2.282,177.108 CanCollide=false Color=#0010B0 Material=SmoothPlastic TopSurface=Smooth
+        UnionOperation "Union" Size=1.69,1.236,0.262 Anchored CFrame=-31.622,9.558,87.205|-15.804,2.282,-177.108 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="a8e330c0566647c5"
+    }
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-34.796,13.823,89.121|-179.993,-7.629,-179.774 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-26.996,13.827,100.961|-0.012,3.879,-0.233 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-34.911,13.385,91.782|-3.444,-86.114,-3.433 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-28.103,13.796,88.52|-179.993,-7.629,-179.774 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-33.73,13.854,101.565|-0.012,3.879,-0.233 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-26.755,13.335,98.309|177.973,83.617,-177.988 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-34.251,13.385,99.132|-3.444,-86.114,-3.433 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "MeshPart" Size=0.842,0.973,0.574 Anchored CFrame=-27.396,13.334,91.168|177.973,83.617,-177.988 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://3053038239" TextureID="rbxassetid://3053038239"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-33.591,12.899,87.323|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-31.015,9.035,79.612|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-33.003,12.897,87.27|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-30.234,12.885,87.022|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-33.449,9.045,79.79|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    MeshPart "Meshes/int ion" Size=0.516,0.156,0.268 Anchored CFrame=-29.637,12.883,86.968|-0.003,5.129,-0.229 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1436586412" TextureID="rbxassetid://1436586412"
+    Model "Model" {
+        Model "MOTOROLA_INCAR" {
+            Part "Part" Size=0.139,0.139,0.191 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-31.933,10.511,85.749|172.704,84.422,141.976 CanCollide=false CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Face=Left Texture="rbxassetid://290689739" TextureContent="rbxassetid://290689739"
+                BlockMesh "Mesh" Scale=0.009,0.215,1
+            }
+            Part "Part" Size=0.139,0.139,0.139 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-32.056,10.516,85.759|172.704,84.422,141.976 CanCollide=false CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Face=Left Texture="rbxassetid://290690592" TextureContent="rbxassetid://290690592"
+                BlockMesh "Mesh" Scale=0.009,0.319,0.321
+            }
+            UnionOperation "Union" Size=0.626,0.05,0.074 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-31.74,10.338,85.858|-45.273,4.408,3.423 CanCollide=false Color=#5B5D69 CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="6833844c8538c9ff"
+            UnionOperation "Union" Size=1.147,0.27,0.173 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-31.744,10.364,85.753|-45.273,4.408,3.423 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="96e76799637926de"
+            UnionOperation "Union" Size=0.086,0.207,1.038 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-31.738,10.415,85.814|172.704,84.422,141.976 CanCollide=false Color=#5B9A4C CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="4c572341dcccdc30"
+            UnionOperation "Union" Size=1.085,0.249,0.074 Anchored CFrame=-31.743,10.409,85.788|-45.273,4.408,3.423 Color=#4B974B Material=Neon RenderFidelity=Precise $_geo="5a4cdb7d4d9f0689"
+        }
+        MeshPart "PalmMic" Size=0.314,0.385,0.157 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-32.23,11.828,87.568|-1.686,5.692,-0.565 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://432747975" TextureID="rbxassetid://432747975" TopSurface=SmoothNoOutlines {
+            Attachment "Attachment"
+            Attachment "Attachment0" CFrame=0.016,-0.233,-0.011|0,0,-90
+            SpringConstraint "SpringConstraint" Attachment0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Model/PalmMic/Attachment" Coils=8 Color="Really black" Damping=2 FreeLength=1.003 LimitsEnabled MaxForce=50 MaxLength=10 Radius=0.05 Stiffness=1000 Thickness=0.01 Visible
+            SpringConstraint "SpringConstraint" Attachment0=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Model/PalmMic/Attachment0" Attachment1=@"Workspace/[UV]Lenco Bearcat~2/Body/Package/Model/S/Attachment1" Coils=8 Color="Black" Damping=2 FreeLength=0.974 Radius=0.05 Stiffness=1000 Thickness=0.05 Visible
+        }
+        Part "S" Size=0.157,0.157,0.157 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-32.221,10.361,85.897|-126.057,-2.585,-85.107 CanCollide=false Color=#DFDFDE CustomPhysicalProperties=0.1,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Attachment "Attachment"
+            Attachment "Attachment1" CFrame=0.09,0,0.095|89.853,0.011,-98.448
+            BlockMesh "Mesh"
+        }
+    }
+    Part "Part" Size=0.05,1,0.4 Anchored BottomSurface=Smooth CFrame=-27.186,8.541,101.627|-2.565,-84.866,-2.552 Color=#BE6862 Material=Glass Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=0.05,1,0.4 Anchored BottomSurface=Smooth CFrame=-33.432,8.566,102.178|-2.565,-84.866,-2.552 Color=#BE6862 Material=Glass Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=0.05,1.26,0.84 Anchored BottomSurface=Smooth CFrame=-37.513,10.546,86.479|-2.565,-84.866,-2.552 Material=Glass Reflectance=1 TopSurface=Smooth
+    Part "Part" Size=0.05,1.26,0.84 Anchored BottomSurface=Smooth CFrame=-25.908,10.57,85.458|-2.565,-84.866,-2.552 Material=Glass Reflectance=1 TopSurface=Smooth
+    MeshPart "Radar" Size=0.49,1.072,0.953 Anchored CFrame=-30.744,11.686,87.178|179.997,-5.129,-179.771 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099627477" TextureID="rbxassetid://2099627477"
+    MeshPart "Speaker" Size=0.9,0.55,0.67 Anchored CFrame=-33.516,8.473,79.765|179.996,-5.129,0.229 CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "Speaker" Size=0.9,0.55,0.67 Anchored CFrame=-30.996,8.462,79.539|179.996,-5.129,0.229 CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+}
+Part "Part" Size=11.234,0.051,6.182 Anchored BottomSurface=Smooth CFrame=-30.778,7.431,96.133|0,-85,0 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-34.029,8.778,99.862|0,-85,0 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-27.172,8.778,97.095|-180,85,-180 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-27.382,8.778,94.693|-180,85,-180 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-26.98,8.778,99.278|-180,85,-180 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-34.24,8.778,97.444|0,-85,0 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Seat "Seat" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-34.449,8.778,95.055|0,-85,0 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1
+Model "other" {
+    Model "Bar" {
+        MeshPart "MeshPart" Size=0.424,0.318,3.632 Anchored CFrame=-30.302,13.197,101.886|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=7.24,0.79,10.097 Anchored CFrame=-31.371,9.363,89.768|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=21.663,5.521,9.395 Anchored CFrame=-31.228,10.418,91.399|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=16.662,7.483,10.007 Anchored CFrame=-31.012,10.667,93.867|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.411,0.325,1.347 Anchored CFrame=-31.056,8.433,102.166|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.422,2.496,1.415 Anchored CFrame=-29.49,9.516,102.032|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    MeshPart "MeshPart" Size=0.281,0.403,12.562 Anchored CFrame=-31.722,10.322,85.755|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.004,1.358,5.035 Anchored CFrame=-32.281,7.641,79.365|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#8F898E Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.157,3.359,0.157 Anchored CFrame=-27.83,11.809,84.083|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.264,0.358,12.614 Anchored CFrame=-31.725,10.324,85.723|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.157,3.359,0.157 Anchored CFrame=-27.83,11.809,84.083|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.787,0.538,2.969 Anchored CFrame=-31.235,13.493,91.318|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=2.362,0.887,2.68 Anchored CFrame=-31.081,13.792,93.08|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.137,0.062,6.972 Anchored CFrame=-31.912,5.618,83.594|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.264,0.358,12.614 Anchored CFrame=-31.725,10.324,85.723|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.181,5.336,6.33 Anchored CFrame=-31.464,10.274,101.471|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise
+    Model "bottom" {
+        MeshPart "MeshPart" Size=17.106,0.605,10.689 Anchored CFrame=-30.898,5.819,94.843|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=17.141,0.545,10.817 Anchored CFrame=-30.928,5.825,94.833|0,-85,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    }
+}
+Seat "v" Size=0.99,0.272,1.074 Anchored BottomSurface=Smooth CFrame=-29.825,8.778,91.676|0,5,0 CanCollide=false Color=#F8F8F8 TopSurface=Smooth Transparency=1

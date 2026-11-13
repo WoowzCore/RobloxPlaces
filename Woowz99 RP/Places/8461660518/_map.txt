@@ -1,0 +1,497 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  UnionOperation "Bone"
+    Decal "Decal"
+    Decal "Decal"
+  UnionOperation "Cereb"
+  Sky "Clear As Day"
+    StringValue "by bigcrazycarboy"
+  Part "Crush_Particle"
+    ParticleEmitter "particle-crush"
+  DepthOfFieldEffect "DepthOfField"
+  UnionOperation "Frontal"
+  Part "L_Gore"
+  Model "Lighting"
+  UnionOperation "Occipit"
+  UnionOperation "Pariet"
+  UnionOperation "Pitua"
+  UnionOperation "Stem"
+  SunRaysEffect "SunRays"
+  UnionOperation "Temp"
+  Part "blood"
+    Attachment "Attachment"
+    Attachment "Attachment"
+    Attachment "Attachment0"
+    Attachment "Attachment1"
+    Attachment "DmgPoint"
+    Script "Hitbox"
+    Trail "Other"
+    Trail "Trail"
+    ObjectValue "owner"
+    Sound "splash"
+  Part "headblood"
+    Attachment "Attachment"
+    Attachment "Attachment"
+    Attachment "Attachment0"
+    Attachment "Attachment1"
+    Script "BloodRemover"
+    BodyVelocity "BodyVelocity"
+    Attachment "DmgPoint"
+    Attachment "DmgPoint"
+    Script "Hitbox"
+    Trail "Other"
+    Script "RandomSplat"
+    Trail "Trail"
+    Script "VelocityEnd"
+    ObjectValue "owner"
+  Part "splat"
+    Script "Blood Server"
+    SpecialMesh "Mesh"
+    Sound "splash"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  ModuleScript "RaycastHitboxV3"
+    Folder "CastLogics"  (+5)
+    ModuleScript "HitboxObject"
+    ModuleScript "MainHandler"
+    Folder "Tools"  (+1)
+  RemoteEvent "Tier1"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "RagdollScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  ScreenGui "CoreGUI"
+    LocalScript "BarMain"
+    Folder "StarterCharacterScripts"
+    RemoteEvent "StatsEvent"  (+1)
+    Frame "StatsFrame"  (+89)
+    LocalScript "StatsMain"
+  Model "StarterGui"
+  Folder "ragdoll"
+    Script "RagdollScriptMover"
+    Folder "events"  (+2)
+    Folder "functions"  (+3)
+    LocalScript "ragdollclient"
+    Script "ragdollserver"
+    Folder "variables"  (+2)
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+  Tool "the"
+    RemoteEvent "Bounce"
+    MeshPart "Handle"  (+3)
+    LocalScript "LocalScript"
+    Script "Script"
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    Script "DS"
+    Script "GoreH"  (+4)
+    Script "GoreLA"  (+3)
+    Script "GoreLL"  (+3)
+    Script "GoreRA"  (+3)
+    Script "GoreRL"  (+3)
+    Script "HeadBlood"
+    Script "IgnoreTable"
+    Script "IgnoreTable"
+    Script "NewMain"
+  Model "StarterPlayer  > StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Model ""
+    Script "Animate"  (+17)
+    Shirt "Blu"
+    Pants "Blu1"
+    Hat "BluetoothEarPiece"  (+2)
+    Script "Control"
+    Part "Handle"  (+5)
+    Part "Head"  (+3)
+    Humanoid "Humanoid"
+    Part "HumanoidRootPart"  (+1)
+    Part "Left Arm"
+    Part "Left Leg"  (+1)
+    Script "Ragdoller"  (+2)
+    Part "Right Arm"  (+1)
+    Part "Right Leg"  (+2)
+    Part "Torso"  (+5)
+  Model " "
+    Model "Arm1"  (+1)
+    Model "Arm2"  (+1)
+    Model "Chest"  (+37)
+    Part "Head"  (+10)
+    Model "HeadPart"  (+1)
+    Humanoid "Humanoid"
+    Model "Leg1"  (+1)
+    Model "Leg2"  (+1)
+  Model " "
+    Model "Arm1"  (+1)
+    Model "Arm2"  (+1)
+    Model "Chest"  (+29)
+    Part "Head"  (+10)
+    Model "HeadPart"  (+15)
+    Humanoid "Humanoid"
+    Model "Leg1"  (+7)
+    Model "Leg2"  (+7)
+  Model " "
+    Model "Arm1"  (+1)
+    Model "Arm2"  (+1)
+    Model "Chest"  (+15)
+    Part "Head"  (+12)
+    Humanoid "Humanoid"
+    Model "Leg1"  (+1)
+    Model "Leg2"  (+2)
+  Model " "
+    Model "Arm1"  (+1)
+    Model "Arm2"  (+1)
+    Model "Chest"  (+2)
+    Part "Head"  (+13)
+    Humanoid "Humanoid"
+    Model "Leg1"  (+1)
+    Model "Leg2"  (+2)
+  Model " "
+    Model "Arm1"  (+1)
+    Model "Arm2"  (+1)
+    Model "Chest"  (+21)
+    Part "Head"  (+10)
+    Model "HeadPart"  (+8)
+    Humanoid "Humanoid"
+    Model "Leg1"  (+8)
+    Model "Leg2"  (+8)
+  Model " "
+    Part "Head"  (+2)
+    Humanoid "Humanoid"
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Right Arm"
+    Part "Right Leg"
+    Part "Torso"  (+1)
+  Model "    "
+    Script "BC"  (+3)
+    Script "DS"
+    Script "GoreH"  (+4)
+    Script "GoreLA"  (+3)
+    Script "GoreLL"  (+3)
+    Script "GoreRA"  (+3)
+    Script "GoreRL"  (+3)
+    Part "Head"  (+3)
+    Humanoid "Humanoid"
+    Part "HumanoidRootPart"  (+7)
+    Part "Left Arm"
+    Part "Left Leg"
+    Script "NewMain"
+    Part "Right Arm"
+    Part "Right Leg"
+    Hat "Robloxclassicred"  (+2)
+    Script "SC"  (+3)
+    Part "Torso"  (+5)
+  Model " GAZ 24 Volga"
+    MeshPart "car004a"
+    Humanoid "shadow"
+  Model "(Animated) Realistic tree"
+    MeshPart "Part"  (+1)
+    MeshPart "Part"  (+2)
+  Model "2018 Ford Police Interceptor Utility"
+    ModuleScript "A-Chassis Tune"  (+167)
+    Model "Body"  [Scene/Workspace/2018 Ford Police Interceptor Utility/Body.bridge]  (+577)
+    VehicleSeat "DriveSeat"  (+18)
+    Model "Misc"  (+115)
+    Model "Wheels"  (+32)
+  Model "2021 Koenigsegg Jesko // Rosh"
+    ModuleScript "A-Chassis Tune"  (+180)
+    Model "Body"  (+109)
+    VehicleSeat "DriveSeat"  (+5)
+    Model "Misc"
+    Humanoid "Shadow"
+    Model "Wheels"  (+48)
+  Tool "AK-47 [ weapons pack]"
+    LocalScript "Advanced Crouch"  (+1)
+    NumberValue "Ammo"
+    LocalScript "ArmWeld [Rifle]"
+    LocalScript "BackupWeld"
+    Part "Handle"  (+89)
+    LocalScript "Local Gui"
+    Part "Part"  (+2)
+    Script "Welding"
+  Tool "AK-47 [ weapons pack]"
+    LocalScript "Advanced Crouch"  (+1)
+    NumberValue "Ammo"
+    LocalScript "ArmWeld [Rifle]"
+    LocalScript "BackupWeld"
+    Part "Handle"  (+89)
+    LocalScript "Local Gui"
+    Part "Part"  (+2)
+    Script "Welding"
+  Tool "AK-47 [ weapons pack]"
+    LocalScript "Advanced Crouch"  (+1)
+    NumberValue "Ammo"
+    LocalScript "ArmWeld [Rifle]"
+    LocalScript "BackupWeld"
+    Part "Handle"  (+89)
+    LocalScript "Local Gui"
+    Part "Part"  (+2)
+    Script "Welding"
+  Script "AddFallDamage"
+    Script "FallDamage"
+  Script "Admin Commands"
+  Tool "Ak-47"
+    LocalScript "CastLaser"  (+1)
+    Configuration "Configuration"  (+13)
+    Animation "Fire"
+    Script "GunScript"
+    Script "GunWeld"
+    Part "Handle"  (+4)
+    Animation "Hold"
+    LocalScript "LocalScript"  (+15)
+    Part "MeshPart"  (+1)
+    Folder "Modules"  (+1)
+    Part "MuzzleFlash"  (+4)
+    Animation "Reload"
+    Folder "Remotes"  (+2)
+    Script "WeldArm"
+  Tool "Ak-47"
+    LocalScript "CastLaser"  (+1)
+    Configuration "Configuration"  (+13)
+    Animation "Fire"
+    Script "GunScript"
+    Script "GunWeld"
+    Part "Handle"  (+4)
+    Animation "Hold"
+    LocalScript "LocalScript"  (+15)
+    Part "MeshPart"  (+1)
+    Folder "Modules"  (+1)
+    Part "MuzzleFlash"  (+4)
+    Animation "Reload"
+    Folder "Remotes"  (+2)
+    Script "WeldArm"
+  Tool "Ak-47"
+    LocalScript "CastLaser"  (+1)
+    Configuration "Configuration"  (+13)
+    Animation "Fire"
+    Script "GunScript"
+    Script "GunWeld"
+    Part "Handle"  (+4)
+    Animation "Hold"
+    LocalScript "LocalScript"  (+15)
+    Part "MeshPart"  (+1)
+    Folder "Modules"  (+1)
+    Part "MuzzleFlash"  (+4)
+    Animation "Reload"
+    Folder "Remotes"  (+2)
+    Script "WeldArm"
+  Tool "Ak-47"
+    LocalScript "CastLaser"  (+1)
+    Configuration "Configuration"  (+13)
+    Animation "Fire"
+    Script "GunScript"
+    Script "GunWeld"
+    Part "Handle"  (+4)
+    Animation "Hold"
+    LocalScript "LocalScript"  (+15)
+    Part "MeshPart"  (+1)
+    Folder "Modules"  (+1)
+    Part "MuzzleFlash"  (+4)
+    Animation "Reload"
+    Folder "Remotes"  (+2)
+    Script "WeldArm"
+  Tool "Ak-47"
+    LocalScript "CastLaser"  (+1)
+    Configuration "Configuration"  (+13)
+    Animation "Fire"
+    Script "GunScript"
+    Script "GunWeld"
+    Part "Handle"  (+4)
+    Animation "Hold"
+    LocalScript "LocalScript"  (+15)
+    Part "MeshPart"  (+1)
+    Folder "Modules"  (+1)
+    Part "MuzzleFlash"  (+4)
+    Animation "Reload"
+    Folder "Remotes"  (+2)
+    Script "WeldArm"
+  Model "Alarm"
+    Part "Light"  (+1)
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+7)
+    UnionOperation "Union"
+  Model "Among Us R15 Morph"
+    Model "ChestLow"  (+1)
+    Model "ChestUp"  (+1)
+    Model "Foot1"  (+1)
+    Model "Foot2"  (+1)
+    Model "Hand1"  (+1)
+    Model "Hand2"  (+1)
+    Part "Head"  (+12)
+    Model "Headz"  (+8)
+    Humanoid "Humanoid"
+    Model "LowArm1"  (+1)
+    Model "LowArm2"  (+1)
+    Model "LowLeg1"  (+1)
+    Model "LowLeg2"  (+1)
+    Model "UpArm1"  (+1)
+    Model "UpArm2"  (+1)
+    Model "UpLeg1"  (+1)
+    Model "UpLeg2"  (+1)
+  Model "Among us Killer"
+    CharacterMesh "3.0 Male Left Arm"
+    CharacterMesh "3.0 Male Left Leg"
+    CharacterMesh "3.0 Male Right Arm"
+    CharacterMesh "3.0 Male Right Leg"
+    CharacterMesh "3.0 Male Torso"
+    LocalScript "Animate"  (+19)
+    Script "Animate"  (+19)
+    Script "Animate"  (+22)
+    Script "AnimateSauce"  (+19)
+    Script "Animatronic_AI"  (+25)
+    Script "Attack"
+    Part "Head"  (+28)
+    Script "Health"  (+1)
+    Humanoid "Humanoid"  (+3)
+    Part "HumanoidRootPart"  (+1)
+    Part "Left Arm"  (+12)
+    Part "Left Leg"  (+13)
+    Part "Right Arm"  (+12)
+    Part "Right Leg"  (+13)
+    Script "Script"
+    Script "Sound"  (+1)
+    Part "Torso"  (+38)
+  MeshPart "Among us Meme guy"
+    BodyColors "Body Colors"  (+1)
+    BoolValue "DropWeapon"
+    IntValue "Force_Hat"
+    IntValue "Force_Pants"
+    IntValue "Force_Shirt"
+    IntValue "Force_Weapon"
+    IntValue "Force_Weapon"
+    Script "Full Animation"
+    Script "Full Animation"
+    Humanoid "Humanoid"
+    BoolValue "IgnoreCombatFF"
+    CFrameValue "IsAPlayer"
+    BoolValue "IsOnTeam"  (+2)
+    Vector3Value "PathTo"
+    BoolValue "PrintMap"
+    BoolValue "Respawn"
+    BoolValue "Wander"
+  MeshPart "Among us Meme guy"
+    BodyColors "Body Colors"  (+1)
+    BoolValue "DropWeapon"
+    IntValue "Force_Hat"
+    IntValue "Force_Pants"
+    IntValue "Force_Shirt"
+    IntValue "Force_Weapon"
+    IntValue "Force_Weapon"
+    Script "Full Animation"
+    Script "Full Animation"
+    Humanoid "Humanoid"
+    BoolValue "IgnoreCombatFF"
+    CFrameValue "IsAPlayer"
+    BoolValue "IsOnTeam"  (+2)
+    Vector3Value "PathTo"
+    BoolValue "PrintMap"
+    BoolValue "Respawn"
+    BoolValue "Wander"
+  Model "Backrooms Hazmat Morph (ASYNC)"
+    Model " Backrooms Morph"  (+106)
+  Model "Barricade - Road Closed"
+    Part "Part"  (+3)
+    Part "Part"  (+3)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Road Closed"  (+4)
+  Model "Barricade - Road Closed"
+    Part "Part"  (+4)
+    Part "Part"  (+3)
+    Part "Part"  (+3)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Road Closed"  (+4)
+  MeshPart "Base"
+  Part "Baseplate"
+  Tool "Bat"
+    Part "Handle"  (+4)
+    LocalScript "MouseIcon"
+    Script "SwordScript"
+  Tool "Bat"
+    Part "Handle"  (+4)
+    LocalScript "MouseIcon"
+    Script "SwordScript"
+  Model "Bed"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"  (+4)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"  (+3)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+7)
+    Part "Part"  (+7)
+    Part "Part"  (+5)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+5)
+    Part "Part"  (+8)
+    Part "Part"  (+4)
+    Part "Part"  (+3)
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+5)
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"  (+1)
+    UnionOperation "Pillow"
+    Seat "Seat"  (+3)
+    UnionOperation "Union"  (+1)
+    UnionOperation "Union"  (+11)
+  Folder "BigCity Folder"  [Scene/Workspace/BigCity Folder.bridge]
+    Folder "City"  [Scene/Workspace/BigCity Folder/City.bridge]  (+8267)
+    Model "FerrisWheel"  (+183)
+    Folder "Trees"  (+354)
+  Model "Bingus Morph"
+    Model "Morph"  (+47)
+    Part "pad"  (+2)
+  BlurEffect "Blur"
+  BlurEffect "Blur"
+  Tool "Boombox/Radio"
+    LocalScript "Client"
+    Part "Handle"  (+2)
+    Script "READ ME"
+    RemoteEvent "Remote"
+    Script "Server"
+  … ещё 531

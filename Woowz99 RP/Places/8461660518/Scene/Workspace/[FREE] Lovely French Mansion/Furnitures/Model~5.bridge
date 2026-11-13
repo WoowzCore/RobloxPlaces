@@ -1,0 +1,622 @@
+Model "Model" {
+    Model "Model" {
+        Model "Model" {
+            Part "Part" Size=1.15,0.383,0.703 Anchored CFrame=286.994,7.292,13.314|0.005,-45.004,89.999 Color=#506D54 Material=Sand {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=1.15,0.383,0.703 Anchored CFrame=286.994,7.292,13.314|0.005,-0.004,89.998 Color=#506D54 Material=Sand {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=1.15,0.383,0.703 Anchored CFrame=286.994,7.292,13.314|0.006,44.996,89.998 Color=#506D54 Material=Sand {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=1.15,0.383,0.703 Anchored CFrame=286.994,7.292,13.314|90.003,90,0 Color=#506D54 Material=Sand {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+        }
+        Part "Part" Size=0.764,0.764,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.631,6.984,13.299|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.97,-0.372,-0.524|-90,0,180 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part"
+        }
+        Part "Part" Size=0.764,0.064,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.394,6.984,12.917|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.372,1.288,0.588|-180,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~2"
+        }
+        Part "Part" Size=0.764,0.764,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.012,6.984,13.681|-179.996,0.004,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            ManualWeld "Part-to-Part Strong Joint" C0=-0.382,-0.382,0.032 C1=-0.69,-0.401,0.335|-180,0,-90.001 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~3" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part~2"
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.906,-0.372,1.352|-90,0,90 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~3"
+        }
+        Part "Part" Size=0.764,0.064,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.394,6.984,13.681|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.372,1.288,1.352|-180,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~4"
+        }
+        Part "Part" Size=0.764,0.064,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.631,6.984,12.917|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.372,0.524,0.588|-180,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~5"
+        }
+        Part "Part" Size=0.082,0.219,0.292 Anchored CFrame=286.961,7.826,13.314|89.998,59.999,0.006 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.055,0.292 Anchored CFrame=286.994,7.826,13.281|60.005,-0.003,90.002 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.219,0.292 Anchored CFrame=286.994,7.826,13.347|150.004,0.003,-89.999 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.219,0.292 Anchored CFrame=286.994,7.826,13.281|30.005,-0.003,90 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.219,0.292 Anchored CFrame=287.026,7.826,13.314|90.011,-60,-179.994 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.164,0.055,0.128 Anchored CFrame=287.065,7.887,13.386|159.252,-43.076,-104.51 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.764,0.127,0.828 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.012,6.666,13.299|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            ManualWeld "Part-to-Part Strong Joint" C0=-0.382,0.064,0.414|-90,0,-180 C1=-0.563,-0.565,-0.046|-135,90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~12" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part"
+            ManualWeld "Part-to-Part Strong Joint" C0=-0.382,0.064,0.414|-90,0,-180 C1=-0.563,-0.046,0.565|135,90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~12" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part~3"
+            ManualWeld "Part-to-Part Strong Joint" C0=-0.382,0.064,0.414|-90,0,-180 C1=-0.563,0.367,0.433|90,90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~12" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part~4"
+            ManualWeld "Part-to-Part Strong Joint" C0=-0.382,0.064,0.414|-90,0,-180 C1=-0.563,-0.433,0.367|-180,90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~12" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part~2"
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.97,-0.054,-0.906|-90,0,180 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~12"
+        }
+        Part "Part" Size=0.764,0.764,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.012,6.984,12.917|-179.996,0.004,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            ManualWeld "Part-to-Part Strong Joint" C0=0.382,-0.382,-0.032|-180,0,-180 C1=-0.69,0.363,-0.365|0,0,-89.999 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~13" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Model/Part~2"
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.906,-0.372,0.588|-90,0,90 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~13"
+        }
+        Part "Part" Size=0.082,0.055,0.292 Anchored CFrame=286.961,7.826,13.314|90.002,29.999,0.004 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.055,0.292 Anchored CFrame=286.994,7.826,13.347|120.004,0.002,-89.998 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.164,0.055,0.128 Anchored CFrame=286.922,7.887,13.242|20.758,43.076,75.489 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.082,0.055,0.292 Anchored CFrame=287.026,7.826,13.314|90.007,-30,-179.996 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.164,0.055,0.128 Anchored CFrame=286.922,7.887,13.386|159.249,43.082,-75.488 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.764,0.764,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.394,6.984,13.299|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.97,-0.372,-1.288|-90,0,180 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~19"
+        }
+        Part "Part" Size=0.764,0.7,0.764 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.006,6.952,13.299|0.004,90,0 Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.97,-0.34,-0.9|-90,0,180 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~20"
+        }
+        Part "Part" Size=0.764,0.064,0.064 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.63,6.984,13.681|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.372,0.524,1.352|-180,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model/Part~21"
+        }
+        Part "Part" Size=0.164,0.055,0.128 Anchored CFrame=287.065,7.887,13.242|20.759,-43.083,104.511 Color=#D490BD Material=Sand {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Model "Model" {
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.306,5.345,13.234|0.017,15.002,59.97 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.356,4.892,13.437|0.06,60.002,-0.058 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.946,4.892,13.546|179.993,29.998,-179.967 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.246,4.892,13.027|179.993,29.998,-179.967 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.168,5.217,13.49|179.898,74.997,-29.886 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.171,5.349,13.186|0.061,60.002,74.94 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.318,5.217,13.23|-179.983,-15.002,-29.97 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.165,5.345,13.479|-0.102,-74.997,59.886 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.836,4.892,13.137|0.06,60.002,-0.058 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.6,0.55,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.091,4.867,13.284|0.06,60.002,-0.058 Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.061,5.345,13.092|-0.102,-74.997,119.884 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.986,4.892,12.877|179.993,29.998,90.033 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.506,4.892,13.177|179.993,29.998,90.033 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.212,5.349,13.338|179.992,29.998,-74.966 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.018,5.349,13.227|179.991,29.998,-104.965 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.686,4.892,13.396|179.993,29.998,90.033 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.297,5.217,13.391|179.991,29.998,-29.967 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.71,0.065,0.129 Anchored CFrame=286.936,5.201,13.333|-179.983,-15.002,-149.969 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.058,5.218,13.081|179.898,74.997,-149.884 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=286.92,5.345,13.337|0.017,15.002,119.968 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.219,5.217,13.102|-179.939,-60.002,-29.941 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.206,4.892,13.696|179.993,29.998,90.033 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.007,5.217,13.469|-179.939,-60.002,-149.94 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=287.059,5.349,13.379|0.061,60.002,104.939 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.774,0.065,0.129 Anchored CFrame=286.93,5.218,13.179|179.991,29.998,-149.965 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.6,0.1,0.65 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.096,4.642,13.286|0.06,60.002,-0.058 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+    }
+    Model "Model" {
+        Model "Model" {
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.901,9.945,13.504|39.311,-73.856,139.018 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.875,10.215,13.607|39.311,-73.856,139.018 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.93,10.146,13.799|39.311,-73.856,79.02 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.855,9.877,13.668|-164.243,-45.067,-127.372 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.925,10.317,13.714|-164.243,-45.067,-67.373 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.807,10.112,13.648|22.352,-14.633,125.372 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=286.921,9.744,13.427|39.311,-73.856,139.018 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.003,9.944,13.532|-164.243,-45.067,-67.373 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.829,0.124,0.083 Anchored CFrame=286.921,9.888,13.588|22.352,-14.633,95.372 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.077,9.971,13.477|21.187,-40.467,122.677 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.265,9.762,13.439|18.726,19.489,62.161 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.247,10.239,13.607|18.726,19.489,62.161 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.185,9.783,13.373|8.59,79.309,71.045 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.048,10.209,13.671|18.726,19.489,122.159 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.829,0.124,0.083 Anchored CFrame=287.157,9.924,13.544|8.59,79.308,101.044 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.102,10.354,13.651|21.187,-40.467,122.677 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.058,9.935,13.575|18.726,19.489,122.159 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.238,9.93,13.608|21.187,-40.467,62.678 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.249,0.124,0.083 Anchored CFrame=287.131,10.118,13.712|8.59,79.309,131.043 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.349,9.924,13.048|157.4,-26.892,-46.272 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.4,10.398,12.819|157.4,-26.892,-46.272 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.182,10.193,12.889|-36.566,-31.611,105.606 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=1.038,0.156,0.104 Anchored CFrame=287.217,9.947,13.097|-36.566,-31.611,75.607 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.119,10.027,13.131|157.399,-26.892,-106.271 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.305,10.351,13.033|-130.252,-77.543,-41.086 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.316,10.221,12.803|-130.254,-77.543,18.911 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=287.24,9.91,12.974|-130.254,-77.543,18.912 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.743,9.935,13.087|17.752,-40.812,160.26 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=1.038,0.156,0.104 Anchored CFrame=286.831,9.97,13.193|-66.787,55.789,150.454 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.755,10.365,13.076|-16.879,9.985,89.778 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.529,10.25,13.152|-16.879,9.985,149.778 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.707,9.939,13.214|-16.879,9.985,149.778 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.524,10.414,13.045|17.752,-40.812,160.26 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.896,10.058,13.265|17.752,-40.812,100.261 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.311,0.156,0.104 Anchored CFrame=286.651,10.232,13.257|-66.786,55.79,-179.547 Color=#506D54 {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.34,9.432,13.619|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.3,1.6,0.656|150,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part"
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.04,9.432,13.019|-179.996,0.004,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=1.3,-0.3,0.056|-90,0,120 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~2"
+        }
+        Part "Part" Size=0.6,0.55,0.6 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.035,9.407,13.319|0.004,90,0 Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.356,-0.275,-1.295|-90,0,-150 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~3"
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.74,9.432,13.319|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.356,-0.3,-1|-90,0,-150 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~4"
+        }
+        Part "Part" Size=0.6,0.1,0.65 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.04,9.182,13.319|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.356,-0.05,-1.3|-90,0,-150 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~5"
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.74,9.432,13.619|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.3,1,0.656|150,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~6"
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.04,9.432,13.619|-179.996,0.004,-180 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=1.3,-0.3,0.656|-90,0,120 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~7"
+        }
+        Part "Part" Size=0.6,0.6,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.34,9.432,13.319|0.004,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.356,-0.3,-1.6|-90,0,-150 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~8"
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.34,9.432,13.019|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.3,1.6,0.056|150,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~9"
+        }
+        Part "Part" Size=0.6,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.74,9.432,13.019|-179.996,0.004,90.001 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+            Weld "Weld" C0=0.05,-1,1|0,90,0 C1=0.3,1,0.056|150,-90,0 Part0=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Union~2" Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Model~3/Part~10"
+        }
+    }
+    Part "Part" Size=5.95,0.15,0.15 Anchored BottomSurface=Smooth CFrame=287.111,6.117,12.44|-179.996,0.004,-90 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-2.948,-65.985,-373.424|-89.996,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Part"
+    }
+    Part "Part" Size=5.95,0.15,0.15 Anchored BottomSurface=Smooth CFrame=286.211,6.117,13.34|90.004,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-2.948,372.524,-65.086|0.004,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Part~2"
+    }
+    Part "Part" Size=5.95,0.15,0.15 Anchored BottomSurface=Smooth CFrame=288.011,6.117,13.34|90.004,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-2.948,372.524,-66.886|0.004,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Part~3"
+    }
+    Part "Part" Size=5.95,0.15,0.15 Anchored BottomSurface=Smooth CFrame=287.111,6.117,14.24|-179.996,0.004,-90 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-2.948,-65.985,-371.624|-89.996,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model/Part~4"
+    }
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=287.106,6.562,13.329|-179.996,0.004,-90 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=287.106,9.082,13.329|-179.995,-29.996,-89.999 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=287.106,4.542,13.329|-179.996,30.004,-89.999 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=0.691,0.206,0.206 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.196,4.937,12.965|179.997,-0.002,90.011 Color=#506D54 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.305,5.293,13.151|-0.02,-59.998,14.979 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.192,4.937,12.608|179.997,-0.002,-179.99 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=288.998,5.32,12.854|179.991,29.998,-134.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=288.993,5.293,12.971|179.997,-0.001,75.009 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.097,5.293,12.791|179.978,59.998,75.021 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.097,5.293,13.151|-179.985,-60.001,75.02 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=289.404,5.32,12.854|0.004,30.001,44.987 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.537,4.937,12.954|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.305,5.293,13.151|-0.02,-59.998,-105.021 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.192,4.937,13.299|179.997,-0.002,-179.99 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.409,5.293,12.971|-0.002,0.001,14.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=288.846,4.938,13.299|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.691,0.633,0.691 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.186,4.909,12.954|-0.003,90,0 Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=288.846,4.938,12.608|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.691,0.115,0.749 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.192,4.65,12.954|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.409,5.293,12.971|-0.002,0.001,-105.012 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=289.201,5.32,12.737|44.997,90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=288.998,5.32,13.088|-179.997,-30.001,-134.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.305,5.293,12.791|0.016,60.001,-105.023 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.305,5.293,12.791|0.016,60.001,14.977 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.097,5.293,13.151|-179.985,-60.001,-164.981 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=289.404,5.32,13.088|-0.008,-29.998,44.987 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=289.097,5.293,12.791|179.978,59.998,-164.979 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=288.993,5.293,12.971|179.997,-0.001,-164.991 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.537,4.937,13.299|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.537,4.937,12.608|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=289.201,5.32,13.205|-45.002,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=288.846,4.938,12.954|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+    }
+    Model "Model" {
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.183,7.203,12.738|-150.076,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.063,0.719,0.719 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.141,7.045,13.01|-90.077,-90,0 CanCollide=false Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Pebble RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.639,1,1
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.017,7.383,13.023|179.923,0.011,-105.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.439,0.719,0.719 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.141,6.833,13.011|-90.077,-90,0 Color=#BBB3B2 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=288.981,7.203,12.821|-0.026,-45.011,150.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.384,7.383,12.821|-0.129,44.988,60.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.177,7.384,13.183|-75.078,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=288.981,7.204,13.224|179.871,-44.988,-150.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.177,7.383,12.863|-105.077,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.384,7.384,13.224|179.974,45.011,-60.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.468,7.204,13.023|-0.077,-0.011,30.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.088,0.861,0.861 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.141,7.008,13.01|-90.077,-90,0 Color=#BBB3B2 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.337,7.384,13.023|179.923,0.011,-75.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=288.898,7.203,13.023|-0.077,-0.011,150.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.384,7.204,13.224|-0.026,-45.011,30.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=288.981,7.384,13.224|-0.129,44.988,120.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=288.981,7.383,12.821|179.974,45.011,-120.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.384,7.203,12.821|179.871,-44.988,-30.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=289.182,7.204,13.308|-30.078,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=289.193,4.867,13.856|179.997,-0.002,-89.989 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,-67.312,-373.997|-90.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~2/Part"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=289.193,4.867,12.056|179.997,-0.002,-89.989 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,-67.311,-375.797|-90.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~2/Part~2"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=290.093,4.867,12.956|89.997,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,374.897,-68.211|-0.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~2/Part~3"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=288.293,4.867,12.956|89.997,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,374.897,-66.411|-0.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~2/Part~4"
+    }
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=289.189,6.562,12.945|179.991,29.998,-89.988 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=289.188,4.542,12.945|-179.997,-30.001,-89.988 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.958,5.294,15.548|-0.002,0.001,14.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.958,5.294,15.548|-0.002,0.001,-105.012 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.854,5.294,15.728|-0.02,-59.998,-105.021 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.543,5.294,15.548|179.997,-0.001,75.009 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.396,4.938,15.876|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.087,4.938,15.876|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.548,5.32,15.431|179.991,29.998,-134.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.854,5.294,15.728|-0.02,-59.998,14.979 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.087,4.938,15.185|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.751,5.32,15.782|-45.002,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.647,5.294,15.368|179.978,59.998,75.021 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.058,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.396,4.938,15.185|179.997,-0.002,90.011 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.087,4.938,15.531|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.691,0.115,0.749 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.741,4.65,15.531|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.691,0.206,0.206 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.745,4.938,15.542|179.997,-0.002,90.011 Color=#506D54 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.953,5.32,15.431|0.004,30.001,44.987 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.647,5.294,15.368|179.978,59.998,-164.979 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.396,4.938,15.531|-0.003,90,0 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.741,4.938,15.185|179.997,-0.002,-179.99 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.691,0.633,0.691 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.736,4.909,15.531|-0.003,90,0 Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Concrete RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.751,5.32,15.314|44.997,90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.854,5.294,15.368|0.016,60.001,14.977 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.543,5.294,15.548|179.997,-0.001,-164.991 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.548,5.32,15.665|-179.997,-30.001,-134.989 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.691,0.691,0.058 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.741,4.938,15.876|179.997,-0.002,-179.99 Color=#F8F8F8 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.647,5.294,15.728|-179.985,-60.001,-164.981 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.647,5.294,15.728|-179.985,-60.001,75.02 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.371,0.074,0.149 Anchored CFrame=286.854,5.294,15.368|0.016,60.001,-105.023 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.446,0.074,0.297 Anchored CFrame=286.953,5.32,15.665|-0.008,-29.998,44.987 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Model "Model" {
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.727,7.384,15.44|-105.077,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.53,7.384,15.801|-0.129,44.988,120.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.447,7.204,15.6|-0.077,-0.011,150.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.531,7.204,15.398|-0.026,-45.011,150.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.732,7.205,15.885|-30.078,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.531,7.204,15.801|179.871,-44.988,-150.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.732,7.204,15.315|-150.076,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.567,7.384,15.6|179.923,0.011,-105.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.531,7.384,15.398|179.974,45.011,-120.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.887,7.384,15.6|179.923,0.011,-75.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.934,7.384,15.398|-0.129,44.988,60.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.727,7.384,15.76|-75.078,-90,0 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=0.063,0.719,0.719 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.691,7.045,15.587|-90.077,-90,0 CanCollide=false Color=#6C584B FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Pebble RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.639,1,1
+        }
+        Part "Part" Size=0.439,0.719,0.719 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.691,6.833,15.588|-90.077,-90,0 Color=#BBB3B2 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.088,0.861,0.861 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=286.691,7.009,15.587|-90.077,-90,0 Color=#BBB3B2 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.934,7.204,15.398|179.871,-44.988,-30.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.934,7.205,15.801|-0.026,-45.011,30.072 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=287.017,7.204,15.6|-0.077,-0.011,30.051 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "Part" Size=1.1,0.1,0.2 Anchored CFrame=286.934,7.385,15.801|179.974,45.011,-60.073 Color=#506D54 {
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=285.843,4.867,15.533|89.997,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,374.897,-66.411|-0.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~3/Part"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=286.743,4.867,14.633|179.997,-0.002,-89.989 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,-67.311,-375.797|-90.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~3/Part~2"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=287.643,4.867,15.533|89.997,90,0 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,374.897,-68.211|-0.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~3/Part~3"
+    }
+    Part "Part" Size=3.45,0.15,0.15 Anchored BottomSurface=Smooth CFrame=286.743,4.867,16.433|179.997,-0.002,-89.989 Color=#AF9483 Material=Wood Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=-256,10,256|-90,0,-180 C1=-1.757,-67.312,-373.997|-90.002,90,0 Part1=@"Workspace/[FREE] Lovely French Mansion/Furnitures/Model~5/Model~3/Part~4"
+    }
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=286.738,4.543,15.522|-179.997,-30.001,-89.988 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+    UnionOperation "Union" Size=0.1,2,2 Anchored CFrame=286.738,6.563,15.522|179.991,29.998,-89.988 Color=#AF9483 Material=Wood RenderFidelity=Precise UsePartColor $_geo="6a7cabdf24ab9e9a"
+}

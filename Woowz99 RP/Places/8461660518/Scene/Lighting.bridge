@@ -1,0 +1,73 @@
+Lighting "Lighting" Ambient=#000000 Brightness=3.85 ColorShift_Bottom=#000000 ColorShift_Top=#FFFFFF EnvironmentDiffuseScale=1 EnvironmentSpecularScale=1 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=0 GlobalShadows LightingStyle=Soft OutdoorAmbient=#464646 PrioritizeLightingQuality ShadowSoftness=1 TimeOfDay="14:30:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=3 {
+    Atmosphere "Atmosphere" Color=#D8FFFA Density=0.348 Glare=0.63 Offset=1
+    BloomEffect "Bloom" Intensity=1 Threshold=2
+    UnionOperation "Bone" Size=1.145,0.742,1.286 CFrame=-267.991,3.371,461.691|-180,0,180 CanCollide=false Color=#F8F8F8 Material=Sand RenderFidelity=Precise $_geo="bd35e607c0867ebf" {
+        Decal "Decal" Face=Top Texture="rbxassetid://408320359" TextureContent="rbxassetid://408320359"
+        Decal "Decal" Face=Left Texture="rbxassetid://408754747" TextureContent="rbxassetid://408754747"
+    }
+    UnionOperation "Cereb" Size=0.32,0.26,0.598 CFrame=-169.644,166.384,220.006|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="96e2de33424107bf"
+    Sky "Clear As Day" SkyboxBackContent="http://www.roblox.com/asset/?id=247095099" SkyboxBk="http://www.roblox.com/asset/?id=247095099" SkyboxDn="http://www.roblox.com/asset/?id=247095290" SkyboxDownContent="http://www.roblox.com/asset/?id=247095290" SkyboxFrontContent="http://www.roblox.com/asset/?id=247095147" SkyboxFt="http://www.roblox.com/asset/?id=247095147" SkyboxLeftContent="http://www.roblox.com/asset/?id=247095237" SkyboxLf="http://www.roblox.com/asset/?id=247095237" SkyboxRightContent="http://www.roblox.com/asset/?id=247095184" SkyboxRt="http://www.roblox.com/asset/?id=247095184" SkyboxUp="http://www.roblox.com/asset/?id=247087559" SkyboxUpContent="http://www.roblox.com/asset/?id=247087559" StarCount=0 SunAngularSize=60 SunTextureContent="http://www.roblox.com/asset/?id=9405976806" SunTextureId="http://www.roblox.com/asset/?id=9405976806" {
+        StringValue "by bigcrazycarboy" Value="bigcrazycarboy"
+    }
+    Part "Crush_Particle" Size=0.05,0.05,0.05 Anchored CFrame=-273.922,5.025,472.22|0,9.259,0 Transparency=1 {
+        ParticleEmitter "particle-crush" Color=0:#240000,1:#240000 EmissionDirection=Bottom Lifetime=1,2 LightEmission=0.4 Rate=2 Speed=0,0 Texture="rbxassetid://244369543" TextureContent="rbxassetid://244369543" Transparency=0:1,0.005:0.019,0.102:0.412,0.191:0.619,0.295:0.688,0.398:0.788,0.507:0.825,0.604:0.837,0.726:0.906,0.843:0.919,0.92:0.962,0.967:0.988,1:1
+    }
+    DepthOfFieldEffect "DepthOfField" Enabled=false FarIntensity=0.1 InFocusRadius=30
+    UnionOperation "Frontal" Size=0.545,0.47,0.694 CFrame=-169.686,166.715,219.658|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9e0d51be43e9a766"
+    Part "L_Gore" Size=1,0.05,1 BottomSurface=Smooth CFrame=-263.596,7.46,450.579|0,9.259,0 CanCollide=false Color=#562424 Material=Pebble TopSurface=Smooth
+    Model "Lighting"
+    UnionOperation "Occipit" Size=0.259,0.348,0.686 CFrame=-169.605,166.535,220.156|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="c501ab646e0d86ba"
+    UnionOperation "Pariet" Size=0.421,0.364,0.7 CFrame=-169.63,166.755,220.006|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="91a78e9d6ce6b636"
+    UnionOperation "Pitua" Size=0.068,0.062,0.099 CFrame=-169.69,166.43,219.728|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="680ac52c1e9ccd4d"
+    UnionOperation "Stem" Size=0.361,0.58,0.46 CFrame=-169.678,166.448,219.804|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="9bce40a3ce9a499d"
+    SunRaysEffect "SunRays" Intensity=1 Spread=0.1
+    UnionOperation "Temp" Size=0.538,0.267,0.743 CFrame=-169.658,166.51,219.831|180,80.743,-180 Color=#FFC9C9 Material=Metal RenderFidelity=Precise UsePartColor $_geo="7030a4a8b0235211"
+    Part "blood" Size=0.23,0.23,0.23 BottomSurface=Smooth CFrame=-331.64,320.515,55.462|0,9.259,0 CanCollide=false Color=#750000 Material=Glass Shape=Ball TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment" CFrame=-0.007,0.059,-0.125|0,90,0
+        Attachment "Attachment" CFrame=-0.003,0.023,0.125|0,-90,0
+        Attachment "Attachment0" CFrame=-0.001,-0.005,-0.159|180,89.638,178.693
+        Attachment "Attachment1" CFrame=-0.013,-0.002,0.137|180,89.638,178.693
+        Attachment "DmgPoint"
+        Script "Hitbox" @src="Scripts/Lighting/blood/Hitbox.luau"
+        Trail "Other" Attachment0=@"Lighting/blood/Attachment0" Attachment1=@"Lighting/blood/Attachment1" Color=0:#940000,1:#940000 FaceCamera Lifetime=0.3 LightInfluence=1 MaxLength=8 Texture="http://www.roblox.com/asset/?id=4940112802" TextureContent="http://www.roblox.com/asset/?id=4940112802" Transparency=0:0.75,1:1 WidthScale=0:1,1:0
+        Trail "Trail" Attachment0=@"Lighting/blood/Attachment0" Attachment1=@"Lighting/blood/Attachment1" Color=0:#940000,1:#940000 FaceCamera Lifetime=0.3 LightEmission=0.4 MinLength=0 Texture="http://www.roblox.com/asset/?id=4940112802" TextureContent="http://www.roblox.com/asset/?id=4940112802" TextureLength=1.2 Transparency=0:0,1:1 WidthScale=0:1,0.501:0.663,1:0
+        ObjectValue "owner"
+        Sound "splash" AudioContent="rbxassetid://5930519356" SoundId="rbxassetid://5930519356" Volume=1
+    }
+    Part "headblood" Size=0.23,0.23,0.23 BottomSurface=Smooth CFrame=-349.532,320.515,67.213|0,9.259,0 CanCollide=false CanTouch=false Color=#750000 Massless Material=Glass Shape=Ball TopSurface=Smooth Transparency=1 {
+        Attachment "Attachment" CFrame=-0.003,0.023,0.125|0,-90,0
+        Attachment "Attachment" CFrame=-0.007,0.059,-0.125|0,90,0
+        Attachment "Attachment0" CFrame=-0.001,-0.005,-0.159|180,89.638,178.693
+        Attachment "Attachment1" CFrame=-0.013,-0.002,0.137|180,89.638,178.693
+        Script "BloodRemover" @code=<<<
+            local p = script.Parent
+
+            p.Touched:Connect(function(h)
+            	wait(2)
+            	p:Destroy()
+            end)
+        >>>
+        BodyVelocity "BodyVelocity" MaxForce=9999999778196310000000,100000002004088000000,9999999778196310000000 P=0 Velocity=0,-25,10
+        Attachment "DmgPoint" CFrame=0,-0.23,0
+        Attachment "DmgPoint"
+        Script "Hitbox" @src="Scripts/Lighting/headblood/Hitbox.luau"
+        Trail "Other" Attachment0=@"Lighting/headblood/Attachment0" Attachment1=@"Lighting/headblood/Attachment1" Color=0:#940000,1:#940000 FaceCamera Lifetime=0.3 LightInfluence=1 MaxLength=8 Texture="http://www.roblox.com/asset/?id=4940112802" TextureContent="http://www.roblox.com/asset/?id=4940112802" Transparency=0:0.75,1:1 WidthScale=0:1,1:0
+        Script "RandomSplat" @code=<<<
+            local vel = script.Parent.BodyVelocity
+            local random = math.random(0, 15)
+
+            vel.Velocity = Vector3.new(math.random(-15, 15), math.random(-15,15), math.random(-15, 15))
+        >>>
+        Trail "Trail" Attachment0=@"Lighting/headblood/Attachment0" Attachment1=@"Lighting/headblood/Attachment1" Color=0:#940000,1:#940000 FaceCamera Lifetime=0.3 LightEmission=0.4 MinLength=0 Texture="http://www.roblox.com/asset/?id=4940112802" TextureContent="http://www.roblox.com/asset/?id=4940112802" TextureLength=1.2 Transparency=0:0,1:1 WidthScale=0:1,0.501:0.663,1:0
+        Script "VelocityEnd" @code=<<<
+            wait(0.15)
+            script.Parent.BodyVelocity:Destroy()
+        >>>
+        ObjectValue "owner"
+    }
+    Part "splat" Size=0.619,0.5,0.5 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-314.086,320.425,61.177|0,9.259,0 CanCollide=false CanTouch=false Color=#750000 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Glass RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.3 {
+        Script "Blood Server" @src="Scripts/Lighting/splat/Blood Server.luau"
+        SpecialMesh "Mesh" MeshType=Sphere
+        Sound "splash" AudioContent="rbxassetid://180083298" SoundId="rbxassetid://180083298"
+    }
+}

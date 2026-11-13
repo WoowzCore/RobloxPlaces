@@ -1,0 +1,519 @@
+Model "AnimSaves" {
+    KeyframeSequence "Sonic Colours Stand" #"1601391930" Priority=Core {
+        Keyframe "Keyframe" Time=2 {
+            Pose "HumanoidRootPart" Weight=0 {
+                Pose "LowerTorso" Weight=0 {
+                    Pose "UpperTorso" CFrame=0,0.05,0 {
+                        Pose "Head" CFrame=0,0,-0.07
+                    }
+                }
+            }
+        }
+        Keyframe "Keyframe" Time=4 {
+            Pose "HumanoidRootPart" Weight=0 {
+                Pose "LowerTorso" Weight=0 {
+                    Pose "UpperTorso" CFrame=0,0.18,0 {
+                        Pose "Head" CFrame=0,0,-0.07|4.996,0,0
+                    }
+                }
+            }
+        }
+        Keyframe "Keyframe" {
+            Pose "HumanoidRootPart" Weight=0 {
+                Pose "LowerTorso" Weight=0 {
+                    Pose "LeftUpperLeg" CFrame=-0.242,0.065,0|0,0,-14.955 {
+                        Pose "LeftLowerLeg" Weight=0 {
+                            Pose "LeftFoot" CFrame=0.365,0.067,0|0,0,14.962
+                        }
+                    }
+                    Pose "RightUpperLeg" CFrame=0.148,0.026,0|0,0,9.97 {
+                        Pose "RightLowerLeg" Weight=0 {
+                            Pose "RightFoot" CFrame=-0.186,0.049,0|0,0,-9.97
+                        }
+                    }
+                    Pose "UpperTorso" CFrame=0,0.18,0 {
+                        Pose "Head" CFrame=0,0,-0.07|4.994,0,0
+                        Pose "LeftUpperArm" CFrame=0.186,0.22,0|0,0,-19.973 {
+                            Pose "LeftLowerArm" Weight=0 {
+                                Pose "LeftHand" CFrame=0.059,-0.222,0|0,0,14.978
+                            }
+                        }
+                        Pose "RightUpperArm" CFrame=-0.164,0.217,0|0,0,19.946 {
+                            Pose "RightLowerArm" Weight=0 {
+                                Pose "RightHand" CFrame=-0.034,-0.126,0|0,0,-14.976
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+LocalScript "Animate" @src="Scripts/Workspace/Sonic Morph/Sonic/Animate.luau" {
+    BindableFunction "PlayEmote"
+    NumberValue "ScaleDampeningPercent" Value=0.4
+    StringValue "cheer" {
+        Animation "CheerAnim" AnimationContent="http://www.roblox.com/asset/?id=507770677" AnimationId="http://www.roblox.com/asset/?id=507770677"
+    }
+    StringValue "climb" {
+        Animation "ClimbAnim" AnimationContent="http://www.roblox.com/asset/?id=656114359" AnimationId="http://www.roblox.com/asset/?id=656114359"
+    }
+    StringValue "dance" {
+        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=507771019" AnimationId="http://www.roblox.com/asset/?id=507771019" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=507771955" AnimationId="http://www.roblox.com/asset/?id=507771955" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=507772104" AnimationId="http://www.roblox.com/asset/?id=507772104" {
+            NumberValue "Weight" Value=10
+        }
+    }
+    StringValue "dance2" {
+        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=507776043" AnimationId="http://www.roblox.com/asset/?id=507776043" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=507776720" AnimationId="http://www.roblox.com/asset/?id=507776720" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=507776879" AnimationId="http://www.roblox.com/asset/?id=507776879" {
+            NumberValue "Weight" Value=10
+        }
+    }
+    StringValue "dance3" {
+        Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=507777268" AnimationId="http://www.roblox.com/asset/?id=507777268" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=507777451" AnimationId="http://www.roblox.com/asset/?id=507777451" {
+            NumberValue "Weight" Value=10
+        }
+        Animation "Animation3" AnimationContent="http://www.roblox.com/asset/?id=507777623" AnimationId="http://www.roblox.com/asset/?id=507777623" {
+            NumberValue "Weight" Value=10
+        }
+    }
+    StringValue "fall" {
+        Animation "FallAnim" AnimationContent="http://www.roblox.com/asset/?id=656115606" AnimationId="http://www.roblox.com/asset/?id=656115606"
+    }
+    StringValue "idle" {
+        Animation "Animation1" AnimationContent="rbxassetid://5756995006" AnimationId="rbxassetid://5756995006" {
+            NumberValue "Weight" Value=9
+        }
+        Animation "Animation2" AnimationContent="rbxassetid://5756995006" AnimationId="rbxassetid://5756995006" {
+            NumberValue "Weight" Value=1
+        }
+    }
+    StringValue "jump" {
+        Animation "JumpAnim" AnimationContent="http://www.roblox.com/asset/?id=656117878" AnimationId="http://www.roblox.com/asset/?id=656117878"
+    }
+    StringValue "laugh" {
+        Animation "LaughAnim" AnimationContent="http://www.roblox.com/asset/?id=507770818" AnimationId="http://www.roblox.com/asset/?id=507770818"
+    }
+    StringValue "point" {
+        Animation "PointAnim" AnimationContent="http://www.roblox.com/asset/?id=507770453" AnimationId="http://www.roblox.com/asset/?id=507770453"
+    }
+    StringValue "run" {
+        Animation "RunAnim" AnimationContent="http://www.roblox.com/asset/?id=656118852" AnimationId="http://www.roblox.com/asset/?id=656118852"
+    }
+    StringValue "sit" {
+        Animation "SitAnim" AnimationContent="http://www.roblox.com/asset/?id=2506281703" AnimationId="http://www.roblox.com/asset/?id=2506281703"
+    }
+    StringValue "swim" {
+        Animation "Swim" AnimationContent="http://www.roblox.com/asset/?id=656119721" AnimationId="http://www.roblox.com/asset/?id=656119721"
+    }
+    StringValue "swimidle" {
+        Animation "SwimIdle" AnimationContent="http://www.roblox.com/asset/?id=656121397" AnimationId="http://www.roblox.com/asset/?id=656121397"
+    }
+    StringValue "toollunge" {
+        Animation "ToolLungeAnim" AnimationContent="http://www.roblox.com/asset/?id=522638767" AnimationId="http://www.roblox.com/asset/?id=522638767"
+    }
+    StringValue "toolnone" {
+        Animation "ToolNoneAnim" AnimationContent="http://www.roblox.com/asset/?id=507768375" AnimationId="http://www.roblox.com/asset/?id=507768375"
+    }
+    StringValue "toolslash" {
+        Animation "ToolSlashAnim" AnimationContent="http://www.roblox.com/asset/?id=522635514" AnimationId="http://www.roblox.com/asset/?id=522635514"
+    }
+    StringValue "walk" {
+        Animation "WalkAnim" AnimationContent="http://www.roblox.com/asset/?id=913402848" AnimationId="http://www.roblox.com/asset/?id=913402848"
+    }
+    StringValue "wave" {
+        Animation "WaveAnim" AnimationContent="http://www.roblox.com/asset/?id=507770239" AnimationId="http://www.roblox.com/asset/?id=507770239"
+    }
+}
+BoolValue "GotCostume"
+Model "Head" PrimaryPart=@"Workspace/Sonic Morph/Sonic/Head/Primary" {
+    MeshPart "Eye" Size=1.438,0.972,0.607 CFrame=-43.487,199.623,-879.573|-180,1.346,180 CanCollide=false Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://1027238390" TextureID="rbxassetid://1027238390" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/Head/Eye"
+    }
+    MeshPart "Head" Size=3.532,3.042,2.585 CFrame=-43.521,199.531,-878.234|180,-88.657,180 CanCollide=false CollisionFidelity=Default Color=#260DDC CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/Head/Head"
+    }
+    MeshPart "Mouth" Size=1.268,0.47,1.054 CFrame=-43.485,199.071,-879.623|-180,1.346,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/Head/Mouth"
+    }
+    Part "Primary" Size=2,1,1 BottomSurface=Smooth CFrame=-43.514,200.261,-878.84|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice TopSurface=Smooth Transparency=1 {
+        SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/Head/Primary"
+    }
+}
+Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=-43.512,199.792,-878.838|0,-1.346,0 Color=#0D69AC Material=Ice TopSurface=Smooth Transparency=0.99 {
+    StringValue "AvatarPartScaleType" Value="Classic"
+    Attachment "FaceCenterAttachment" {
+        Vector3Value "OriginalPosition"
+    }
+    Attachment "FaceFrontAttachment" CFrame=0,0,-0.59 {
+        Vector3Value "OriginalPosition" Value=0,0,-0.59
+    }
+    Attachment "HairAttachment" CFrame=0,0.59,0 {
+        Vector3Value "OriginalPosition" Value=0,0.59,0
+    }
+    Attachment "HatAttachment" CFrame=0,0.59,0 {
+        Vector3Value "OriginalPosition" Value=0,0.59,0
+    }
+    NoCollisionConstraint "HumanoidRootPartNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/HumanoidRootPart"
+    NoCollisionConstraint "LeftUpperArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperArm"
+    SpecialMesh "Mesh" MeshContent="https://www.roblox.com/asset/?id=5560742556" MeshId="https://www.roblox.com/asset/?id=5560742556" MeshType=FileMesh {
+        StringValue "AvatarPartScaleType" Value="Classic"
+        Vector3Value "FaceCenterAttachment"
+        Vector3Value "FaceFrontAttachment" Value=0,0,-0.59
+        Vector3Value "HairAttachment" Value=0,0.59,0
+        Vector3Value "HatAttachment" Value=0,0.59,0
+        Vector3Value "NeckRigAttachment" Value=0,-0.491,0
+        Vector3Value "OriginalSize" Value=1,1,1
+    }
+    Motor6D "Neck" C0=0,0.8,0 C1=0,-0.491,0 Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/Head~2"
+    Attachment "NeckRigAttachment" CFrame=0,-0.491,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.491,0
+    }
+    Vector3Value "OriginalSize" Value=2,1,1
+    NoCollisionConstraint "RightUpperArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/Head~2" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperArm"
+}
+Script "Health" @src="Scripts/Workspace/Sonic Morph/Sonic/Health.luau"
+Humanoid "Humanoid" BreakJointsOnDeath=false HipHeight=2 JumpPower=70 RigType=R15 WalkSpeed=67 {
+    Animator "Animator"
+    NumberValue "BodyDepthScale" Value=1
+    NumberValue "BodyHeightScale" Value=1
+    NumberValue "BodyProportionScale"
+    NumberValue "BodyTypeScale"
+    NumberValue "BodyWidthScale" Value=1
+    NumberValue "HeadScale" Value=1
+    HumanoidDescription "HumanoidDescription" BodyTypeScale=0 ClimbAnimation=658833139 Face=7317773 FallAnimation=658831500 JumpAnimation=658832070 Pants=825497545 ProportionScale=0 RunAnimation=658830056 Shirt=188774229 SwimAnimation=658832807 {
+        AccessoryDescription "AccessoryDescription" AccessoryType=Hair AssetId=145313201
+        BodyPartDescription "BodyPartDescription" BodyPart=LeftArm Color=#E5E4DF
+        BodyPartDescription "BodyPartDescription" BodyPart=Torso Color=#0D69AC
+        BodyPartDescription "BodyPartDescription" BodyPart=RightLeg Color=#0D69AC
+        BodyPartDescription "BodyPartDescription" BodyPart=RightArm Color=#E5E4DF
+        BodyPartDescription "BodyPartDescription" BodyPart=LeftLeg Color=#0D69AC
+        BodyPartDescription "BodyPartDescription" AssetId=6340213 Color=#0D69AC
+    }
+    Status "Status" ExplorerIconContent="" LevelOfDetail=Automatic ModelStreamingMode=Default
+}
+Part "HumanoidRootPart" Size=2,2,1 CFrame=-43.512,198.301,-878.838|0,-1.346,0 Material=Ice Transparency=1 {
+    Sound "Climbing" AudioContent="rbxasset://sounds/action_footsteps_plastic.mp3" Looped RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_footsteps_plastic.mp3" TimePosition=0.149 Volume=0.65
+    Sound "Died" AudioContent="rbxasset://sounds/uuhhh.mp3" RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/uuhhh.mp3" Volume=0.65
+    Sound "FreeFalling" AudioContent="rbxasset://sounds/action_falling.mp3" Looped RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_falling.mp3" Volume=0
+    Sound "GettingUp" AudioContent="rbxasset://sounds/action_get_up.mp3" RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_get_up.mp3" Volume=0.65
+    Sound "Jumping" AudioContent="rbxasset://sounds/action_jump.mp3" RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_jump.mp3" Volume=0.65
+    Sound "Landing" AudioContent="rbxasset://sounds/action_jump_land.mp3" RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_jump_land.mp3" Volume=1
+    Vector3Value "OriginalSize" Value=2,2,1
+    Attachment "RootRigAttachment" CFrame=0,-1,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.35,0
+    }
+    Sound "Running" AudioContent="rbxasset://sounds/action_footsteps_plastic.mp3" Looped PlaybackSpeed=1.85 RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_footsteps_plastic.mp3" TimePosition=0.856 Volume=0.65
+    Sound "Splash" AudioContent="rbxasset://sounds/impact_water.mp3" RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/impact_water.mp3" Volume=0.65
+    Sound "Swimming" AudioContent="rbxasset://sounds/action_swim.mp3" Looped PlaybackSpeed=1.6 RollOffMaxDistance=150 RollOffMinDistance=5 SoundId="rbxasset://sounds/action_swim.mp3" Volume=0.65
+}
+MeshPart "LeftFoot" Size=1,0.3,1 CFrame=-44.012,195.451,-878.849|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Motor6D "LeftAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftFoot"
+    Attachment "LeftAnkleRigAttachment" CFrame=0,0.102,0 {
+        Vector3Value "OriginalPosition" Value=0,0.102,0
+    }
+    Vector3Value "OriginalSize" Value=1,0.3,1
+}
+Model "LeftFoot" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftFoot~2/Primary" {
+    MeshPart "Primary" Size=1,0.3,1 CFrame=-44.014,195.911,-878.852|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftFoot" Part1=@"Workspace/Sonic Morph/Sonic/LeftFoot~2/Primary"
+    }
+    MeshPart "Shoe" Size=1.033,0.739,1.833 CFrame=-44.221,196.029,-879.44|180,-27.894,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905915" TextureID="rbxassetid://5756905915" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftFoot" Part1=@"Workspace/Sonic Morph/Sonic/LeftFoot~2/Shoe"
+    }
+    MeshPart "Sock" Size=0.968,1.212,1.926 CFrame=-44.187,196.207,-879.424|180,-27.894,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756907204" TextureID="rbxassetid://5756907204" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftFoot" Part1=@"Workspace/Sonic Morph/Sonic/LeftFoot~2/Sock"
+    }
+}
+MeshPart "LeftHand" Size=1,0.3,1 CFrame=-45.011,197.451,-878.873|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Attachment "LeftGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.15,0
+    }
+    Motor6D "LeftWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/Sonic Morph/Sonic/LeftLowerArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftHand"
+    Attachment "LeftWristRigAttachment" CFrame=0,0.125,0 {
+        Vector3Value "OriginalPosition" Value=0,0.125,0
+    }
+    Vector3Value "OriginalSize" Value=1,0.3,1
+}
+Model "LeftHand" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftHand~2/Primary" {
+    MeshPart "Primary" Size=1,0.3,1 CFrame=-45.014,197.911,-878.876|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftHand" Part1=@"Workspace/Sonic Morph/Sonic/LeftHand~2/Primary"
+    }
+    MeshPart "hand1" Size=1.438,0.789,1.086 CFrame=-44.135,197.082,-879.141|179.701,2.781,101.74 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://507858448" TextureID="rbxassetid://507858448" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftHand" Part1=@"Workspace/Sonic Morph/Sonic/LeftHand~2/hand1"
+    }
+}
+MeshPart "LeftLowerArm" Size=1,1.052,1 CFrame=-45.011,198.077,-878.873|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Motor6D "LeftElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerArm"
+    Attachment "LeftElbowRigAttachment" CFrame=0,0.259,0 {
+        Vector3Value "OriginalPosition" Value=0,0.259,0
+    }
+    Attachment "LeftWristRigAttachment" CFrame=0,-0.501,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.501,0
+    }
+    Vector3Value "OriginalSize" Value=1,1.052,1
+}
+Model "LeftLowerArm" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftLowerArm~2/Primary" {
+    MeshPart "Primary" Size=1,1.052,1 CFrame=-45.014,198.537,-878.876|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftLowerArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerArm~2/Primary"
+    }
+}
+MeshPart "LeftLowerLeg" Size=1,1.193,1 CFrame=-44.012,196.1,-878.849|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Attachment "LeftAnkleRigAttachment" CFrame=0,-0.547,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.547,0
+    }
+    Motor6D "LeftKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg"
+    Attachment "LeftKneeRigAttachment" CFrame=0,0.379,0 {
+        Vector3Value "OriginalPosition" Value=0,0.379,0
+    }
+    Vector3Value "OriginalSize" Value=1,1.193,1
+}
+Model "LeftLowerLeg" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg~2/Primary" {
+    MeshPart "Primary" Size=1,1.193,1 CFrame=-44.014,196.561,-878.852|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg~2/Primary"
+    }
+}
+MeshPart "LeftUpperArm" Size=1,1.169,1 CFrame=-45.011,198.67,-878.873|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Attachment "LeftElbowRigAttachment" CFrame=0,-0.334,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.334,0
+    }
+    NoCollisionConstraint "LeftHandNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftHand"
+    Motor6D "LeftShoulder" C0=-1,0.563,0 C1=0.5,0.394,0 Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperArm"
+    Attachment "LeftShoulderAttachment" CFrame=0,0.584,0 {
+        Vector3Value "OriginalPosition" Value=0,0.584,0
+    }
+    Attachment "LeftShoulderRigAttachment" CFrame=0.5,0.394,0 {
+        Vector3Value "OriginalPosition" Value=0.5,0.394,0
+    }
+    Vector3Value "OriginalSize" Value=1,1.169,1
+}
+Model "LeftUpperArm" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftUpperArm~2/Primary" {
+    MeshPart "Arm" Size=1.177,0.207,0.246 CFrame=-43.988,198.208,-878.961|-3.967,-0.833,82.608 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperArm~2/Arm"
+    }
+    MeshPart "Primary" Size=1,1.169,1 CFrame=-45.014,199.13,-878.876|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperArm~2/Primary"
+    }
+}
+MeshPart "LeftUpperLeg" Size=1,1.217,1 CFrame=-44.012,196.881,-878.849|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    NoCollisionConstraint "LeftFootNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftFoot"
+    Motor6D "LeftHip" C0=-0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg"
+    Attachment "LeftHipRigAttachment" CFrame=0,0.421,0 {
+        Vector3Value "OriginalPosition" Value=0,0.421,0
+    }
+    Attachment "LeftKneeRigAttachment" CFrame=0,-0.401,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.401,0
+    }
+    Vector3Value "OriginalSize" Value=1,1.217,1
+    NoCollisionConstraint "RightUpperLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperLeg"
+}
+Model "LeftUpperLeg" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg~2/Primary" {
+    MeshPart "Leg" Size=0.519,1.629,0.302 CFrame=-43.77,197.462,-879.017|-180,5.348,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg~2/Leg"
+    }
+    MeshPart "Primary" Size=1,1.217,1 CFrame=-44.014,197.341,-878.852|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg~2/Primary"
+    }
+}
+MeshPart "LowerTorso" Size=2,0.4,1 CFrame=-43.512,197.501,-878.838|0,-1.346,0 Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Attachment "LeftHipRigAttachment" CFrame=-0.5,-0.2,0 {
+        Vector3Value "OriginalPosition" Value=-0.5,-0.2,0
+    }
+    NoCollisionConstraint "LeftLowerLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg"
+    NoCollisionConstraint "LeftUpperArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperArm"
+    Vector3Value "OriginalSize" Value=2,0.4,1
+    Attachment "RightHipRigAttachment" CFrame=0.5,-0.2,0 {
+        Vector3Value "OriginalPosition" Value=0.5,-0.2,0
+    }
+    NoCollisionConstraint "RightLowerLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerLeg"
+    NoCollisionConstraint "RightUpperArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperArm"
+    Motor6D "Root" C0=0,-1,0 C1=0,-0.2,0 Part0=@"Workspace/Sonic Morph/Sonic/HumanoidRootPart" Part1=@"Workspace/Sonic Morph/Sonic/LowerTorso"
+    Attachment "RootRigAttachment" CFrame=0,-0.2,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,0
+    }
+    Attachment "WaistBackAttachment" CFrame=0,-0.2,0.5 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+    }
+    Attachment "WaistCenterAttachment" CFrame=0,-0.2,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,0
+    }
+    Attachment "WaistFrontAttachment" CFrame=0,-0.2,-0.5 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+    }
+    Attachment "WaistRigAttachment" CFrame=0,0.2,0 {
+        Vector3Value "OriginalPosition" Value=0,0.2,0
+    }
+}
+Model "LowerTorso" PrimaryPart=@"Workspace/Sonic Morph/Sonic/LowerTorso~2/Primary" {
+    MeshPart "Primary" Size=2,0.4,1 CFrame=-43.514,197.961,-878.841|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/LowerTorso~2/Primary"
+    }
+}
+MeshPart "RightFoot" Size=1,0.3,1 CFrame=-43.012,195.451,-878.826|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,0.3,1
+    Motor6D "RightAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/Sonic Morph/Sonic/RightLowerLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightFoot"
+    Attachment "RightAnkleRigAttachment" CFrame=0,0.102,0 {
+        Vector3Value "OriginalPosition" Value=0,0.102,0
+    }
+}
+Model "RightFoot" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightFoot~2/Primary" {
+    MeshPart "Primary" Size=1,0.3,1 CFrame=-43.014,195.911,-878.829|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightFoot" Part1=@"Workspace/Sonic Morph/Sonic/RightFoot~2/Primary"
+    }
+    MeshPart "Shoe" Size=1.033,0.739,1.833 CFrame=-42.816,196.029,-879.405|-180,23.674,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905915" TextureID="rbxassetid://5756905915" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightFoot" Part1=@"Workspace/Sonic Morph/Sonic/RightFoot~2/Shoe"
+    }
+    MeshPart "Sock" Size=0.968,1.212,1.926 CFrame=-42.856,196.207,-879.389|-180,23.674,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756907204" TextureID="rbxassetid://5756907204" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightFoot" Part1=@"Workspace/Sonic Morph/Sonic/RightFoot~2/Sock"
+    }
+}
+MeshPart "RightHand" Size=1,0.3,1 CFrame=-42.012,197.451,-878.802|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,0.3,1
+    Attachment "RightGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.15,0
+    }
+    Motor6D "RightWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/Sonic Morph/Sonic/RightLowerArm" Part1=@"Workspace/Sonic Morph/Sonic/RightHand"
+    Attachment "RightWristRigAttachment" CFrame=0,0.125,0 {
+        Vector3Value "OriginalPosition" Value=0,0.125,0
+    }
+}
+Model "RightHand" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightHand~2/Primary" {
+    MeshPart "Primary" Size=1,0.3,1 CFrame=-42.015,197.911,-878.805|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightHand" Part1=@"Workspace/Sonic Morph/Sonic/RightHand~2/Primary"
+    }
+    MeshPart "hand2" Size=1.428,0.789,1.09 CFrame=-42.736,197.041,-879.1|178.2,3.417,-106.725 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://504673115" TextureID="rbxassetid://504673115" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightHand" Part1=@"Workspace/Sonic Morph/Sonic/RightHand~2/hand2"
+    }
+}
+MeshPart "RightLowerArm" Size=1,1.052,1 CFrame=-42.012,198.077,-878.802|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,1.052,1
+    Motor6D "RightElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/Sonic Morph/Sonic/RightUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerArm"
+    Attachment "RightElbowRigAttachment" CFrame=0,0.259,0 {
+        Vector3Value "OriginalPosition" Value=0,0.259,0
+    }
+    Attachment "RightWristRigAttachment" CFrame=0,-0.501,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.501,0
+    }
+}
+Model "RightLowerArm" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightLowerArm~2/Primary" {
+    MeshPart "Primary" Size=1,1.052,1 CFrame=-42.015,198.537,-878.805|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightLowerArm" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerArm~2/Primary"
+    }
+}
+MeshPart "RightLowerLeg" Size=1,1.193,1 CFrame=-43.012,196.1,-878.826|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,1.193,1
+    Attachment "RightAnkleRigAttachment" CFrame=0,-0.547,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.547,0
+    }
+    Motor6D "RightKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/Sonic Morph/Sonic/RightUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerLeg"
+    Attachment "RightKneeRigAttachment" CFrame=0,0.379,0 {
+        Vector3Value "OriginalPosition" Value=0,0.379,0
+    }
+}
+Model "RightLowerLeg" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightLowerLeg~2/Primary" {
+    MeshPart "Primary" Size=1,1.193,1 CFrame=-43.014,196.561,-878.829|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightLowerLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerLeg~2/Primary"
+    }
+}
+MeshPart "RightUpperArm" Size=1,1.169,1 CFrame=-42.012,198.67,-878.802|0,-1.346,0 CanCollide=false Color=#E5E4DF Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,1.169,1
+    Attachment "RightElbowRigAttachment" CFrame=0,-0.334,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.334,0
+    }
+    NoCollisionConstraint "RightHandNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/RightHand"
+    Motor6D "RightShoulder" C0=1,0.563,0 C1=-0.5,0.394,0 Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperArm"
+    Attachment "RightShoulderAttachment" CFrame=0,0.584,0 {
+        Vector3Value "OriginalPosition" Value=0,0.584,0
+    }
+    Attachment "RightShoulderRigAttachment" CFrame=-0.5,0.394,0 {
+        Vector3Value "OriginalPosition" Value=-0.5,0.394,0
+    }
+}
+Model "RightUpperArm" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightUpperArm~2/Primary" {
+    MeshPart "Arm" Size=1.177,0.207,0.246 CFrame=-42.99,198.224,-878.945|-180,1.346,-102.811 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperArm~2/Arm"
+    }
+    MeshPart "Primary" Size=1,1.169,1 CFrame=-42.015,199.13,-878.805|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperArm" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperArm~2/Primary"
+    }
+}
+MeshPart "RightUpperLeg" Size=1,1.217,1 CFrame=-43.012,196.881,-878.826|0,-1.346,0 CanCollide=false Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Vector3Value "OriginalSize" Value=1,1.217,1
+    NoCollisionConstraint "RightFootNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightFoot"
+    Motor6D "RightHip" C0=0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperLeg"
+    Attachment "RightHipRigAttachment" CFrame=0,0.421,0 {
+        Vector3Value "OriginalPosition" Value=0,0.421,0
+    }
+    Attachment "RightKneeRigAttachment" CFrame=0,-0.401,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.401,0
+    }
+}
+Model "RightUpperLeg" PrimaryPart=@"Workspace/Sonic Morph/Sonic/RightUpperLeg~2/Primary" {
+    MeshPart "Leg" Size=0.54,1.629,0.302 CFrame=-43.222,197.462,-879.001|0,-9.345,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperLeg~2/Leg"
+    }
+    MeshPart "Primary" Size=1,1.217,1 CFrame=-43.014,197.341,-878.829|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/RightUpperLeg" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperLeg~2/Primary"
+    }
+}
+MeshPart "UpperTorso" Size=2,1.6,1 CFrame=-43.512,198.501,-878.838|0,-1.346,0 Color=#0D69AC Material=Ice RenderFidelity=Precise Transparency=1 {
+    Attachment "BodyBackAttachment" CFrame=0,-0.2,0.5 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+    }
+    Attachment "BodyFrontAttachment" CFrame=0,-0.2,-0.5 {
+        Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+    }
+    NoCollisionConstraint "HumanoidRootPartNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/HumanoidRootPart"
+    Attachment "LeftCollarAttachment" CFrame=-1,0.8,0 {
+        Vector3Value "OriginalPosition" Value=-1,0.8,0
+    }
+    NoCollisionConstraint "LeftLowerArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerArm"
+    NoCollisionConstraint "LeftLowerLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftLowerLeg"
+    Attachment "LeftShoulderRigAttachment" CFrame=-1,0.563,0 {
+        Vector3Value "OriginalPosition" Value=-1,0.563,0
+    }
+    NoCollisionConstraint "LeftUpperLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/LeftUpperLeg"
+    Attachment "NeckAttachment" CFrame=0,0.8,0 {
+        Vector3Value "OriginalPosition" Value=0,0.8,0
+    }
+    Attachment "NeckRigAttachment" CFrame=0,0.8,0 {
+        Vector3Value "OriginalPosition" Value=0,0.8,0
+    }
+    Vector3Value "OriginalSize" Value=2,1.6,1
+    Attachment "RightCollarAttachment" CFrame=1,0.8,0 {
+        Vector3Value "OriginalPosition" Value=1,0.8,0
+    }
+    NoCollisionConstraint "RightLowerArmNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerArm"
+    NoCollisionConstraint "RightLowerLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightLowerLeg"
+    Attachment "RightShoulderRigAttachment" CFrame=1,0.563,0 {
+        Vector3Value "OriginalPosition" Value=1,0.563,0
+    }
+    NoCollisionConstraint "RightUpperLegNoCollision" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/RightUpperLeg"
+    Motor6D "Waist" C0=0,0.2,0 C1=0,-0.8,0 Part0=@"Workspace/Sonic Morph/Sonic/LowerTorso" Part1=@"Workspace/Sonic Morph/Sonic/UpperTorso"
+    Attachment "WaistRigAttachment" CFrame=0,-0.8,0 {
+        Vector3Value "OriginalPosition" Value=0,-0.8,0
+    }
+}
+Model "UpperTorso" PrimaryPart=@"Workspace/Sonic Morph/Sonic/UpperTorso~2/Primary" {
+    MeshPart "Chest" Size=0.923,1.089,1.295 CFrame=-43.507,198.315,-878.73|-180,1.346,180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise TextureContent="rbxassetid://5756905082" TextureID="rbxassetid://5756905082" {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/UpperTorso~2/Chest"
+    }
+    MeshPart "Primary" Size=2,1.6,1 CFrame=-43.514,198.961,-878.841|0,-1.346,0 CanCollide=false CustomPhysicalProperties=0.01,0,0,0,0 Locked Material=Ice RenderFidelity=Precise Transparency=1 {
+        WeldConstraint "WeldConstraint" Part0=@"Workspace/Sonic Morph/Sonic/UpperTorso" Part1=@"Workspace/Sonic Morph/Sonic/UpperTorso~2/Primary"
+    }
+}

@@ -1,0 +1,592 @@
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.372,8.116,-334.069|-180,64.021,-180 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=4.073,0.2,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.407,4.472,-329.984|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=2.036,-0.054,-0.214|-180,0,-180 C1=2.036,-0.054,0.75|-180,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-0.041,-3.59,0.148|-90,0,-150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~61"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-1.122,-1.286,0.16|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~3"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-3.963,-3.59,0.108|-90,0,180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~39"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-0.107,-3.59,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~104"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-3.487,-3.59,-1.888|-90,0,150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~49"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-0.149,-3.59,0.038|-90,0,150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~52"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-4.019,-3.59,0.965|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-0.054,-3.59,0.965|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-2.941,-1.286,0.16|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116"
+    ManualWeld "Part-to-Part Strong Joint" C0=-2.036,0.054,0.214|-90,0,-180 C1=-3.966,-3.59,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~21"
+}
+Part "Part" Size=1.822,2.572,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=16.396,5.811,-329.069|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.911,1.286,0.054|-90,0,-180 C1=-1.853,-0.053,0.862|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~3" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~57"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.911,-1.286,0.054|0,90,0 C1=-0.907,-1.286,0.053|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~3" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.911,1.286,0.054|-90,0,-180 C1=-0.053,-1.827,-0.006|-90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~3" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~17"
+}
+Part "Part" Size=1.468,4.25,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.756,9.485,-327.124|0,85.979,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.724,11.92,-333.255|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-1.125,-0.054,0.75|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~5" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~35"
+}
+Part "Part" Size=0.322,0.965,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.577,11.224,-331.643|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.161,0.482,0.054|-90,0,-180 C1=1.509,-0.054,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~6" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.161,-0.482,0.054|0,90,0 C1=-0.099,2.626,0.001|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~6" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~39"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=-0.161,-0.482,-0.054|0,-90,0 C1=0.054,-0.75,-0.482|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~6" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~2"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=-0.161,-0.482,-0.054|0,-90,0 C1=0.054,-0.851,-0.589|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~6" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~3"
+}
+Part "Part" Size=0.2,1.929,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.291,7.15,-333.006|180,-85.979,-90 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    CylinderMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-0.965,0.054|0,90,0 C1=-0.964,-0.108,-0.004|-90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~7" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~87"
+}
+Part "Part" Size=2.036,0.2,1.286 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.656,7.151,-333.081|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.643|-90,0,-180 C1=-0.987,-0.107,0.054|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~8" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~87"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.643|-90,0,-180 C1=-0.661,-0.536,0.748|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~8" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~62"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,-0.054,-0.643|0,-90,0 C1=1.99,-0.054,-0.855|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~8" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~57"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.643|-90,0,-180 C1=-0.822,-0.483,0.748|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~8" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~64"
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.908,9.457,-327.777|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.815,9.455,-327.068|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.372,8.116,-334.069|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,3.59,0.107|-90,0,-180 C1=3.966,-0.054,0.75|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=0.155,-4.93,-0.051|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~48"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=0.959,-7.074,-0.051|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~38"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,-0.107|-180,0,-180 C1=0.054,-3.59,0.643|-180,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~16"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=0.959,-2.786,-0.051|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~87"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=-2.625,0.957,0.1|90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~7"
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.907,9.457,-327.773|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.929,0.214,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.821,11.599,-327.022|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.81,9.457,-326.387|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.815,10.152,-327.072|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,7.181,1.286 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.627,8.116,-334.175|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.643|-90,0,-180 C1=4.073,-0.054,0.536|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~16" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.643|0,-90,0 C1=4.126,-3.59,-0.054|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~16" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117"
+}
+Part "Part" Size=0.2,3.644,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.508,7.15,-329.981|180,-85.979,-90 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    CylinderMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,1.822,0.054|-90,0,-180 C1=-0.099,-1.019,-0.059|-90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~17" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~39"
+}
+Part "Part" Size=0.2,1.929,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.869,7.15,-327.017|180,-85.979,-90 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    CylinderMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-0.965,0.054|0,90,0 C1=-0.967,-0.108,-0.005|-90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~18" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~59"
+}
+Part "Part" Size=8.36,0.2,1.5 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.445,4.472,-330.051|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-8.253,-3.59,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~11"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-0.107,-3.59,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-7.196,-3.59,-4.031|-90,0,150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-6.162,-3.59,0.536|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-0.044,-3.59,0.149|-90,0,-150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~63"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-0.054,-3.59,0.804|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-0.151,-3.59,0.037|-90,0,150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~58"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-4.126,-3.59,1.447|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-8.306,-3.59,0.857|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~16"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-2.197,-3.59,0.536|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-7.089,-3.59,4.217|-90,0,-150 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~128"
+}
+Part "Part" Size=2.251,0.2,0.536 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.645,12.081,-331.094|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.268|-90,0,-180 C1=0.005,-0.054,0.004|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~20" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~41"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.268|-90,0,-180 C1=-0.004,-0.054,1.178|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~20" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,-0.054,-0.268|0,-90,0 C1=1.125,-0.054,-0.267|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~20" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~114"
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.648,8.115,-331.9|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=0.152,-6.699,-0.054|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~21" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~6"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=0.917,-1.286,-0.054|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~21" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,-3.59,-0.107|0,-90,0 C1=-2.625,1.817,0.102|90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~21" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~17"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,3.59,0.107|-90,0,-180 C1=1.821,-0.054,0.213|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~21" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.269,6.831,-333.069|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=3.858,0.2,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.657,10.152,-330.042|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=2.728,-0.482,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~66"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-0.478,-0.482,0.855|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~34"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=2.889,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~32"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=1.978,-0.482,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~57"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=3.747,-0.59,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=1.817,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~24"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=2.353,-0.59,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~23"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-0.317,-0.536,0.855|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~28"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=3.104,-0.59,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~29"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=3.264,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~40"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-0.102,-0.59,0.855|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~33"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=0.799,-0.482,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~4"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-0.585,-0.536,0.855|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~21"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=2.139,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~25"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=1.496,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~26"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=2.621,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~35"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=3.371,-0.482,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~5"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=3.532,-0.536,-0.855|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~2"
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.423,4.311,-328.978|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.107,0.804 C1=-1.072,-0.107,-0.214 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~24" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~33"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-2.144,-0.054,0.857|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~24" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-2.144,-0.054,-0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~24" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2"
+}
+Part "Part" Size=3.858,0.2,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.657,8.651,-330.042|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-0.054,3.215,0.857|90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~45"
+    ManualWeld "Part-to-Union Strong Joint" C0=-1.929,0.054,0.857|-90,0,-180 C1=-1.834,-0.589,0.761|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25" Part1=@"Workspace/House/Model/Model/Model/Model~169/Union"
+}
+Part "Part" Size=2.144,0.214,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.589,11.92,-331.042|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.107,0.214|90,0,0 C1=2.143,0.054,0.321|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~26" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.214|-90,0,-180 C1=-1.126,-0.054,0.162|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~26" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~20"
+}
+Part "Part" Size=0.2,7.181,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.798,8.116,-332.014|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,1
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-0.971,-7.074,0.485|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~38"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=-0.106,-6.27,0.858|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-0.971,-2.786,0.484|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~87"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.857|-90,0,-180 C1=1.929,-0.054,1.072|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-2.625,-0.972,-0.436|-90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~7"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-0.167,-4.93,0.484|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~77"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.857|-90,0,-180 C1=1.931,-0.054,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=1.923,-4.126,-0.855|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=1.923,-5.627,-0.855|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23"
+}
+Part "Part" Size=2.144,0.2,1.286 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.23,7.15,-327.046|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.054,0.643|-90,0,-180 C1=-0.054,1.143,0.856|90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~28" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~3"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.054,0.643|-90,0,-180 C1=-1.089,-0.108,0.052|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~28" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~59"
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.574,11.92,-331.117|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.107,0.804|90,0,0 C1=2.143,0.054,-0.107|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~29" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-1.072,-0.054,0.804|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~29" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~31"
+}
+Part "Part" Size=0.2,7.181,1.179 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.102,8.116,-325.939|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,1
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.589|0,90,0 C1=-1.063,-2.625,0.539|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~28"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.589|0,90,0 C1=-1.024,-4.126,0.699|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~107"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.589|-90,0,-180 C1=-4.18,-0.054,0.536|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+}
+Part "Part" Size=2.144,0.2,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.574,12.081,-331.117|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.054,0.804|-90,0,-180 C1=-0.002,-0.054,0.644|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~31" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.054,0.804 C1=-1.124,-0.054,-0.266 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~31" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~20"
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.054,0.804|0,90,0 C1=-1.124,-0.054,0.749|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~31" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~35"
+}
+Part "Part" Size=0.2,7.181,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.52,8.116,-328.058|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,1
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-0.108,-6.27,0.857|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~33"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.857|-90,0,-180 C1=-2.036,-0.054,1.072|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=1.013,-4.126,-0.48|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~107"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=-2.625,0.962,1.28|90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~18"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=0.959,-2.786,-1.23|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~59"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=0.155,-4.93,-1.23|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~53"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,3.59,0.857|-90,0,-180 C1=-2.036,-0.054,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-3.59,-0.857|0,-90,0 C1=0.959,-7.074,-1.23|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~13"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-1.935,-4.126,0.86|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-3.59,0.857|0,90,0 C1=-1.935,-5.627,0.86|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23"
+}
+Part "Part" Size=2.144,0.214,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.439,4.311,-328.907|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.214|-90,0,-180 C1=-2.144,-0.054,0.322|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~33" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2"
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.847,6.831,-327.076|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=2.251,0.2,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.782,12.081,-333.304|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.857|-90,0,-180 C1=2.14,-0.054,0.752|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~35" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.858,11.547,-327.076|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.857,11.547,-327.074|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.929,0.214,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.242,11.599,-333.01|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.648,8.116,-331.898|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.897,5.813,-327.775|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=4.93,0.2,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.829,12.188,-329.945|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+}
+Part "Part" Size=1.072,1.715,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.848,5.813,-327.075|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.278,11.547,-333.061|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.318,5.813,-333.763|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.268,6.831,-333.063|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.329,9.457,-333.764|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.328,9.457,-333.76|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.322,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.298,9.455,-333.811|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.648,8.116,-331.898|-180,64.02,-180 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.847,6.831,-327.071|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.847,4.795,-327.073|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.379,8.115,-328.059|-180,64.02,-180 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=0.322,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.877,9.455,-327.824|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.799,5.813,-326.388|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.809,9.457,-326.384|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.322,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.765,9.455,-326.221|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=3.966,0.2,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.656,7.151,-330.066|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.801,8.116,-325.948|-180,64.021,-180 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=1.929,0.214,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.821,7.312,-327.022|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.857,7.367,-327.071|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.379,8.116,-328.059|0,55.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.92,8.959,-327.922|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.801,8.116,-325.948|0,55.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.858,7.367,-327.078|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.815,8.651,-327.072|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=2.144,0.214,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.589,4.311,-331.045|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.107,-0.214|0,-90,0 C1=1.072,-0.107,-0.214|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~66" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~33"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.214|-90,0,-180 C1=0,-0.054,0.322|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~66" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2"
+}
+Part "Part" Size=9.217,0.2,1.929 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.658,12.188,-330.039|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.609,-0.054,0.965 C1=-4.598,-0.054,-0.21 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~41"
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.574,4.311,-331.117|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=0,-0.054,0.857|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~68" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.107,0.804 C1=-1.072,-0.107,-0.214 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~68" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~66"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=0,-0.054,-0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~68" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~2"
+}
+Part "Part" Size=0.2,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.236,9.455,-333.055|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=2.036,0.2,0.965 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.489,8.651,-333.008|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-1.443,-0.536,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~31"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-1.335,-0.482,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~48"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,-0.054,-0.482|0,-90,0 C1=1.929,-0.054,-0.857|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.746,-0.536,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~58"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=1.549,-0.536,-0.533|-90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~61"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.96,-0.59,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~53"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-1.174,-0.536,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~15"
+}
+Part "Part" Size=2.036,0.2,0.965 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.489,10.152,-333.008|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.799,-0.482,0.426|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~56"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.424,-0.59,0.426|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~10"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.638,-0.536,0.426|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~8"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.907,-0.536,0.426|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~9"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,-0.054,-0.482|0,-90,0 C1=1.929,-0.054,-0.857|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23"
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.23,9.457,-332.371|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.929,2.572,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=16.247,5.812,-333.004|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.965,1.286,0.054|-90,0,-180 C1=-0.052,-0.969,-0.01|-90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~73" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~7"
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.426,4.795,-329.192|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.072,1.715,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.269,5.813,-333.068|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.279,7.367,-333.065|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.322,4.073,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.186,9.455,-332.208|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.22,5.813,-332.376|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.221,8.959,-332.199|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.273,4.311,-326.84|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-4.287,-0.054,0.857|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~80" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19"
+}
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.92,6.338,-327.922|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.236,8.651,-333.06|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.236,10.152,-333.06|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.269,4.795,-333.065|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.269,4.795,-333.071|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.318,5.813,-333.767|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.929,0.214,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.242,7.312,-333.009|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.278,7.367,-333.059|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.468,4.25,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.177,9.485,-333.111|0,85.979,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.6 {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.279,11.547,-333.063|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.724,4.311,-333.255|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=2.144,-0.054,0.857|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~91" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~19"
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.546,4.795,-330.897|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.475,5.813,-329.884|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.072,1.715,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.426,5.813,-329.189|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.377,5.813,-328.497|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.546,6.831,-330.895|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.426,6.831,-329.19|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.546,4.795,-330.903|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,4.287,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.231,9.457,-332.374|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.224,6.338,-332.236|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.498,5.813,-330.207|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-1.072,-0.054|0,-90,0 C1=0.05,-1.597,-0.065|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~101" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~108"
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.801,8.116,-325.943|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,-0.107|-180,0,-180 C1=0.161,-3.59,0.589|-180,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-0.167,-4.93,0.163|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~56"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-2.625,-0.967,-0.112|-90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~18"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-0.97,-7.074,0.163|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~13"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-0.97,-2.786,0.163|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~59"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,3.59,0.107|-90,0,-180 C1=-4.18,-0.054,0.75|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~102" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+}
+Part "Part" Size=4.073,0.2,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.407,11.76,-329.981|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=0.039,3.59,0.147|90,0,30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~49"
+    ManualWeld "Part-to-Part Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=0.108,3.59,0.108|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~39"
+    ManualWeld "Part-to-Part Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=3.374,3.59,2.072|90,0,30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~52"
+    ManualWeld "Part-to-Part Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=3.481,3.59,-1.886|90,0,-30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~61"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=-0.161,-1.8,0.268|180,0,90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=0.161,2.666,0.375|180,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~4"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=0.161,2.778,0.482|180,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~6"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=0.161,2.227,0.268|180,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~5"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=2.036,-0.054,0.214|90,0,0 C1=-0.161,-1.379,0.375|180,0,90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~3"
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.378,8.116,-328.055|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.107,3.59,0.107|-90,0,-180 C1=-2.033,-0.054,0.214|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~104" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-2.625,-1.822,-0.113|-90,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~104" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~17"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-0.164,-6.699,0.16|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~104" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~111"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.107,-3.59,0.107|0,90,0 C1=-0.907,-1.286,0.16|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~104" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~3"
+}
+Part "Part" Size=8.36,0.2,1.5 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.445,11.76,-330.051|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,-0.054,0.75 C1=-4.179,-0.054,-0.214 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-3.108,-0.107,0.697|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~113"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=7.091,3.59,4.218|90,0,30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~58"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=0.146,3.59,0.039|90,0,-30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~128"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=7.175,0.107,0.163|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~13"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-5.252,-0.107,0.697|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~29"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=0.039,3.59,0.146|90,0,30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=7.198,3.59,-4.032|90,0,-30 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~63"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-7.395,-0.107,0.697|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~5"
+    ManualWeld "Part-to-Part Strong Joint" C0=4.18,-0.054,0.75|90,0,0 C1=1.173,0.107,0.163|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~38"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.18,0.054,0.75|-90,0,-180 C1=-0.965,-0.107,0.697|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~112"
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.498,5.813,-330.212|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=2.036,0.2,0.965 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.069,8.651,-327.021|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.018,0.054,0.482|-90,0,-180 C1=-0.799,-0.536,0.533|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~107" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~20"
+}
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.501,6.338,-330.103|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=2.251,0.2,1.715 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.324,12.081,-326.782|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.857|-90,0,-180 C1=-4.398,-0.054,0.752|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~109" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+}
+Part "Part" Size=2.144,0.214,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.439,11.92,-328.905|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.214|-90,0,-180 C1=-1.02,-0.054,0.163|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~110" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~114"
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.107,0.214|90,0,0 C1=0,0.054,0.321|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~110" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+}
+Part "Part" Size=0.322,0.965,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.344,11.224,-328.329|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.161,0.482,0.054|-90,0,-180 C1=-1.813,-0.054,0.107|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~111" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=0.161,-0.482,0.054|0,90,0 C1=0.053,-0.862,-0.589|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~111" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~4"
+    ManualWeld "Part-to-Wedge Strong Joint" C0=0.161,-0.482,0.054|0,90,0 C1=0.053,-0.751,-0.482|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~111" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Wedge~6"
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.273,11.92,-326.84|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-1.018,-0.054,0.749|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~112" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~109"
+}
+Part "Part" Size=2.144,0.214,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.423,11.92,-328.978|0,85.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.107,0.804|90,0,0 C1=0,0.054,-0.107|90,0,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~113" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~103"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.107,0.804|-90,0,-180 C1=-1.072,-0.054,0.804|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~113" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~115"
+}
+Part "Part" Size=2.251,0.2,0.536 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.486,12.081,-328.848|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.268|-90,0,-180 C1=-2.247,-0.054,0.003|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~114" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~41"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.125,0.054,0.268|-90,0,-180 C1=-2.255,-0.054,1.178|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~114" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+}
+Part "Part" Size=2.144,0.2,1.608 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.424,12.081,-328.978|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,1
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.054,-0.804|0,-90,0 C1=1.126,-0.054,-0.858|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~115" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~109"
+    ManualWeld "Part-to-Part Strong Joint" C0=1.072,-0.054,0.804|0,90,0 C1=-1.072,-0.054,0.804|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~115" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~31"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,-0.054,0.804 C1=-1.017,-0.054,-0.265 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~115" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~114"
+    ManualWeld "Part-to-Part Strong Joint" C0=-1.072,0.054,0.804|-90,0,-180 C1=-2.147,-0.054,0.645|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~115" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~67"
+}
+Part "Part" Size=1.822,2.572,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=16.523,5.811,-330.882|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=0.911,-1.286,0.054|0,90,0 C1=-0.111,-3.591,0|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~39"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.911,1.286,0.054|-90,0,-180 C1=-0.053,-0.012,-0.006|-90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~17"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.911,1.286,0.054|-90,0,-180 C1=-0.036,-0.053,0.861|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~57"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.911,-1.286,-0.054|0,-90,0 C1=0.068,-1.813,-0.097|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~116" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~124"
+}
+Part "Part" Size=8.253,7.181,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=14.746,8.116,-330.047|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-3.162,1.239,-0.426|0,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~50"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=7.664,-4.716,0.429|-180,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~61"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.074 C1=-1.176,-5.513,-0.515 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~30"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.133,-4.126,-0.48 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~70"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-0.054,-3.59,-0.589 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~30"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,3.59,0.054|-90,0,-180 C1=-4.18,-0.054,-0.643|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~105"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-2.197,-3.59,-0.857 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~32"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-0.912,-4.716,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~20"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-2.733,1.238,-0.426|0,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~3"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-4.185,-5.627,-0.855 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~23"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.45,-4.662,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~48"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-1.131,-4.126,-0.48 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~107"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.557,-4.716,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~31"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.075,-4.769,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~53"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-4.185,-4.126,-0.855 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~25"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-3.054,1.238,-0.426|0,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~39"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-6.86,-4.716,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~58"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-1.168,-2.625,-0.64 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~28"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-6.162,-3.59,-0.857 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~27"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.289,-4.716,-0.429 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~15"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-2.84,1.292,-0.426|0,0,-90 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Part~44"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-7.133,-5.627,-0.48 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~71"
+    ManualWeld "Part-to-Part Strong Joint" C0=-4.126,-3.59,0.054 C1=-4.211,-2.626,-0.853 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~117" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~57"
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.425,6.831,-329.185|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.475,5.813,-329.888|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.595,5.813,-331.594|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.378,5.813,-328.501|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.221,5.813,-332.38|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.799,5.813,-326.384|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-1.072,0.054|0,90,0 C1=-0.636,-2.09,0.054|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~123" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~50"
+    ManualWeld "Part-to-Part Strong Joint" C0=0.054,-1.072,0.054|0,90,0 C1=-0.638,-0.054,0.054|0,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~123" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~51"
+}
+Part "Part" Size=0.2,0.429,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.499,6.338,-329.902|0,85.979,0 CanCollide=false Color=#FFAF00 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Marble RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=1.286,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.426,4.795,-329.187|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.929,2.572,0.2 Anchored BottomSurface=SmoothNoOutlines CFrame=15.82,5.811,-327.014|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=Smooth {
+    BlockMesh "Mesh" Scale=1,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.965,1.286,0.054|-90,0,-180 C1=-0.954,-0.053,0.644|-90,0,-180 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~126" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~28"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.965,1.286,0.054|-90,0,-180 C1=-0.053,-0.969,-0.005|-90,90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~126" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~18"
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.595,5.813,-331.599|180,49.02,180 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+}
+Part "Part" Size=0.214,7.181,0.214 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.372,8.116,-334.069|0,55.979,0 Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.546,6.831,-330.901|85.983,44.9,-84.319 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=1.072,1.715,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.546,5.813,-330.899|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,1,0.536
+}
+Part "Part" Size=1.5,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.847,4.795,-327.079|-85.971,44.986,84.31 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=1,0.536,0.536
+}
+Part "Part" Size=0.2,2.144,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=15.897,5.813,-327.771|0,85.979,0 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    BlockMesh "Mesh" Scale=0.536,1,0.536
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-1.072,-0.054|0,-90,0 C1=0.648,-2.09,-0.053|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~132" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~50"
+    ManualWeld "Part-to-Part Strong Joint" C0=-0.054,-1.072,-0.054|0,-90,0 C1=0.646,-0.054,-0.053|0,-90,0 Part0=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~132" Part1=@"Workspace/House/Model/Model/Model/Model~169/Model~3/Part~51"
+}
+UnionOperation "Union" Size=0.323,0.429,0.215 Anchored CFrame=16.516,11.492,-330.053|0,85.979,0 Color=#AA5500 Material=Wood RenderFidelity=Precise $_geo="f98a9448eda48cbb"
+WedgePart "Wedge" Size=0.2,2.572,0.536 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.477,11.438,-330.214|-90,0,175.98 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}
+WedgePart "Wedge" Size=0.2,1.5,0.965 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.513,11.224,-330.734|-90,0,175.98 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}
+WedgePart "Wedge" Size=0.2,1.715,0.75 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.506,11.331,-330.634|-90,0,175.98 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}
+WedgePart "Wedge" Size=0.2,1.715,0.75 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.416,11.331,-329.349|-90,0,-4.02 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}
+WedgePart "Wedge" Size=0.2,2.572,0.536 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.447,11.438,-329.787|-90,0,-4.02 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}
+WedgePart "Wedge" Size=0.2,1.5,0.965 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=16.408,11.224,-329.238|-90,0,-4.02 CanCollide=false Color=#AA5500 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+    SpecialMesh "Mesh" MeshType=Wedge Scale=0.536,1,1
+}

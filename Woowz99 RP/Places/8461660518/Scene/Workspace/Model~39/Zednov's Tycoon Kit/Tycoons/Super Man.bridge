@@ -1,0 +1,521 @@
+Model "Buttons" {
+    Model "Begin Working! - [$0]" {
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-546.357,4.747,-420.568|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper1"
+        IntValue "Price"
+    }
+    Model "Buy  CORE Dropper - [$5,000]" {
+        StringValue "Dependency" Value="Dropper5"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-595.361,4.748,-377.566|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper6"
+        IntValue "Price" Value=5000
+    }
+    Model "Buy  Wepons Path - [$250]" {
+        StringValue "Dependency" Value="Wall2"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-578.575,4.926,-428.594|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Path"
+        IntValue "Price" Value=250
+    }
+    Model "Buy Chaos Sword - [$40,000]" {
+        StringValue "Dependency" Value="Path3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-595.575,18.93,-410.598|179.992,0.006,-179.994 Color=#FFFF00 Material=Neon TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model6"
+        IntValue "Price" Value=40000
+    }
+    Model "Buy Conveyer - [$8,000]" {
+        StringValue "Dependency" Value="Stair"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-565.578,18.93,-384.595|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Con"
+        IntValue "Price" Value=8000
+    }
+    Model "Buy Dropper - [$10,000]" {
+        StringValue "Dependency" Value="Con"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-545.356,19.747,-398.567|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper11"
+        IntValue "Price" Value=10000
+    }
+    Model "Buy Dropper - [$12,000]" {
+        StringValue "Dependency" Value="Dropper11"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-545.356,19.747,-389.567|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper12"
+        IntValue "Price" Value=12000
+    }
+    Model "Buy Dropper - [$20,000]" {
+        StringValue "Dependency" Value="Dropper12"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-545.356,19.747,-381.567|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper13"
+        IntValue "Price" Value=20000
+    }
+    Model "Buy Dropper - [$70]" {
+        StringValue "Dependency" Value="Dropper1"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-546.357,4.747,-411.568|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper2"
+        IntValue "Price" Value=70
+    }
+    Model "Buy Extra - [$35,000]" {
+        StringValue "Dependency" Value="Path3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-540.573,18.922,-424.592|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Speed"
+        IntValue "Price" Value=35000
+    }
+    Model "Buy Fire Ball - [$25,000]" {
+        StringValue "Dependency" Value="Path3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-592.575,18.927,-424.597|179.992,0.006,-179.994 Color=#FFB000 Material=Neon TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model3"
+        IntValue "Price" Value=25000
+    }
+    Model "Buy Floor - [$1,500]" {
+        StringValue "Dependency" Value="Wall4"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-594.575,4.926,-435.596|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Floor"
+        IntValue "Price" Value=1500
+    }
+    Model "Buy Flying Cape  - [$5,000]" {
+        StringValue "Dependency" Value="Model1"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-584.578,4.93,-400.594|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model2"
+        IntValue "Price" Value=5000
+    }
+    Model "Buy Gold Bow - [$30,000]" {
+        StringValue "Dependency" Value="Path3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-556.573,18.924,-424.594|179.992,0.006,-179.994 Color=#FFFF00 Material=Neon TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model5"
+        IntValue "Price" Value=30000
+    }
+    Model "Buy Laser Eye - [$2,000]" {
+        StringValue "Dependency" Value="Path"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-568.577,4.928,-400.593|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model1"
+        IntValue "Price" Value=2000
+    }
+    Model "Buy MEGA Dropper - [$300]" {
+        StringValue "Dependency" Value="Dropper2"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-546.357,4.747,-400.567|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper3"
+        IntValue "Price" Value=300
+    }
+    Model "Buy POWER CORE Dropper - [$2,000]" {
+        StringValue "Dependency" Value="Dropper4"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-602.362,4.748,-377.566|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper5"
+        IntValue "Price" Value=2000
+    }
+    Model "Buy Path - [$10,000]" {
+        StringValue "Dependency" Value="Stair"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-574.578,18.931,-385.596|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Path2"
+        IntValue "Price" Value=10000
+    }
+    Model "Buy Shoot ICE!  - [$20,000]" {
+        StringValue "Dependency" Value="Path3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-575.574,18.926,-424.596|179.992,0.006,-179.994 Color=#00FFFF Material=Neon TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Model4"
+        IntValue "Price" Value=20000
+    }
+    Model "Buy Stair - [$2500]" {
+        StringValue "Dependency" Value="Floor"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-599.575,4.548,-410.537|-0.002,-0.002,-0.022 Color=#970000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Stair"
+        IntValue "Price" Value=2500
+    }
+    Model "Buy Super Dropper - [$1,000]" {
+        StringValue "Dependency" Value="Dropper3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-546.357,4.747,-391.567|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper4"
+        IntValue "Price" Value=1000
+    }
+    Model "Buy Super Man - [15,000]" {
+        StringValue "Dependency" Value="Path2"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-551.574,18.925,-410.593|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Hero"
+        IntValue "Price" Value=15000
+    }
+    Model "Buy Walls - [$100]" {
+        StringValue "Dependency" Value="Dropper1"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-575.321,4.724,-434.54|0.006,-90,0 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall1"
+        IntValue "Price" Value=100
+    }
+    Model "Buy Wepons Path - [$10,000]" {
+        StringValue "Dependency" Value="Stair"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-574.575,18.926,-418.596|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Path3"
+        IntValue "Price" Value=10000
+    }
+    Model "Buy a Mega Dropper - [$7,000]" {
+        StringValue "Dependency" Value="Dropper6"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-583.36,4.748,-377.566|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper8"
+        IntValue "Price" Value=7000
+    }
+    Model "Buy a Omega Dropper - [$15,000]" {
+        StringValue "Dependency" Value="Dropper9"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-563.358,4.748,-377.566|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper10"
+        IntValue "Price" Value=15000
+    }
+    Model "Buy a Omega Dropper - [$9,000]" {
+        StringValue "Dependency" Value="Dropper8"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-573.359,4.748,-377.566|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Dropper9"
+        IntValue "Price" Value=7000
+    }
+    Model "Buy an OwnerDoor - [$1,500]" {
+        StringValue "Dependency" Value="Wall3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-572.574,4.925,-429.594|179.992,0.006,-179.994 Color=#FF0000 Material=SmoothPlastic TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="OwnerOnlyDoor"
+        IntValue "Price" Value=1500
+    }
+    Model "Upgrade Roof - [$40,000]" {
+        StringValue "Dependency" Value="Wall10"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-556.855,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Roof"
+        IntValue "Price" Value=35000
+    }
+    Model "Upgrade Wall - [$35,000]" {
+        StringValue "Dependency" Value="Wall8"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-566.856,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall9"
+        IntValue "Price" Value=35000
+    }
+    Model "Upgrade Wall - [$45,000]" {
+        StringValue "Dependency" Value="Wall9"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-561.855,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall10"
+        IntValue "Price" Value=35000
+    }
+    Model "Upgrade Walls - [$1,000]" {
+        StringValue "Dependency" Value="Wall3"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-589.858,4.747,-435.068|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall4"
+        IntValue "Price" Value=1000
+    }
+    Model "Upgrade Walls - [$12,000]" {
+        StringValue "Dependency" Value="Wall5"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-582.857,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall6"
+        IntValue "Price" Value=12000
+    }
+    Model "Upgrade Walls - [$20,000]" {
+        StringValue "Dependency" Value="Wall6"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-576.856,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall7"
+        IntValue "Price" Value=20000
+    }
+    Model "Upgrade Walls - [$28,000]" {
+        StringValue "Dependency" Value="Wall7"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-571.856,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall8"
+        IntValue "Price" Value=28000
+    }
+    Model "Upgrade Walls - [$350]" {
+        StringValue "Dependency" Value="Wall1"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-579.858,4.747,-435.068|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall2"
+        IntValue "Price" Value=350
+    }
+    Model "Upgrade Walls - [$7,000]" {
+        StringValue "Dependency" Value="Stair"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-588.858,19.746,-366.065|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall5"
+        IntValue "Price" Value=7000
+    }
+    Model "Upgrade Walls - [$700]" {
+        StringValue "Dependency" Value="Wall2"
+        Part "Head" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-584.858,4.747,-435.068|180,-0.001,-179.999 Color=#FF0000 Material=DiamondPlate TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+        Humanoid "Humanoid" Health=0 HealthDisplayDistance=25 MaxHealth=0 NameDisplayDistance=25 NameOcclusion=NoOcclusion
+        StringValue "Object" Value="Wall3"
+        IntValue "Price" Value=700
+    }
+}
+Folder "BuyObject"
+IntValue "CurrencyToCollect"
+BrickColorValue "DropColor" Value="Lime green"
+Model "Entrance" {
+    Part "Side" Size=1.09,6.82,1.01 Anchored BottomSurface=Smooth CFrame=-562.582,7.458,-439.07|180,-90,0 Material=Concrete TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Part "Side" Size=1.09,6.82,1.01 Anchored BottomSurface=Smooth CFrame=-570.583,7.458,-439.069|180,-90,0 Material=Concrete TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Touch to claim!" {
+        Script "GateControl" @src="Scripts/Workspace/Model~39/Zednov's Tycoon Kit/Tycoons/Super Man/Entrance/Touch to claim!/GateControl.luau"
+        Part "Head" Size=0.69,6.22,7.41 Anchored BottomSurface=Smooth CFrame=-566.583,7.158,-439.07|180,-90,0 CanCollide=false Color=#5B5D69 Material=Metal TopSurface=Smooth
+        Humanoid "Humanoid" Health=0 MaxHealth=0 NameOcclusion=NoOcclusion
+    }
+}
+Model "Essentials" {
+    Model "CollectorParts" {
+        Part "Display" Size=0.2,3.08,5.41 Anchored BottomSurface=Smooth CFrame=-549.408,6.733,-436.426|-0.001,-90,0 Color=#FF0000 Material=Neon TopSurface=Smooth {
+            SurfaceGui "GUI" CanvasSize=500,300 Face=Right {
+                TextLabel "Amount" Position=-0.05,0,0,5 Size=0,550,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="$0" TextColor3=#00FF00 TextSize=96 TextStrokeTransparency=0 {
+                    Script "Script" @code=<<<
+                        script.Parent.Text = "$"..script.Parent.Parent.Parent.Parent.Parent.Parent.CurrencyToCollect.Value
+                        -- Shows initial value if anything is currently in the CurrencyToCollect
+
+
+                        script.Parent.Parent.Parent.Parent.Parent.Parent.CurrencyToCollect.Changed:connect(function(money)
+                        	script.Parent.Text = "$"..money
+                        end)
+                    >>>
+                }
+            }
+        }
+        Model "Extra" {
+            Part "Part" Size=0.41,0.2,2.41 Anchored BottomSurface=Smooth CFrame=-546.674,3.979,-434.369|89.995,45.031,90.005 Color=#111111 Material=Sand TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,-0.3,0
+            }
+            Part "Part" Size=0.41,0.2,1.41 Anchored BottomSurface=Smooth CFrame=-552.028,4.33,-435.369|-89.997,44.967,-90.005 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=0.41,0.2,2.41 Anchored BottomSurface=Smooth CFrame=-546.674,3.979,-435.369|89.995,45.031,90.005 Color=#111111 Material=Sand TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,-0.3,0
+            }
+            Part "Part" Size=0.41,0.2,1.41 Anchored BottomSurface=Smooth CFrame=-552.028,4.33,-433.37|-89.997,44.967,-90.005 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=2.41,1.2,0.41 Anchored BottomSurface=Smooth CFrame=-546.881,4.686,-434.369|179.999,90,0 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=0.41,0.2,1.41 Anchored BottomSurface=Smooth CFrame=-552.028,4.33,-434.369|-89.997,44.967,-90.005 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=2.2,0.48,7.41 Anchored BottomSurface=Smooth CFrame=-549.599,5.845,-436.693|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,0.2,0.2 Scale=1,1,-0.7
+            }
+            Part "Part" Size=0.41,1.2,5.41 Anchored BottomSurface=Smooth CFrame=-549.382,4.685,-435.369|179.999,90,0 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=0.41,0.2,2.41 Anchored BottomSurface=Smooth CFrame=-546.674,3.979,-433.369|89.995,45.031,90.005 Color=#111111 Material=Sand TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,-0.3,0
+            }
+            Part "Part" Size=2.41,1.2,0.41 Anchored BottomSurface=Smooth CFrame=-551.882,4.684,-434.37|179.999,90,0 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=2.2,3.48,0.41 Anchored BottomSurface=Smooth CFrame=-552.099,6.344,-436.693|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,3.48,0.41 Anchored BottomSurface=Smooth CFrame=-552.283,6.841,-436.695|149.998,90,0 Color=#111111 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.41,0.2,5.41 Anchored BottomSurface=Smooth CFrame=-549.381,4.185,-434.369|179.999,90,0 Color=#111111 Material=Sand TopSurface=Smooth
+            Part "Part" Size=2.2,3.48,0.41 Anchored BottomSurface=Smooth CFrame=-546.099,6.347,-436.692|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,0,-0.55
+            }
+            Part "Part" Size=2.2,0.48,7.41 Anchored BottomSurface=Smooth CFrame=-549.6,7.845,-436.693|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth {
+                BlockMesh "Mesh" Offset=0,0,0.2 Scale=1,1,-0.7
+            }
+            Part "Part" Size=0.2,3.48,0.41 Anchored BottomSurface=Smooth CFrame=-546.482,6.845,-436.695|149.998,90,0 Color=#111111 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,0.4,5.41 Anchored BottomSurface=Smooth CFrame=-549.383,8.177,-437.465|149.998,90,0 Color=#FF0000 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.29,1.4,6.25 Anchored BottomSurface=Smooth CFrame=-549.392,4.785,-436.709|179.999,90,0 Color=#FF0000 Material=Sand TopSurface=Smooth
+            Model "Sign" {
+                Part "CashToCollect" Size=0.2,1.6,3.61 Anchored BottomSurface=Smooth CFrame=-549.374,9.577,-437.465|-0.001,-90,0 Color=#FF0000 Material=Pebble TopSurface=Smooth {
+                    BlockMesh "Mesh" Offset=0,-0.1,0 Scale=1,0.9,0.9
+                    SurfaceGui "SurfaceGui" CanvasSize=600,360 Face=Right {
+                        TextLabel "Name" Position=0.04,0,0,25 Size=0,550,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Bold|Normal" Text="Cash Collecting" TextColor3=#000000 TextSize=96 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0 TextWrapped
+                    }
+                }
+                Part "Part" Size=0.2,4.6,0.4 Anchored BottomSurface=Smooth CFrame=-549.369,8.477,-437.465|89.999,0.032,90.004 Color=#111111 Material=Wood TopSurface=Smooth
+                Part "Part" Size=0.2,1.6,3.61 Anchored BottomSurface=Smooth CFrame=-549.374,9.577,-437.465|-0.001,-90,0 Color=#FF0000 Material=Pebble TopSurface=Smooth Transparency=0.58 {
+                    BlockMesh "Mesh" Offset=0,-0.1,0 Scale=0.8,1,1
+                }
+                Part "Part" Size=0.2,4.6,0.4 Anchored BottomSurface=Smooth CFrame=-549.37,10.477,-437.465|89.999,0.032,90.004 Color=#111111 Material=Wood TopSurface=Smooth
+                Part "Part" Size=0.2,2.6,0.4 Anchored BottomSurface=Smooth CFrame=-551.369,9.476,-437.465|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth
+                Part "Part" Size=0.2,2.6,0.4 Anchored BottomSurface=Smooth CFrame=-547.369,9.478,-437.464|179.999,90,0 Color=#111111 Material=Wood TopSurface=Smooth
+            }
+        }
+    }
+    Model "Conveyer" {
+        Model "ConveyerArea" {
+            Part "Conv" Size=4.566,0.29,62.158 Anchored BottomSurface=Smooth CFrame=-572.756,4.293,-370.419|180,-90,0 Material=Fabric TopSurface=Smooth {
+                Script "ConveyorScript" @code=<<<
+                    while true do
+                    	script.Parent.Velocity = script.Parent.CFrame.lookVector*23
+                    	wait(0.2)
+                    end
+                >>>
+            }
+            Part "Part" Size=4.907,0.29,39.492 Anchored BottomSurface=Smooth CFrame=-584.279,4.148,-370.392|180,-90,0 Color=#9FA1AC Material=Sand TopSurface=Smooth
+            Part "Part" Size=0.2,1.597,62.304 Anchored BottomSurface=Smooth CFrame=-572.828,4.801,-368.063|180,-90,0 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,1,1
+            }
+            Part "Part" Size=0.2,1.597,62.304 Anchored BottomSurface=Smooth CFrame=-572.828,4.801,-372.709|180,-90,0 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,1,1
+            }
+            Part "Part" Size=0.2,0.2,62.449 Anchored BottomSurface=Smooth CFrame=-572.756,5.672,-372.709|180,-90,0 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,0.726,1
+            }
+            Part "Part" Size=4.501,1.597,0.2 Anchored BottomSurface=Smooth CFrame=-603.91,4.8,-370.383|180,-90,0 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=1,1,0.726
+            }
+            Part "Part" Size=4.501,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-603.91,5.671,-370.383|180,-90,0 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=1,0.726,0.726
+            }
+            Part "Part" Size=0.2,1.452,0.2 Anchored BottomSurface=Smooth CFrame=-541.601,5.02,-372.712|180,-90,0 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,1,0.726
+            }
+            Part "Part" Size=0.2,0.2,62.449 Anchored BottomSurface=Smooth CFrame=-572.755,5.672,-368.063|180,-90,0 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,0.726,1
+            }
+            Part "Part" Size=0.2,1.452,0.2 Anchored BottomSurface=Smooth CFrame=-541.601,5.02,-368.067|180,-90,0 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+                BlockMesh "Mesh" Scale=0.726,1,0.726
+            }
+        }
+        Part "Part" Size=1.06,1.09,0.2 Anchored BottomSurface=Smooth CFrame=-541.489,4.778,-367.596|180,-90,0 CanCollide=false Color=#5B5D69 Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=0.2,1.09,7 Anchored BottomSurface=Smooth CFrame=-534.712,4.779,-370.674|0,0.007,-179.999 CanCollide=false Color=#5B5D69 Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=0.2,1.09,7 Anchored BottomSurface=Smooth CFrame=-538.089,4.778,-366.986|180,-90,0 CanCollide=false Color=#5B5D69 Material=DiamondPlate TopSurface=Smooth
+        Part "Part" Size=7,0.2,7 Anchored BottomSurface=Smooth CFrame=-538.089,4.153,-370.386|180,-90,0 CanCollide=false Color=#5B5D69 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,0.798,1
+        }
+        Part "Part" Size=1.06,1.09,0.2 Anchored BottomSurface=Smooth CFrame=-541.489,4.778,-373.176|180,-90,0 CanCollide=false Color=#5B5D69 Material=DiamondPlate TopSurface=Smooth
+    }
+    Model "ConveyerArea" {
+        Part "Conv" Size=4.566,0.29,49.158 Anchored BottomSurface=Smooth CFrame=-538.738,4.069,-397.89|-180,-0.007,-0.001 Material=Fabric TopSurface=Smooth {
+            Script "ConveyorScript" @code=<<<
+                while true do
+                	script.Parent.Velocity = script.Parent.CFrame.lookVector*23
+                	wait(0.2)
+                end
+            >>>
+        }
+        Part "Part" Size=0.2,0.2,49.449 Anchored BottomSurface=Smooth CFrame=-536.447,5.448,-397.89|-180,-0.007,-0.001 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,0.726,1
+        }
+        Part "Part" Size=4.907,0.29,32.492 Anchored BottomSurface=Smooth CFrame=-538.764,3.924,-406.412|-180,-0.007,-0.001 Color=#9FA1AC Material=Sand TopSurface=Smooth
+        Part "Part" Size=4.501,1.597,0.2 Anchored BottomSurface=Smooth CFrame=-538.772,4.577,-422.542|-180,-0.007,-0.001 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,1,0.726
+        }
+        Part "Part" Size=0.2,1.597,49.304 Anchored BottomSurface=Smooth CFrame=-536.447,4.577,-397.963|-180,-0.007,-0.001 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,1,1
+        }
+        Part "Part" Size=0.2,1.452,0.2 Anchored BottomSurface=Smooth CFrame=-541.092,4.795,-373.237|-180,-0.007,-0.001 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,1,0.726
+        }
+        Part "Part" Size=0.2,0.2,49.449 Anchored BottomSurface=Smooth CFrame=-541.094,5.448,-397.889|-180,-0.007,-0.001 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,0.726,1
+        }
+        Part "Part" Size=4.501,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-538.772,5.448,-422.542|-180,-0.007,-0.001 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=1,0.726,0.726
+        }
+        Part "Part" Size=0.2,1.597,49.304 Anchored BottomSurface=Smooth CFrame=-541.094,4.577,-397.962|-180,-0.007,-0.001 Color=#F8F8F8 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,1,1
+        }
+        Part "Part" Size=0.2,1.452,0.2 Anchored BottomSurface=Smooth CFrame=-536.445,4.795,-373.237|-180,-0.007,-0.001 Color=#111111 Material=DiamondPlate TopSurface=Smooth {
+            BlockMesh "Mesh" Scale=0.726,1,0.726
+        }
+    }
+    Part "Floor" Size=79.245,0.184,79.001 Anchored BottomSurface=Smooth CFrame=-566.572,3.968,-400.041|0,0.006,-179.999 Color=#E2DCBC Material=WoodPlanks TopSurface=Smooth
+    Part "Giver" Size=2,0.358,4.602 Anchored BottomSurface=Smooth CFrame=-549.601,4.331,-434.631|180,90,0 CanCollide=false Color=#348E40 Material=Sand TopSurface=Smooth Transparency=0.2
+    Part "PartCollector" Size=6.6,0.2,6.6 Anchored BottomSurface=Smooth CFrame=-538.089,4.353,-370.386|180,-90,0 CanCollide=false Color=#FF9494 Material=Sand TopSurface=Smooth {
+        Part "Extra" Size=6.6,0.2,6.6 Anchored BottomSurface=Smooth CFrame=-538.089,4.353,-370.386|180,-90,0 CanCollide=false Color=#FF9494 Material=Neon TopSurface=Smooth Transparency=0.5 {
+            BlockMesh "Mesh" Scale=1,0.798,1
+        }
+        BlockMesh "Mesh" Scale=1,0.798,1
+    }
+    SpawnLocation "Spawn" Size=4,0.2,4 Anchored BottomSurface=Smooth CFrame=-556.301,4.148,-435.728|0,90,0 Material=Marble Neutral=false TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxassetid://20780782" TextureContent="rbxassetid://20780782" Transparency=0.4
+    }
+}
+StringValue "MaterialValue" Value="Neon"
+ObjectValue "Owner"
+Script "PurchaseHandler" @src="Scripts/Workspace/Model~39/Zednov's Tycoon Kit/Tycoons/Super Man/PurchaseHandler.luau"
+Model "PurchasedObjects"
+Model "Purchases" @file="Scene/Workspace/Model~39/Zednov's Tycoon Kit/Tycoons/Super Man/Purchases.bridge"
+BrickColorValue "TeamColor" Value="Really blue"

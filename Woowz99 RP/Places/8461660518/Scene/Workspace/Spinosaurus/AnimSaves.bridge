@@ -1,0 +1,1922 @@
+KeyframeSequence "Automatic Save" #"1645683406" Loop=false Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" {
+                                    Pose "leg knee ankle"
+                                }
+                                Pose "leg thigh right" {
+                                    Pose "leg knee right" {
+                                        Pose "leg ankle right" {
+                                            Pose "leg toe right thumb 1"
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" {
+                                    Pose "tail 02" {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" {
+                                                Pose "tail 05" {
+                                                    Pose "tail 06" {
+                                                        Pose "tail 07" {
+                                                            Pose "tail 08"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.476,0,-0.079|0,12.208,0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|17.742,-17.841,-1.605 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,0
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,-6.546 {
+                                    Pose "leg knee right" Weight=0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,25.64 {
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,-14.567
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,13.898 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,9.021 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,7.365 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,11.393 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,14.024 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,7.297 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,23.8 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,15.086
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.332,0,-3.488|-180,88.173,-180 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,5.033 {
+                                    Pose "leg knee right" CFrame=0,0,0|0,0,-13.819 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,15.888 {
+                                            Pose "leg toe right thumb 1" CFrame=0,0,0|0,0,4.079
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,13.475
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|-21.102,-5.091,-21.52 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,14.187 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,4.891 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.19
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "SpinoDeath" #"1645683883" Loop=false Priority=Core {
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" Weight=0 {
+                                        Pose "head neck lower" CFrame=0,0,0|-42.588,-6.016,30.771
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.332,0,-3.488|-180,87.394,-180 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|41.779,-25.962,-2.677 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,-8.444 {
+                                        Pose "leg ankle left" CFrame=0,0,0|0,0,-7.631 {
+                                            Pose "leg toes left" CFrame=0,0,0|0,0,17.947
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,5.033 {
+                                    Pose "leg knee right" CFrame=0,0,0|0,0,-13.819 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,15.888 {
+                                            Pose "leg toe right thumb 1" CFrame=0,0,0|0,0,4.079
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,13.475
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|-21.102,-5.091,-21.52 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,14.187 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,4.891 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.19 {
+                                                Pose "tail 05" CFrame=0,0,0|-14.275,-0.981,3.849 {
+                                                    Pose "tail 06" CFrame=0,0,0|-15.52,-0.254,0.913 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-7.754 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,2.096
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" CFrame=0,0,0|0,0,-1.94 {
+                                    Pose "spine upper" CFrame=0,0,0|-3.622,-1.821,0.22 {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|0,0,-31.774 {
+                                                Pose "arm elbow left" CFrame=0,0,0|-17.764,3.344,-22.141 {
+                                                    Pose "arm wrist left" CFrame=0,0,0|0,0,21.892
+                                                }
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" CFrame=0,0,0|0,7.133,0 {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|29.771,28.709,0.798
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-36.511,-23.749,-24.922 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-1.617,13.06,8.026 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|0,10.934,-6.08 {
+                                                    Pose "head neck upper" CFrame=0,0,0|0,0,9.159 {
+                                                        Pose "head neck head" CFrame=0,0,0|0.4,-5.924,-0.962 {
+                                                            Pose "head jaw" CFrame=0,0,0|22.222,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.476,0,-0.079|0,12.208,0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|17.742,-17.841,-1.605 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,0
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,-6.546 {
+                                    Pose "leg knee right" Weight=0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,25.64 {
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,-14.567
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,13.898 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,9.021 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,7.365 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,11.393 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,14.024 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,7.297 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,23.8 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,15.086
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" CFrame=0,0,0|0,0,6.965 {
+                                    Pose "spine upper" CFrame=0,0,0|-3.579,-12.762,0.226 {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|0,0,34.109 {
+                                                Pose "arm elbow left" CFrame=0,0,0|-9.042,0.81,22.287
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" CFrame=0,0,0|0,3.566,15.284 {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|14.456,14.297,24.69
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|5.873,1.592,15.113 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-1.617,13.06,16.957 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|0,10.934,0 {
+                                                    Pose "head neck upper" Weight=0 {
+                                                        Pose "head neck head" Weight=0 {
+                                                            Pose "head jaw" CFrame=0,0,0|-3.898,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" {
+                                    Pose "leg knee ankle" {
+                                        Pose "leg ankle left" {
+                                            Pose "leg toes left"
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" {
+                                    Pose "leg knee right" {
+                                        Pose "leg ankle right" {
+                                            Pose "leg toe right thumb 1"
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" {
+                                    Pose "tail 02" {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" {
+                                                Pose "tail 05" {
+                                                    Pose "tail 06" {
+                                                        Pose "tail 07" {
+                                                            Pose "tail 08"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" {
+                                    Pose "spine upper" {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" {
+                                                Pose "arm elbow left" {
+                                                    Pose "arm wrist left"
+                                                }
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right"
+                                            }
+                                        }
+                                        Pose "head neck lower" {
+                                            Pose "head neck middle 2" {
+                                                Pose "head neck middle 1" {
+                                                    Pose "head neck upper" {
+                                                        Pose "head neck head" {
+                                                            Pose "head jaw" CFrame=0,0,0|22.971,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.332,0,-3.488|-180,87.394,-180 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|41.779,-25.962,-2.677 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,-8.444 {
+                                        Pose "leg ankle left" CFrame=0,0,0|0,0,-7.631 {
+                                            Pose "leg toes left" CFrame=0,0,0|0,0,17.947
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,5.033 {
+                                    Pose "leg knee right" CFrame=0,0,0|0,0,-13.819 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,15.888 {
+                                            Pose "leg toe right thumb 1" CFrame=0,0,0|0,0,4.079
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,13.475
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|-21.102,-5.091,-21.52 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,14.187 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,4.891 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.19 {
+                                                Pose "tail 05" CFrame=0,0,0|-14.275,-0.981,3.849 {
+                                                    Pose "tail 06" CFrame=0,0,0|-15.52,-0.254,0.913 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-7.754 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,2.096
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" CFrame=0,0,0|0,0,-1.94 {
+                                    Pose "spine upper" CFrame=0,0,0|-3.622,-1.821,0.22 {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|0,0,-31.774 {
+                                                Pose "arm elbow left" CFrame=0,0,0|-17.764,3.344,-22.141 {
+                                                    Pose "arm wrist left" CFrame=0,0,0|0,0,21.892
+                                                }
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" CFrame=0,0,0|0,7.133,0 {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|29.771,28.709,0.798
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-36.511,-23.749,-24.922 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-1.617,13.06,8.026 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|0,10.934,-6.08 {
+                                                    Pose "head neck upper" CFrame=0,0,0|0,0,9.159 {
+                                                        Pose "head neck head" CFrame=0,0,0|0.4,-5.924,-0.962 {
+                                                            Pose "head jaw" CFrame=0,0,0|22.222,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "SpinoEat" #"1645685353" Loop=false Priority=Core {
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" Weight=0 {
+                                        Pose "head neck lower" CFrame=0,0,0|12.941,0,0 {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-25.035,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-7.12,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|26.542,0,0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" CFrame=0,0,0|16.26,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-29.759,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-16.607,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|-27.805,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-32.901,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-30.795,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|3.081,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|38.125,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|17.853,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" CFrame=0,0,0|7.999,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-22.683,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-0.053,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|-20.717,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-23.473,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-10.61,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-22.963,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|47.209,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|-40.379,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.767 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" CFrame=0,0,0|29.008,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-21.749,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|1.777,0,0 {
+                                        Pose "head neck lower" Weight=0 {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" Weight=0 {
+                                                    Pose "head neck upper" Weight=0 {
+                                                        Pose "head neck head" CFrame=0,0,0|82.746,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|27.068,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.867 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" {
+                                Pose "spine middle" {
+                                    Pose "spine upper" {
+                                        Pose "head neck lower" CFrame=0,0,0|-5.538,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-16.227,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-13.171,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-10.972,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|-21.656,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|21.322,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0.726,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" {
+                                Pose "spine middle" {
+                                    Pose "spine upper" {
+                                        Pose "head neck lower" CFrame=0,0,0|-5.538,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-16.227,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-13.171,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-10.972,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|-21.656,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|21.322,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0.726,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.7 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" Weight=0 {
+                                        Pose "head neck lower" CFrame=0,0,0|16.896,0,0 {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" Weight=0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|15.404,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|52.987,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|-28.904,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" CFrame=0,0,0|18.397,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-5.742,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-11.076,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|-11.673,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|0.561,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|3.087,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-16.481,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|-29.927,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|-3.779,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" Weight=0 {
+                                        Pose "head neck lower" CFrame=0,0,0|-27.937,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "spine lower" CFrame=0,0,0|40.87,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-29.173,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-10.193,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|1.952,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-34.9,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-27.898,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|-8.004,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|4.273,0,0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "SpinoGrowl" @file="Scene/Workspace/Spinosaurus/AnimSaves/SpinoGrowl.bridge" #"1645764324" Loop=false Priority=Core
+KeyframeSequence "SpinoIdle" #"1645682113" Priority=Core {
+    Keyframe "Keyframe" Time=1.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "tail 01" CFrame=0,0,0|0,0,-0.541 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-5.201 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,-1.522 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.424 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-7.57 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-18.31 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-10.137 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,-10.282
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "tail 01" CFrame=0,0,0|0,0,5.475 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,5.699 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,1.489 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,8.961 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,3.872 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,8.179 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,6.888 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,2.993
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,1.29 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|11.803,0.599,2.864 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-19.414,0,0 {
+                                        Pose "leg ankle left" Weight=0 {
+                                            Pose "leg toes left" CFrame=0,0,0|4.64,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-11.504,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-11.752,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|7.609,0,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|7.099,0,0
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" {
+                                    Pose "tail 02" {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" {
+                                                Pose "tail 05" {
+                                                    Pose "tail 06" {
+                                                        Pose "tail 07" {
+                                                            Pose "tail 08"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" CFrame=0,0,0|-4.261,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-8.161,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-2.321,0,0 {
+                                        Pose "head neck lower" {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" Weight=0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|5.574,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|7.837,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|25.886,0,0 {
+                                                                Pose "head lip left lower 2" CFrame=0,0,0|0.774,0,0
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,1.29 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|11.803,0.599,2.864 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-19.414,0,0 {
+                                        Pose "leg ankle left" Weight=0 {
+                                            Pose "leg toes left" CFrame=0,0,0|4.64,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-11.504,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-11.752,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|7.609,0,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|7.099,0,0
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" {
+                                    Pose "tail 02" {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" {
+                                                Pose "tail 05" {
+                                                    Pose "tail 06" {
+                                                        Pose "tail 07"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" CFrame=0,0,0|-4.261,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-8.161,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-2.321,0,0 {
+                                        Pose "head neck lower" {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" Weight=0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|5.574,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|7.837,0,0 {
+                                                            Pose "head jaw" CFrame=0,0,0|25.886,0,0 {
+                                                                Pose "head lip left lower 2" CFrame=0,0,0|0.774,0,0
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.8 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "tail 01" {
+                                    Pose "tail 02" {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" {
+                                                Pose "tail 05" {
+                                                    Pose "tail 06" {
+                                                        Pose "tail 07" {
+                                                            Pose "tail 08"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" CFrame=0,0,0|-8.938,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|8.745,0,0 {
+                                            Pose "head neck middle 2" Weight=0 {
+                                                Pose "head neck middle 1" Weight=0 {
+                                                    Pose "head neck upper" Weight=0 {
+                                                        Pose "head neck head" Weight=0 {
+                                                            Pose "head jaw" CFrame=0,0,0|23.968,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "Spinodead" #"1645684049" Priority=Core {
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.332,0,-3.488|-180,87.394,-180 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|41.779,-25.962,-2.677 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,-8.444 {
+                                        Pose "leg ankle left" CFrame=0,0,0|0,0,-7.631 {
+                                            Pose "leg toes left" CFrame=0,0,0|0,0,17.947
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,5.033 {
+                                    Pose "leg knee right" CFrame=0,0,0|0,0,-13.819 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,15.888 {
+                                            Pose "leg toe right thumb 1" CFrame=0,0,0|0,0,4.079
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,13.475
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|-21.102,-5.091,-21.52 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,14.187 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,4.891 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.19 {
+                                                Pose "tail 05" CFrame=0,0,0|-14.275,-0.981,3.849 {
+                                                    Pose "tail 06" CFrame=0,0,0|-15.52,-0.254,0.913 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-7.754 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,2.096
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" CFrame=0,0,0|0,0,-1.94 {
+                                    Pose "spine upper" CFrame=0,0,0|-3.622,-1.821,0.22 {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|0,0,-31.774 {
+                                                Pose "arm elbow left" CFrame=0,0,0|-17.764,3.344,-22.141 {
+                                                    Pose "arm wrist left" CFrame=0,0,0|0,0,21.892
+                                                }
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" CFrame=0,0,0|0,7.133,0 {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|29.771,28.709,0.798
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-36.511,-23.749,-24.922 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-1.617,13.06,8.026 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|0,10.934,-6.08 {
+                                                    Pose "head neck upper" CFrame=0,0,0|0,0,9.159 {
+                                                        Pose "head neck head" CFrame=0,0,0|0.4,-5.924,-0.962 {
+                                                            Pose "head jaw" CFrame=0,0,0|22.222,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=-2.332,0,-3.488|-180,87.394,-180 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|41.779,-25.962,-2.677 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-24.673,0,-8.444 {
+                                        Pose "leg ankle left" CFrame=0,0,0|0,0,-7.631 {
+                                            Pose "leg toes left" CFrame=0,0,0|0,0,17.947
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|0,0,5.033 {
+                                    Pose "leg knee right" CFrame=0,0,0|0,0,-13.819 {
+                                        Pose "leg ankle right" CFrame=0,0,0|0,0,15.888 {
+                                            Pose "leg toe right thumb 1" CFrame=0,0,0|0,0,4.079
+                                            Pose "leg toes right" CFrame=0,0,0|0,0,13.475
+                                        }
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|-21.102,-5.091,-21.52 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,14.187 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,4.891 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.19 {
+                                                Pose "tail 05" CFrame=0,0,0|-14.275,-0.981,3.849 {
+                                                    Pose "tail 06" CFrame=0,0,0|-15.52,-0.254,0.913 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-7.754 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,2.096
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" CFrame=0,0,0|0,0,-1.94 {
+                                    Pose "spine upper" CFrame=0,0,0|-3.622,-1.821,0.22 {
+                                        Pose "arm shoulder left 1" Weight=0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|0,0,-31.774 {
+                                                Pose "arm elbow left" CFrame=0,0,0|-17.764,3.344,-22.141 {
+                                                    Pose "arm wrist left" CFrame=0,0,0|0,0,21.892
+                                                }
+                                            }
+                                        }
+                                        Pose "arm shoulder right 1" CFrame=0,0,0|0,7.133,0 {
+                                            Pose "arm shoulder right 2" Weight=0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|29.771,28.709,0.798
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-36.511,-23.749,-24.922 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-1.617,13.06,8.026 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|0,10.934,-6.08 {
+                                                    Pose "head neck upper" CFrame=0,0,0|0,0,9.159 {
+                                                        Pose "head neck head" CFrame=0,0,0|0.4,-5.924,-0.962 {
+                                                            Pose "head jaw" CFrame=0,0,0|22.222,0,0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "Spinoroar" @file="Scene/Workspace/Spinosaurus/AnimSaves/Spinoroar.bridge" #"1645764122" Loop=false Priority=Core
+KeyframeSequence "Spinorun" #"1645845623" Priority=Core {
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|11.607,3.394,0.017 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-40.714,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-22.528,-0.001,8.219 {
+                                            Pose "leg toes left" CFrame=0,0,0|-54.387,24.552,-16.046
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|8.765,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-16.813,0.129,-3.393 {
+                                        Pose "leg ankle right" CFrame=0,0,0|3.173,-2.088,-6.309
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.067 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|44.994,2.83,9.855 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-64.133,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|3.453,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-16.924,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-9.006,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|8.483,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" CFrame=0,-0.745,0.017|-5.173,0,0 {
+                            Pose "pelvis" CFrame=0,0,0.104 {
+                                Pose "leg thigh left" CFrame=0,0,0|33.482,0.786,10.219 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-41.541,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-7.955,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-15.704,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-0.458,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-8.858,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|1.412,0,0 {
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                    Pose "leg knee right twist"
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "sail 03" CFrame=0,0,0|0,0,1.567
+                            Pose "spine lower" CFrame=0,0,0|-10.284,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-7.725,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-17.516,0,0 {
+                                        Pose "arm shoulder left 1" CFrame=0,0,0|-4.001,0,0
+                                        Pose "arm shoulder right 1" Weight=0 {
+                                            Pose "arm shoulder right 2" CFrame=0,0,0|59.155,0,0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|0,0,-18.832
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-6.87,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-7.112,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-2.042,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|44.044,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|18.184,0,0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0,3.504,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,-0.503 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" Weight=0 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-14.892,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-14.657,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|34.158,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-67.616,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-2.341,0.001,0
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" CFrame=0,0,0|-22.165,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|0.143,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "tail 01" CFrame=0,0,0|0,0,-4.99 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-12.989 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,-9.308 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,-14.348 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-8.493 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-7.509 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-10.719 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,-12.183
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "4_body_0_16_16" CFrame=0,0,0|0,0.008,0
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" CFrame=0,-0.745,0.017|-5.173,0,0 {
+                            Pose "pelvis" CFrame=0,0,0.104 {
+                                Pose "leg thigh left" CFrame=0,0,0|33.482,0.786,10.219 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-41.541,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-7.955,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-15.704,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-0.458,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-8.858,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|1.412,0,0 {
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                    Pose "leg knee right twist"
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "sail 03" CFrame=0,0,0|0,0,1.567
+                            Pose "spine lower" CFrame=0,0,0|-10.284,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|-7.725,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-17.516,0,0 {
+                                        Pose "arm shoulder left 1" CFrame=0,0,0|-4.001,0,0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|64.514,-16.03,7.191
+                                        }
+                                        Pose "arm shoulder right 1" Weight=0 {
+                                            Pose "arm shoulder right 2" CFrame=0,0,0|59.155,0,0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|0,0,-18.832
+                                            }
+                                        }
+                                        Pose "head neck lower" CFrame=0,0,0|-6.87,0,0 {
+                                            Pose "head neck middle 2" CFrame=0,0,0|-7.112,0,0 {
+                                                Pose "head neck middle 1" CFrame=0,0,0|-2.042,0,0 {
+                                                    Pose "head neck upper" CFrame=0,0,0|44.044,0,0 {
+                                                        Pose "head neck head" CFrame=0,0,0|18.184,0,0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0,3.504,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.267 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|25.527,3.114,8.161 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|3.774,0,0
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|13.433,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-59.113,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|4.707,0,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|-35.304,0,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.533 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,-1.482 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|-19.921,2.885,1.789 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-21.736,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-5.923,-0.001,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|30.22,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-14.627,0,-3.395 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-15.074,0.001,-6.644 {
+                                            Pose "leg toes right" CFrame=0,0,0|17.159,-0.001,-5.428
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,-1.482 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|43.701,7.643,4.827 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-15.858,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-2.345,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|3.186,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-8.758,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-41.677,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-4.003,0,0
+                                    }
+                                    Pose "leg knee right twist" CFrame=0,0,0|-6.669,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" CFrame=0,0,0.102 {
+                                Pose "leg thigh left" CFrame=0,0,0|5.495,0.11,8.73 {
+                                    Pose "leg knee ankle" Weight=0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|10.265,-0.001,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|43.078,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-60.3,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|9.399,0.001,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|-5.938,0,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|-10.143,0.052,1.275 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-12.604,0,0 {
+                                        Pose "leg ankle left" Weight=0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-4.504,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" Weight=0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-20.973,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-1.154,0.001,0.001 {
+                                            Pose "leg toes right" CFrame=0,0,0|17.158,-0.001,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.133 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|51.447,7.198,8.644 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-49.981,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|12.06,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-20.69,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-32.3,0,0
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,7.59 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,4.95 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,7.121 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,14.825 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,12.527 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,12.687 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,9.057 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,11.245
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "Spinowalk" #"1645845538" Priority=Core {
+    Keyframe "Keyframe" Time=3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|11.607,3.394,0.017 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-40.714,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-22.528,-0.001,8.219 {
+                                            Pose "leg toes left" CFrame=0,0,0|-54.387,24.552,-16.046
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|8.765,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-16.813,0.129,-3.393 {
+                                        Pose "leg ankle right" CFrame=0,0,0|3.173,-2.088,-6.309
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|43.701,7.643,4.827 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-15.858,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-2.345,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|3.186,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-8.758,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-41.677,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-4.003,0,0
+                                    }
+                                    Pose "leg knee right twist" CFrame=0,0,0|-6.669,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" CFrame=0,0,-0.503 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" Weight=0 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-14.892,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-14.657,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|34.158,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-67.616,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-2.341,0.001,0
+                                    }
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "spine lower" Weight=0 {
+                                Pose "spine middle" Weight=0 {
+                                    Pose "spine upper" CFrame=0,0,0|-22.165,0,0 {
+                                        Pose "head neck lower" CFrame=0,0,0|22.655,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|44.994,2.83,9.855 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-64.133,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|3.453,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-16.924,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-9.006,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|8.483,0,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=3.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" CFrame=0,-0.745,0.017|-5.173,0,0 {
+                            Pose "pelvis" CFrame=0,0,0.104 {
+                                Pose "leg thigh left" CFrame=0,0,0|33.482,0.786,10.219 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-41.541,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-7.955,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-15.704,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-0.458,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-8.858,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|1.412,0,0 {
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                    Pose "leg knee right twist"
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "sail 03" CFrame=0,0,0|0,0,1.567
+                            Pose "spine lower" CFrame=0,0,0|-0.57,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|1.302,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-17.516,0,0 {
+                                        Pose "arm shoulder left 1" CFrame=0,0,0|-4.001,0,0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|63.225,-12.745,8.962
+                                        }
+                                        Pose "arm shoulder right 1" Weight=0 {
+                                            Pose "arm shoulder right 2" CFrame=0,0,0|59.155,0,0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|0,0,-18.832
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0,3.504,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|51.447,7.198,8.644 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-49.981,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|12.06,0,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-20.69,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-32.3,0,0
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,7.59 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,4.95 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,7.121 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,14.825 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,12.527 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,12.687 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,9.057 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,11.245
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=2.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "tail 01" CFrame=0,0,0|0,0,-4.99 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-12.989 {
+                                        Pose "tail 03" CFrame=0,0,0|0,0,-9.308 {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,-14.348 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-8.493 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-7.509 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-10.719 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,-12.183
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=2.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|-19.921,2.885,1.789 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-21.736,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-5.923,-0.001,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|30.22,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-14.627,0,-3.395 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-15.074,0.001,-6.644 {
+                                            Pose "leg toes right" CFrame=0,0,0|17.159,-0.001,-5.428
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=2.267 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|-10.143,0.052,1.275 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-12.604,0,0 {
+                                        Pose "leg ankle left" Weight=0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-4.504,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" Weight=0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-20.973,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|-1.154,0.001,0.001 {
+                                            Pose "leg toes right" CFrame=0,0,0|17.158,-0.001,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" CFrame=0,0,0.102 {
+                                Pose "leg thigh left" CFrame=0,0,0|5.495,0.11,8.73 {
+                                    Pose "leg knee ankle" Weight=0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|10.265,-0.001,0
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|43.078,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-60.3,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|9.399,0.001,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|-5.938,0,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" Weight=0 {
+                        Pose "root hips" Weight=0 {
+                            Pose "pelvis" Weight=0 {
+                                Pose "leg thigh left" CFrame=0,0,0|25.527,3.114,8.161 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|3.774,0,0
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|13.433,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-59.113,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|4.707,0,0 {
+                                            Pose "leg toes right" CFrame=0,0,0|-35.304,0,0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Keyframe "Keyframe" {
+        Pose "4_body_0_16_16" CFrame=0,0,0|0,0.008,0
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Spinosaurus" Weight=0 {
+                Pose "RootPart" Weight=0 {
+                    Pose "root ground" {
+                        Pose "root hips" CFrame=0,-0.745,0.017|-5.173,0,0 {
+                            Pose "pelvis" CFrame=0,0,0.104 {
+                                Pose "leg thigh left" CFrame=0,0,0|33.482,0.786,10.219 {
+                                    Pose "leg knee ankle" CFrame=0,0,0|-41.541,0,0 {
+                                        Pose "leg ankle left" CFrame=0,0,0|-7.955,0,0 {
+                                            Pose "leg toes left" CFrame=0,0,0|-15.704,0,0
+                                        }
+                                    }
+                                }
+                                Pose "leg thigh right" CFrame=0,0,0|-0.458,0,0 {
+                                    Pose "leg knee right" CFrame=0,0,0|-8.858,0,0 {
+                                        Pose "leg ankle right" CFrame=0,0,0|1.412,0,0 {
+                                            Pose "leg toes right"
+                                        }
+                                    }
+                                    Pose "leg knee right twist"
+                                }
+                                Pose "tail 01" CFrame=0,0,0|0,0,0.841 {
+                                    Pose "tail 02" CFrame=0,0,0|0,0,-1.291 {
+                                        Pose "tail 03" {
+                                            Pose "tail 04" CFrame=0,0,0|0,0,0.892 {
+                                                Pose "tail 05" CFrame=0,0,0|0,0,-0.896 {
+                                                    Pose "tail 06" CFrame=0,0,0|0,0,-0.197 {
+                                                        Pose "tail 07" CFrame=0,0,0|0,0,-0.183 {
+                                                            Pose "tail 08" CFrame=0,0,0|0,0,0.393
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Pose "sail 03" CFrame=0,0,0|0,0,1.567
+                            Pose "spine lower" CFrame=0,0,0|-0.57,0,0 {
+                                Pose "spine middle" CFrame=0,0,0|1.302,0,0 {
+                                    Pose "spine upper" CFrame=0,0,0|-17.516,0,0 {
+                                        Pose "arm shoulder left 1" CFrame=0,0,0|-4.001,0,0 {
+                                            Pose "arm shoulder left 2" CFrame=0,0,0|63.225,-12.745,8.962
+                                        }
+                                        Pose "arm shoulder right 1" Weight=0 {
+                                            Pose "arm shoulder right 2" CFrame=0,0,0|59.155,0,0 {
+                                                Pose "arm elbow right" CFrame=0,0,0|0,0,-18.832
+                                            }
+                                        }
+                                        Pose "spine belly" CFrame=0,0,0|0,3.504,0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "CoreGUI" AutoLocalize=false ScreenInsets=DeviceSafeInsets {
+        LocalScript "BarMain" @src="Scripts/StarterGui/CoreGUI/BarMain.luau"
+        Folder "StarterCharacterScripts"
+        RemoteEvent "StatsEvent" {
+            RemoteFunction "__FUNCTION"
+        }
+        Frame "StatsFrame" Position=0,7,1,-7 Size=0.1,150,0.1,25 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ZIndex=10 {
+            Frame "" Position=-0.042,0,0.513,0 Size=1.078,0,1.212,0 AnchorPoint=0,0.5 BackgroundColor3=#000000 BackgroundTransparency=0.9 BorderSizePixel=0
+            Frame "BodyFrame" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#5A5A5A BorderSizePixel=2 SizeConstraint=RelativeYY ZIndex=4 {
+                ImageLabel "Box" Position=0.5,0,0.5,0 Size=1.2,0,1.2,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://7360884979" ImageContent="rbxassetid://7360884979" ImageTransparency=0.5 SizeConstraint=RelativeYY ZIndex=3 {
+                    UIAspectRatioConstraint "UIAspectRatioConstraint"
+                }
+                Frame "Head" Position=0.397,0,0.063,0 Size=0.203,0,0.203,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#8F07FF,0.8:#FFFFFF,1:#767676
+                    }
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/Head/LocalScript.luau"
+                    UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                }
+                Frame "Left Arm" Position=0.162,0,0.266,0 Size=0.172,0,0.344,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#6E0076,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                    }
+                    Frame "Bar" Position=0,0,1,0 Size=1,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 ZIndex=7
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/Left Arm/LocalScript.luau"
+                    UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                }
+                Frame "Left Leg" Position=0.504,0,0.605,0 Size=0.163,0,0.344,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                    }
+                    Frame "Bar" Position=0,0,1,0 Size=1,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 ZIndex=7
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/Left Leg/LocalScript.luau"
+                    UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                }
+                LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/LocalScript.luau"
+                Frame "Right Arm" Position=0.668,0,0.266,0 Size=0.172,0,0.344,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                    }
+                    Frame "Bar" Position=0,0,1,0 Size=1,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 ZIndex=7
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/Right Arm/LocalScript.luau"
+                    UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                }
+                Frame "Right Leg" Position=0.332,0,0.605,0 Size=0.172,0,0.344,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                    }
+                    Frame "Bar" Position=0,0,1,0 Size=1,0,0,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 ZIndex=7
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/BodyFrame/Right Leg/LocalScript.luau"
+                    UIGradient "UIGradient" Color=0:#767676,0.2:#FFFFFF,0.5:#FFFFFF,0.8:#FFFFFF,1:#767676
+                }
+                Frame "Torso" Position=0.324,0,0.266,0 Size=0.344,0,0.344,0 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderMode=Middle ZIndex=7 {
+                    Frame "Armored" Size=1,0,1,0 BackgroundColor3=#55AAFF BackgroundTransparency=0.55 BorderColor3=#000000 BorderMode=Middle BorderSizePixel=0 Visible=false ZIndex=7 {
+                        UIGradient "UIGradient" Color=0:#767676,0.1:#FFFFFF,0.5:#FFFFFF,0.9:#FFFFFF,1:#767676
+                    }
+                    UIGradient "UIGradient" Color=0:#767676,0.1:#FFFFFF,0.5:#FFFFFF,0.9:#FFFFFF,1:#767676
+                }
+                UIAspectRatioConstraint "UIAspectRatioConstraint"
+            }
+            Frame "HealthFrame" Position=0.281,0,0.275,0 Size=0.738,0,0.351,0 AnchorPoint=0,0.5 BackgroundColor3=#FF00FF BackgroundTransparency=1 BorderColor3=#5A5A5A BorderMode=Inset BorderSizePixel=2 ZIndex=5 {
+                Frame "-" Position=0.01,0,0.5,0 Size=0.994,0,0.921,0 AnchorPoint=0,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ZIndex=2 {
+                    ImageLabel "-" Position=-0.022,0,-0.227,0 Size=1.045,0,1.45,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://7361502954" ImageContent="rbxassetid://7361502954"
+                }
+                Frame "Bar" Position=0.019,0,0.5,0 Size=0.971,0,0.587,0 AnchorPoint=0,0.5 BackgroundColor3=#BBFFCF BorderColor3=#000000 BorderSizePixel=0 ZIndex=3 {
+                    LocalScript "LocalScript" @code=<<<
+                        while wait() do
+                        	--======== SCRIPTED BY AETEHEL LOL ==========
+                        	local hum = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+                        	local humh = hum.Health 
+                        	local hummh = hum.MaxHealth
+                        	script.Parent:TweenSize(UDim2.new((hum.Health / hum.MaxHealth), 0, 1, 0), "Out", "Linear", 0.1, true, nil)
+                        end
+                    >>>
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#DCDCDC,0.5:#FFFFFF,1:#DCDCDC Rotation=90
+                }
+                Frame "Bar2" Position=0.009,0,0.5,0 Size=0.981,0,0.688,0 AnchorPoint=0,0.5 BackgroundColor3=#BBFFCF BackgroundTransparency=0.6 BorderSizePixel=0 Visible=false ZIndex=2 {
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#DCDCDC,0.5:#FFFFFF,1:#DCDCDC Rotation=90
+                }
+                TextLabel "HealthNum" Position=0.514,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="100%" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.7 TextTruncate=AtEnd TextWrapped ZIndex=6
+                ImageLabel "ImageLabel" Position=0.5,0,0.5,0 Size=1.06,0,1.5,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7361502954" ImageContent="http://www.roblox.com/asset/?id=7361502954" ResampleMode=Pixelated ScaleType=Fit Visible=false
+                LocalScript "LocalScript" @src="Scripts/StarterGui/CoreGUI/StatsFrame/HealthFrame/LocalScript.luau"
+                Frame "Min" Size=0.1,0,1,1 BackgroundColor3=#FF0000 BackgroundTransparency=0.75 BorderSizePixel=0 Visible=false ZIndex=5
+                UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=7.413
+                UICorner "UICorner"
+            }
+            Frame "IndicatorsFrame" Position=1.05,0,0.5,0 Size=10,0,1,0 AnchorPoint=0,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#2D2D2D BorderSizePixel=0 ClipsDescendants SizeConstraint=RelativeYY {
+                Frame "Frame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                    Frame "Bleeding" Position=0.011,0,0.064,0 Size=1,0,1,0 BackgroundColor3=#848484 BackgroundTransparency=1 BorderColor3=#2D2D2D BorderSizePixel=4 LayoutOrder=2 SizeConstraint=RelativeYY Visible=false ZIndex=2 {
+                        ImageLabel "BG" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants Image="rbxassetid://7338759852" ImageContent="rbxassetid://7338759852" ImageTransparency=1 ResampleMode=Pixelated SizeConstraint=RelativeYY
+                        ImageLabel "Icon" Position=0.5,0,0.5,0 Size=0.75,0,0.75,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7441991931" ImageContent="http://www.roblox.com/asset/?id=7441991931" ZIndex=2
+                    }
+                    Frame "Drowning" Position=0.011,0,0.064,0 Size=1,0,1,0 BackgroundColor3=#848484 BackgroundTransparency=1 BorderColor3=#2D2D2D BorderSizePixel=4 LayoutOrder=1 SizeConstraint=RelativeYY Visible=false ZIndex=2 {
+                        ImageLabel "BG" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants Image="rbxassetid://7338759852" ImageContent="rbxassetid://7338759852" ImageTransparency=1 ResampleMode=Pixelated SizeConstraint=RelativeYY
+                        ImageLabel "Icon" Position=0.5,0,0.5,0 Size=0.75,0,0.75,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7441993029" ImageContent="http://www.roblox.com/asset/?id=7441993029" ImageTransparency=1 ZIndex=2
+                    }
+                    Frame "Stunned" Position=0.011,0,0.064,0 Size=1,0,1,0 BackgroundColor3=#848484 BackgroundTransparency=1 BorderColor3=#2D2D2D BorderSizePixel=4 LayoutOrder=3 SizeConstraint=RelativeYY Visible=false ZIndex=2 {
+                        ImageLabel "BG" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants Image="rbxassetid://7338759852" ImageContent="rbxassetid://7338759852" ImageTransparency=1 ResampleMode=Pixelated SizeConstraint=RelativeYY
+                        ImageLabel "Icon" Position=0.5,0,0.5,0 Size=0.75,0,0.75,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7441992527" ImageContent="http://www.roblox.com/asset/?id=7441992527" ImageTransparency=1 ZIndex=2
+                    }
+                    UIListLayout "UIListLayout" FillDirection=Horizontal Padding=0,-5 SortOrder=LayoutOrder
+                    Frame "Underwater" Position=0.011,0,0.064,0 Size=1,0,1,0 BackgroundColor3=#848484 BackgroundTransparency=1 BorderColor3=#2D2D2D BorderSizePixel=4 LayoutOrder=4 SizeConstraint=RelativeYY Visible=false ZIndex=2 {
+                        ImageLabel "BG" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants Image="rbxassetid://7338759852" ImageContent="rbxassetid://7338759852" ImageTransparency=1 ResampleMode=Pixelated SizeConstraint=RelativeYY
+                        ImageLabel "Icon" Position=0.5,0,0.5,0 Size=0.75,0,0.75,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7441993835" ImageContent="http://www.roblox.com/asset/?id=7441993835" ImageTransparency=1 ZIndex=2
+                    }
+                }
+            }
+            Frame "StaminaFrame" Position=0.281,0,0.725,0 Size=0.738,0,0.351,0 AnchorPoint=0,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#5A5A5A BorderMode=Inset BorderSizePixel=2 ZIndex=5 {
+                Frame "-" Position=-0.009,0,0.5,0 Size=1.025,0,1.25,0 AnchorPoint=0,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ZIndex=2 {
+                    ImageLabel "-" Position=-0.022,0,-0.227,0 Size=1.045,0,1.45,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://7361502954" ImageContent="rbxassetid://7361502954"
+                }
+                Frame "Bar" Position=0,0,0.5,0 Size=1,0,0.8,0 AnchorPoint=0,0.5 BackgroundColor3=#93B5FF BorderColor3=#000000 BorderSizePixel=0 ZIndex=3 {
+                    ImageLabel "ImageLabel" Position=0.5,0,0.5,0 Size=1.04,0,1.3,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7361502954" ImageColor3=#93B5FF ImageContent="http://www.roblox.com/asset/?id=7361502954" Visible=false ZIndex=5
+                    Frame "Red" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.9 BorderSizePixel=0 Visible=false ZIndex=4
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#DCDCDC,0.5:#FFFFFF,1:#DCDCDC Rotation=90
+                }
+                Frame "Bar2" Position=0,0,0.5,0 Size=1,0,0.8,0 AnchorPoint=0,0.5 BackgroundColor3=#93B5FF BackgroundTransparency=0.6 BorderSizePixel=0 ZIndex=2 {
+                    Frame "Red" Size=1,0,1,0 BackgroundColor3=#FF5D5D BackgroundTransparency=0.25 BorderSizePixel=0 Visible=false ZIndex=3
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#DCDCDC,0.5:#FFFFFF,1:#DCDCDC Rotation=90
+                }
+                ImageLabel "ImageLabel" Position=0.5,0,0.5,0 Size=1.06,0,1.5,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=7361502954" ImageContent="http://www.roblox.com/asset/?id=7361502954" ResampleMode=Pixelated ScaleType=Fit Visible=false
+                Frame "Min" Size=0.101,0,1,0 BackgroundColor3=#FF0000 BackgroundTransparency=0.5 BorderSizePixel=0 Visible=false ZIndex=5 {
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                }
+                TextLabel "StaminaNum" Position=0.5,0,0.5,0 Size=1,0,1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="100%" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.8 TextTransparency=0.2 TextTruncate=AtEnd TextWrapped ZIndex=7
+                UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=7.423
+                UICorner "UICorner"
+            }
+            UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=3.526
+        }
+        LocalScript "StatsMain" @src="Scripts/StarterGui/CoreGUI/StatsMain.luau"
+    }
+    Model "StarterGui"
+    Folder "ragdoll" {
+        Script "RagdollScriptMover" @code=<<<
+            -- This Script moves the ragdoll Folder to StarterGui
+
+            script.Parent:FindFirstChild("ragdoll").Parent = game.StarterGui
+            wait()
+            script.Parent:Destroy()
+        >>>
+        Folder "events" {
+            BindableEvent "resetclient"
+            RemoteEvent "variableserver"
+        }
+        Folder "functions" {
+            BindableFunction "ragdoll"
+            RemoteFunction "remoteragdoll"
+            RemoteFunction "remoteragdollvelocity"
+        }
+        LocalScript "ragdollclient" @src="Scripts/StarterGui/ragdoll/ragdollclient.luau"
+        Script "ragdollserver" @src="Scripts/StarterGui/ragdoll/ragdollserver.luau"
+        Folder "variables" {
+            BoolValue "ragdoll"
+            BoolValue "ragdollonclient"
+        }
+    }
+}

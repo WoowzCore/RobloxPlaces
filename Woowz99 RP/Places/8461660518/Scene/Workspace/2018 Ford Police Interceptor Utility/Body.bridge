@@ -1,0 +1,741 @@
+Model "Brakes" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.316,0.516,0.226 Anchored CFrame=-73.81,7.525,85.523|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#BE6862 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SurfaceLight "Light" Angle=180 Brightness=1.5 Color=#AA0000 Enabled=false Range=10
+        }
+        MeshPart "MeshPart" Size=0.776,0.108,0.142 Anchored CFrame=-71.11,9.706,85.886|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#BE6862 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SurfaceLight "Light" Angle=180 Brightness=1.5 Color=#AA0000 Enabled=false Range=10
+        }
+        MeshPart "MeshPart" Size=0.316,0.516,0.226 Anchored CFrame=-68.513,7.525,85.06|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#BE6862 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SurfaceLight "Light" Angle=180 Brightness=1.5 Color=#AA0000 Enabled=false Range=10
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Brakes/_main.luau"
+    BoolValue "on"
+}
+Part "D1" Size=0.199,0.199,0.199 Anchored CFrame=-66.568,6.782,97.243|90,0,-5 CanCollide=false Color=#750000 Transparency=1
+Part "D2" Size=0.199,0.199,0.199 Anchored CFrame=-66.892,6.933,93.09|90,0,-5 CanCollide=false Color=#750000 Transparency=1
+Part "D3" Size=0.199,0.199,0.199 Anchored CFrame=-73.618,6.782,97.86|90,0,-5 CanCollide=false Color=#750000 Transparency=1
+Part "D4" Size=0.199,0.199,0.199 Anchored CFrame=-74.006,6.933,93.713|90,0,-5 CanCollide=false Color=#750000 Transparency=1
+Part "HD" Size=0.199,0.199,0.199 Anchored CFrame=-66.776,7.782,98.173|0,-85,0 CanCollide=false Color=#750000 Transparency=1
+Model "Headlight" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.404,0.336,0.557 Anchored CFrame=-72.506,7.077,101.981|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=45 Enabled=false Face=Back Range=30 Shadows
+        }
+        MeshPart "MeshPart" Size=0.404,0.336,0.557 Anchored CFrame=-66.94,7.077,101.494|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=45 Enabled=false Face=Back Range=30 Shadows
+        }
+        MeshPart "MeshPart" Size=0.706,0.956,1.087 Anchored CFrame=-68.302,7.571,85.433|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#BE6862 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SurfaceLight "Light" Angle=180 Color=#AA0000 Enabled=false Face=Back Range=10
+        }
+        MeshPart "MeshPart" Size=0.706,0.956,1.087 Anchored CFrame=-73.954,7.571,85.928|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#BE6862 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SurfaceLight "Light" Angle=180 Color=#AA0000 Enabled=false Face=Back Range=10
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Headlight/_main.luau"
+    BoolValue "on"
+}
+Model "Highlight" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.609,0.339,0.674 Anchored CFrame=-67.407,7.05,101.953|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=70 Enabled=false Face=Back Range=60 Shadows
+        }
+        MeshPart "MeshPart" Size=0.609,0.339,0.674 Anchored CFrame=-71.966,7.05,102.352|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=70 Enabled=false Face=Back Range=60 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Highlight/_main.luau"
+    BoolValue "on"
+}
+Model "Left" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.39,0.168,0.275 Anchored CFrame=-67.479,6.807,102.11|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FFB000 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=60 Brightness=5 Color=#FFFF00 Enabled=false Face=Back Range=10 Shadows
+        }
+        MeshPart "MeshPart" Size=0.189,0.659,0.298 Anchored CFrame=-68.29,7.587,85.221|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FFB000 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=60 Brightness=5 Color=#FFFF00 Enabled=false Range=10 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Left/_main.luau"
+    BoolValue "on"
+}
+Model "Lightbar" {
+    Model "G1"
+    Model "G2"
+    Model "G3" {
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-71.994,10.291,92.975|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-70.851,10.291,92.734|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-72.169,10.32,91.478|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Face=Back Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+            Weld "Weld" C0=2.836,-0.392,-0.733|-180,0,-180 C1=-4.368,-0.602,-0.012|-2,0,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Model/Whelen Liberty/MeshPart~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Lightbar/G3/Red~3"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-72.774,10.291,92.902|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-71.419,10.291,92.784|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-70.857,10.3,91.424|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-71.591,10.32,91.428|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Face=Back Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+            Weld "Weld" C0=2.836,-0.392,-0.733|-180,0,-180 C1=-3.788,-0.602,-0.012|-2,0,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Model/Whelen Liberty/MeshPart~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Lightbar/G3/Red~7"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-72.916,10.369,91.561|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Face=Back Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-72.932,10.32,91.706|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Face=Back Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+    }
+    Model "G4" {
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-70.209,10.308,92.808|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-68.934,10.308,92.696|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-69.069,10.33,91.247|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-68.302,10.33,91.3|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-69.552,10.308,92.75|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-68.247,10.308,92.405|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-68.409,10.311,91.306|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#0055FF Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#0000FF,1:#0000FF Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-69.697,10.33,91.301|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+        Part "Red" Size=0.181,0.056,0.102 Anchored BottomSurface=Smooth CFrame=-70.325,10.33,91.356|-180,-5,-180 CanCollide=false CastShadow=false Color=#C4281C Material=Neon TopSurface=Smooth Transparency=1 {
+            SpotLight "Light" Color=#FF0000 Enabled=false Range=40 Shadows
+            ParticleEmitter "Lighto" Size=0:0.5,1:0.5 Color=0:#550000,1:#550000 Lifetime=0.07,0.07 LightEmission=200 LockedToPart Rate=300 Speed=0,0 Texture="rbxassetid://133355041" TextureContent="rbxassetid://133355041"
+        }
+    }
+    RemoteEvent "RemoteEvent"
+    Script "Strobes" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Lightbar/Strobes.luau"
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Lightbar/_main.luau"
+    Part "middle" Size=0.724,0.181,2.855 Anchored BottomSurface=Smooth CFrame=-59.588,5.442,101.991|0,-85,180 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth Transparency=2 {
+        Sound "Airhorn" AudioContent="rbxassetid://272989554" Looped SoundId="rbxassetid://272989554" Volume=1
+        Sound "Beep" AudioContent="rbxassetid://704908499" SoundId="rbxassetid://704908499" Volume=1
+        BlockMesh "Part" Scale=1.2,0.2,1.03
+        Sound "Priority" AudioContent="rbxassetid://515517854" Looped SoundId="rbxassetid://515517854" Volume=1
+        Sound "Wail" AudioContent="rbxassetid://515517738" Looped SoundId="rbxassetid://515517738" Volume=1
+        Sound "Yelp" AudioContent="rbxassetid://515517789" Looped SoundId="rbxassetid://515517789" Volume=1
+    }
+    BoolValue "on"
+}
+Model "Model" {
+    Model "Color" {
+        Model "Front Plate" {
+            MeshPart "Color" Size=1.1,0.55,0.052 Anchored CFrame=-69.597,5.78,103.285|-5.019,4.981,0.437 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909329838" TextureID="http://www.roblox.com/asset/?id=3909329838"
+            MeshPart "MeshPart" Size=1.1,0.552,0.08 Anchored CFrame=-69.6,5.781,103.247|0,5,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        }
+        MeshPart "MeshPart" Size=7.665,5.59,19.097 Anchored CFrame=-70.424,7.347,93.727|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4468531549" TextureID="http://www.roblox.com/asset/?id=4468531549"
+    }
+    Model "Doors and Stuff"
+    MeshPart "Glass" Size=6.52,0.21,1.334 Anchored CFrame=-69.698,6.827,102.02|0,5,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.8 RenderFidelity=Precise Transparency=0.85
+    MeshPart "Glass" Size=6.455,1.934,13.284 Anchored CFrame=-70.529,8.701,92.53|0,5,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise Transparency=0.75
+    MeshPart "Glass" Size=6.757,0.802,1.993 Anchored CFrame=-69.718,7.055,101.792|0,5,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.8 RenderFidelity=Precise Transparency=0.75
+    MeshPart "MeshPart" Size=1.166,0.306,0.214 Anchored CFrame=-68.724,7.672,96.993|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#9FA1AC Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910357458" TextureID="http://www.roblox.com/asset/?id=3910357458" Transparency=0.011
+    MeshPart "MeshPart" Size=0.343,0.152,0.107 Anchored CFrame=-68.726,7.699,97.032|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#9FA1AC Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.372,0.21,0.163 Anchored CFrame=-70.161,7.581,96.735|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#9FA1AC Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=0.85,1.11,1.615 Anchored CFrame=-68.234,7.568,85.561|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FF0000 Material=Glass Reflectance=0.3 RenderFidelity=Precise Transparency=0.6
+    MeshPart "MeshPart" Size=6.344,1.985,12.613 Anchored CFrame=-70.583,8.915,91.905|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910224872" TextureID="http://www.roblox.com/asset/?id=3910224872"
+    MeshPart "MeshPart" Size=4.73,3.585,12.167 Anchored CFrame=-70.693,8.076,90.654|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3830153658" TextureID="http://www.roblox.com/asset/?id=3830153658"
+    MeshPart "MeshPart" Size=0.531,0.78,0.361 Anchored CFrame=-68.446,7.545,84.962|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#E7E7EC Material=Glass Reflectance=0.3 RenderFidelity=Precise Transparency=0.6
+    MeshPart "MeshPart" Size=5.311,3.574,2.931 Anchored CFrame=-70.372,7.384,94.21|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910224872" TextureID="http://www.roblox.com/asset/?id=3910224872"
+    MeshPart "MeshPart" Size=5.092,2.814,0.959 Anchored CFrame=-70.174,7.77,96.582|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Glass Reflectance=0.4 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=5.541,4.962,11.905 Anchored CFrame=-70.532,7.389,92.494|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910224872" TextureID="http://www.roblox.com/asset/?id=3910224872"
+    MeshPart "MeshPart" Size=2.666,1.609,1.114 Anchored CFrame=-69.51,7.034,96.612|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=6.56,0.357,0.751 Anchored CFrame=-69.746,7.103,101.48|0,5,0 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909217568" TextureID="http://www.roblox.com/asset/?id=3909217568"
+    MeshPart "MeshPart" Size=7.629,5.669,19.105 Anchored CFrame=-70.429,7.218,93.654|0,5,0 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.01 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.031,1.662,0.541 Anchored CFrame=-70.126,7.145,96.462|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910224872" TextureID="http://www.roblox.com/asset/?id=3910224872" Transparency=0.11
+    MeshPart "MeshPart" Size=6.766,3.756,12.576 Anchored CFrame=-70.154,8.222,96.808|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3830153658" TextureID="http://www.roblox.com/asset/?id=3830153658"
+    MeshPart "MeshPart" Size=6.548,0.722,1.385 Anchored CFrame=-69.738,7.047,101.566|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Glass Reflectance=0.4 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=4.795,0.168,0.275 Anchored CFrame=-69.675,6.807,102.292|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909172490" TextureID="http://www.roblox.com/asset/?id=3909172490"
+    MeshPart "MeshPart" Size=0.775,0.256,0.071 Anchored CFrame=-69.589,6.893,102.947|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909259034" TextureID="http://www.roblox.com/asset/?id=3909259034"
+    MeshPart "MeshPart" Size=6.139,0.956,0.531 Anchored CFrame=-71.151,7.571,85.416|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909259034" TextureID="http://www.roblox.com/asset/?id=3909259034"
+    MeshPart "MeshPart" Size=6.534,0.704,0.839 Anchored CFrame=-69.704,5.897,101.951|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909575800" TextureID="http://www.roblox.com/asset/?id=3909575800"
+    MeshPart "MeshPart" Size=0.85,1.11,1.615 Anchored CFrame=-73.999,7.568,86.065|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FF0000 Material=Glass Reflectance=0.3 RenderFidelity=Precise Transparency=0.6
+    MeshPart "MeshPart" Size=0.531,0.78,0.361 Anchored CFrame=-73.894,7.545,85.439|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#E7E7EC Material=Glass Reflectance=0.3 RenderFidelity=Precise Transparency=0.6
+    MeshPart "MeshPart" Size=6.784,3.007,18.596 Anchored CFrame=-70.43,5.769,93.657|0,5,0 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909200326" TextureID="http://www.roblox.com/asset/?id=3909200326"
+    MeshPart "MeshPart" Size=5.437,3.585,12.111 Anchored CFrame=-70.687,8.076,90.718|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910194462" TextureID="http://www.roblox.com/asset/?id=3910194462"
+    MeshPart "MeshPart" Size=5.99,0.364,1.033 Anchored CFrame=-69.703,7.063,101.964|0,5,0 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909172490" TextureID="http://www.roblox.com/asset/?id=3909172490"
+    MeshPart "MeshPart" Size=6.416,4.772,14.347 Anchored CFrame=-70.602,7.274,91.768|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910224872" TextureID="http://www.roblox.com/asset/?id=3910224872"
+    MeshPart "MeshPart" Size=6.613,1.339,17.343 Anchored CFrame=-70.429,7.457,93.668|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Glass Reflectance=0.4 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=6.514,2.654,2.132 Anchored CFrame=-71.159,6.739,85.32|0,5,0 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=Sand Reflectance=0.05 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3909220693" TextureID="http://www.roblox.com/asset/?id=3909220693"
+    Model "Model" {
+        MeshPart "Fog1" Size=0.714,0.704,0.839 Anchored CFrame=-72.606,5.897,102.205|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Neon Reflectance=0.4 RenderFidelity=Precise Transparency=1
+        MeshPart "Fog2" Size=0.714,0.704,0.839 Anchored CFrame=-66.803,5.897,101.697|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Neon Reflectance=0.4 RenderFidelity=Precise Transparency=1
+        MeshPart "Optional Cover" Size=6.534,0.704,0.839 Anchored CFrame=-69.703,5.897,101.966|0,5,0 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Wood RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3910052203" TextureID="http://www.roblox.com/asset/?id=3910052203" Transparency=1
+    }
+}
+Model "Model" {
+    Model "AED" {
+        UnionOperation "AED" Size=1.262,0.371,1.385 Anchored CFrame=-72.829,6.594,86.923|-89.994,0.018,96.647 CanCollide=false Color=#C7D23C Material=Metal RenderFidelity=Precise $_geo="d20bac01aba3ff48"
+    }
+    Model "Black Bag" {
+        UnionOperation "Black Bag" Size=2.043,1.199,1.106 Anchored CFrame=-72.417,8.945,88.206|0.013,6.647,-0.017 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="eeb0706dacff41e8"
+    }
+    Model "Blue Bag" {
+        UnionOperation "Blue Bag" Size=2.043,1.199,1.106 Anchored CFrame=-72.546,8.945,87.104|0.013,6.647,-0.017 CanCollide=false Color=#002060 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="eeb0706dacff41e8"
+    }
+    Model "File Box" {
+        MeshPart "File Box" Size=1.8,0.969,1.108 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.47,6.458,85.673|-89.992,0.005,6.647 CanCollide=false CollisionFidelity=Default Color=#C7AC78 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://473394967" TextureID="rbxassetid://473394967" TopSurface=SmoothNoOutlines {
+            Weld "Weld" C0=3.109,-0.518,0.305|90,0,0 C1=3.446,-0.177,0.595|179.992,0.004,1.647 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~19" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/File Box/File Box"
+            Weld "Weld" C0=2.482,-1.388,0.749|90,0,0 C1=2.819,-0.471,0.594|179.992,0.004,1.647 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/TK/Hi/MeshPart" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/File Box/File Box"
+        }
+    }
+    Model "Fire Extinguisher Rear" {
+        MeshPart "Fire Extinguisher Rear" Size=0.7,0.9,2.1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-69.472,6.965,85.137|-89.992,0.005,-173.353 CanCollide=false CollisionFidelity=Default Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://845721307" TextureID="rbxassetid://845721307" TopSurface=SmoothNoOutlines
+    }
+    Model "Medkit" {
+        MeshPart "Medkit" Size=1.688,0.866,1.29 Anchored CFrame=-69.486,8.773,87.577|-179.998,83.353,-179.994 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://504966509" TextureID="rbxassetid://504966509" {
+            Weld "Weld" C0=-2.421,-1.846,1.178 C1=1,-2.468,-3.865|-179.705,-88.353,-179.705 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/TK/Hi/MeshPart~3" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Medkit/Medkit"
+        }
+    }
+    Model "Rear Rifle" {
+        UnionOperation "ACOG" Size=0.49,0.304,0.219 Anchored CFrame=-72.499,7.856,86.344|0.01,6.647,89.999 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="3daaa26480babcf2"
+        Part "ACOG2" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.543,7.524,86.355|-89.992,0.005,96.647 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.132,0.132,0.216
+        }
+        Part "ACOG3" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.543,7.772,86.355|-89.992,0.005,96.647 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.138,0.138,3.128
+        }
+        Part "ACOG4" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.623,7.864,86.387|-9.785,6.551,91.124 CanCollide=false Color=#C4281C Material=SmoothPlastic TopSurface=Smooth {
+            BlockMesh "Mesh" Offset=0.025,0,0 Scale=1.202,0.075,0.112
+        }
+        Part "ACOG5" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.543,7.99,86.355|-89.992,0.005,96.647 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.162,0.162,0.431
+        }
+        Part "ACOG6" Size=0.173,0.482,0.173 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-72.542,7.781,86.355|-179.99,-6.647,0.005 CanCollide=false Color=#E5E4DF FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            CylinderMesh "Mesh" Scale=0.811,1,7.5
+        }
+        Part "ACOG7" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.543,7.74,86.355|-89.992,0.005,96.647 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.151,0.151,0.324
+        }
+        Part "ACOG8" Size=0.173,0.173,0.173 Anchored BottomSurface=Smooth CFrame=-72.541,8.017,86.355|-91.129,9.669,96.743 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=3270017" MeshId="http://www.roblox.com/asset/?id=3270017" MeshType=FileMesh Scale=0.166,0.166,0.345
+        }
+        UnionOperation "ACOG_MILS" Size=0.055,0.151,0.151 Anchored CFrame=-72.541,7.781,86.355|0.01,6.647,89.999 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise $_geo="bbf1766857e81b28" {
+            Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=0.104,-4.33,12.176|88.353,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/ACOG_MILS"
+            Weld "Weld" C0=0.873,-1.209,-0.381|-180,0,-180 C1=-1.945,1.594,-0.181|0,0,-90.004 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~4" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/ACOG_MILS"
+        }
+        Part "Part" Size=0.173,0.173,0.173 Anchored CFrame=-71.992,6.693,86.281|0.01,6.647,89.999 CanCollide=false Color=#1B2A35 Material=SmoothPlastic {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.85,0.55,0.55
+        }
+        UnionOperation "Union" Size=0.285,0.207,0.133 Anchored CFrame=-72.23,7.944,86.338|0.009,-13.353,89.999 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="eeb519ac74e8d010"
+        UnionOperation "Union" Size=0.245,0.518,1.293 Anchored CFrame=-72.079,7.431,86.315|90.008,-0.005,83.353 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="24456d704bd15cc1"
+        UnionOperation "Union" Size=1.225,0.242,0.242 Anchored CFrame=-72.21,8.778,86.315|0.01,6.647,89.999 CanCollide=false Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise $_geo="9fd9adc532e28e9d" {
+            Weld "Weld" C0=-3.297,1.367,1.106|-90,0,-180 C1=-0.672,2.169,0.144|88.353,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~28" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~3"
+            Weld "Weld" C0=1.061,-0.64,-0.593|-180,0,-180 C1=-0.473,-0.636,0.152|180,0.003,-89.985 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Blue Bag/Blue Bag" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~3"
+            Weld "Weld" C0=-2.482,-1.388,0.749 C1=-1.726,1.334,-0.223|-1.647,0.01,-90 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/TK/Hi/MeshPart" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~3"
+        }
+        UnionOperation "Union" Size=0.759,0.692,0.194 Anchored CFrame=-71.962,6.56,86.27|0.01,11.646,89.999 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="f7c795763aa24e53"
+        UnionOperation "Union" Size=1.13,0.328,0.112 Anchored CFrame=-72.218,8.791,86.316|0.01,6.647,89.999 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="735639fcc78c546e" {
+            Weld "Weld" C0=-3.347,0.71,8.712|-90,0,-180 C1=-0.622,2.669,16.122|88.353,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~27" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~5"
+        }
+        UnionOperation "Union" Size=0.097,0.097,1.629 Anchored CFrame=-72.206,9.153,86.314|-89.992,0.005,96.647 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="048d9bb028783eee"
+        UnionOperation "Union" Size=1.13,0.311,0.112 Anchored CFrame=-72.21,8.791,86.315|-179.998,83.353,90.007 CanCollide=false Color=#7F8E64 Material=SmoothPlastic RenderFidelity=Precise $_geo="641fd0b37f4b31d4" {
+            Weld "Weld" C0=-3.347,0.71,8.712|-90,0,-180 C1=0.622,-16.122,-2.678|-178.353,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~27" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~7"
+            Weld "Weld" C0=-2.482,-1.388,0.749 C1=1.739,0.223,-1.334|91.647,-0.01,90 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/TK/Hi/MeshPart" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle/Union~7"
+        }
+        UnionOperation "Union" Size=0.337,0.616,0.147 Anchored CFrame=-71.709,7.39,86.257|0.009,6.646,54.996 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="14657b1a11c7fef2"
+        UnionOperation "Union" Size=0.882,0.594,0.297 Anchored CFrame=-72.077,7.724,86.363|0.01,6.647,89.999 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="3ea56c1af7e0b594"
+    }
+    Model "Rear Rifle Rack" {
+        UnionOperation "Union" Size=0.138,0.587,0.285 Anchored CFrame=-73.588,8.352,86.016|-179.99,-6.647,-179.995 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise $_geo="d436b88127eea354"
+        UnionOperation "Union" Size=0.579,0.055,0.57 Anchored CFrame=-73.276,8.563,85.984|-179.99,-6.647,-179.995 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="1e58d0703eaecf6d" {
+            ManualWeld "Union-to-Union Strong Joint" C0=-0.289,0.025,0.285|-90,0,-180 C1=0.018,0.207,-0.276|-90,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~5"
+        }
+        UnionOperation "Union" Size=0.984,0.145,0.319 Anchored CFrame=-73.304,6.137,86|-179.99,-6.647,-179.995 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise $_geo="fd51408be2ef76c7" {
+            Weld "Weld" C0=2.405,-1.833,6.123|90,0,0 C1=-4.283,0.108,-11.115|90.01,-0.004,-178.353 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~3"
+            Weld "Weld" C0=2.758,-1.832,6.095|90,0,0 C1=-4.635,0.108,-11.162|90.01,-0.004,-178.353 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~3"
+        }
+        UnionOperation "Union" Size=1.665,2.339,0.682 Anchored CFrame=-73.322,7.045,85.88|-179.99,-6.647,-179.995 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="25f74f7f74fa785d"
+        UnionOperation "Union" Size=0.055,0.524,0.57 Anchored CFrame=-73.195,8.607,85.966|0.01,6.647,-90.001 CanCollide=false Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="3742c0e8fd298dd3"
+        UnionOperation "Union" Size=0.155,0.055,0.055 Anchored CFrame=-73.37,8.603,85.765|-179.99,-6.647,-89.999 CanCollide=false Color=#9FA1AC Material=SmoothPlastic RenderFidelity=Precise $_geo="0b23656ebbcf5f9d"
+        UnionOperation "Union" Size=0.069,0.165,0.069 Anchored CFrame=-73.655,8.119,86.114|-179.99,-6.647,-89.999 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="c033a50e7cfd2bff" {
+            Weld "Weld" C0=-2.405,-1.833,-6.123|0,-90,0 C1=-1.876,0.189,1.337|88.353,0,-89.99 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~7"
+        }
+        UnionOperation "Union" Size=0.069,0.165,0.069 Anchored CFrame=-73.674,8.119,85.951|-179.99,-6.647,-89.999 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="c033a50e7cfd2bff" {
+            Weld "Weld" C0=-2.405,-1.833,-6.123|0,-90,0 C1=-1.876,0.189,1.173|88.353,0,-89.99 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~8"
+            Weld "Weld" C0=3.267,-1.007,-6.682|-180,0,-180 C1=-0.425,5.821,-0.314|-1.647,-0.01,-90 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~8"
+        }
+        UnionOperation "Union" Size=0.069,0.165,0.069 Anchored CFrame=-73.145,6.109,86.089|-179.998,83.353,-89.993 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="c033a50e7cfd2bff" {
+            Weld "Weld" C0=2.405,-1.833,6.123|90,0,0 C1=0.136,11.009,4.136|-1.647,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~9"
+            Weld "Weld" C0=2.758,-1.832,6.095|90,0,0 C1=0.136,11.055,4.488|-1.647,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~9"
+        }
+        UnionOperation "Union" Size=0.579,0.055,0.57 Anchored CFrame=-73.276,8.655,85.984|-179.99,-6.647,-179.995 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="1e58d0703eaecf6d" {
+            ManualWeld "Union-to-Union Strong Joint" C0=0.289,-0.025,0.285|90,0,0 C1=-0.023,-0.372,-0.276|-90,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~10" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~5"
+        }
+        UnionOperation "Union" Size=0.069,0.165,0.069 Anchored CFrame=-72.914,6.109,86.062|-179.998,83.353,-89.993 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="c033a50e7cfd2bff" {
+            Weld "Weld" C0=2.758,-1.832,6.095|90,0,0 C1=0.136,11.055,4.255|-1.647,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~11"
+            Weld "Weld" C0=2.405,-1.833,6.123|90,0,0 C1=0.136,11.009,3.903|-1.647,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/Union~11"
+        }
+        MeshPart "round-carpet" Size=0.88,0.129,0.337 Anchored CFrame=-72.958,6.126,85.907|-179.99,-6.647,-179.995 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise {
+            Weld "Weld" C0=2.405,-1.833,6.123|90,0,0 C1=-3.929,0.119,-11.167|90.01,-0.004,-178.353 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/round-carpet"
+            Weld "Weld" C0=2.758,-1.832,6.095|90,0,0 C1=-4.281,0.119,-11.213|90.01,-0.004,-178.353 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Rear Rifle Rack/round-carpet"
+        }
+    }
+    Model "Trunk Organiser" {
+        UnionOperation "Trunk Organiser" Size=4.662,2.506,2.99 Anchored CFrame=-71.192,7.141,87.706|-179.99,-6.647,-179.995 CanCollide=false Color=#2D2D2D Material=SmoothPlastic RenderFidelity=Precise $_geo="d0a262460344cf8d" {
+            Weld "Weld" C0=0.602,-2.242,2.26|0,90,0 C1=2.567,-1.716,-5.786|-179.854,-88.353,-179.864 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/D4/RR/RR" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model~2/Trunk Organiser/Trunk Organiser"
+        }
+    }
+}
+Script "Motors" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Motors.luau"
+Model "Police Package" {
+    Model "Exterior" {
+        Model "ALPR" {
+            MeshPart "ALPR" Size=0.541,0.475,0.264 Anchored CFrame=-72.357,10.1,94.15|91.441,1.117,-52.237 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2707404025" TextureID="rbxassetid://2707404025" {
+                Weld "Weld" C0=-2.811,2.521,5.993|-90,0,-180 C1=-3.884,2.435,0.066|180,1.823,132.777 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~10" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR"
+                Weld "Weld" C0=-2.758,1.832,6.095|-90,0,-180 C1=-2.616,1.332,0.109|180,1.823,132.777 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR"
+                Weld "Weld" C0=-2.405,1.833,6.123|-90,0,-180 C1=-2.35,1.567,0.117|180,1.823,132.777 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR"
+            }
+            MeshPart "ALPR" Size=0.541,0.475,0.264 Anchored CFrame=-68.758,10.12,93.828|91.104,-1.451,-142.72 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2707404025" TextureID="rbxassetid://2707404025" {
+                Weld "Weld" C0=-3.212,1.033,6.347|-90,0,-180 C1=0.719,-6.432,0.195|-180,1.823,42.266 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR~2"
+            }
+            MeshPart "ALPR" Size=0.541,0.475,0.264 Anchored CFrame=-72.494,10.1,92.586|88.896,1.451,37.28 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2707404025" TextureID="rbxassetid://2707404025" {
+                Weld "Weld" C0=-2.758,1.832,6.095|-90,0,-180 C1=2.358,3.785,0.268|-180,1.823,-137.734 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR~3"
+                Weld "Weld" C0=-2.405,1.833,6.123|-90,0,-180 C1=2.594,3.521,0.274|-180,1.823,-137.734 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR~3"
+                Weld "Weld" C0=-2.811,2.521,5.993|-90,0,-180 C1=3.448,5.063,0.299|-180,1.823,-137.734 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~10" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR~3"
+            }
+            MeshPart "ALPR" Size=0.541,0.475,0.264 Anchored CFrame=-68.895,10.12,92.264|88.559,-1.117,127.763 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2707404025" TextureID="rbxassetid://2707404025" {
+                Weld "Weld" C0=-3.212,1.033,6.347|-90,0,-180 C1=7.581,-0.399,0.414|180,1.823,-47.223 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/ALPR/ALPR~4"
+            }
+        }
+        Model "Antennas" {
+            MeshPart "MeshPart" Size=0.105,1.775,0.105 Anchored CFrame=-71.178,10.882,90.077|-3.004,3.075,0.161 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884535322" TextureID="http://www.roblox.com/asset/?id=3884535322" {
+                Weld "Weld" C0=-3.212,1.033,6.347|-90,0,-180 C1=-2.502,-1.367,8.248|-87,0,-178.08 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Antennas/MeshPart"
+            }
+            MeshPart "MeshPart" Size=0.075,0.083,0.232 Anchored CFrame=-72.117,9.776,90.391|0,-84.879,-0.003 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://599954540" TextureID="rbxassetid://599954540" Transparency=1 {
+                Tool "By Velocity2346 / Dawg#1215"
+            }
+            MeshPart "MeshPart" Size=0.105,1.775,0.105 Anchored CFrame=-70.623,10.882,90.047|-3.004,3.075,0.161 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884535322" TextureID="http://www.roblox.com/asset/?id=3884535322" {
+                Weld "Weld" C0=-3.212,1.033,6.347|-90,0,-180 C1=-3.058,-1.367,8.248|-87,0,-178.08 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Antennas/MeshPart~3"
+            }
+            MeshPart "MeshPart" Size=0.169,2.851,0.169 Anchored CFrame=-70.922,11.432,90.29|-3.004,3.075,0.161 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884535322" TextureID="http://www.roblox.com/asset/?id=3884535322"
+        }
+        Model "Model" {
+            MeshPart "Ion" Size=0.522,0.154,0.05 Anchored CFrame=-71.076,6.121,103.824|179.953,85,-89.965 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1630456352" TextureID="rbxassetid://1630456352"
+            MeshPart "Ion" Size=0.522,0.154,0.168 Anchored CFrame=-70.611,6.991,103.402|-180,-5.004,-0.012 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1630456352" TextureID="rbxassetid://1630456352"
+            MeshPart "Ion" Size=0.522,0.154,0.05 Anchored CFrame=-68.227,6.121,103.575|0.047,-85,90.035 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1630456352" TextureID="rbxassetid://1630456352"
+            MeshPart "Ion" Size=0.522,0.154,0.168 Anchored CFrame=-68.639,6.991,103.23|-180,-5.004,-0.012 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1630456352" TextureID="rbxassetid://1630456352"
+            MeshPart "MeshPart" Size=2.917,2.663,1.612 Anchored CFrame=-69.657,6.143,103.54|0,5,0 CollisionFidelity=Hull Color=#9FA1AC Material=Sand RenderFidelity=Precise TextureContent="rbxassetid://3212989355" TextureID="rbxassetid://3212989355"
+            Model "Whelen Liberty" {
+                MeshPart "MeshPart" Size=5.697,0.314,1.466 Anchored CFrame=-70.578,10.275,92.089|2.008,4.997,-0.175 CanCollide=false CollisionFidelity=Default Color=#9FA1AC Material=Glass Reflectance=0.505 RenderFidelity=Precise Transparency=0.7
+                MeshPart "MeshPart" Size=5.592,0.704,1.386 Anchored CFrame=-70.577,10.083,92.1|2.008,4.997,-0.175 CanCollide=false CollisionFidelity=Default Color=#323232 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://3242824759" TextureID="rbxassetid://3242824759"
+                MeshPart "MeshPart" Size=5.448,0.573,1.491 Anchored CFrame=-70.579,10.153,92.086|2.008,4.997,-0.175 CanCollide=false CollisionFidelity=Default Color=#323232 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://3242824759" TextureID="rbxassetid://3242824759"
+            }
+        }
+        Part "Part" Size=0.528,0.355,0.05 Anchored CFrame=-71.009,9.053,88.166|-134.515,-3.516,-176.443 CanCollide=false CustomPhysicalProperties=0.1,0.3,0.5,1,1 Transparency=1 {
+            Decal "Decal" Face=Back Texture="rbxassetid://3301423" TextureContent="rbxassetid://3301423"
+            BlockMesh "Mesh" Scale=1,1,0.865
+        }
+        Model "Spotlight" {
+            Part "Part" Size=0.16,0.519,0.519 Anchored CFrame=-72.775,8.418,98.02|-145.174,-2.561,-99.661 CanCollide=false Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Sphere
+            }
+            Part "Part" Size=0.16,1.133,0.16 Anchored CFrame=-73.098,8.414,97.528|-89.961,-0.013,-10.005 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 {
+                CylinderMesh "Mesh" Scale=1,1,0.8
+            }
+            Part "Part" Size=0.133,0.133,0.133 Anchored BottomSurface=Smooth CFrame=-73.195,8.419,98.045|35.188,2.43,-80.025 CanCollide=false Color=#F8F8F8 Reflectance=1 Shape=Ball TopSurface=Smooth
+            Part "Part" Size=0.16,0.16,0.16 Anchored CFrame=-73.103,8.436,98.051|34.845,2.572,99.657 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 {
+                BillboardGui "Lighto" Active Enabled=false {
+                    ImageLabel "Light" Size=1,0,1,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=134531489" ImageContent="http://www.roblox.com/asset/?id=134531489"
+                    Script "Script" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Spotlight/Part~4/Lighto/Script.luau" Disabled
+                }
+                CylinderMesh "Mesh" Scale=1,1,0.8
+                SpotLight "Point" Angle=0 Brightness=0 Enabled=false Face=Left Range=0
+            }
+            UnionOperation "Part" Size=0.519,0.519,0.287 Anchored CFrame=-72.798,8.527,98.097|125.27,9.653,-92.602 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise $_geo="982430c133987ac4"
+            UnionOperation "Part" Size=0.559,0.559,0.287 Anchored CFrame=-72.799,8.533,98.102|125.27,9.653,-92.602 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="8d116cb72e3e778a"
+        }
+        Model "Spotlight" {
+            Part "Part" Size=0.133,0.133,0.133 Anchored BottomSurface=Smooth CFrame=-67.175,8.415,97.554|-135.15,-3.35,93.844 CanCollide=false Color=#F8F8F8 Reflectance=1 Shape=Ball TopSurface=Smooth
+            Part "Part" Size=0.16,1.133,0.16 Anchored CFrame=-67.37,8.415,97.011|-89.954,-0.022,19.995 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 {
+                CylinderMesh "Mesh" Scale=1,1,0.8
+            }
+            Part "Part" Size=0.16,0.16,0.16 Anchored CFrame=-67.268,8.416,97.564|-134.824,-3.532,-86.469 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 {
+                BillboardGui "Lighto" Active Enabled=false {
+                    ImageLabel "Light" Size=1,0,1,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=134531489" ImageContent="http://www.roblox.com/asset/?id=134531489"
+                    Script "Script" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Spotlight~2/Part~3/Lighto/Script.luau" Disabled
+                }
+                CylinderMesh "Mesh" Scale=1,1,0.8
+                SpotLight "Point" Angle=0 Brightness=0 Enabled=false Face=Left Range=0
+            }
+            Part "Part" Size=0.16,0.519,0.519 Anchored CFrame=-67.591,8.354,97.53|45.196,3.521,86.464 CanCollide=false Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Sphere
+                Weld "Weld" C0=-0.854,-2.585,-2.146|0,-90,0 C1=-5.908,-0.249,-0.476|-89.993,0.009,-44.912 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Misc/D1/FL/MeshPart~7" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Spotlight~2/Part~4"
+            }
+            UnionOperation "Part" Size=0.519,0.519,0.287 Anchored CFrame=-67.582,8.45,97.626|134.972,-3.523,86.47 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise $_geo="982430c133987ac4"
+            UnionOperation "Part" Size=0.559,0.559,0.287 Anchored CFrame=-67.582,8.455,97.631|134.972,-3.523,86.47 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="8d116cb72e3e778a"
+        }
+    }
+    Model "Interior" {
+        MeshPart "CAGE" Size=5.655,4.226,0.214 Anchored CFrame=-70.943,7.884,89.077|0,5,-0.001 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Metal RenderFidelity=Precise
+        MeshPart "CAGE" Size=5.655,4.226,0.214 Anchored CFrame=-70.616,7.884,92.812|0,5,-0.001 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Metal RenderFidelity=Precise {
+            Weld "Weld" C0=2.888,-0.197,0.773|90,0,0 C1=2.99,2.167,0.049|92,0.001,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Model/Whelen Liberty/MeshPart" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/CAGE~2"
+        }
+        Model "Center Console" {
+            MeshPart "1" Size=0.904,2.089,2.662 Anchored CFrame=-70.391,6.604,95.444|0,5,0 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=Sand RenderFidelity=Precise TextureContent="rbxassetid://3219398020" TextureID="rbxassetid://3219398020" {
+                Weld "Weld" C0=3.267,-1.007,6.682|90,0,0 C1=3.384,1.09,3.767|90,0,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/1"
+            }
+            Part "Handle" Size=0.053,0.053,0.053 Anchored BottomSurface=Smooth CFrame=-70.672,6.888,94.763|-180,85,-180 Color=#CDCDCD Material=Sand TopSurface=Smooth {
+                Sound "DrinkSound" AudioContent="http://www.roblox.com/asset/?id=10722059" SoundId="http://www.roblox.com/asset/?id=10722059"
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=15929962" MeshId="http://www.roblox.com/asset/?id=15929962" MeshType=FileMesh Scale=0.949,0.949,0.949 TextureContent="http://www.roblox.com/asset/?id=15929949" TextureId="http://www.roblox.com/asset/?id=15929949"
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,0,0|-90,3.625,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.563,0,-0.422|0,90,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,0,-0.562|-93.623,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0,-0.421|0,-90,0
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,-0.422,0.985|180,86.001,-90
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,0,-0.985|-86.002,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.563,0,-0.422|0,90,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,0,-0.985|-93.625,0,0
+                Weld "Weld" C0=0,0,0|179.999,0,179.999 C1=0,0,0|179.999,0,179.999
+                Weld "Weld" C0=0,0,0|176.238,2.933,91.749 C1=0,0,0|176.238,2.933,91.749
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,-0.14|0,0.047,-90
+                Weld "Weld" C0=0,0,0|0,90,0 C1=0,0,0|0,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.14,0.422|90,0.048,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.14,0.422|90,0.046,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,-0.14|0,0.047,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.394,-0.562|-0.048,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.985,0.422|-90,0.048,-90
+                Weld "Weld" C0=0,0,0|-90,-4.793,-90 C1=0,0,0|-90,-4.793,-90
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=-0.563,0,-0.422|-90,-3.625,90
+                Weld "Weld" C0=0,0,0|180,0,-179.999 C1=0,0,0|180,0,-179.999
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.394,-0.563|-0.046,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,-0.14|0,0.048,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.14,0.422|90,0.046,-90
+                Weld "Weld" C0=0,0,0|179.999,0,179.999 C1=0,0,0|179.999,0,179.999
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.563,0,-0.422|0,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.985,0.422|-90,0.047,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.985|-0.046,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0.394,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.14|-179.954,0,-180
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0,-0.421|0,-90,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,0,0.14|-86.376,0,180
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0.563,0.394,0|-90,-3.999,-90
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,-0.985,0.422|-90,86.002,-90
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,-0.422,0.985|0,86.376,90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.394,-0.563|-0.046,0,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,0.14,0.422|-90,86.376,90
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,-0.394,-0.563|-93.624,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.985|-0.047,0,0
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,-0.422,-0.14|0,86.002,-90
+                Weld "Weld" C0=0,0,0|180,0,180 C1=0,0,0|180,0,180
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,0,0|-90,-3.998,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0.394,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.14|-179.952,0,-180
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,0.14,0.422|90,86.001,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.562|-0.048,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.562|-0.047,0,0
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,-0.394,-0.563|-86.001,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,0.985|180,0.047,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,0.985|180,0.047,-90
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,-0.422,-0.14|-180,86.375,90
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,0,-0.562|-86.001,0,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0,-0.421|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.985,0.422|-90,0.047,-90
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0,0,0.14|-93.999,0,180
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.422,0.985|180,0.048,-90
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0.563,0.394,0|-90,3.624,-90
+                Weld "Weld" C0=0,0,0|179.999,0,179.999 C1=0,0,0|179.999,0,179.999
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.562|-0.046,0,0
+                Weld "Weld" C0=0,0,0|180,0,180 C1=0,0,0|180,0,180
+                Weld "Weld" C0=0,0,0|180,0,179.999 C1=0,0,0|180,0,179.999
+                Weld "Weld" C0=0,0,0|-90,-0.077,-90 C1=0,0,0|-90,-0.077,-90
+                Weld "Weld" C0=0,0,0|180,0,-179.998 C1=0,0,0|180,0,-179.998
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=-0.563,0,-0.422|-90,3.998,90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.14|-179.954,0,-180
+                Weld "Weld" C0=0,0,0|-90,-3.998,-90 C1=0.563,0,-0.421|-90,-3.998,-90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.563,0.394,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0,-0.985,0.422|90,86.375,90
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.985|-0.046,0,0
+                Weld "Weld" C0=0,0,0|-90,3.625,-90 C1=0.563,0,-0.421|-90,3.625,-90
+            }
+            MeshPart "MeshPart" Size=0.205,0.315,0.09 Anchored CFrame=-69.836,6.953,95.971|0,-85,0 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884493681" TextureID="http://www.roblox.com/asset/?id=3884493681" {
+                Attachment "Attachment1" CFrame=0.007,-0.153,0.005|-180,23.525,-142.924
+                Weld "Weld" C0=0.556,-0.871,-0.31|-180,0,-180 C1=0.154,-0.679,-0.224|0,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~14" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart"
+            }
+            MeshPart "MeshPart" Size=1.093,1.54,1.026 Anchored CFrame=-70.361,7.924,96.268|0,15,0 CanCollide=false CollisionFidelity=Default Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3830153658" TextureID="http://www.roblox.com/asset/?id=3830153658"
+            MeshPart "MeshPart" Size=1.099,0.154,0.959 Anchored CFrame=-70.267,7.939,95.533|0,35,0 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3879036523" TextureID="http://www.roblox.com/asset/?id=3879036523"
+            MeshPart "MeshPart" Size=0.618,0.13,0.743 Anchored CFrame=-70.276,7.841,95.569|0,35,0 CanCollide=false CollisionFidelity=Default Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3830153658" TextureID="http://www.roblox.com/asset/?id=3830153658"
+            MeshPart "MeshPart" Size=0.053,0.053,0.053 Anchored CFrame=-69.918,6.876,95.764|0,-85,0 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884493681" TextureID="http://www.roblox.com/asset/?id=3884493681" Transparency=1 {
+                Attachment "Attachment0" CFrame=-0.022,0.021,-0.014|-180,23.525,-142.924
+                Attachment "Attachment1" CFrame=-0.021,0.017,-0.025|176.917,3.078,-135.635
+                RopeConstraint "RopeConstraint" Attachment0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart~5/Attachment0" Attachment1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart/Attachment1" Color="Really black" Length=0.274 Thickness=0.02 Visible
+            }
+            MeshPart "MeshPart" Size=1.238,1.023,1.008 Anchored CFrame=-70.35,8.411,96.326|0,15,0 CanCollide=false CollisionFidelity=Default Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3879030108" TextureID="http://www.roblox.com/asset/?id=3879030108" {
+                Weld "Weld" C0=-1.373,0.844,0.597|-90,0,-180 C1=-0.718,-0.533,0.843|-90,0,170 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~11" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart~6"
+            }
+            MeshPart "MeshPart" Size=0.723,0.248,0.21 Anchored CFrame=-70.339,6.926,96.056|45.109,3.533,-3.54 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884493681" TextureID="http://www.roblox.com/asset/?id=3884493681" {
+                Attachment "Attachment0" CFrame=0.273,-0.054,-0.078|0,85.645,-0.718
+                RopeConstraint "RopeConstraint" Attachment0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart~7/Attachment0" Attachment1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/MeshPart~5/Attachment1" Color="Really black" Length=0.262 Thickness=0.02 Visible
+            }
+            MeshPart "MeshPart" Size=0.689,0.299,0.062 Anchored CFrame=-70.376,6.683,95.743|45.109,3.533,-3.54 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3884535322" TextureID="http://www.roblox.com/asset/?id=3884535322"
+            MeshPart "MeshPart" Size=1.041,0.713,0.824 Anchored CFrame=-70.333,8.458,96.304|0,15,0 CanCollide=false CollisionFidelity=Hull Material=Sand RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=3879016147" TextureID="http://www.roblox.com/asset/?id=3879016147"
+            MeshPart "Meshes/Cencom" Size=0.683,0.156,0.379 Anchored CFrame=-70.404,6.643,95.206|179.992,-4.983,179.999 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1587800556" TextureID="rbxassetid://1587800556" {
+                Weld "Weld" C0=3.347,-0.71,8.712|90,0,0 C1=-3.458,0.103,-7.176|89.992,0,179.983 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~27" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Center Console/Meshes%2FCencom"
+            }
+        }
+        Model "Genesis" {
+            MeshPart "Genesis" Size=0.214,0.294,0.488 Anchored CFrame=-72.223,8.407,97.643|180,-5.379,179.997 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099592180" TextureID="rbxassetid://2099592180"
+            MeshPart "Genesis" Size=0.139,0.19,0.316 Anchored CFrame=-73.278,8.609,88.48|0,5.379,0.003 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://2099592180" TextureID="rbxassetid://2099592180"
+        }
+        Model "Long Gun Rack" {
+            Model "AR-15" {
+                UnionOperation "A1" Size=0.13,0.69,0.13 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.529,7.499,93.072|-179.113,87.341,179.119 CanCollide=false Color=#635F62 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="d58de604f55d60ba" {
+                    Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=-5.042,0.382,3.469|90.041,-0.005,87.659 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/A1"
+                }
+                UnionOperation "A2" Size=0.239,0.08,0.255 Anchored CFrame=-70.542,7.069,92.978|75.369,-79.626,165.133 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="7d4ba89e45ed3674"
+                UnionOperation "Barrel" Size=1.86,0.11,0.11 Anchored CFrame=-70.53,8.777,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="4eaec26bf53190fb"
+                UnionOperation "BoltRelease" Size=0.05,0.095,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.436,7.442,93.135|-89.994,-0.034,2.649 CanCollide=false Color=#635F62 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="171190dd494d6e27"
+                UnionOperation "Brass Deflector" Size=0.104,0.09,0.09 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.63,7.365,93.037|179.184,-87.648,-90.822 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="d914e6424048d57a"
+                UnionOperation "Buffer Tube" Size=0.15,0.2,0.41 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.527,6.702,93.102|90.006,0.034,-2.649 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="f58f785d08997952"
+                UnionOperation "CLSafe" Size=0.05,0.115,0.05 Anchored CFrame=-70.445,7.169,93.259|0.737,-87.352,-179.267 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="e8e512a4c5b9d2b8"
+                UnionOperation "Carry Handle" Size=0.2,0.26,0.853 Anchored CFrame=-70.51,7.41,92.836|90.006,0.034,177.351 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="3317a1d906dc0350" {
+                    Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=-3.44,-5.276,-0.471|0.004,0.034,177.649 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Carry Handle"
+                }
+                UnionOperation "Compensator" Size=0.22,0.13,0.13 Anchored CFrame=-70.531,9.747,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="8f8d9a514e53d3e5"
+                UnionOperation "Delta Ring" Size=0.075,0.29,0.29 Anchored CFrame=-70.53,7.879,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="18ada968bd8a5328"
+                UnionOperation "DustCoverUp" Size=0.335,0.07,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.617,7.584,93.054|179.897,-72.648,-90.113 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="2754c126faa2d120" {
+                    Weld "Weld" C0=-3.432,1.543,9.338|-90,0,-180 C1=-0.27,-10.461,-0.736|-157.648,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~23" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/DustCoverUp"
+                }
+                UnionOperation "Front Sight" Size=0.21,0.432,0.13 Anchored CFrame=-70.537,8.812,92.922|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="602617a107037690"
+                UnionOperation "Grip" Size=0.39,0.515,0.14 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.504,6.992,93.604|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="f3704edb1e6f4b60"
+                UnionOperation "Lower Receiver 1" Size=0.18,0.89,0.527 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.521,7.352,93.251|-179.996,-2.649,179.966 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="b71d9e4c7146f3f0"
+                UnionOperation "Lower Receiver 2" Size=0.38,0.281,0.073 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.584,7.59,93.327|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="588ab61b7463c604" {
+                    Weld "Weld" C0=-3.432,1.543,9.338|-90,0,-180 C1=-0.275,-9.807,2.907|-177.648,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~23" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Lower Receiver 2"
+                    Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=0.291,-4.789,-3.536|-177.648,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Lower Receiver 2"
+                }
+                UnionOperation "Lower Receiver 3" Size=0.06,0.06,0.24 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.523,7.797,93.204|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines $_geo="2c3f5fa73507e9fc"
+                UnionOperation "Mag" Size=0.124,0.745,0.329 Anchored CFrame=-70.502,7.657,93.643|-99.984,-0.493,-177.397 CanCollide=false Color=#635F62 Material=SmoothPlastic RenderFidelity=Precise $_geo="32b3f1ec9f51ca1e"
+                UnionOperation "MagRelease" Size=0.185,0.06,0.19 Anchored CFrame=-70.528,7.497,93.262|-89.994,-0.034,2.649 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="1f47322a54725814" {
+                    Weld "Weld" C0=-3.432,1.543,9.338|-90,0,-180 C1=-2.966,-9.869,-0.182|-0.004,0.034,-177.649 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~23" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/MagRelease"
+                    Weld "Weld" C0=3.267,-1.007,6.682|90,0,0 C1=3.572,-5.81,0.196|179.996,-0.034,-2.351 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/MagRelease"
+                }
+                Part "Part" Size=0.11,0.05,0.1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.536,7.082,92.932|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=1,0.8,1
+                }
+                Part "Part" Size=0.1,0.05,0.06 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.532,7.017,93.002|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=1,0.6,1
+                }
+                Part "Part" Size=0.08,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.471,7.617,93.26|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=1,0.8,0.4
+                }
+                Part "Part" Size=0.05,0.09,0.09 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.601,7.132,92.77|0.004,2.65,0.034 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Cylinder Scale=0.5,1,1
+                }
+                Part "Part" Size=0.12,0.065,0.06 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.533,7.127,92.985|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                Part "Part" Size=0.05,0.1,0.1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.535,7.027,92.932|0.737,-87.352,0.733 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Cylinder Scale=0.8,1,1
+                }
+                Part "Part" Size=0.05,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.53,8.682,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Cylinder Scale=0.6,1,1
+                }
+                Part "Part" Size=0.05,0.05,0.06 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.535,7.162,92.947|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=1,0.2,1
+                }
+                Part "Part" Size=0.12,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.487,7.617,93.008|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=1,0.9,1
+                    Weld "Weld" C0=3.267,-1.007,6.682|90,0,0 C1=0.076,-6.062,-3.519|-177.648,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Part~9"
+                }
+                Part "Part" Size=0.06,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.626,7.58,93.099|0.734,-87.352,90.73 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Cylinder Scale=1,0.6,0.6
+                }
+                Part "Part" Size=0.64,0.065,0.06 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.533,7.507,92.985|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                UnionOperation "Rail Base 1" Size=0.42,0.22,0.22 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.53,8.127,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="795f4bbdaf5d90e6"
+                UnionOperation "Rail Base 2" Size=0.33,0.22,0.22 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.53,8.502,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="b678119d05cab6d8"
+                UnionOperation "Rails 1" Size=0.75,0.1,0.32 Anchored CFrame=-70.53,8.292,93.072|-179.996,-2.649,-90.034 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="3350f4e9c57f4986"
+                UnionOperation "Rails 2" Size=0.75,0.1,0.32 Anchored CFrame=-70.53,8.292,93.072|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="3350f4e9c57f4986"
+                UnionOperation "Rails 3" Size=0.75,0.1,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.536,7.452,92.932|-179.996,-2.649,-90.034 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="11941f934f9cc272"
+                UnionOperation "Rear Sight Housing" Size=0.09,0.1,0.12 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.544,7.137,92.753|-89.994,-0.034,2.649 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="0d94050fb48e0c30"
+                UnionOperation "Selector Stopper" Size=0.125,0.05,0.05 Anchored CFrame=-70.442,7.192,93.231|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="de1f97317e0622ba"
+                UnionOperation "Short" Size=0.068,0.067,0.05 Anchored CFrame=-70.544,7.151,92.749|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="8f8405d8def484ba"
+                UnionOperation "Stock" Size=0.187,0.731,0.803 Anchored CFrame=-70.516,6.297,93.344|90.006,0.034,-2.649 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="254412e2a0d62793" {
+                    Weld "Weld" C0=3.347,-0.71,8.712|90,0,0 C1=3.773,8.894,-0.449|-0.004,-0.034,-2.351 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~27" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Stock"
+                }
+                UnionOperation "Trigger" Size=0.05,0.122,0.083 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.514,7.301,93.392|55.034,1.547,177.849 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="b7ae47990696f3fe"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.44,7.442,93.158|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="880bcd862b9e2fb2" {
+                    Weld "Weld" C0=-3.432,1.543,9.338|-90,0,-180 C1=-0.127,-9.969,3.059|-177.648,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~23" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Union"
+                }
+                UnionOperation "Union" Size=0.41,0.05,0.05 Anchored CFrame=-70.626,7.58,93.099|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="2e615b1530064e33" {
+                    Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=0.301,-5.019,-3.568|-177.648,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Union~2"
+                }
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.491,7.132,92.765|-89.994,-0.034,2.648 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="c546317d6f71bd60"
+                UnionOperation "Union" Size=0.05,0.09,0.09 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.611,7.132,92.771|0.004,2.65,0.034 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="e9f688383070de80"
+                UnionOperation "Union" Size=0.055,0.32,0.08 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-70.451,7.577,93.304|-89.994,-0.034,2.65 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="391f514a8e31f42b" {
+                    Weld "Weld" C0=3.267,-1.007,6.682|90,0,0 C1=3.497,-5.765,0.116|179.996,-0.034,-2.35 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Union~5"
+                }
+                UnionOperation "Upper Receiver 1" Size=0.905,0.185,0.259 Anchored CFrame=-70.578,7.394,93.077|0.734,-87.352,90.73 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise $_geo="ed202fee4aca6c55" {
+                    Weld "Weld" C0=3.212,-1.033,6.347|90,0,0 C1=0.487,-5.039,-3.519|-177.648,-90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~5" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/AR-15/Upper Receiver 1"
+                }
+            }
+            MeshPart "MeshPart" Size=3.523,0.52,0.28 Anchored CFrame=-70.945,7.536,93.05|0.344,-87.322,-89.655 CanCollide=false CollisionFidelity=Default Color=#1B2A35 Material=Metal RenderFidelity=Precise
+            Model "Model" {
+                UnionOperation "Union" Size=3.47,0.413,2.26 Anchored CFrame=-70.803,7.55,92.961|0.344,-87.322,-89.654 Color=#111111 Material=Metal RenderFidelity=Precise $_geo="dbaeccae7bddc3d8"
+            }
+            Model "R870" {
+                UnionOperation "B1" Size=0.197,0.143,0.844 Anchored CFrame=-70.956,8.44,93.033|90,0.016,-107.679 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="f7e494e079f53633"
+                UnionOperation "B2" Size=0.323,0.115,0.115 Anchored CFrame=-70.964,7.437,92.933|0.342,-87.322,90.343 CanCollide=false Color=#A3A2A5 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="cd628cb52a187251"
+                UnionOperation "Part" Size=0.104,0.338,0.248 Anchored CFrame=-70.956,7.205,93.12|144.971,-2.184,178.451 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=1,1,0,1,1 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="0e8db53784d15194"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.956,9.382,93.049|-0.002,2.678,-89.984 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="1919c13e1ff30c27"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.989,7.91,92.965|179.998,-2.678,179.984 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a295f84baead394"
+                UnionOperation "Union" Size=1.901,0.109,0.248 Anchored CFrame=-70.958,8.838,93|179.998,-2.678,89.984 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="f968631eb3d798e7"
+                UnionOperation "Union" Size=0.05,0.112,0.112 Anchored CFrame=-70.965,7.894,92.922|-179.658,87.322,89.657 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="e36942b662b1ad47"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-71.02,7.56,93.061|-90,-0.016,2.678 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="a185272460e6e497" {
+                    Weld "Weld" C0=3.267,-1.007,6.682|90,0,0 C1=4.051,-6.036,0.133|-179.999,-0.016,-2.322 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/Glass~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/R870/Union~5"
+                }
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.956,7.535,93.125|0.342,-87.322,0.342 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="0fb3da09e8888a55"
+                UnionOperation "Union" Size=0.112,0.629,1.437 Anchored CFrame=-70.953,6.53,93.221|-90,-0.016,2.678 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="73142647b2c3267b"
+                UnionOperation "Union" Size=0.192,0.106,0.106 Anchored CFrame=-70.954,9.288,93.07|-179.658,87.322,89.657 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="b83ba0c3fc9e0dc5"
+                UnionOperation "Union" Size=0.125,0.282,2.668 Anchored CFrame=-70.963,8.453,92.984|-90,-0.016,2.678 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="1d89d3aa2cde5103"
+                UnionOperation "Union" Size=0.05,0.05,0.636 Anchored CFrame=-70.97,7.572,92.861|90,0.016,147.324 CanCollide=false Color=#1B2A35 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="8e3fffc190621a17"
+                UnionOperation "Union" Size=0.094,0.109,0.542 Anchored CFrame=-70.966,9.381,92.928|-90,-0.016,2.678 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="083993052a14507d"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-71.02,7.254,93.061|-90,-0.016,2.678 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="a185272460e6e497"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.952,9.64,92.972|-0.002,2.678,0.016 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a295f84baead394" {
+                    Weld "Weld" C0=-2.836,-0.392,0.733 C1=-2.39,0.027,-0.02|2.004,2.321,-0.097 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Model/Whelen Liberty/MeshPart~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/R870/Union~13"
+                }
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.97,9.64,92.973|179.998,-2.678,179.984 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a295f84baead394" {
+                    Weld "Weld" C0=-2.836,-0.392,0.733 C1=2.371,0.027,0.02|177.996,-2.321,179.903 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Exterior/Model/Whelen Liberty/MeshPart~2" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Long Gun Rack/R870/Union~14"
+                }
+                UnionOperation "Union" Size=0.367,0.109,0.249 Anchored CFrame=-70.958,9.278,92.999|179.998,-2.678,89.984 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="1fc77b00f0ebb17e"
+                UnionOperation "Union" Size=0.05,0.05,0.05 Anchored CFrame=-70.936,7.91,92.963|-0.002,2.678,0.016 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9a295f84baead394"
+                UnionOperation "Union" Size=0.065,0.05,0.218 Anchored CFrame=-70.955,7.651,93.118|94.995,-0.218,177.331 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise UsePartColor $_geo="74ffb2f3c973c956"
+                UnionOperation "Union" Size=0.094,0.098,0.698 Anchored CFrame=-70.966,8.246,92.923|-90,-0.016,2.678 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="55f14556d71d5c3a"
+                UnionOperation "Union" Size=0.092,0.062,0.516 Anchored CFrame=-70.966,8.853,92.905|-90,-0.016,2.678 CanCollide=false Color=#1B2A35 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="6cd3ae5877c9660b"
+                UnionOperation "Union" Size=0.112,0.445,0.566 Anchored CFrame=-70.96,6.916,93.067|-119.974,-1.352,2.311 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="6a5223e2d7311af3"
+            }
+        }
+        Model "Printer" PrimaryPart=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Printer/MeshPart" {
+            MeshPart "MeshPart" Size=1.026,0.295,0.073 Anchored CFrame=-71.896,8.143,96.986|114.917,-2.103,175.453 CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1634762631" TextureID="rbxassetid://1634762631"
+            MeshPart "MeshPart" Size=1.196,0.207,0.394 Anchored CFrame=-71.886,7.917,96.929|-65.083,2.103,4.547 CollisionFidelity=Hull Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1634762631" TextureID="rbxassetid://1634762631"
+        }
+        Model "Pro-Gard Seat Organiser" PrimaryPart=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Pro-Gard Seat Organiser/Paper Towels" {
+            Part "Clipboard" Size=0.425,0.3,0.05 Anchored CFrame=-72.106,7.716,94.153|-13.578,2.915,-89.297 CanCollide=false Color=#6A3909 Material=Wood {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://474389588" MeshId="rbxassetid://474389588" MeshType=FileMesh Scale=0.055,0.055,0.055 TextureContent="rbxassetid://474390124" TextureId="rbxassetid://474390124"
+            }
+            Part "Clipboard" Size=0.425,0.3,0.05 Anchored CFrame=-72.108,7.701,94.111|-18.949,2.838,-89.026 CanCollide=false Color=#6A3909 Material=Wood {
+                SpecialMesh "Mesh" MeshContent="rbxassetid://474389588" MeshId="rbxassetid://474389588" MeshType=FileMesh Scale=0.055,0.055,0.055 TextureContent="rbxassetid://474390124" TextureId="rbxassetid://474390124"
+            }
+            Part "Handle" Size=0.07,0.07,0.21 Anchored BottomSurface=Smooth CFrame=-72.722,7.729,94.16|70.217,1.016,-2.822 CanCollide=false TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=186494905 " MeshId="http://www.roblox.com/asset/?id=186494905 " MeshType=FileMesh Scale=0.5,0.5,0.5 TextureContent="http://www.roblox.com/asset/?id=186494927" TextureId="http://www.roblox.com/asset/?id=186494927"
+            }
+            MeshPart "Meshes/Adrenaline" Size=1.1,0.2,0.2 Anchored CFrame=-71.51,7.895,94.05|-179.934,86.999,-107.976 CanCollide=false CollisionFidelity=Default Material=Metal RenderFidelity=Precise TextureContent="rbxassetid://504973892" TextureID="rbxassetid://504973892"
+            MeshPart "Paper Towels" Size=1.3,0.9,0.7 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-72.08,6.437,94.942|-61.384,1.438,2.633 CanCollide=false CollisionFidelity=Default Color=#E7E7EC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Foil RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://473452868" TextureID="rbxassetid://473452868" TopSurface=SmoothNoOutlines
+            MeshPart "Seat Organizer" Size=1.482,2.684,1.112 Anchored CFrame=-72.116,7.251,94.124|160.769,-2.833,179.012 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2051161433" TextureID="rbxassetid://2051161433"
+        }
+        MeshPart "Radio Noise" Size=0.844,0.603,0.352 Anchored CFrame=-70.46,6.522,95.363|0,-85.001,-0.001 CanCollide=false CollisionFidelity=Default Color=#222021 Material=SmoothPlastic RenderFidelity=Precise Transparency=1 {
+            Sound "Sound" AudioContent="rbxassetid://2754221097" Looped Playing RollOffMaxDistance=30 RollOffMinDistance=3 SoundId="rbxassetid://2754221097" Volume=1
+        }
+        MeshPart "Relective Vest" Size=0.804,2.256,1.436 Anchored CFrame=-72.132,7.271,93.747|179.997,87,162.389 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2421893744" TextureID="rbxassetid://2421893744"
+        Model "Side Radio" {
+            MeshPart "MeshPart" Size=0.133,0.327,0.133 Anchored CFrame=-67.464,8.914,95.966|-52.461,9.902,-1.084 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "Mic Mount" Size=0.331,0.057,0.251 Anchored CFrame=-67.571,8.852,96.165|-140.227,-12.562,10.147 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "PalmMic" Size=0.251,0.307,0.125 Anchored CFrame=-67.566,8.788,96.159|127.538,-9.903,167.243 CanCollide=false Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://432747975" TextureID="rbxassetid://432747975"
+        }
+        Model "Trunk Gear" {
+            MeshPart "Fire Extinguisher" Size=0.7,0.9,2.1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.736,5.841,86.389|-180,85,90 CollisionFidelity=Default Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Metal RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://845721307" TextureID="rbxassetid://845721307" TopSurface=SmoothNoOutlines {
+                Weld "Weld" C0=2.758,-1.832,6.095|90,0,0 C1=-0.402,-10.499,3.426|180,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~24" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Fire Extinguisher"
+                Weld "Weld" C0=2.405,-1.833,6.123|90,0,0 C1=-0.402,-10.463,3.073|180,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~6" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Fire Extinguisher"
+            }
+            MeshPart "MeshPart" Size=2.98,1.14,1.173 Anchored CFrame=-71.612,6.255,87.29|0,5,0 CollisionFidelity=Default Color=#111111 Material=Sand RenderFidelity=Precise
+            MeshPart "Portable Ammopack" Size=0.649,1.043,0.447 Anchored CFrame=-68.742,6.902,85.862|0,-85,0 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://698173567" TextureID="rbxassetid://698173567" {
+                Weld "Weld" C0=-3.109,-0.518,0.305 C1=-0.348,0.152,5.47|0,90,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Model/MeshPart~19" Part1=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Portable Ammopack"
+            }
+            MeshPart "Portable Medicpack" Size=0.75,1.114,0.453 Anchored CFrame=-68.67,6.994,86.649|0,-85,0 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://2575549255" TextureID="rbxassetid://2575549255"
+            Model "Stop Sticks" {
+                Model "Model" {
+                    Part "Smooth Block Model" Size=2.166,0.2,0.124 Anchored CFrame=-69.768,5.828,86.422|0,-80.593,0 Color=#111111 {
+                        Decal "Decal" Texture="rbxassetid://1344110466" TextureContent="rbxassetid://1344110466"
+                        SpecialMesh "Mesh" MeshType=Wedge
+                        Snap "Snap" C0=0,-0.1,0|90,0,0 C1=-28.723,178.775,646.635|90,0,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Stop Sticks/Model/Smooth Block Model"
+                    }
+                    Part "Smooth Block Model" Size=2.166,0.2,0.124 Anchored CFrame=-69.89,5.828,86.442|-180,80.593,-180 Color=#111111 {
+                        Decal "Decal" Texture="rbxassetid://1344110466" TextureContent="rbxassetid://1344110466"
+                        SpecialMesh "Mesh" MeshType=Wedge
+                        Snap "Snap" C0=0,-0.1,0|90,0,0 C1=-28.723,178.775,646.759|90,0,-180 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Stop Sticks/Model/Smooth Block Model~2"
+                    }
+                }
+                Model "Model" {
+                    Part "Smooth Block Model" Size=2.166,0.2,0.124 Anchored CFrame=-69.523,5.828,86.405|0,-80.593,0 Color=#111111 {
+                        Decal "Decal" Texture="rbxassetid://1344110466" TextureContent="rbxassetid://1344110466"
+                        SpecialMesh "Mesh" MeshType=Wedge
+                        Snap "Snap" C0=0,-0.1,0|90,0,0 C1=-28.7,178.775,646.391|90,0,0 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Stop Sticks/Model~2/Smooth Block Model"
+                    }
+                    Part "Smooth Block Model" Size=2.166,0.2,0.124 Anchored CFrame=-69.646,5.828,86.425|-180,80.593,-180 Color=#111111 {
+                        Decal "Decal" Texture="rbxassetid://1344110466" TextureContent="rbxassetid://1344110466"
+                        SpecialMesh "Mesh" MeshType=Wedge
+                        Snap "Snap" C0=0,-0.1,0|90,0,0 C1=-28.7,178.775,646.515|90,0,-180 Part0=@"Workspace/2018 Ford Police Interceptor Utility/Body/Police Package/Interior/Trunk Gear/Stop Sticks/Model~2/Smooth Block Model~2"
+                    }
+                }
+            }
+        }
+    }
+}
+Model "Reverse" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.444,0.167,0.39 Anchored CFrame=-68.472,7.848,85.17|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Enabled=false Range=15 Shadows
+        }
+        MeshPart "MeshPart" Size=0.444,0.167,0.39 Anchored CFrame=-73.832,7.848,85.639|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Enabled=false Range=15 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Reverse/_main.luau"
+    BoolValue "on"
+}
+Model "Right" {
+    Model "G1" {
+        MeshPart "MeshPart" Size=0.39,0.168,0.275 Anchored CFrame=-71.868,6.807,102.494|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FFB000 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=60 Brightness=2.5 Color=#FFFF00 Enabled=false Face=Back Range=5 Shadows
+        }
+        MeshPart "MeshPart" Size=0.189,0.659,0.298 Anchored CFrame=-74.002,7.587,85.721|0,5,0 CanCollide=false CollisionFidelity=Hull Color=#FFB000 Material=Neon Reflectance=0.05 RenderFidelity=Precise Transparency=1 {
+            SpotLight "Light" Angle=60 Brightness=2.5 Color=#FFFF00 Enabled=false Range=5 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/2018 Ford Police Interceptor Utility/Body/Right/_main.luau"
+    BoolValue "on"
+}
+Part "SW" Size=0.202,0.202,0.202 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-68.818,7.642,95.786|-159.93,-4.698,-88.286 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+Seat "Seat" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-72.079,4.932,94.391|-180,-5,-180 CanCollide=false Color=#1B2A35 Material=Sand TopSurface=Smooth Transparency=1
+Seat "Seat" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-68.943,4.932,91.105|-180,-5,-180 CanCollide=false Color=#1B2A35 Material=Sand TopSurface=Smooth Transparency=1
+Seat "Seat" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-70.637,4.932,91.253|-180,-5,-180 CanCollide=false Color=#1B2A35 Material=Sand TopSurface=Smooth Transparency=1
+Seat "Seat" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-72.34,4.932,91.402|-180,-5,-180 CanCollide=false Color=#1B2A35 Material=Sand TopSurface=Smooth Transparency=1
+Part "TK" Size=0.199,0.199,0.199 Anchored CFrame=-68.935,9.901,86.701|-180,85,-180 CanCollide=false Color=#750000 Transparency=1

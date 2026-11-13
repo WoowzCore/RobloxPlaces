@@ -1,0 +1,657 @@
+Model "Model" {
+    Part "Part" Size=4,0.4,4 Anchored BottomSurface=Motor CFrame=-86.921,6.19,-722 CanCollide=false Color=#1B2A35 Material=Slate TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    UnionOperation "Union" Size=4,2,4 Anchored CFrame=-86.921,7.39,-722 Color=#FF0000 RenderFidelity=Precise $_geo="61ee461f45f00e13" {
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=2,2.4,2 Anchored BottomSurface=Hinge CFrame=-21.861,25.9,-778.61|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,25.9,-780.51|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,25.9,-784.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,25.9,-783.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,25.9,-786.71|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth {
+        PointLight "PointLight" Color=#55FF00 Range=20
+    }
+    Part "Part" Size=2,2.4,2 Anchored CFrame=-21.861,25.9,-788.81|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~2/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,37.1,-786.71|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth {
+        PointLight "PointLight" Color=#55FF00 Range=20
+    }
+    Part "Part" Size=2,2.4,2 Anchored CFrame=-21.861,37.1,-788.81|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,37.1,-784.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,37.1,-780.51|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-21.861,37.1,-783.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=2,2.4,2 Anchored BottomSurface=Hinge CFrame=-21.861,37.1,-778.61|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~3/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=2,2.4,2 Anchored BottomSurface=Hinge CFrame=-56.861,25.9,-778.61|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,25.9,-780.51|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,25.9,-784.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,25.9,-783.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,25.9,-786.71|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth {
+        PointLight "PointLight" Color=#55FF00 Range=20
+    }
+    Part "Part" Size=2,2.4,2 Anchored CFrame=-56.861,25.9,-788.81|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~4/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=2,2.4,2 Anchored CFrame=-37.921,36.6,-783.4 Color=#A05F35 Material=Fabric TopSurface=Smooth
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-37.921,29.1,-783.4|0,0,90 Color=#4B974B Material=Fabric Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-37.921,26.5,-783.4 Color=#00FF00 Material=Fabric Shape=Ball TopSurface=Smooth
+        Part "Part" Size=2,1,2 Anchored CFrame=-37.921,38.3,-783.4 Color=#A05F35 LeftSurface=Hinge Material=Fabric RightSurface=Hinge TopSurface=Smooth {
+            Rotate "Rotate" C0=1,0,0|0,90,0 C1=0,-0.8,0.5|-180,0,-180 Part0=@"Workspace/Model~26/Model~5/Model/Part~4" Part1=@"Workspace/Model~26/Model~5/Model~2/Part~3"
+            Rotate "Rotate" C0=-1,0,0|0,-90,0 C1=0,-0.8,-0.5 Part0=@"Workspace/Model~26/Model~5/Model/Part~4" Part1=@"Workspace/Model~26/Model~5/Model~2/Part"
+        }
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-37.921,34.5,-783.4 Color=#00FF00 Material=Fabric Shape=Ball TopSurface=Smooth {
+            PointLight "PointLight" Color=#55FF00 Range=20
+        }
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-37.921,31.9,-783.4|0,0,90 Color=#4B974B Material=Fabric Shape=Cylinder TopSurface=Smooth
+        Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~5/Model/qPerfectionWeld.luau"
+    }
+    Model "Model" {
+        Part "Part" Size=2,2.6,1 Anchored BottomSurface=Smooth CFrame=-39.421,39.1,-783.4|0,-90,0 Color=#A05F35 Material=Fabric TopSurface=Smooth
+        Part "Part" Size=2,1,2 Anchored CFrame=-37.921,39.9,-783.4|0,-90,0 Color=#A05F35 LeftSurface=Hinge Material=Fabric RightSurface=Hinge TopSurface=Smooth {
+            Rotate "Rotate" C0=1,0,0|0,90,0 C1=-0.5,-0.9,0|0,90,0 Part0=@"Workspace/Model~26/Model~5/Model~2/Part~2" Part1=@"Workspace/Model~26/Model~5/Part"
+            Rotate "Rotate" C0=-1,0,0|0,-90,0 C1=0.5,-0.9,0|0,-90,0 Part0=@"Workspace/Model~26/Model~5/Model~2/Part~2" Part1=@"Workspace/Model~26/Model~5/Part~2"
+        }
+        Part "Part" Size=2,2.6,1 Anchored BottomSurface=Smooth CFrame=-36.421,39.1,-783.4|0,-90,0 Color=#A05F35 Material=Fabric TopSurface=Smooth
+        Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~5/Model~2/qPerfectionWeld.luau"
+    }
+    Part "Part" Size=1,2.8,2 Anchored BottomSurface=Smooth CFrame=-37.921,40.8,-781.9|0,-90,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Smooth
+    Part "Part" Size=1,2.8,2 Anchored BottomSurface=Smooth CFrame=-37.921,40.8,-784.9|0,-90,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Smooth
+}
+Model "Model" {
+    UnionOperation "Union" Size=16,16,14 Anchored CFrame=-85.921,14,-733.8 Color=#FF0000 RenderFidelity=Precise $_geo="6ed80e558b3eee0e"
+    UnionOperation "Union" Size=15,15,15 Anchored CFrame=-85.921,14.1,-733.4|0,-90,0 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="8e977506ec03fa46" {
+        Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Model~6/Union~2/Conveyor Script.luau"
+        Script "FX" @src="Scripts/Workspace/Model~26/Model~6/Union~2/FX.luau"
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    UnionOperation "Union" Size=16,16,14 Anchored CFrame=-85.921,14,-733 Color=#FF0000 RenderFidelity=Precise $_geo="6ed80e558b3eee0e"
+}
+Model "Model" {
+    UnionOperation "Union" Size=15,15,15 Anchored CFrame=7.479,14.2,-732.4|0,-90,0 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="8e977506ec03fa46" {
+        Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Model~7/Union/Conveyor Script.luau"
+        Script "FX" @src="Scripts/Workspace/Model~26/Model~7/Union/FX.luau"
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    UnionOperation "Union" Size=16,16,14 Anchored CFrame=7.479,14.1,-732.8 Color=#FF0000 RenderFidelity=Precise $_geo="6ed80e558b3eee0e"
+    UnionOperation "Union" Size=16,16,14 Anchored CFrame=7.479,14.1,-732 Color=#FF0000 RenderFidelity=Precise $_geo="6ed80e558b3eee0e"
+}
+Model "Model" {
+    Part "Part" Size=4,0.4,4 Anchored BottomSurface=Motor CFrame=-80.921,6.19,-715 CanCollide=false Color=#1B2A35 Material=Slate TopSurface=Smooth {
+        CylinderMesh "Mesh"
+        RotateV "RotateV" C0=0,-0.2,0|90,0,0 C1=-43.5,1.49,36|90,0,0 Part0=@"Workspace/Model~26/Model~8/Part" Part1=@"Workspace/Model~26/Part~30"
+    }
+    UnionOperation "Union" Size=4,2,4 Anchored CFrame=-80.921,7.39,-715 Color=#FF0000 RenderFidelity=Precise $_geo="61ee461f45f00e13" {
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~8/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=4,0.4,4 Anchored BottomSurface=Motor CFrame=-54.921,6.19,-715 CanCollide=false Color=#1B2A35 Material=Slate TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    UnionOperation "Union" Size=4,2,4 Anchored CFrame=-54.921,7.39,-715 Color=#FF0000 RenderFidelity=Precise $_geo="61ee461f45f00e13" {
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~9/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=2,2.4,2 Anchored CFrame=-56.861,37.1,-788.81|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,37.1,-783.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,37.1,-786.71|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth {
+        PointLight "PointLight" Color=#55FF00 Range=20
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,37.1,-784.11|-90,0,90 Color=#0000FF Material=Fabric Shape=Cylinder TopSurface=Smooth
+    Part "Part" Size=2,2.4,2 Anchored BottomSurface=Hinge CFrame=-56.861,37.1,-778.61|-90,0,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Motor {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-56.861,37.1,-780.51|-90,0,0 Color=#00FFFF Material=Fabric Shape=Ball TopSurface=Smooth
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~10/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Part "Part" Size=4,0.4,4 Anchored BottomSurface=Motor CFrame=-5.321,6.29,-719 CanCollide=false Color=#1B2A35 Material=Slate TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    UnionOperation "Union" Size=4,2,4 Anchored CFrame=-5.321,7.49,-719 Color=#FF0000 RenderFidelity=Precise $_geo="61ee461f45f00e13" {
+        PointLight "PointLight" Brightness=500 Color=#FFAA00 Range=10
+    }
+    Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~11/qPerfectionWeld.luau"
+}
+Model "Model" {
+    Model "Model" {
+        Part "Part" Size=2,1,2 Anchored CFrame=-72.121,38.3,-783.4 Color=#A05F35 LeftSurface=Hinge Material=Fabric RightSurface=Hinge TopSurface=Smooth
+        Part "Part" Size=2,2.4,2 Anchored CFrame=-72.121,36.6,-783.4 Color=#A05F35 Material=Fabric TopSurface=Smooth
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-72.121,26.5,-783.4 Color=#00FF00 Material=Fabric Shape=Ball TopSurface=Smooth
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-72.121,34.5,-783.4 Color=#00FF00 Material=Fabric Shape=Ball TopSurface=Smooth {
+            PointLight "PointLight" Color=#55FF00 Range=20
+        }
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-72.121,29.1,-783.4|0,0,90 Color=#4B974B Material=Fabric Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=-72.121,31.9,-783.4|0,0,90 Color=#4B974B Material=Fabric Shape=Cylinder TopSurface=Smooth
+        Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~12/Model/qPerfectionWeld.luau"
+    }
+    Model "Model" {
+        Part "Part" Size=2,1,2 Anchored CFrame=-72.121,39.9,-783.4|0,-90,0 Color=#A05F35 LeftSurface=Hinge Material=Fabric RightSurface=Hinge TopSurface=Smooth {
+            Rotate "Rotate" C0=1,0,0|0,90,0 C1=-0.5,-0.9,0|0,90,0 Part0=@"Workspace/Model~26/Model~12/Model~2/Part" Part1=@"Workspace/Model~26/Model~12/Part"
+            Rotate "Rotate" C0=-1,0,0|0,-90,0 C1=0.5,-0.9,0|0,-90,0 Part0=@"Workspace/Model~26/Model~12/Model~2/Part" Part1=@"Workspace/Model~26/Model~12/Part~2"
+        }
+        Part "Part" Size=2,2.6,1 Anchored BottomSurface=Smooth CFrame=-70.621,39.1,-783.4|0,-90,0 Color=#A05F35 Material=Fabric TopSurface=Smooth {
+            Rotate "Rotate" C0=1,0,0|0,90,0 C1=0,-0.8,0.5|-180,0,-180 Part0=@"Workspace/Model~26/Model~12/Model/Part" Part1=@"Workspace/Model~26/Model~12/Model~2/Part~2"
+        }
+        Part "Part" Size=2,2.6,1 Anchored BottomSurface=Smooth CFrame=-73.621,39.1,-783.4|0,-90,0 Color=#A05F35 Material=Fabric TopSurface=Smooth {
+            Rotate "Rotate" C0=-1,0,0|0,-90,0 C1=0,-0.8,-0.5 Part0=@"Workspace/Model~26/Model~12/Model/Part" Part1=@"Workspace/Model~26/Model~12/Model~2/Part~3"
+        }
+        Script "qPerfectionWeld" @src="Scripts/Workspace/Model~26/Model~12/Model~2/qPerfectionWeld.luau"
+    }
+    Part "Part" Size=1,2.8,2 Anchored BottomSurface=Smooth CFrame=-72.121,40.8,-781.9|0,-90,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Smooth
+    Part "Part" Size=1,2.8,2 Anchored BottomSurface=Smooth CFrame=-72.121,40.8,-784.9|0,-90,0 CanCollide=false Color=#A05F35 Material=Fabric TopSurface=Smooth
+}
+Part "Part" Size=13.8,1,18.8 Anchored BottomSurface=Smooth CFrame=-17.021,21.5,-767.6 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-30.821,32,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=1.88,2.6,13 Anchored BottomSurface=Smooth CFrame=-35.781,15.7,-783.5 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-30.821,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=1.88,6.8,18.8 Anchored BottomSurface=Smooth CFrame=-35.781,11,-780.6 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=109.4,37,1 Anchored CFrame=-39.221,24.5,-790.5 Color=#FF0000 TopSurface=Smooth {
+    RotateV "RotateV" C0=0,1.2,0|-90,0,-180 C1=-17.64,1.4,0.49|-180,0,-180 Part0=@"Workspace/Model~26/Model~4/Part~6" Part1=@"Workspace/Model~26/Part~6"
+    RotateV "RotateV" C0=0,1.2,0|-90,0,-180 C1=-17.64,12.6,0.49|-180,0,-180 Part0=@"Workspace/Model~26/Model~10/Part" Part1=@"Workspace/Model~26/Part~6"
+    RotateV "RotateV" C0=0,1.2,0|-90,0,-180 C1=17.36,12.6,0.49|-180,0,-180 Part0=@"Workspace/Model~26/Model~3/Part~2" Part1=@"Workspace/Model~26/Part~6"
+    RotateV "RotateV" C0=0,1.2,0|-90,0,-180 C1=17.36,1.4,0.49|-180,0,-180 Part0=@"Workspace/Model~26/Model~2/Part~6" Part1=@"Workspace/Model~26/Part~6"
+}
+Part "Part" Size=11.8,20,0.4 Anchored CFrame=9.579,32,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=13.8,5,13 Anchored BottomSurface=Smooth CFrame=-30.821,19.5,-783.5 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=3.6,21,9.4 Anchored CFrame=17.279,32.5,-772.3 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=4.6,19.6,12.6 Anchored BottomSurface=Smooth CFrame=-21.621,52.8,-783.7 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=52.4,19.6,1 Anchored BottomSurface=Smooth CFrame=2.279,52.8,-776.9 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=3.4,12.6,0.4 Anchored CFrame=-22.221,28.3,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Rotate "Rotate" C0=0,-1.2,0|90,0,0 C1=0.36,-2.4,-0.21 Part0=@"Workspace/Model~26/Model~2/Part" Part1=@"Workspace/Model~26/Part~12"
+}
+Part "Part" Size=10,6.2,1 Anchored CFrame=-87.921,16.9,-711.5 Color=#F8F8F8 TopSurface=Smooth {
+    Decal "Decal" Face=Back Texture="rbxassetid://122689700" TextureContent="rbxassetid://122689700"
+}
+Part "Part" Size=1,20,15.2 Anchored CFrame=-93.421,32,-732.6 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=1,9,1 Anchored CFrame=14.979,15.5,-711.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=82.2,5,1 Anchored CFrame=-41.821,8.5,-711.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=1,9,1 Anchored CFrame=-1.221,15.5,-711.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=13,21,0.4 Anchored CFrame=21.979,32.5,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=1,9,1 Anchored CFrame=-93.421,15.5,-711.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-44.621,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=13.8,7.4,0.4 Anchored CFrame=-17.021,38.3,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://190845890" TextureContent="rbxassetid://190845890"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Rotate "Rotate" C0=0,-1.2,0|90,0,0 C1=-4.84,-1.2,-0.21 Part0=@"Workspace/Model~26/Model~3/Part~6" Part1=@"Workspace/Model~26/Part~21"
+}
+Part "Part" Size=14.6,20,1 Anchored CFrame=-86.021,32,-725.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=1,31,18 Anchored CFrame=-62.821,26.5,-769 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=13.8,5,13 Anchored BottomSurface=Smooth CFrame=-44.621,19.5,-783.5 Color=#3A7D15 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-3.221,32,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=15.8,5,13.8 Anchored BottomSurface=Smooth CFrame=-44.621,19.5,-770.1 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1,11,13.6 Anchored BottomSurface=Smooth CFrame=-52.021,11.5,-756.4 Color=#00FFFF TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-58.421,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=15.2,6.2,1 Anchored CFrame=6.879,16.9,-711.5 Color=#008F9C TopSurface=Smooth {
+    Decal "Decal" Face=Back Texture="rbxassetid://190845890" TextureContent="rbxassetid://190845890"
+}
+Part "Part" Size=113,3,80 Anchored CFrame=-37.421,4.5,-751 TopSurface=Smooth {
+    RotateV "RotateV" C0=0,-0.2,0|90,0,0 C1=-17.5,1.49,36|90,0,0 Part0=@"Workspace/Model~26/Model~9/Part" Part1=@"Workspace/Model~26/Part~30"
+    RotateV "RotateV" C0=0,-0.2,0|90,0,0 C1=-49.5,1.49,29|90,0,0 Part0=@"Workspace/Model~26/Model/Part" Part1=@"Workspace/Model~26/Part~30"
+}
+Part "Part" Size=16,20.2,1 Anchored CFrame=7.479,31.9,-725.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=1,5,15 Anchored CFrame=14.979,8.5,-718.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1,5,14 Anchored CFrame=-1.221,8.5,-719 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=16.8,20,1 Anchored CFrame=-85.521,32,-740.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=25.2,1,18.6 Anchored BottomSurface=Smooth CFrame=2.679,21.5,-748.9 Color=#3A7D15 TopSurface=Smooth {
+    PointLight "PointLight" Color=#FF55FF Range=50
+}
+Part "Part" Size=18.8,36,0.6 Anchored CFrame=15.579,24,-748.8|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=32.2,36,0.6 Anchored CFrame=-23.621,24,-742.1|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=24,5.4,13.6 Anchored BottomSurface=Smooth CFrame=-12.121,23.7,-732.8 Color=#3A7D15 TopSurface=Smooth
+Part "Part" Size=3.6,21,36 Anchored CFrame=17.279,32.5,-742.8 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=18.8,36,0.6 Anchored CFrame=-10.221,24,-748.8|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=43.2,1.2,51.8 Anchored BottomSurface=Smooth CFrame=-2.321,42.6,-751.1 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=1,5,30 Anchored CFrame=-62.821,8.5,-775 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=83,5,1 Anchored CFrame=-51.421,8.5,-718.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=78.4,36,1 Anchored CFrame=-39.721,24,-725.5 Color=#00FF00 TopSurface=Smooth {
+    Decal "Decal" Face=Back Texture="rbxassetid://122689700" TextureContent="rbxassetid://122689700"
+}
+Part "Part" Size=1,31,2.6 Anchored CFrame=-62.821,26.5,-749.3 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1,25.2,9.8 Anchored BottomSurface=Smooth CFrame=-62.821,29.4,-755.1 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=70,1.2,66 Anchored BottomSurface=Smooth CFrame=-58.921,42.6,-758 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=1,31,38 Anchored CFrame=-77.621,26.5,-759 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-52.121,32,-770.1|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=1,5,15 Anchored CFrame=-93.421,8.5,-718.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=9.8,11,1 Anchored BottomSurface=Smooth CFrame=-57.421,11.5,-750.1 Color=#FFFF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1,31,37.2 Anchored CFrame=-93.421,26.5,-759.4 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=7,1,1 Anchored CFrame=-69.821,13.5,-747.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1,5,3.6 Anchored CFrame=-62.821,8.5,-748.8 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=15,28,1 Anchored CFrame=-69.821,28,-747.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=4,8,1 Anchored CFrame=-64.321,10,-747.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=25.68,11,1 Anchored BottomSurface=Smooth CFrame=-49.481,11.5,-772.5 Color=#FF0000 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1,9,1 Anchored CFrame=-82.421,15.5,-711.5 Color=#008F9C TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-37.121,32,-770.1|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=3.4,10.6,0.2 Anchored CFrame=-50.021,27.3,-763.3 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Bottom Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=15.88,11,1 Anchored BottomSurface=Smooth CFrame=-44.581,11.5,-763.7 Color=#00FFFF TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=13.8,5,13 Anchored BottomSurface=Smooth CFrame=-72.221,19.5,-783.5 Color=#3A7D15 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=25.8,36,0.6 Anchored CFrame=2.679,24,-757.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=3.4,10.6,0.2 Anchored CFrame=-39.021,27.3,-763.3 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Bottom Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=14.6,9.4,14.2 Anchored CFrame=-44.621,37.3,-770.3 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Bottom Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=11.2,1.6,26.8 Anchored BottomSurface=Smooth CFrame=-57.521,17.8,-763.6 Color=#00FFFF TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+    Sound "Sound" AudioContent="rbxassetid://168979856" Looped SoundId="rbxassetid://168979856" Volume=1 {
+        Script "Script" @src="Scripts/Workspace/Model~26/Part~66/Sound/Script.luau"
+    }
+}
+Part "Part" Size=13.8,5,12 Anchored CFrame=-86.021,19.5,-784 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1,31,12 Anchored CFrame=-93.421,26.5,-784 Color=#00FFFF TopSurface=Smooth
+Part "Part" Size=4.6,10,0.4 Anchored CFrame=-76.821,27,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=1,5,49.2 Anchored CFrame=-77.621,8.5,-765.4 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1.88,1.6,26.8 Anchored BottomSurface=Smooth CFrame=-35.781,6.8,-776.6 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=52.6,19.6,1 Anchored BottomSurface=Smooth CFrame=2.379,52.8,-790.5 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=1,21,4 Anchored BottomSurface=Smooth CFrame=28.179,52.1,-788 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-3.221,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=13,21,0.4 Anchored CFrame=21.979,32.5,-790.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=11.8,20,0.4 Anchored CFrame=9.579,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-58.421,32,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Rotate "Rotate" C0=0,-1.2,0|90,0,0 C1=1.56,-6.1,-0.21 Part0=@"Workspace/Model~26/Model~4/Part" Part1=@"Workspace/Model~26/Part~77"
+    Rotate "Rotate" C0=0,-1.2,0|90,0,0 C1=1.56,5.1,-0.21 Part0=@"Workspace/Model~26/Model~10/Part~5" Part1=@"Workspace/Model~26/Part~77"
+}
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-17.021,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=39.4,5,13 Anchored BottomSurface=Smooth CFrame=-4.221,19.5,-783.5 Color=#3A7D15 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1,13.2,12.6 Anchored BottomSurface=Smooth CFrame=28.179,56,-783.7 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=1,21,3.4 Anchored BottomSurface=Smooth CFrame=28.179,52.1,-779.1 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=4.6,1,14 Anchored BottomSurface=Smooth CFrame=-21.621,42.5,-784 Color=#6E99CA TopSurface=Smooth
+Part "Part" Size=18.8,20,0.4 Anchored CFrame=-10.321,32,-767.6|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=4,8,1 Anchored CFrame=-75.321,10,-747.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-72.221,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=1,6,12 Anchored CFrame=-62.821,14,-784 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=13.8,20,0.4 Anchored CFrame=-86.021,32,-789.8 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=1,5.8,13 Anchored CFrame=-78.621,13.9,-783.5 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1,5,49.2 Anchored CFrame=-78.621,8.5,-765.4 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=3.6,10.4,6.8 Anchored CFrame=17.279,37.8,-764.2 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=13.8,10,0.4 Anchored CFrame=-72.221,37,-777.2 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+}
+Part "Part" Size=1,5,49.2 Anchored CFrame=-93.421,8.5,-765.4 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=1.88,6.8,2.6 Anchored BottomSurface=Smooth CFrame=-35.781,11,-764.5 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=7.8,4.6,0.2 Anchored CFrame=-44.421,30.3,-763.3 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://190846189" TextureContent="rbxassetid://190846189"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Bottom Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=3.6,16,66.2 Anchored CFrame=17.279,14,-757.9 Color=#FF0000 TopSurface=Smooth
+Part "Part" Size=18.8,20,0.4 Anchored CFrame=-23.721,32,-767.6|0,-90,0 Color=#3A7D15 TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+    Decal "Decal" Face=Top Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Left Texture="rbxassetid://27017316" TextureContent="rbxassetid://27017316"
+    Decal "Decal" Face=Back Texture="rbxassetid://50449800" TextureContent="rbxassetid://50449800"
+}
+Part "Part" Size=13.8,5,13 Anchored BottomSurface=Smooth CFrame=-58.421,19.5,-783.5 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+Part "Part" Size=1.88,7.6,13.8 Anchored BottomSurface=Smooth CFrame=-35.781,18.2,-770.1 Color=#00FF00 TopSurface=Smooth {
+    PointLight "PointLight" Color=#55FF00 Range=20
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-56.543,12.065,-741.992|-176.033,-14.478,165.504 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=36.679,44.4,-783.6|-180,0,-150 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~2/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~2/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-63.408,10.384,-741.16|-172.318,0.065,165.974 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4"
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-51.599,14.417,-744.55|-169.18,-46.423,158.736 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~4/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~4/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=3.479,26.6,-763.8|26.351,4.354,1.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~5/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~5/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=10.879,27.2,-764|26.351,4.354,1.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~6/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~6/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=41.879,40.6,-782.6|172.369,12.953,-134.133 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~7/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~7/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-67.208,9.984,-742.96|-173.293,45.057,-178.621 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4"
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=32.279,33.2,-763|26.351,4.354,16.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~9/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=30.879,46,-783.6|-180,0,180 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~10/Conveyor Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-44.621,24.417,-761.229|30,-90,0 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~11/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~11/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=45.479,37.4,-779.8|153.435,37.761,-140.769 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~12/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~12/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=17.879,28.8,-763.8|26.351,4.354,16.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~13/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~13/Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~13/Script~2.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=47.679,36.2,-775.2|118.187,56.774,-114.146 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~14/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~14/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-47.806,17.817,-749.519|180,-60,150 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~15/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-12.721,18.6,-766.2|26.351,4.354,31.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~16/Conveyor Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-32.521,11.34,-768.2|0,0,9.778 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-18.921,15,-767.4|26.351,4.354,31.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~18/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~18/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=47.479,35.4,-769.6|61.813,56.774,-50.854 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~19/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-24.911,12.72,-768.2|0,0,9.778 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=44.279,35,-765|34.113,33.469,-15.625 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @code=<<<
+        -- I swordfish690 thank Kingline90 for this script
+
+        while true do
+        script.Parent.Velocity = script.Parent.CFrame.lookVector *60
+        wait(1)
+        end
+    >>>
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~21/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-3.321,25.2,-763.6|26.351,4.354,16.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~22/Conveyor Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-45.421,21.017,-755.029|-150,-75,180 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~23/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~23/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-70.008,9.784,-747.96|-175.964,75.034,168.774 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4"
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=39.079,34.4,-763|26.351,4.354,1.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~25/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~25/Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=-7.721,22.4,-764.6|26.351,4.354,46.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~26/Conveyor Script.luau"
+}
+UnionOperation "Union" Size=8,8,8 Anchored CFrame=25.079,31,-763.4|26.351,4.354,16.978 Color=#4B974B Material=WoodPlanks RenderFidelity=Precise $_geo="0729f1a84c50e3a4" {
+    Script "Conveyor Script" @src="Scripts/Workspace/Model~26/Union~27/Conveyor Script.luau"
+    Script "Script" @src="Scripts/Workspace/Model~26/Union~27/Script.luau"
+}
+WedgePart "Wedge" Size=13.8,16,31 Anchored CFrame=-86.021,14,-762.5|-180,0,-180 Color=#4B974B
+WedgePart "Wedge" Size=13.8,16,28 Anchored CFrame=-70.221,14,-764|-180,0,-180 Color=#4B974B
+WedgePart "Wedge" Size=12.6,20.4,47.8 Anchored BottomSurface=Smooth CFrame=4.579,52.4,-783.7|-180,-90,0 Color=#4B974B {
+    PointLight "PointLight" Color=#FF55FF Range=40
+}
+WedgePart "Wedge" Size=13.8,16,18.8 Anchored CFrame=-17.021,14,-748.8|180,0,-180 Color=#3A7D15
+WedgePart "Wedge" Size=13.8,16,30 Anchored CFrame=-70.221,34,-763|0,0,180 Color=#4B974B
+WedgePart "Wedge" Size=13.8,16,18.8 Anchored CFrame=-17.021,34,-748.8|0,0,180 Color=#3A7D15
+WedgePart "Wedge" Size=1,16,30 Anchored CFrame=-78.621,19,-762|-180,0,-180 Color=#00FFFF
+WedgePart "Wedge" Size=12.6,20.4,41.8 Anchored BottomSurface=Smooth CFrame=7.579,32.2,-783.7|0,90,0 Color=#4B974B

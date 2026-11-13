@@ -1,0 +1,920 @@
+Model "Tree" {
+    Model "Leafs" {
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=150.757,17.307,-525.163|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=150.757,20.322,-525.163|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=150.757,13.862,-525.163|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=150.757,23.767,-525.163|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+    }
+    Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=149.771,17.55,-524.635|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=89.933,20.322,-472.848|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=89.933,17.307,-472.848|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=89.933,23.767,-472.848|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=89.933,13.862,-472.848|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=88.948,17.55,-472.32|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.064,23.767,-560.525|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.064,13.862,-560.525|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.064,17.307,-560.525|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.064,20.322,-560.525|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=120.079,17.55,-559.997|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=54.585,17.307,-513.868|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=54.585,13.862,-513.868|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=54.585,23.767,-513.868|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=54.585,20.322,-513.868|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=53.599,17.55,-513.34|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=87.111,20.322,-503.962|-180,11.257,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=87.111,17.307,-503.962|-180,0.008,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=87.111,13.862,-503.962|-180,-33.742,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=87.111,23.767,-503.962|-180,45.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=86.125,17.55,-503.434|-180,45.007,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.053,20.322,-503.955|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.053,17.307,-503.955|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.053,23.767,-503.955|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=121.053,13.862,-503.955|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=120.067,17.55,-503.427|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=122.473,17.307,-533.654|-180,0.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=122.473,20.322,-533.654|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=122.473,23.767,-533.654|-180,45.004,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=122.473,13.862,-533.654|-180,-33.745,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=121.488,17.55,-533.126|-180,45.004,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=91.361,23.767,-539.317|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=91.361,13.862,-539.317|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=91.361,17.307,-539.317|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=91.361,20.322,-539.317|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=90.375,17.55,-538.789|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+}
+Model "Tree" {
+    Model "Leafs" {
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-15.333,17.307,-446.657|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-15.333,13.862,-446.657|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-15.333,20.322,-446.657|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-15.333,23.767,-446.657|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+    }
+    Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-16.319,17.55,-446.128|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-43.617,17.307,-455.148|-180,0.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-43.617,20.322,-455.148|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-43.617,13.862,-455.148|-180,-33.745,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-43.617,23.767,-455.148|-180,45.004,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-44.602,17.55,-454.619|-180,45.004,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-78.979,17.307,-425.455|-180,0.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-78.979,23.767,-425.455|-180,45.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-78.979,20.322,-425.455|-180,11.257,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-78.979,13.862,-425.455|-180,-33.742,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-79.964,17.55,-424.927|-180,45.007,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-76.157,20.322,-394.341|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-76.157,17.307,-394.341|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-76.157,13.862,-394.341|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-76.157,23.767,-394.341|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-77.142,17.55,-393.813|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.026,17.307,-482.019|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.026,13.862,-482.019|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.026,20.322,-482.019|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.026,23.767,-482.019|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-46.011,17.55,-481.49|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.037,13.862,-425.449|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.037,17.307,-425.449|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.037,23.767,-425.449|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-45.037,20.322,-425.449|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-46.022,17.55,-424.92|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-74.729,17.307,-460.811|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-74.729,13.862,-460.811|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-74.729,23.767,-460.811|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-74.729,20.322,-460.811|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-75.715,17.55,-460.282|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-111.505,23.767,-435.362|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-111.505,13.862,-435.362|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-111.505,17.307,-435.362|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-111.505,20.322,-435.362|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-112.49,17.55,-434.833|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+}
+Model "Tree" {
+    Model "Leafs" {
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=81.869,20.322,-432.885|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=81.869,17.307,-432.885|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=81.869,23.767,-432.885|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=81.869,13.862,-432.885|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+    }
+    Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=80.884,17.55,-432.356|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.473,17.307,-447.039|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.473,23.767,-447.039|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.473,20.322,-447.039|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.473,13.862,-447.039|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=21.487,17.55,-446.51|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.165,13.862,-411.677|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.165,20.322,-411.677|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.165,17.307,-411.677|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.165,23.767,-411.677|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=51.18,17.55,-411.148|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=21.046,23.767,-380.569|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=21.046,13.862,-380.569|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=21.046,20.322,-380.569|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=21.046,17.307,-380.569|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=20.06,17.55,-380.041|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=53.585,20.322,-441.376|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=53.585,17.307,-441.376|-180,0.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=53.585,23.767,-441.376|-180,45.004,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=53.585,13.862,-441.376|-180,-33.745,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=52.6,17.55,-440.847|-180,45.004,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.176,23.767,-468.247|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.176,13.862,-468.247|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.176,20.322,-468.247|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=52.176,17.307,-468.247|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=51.191,17.55,-467.718|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=18.223,20.322,-411.683|-180,11.257,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=18.223,23.767,-411.683|-180,45.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=18.223,13.862,-411.683|-180,-33.742,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=18.223,17.307,-411.683|-180,0.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=17.238,17.55,-411.155|-180,45.007,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-14.303,17.307,-421.59|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-14.303,23.767,-421.59|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-14.303,13.862,-421.59|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-14.303,20.322,-421.59|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-15.288,17.55,-421.061|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+}
+Model "Tree" {
+    Model "Leafs" {
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=58.566,23.767,-467.937|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=58.566,20.322,-467.937|-180,56.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=58.566,13.862,-467.937|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=58.566,17.307,-467.937|-180,45.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+    }
+    Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=57.496,17.55,-468.26|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.566,17.307,-473.942|-180,45.006,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.566,13.862,-473.942|-180,11.256,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.566,20.322,-473.942|-180,56.256,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=22.566,23.767,-473.942|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=21.496,17.55,-474.265|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-17.428,13.862,-527.948|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-17.428,20.322,-527.948|-180,56.254,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-17.428,23.767,-527.948|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-17.428,17.307,-527.948|-180,45.004,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-18.499,17.55,-528.271|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-21.434,17.307,-473.947|-180,45.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-21.434,20.322,-473.947|-180,56.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-21.434,13.862,-473.947|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-21.434,23.767,-473.947|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-22.505,17.55,-474.27|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=62.572,23.767,-513.938|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=62.572,13.862,-513.938|-180,11.256,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=62.572,17.307,-513.938|-180,45.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=62.572,20.322,-513.938|-180,56.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=61.501,17.55,-514.261|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-1.431,23.767,-497.945|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-1.431,17.307,-497.945|-180,45.003,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-1.431,20.322,-497.945|-180,56.253,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-1.431,13.862,-497.945|-180,11.253,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-2.502,17.55,-498.268|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=44.569,20.322,-493.94|-180,56.25,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=44.569,13.862,-493.94|-180,11.25,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=44.569,17.307,-493.94|-180,45,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=44.569,23.767,-493.94|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=43.499,17.55,-494.263|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=26.572,17.307,-519.942|-180,45.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=26.572,23.767,-519.942|0,90,0 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=26.572,13.862,-519.942|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=26.572,20.322,-519.942|-180,56.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=25.501,17.55,-520.265|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+}
+Model "Tree" {
+    Model "Leafs" {
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-12.295,13.862,-542.864|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-12.295,23.767,-542.864|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-12.295,20.322,-542.864|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+        Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-12.295,17.307,-542.864|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+            SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+        }
+    }
+    Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-13.28,17.55,-542.336|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+        CylinderMesh "Mesh"
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-40.578,13.862,-551.355|-180,-33.745,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-40.578,17.307,-551.355|-180,0.005,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-40.578,23.767,-551.355|-180,45.004,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-40.578,20.322,-551.355|-180,11.255,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-41.564,17.55,-550.827|-180,45.004,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-108.467,23.767,-531.569|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-108.467,20.322,-531.569|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-108.467,13.862,-531.569|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-108.467,17.307,-531.569|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-109.452,17.55,-531.041|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.998,23.767,-521.656|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.998,20.322,-521.656|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.998,13.862,-521.656|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.998,17.307,-521.656|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-42.984,17.55,-521.128|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-75.941,13.862,-521.663|-180,-33.742,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-75.941,23.767,-521.663|-180,45.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-75.941,20.322,-521.663|-180,11.257,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-75.941,17.307,-521.663|-180,0.007,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-76.926,17.55,-521.134|-180,45.007,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.691,20.322,-557.018|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.691,23.767,-557.018|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.691,17.307,-557.018|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-71.691,13.862,-557.018|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-72.676,17.55,-556.49|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.987,13.862,-578.226|-180,-33.74,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.987,20.322,-578.226|-180,11.26,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.987,23.767,-578.226|-180,45.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-41.987,17.307,-578.226|-180,0.01,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-42.973,17.55,-577.698|-180,45.01,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Tree" {
+        Model "Leafs" {
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-73.118,17.307,-490.549|-180,0.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-73.118,13.862,-490.549|-180,-33.741,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-73.118,20.322,-490.549|-180,11.259,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+            Part "Part" Size=2.153,13.997,2.153 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-73.118,23.767,-490.549|-180,45.009,-180 CanCollide=false FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Fabric RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+                Decal "Decal" Texture="rbxassetid://563816404" TextureContent="rbxassetid://563816404"
+                SpecialMesh "Mesh" MeshContent="rbxassetid://563829354" MeshId="rbxassetid://563829354" MeshType=FileMesh Scale=6.46,6.46,6.46
+            }
+        }
+        Part "Log" Size=2.529,29.1,2.529 Anchored BottomSurface=Smooth CFrame=-74.104,17.55,-490.02|-180,45.009,-180 Color=#6C584B Material=Wood TopSurface=Smooth {
+            CylinderMesh "Mesh"
+        }
+    }
+}

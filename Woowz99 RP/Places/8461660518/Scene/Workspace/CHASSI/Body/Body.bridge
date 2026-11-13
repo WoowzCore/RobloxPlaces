@@ -1,0 +1,507 @@
+Model "Body" {
+    Part "License Plate" Size=1.226,0.629,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.092,4.858,282.945|0.851,0.001,0 Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+        Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+        Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate/Crash.luau"
+        NumberValue "Health" Value=220
+        Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate/Hit.luau" {
+            Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate/Hit/GetUp.luau" Disabled
+        }
+        Decal "Liberty City Car plate" Face=Back Texture="rbxassetid://5995007547" TextureContent="rbxassetid://5995007547"
+        BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+        Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+        ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+    }
+    Part "License Plate" Size=1.066,0.559,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=287.092,6.917,253.366|0.851,0.001,0 Color=#F8F8F8 CustomPhysicalProperties=0.01,0,0,0,0 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+        Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+        Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate~2/Crash.luau"
+        NumberValue "Health" Value=220
+        Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate~2/Hit.luau" {
+            Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/License Plate~2/Hit/GetUp.luau" Disabled
+        }
+        Decal "Liberty City Car plate" Texture="rbxassetid://5995007547" TextureContent="rbxassetid://5995007547"
+        BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+        Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+        ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+    }
+    Model "Lights" {
+        Part "F" Size=0.192,0.192,0.192 Anchored CFrame=284.513,7.231,282.011|0.012,0.001,0 Color=#EDEAEA {
+            SurfaceLight "Light" Angle=40 Brightness=5.92 Color=#D8FEFF Enabled=false Face=Back Range=50 Shadows
+        }
+        Part "F" Size=0.192,0.192,0.192 Anchored CFrame=289.683,7.231,282.011|0.012,0.001,0 Color=#EDEAEA {
+            SurfaceLight "Light" Angle=40 Brightness=5.92 Color=#D8FEFF Enabled=false Face=Back Range=50 Shadows
+        }
+        Part "R" Size=0.192,0.192,0.192 Anchored CFrame=291.851,6.728,253.35|0.012,0.001,0 Color=#FF0000 {
+            SurfaceLight "Light" Angle=80 Brightness=5.92 Color=#FF0004 Enabled=false Range=10 Shadows
+        }
+        Part "R" Size=0.192,0.192,0.192 Anchored CFrame=282.311,6.728,253.35|0.012,0.001,0 Color=#FF0000 {
+            SurfaceLight "Light" Angle=80 Brightness=5.92 Color=#FF0004 Enabled=false Range=10 Shadows
+        }
+    }
+    Model "Model" {
+        MeshPart "Bumper" Size=8.711,1.419,1.998 Anchored CFrame=287.092,5.091,281.978 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718" {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Bumper" Size=10.589,2.418,0.929 Anchored CFrame=287.092,6.476,252.941 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718" {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper~2/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper~2/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Bumper~2/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Collision" Size=3.92,0.05,9.46 Anchored BottomSurface=Smooth CFrame=287.224,6.124,260.24|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        Part "Collision" Size=3.29,3.98,2.86 Anchored BottomSurface=Smooth CFrame=290.524,7.819,263.285|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        Part "Collision" Size=2.15,0.05,2.86 Anchored BottomSurface=Smooth CFrame=290.524,9.783,260.615|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        Part "Collision" Size=5.46,3.91,3.23 Anchored BottomSurface=Smooth CFrame=283.969,7.784,264.81|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        Part "Collision" Size=9.94,0.05,9.46 Anchored BottomSurface=Smooth CFrame=287.224,5.814,267.24|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        Part "Collision" Size=2.78,0.35,3.23 Anchored BottomSurface=Smooth CFrame=283.969,9.564,260.89|-0.002,90,0 Color=#E7E7EC TopSurface=Smooth Transparency=1
+        MeshPart "Glass" Size=9.399,1.077,2.832 Anchored CFrame=287.092,13.922,279.097 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Glass" Size=7.541,2.155,2.997 Anchored CFrame=287.092,9.94,278.12 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~2/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~2/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~2/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Glass" Size=0.884,2.208,4.867 Anchored CFrame=290.679,9.99,276.264 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~3/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~3/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~3/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Glass" Size=0.062,3.951,7.858 Anchored CFrame=292.693,12.479,271.822 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~4/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~4/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~4/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Glass" Size=0.884,2.208,4.867 Anchored CFrame=283.505,9.99,276.264 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~5/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~5/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~5/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Glass" Size=0.062,1.31,3.749 Anchored CFrame=281.747,13.815,274.275 CollisionFidelity=Default DoubleSided RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4784030739" TextureID="http://www.roblox.com/asset/?id=4784030739" Transparency=0.1 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~6/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~6/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~6/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=0.13,2.85,2.38 Anchored BottomSurface=Smooth CFrame=281.669,11.144,269.64 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~7/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~7/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~7/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=8.82,3.54,0.17 Anchored BottomSurface=Smooth CFrame=287.044,12.018,253.455 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~8/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~8/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~8/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=0.13,2.94,5.5 Anchored BottomSurface=Smooth CFrame=281.669,11.098,257.14 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~9/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~9/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~9/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=0.13,2.79,4.91 Anchored BottomSurface=Smooth CFrame=292.569,11.143,256.985 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~10/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~10/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~10/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=0.13,2.1,3.51 Anchored BottomSurface=Smooth CFrame=292.569,11.509,264.865 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~11/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~11/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~11/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        Part "Glass" Size=0.13,2.13,1.78 Anchored BottomSurface=Smooth CFrame=281.669,11.504,263.46 Color=#1B2A35 TopSurface=Smooth Transparency=0.8 {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~12/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~12/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Glass~12/Hit/GetUp.luau" Disabled
+            }
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Interior" Size=11.195,9.761,26.639 Anchored CFrame=287.092,10.67,267.224 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://9038951010" TextureID="rbxassetid://9038951010"
+        MeshPart "Interior" Size=8.136,6.777,6.839 Anchored CFrame=287.114,7.902,276.042 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=4794832591" TextureID="http://www.roblox.com/asset/?id=4794832591"
+        Model "Interior Light" {
+            Model "Model" {
+                Part "Part" Size=0.748,2.096,2.084 Anchored BottomSurface=Smooth CFrame=286.827,14.272,260.362|0,0,-90 Color=#E5E4DF Material=Glass TopSurface=Smooth Transparency=0.5 {
+                    SpecialMesh "Mesh" MeshType=Sphere
+                }
+                Part "Part" Size=0.748,1.966,1.955 Anchored BottomSurface=Smooth CFrame=286.827,14.272,260.362|0,0,-90 Color=#F8D96D Material=Neon TopSurface=Smooth {
+                    SpecialMesh "Mesh" MeshType=Sphere
+                }
+            }
+            Part "Part" Size=0.682,0.094,0.522 Anchored BottomSurface=Smooth CFrame=286.78,14.096,260.462 TopSurface=Smooth {
+                PointLight "PointLight" Color=#FFC99A Range=15
+            }
+            UnionOperation "Union" Size=0.378,2.124,2.124 Anchored CFrame=286.827,14.548,260.362|0,0,-90 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="c5cdc0b1a85b7494"
+        }
+        Model "Interior Light" {
+            Model "Model" {
+                Part "Part" Size=0.748,2.096,2.084 Anchored BottomSurface=Smooth CFrame=286.827,14.324,274.778|0,0,-90 Color=#E5E4DF Material=Glass TopSurface=Smooth Transparency=0.5 {
+                    SpecialMesh "Mesh" MeshType=Sphere
+                }
+                Part "Part" Size=0.748,1.966,1.955 Anchored BottomSurface=Smooth CFrame=286.827,14.324,274.778|0,0,-90 Color=#F8D96D Material=Neon TopSurface=Smooth {
+                    SpecialMesh "Mesh" MeshType=Sphere
+                }
+            }
+            Part "Part" Size=0.682,0.094,0.522 Anchored BottomSurface=Smooth CFrame=286.78,14.148,274.878 TopSurface=Smooth {
+                PointLight "PointLight" Color=#FFC99A Range=15
+            }
+            UnionOperation "Union" Size=0.378,2.124,2.124 Anchored CFrame=286.827,14.6,274.778|0,0,-90 Color=#A3A2A5 Material=Metal RenderFidelity=Precise $_geo="c5cdc0b1a85b7494"
+        }
+        MeshPart "MeshPart" Size=11.211,10.027,29.272 Anchored CFrame=287.092,9.089,267.88 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718"
+        MeshPart "MeshPart" Size=11.384,10.276,23.692 Anchored CFrame=287.082,9.384,270.67 CanCollide=false CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718"
+        MeshPart "MeshPart" Size=11.327,10.066,29.329 Anchored CFrame=287.096,9.682,267.846 CanCollide=false CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718"
+        MeshPart "MeshPart" Size=0.772,9.494,18.655 Anchored CFrame=281.223,10.181,263.018 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://1042600718" TextureID="rbxassetid://1042600718"
+        Model "Model" {
+            Part "Part" Size=10.416,0.2,18.785 Anchored BottomSurface=Smooth CFrame=287.285,6.214,263.227 Color=#69665C Material=Concrete TopSurface=Smooth {
+                Texture "Texture" Face=Top StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://3963114515" TextureContent="rbxassetid://3963114515"
+            }
+        }
+        MeshPart "Paint" Size=11.129,3.384,9.726 Anchored CFrame=287.092,6.024,277.275 CanCollide=false CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise
+        MeshPart "Paint" Size=0.544,8.307,3.835 Anchored CFrame=281.725,9.945,269.558 CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~2/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~2/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~2/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Paint" Size=2.229,6.495,5.329 Anchored CFrame=282.934,7.897,276.316 CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~3/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~3/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~3/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Paint" Size=7.693,0.707,2.705 Anchored CFrame=287.092,8.496,280.511 CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~4/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~4/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~4/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Paint" Size=2.229,6.495,5.329 Anchored CFrame=291.251,7.897,276.317 CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise {
+            Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=5
+            Sound "Collide" AudioContent="rbxassetid://215550851" RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=5
+            Script "Crash" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~5/Crash.luau"
+            NumberValue "Health" Value=220
+            Script "Hit" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~5/Hit.luau" {
+                Script "GetUp" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Paint~5/Hit/GetUp.luau" Disabled
+            }
+            BlockMesh "Mesh" Offset=0,0,0.008 Scale=1,1,0.572
+            Sound "Sound" AudioContent="rbxassetid://553325070" SoundId="rbxassetid://553325070" Volume=5
+            ParticleEmitter "Sparks" Size=0:0.25,1:0.25 Acceleration=0,-50,0 Enabled=false LightEmission=1 LightInfluence=1 Rate=40 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://253975502" TextureContent="rbxassetid://253975502" Transparency=0:0.5,1:0.5
+        }
+        MeshPart "Paint" Size=11.304,11.424,29.307 Anchored CFrame=287.092,10.097,267.863 CanCollide=false CollisionFidelity=Default Color=#E7E7EC RenderFidelity=Precise
+        Model "Picture Frame" {
+            Script "Instructions" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Picture Frame/Instructions.luau"
+            Script "Limbye" @src="Scripts/Workspace/CHASSI/Body/Body/Body/Model/Picture Frame/Limbye.luau"
+            Part "Part" Size=2.084,2.779,0.017 Anchored BottomSurface=Smooth CFrame=282.314,11.737,265.898|-0.002,-90,0 Color=#E29B40 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1.737,2.432,0.087 Anchored BottomSurface=Smooth CFrame=282.35,11.737,265.898|-0.002,-90,0 Color=#E29B40 Material=Wood TopSurface=Smooth {
+                Decal "Decal" Texture="rbxassetid://9039001938" TextureContent="rbxassetid://9039001938"
+            }
+            UnionOperation "Union" Size=2.085,2.78,0.174 Anchored CFrame=282.393,11.737,265.898|-0.002,-90,0 Color=#6A3909 Material=Wood RenderFidelity=Precise $_geo="b832dda2a8053345"
+        }
+        MeshPart "huladoll" Size=0.883,1.223,0.666 Anchored CFrame=287.822,9.546,277.9|2.621,0,0 CollisionFidelity=Default Color=#1B2A35 RenderFidelity=Precise TextureContent="rbxassetid://1262913457" TextureID="rbxassetid://1262913457"
+        Model "ultra realistic bed" {
+            MeshPart "Bed Cover" Size=8.351,1.877,7.701 Anchored CFrame=287.219,8.022,260.502|180,-1.115,180 Color=#C9D3D3 RenderFidelity=Precise TextureContent="rbxassetid://2236066320" TextureID="rbxassetid://2236066320"
+            MeshPart "Bed Frame" Size=6.734,3.844,9.403 Anchored CFrame=287.284,8.236,258.731|180,-1.115,180 Color=#AFA79A Reflectance=0.15 RenderFidelity=Precise {
+                Texture "Texture" Color3=#828282 Face=Top Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Color3=#B3B3B3 Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Face=Right Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Color3=#949494 Face=Left Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+            }
+            MeshPart "Bed Pillows" Size=5.871,1.707,3.156 Anchored CFrame=287.243,9.114,255.973|180,-1.115,180 Color=#D1D3CA RenderFidelity=Precise {
+                Texture "Texture" Face=Back StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://434752051" TextureContent="rbxassetid://434752051"
+                Texture "Texture" StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://434752051" TextureContent="rbxassetid://434752051"
+                Texture "Texture" Face=Top StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://434752051" TextureContent="rbxassetid://434752051"
+                Texture "Texture" Color3=#F4F4F4 Face=Left StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://434752051" TextureContent="rbxassetid://434752051"
+                Texture "Texture" Face=Right StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://434752051" TextureContent="rbxassetid://434752051"
+            }
+            MeshPart "Bed Wall Frame 1" Size=3.387,1.939,0.503 Anchored CFrame=288.858,9.83,254.247|180,-1.115,180 Color=#AFA79A Reflectance=0.15 RenderFidelity=Precise {
+                Texture "Texture" Color3=#D3D3D3 Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Color3=#AAAAAA Face=Left Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Face=Top Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+            }
+            MeshPart "Bed Wall Frame 2" Size=3.387,1.939,0.503 Anchored CFrame=285.537,9.83,254.312|180,-1.115,180 Color=#AFA79A Reflectance=0.15 RenderFidelity=Precise {
+                Texture "Texture" Color3=#D3D3D3 Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Face=Right Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+                Texture "Texture" Face=Top Texture="rbxassetid://1693061369" TextureContent="rbxassetid://1693061369"
+            }
+            MeshPart "Blanket" Size=9.401,2.076,3.323 Anchored CFrame=286.739,8.22,260.586|180,-1.115,180 Color=#FFFFFF RenderFidelity=Precise {
+                Decal "Decal" Color3=#A7ADB6 Face=Bottom Texture="rbxassetid://175293358" TextureContent="rbxassetid://175293358" Transparency=0.3
+                Decal "Decal" Face=Top Texture="rbxassetid://184571058" TextureContent="rbxassetid://184571058"
+                Decal "Decal" Face=Back Texture="rbxassetid://184571058" TextureContent="rbxassetid://184571058"
+                Decal "Decal" Color3=#D1D1D1 Face=Left Texture="rbxassetid://184571058" TextureContent="rbxassetid://184571058"
+                Decal "Decal" Color3=#EFEFEF Texture="rbxassetid://184571058" TextureContent="rbxassetid://184571058"
+            }
+            MeshPart "Mattress" Size=6.006,1.383,9.126 Anchored CFrame=287.163,7.728,258.769|180,-1.115,180 Color=#BEBDB3 RenderFidelity=Precise {
+                Texture "Texture" Face=Right StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://173014571" TextureContent="rbxassetid://173014571"
+                Texture "Texture" Color3=#EEEEEE Face=Left StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://173014571" TextureContent="rbxassetid://173014571"
+                Texture "Texture" Color3=#C5C5C5 Face=Top StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://173014571" TextureContent="rbxassetid://173014571"
+            }
+        }
+    }
+    Seat "Seat" Size=1.394,0.052,1.186 Anchored BottomSurface=Smooth CFrame=284.888,6.539,275.545|170.884,1.284,179.805 Color=#1B2A35 TopSurface=Smooth Transparency=1
+    Seat "Seat" Size=1.394,0.052,1.186 Anchored BottomSurface=Smooth CFrame=287.148,6.539,275.546|170.884,1.284,179.805 Color=#1B2A35 TopSurface=Smooth Transparency=1
+    Seat "Seat" Size=1.394,0.052,1.186 Anchored BottomSurface=Smooth CFrame=286.638,10.848,256.195|91.583,-35.874,90.734 Color=#1B2A35 TopSurface=Smooth Transparency=1
+}
+Part "Cam" Size=0.372,0.329,0.17 Anchored CFrame=298.37,7.339,276.063|0,-0.272,0 CanCollide=false Transparency=1
+Part "CamLocation" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=299.928,7.62,273.614|-176,0,180 CanCollide=false FrontSurface=Hinge TopSurface=Smooth Transparency=1
+Model "Display" {
+    Part "BMWHeadupDisplay" Size=0.186,2.466,1.788 Anchored BottomSurface=Smooth CFrame=288.911,7.068,277.266|-51.459,90,0 CanCollide=false TopSurface=Smooth Transparency=1 {
+        SurfaceGui "G" Enabled=false Face=Right {
+            ImageLabel "BRAKE" Position=0.321,0,0.382,0 Size=0.4,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1831713750" ImageColor3=#FF0000 ImageContent="rbxassetid://1831713750" Visible=false ZIndex=1000
+            ImageLabel "MPH" Position=0.51,0,0.51,0 Size=0,84,0,54 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1831687212" ImageContent="rbxassetid://1831687212" ImageTransparency=0.5 Visible=false
+            TextLabel "Speed" Position=0.361,0,0.482,0 Size=0.154,0,0.113,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Text="0" TextColor3=#FFFFFF TextSize=90 TextTransparency=0.5 TextWrapped TextXAlignment=Right Visible=false ZIndex=0
+        }
+    }
+    MeshPart "GaugeDisplay" Size=0.118,0.515,1.373 Anchored CFrame=288.95,6.25,277.109|9.8,90,0 CanCollide=false CollisionFidelity=Default Color=#000000 RenderFidelity=Precise {
+        SurfaceGui "BMWGauges" CanvasSize=420,200 Enabled=false Face=Right {
+            Frame "BMWSystem" Size=0.995,0,0.99,0 BackgroundColor3=#FF0000 BackgroundTransparency=1 BorderColor3=#FF0000 BorderSizePixel=0 {
+                ImageLabel "Background" Position=0.309,0,0.187,50 Size=0.404,0,0.485,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1823571042" ImageContent="rbxassetid://1823571042" ZIndex=0
+                Frame "Comfort" Position=0,0,0.005,0 Size=1,0,0.99,0 BackgroundColor3=#040404 BackgroundTransparency=1 BorderSizePixel=0 Visible=false {
+                    ImageLabel "Fuel" Position=0.093,0,0.444,0 Size=0.091,0,0.374,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1823939481" ImageContent="rbxassetid://1823939481"
+                    ImageLabel "Needle" Position=0.368,0,0.141,0 Size=1.043,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 ZIndex=4 {
+                        Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=280 ZIndex=4 {
+                            Frame "Frame" Size=1,0,0,110 BackgroundColor3=#FFFFFF BorderSizePixel=0 Visible=false ZIndex=4
+                            ImageLabel "Frame" Position=0,-8,0,-20 Size=2.75,0,5.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1825615590" ImageContent="rbxassetid://1825615590" ZIndex=4
+                        }
+                    }
+                    ImageLabel "Needle" Position=-0.402,0,0.091,0 Size=1.043,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=40 ZIndex=4 {
+                        Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=100 ZIndex=4 {
+                            Frame "Frame" Size=1,0,0,110 BackgroundColor3=#FFFFFF BorderSizePixel=0 Visible=false ZIndex=4
+                            ImageLabel "Frame" Position=0,-8,0,-20 Size=2.75,0,5.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1825615590" ImageContent="rbxassetid://1825615590" ZIndex=4
+                        }
+                    }
+                    ImageLabel "Speedometer" Position=0.218,0,0.152,0 Size=0.251,0,0.667,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1823695342" ImageContent="rbxassetid://1823695342"
+                    ImageLabel "Tachometer" Position=0.536,0,0.146,0 Size=0.251,0,0.682,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1893337619" ImageContent="rbxassetid://1893337619"
+                    ImageLabel "Temp" Position=0.842,0,0.475,0 Size=0.067,0,0.343,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1823940087" ImageContent="rbxassetid://1823940087"
+                }
+                TextLabel "Gear" Position=0.694,0,0.692,0 Size=0,9,0,25 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="N" TextColor3=#FFFFFF TextSize=12 TextWrapped Visible=false ZIndex=2
+                ImageLabel "Gradient" Position=0.447,0,0.18,0 Size=0,45,0,28 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1972780301" ImageColor3=#FF4B33 ImageContent="rbxassetid://1972780301" ZIndex=0
+                ImageLabel "SpeedNeedle" Position=-0.16,0,-0.025,0 Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-30 ZIndex=1000000000 {
+                    Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=60 ZIndex=1000000000 {
+                        Frame "Frame" Size=1,0,0,110 BackgroundColor3=#FFFFFF BorderSizePixel=0 Visible=false ZIndex=1000000000
+                        ImageLabel "Sport" Position=0,-8,0,-14 Size=5.25,0,18,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1944651973" ImageColor3=#FF8B6E ImageContent="rbxassetid://1944651973" ZIndex=1000000000
+                    }
+                }
+                Frame "Sport" Position=0,0,0.005,0 Size=1,0,0.99,0 Active BackgroundColor3=#040404 BackgroundTransparency=1 BorderSizePixel=0 {
+                    ImageLabel "Fuel" Position=0.093,0,0.444,0 Size=0.091,0,0.374,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1855860519" ImageContent="rbxassetid://1855860519"
+                    TextLabel "GearSport" Position=0.6,0,0.328,0 Size=0,48,0,57 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="N" TextColor3=#FFFFFF TextSize=35 TextWrapped ZIndex=2
+                    TextLabel "SpeedSport" Position=0.285,0,0.327,0 Size=0,53,0,57 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Light|Normal" Text="0" TextColor3=#FFFFFF TextSize=35 TextWrapped ZIndex=2
+                    ImageLabel "Speedometer" Position=0.218,0,0.152,0 Size=0.251,0,0.667,0 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1855841348" ImageContent="rbxassetid://1855841348"
+                    ImageLabel "Tachometer" Position=0.536,0,0.146,0 Size=0.251,0,0.682,0 Active BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1890803069" ImageContent="rbxassetid://1890803069"
+                    ImageLabel "Temp" Position=0.842,0,0.475,0 Size=0.067,0,0.343,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://1855860180" ImageContent="rbxassetid://1855860180"
+                }
+                Frame "Status" Position=0.39,0,0.843,0 Size=0.239,0,0.081,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                    Frame "Information" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                        TextLabel "TOTAL" Position=0.09,0,0.188,0 Size=0.31,0,0.688,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Bold|Normal" Text="TOTAL" TextColor3=#8C0000 TextScaled TextSize=12 TextWrapped
+                        TextLabel "TotalNum" Position=0.44,0,0.063,0 Size=0.46,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="XXXXX mi." TextColor3=#D6D6D6 TextScaled TextSize=14 TextWrapped
+                    }
+                    Frame "Status" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Visible=false {
+                        TextLabel "Status" Position=0.15,0,0.063,0 Size=0.67,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="Door open." TextColor3=#FFFFFF TextSize=12 TextWrapped TextXAlignment=Left
+                        ImageLabel "StatusIcon" Position=-0.02,0,0.063,0 Size=0.14,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1825728157" ImageContent="rbxassetid://1825728157" ZIndex=2
+                    }
+                }
+                Folder "SymbolLights" {
+                    ImageLabel "ABS" Position=0.047,0,0.383,0 Size=0.041,0,0.096,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047797" ImageContent="rbxassetid://759047797" Visible=false ZIndex=2
+                    ImageLabel "ABS2" Position=0.047,0,0.383,0 Size=0.041,0,0.096,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047797" ImageContent="rbxassetid://759047797" Visible=false ZIndex=3
+                    ImageLabel "AEB" Position=0.42,0,0.45,0 Size=0.17,0,0.4,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1979896391" ImageColor3=#FF0000 ImageContent="rbxassetid://1979896391" Visible=false ZIndex=1000
+                    ImageLabel "BRAKE" Position=0.309,0,0.097,50 Size=0.404,0,0.585,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1831713750" ImageColor3=#FF0000 ImageContent="rbxassetid://1831713750" Visible=false ZIndex=1000
+                    ImageLabel "CruiseControl" Position=0.474,0,0.345,50 Size=0.058,0,0.151,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1584821260" ImageColor3=#51FF00 ImageContent="rbxassetid://1584821260" Visible=false ZIndex=45
+                    ImageLabel "CruiseControl2" Position=0.309,0,0.187,50 Size=0.404,0,0.485,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1891019667" ImageColor3=#51FF00 ImageContent="rbxassetid://1891019667" Visible=false
+                    ImageLabel "FogLight1" Position=0.516,0,0.078,0 Size=0.036,0,0.105,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://2553345649" ImageContent="rbxassetid://2553345649" Visible=false ZIndex=2
+                    ImageLabel "FogLight2" Position=0.45,0,0.078,0 Size=0.036,0,0.105,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://2553351205" ImageContent="rbxassetid://2553351205" Visible=false ZIndex=2
+                    ImageLabel "HighBeams" Position=0.484,0,0.091,0 Size=0.036,0,0.076,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047794" ImageContent="rbxassetid://759047794" Visible=false ZIndex=2
+                    ImageLabel "Left" Position=0.412,0,0.091,0 Size=0.046,0,0.11,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://437433617" ImageColor3=#00FF00 ImageContent="rbxassetid://437433617" Visible=false ZIndex=2
+                    ImageLabel "LowBeams" Position=0.108,0,0.275,0 Size=0.036,0,0.083,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047792" ImageContent="rbxassetid://759047792" Visible=false ZIndex=2
+                    ImageLabel "M5" Position=0.46,0,0.268,50 Size=0.09,0,0.05,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1111196998" ImageContent="rbxassetid://1111196998" ZIndex=2
+                    ImageLabel "ParkingBrake" Position=0.856,0,0.323,0 Size=0.038,0,0.091,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047800" ImageContent="rbxassetid://759047800" Visible=false ZIndex=2
+                    ImageLabel "Right" Position=0.544,0,0.097,0 Size=0.046,0,0.11,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://437433617" ImageColor3=#00FF00 ImageContent="rbxassetid://437433617" Rotation=180 Visible=false ZIndex=2
+                    ImageLabel "TCS" Position=0.933,0,0.61,0 Size=0.038,0,0.12,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://1941935312" ImageContent="rbxassetid://1941935312" Visible=false ZIndex=3
+                    ImageLabel "TCS2" Position=0.743,0,0.85,0 Size=0.038,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://759047801" ImageContent="rbxassetid://759047801" Visible=false ZIndex=2
+                    TextLabel "TRACTION" Position=0.608,0,0.782,0 Size=0,36,0,21 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="TRACTION" TextColor3=#FFB700 TextSize=7 TextWrapped TextXAlignment=Right TextYAlignment=Top Visible=false ZIndex=2
+                }
+                ImageLabel "TachNeedle" Position=0.163,0,-0.025,0 Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-30 ZIndex=1000000000 {
+                    Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=120 ZIndex=1000000000 {
+                        Frame "Frame" Size=1,0,0,110 BackgroundColor3=#FFFFFF BorderSizePixel=0 Visible=false ZIndex=1000000000
+                        ImageLabel "Sport" Position=0,-8,0,-14 Size=5.25,0,18,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1944651973" ImageColor3=#FF8B6E ImageContent="rbxassetid://1944651973" ZIndex=1000000000
+                    }
+                }
+                TextLabel "Time" Position=0.459,0,0.192,0 Size=0,35,0,22 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Arial|Regular|Normal" Text="00:00" TextColor3=#FFFFFF TextSize=12 TextWrapped
+            }
+        }
+    }
+}
+Part "Exh" Size=4.89,0.51,0.55 Anchored BottomSurface=Smooth CFrame=287.279,4.698,264.583|1,0.041,-0.001 CanCollide=false TopSurface=Smooth Transparency=1 {
+    Sound "Rev" AudioContent="rbxassetid://2101020049" Looped PlaybackSpeed=0 SoundId="rbxassetid://2101020049" Volume=1 {
+        NumberValue "SetPitch" Value=2
+        NumberValue "SetRev" Value=0.6
+    }
+}
+Model "Exhaust" {
+    Part "BFLight1" Size=0.221,0.221,0.221 Anchored BottomSurface=Smooth CFrame=289.628,4.134,265.324|91.142,0.583,-176.817 CanCollide=false CustomPhysicalProperties=0.01,0.03,0.05,1,1 TopSurface=Smooth Transparency=1 {
+        SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+        SpotLight "SpotLight" Angle=120 Brightness=5 Color=#AAAAFF Enabled=false Face=Top Range=7
+    }
+    Part "BFLight2" Size=0.221,0.221,0.221 Anchored BottomSurface=Smooth CFrame=288.776,4.134,265.324|91.142,0.583,-176.817 CanCollide=false CustomPhysicalProperties=0.01,0.03,0.05,1,1 TopSurface=Smooth Transparency=1 {
+        SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+        SpotLight "SpotLight" Angle=120 Brightness=5 Color=#AAAAFF Enabled=false Face=Top Range=7
+    }
+    Part "BFLight3" Size=0.221,0.221,0.221 Anchored BottomSurface=Smooth CFrame=285.583,4.134,265.324|91.142,0.583,-176.817 CanCollide=false CustomPhysicalProperties=0.01,0.03,0.05,1,1 TopSurface=Smooth Transparency=1 {
+        SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+        SpotLight "SpotLight" Angle=120 Brightness=5 Color=#AAAAFF Enabled=false Face=Top Range=7
+    }
+    Part "BFLight4" Size=0.221,0.221,0.221 Anchored BottomSurface=Smooth CFrame=284.306,4.134,265.324|91.142,0.583,-176.817 CanCollide=false CustomPhysicalProperties=0.01,0.03,0.05,1,1 TopSurface=Smooth Transparency=1 {
+        SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+        SpotLight "SpotLight" Angle=120 Brightness=5 Color=#AAAAFF Enabled=false Face=Top Range=7
+    }
+    Part "Backfire1" Size=0.221,0.611,0.221 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.713,4.038,265.322|91.829,-2.024,-174.596 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0.03,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0.34:0.062,0.736:0,1:0.313:0.313 Color=0:#FF5652,1:#FF949E Drag=0.01 Enabled=false Lifetime=0.15,0.15 LightEmission=2 LightInfluence=2 LockedToPart Rate=500 RotSpeed=360,360 Rotation=-180,-180 Speed=8,8 SpreadAngle=10,10 Texture="rbxassetid://462433141" TextureContent="rbxassetid://462433141" VelocityInheritance=1
+    }
+    Part "Backfire2" Size=0.221,0.611,0.221 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=289.266,4.05,265.258|91.829,-2.024,-174.596 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0.03,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0.34:0.062,0.736:0,1:0.313:0.313 Color=0:#FF5652,1:#FF949E Drag=0.01 Enabled=false Lifetime=0.15,0.15 LightEmission=2 LightInfluence=2 LockedToPart Rate=500 RotSpeed=360,360 Rotation=-180,-180 Speed=8,8 SpreadAngle=10,10 Texture="rbxassetid://462433141" TextureContent="rbxassetid://462433141" VelocityInheritance=1
+    }
+    Part "Backfire3" Size=0.221,0.611,0.221 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=285.52,4.137,265.153|91.389,-2.152,173.396 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0.03,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0.34:0.062,0.736:0,1:0.313:0.313 Color=0:#FF5652,1:#FF949E Drag=0.01 Enabled=false Lifetime=0.15,0.15 LightEmission=2 LightInfluence=2 LockedToPart Rate=500 RotSpeed=360,360 Rotation=-180,-180 Speed=8,8 SpreadAngle=10,10 Texture="rbxassetid://462433141" TextureContent="rbxassetid://462433141" VelocityInheritance=1
+    }
+    Part "Backfire4" Size=0.221,0.611,0.221 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=285.115,4.134,265.302|91.464,-2.137,175.397 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0.03,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=4 {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0.34:0.062,0.736:0,1:0.313:0.313 Color=0:#FF5652,1:#FF949E Drag=0.01 Enabled=false Lifetime=0.15,0.15 LightEmission=2 LightInfluence=2 LockedToPart Rate=500 RotSpeed=360,360 Rotation=-180,-180 Speed=8,8 SpreadAngle=10,10 Texture="rbxassetid://462433141" TextureContent="rbxassetid://462433141" VelocityInheritance=1
+    }
+}
+Part "Smoke" Size=7.44,1.9,5.4 Anchored BottomSurface=Smooth CFrame=287.434,5.108,279.974|-179,0,-180 CanCollide=false TopSurface=Smooth Transparency=1 {
+    Beam "Antifreeze" Attachment0=@"Workspace/CHASSI/Body/Body/Smoke/Attachment~2" Attachment1=@"Workspace/CHASSI/Body/Body/Smoke/Attachment~3" Color=0:#A5DC2D,1:#A5DC2D Enabled=false FaceCamera Segments=1 Texture="rbxassetid://1230739738" TextureContent="rbxassetid://1230739738" TextureMode=Wrap TextureSpeed=-1 Transparency=0:0,1:0 Width0=0.01 Width1=0.2
+    Attachment "Attachment" CFrame=0,-152,86.4
+    Attachment "Attachment" CFrame=-1.777,-152,0
+    Attachment "Attachment" CFrame=-1.777,0,0
+    Attachment "Attachment" CFrame=0,0,86.4
+    Sound "Break" AudioContent="rbxassetid://132758217" SoundId="rbxassetid://132758217" Volume=2
+    Sound "Fan" AudioContent="rbxassetid://572833714" Looped SoundId="rbxassetid://572833714" Volume=0
+    Sound "Liquid" AudioContent="rbxassetid://146039135" Looped Playing SoundId="rbxassetid://146039135" Volume=0
+    Beam "Oil" Attachment0=@"Workspace/CHASSI/Body/Body/Smoke/Attachment" Attachment1=@"Workspace/CHASSI/Body/Body/Smoke/Attachment~4" Color=0:#301300,1:#301300 Enabled=false FaceCamera Segments=1 Texture="rbxassetid://1230739738" TextureContent="rbxassetid://1230739738" TextureMode=Wrap TextureSpeed=-1 Transparency=0:0,1:0 Width0=0.01 Width1=0.2
+    ParticleEmitter "Smoke" Size=0:0,0.196:0.604,0.628:1.374,1:1.703 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Enabled=false Lifetime=5,5 LightInfluence=1 Rate=100 RotSpeed=20,100 Speed=-2,0 SpreadAngle=200,200 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" VelocityInheritance=0.3 ZOffset=5
+    Sound "Steam" AudioContent="rbxassetid://291165237" Looped SoundId="rbxassetid://291165237" Volume=0
+}

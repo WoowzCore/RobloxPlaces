@@ -1,0 +1,10 @@
+--edit the character
+--name the character
+--go in the pad, and change the script named "Script"
+--edit the part with where it says "character" to the name of the model
+--change animations if you want
+--to change the jumpscare open the "Main frame" script (not edit mode)
+--and change the local script and the sounds
+--have fun!
+--put suggestions/ratings in the comments!
+--tell me what morph to make next and i will make it! thanks!

@@ -1,0 +1,1317 @@
+Part "Badge" Size=0.05,0.292,0.292 Anchored CFrame=-127.986,6.259,20.92|62.725,90,0 CanCollide=false Material=SmoothPlastic Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://124404822" TextureContent="rbxassetid://124404822"
+    BlockMesh "Mesh" Scale=0.857,1,1
+}
+Part "Badge" Size=0.05,0.264,0.264 Anchored CFrame=-127.999,7.012,37.298|6.237,-90,0 CanCollide=false Material=SmoothPlastic Transparency=1 {
+    Decal "Decal" Face=Right Texture="rbxassetid://124404822" TextureContent="rbxassetid://124404822"
+    BlockMesh "Mesh" Scale=0.627,1,1
+}
+Model "Brakes" {
+    Model "G1" {
+        Part "Brakes" Size=0.56,0.26,0.2 Anchored CFrame=-125.479,6.67,36.602|175.463,-28.406,154.039 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=141116476" ImageColor3=#FFF99D ImageContent="http://www.roblox.com/asset/?id=141116476"
+            }
+            PointLight "Lights" Color=#FF0000 Enabled=false Range=5 Shadows
+        }
+        Part "Brakes" Size=0.76,0.26,0.2 Anchored CFrame=-126.134,6.604,36.891|-179.11,-17.593,179.997 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=141116476" ImageColor3=#FFF99D ImageContent="http://www.roblox.com/asset/?id=141116476"
+            }
+            PointLight "Lights" Color=#FF0000 Enabled=false Range=5 Shadows
+        }
+        Part "Brakes" Size=0.56,0.26,0.2 Anchored CFrame=-130.493,6.682,36.626|176.183,31.148,-160.552 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=141116476" ImageColor3=#FFF99D ImageContent="http://www.roblox.com/asset/?id=141116476"
+            }
+            PointLight "Lights" Color=#FF0000 Enabled=false Range=5 Shadows
+        }
+        Part "Brakes" Size=0.76,0.26,0.2 Anchored CFrame=-129.875,6.615,36.917|-179.108,21.875,179.996 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="http://www.roblox.com/asset/?id=141116476" ImageColor3=#FFF99D ImageContent="http://www.roblox.com/asset/?id=141116476"
+            }
+            PointLight "Lights" Color=#FF0000 Enabled=false Range=5 Shadows
+        }
+    }
+    Script "_main" @src="Scripts/Workspace/x6m/Body/Brakes/_main.luau"
+    BoolValue "on"
+}
+Part "CamLocation" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-129.401,7.505,29.721 CanCollide=false FrontSurface=Hinge TopSurface=Smooth Transparency=0.5
+Model "Color" {
+    MeshPart "Color" Size=5.583,1.866,7.971 Anchored CFrame=-127.997,7.921,29.66|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-Color Strong Joint" C0=-2.792,-0.933,-3.985|0,-90,0 C1=0.511,-0.355,-6.821|0,-90,0 Part0=@"Workspace/x6m/Body/Color/Color" Part1=@"Workspace/x6m/Body/Color/Color~13"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-2.792,-0.933,-3.985|0,-90,0 C1=0.535,-0.249,-6.794|0,-90,0 Part0=@"Workspace/x6m/Body/Color/Color" Part1=@"Workspace/x6m/Body/MeshPart~33"
+    }
+    MeshPart "Color" Size=6.791,2.972,4.3 Anchored CFrame=-127.988,5.692,24.119|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=6.204,2.416,1.553 Anchored CFrame=-127.982,5.005,21.321|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=6.839,2.407,2.617 Anchored CFrame=-127.983,5.231,36.189|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=0.415,2.83,4.047 Anchored CFrame=-131.153,5.639,27.787|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-0.207,-1.415,-2.024|0,-90,0 C1=0.324,-3.469,-1.613|0.277,-90,0 Part0=@"Workspace/x6m/Body/Color/Color~5" Part1=@"Workspace/x6m/Body/MeshPart~15"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.207,-1.415,-2.024|-180,0,-180 C1=0.641,-3.398,1.645|-180,0,-180 Part0=@"Workspace/x6m/Body/Color/Color~5" Part1=@"Workspace/x6m/Body/MeshPart~23"
+    }
+    MeshPart "Color" Size=4.824,2.703,3.872 Anchored CFrame=-127.997,7.143,35.374|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=6.83,2.407,2.709 Anchored CFrame=-127.982,5.231,36.239|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=6.732,2.358,2.413 Anchored CFrame=-127.977,5.001,21.819|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=4.642,0.184,0.87 Anchored CFrame=-127.997,7.435,36.735|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=5.814,1.088,5.069 Anchored CFrame=-127.982,6.572,23.226|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=0.644,2.945,3.712 Anchored CFrame=-124.833,5.795,31.467|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-Color Strong Joint" C0=0.322,-1.472,1.856|0,90,0 C1=-2.842,-3.598,0.05|0,90,0 Part0=@"Workspace/x6m/Body/Color/Color~11" Part1=@"Workspace/x6m/Body/Color/Color"
+    }
+    MeshPart "Color" Size=0.944,0.409,0.544 Anchored CFrame=-131.343,7.343,26.824|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.472,-0.205,0.272|90,0,0 C1=0.202,0.016,0.3|90,0,0 Part0=@"Workspace/x6m/Body/Color/Color~12" Part1=@"Workspace/x6m/Body/MeshPart~6"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.472,-0.205,0.272|90,0,0 C1=3.811,1.702,4.646|90,0,0 Part0=@"Workspace/x6m/Body/Color/Color~12" Part1=@"Workspace/x6m/Body/MeshPart~11"
+    }
+    MeshPart "Color" Size=0.944,0.409,0.544 Anchored CFrame=-124.694,7.343,26.824|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.472,-0.205,0.272|90,0,0 C1=-2.837,1.702,4.646|90,0,0 Part0=@"Workspace/x6m/Body/Color/Color~13" Part1=@"Workspace/x6m/Body/MeshPart~11"
+    }
+    MeshPart "Color" Size=0.644,2.945,3.712 Anchored CFrame=-131.128,5.795,31.467|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-Color Strong Joint" C0=-0.322,-1.472,-1.856|0,-90,0 C1=2.809,-3.598,-3.663|0,-90,0 Part0=@"Workspace/x6m/Body/Color/Color~14" Part1=@"Workspace/x6m/Body/Color/Color"
+    }
+    MeshPart "Color" Size=1.476,4.393,10.66 Anchored CFrame=-125.248,6.541,31.341|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-Color Strong Joint" C0=0.738,-2.196,5.33|90,0,0 C1=-2.004,0.236,2.763|90,0,0 Part0=@"Workspace/x6m/Body/Color/Color~15" Part1=@"Workspace/x6m/Body/Color/Color~19"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-0.738,-2.196,5.33 C1=-3.503,-2.653,-0.616 Part0=@"Workspace/x6m/Body/Color/Color~15" Part1=@"Workspace/x6m/Body/MeshPart~10"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.738,-2.196,5.33|0,90,0 C1=-2.015,-2.783,10.569|0,90,0 Part0=@"Workspace/x6m/Body/Color/Color~15" Part1=@"Workspace/x6m/Body/MeshPart~17"
+    }
+    MeshPart "Color" Size=0.415,2.83,4.047 Anchored CFrame=-124.833,5.639,27.787|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-0.207,1.415,2.024|-90,0,-180 C1=0.202,-0.077,1.089|-90,0,-180 Part0=@"Workspace/x6m/Body/Color/Color~16" Part1=@"Workspace/x6m/Body/MeshPart~3"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.207,-1.415,2.024|0,90,0 C1=-0.328,-3.488,2.434|0.277,90,0 Part0=@"Workspace/x6m/Body/Color/Color~16" Part1=@"Workspace/x6m/Body/MeshPart~9"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=0.207,-1.415,-2.024|-180,0,-180 C1=-0.236,-3.398,1.645|-180,0,-180 Part0=@"Workspace/x6m/Body/Color/Color~16" Part1=@"Workspace/x6m/Body/MeshPart~27"
+    }
+    MeshPart "Color" Size=1.476,4.393,10.66 Anchored CFrame=-130.735,6.541,31.341|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        ManualWeld "Color-to-Color Strong Joint" C0=0.738,-2.196,5.33|90,0,0 C1=3.483,0.236,2.763|90,0,0 Part0=@"Workspace/x6m/Body/Color/Color~17" Part1=@"Workspace/x6m/Body/Color/Color~19"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-0.738,-2.196,5.33 C1=1.984,-2.653,-0.616 Part0=@"Workspace/x6m/Body/Color/Color~17" Part1=@"Workspace/x6m/Body/MeshPart~10"
+        ManualWeld "Color-to-MeshPart Strong Joint" C0=-0.738,-2.196,-5.33|0,-90,0 C1=1.996,-2.783,-0.091|0,-90,0 Part0=@"Workspace/x6m/Body/Color/Color~17" Part1=@"Workspace/x6m/Body/MeshPart~17"
+    }
+    MeshPart "Color" Size=6.157,2.433,1.527 Anchored CFrame=-127.982,5.005,21.334|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "Color" Size=6.7,0.579,7.101 Anchored CFrame=-127.99,4.109,28.775|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+}
+Model "Dash" {
+    Part "DashSc" Size=0.22,0.22,0.176 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.033,6.995,26.505|79.274,-89.515,90.934 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        SurfaceGui "G" CanvasSize=100,125 Face=Right {
+            TextLabel "Gear" Position=0.5,0,0.5,20 Size=0,1,0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#828282 ZIndex=9
+            ImageLabel "Left" Position=-0.1,0,0.75,10 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+            ImageLabel "Light" Position=0.7,2,0.3,42 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=151673087" ImageContent="http://www.roblox.com/asset/?id=151673087" Visible=false ZIndex=2
+            ImageLabel "PBrake" Position=0.2,-10,0.5,18 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://123454312" ImageContent="rbxassetid://123454312" Visible=false ZIndex=2
+            ImageLabel "Right" Position=1.3,-35,0.75,10 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+            TextLabel "Time" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="16:20:00" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#828282 TextWrapped TextYAlignment=Bottom ZIndex=2
+            Script "TimeScript" @src="Scripts/Workspace/x6m/Body/Dash/DashSc/G/TimeScript.luau"
+            TextButton "Unit" Position=0.9,0,0.1,10 Size=0,10,0,10 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="KM/H" TextColor3=#FFFFFF TextSize=22 TextStrokeColor3=#828282 ZIndex=9
+        }
+    }
+    Part "Spd" Size=0.441,0.176,0.441 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.066,7.008,26.521|95.023,-88.698,18.177 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        SurfaceGui "G" CanvasSize=210,210 Face=Top {
+            ImageLabel "Needle" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-30 ZIndex=2 {
+                Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=90 ZIndex=2 {
+                    Frame "Frame" Size=3,0,0,90 BackgroundColor3=#AA0D9A BackgroundTransparency=0.2 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=120 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-120 Text="100" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=30 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-30 Text="40" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=180 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=180 Text="140" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=210 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-210 Text="160" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=150 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-150 Text="120" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=-30 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=30 Text="0" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=90 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-90 Text="80" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Text="20" TextColor3=#FFFFFF TextSize=22
+            }
+            Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#17FFC5 BackgroundTransparency=1 Rotation=60 {
+                TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-60 Text="60" TextColor3=#FFFFFF TextSize=22
+            }
+        }
+        CylinderMesh "Mesh"
+    }
+    Part "Tac" Size=0.437,0.2,0.437 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.564,7.041,26.485|140.455,-88.188,67.97 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        SurfaceGui "G" CanvasSize=210,210 Face=Top {
+            Frame "0" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-90 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=90 Text="0" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "1" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-56.25 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=56.25 Text="1" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "2" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-22.5 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=22.5 Text="2" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "3" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=11.25 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-11.25 Text="3" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "4" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=45 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-45 Text="4" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "5" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=78.75 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-78.75 Text="5" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "6" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=112.5 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-112.5 Text="6" TextColor3=#FFFFFF TextSize=24
+            }
+            Frame "7" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=146.25 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-146.25 Text="7" TextColor3=#FF0000 TextSize=24
+            }
+            Frame "8" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=178.25 {
+                TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=182 Text="8" TextColor3=#FF0000 TextSize=24
+            }
+            Frame "9" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=206.25 {
+                TextLabel "TextLabel" Position=0.07,0,0.43,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=155 Text="9" TextColor3=#FF0000 TextSize=24
+            }
+            Frame "Indicator" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=90 Visible=false {
+                TextLabel "TextLabel" Position=0.3,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-90 Text=">" TextColor3=#00FF00 TextSize=24
+            }
+            ImageLabel "Needle" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#BB14C7 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-90 ZIndex=2 {
+                Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=90 ZIndex=2 {
+                    Frame "Frame" Size=3,0,0,90 BackgroundColor3=#AA0000 BackgroundTransparency=0.2 BorderSizePixel=0 ZIndex=2
+                }
+            }
+        }
+        CylinderMesh "Mesh"
+    }
+}
+Model "Exhaust" {
+    Part "BFLight1" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-129.672,4.461,37.611|96.782,0.006,0.012 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        SpotLight "SpotLight" Angle=180 Brightness=5 Color=#FFBF00 Enabled=false Face=Top Range=7 Shadows
+    }
+    Part "BFLight2" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-129.336,4.461,37.572|96.782,0.006,0.012 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        SpotLight "SpotLight" Angle=180 Brightness=5 Color=#FFBF00 Enabled=false Face=Top Range=7 Shadows
+    }
+    Part "BFLight3" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-126.659,4.461,37.619|96.782,0.006,0.012 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        SpotLight "SpotLight" Angle=180 Brightness=5 Color=#FFBF00 Enabled=false Face=Top Range=7 Shadows
+    }
+    Part "BFLight4" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-126.31,4.461,37.544|96.782,0.006,0.012 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        SpotLight "SpotLight" Angle=180 Brightness=5 Color=#FFBF00 Enabled=false Face=Top Range=7 Shadows
+    }
+    Part "Backfire1" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.691,4.383,37.267|166.773,0.014,-0.003 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" PlaybackSpeed=0.7 SoundId="rbxassetid://810616601" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0,0.944:1.375,1:1.25 Acceleration=0,-100,0 Color=0:#FFFFFF,0.131:#0026FF,1:#FF5500 EmissionDirection=Front Enabled=false Lifetime=0.1,0.1 LightEmission=0.74 LockedToPart Rate=5000 RotSpeed=100,100 Speed=20,20 SpreadAngle=10,10 Texture="rbxassetid://359293220" TextureContent="rbxassetid://359293220" VelocityInheritance=100
+    }
+    Part "Backfire2" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.354,4.383,37.229|166.773,0.014,-0.003 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" PlaybackSpeed=0.7 SoundId="rbxassetid://810616601" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0,0.944:1.375,1:1.25 Acceleration=0,-100,0 Color=0:#FFFFFF,0.131:#0026FF,1:#FF5500 EmissionDirection=Front Enabled=false Lifetime=0.1,0.1 LightEmission=0.74 LockedToPart Rate=5000 RotSpeed=100,100 Speed=20,20 SpreadAngle=10,10 Texture="rbxassetid://359293220" TextureContent="rbxassetid://359293220" VelocityInheritance=100
+    }
+    Part "Backfire3" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.677,4.384,37.275|166.773,0.014,-0.003 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" PlaybackSpeed=0.7 SoundId="rbxassetid://810616601" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0,0.944:1.375,1:1.25 Acceleration=0,-100,0 Color=0:#FFFFFF,0.131:#0026FF,1:#FF5500 EmissionDirection=Front Enabled=false Lifetime=0.1,0.1 LightEmission=0.74 LockedToPart Rate=5000 RotSpeed=100,100 Speed=20,20 SpreadAngle=10,10 Texture="rbxassetid://359293220" TextureContent="rbxassetid://359293220" VelocityInheritance=100
+    }
+    Part "Backfire4" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.328,4.384,37.2|166.773,0.014,-0.003 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Sound "Backfire1" AudioContent="rbxassetid://810616601" PlaybackSpeed=0.7 SoundId="rbxassetid://810616601" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+        }
+        Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" {
+            ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+        }
+        ParticleEmitter "Fire" Size=0:0,0.944:1.375,1:1.25 Acceleration=0,-100,0 Color=0:#FFFFFF,0.131:#0026FF,1:#FF5500 EmissionDirection=Front Enabled=false Lifetime=0.1,0.1 LightEmission=0.74 LockedToPart Rate=5000 RotSpeed=100,100 Speed=20,20 SpreadAngle=10,10 Texture="rbxassetid://359293220" TextureContent="rbxassetid://359293220" VelocityInheritance=100
+    }
+}
+UnionOperation "F" Size=0.093,1.058,1.139 Anchored CFrame=-126.013,5.275,21.128|50.672,54.575,-44.843 Color=#CDCDCD Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="9070c637699c0f60" {
+    SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+}
+UnionOperation "F" Size=0.093,1.058,1.139 Anchored CFrame=-129.927,5.283,21.134|50.758,-54.624,44.949 Color=#CDCDCD Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise UsePartColor $_geo="106bf669bf2688c9" {
+    SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+}
+Model "FL" {
+    MeshPart "MeshPart" Size=0.986,4.585,5.185 Anchored CFrame=-130.765,6.526,27.721|-0.004,0.013,0 CanCollide=false CollisionFidelity=Default Color=#1B2A35 RenderFidelity=Precise {
+        Texture "Texture" Face=Back StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Bottom StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Top StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+    Part "Part" Size=0.411,0.076,0.426 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.834,6.183,26.744|-0.003,0.012,-90.001 CanCollide=false Color=#ABA89E FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://231683660" TextureContent="rbxassetid://231683660"
+    }
+    Part "Part" Size=0.058,0.385,0.337 Anchored CFrame=-130.818,6.18,26.742|0.017,0.042,-0.009 CanCollide=false Material=SmoothPlastic Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://882164443" TextureContent="rbxassetid://882164443"
+        BlockMesh "Mesh" Scale=0.835,1,1
+    }
+}
+Model "FR" {
+    MeshPart "MeshPart" Size=0.925,4.585,5.224 Anchored CFrame=-125.22,6.505,27.755|-0.004,0.013,0 CanCollide=false CollisionFidelity=Default Color=#111111 RenderFidelity=Precise {
+        Texture "Texture" StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Back StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Bottom StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Top StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+    Part "Part" Size=0.386,0.071,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.153,6.194,26.747|179.997,4.987,90.001 CanCollide=false Color=#ABA89E FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://231683660" TextureContent="rbxassetid://231683660"
+    }
+    Part "Part" Size=0.054,0.361,0.316 Anchored CFrame=-125.171,6.181,26.762|-179.983,-2.07,-179.991 CanCollide=false Material=SmoothPlastic Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://882164443" TextureContent="rbxassetid://882164443"
+        BlockMesh "Mesh" Scale=0.835,1,1
+    }
+}
+Model "Left" {
+    Model "G1" {
+        Part "Indicators" Size=0.35,0.07,0.2 Anchored CFrame=-131.571,7.137,26.686|-0.025,41.062,0.031 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="rbxassetid://134531274" ImageContent="rbxassetid://134531274"
+            }
+            PointLight "Lights" Color=#FF9D00 Enabled=false Range=3 Shadows
+        }
+        Part "Indicators" Size=0.39,0.07,0.2 Anchored CFrame=-131.734,7.137,26.942|-0.119,78.589,0.117 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="rbxassetid://134531274" ImageContent="rbxassetid://134531274"
+            }
+            PointLight "Lights" Color=#FF9D00 Enabled=false Range=3 Shadows
+        }
+    }
+}
+UnionOperation "Light" Size=5.416,0.397,1.195 Anchored CFrame=-128.015,5.953,22.045|-0.001,-0.025,0 CanCollide=false Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 UsePartColor $_geo="72b213881c36c6e4"
+Model "Lights" {
+    UnionOperation "F" Size=5.416,0.397,1.195 Anchored CFrame=-128.015,5.953,22.083|-0.001,-0.025,0 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="9f634d84889b20e2" {
+        SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+    }
+    UnionOperation "F" Size=5.447,0.429,1.268 Anchored CFrame=-128.008,5.954,22.135|-0.001,-0.025,0 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="d80309e826e47d50" {
+        SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+    }
+    UnionOperation "F" Size=5.304,0.274,0.614 Anchored CFrame=-128.009,5.953,21.802|-0.001,-0.025,0 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.4 RenderFidelity=Precise UsePartColor $_geo="b1edc0e7631785dd" {
+        SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+    }
+    UnionOperation "F" Size=5.389,0.377,1.154 Anchored CFrame=-128.015,5.952,22.082|-0.001,-0.025,0 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise UsePartColor $_geo="5cce9ead55b6462a" {
+        SurfaceLight "L" Angle=95 Brightness=0.3 Color=#DCD2FF Enabled=false Range=60
+    }
+    Part "FLI" Size=1.1,0.05,0.2 Anchored CFrame=-130.114,6.145,21.516|7.663,37.599,-13.669 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+        SurfaceLight "L" Angle=94 Brightness=5.86 Color=#FFAA00 Enabled=false Range=20
+    }
+    Part "FRI" Size=1.1,0.05,0.2 Anchored CFrame=-125.89,6.146,21.516|-10.199,-40.444,2.197 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+        SurfaceLight "L" Angle=95 Brightness=2 Color=#FFAA00 Enabled=false Range=20
+    }
+    MeshPart "R" Size=6.019,0.771,1.34 Anchored CFrame=-128.002,6.756,36.218|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.77 {
+        SurfaceLight "L" Angle=95 Brightness=3.56 Color=#FF2C21 Enabled=false Range=60
+        ManualWeld "MeshPart-to-Color Strong Joint" C0=3.01,-0.385,0.67|90,0,0 C1=3.029,1.139,0.641|90,0,0 Part0=@"Workspace/x6m/Body/Lights/R" Part1=@"Workspace/x6m/Body/Color/Color~4"
+        ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=3.01,-0.385,0.67|90,0,0 C1=3.029,1.14,0.632|90,0,0 Part0=@"Workspace/x6m/Body/Lights/R" Part1=@"Workspace/x6m/Body/MeshPart~19"
+    }
+    MeshPart "R" Size=5.837,0.39,1.029 Anchored CFrame=-127.979,6.649,36.397|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        SurfaceLight "L" Angle=95 Brightness=3.56 Color=#FF2C21 Enabled=false Range=60
+    }
+    MeshPart "R" Size=5.96,0.473,1.274 Anchored CFrame=-127.985,6.631,36.212|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        SurfaceLight "L" Angle=95 Brightness=3.56 Color=#FF2C21 Enabled=false Range=60
+        ManualWeld "MeshPart-to-Color Strong Joint" C0=2.98,-0.237,0.637|90,0,0 C1=2.982,1.163,0.614|90,0,0 Part0=@"Workspace/x6m/Body/Lights/R~3" Part1=@"Workspace/x6m/Body/Color/Color~4"
+        ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=2.98,-0.237,0.637|90,0,0 C1=2.982,1.164,0.605|90,0,0 Part0=@"Workspace/x6m/Body/Lights/R~3" Part1=@"Workspace/x6m/Body/MeshPart~19"
+    }
+    Part "RLI" Size=0.72,0.15,0.2 Anchored CFrame=-130.552,6.98,36.501|171.679,48.633,-172.413 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+        SurfaceLight "L" Brightness=25.74 Color=#FFAA00 Enabled=false Range=8
+    }
+    Part "RRI" Size=0.72,0.15,0.2 Anchored CFrame=-125.49,6.958,36.479|170.381,-48.66,170.921 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+        SurfaceLight "L" Brightness=28.02 Color=#FFAA00 Enabled=false Range=8
+    }
+    MeshPart "RV" Size=4.47,0.175,0.279 Anchored CFrame=-127.993,6.773,36.929|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+        SurfaceLight "L" Angle=117 Brightness=10 Color=#FBFCFF Enabled=false Range=8
+        ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-2.235,-0.07,0.139 C1=-2.228,0.072,-0.578 Part0=@"Workspace/x6m/Body/Lights/RV" Part1=@"Workspace/x6m/Body/Lights/R~3"
+    }
+}
+MeshPart "MeshPart" Size=0.635,1.278,2.181 Anchored CFrame=-130.611,7.788,31.28|-179.723,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.2
+MeshPart "MeshPart" Size=3.182,0.175,2.058 Anchored CFrame=-128.01,8.779,29.705|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.3
+MeshPart "MeshPart" Size=0.434,0.1,0.497 Anchored CFrame=-124.423,7.132,26.852|180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#D5733D Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.948,0.605,0.605 Anchored CFrame=-131.342,7.236,26.852|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=5.577,0.531,0.683 Anchored CFrame=-127.997,6.795,36.514|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#970000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.426,0.075,0.491 Anchored CFrame=-131.612,7.122,26.852|180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#D5733D Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-0.213,-0.037,-0.246|0,-90,0 C1=3.396,1.648,4.101|0,-90,0 Part0=@"Workspace/x6m/Body/MeshPart~6" Part1=@"Workspace/x6m/Body/MeshPart~11"
+}
+MeshPart "MeshPart" Size=6.123,2.638,1.519 Anchored CFrame=-127.982,4.874,21.329|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=5.724,0.987,1.403 Anchored CFrame=-127.988,7.757,33.351|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.668,1.573,3.7 Anchored CFrame=-125.368,7.7,28.214|-179.723,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.2 {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-0.334,-0.786,-1.85|0,-90,0 C1=0.363,-0.32,-3.208|-0.277,-90,0 Part0=@"Workspace/x6m/Body/MeshPart~9" Part1=@"Workspace/x6m/Body/MeshPart~25"
+}
+MeshPart "MeshPart" Size=4.964,0.519,1.203 Anchored CFrame=-128.013,6.998,25.396|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.81,3.417,12.039 Anchored CFrame=-128.003,5.436,31.199|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.702,2.599,4.738 Anchored CFrame=-127.982,5.078,23.314|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-3.351,-1.299,2.369 C1=-3.351,-2.015,-0.149 Part0=@"Workspace/x6m/Body/MeshPart~12" Part1=@"Workspace/x6m/Body/MeshPart~14"
+}
+MeshPart "MeshPart" Size=1.165,2.066,4.124 Anchored CFrame=-125.214,7.529,28.109|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=0.583,-1.033,-2.062|-180,0,-180 C1=0.413,-1.297,1.103|-179.723,0,-180 Part0=@"Workspace/x6m/Body/MeshPart~13" Part1=@"Workspace/x6m/Body/MeshPart~26"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-0.583,-1.033,2.062 C1=-3.381,-0.501,-0.651 Part0=@"Workspace/x6m/Body/MeshPart~13" Part1=@"Workspace/x6m/Body/MeshPart~10"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-0.583,-1.033,-2.062|0,-90,0 C1=0.208,-0.635,-3.319|0,-90,0 Part0=@"Workspace/x6m/Body/MeshPart~13" Part1=@"Workspace/x6m/Body/MeshPart~3"
+}
+MeshPart "MeshPart" Size=3.094,0.793,0.376 Anchored CFrame=-127.981,5.794,20.796|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.668,1.573,3.7 Anchored CFrame=-130.621,7.7,28.214|-179.723,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.2
+MeshPart "MeshPart" Size=1.165,2.066,4.124 Anchored CFrame=-130.772,7.529,28.108|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=0.583,-1.033,-2.062|-180,0,-180 C1=0.744,-1.297,1.103|-179.723,0,-180 Part0=@"Workspace/x6m/Body/MeshPart~16" Part1=@"Workspace/x6m/Body/MeshPart"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-0.583,-1.033,2.062 C1=2.176,-0.501,-0.651 Part0=@"Workspace/x6m/Body/MeshPart~16" Part1=@"Workspace/x6m/Body/MeshPart~10"
+}
+MeshPart "MeshPart" Size=4.112,0.795,1.468 Anchored CFrame=-128.001,7.128,36.581|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=3.679,0.309,0.761 Anchored CFrame=-128.013,4.386,36.866|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.81,2.407,2.582 Anchored CFrame=-127.983,5.23,36.18|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.563,0.499,0.193 Anchored CFrame=-124.549,7.231,26.987|180,0,-180 CanCollide=false CollisionFidelity=Hull Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=3.679,0.54,1.715 Anchored CFrame=-128.013,4.25,36.394|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.682,0.885,0.515 Anchored CFrame=-127.986,5.233,25.586|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=1.063,1.859,3.326 Anchored CFrame=-130.719,7.622,31.456|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.706,1.085,0.539 Anchored CFrame=-127.986,5.197,25.586|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.845,0.297,0.555 Anchored CFrame=-124.671,7.225,26.852|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=0.635,1.278,2.181 Anchored CFrame=-125.384,7.788,31.28|-179.723,0,-180 CanCollide=false CollisionFidelity=Hull Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.2
+MeshPart "MeshPart" Size=1.063,1.859,3.326 Anchored CFrame=-125.276,7.622,31.456|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=2.329,0.454,0.438 Anchored CFrame=-127.004,6.96,37.082|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-1.165,-0.227,0.219 C1=-2.145,0.102,-0.651 Part0=@"Workspace/x6m/Body/MeshPart~28" Part1=@"Workspace/x6m/Body/Lights/R~3"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-1.165,-0.227,0.219 C1=-2.139,0.085,-0.466 Part0=@"Workspace/x6m/Body/MeshPart~28" Part1=@"Workspace/x6m/Body/Lights/R~2"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-1.165,-0.227,0.219 C1=-2.152,-0.001,-0.619 Part0=@"Workspace/x6m/Body/MeshPart~28" Part1=@"Workspace/x6m/Body/R~2"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-1.165,-0.227,0.219 C1=-2.162,-0.022,-0.645 Part0=@"Workspace/x6m/Body/MeshPart~28" Part1=@"Workspace/x6m/Body/Lights/R"
+    ManualWeld "MeshPart-to-MeshPart Strong Joint" C0=-1.165,-0.227,0.219 C1=-2.157,-0.062,-0.349 Part0=@"Workspace/x6m/Body/MeshPart~28" Part1=@"Workspace/x6m/Body/MeshPart~5"
+}
+MeshPart "MeshPart" Size=3.243,0.175,2.119 Anchored CFrame=-128.006,8.779,29.693|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=5.459,1.705,11.525 Anchored CFrame=-128.01,7.647,30.755|-180,0,-180 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.295,0.669,1.655 Anchored CFrame=-127.98,5.976,21.723|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#F8F8F8 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.77
+MeshPart "MeshPart" Size=5.674,1.699,11.525 Anchored CFrame=-128.01,7.615,30.754|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.2
+MeshPart "MeshPart" Size=0.948,0.605,0.605 Anchored CFrame=-124.671,7.236,26.852|180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+MeshPart "MeshPart" Size=6.703,0.65,0.709 Anchored CFrame=-127.983,5.543,22.454|180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#D5733D Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+    ManualWeld "MeshPart-to-Union Strong Joint" C0=-3.352,-0.325,0.354 C1=3.378,-0.735,0.297|-179.999,-0.025,180 Part0=@"Workspace/x6m/Body/MeshPart~34" Part1=@"Workspace/x6m/Body/Lights/F~3"
+}
+MeshPart "MeshPart" Size=0.563,0.499,0.193 Anchored CFrame=-131.473,7.231,26.987|180,0,-180 CanCollide=false CollisionFidelity=Hull Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise
+Model "Model" {
+    Part "Plate" Size=0.944,0.699,0.2 Anchored BottomSurface=Smooth CFrame=-127.977,6.478,37.169|166.412,0,-180 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth {
+        Decal "Decal" Texture="rbxassetid://912839789" TextureContent="rbxassetid://912839789"
+        BlockMesh "Mesh" Offset=0,0,0.036 Scale=0.89,0.63,0
+    }
+    UnionOperation "Union" Size=0.874,0.49,0.038 Anchored CFrame=-127.977,6.473,37.151|165.716,0.032,179.996 Color=#A3A2A5 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise UsePartColor $_geo="2fb5dbf1ab010ce4"
+    UnionOperation "Union" Size=0.535,0.028,0.03 Anchored CFrame=-127.977,6.646,37.119|165.716,0.032,179.996 Color=#635F62 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise $_geo="b77b326e3db1eed4"
+}
+Model "Model" {
+    Part "Plate" Size=0.944,0.699,0.2 Anchored BottomSurface=Smooth CFrame=-127.976,4.744,20.513|-4.839,0,0 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth {
+        Decal "Decal" Texture="rbxassetid://912839789" TextureContent="rbxassetid://912839789"
+        BlockMesh "Mesh" Offset=0,0,0.036 Scale=0.89,0.63,0
+    }
+    UnionOperation "Union" Size=0.535,0.028,0.03 Anchored CFrame=-127.976,4.919,20.507|-4.143,-0.032,-0.004 Color=#635F62 Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise $_geo="b77b326e3db1eed4"
+    UnionOperation "Union" Size=0.874,0.49,0.038 Anchored CFrame=-127.976,4.745,20.531|-4.143,-0.032,-0.004 Color=#A3A2A5 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise UsePartColor $_geo="2fb5dbf1ab010ce4"
+}
+Model "Model" {
+    Part "Part" Size=0.33,3.02,0.66 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.419,7.085,29.866|11.694,-2.198,-15.852 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+    UnionOperation "Union" Size=1.196,4.384,6.36 Anchored CFrame=-130.491,6.252,28.891 CanCollide=false Color=#111111 RenderFidelity=Precise UsePartColor $_geo="51b84532ad27a19c" {
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+}
+Model "Model" {
+    Part "Part" Size=0.42,2.81,0.66 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.464,6.959,29.844|11.694,2.198,15.852 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+    UnionOperation "Union" Size=1.198,5.058,6.528 Anchored CFrame=-125.52,6.134,29.066|8,0,0 CanCollide=false Color=#111111 RenderFidelity=Precise UsePartColor $_geo="ffb54bb34ae61b56" {
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+}
+Part "Part" Size=1.27,0.05,0.39 Anchored BottomSurface=Smooth CFrame=-129.329,6.991,26.58|73.372,0,0 Color=#1B2A35 TopSurface=Smooth
+Part "Part" Size=3.072,0.931,4.88 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.935,6.647,34.758|0.013,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Sand RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+MeshPart "R" Size=4.522,0.647,0.358 Anchored CFrame=-127.992,6.667,36.961|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.77
+MeshPart "R" Size=5.99,0.771,1.331 Anchored CFrame=-127.992,6.734,36.244|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#FF0000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise {
+    SurfaceLight "L" Angle=95 Brightness=3.56 Color=#FF2C21 Enabled=false Range=60
+}
+MeshPart "R" Size=4.522,0.647,0.355 Anchored CFrame=-127.991,6.667,36.945|-180,0,-180 CanCollide=false CollisionFidelity=Default Color=#970000 Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+Model "RL" {
+    MeshPart "MeshPart" Size=0.371,2.985,3.772 Anchored CFrame=-130.897,5.703,31.152|-0.004,0.013,0 CanCollide=false CollisionFidelity=Default Color=#111111 RenderFidelity=Precise {
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Bottom StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Back StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Top StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+    Part "Part" Size=0.386,0.071,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.876,6.174,29.858|-0.003,0.012,-90.001 CanCollide=false Color=#ABA89E FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://231683660" TextureContent="rbxassetid://231683660"
+    }
+    Part "Part" Size=0.054,0.361,0.316 Anchored CFrame=-130.861,6.171,29.854|0.017,0.042,-0.009 CanCollide=false Material=SmoothPlastic Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://882164443" TextureContent="rbxassetid://882164443"
+        BlockMesh "Mesh" Scale=0.835,1,1
+    }
+}
+Part "RLI" Size=1,0.15,0.2 Anchored CFrame=-129.804,6.849,36.942|-179.313,16.977,-171.676 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1
+Model "RR" {
+    MeshPart "MeshPart" Size=0.371,2.985,3.772 Anchored CFrame=-125.105,5.734,31.206|-0.004,0.013,0 CanCollide=false CollisionFidelity=Default Color=#111111 RenderFidelity=Precise {
+        Texture "Texture" Face=Bottom StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Back StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Top StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+    Part "Part" Size=0.386,0.071,0.4 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.127,6.179,29.884|179.998,-0.012,89.999 CanCollide=false Color=#ABA89E FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Top Texture="rbxassetid://231683660" TextureContent="rbxassetid://231683660"
+    }
+    Part "Part" Size=0.054,0.361,0.316 Anchored CFrame=-125.142,6.176,29.886|179.975,-0.042,179.991 CanCollide=false Material=SmoothPlastic Transparency=1 {
+        Decal "Decal" Face=Right Texture="rbxassetid://882164443" TextureContent="rbxassetid://882164443"
+        BlockMesh "Mesh" Scale=0.835,1,1
+    }
+}
+Part "RRI" Size=1,0.15,0.2 Anchored CFrame=-126.196,6.874,36.919|-174.507,-16.344,175.809 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+    SurfaceLight "L" Brightness=10 Color=#FFAA00 Enabled=false Face=Back Range=8
+}
+Model "Racing Seat" {
+    Part "Part" Size=1.7,0.2,0.9 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.363,5.002,28.69|179.051,6.384,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.75,0.86,0.22 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.341,6.598,29.7|175.578,-0.012,179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.56,0.97,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.346,6.533,29.639|179.728,-0.012,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.2,1.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.232,5.313,28.783|-180,-3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.36,1.81 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.49,5.033,28.628|180,3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=1.55,1.39,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.341,5.597,29.383|-156.337,-0.011,-179.995 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.35,1.66 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.537,5.038,28.557|180,4.298,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.23,0.238 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.366,7.964,29.586|175.578,-0.012,179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.8,1,1
+    }
+    Part "Part" Size=0.2,0.37,1.81 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.241,5.028,28.628|-180,-3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.29,0.29 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.562,6.89,29.604|170.133,16.8,-173.097 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.29,0.29 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.169,6.89,29.604|170.133,-16.8,173.097 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.2,1.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.499,5.313,28.783|180,3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.35,1.75 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.354,5.038,29.549|8.208,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.3,1,1
+    }
+    Part "Part" Size=0.2,0.35,1.77 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.191,5.038,28.612|-180,-4.298,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=1.73,0.97,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.339,5.747,29.619|-164.846,-0.012,-179.997 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.68,0.2,0.67 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.52,6.647,29.401|94.226,-2.738,108.226 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=1.73,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.331,5.028,28.215|-161.958,-0.012,-179.996 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.49,1.74,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.366,5.045,27.786|-90.012,0,-90 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=1.66,0.2,1.86 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.336,4.963,28.621|-180,-0.012,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.62,0.2,1.01 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.386,5.024,28.198|-174.262,-0.012,-179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.68,0.2,0.67 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.212,6.647,29.401|94.226,2.737,-108.226 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.29,0.33,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.651,5.373,29.527|-170.296,-0.012,-179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.67,0.2,0.26 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.361,5.105,27.895|-174.262,-0.012,-179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.56,0.87,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.346,6.237,29.586|-170.431,-0.012,-179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.45,0.2,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.441,5.045,27.785|-90.012,-0.002,-92.456 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.2,1.61 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.22,5.309,28.788|-180,-4.168,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.45,0.2,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.295,5.045,27.785|-90.012,0.002,94.579 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.29,0.33,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.08,5.373,29.527|-170.296,0.012,179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    UnionOperation "Union" Size=1.809,1.315,0.293 CFrame=-129.326,7.295,29.64|-4.138,-0.404,-9.992 Color=#D5733D Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="0fe0c5a79ff48e5a"
+    UnionOperation "Union" Size=0.318,0.401,1.63 CFrame=-128.511,5.41,28.784|180,0,-180 Color=#D5733D Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="18c0c06912241ecb"
+    WedgePart "Wedge" Size=0.2,0.2,0.31 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.441,5.31,27.832|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.33,0.51 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.274,5.077,28.035|179.496,-3.636,-0.032 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.64,1.34 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.208,5.7,28.933|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.68,0.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.18,6.02,29.302|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.33,0.51 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.457,5.077,28.035|179.496,3.636,0.032 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.31 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.29,5.31,27.832|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.68,0.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.552,6.02,29.302|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,1.08 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.239,5.51,28.515|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.26,0.84,0.27 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.186,6.635,29.672|-95.75,59.651,91.141 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.24,0.2,0.43 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.077,7.978,29.587|-4.422,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.23,0.68,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.966,7.537,29.617|-4.422,90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.227,7.021,29.465|3.325,18.204,2.882 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.504,7.021,29.465|3.325,-18.204,-2.882 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.25,0.84,0.27 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.546,6.635,29.667|-95.75,-59.651,-91.14 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.64,1.34 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.524,5.7,28.933|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.73,0.65 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.553,6.163,29.383|3.325,-18.204,177.118 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.73,0.65 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.178,6.163,29.383|3.325,18.204,-177.118 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.23,0.72,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.765,7.517,29.619|-4.422,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,1.13,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.557,6.205,29.363|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=1.5,1.28,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.367,5.488,29.649|-179.678,-0.012,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,1.13,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.175,6.205,29.363|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.24,0.2,0.43 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.654,7.978,29.585|-4.422,90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    Script "Weld 2.1" @src="Scripts/Workspace/x6m/Body/Racing Seat/Weld 2.1.luau"
+}
+Model "Racing Seat" {
+    Part "Part" Size=0.2,0.2,1.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.52,5.265,28.854|-180,-3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.35,1.77 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.478,4.99,28.683|-180,-4.298,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.29,0.29 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.457,6.842,29.675|170.133,-16.8,173.097 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.75,0.86,0.22 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.629,6.549,29.771|175.578,-0.012,179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.62,0.2,1.01 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.674,4.976,28.269|-174.262,-0.012,-179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.73,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.619,4.979,28.286|-161.958,-0.012,-179.996 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.67,0.2,0.26 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.649,5.056,27.966|-174.262,-0.012,-179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.55,1.39,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.629,5.548,29.454|-156.337,-0.011,-179.995 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.37,1.81 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.529,4.98,28.699|-180,-3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.2,0.2,1.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.787,5.265,28.854|180,3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=1.56,0.87,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.634,6.188,29.657|-170.431,-0.012,-179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.2,1.61 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.508,5.261,28.859|180,-4.168,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.73,0.97,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.627,5.699,29.69|-164.846,-0.012,-179.997 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.29,0.33,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.368,5.325,29.598|-170.296,0.012,179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.35,1.75 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.641,4.99,29.62|8.208,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.3,1,1
+    }
+    Part "Part" Size=0.68,0.2,0.67 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.499,6.598,29.472|94.226,2.737,-108.226 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=1.56,0.97,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.634,6.484,29.709|179.728,-0.012,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.29,0.29 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.85,6.842,29.675|170.133,16.8,-173.097 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=1.7,0.2,0.9 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.651,4.953,28.761|179.051,6.384,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.23,0.238 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.654,7.916,29.657|175.578,-0.012,179.999 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.8,1,1
+    }
+    Part "Part" Size=0.2,0.35,1.66 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.824,4.99,28.628|180,4.298,180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    Part "Part" Size=0.29,0.33,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.939,5.325,29.598|-170.296,-0.012,-179.998 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.68,0.2,0.67 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.808,6.598,29.472|94.226,-2.738,108.226 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=1.66,0.2,1.86 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.624,4.915,28.692|180,-0.012,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh"
+    }
+    Part "Part" Size=0.49,1.74,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.654,4.997,27.857|-90.012,0,-90 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.45,0.2,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.729,4.997,27.856|-90.012,-0.002,-92.456 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.45,0.2,0.37 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.583,4.997,27.856|-90.012,0.002,94.579 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        CylinderMesh "Mesh"
+    }
+    Part "Part" Size=0.2,0.36,1.81 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.778,4.985,28.699|180,3.636,-180 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Scale=0.6,1,1
+    }
+    UnionOperation "Union" Size=1.809,1.315,0.293 CFrame=-126.613,7.246,29.711|-4.138,-0.404,-9.992 Color=#D5733D Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="0fe0c5a79ff48e5a"
+    UnionOperation "Union" Size=0.318,0.401,1.63 CFrame=-125.799,5.361,28.854|-180,0,-180 Color=#D5733D Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="18c0c06912241ecb"
+    WedgePart "Wedge" Size=0.2,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.515,6.972,29.536|3.325,18.204,2.882 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,1.13,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.462,6.157,29.434|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.23,0.68,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.254,7.488,29.688|-4.422,90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.68,0.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.468,5.972,29.373|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=1.5,1.28,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.655,5.439,29.72|-179.678,-0.012,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.64,1.34 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.812,5.652,29.004|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.25,0.84,0.27 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.833,6.586,29.738|-95.75,-59.651,-91.14 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,1.08 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.527,5.462,28.585|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,1.13,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.845,6.157,29.434|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.73,0.65 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.466,6.114,29.454|3.325,18.204,-177.118 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.73,0.65 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.841,6.114,29.454|3.325,-18.204,177.118 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.64,1.34 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.495,5.652,29.004|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.31 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.729,5.262,27.902|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.31 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.578,5.262,27.902|0,4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.33,0.51 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.745,5.029,28.106|179.496,3.636,0.032 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.2,0.46 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.792,6.972,29.536|3.325,-18.204,-2.882 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.68,0.6 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.839,5.972,29.373|0,-4.299,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.24,0.2,0.43 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.942,7.93,29.656|-4.422,90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.24,0.2,0.43 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.365,7.93,29.657|-4.422,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.26,0.84,0.27 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.473,6.587,29.743|-95.75,59.651,91.141 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.23,0.72,0.2 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.053,7.468,29.69|-4.422,-90,0 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    WedgePart "Wedge" Size=0.2,0.33,0.51 BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.562,5.029,28.106|179.496,-3.636,-0.032 Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        SpecialMesh "Mesh" MeshType=Wedge
+    }
+    Script "Weld 2.1" @src="Scripts/Workspace/x6m/Body/Racing Seat~2/Weld 2.1.luau"
+}
+Model "Rear Neon" {
+    MeshPart "MeshPart" Size=5.459,0.312,0.548 Anchored CFrame=-128.004,6.706,36.526|-180,0,-180 CanCollide=false CollisionFidelity=Hull Color=#FF0000 Material=Neon RenderFidelity=Precise Transparency=1
+    Script "Script" @src="Scripts/Workspace/x6m/Body/Rear Neon/Script.luau"
+}
+Model "Right" {
+    Model "G1" {
+        Part "Indicators" Size=0.35,0.07,0.2 Anchored CFrame=-124.312,7.123,26.906|0.043,-63.839,0.053 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="rbxassetid://134531274" ImageContent="rbxassetid://134531274"
+            }
+            PointLight "Lights" Color=#FF9D00 Enabled=false Range=3 Shadows
+        }
+        Part "Indicators" Size=0.35,0.07,0.2 Anchored CFrame=-124.433,7.119,26.689|0.018,-44.332,0.032 CanCollide=false Color=#C4281C TopSurface=Weld Transparency=1 {
+            SurfaceGui "Braking" Enabled=false {
+                ImageLabel "Light" Position=-1,0,-1,0 Size=3,0,3,0 Active BackgroundColor3=#C1C0C3 BackgroundTransparency=1 Image="rbxassetid://134531274" ImageContent="rbxassetid://134531274"
+            }
+            PointLight "Lights" Color=#FF9D00 Enabled=false Range=3 Shadows
+        }
+    }
+}
+VehicleSeat "Seat" Size=0.794,0.181,0.903 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.493,5.299,31.487|0.015,0.014,-0.017 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines HeadsUpDisplay=false LeftSurface=SmoothNoOutlines Material=SmoothPlastic MaxSpeed=0 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "Player Positioner" @code=<<<
+        script.Parent.ChildAdded:connect(function(child) 
+        	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+        		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+        		local S=script.L:Clone() S.Parent=P.PlayerGui 
+        		S.Seat.Value=script.Parent 
+        		S.Disabled=false 
+        	end 
+        end)
+    >>> {
+        LocalScript "L" @src="Scripts/Workspace/x6m/Body/Seat/Player Positioner/L.luau" Disabled {
+            ObjectValue "Seat"
+        }
+    }
+}
+VehicleSeat "Seat" Size=0.794,0.181,0.903 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.99,5.299,31.487|0.015,0.014,-0.017 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines HeadsUpDisplay=false LeftSurface=SmoothNoOutlines Material=SmoothPlastic MaxSpeed=0 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "Player Positioner" @code=<<<
+        script.Parent.ChildAdded:connect(function(child) 
+        	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+        		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+        		local S=script.L:Clone() S.Parent=P.PlayerGui 
+        		S.Seat.Value=script.Parent 
+        		S.Disabled=false 
+        	end 
+        end)
+    >>> {
+        LocalScript "L" @src="Scripts/Workspace/x6m/Body/Seat~2/Player Positioner/L.luau" Disabled {
+            ObjectValue "Seat"
+        }
+    }
+}
+VehicleSeat "Seat" Size=0.794,0.181,0.903 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.28,5.3,31.488|0.015,0.014,-0.017 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines HeadsUpDisplay=false LeftSurface=SmoothNoOutlines Material=SmoothPlastic MaxSpeed=0 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "Player Positioner" @code=<<<
+        script.Parent.ChildAdded:connect(function(child) 
+        	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+        		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+        		local S=script.L:Clone() S.Parent=P.PlayerGui 
+        		S.Seat.Value=script.Parent 
+        		S.Disabled=false 
+        	end 
+        end)
+    >>> {
+        LocalScript "L" @src="Scripts/Workspace/x6m/Body/Seat~3/Player Positioner/L.luau" Disabled {
+            ObjectValue "Seat"
+        }
+    }
+}
+VehicleSeat "Seat" Size=0.794,0.181,0.903 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.494,5.299,28.688|0.015,0.014,-0.017 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines HeadsUpDisplay=false LeftSurface=SmoothNoOutlines Material=SmoothPlastic MaxSpeed=0 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "Player Positioner" @code=<<<
+        script.Parent.ChildAdded:connect(function(child) 
+        	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+        		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+        		local S=script.L:Clone() S.Parent=P.PlayerGui 
+        		S.Seat.Value=script.Parent 
+        		S.Disabled=false 
+        	end 
+        end)
+    >>> {
+        LocalScript "L" @src="Scripts/Workspace/x6m/Body/Seat~4/Player Positioner/L.luau" Disabled {
+            ObjectValue "Seat"
+        }
+    }
+}
+UnionOperation "interior mirror" Size=0.773,0.217,0.05 Anchored CFrame=-127.981,7.908,27.349|-179.995,-0.001,179.998 Color=#A3A2A5 Material=SmoothPlastic Reflectance=1 RenderFidelity=Precise UsePartColor $_geo="0dc73dd09843b8c7"
+Model "light details" {
+    MeshPart "MeshPart" Size=1.365,0.302,1.114 Anchored CFrame=-130.032,6.118,21.573|179.999,0.025,-180 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=5.459,0.418,1.23 Anchored CFrame=-127.991,6.176,21.631|179.999,0.025,-180 CanCollide=false CollisionFidelity=Hull Color=#9FA1AC Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=1.365,0.302,1.114 Anchored CFrame=-125.944,6.118,21.574|179.999,0.025,-180 CanCollide=false CollisionFidelity=Default Color=#E7E7EC Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    MeshPart "MeshPart" Size=5.923,0.181,0.696 Anchored CFrame=-127.972,6.22,22.221|179.999,0.025,-180 CanCollide=false CollisionFidelity=Hull Color=#9FA1AC Material=SmoothPlastic Reflectance=0.3 RenderFidelity=Precise
+    UnionOperation "Union" Size=5.393,2.919,1.305 Anchored CFrame=-127.913,6.004,22.19|150.457,4.994,-154.538 Color=#A3A2A5 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="c1373bd7a0e5ef10"
+}
+Model "whole int ok" {
+    Part "Button" Size=0.181,0.144,0.19 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.828,6.983,26.808|0.098,85.229,-31.107 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        Decal "Decal" Face=Left Texture="rbxassetid://503962202" TextureContent="rbxassetid://503962202"
+        BlockMesh "Mesh" Offset=0.18,0,0 Scale=0.6,0.6,0.6
+    }
+    Part "Button" Size=0.181,0.144,0.19 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.826,7.07,26.758|0.093,85.229,-31.102 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        Decal "Decal" Face=Left Texture="rbxassetid://60762906" TextureContent="rbxassetid://60762906"
+        BlockMesh "Mesh" Offset=0.18,0,0 Scale=0.6,0.6,0.6
+    }
+    Part "COLD" Size=0.181,0.262,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.918,7.01,26.742|0.098,85.228,-34.209 Color=#002060 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    Model "Dials" {
+        WedgePart "Green" Size=0.24,0.05,0.05 Anchored CFrame=-129.309,7.13,26.391|70.292,44.999,89.991 Color=#34A500 Material=SmoothPlastic Transparency=0.9
+        WedgePart "Green" Size=0.24,0.05,0.05 Anchored CFrame=-129.359,7.13,26.391|-109.707,-44.999,-89.991 Color=#34A500 Material=SmoothPlastic Transparency=0.9
+        Model "Neon Details" {
+            Part "Part" Size=0.05,0.05,0.75 Anchored CFrame=-129.569,6.716,26.248|160.288,-0.006,179.998 Color=#0010B0 Material=Neon Transparency=1
+            Part "Part" Size=0.05,0.05,0.75 Anchored CFrame=-129.649,6.716,26.248|160.288,-0.006,179.998 Color=#1F801D Material=Neon Transparency=1
+            Script "Script" @src="Scripts/Workspace/x6m/Body/whole int ok/Dials/Neon Details/Script.luau"
+        }
+        Model "Neon Dials" {
+            Script "Script" @src="Scripts/Workspace/x6m/Body/whole int ok/Dials/Neon Dials/Script.luau"
+            UnionOperation "Union" Size=0.285,0.271,0.113 Anchored CFrame=-129.489,7.027,26.52|160.288,-0.006,179.998 Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 $_geo="0914a9eeebe96002"
+            UnionOperation "Union" Size=0.167,0.159,0.067 Anchored CFrame=-128.93,6.968,26.558|160.288,-0.006,179.998 Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 $_geo="047fbf73f36ee35f"
+            UnionOperation "Union" Size=0.285,0.271,0.113 Anchored CFrame=-129.17,7.027,26.52|160.288,-0.006,179.998 Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 $_geo="0914a9eeebe96002"
+            UnionOperation "Union" Size=0.167,0.159,0.067 Anchored CFrame=-129.728,6.968,26.558|160.288,-0.006,179.998 Color=#F8F8F8 Material=Neon RenderFidelity=Precise Transparency=1 $_geo="047fbf73f36ee35f"
+        }
+        Part "Part" Size=0.057,0.187,0.34 Anchored BottomSurface=Smooth CFrame=-129.728,6.947,26.541|-19.714,90,0 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+            Decal "Decal" Face=Left Texture="rbxassetid://907336854" TextureContent="rbxassetid://907336854"
+        }
+        Part "Part" Size=0.057,0.311,0.566 Anchored BottomSurface=Smooth CFrame=-129.489,7.006,26.519|-19.714,90,0 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+            Decal "Decal" Face=Left Texture="rbxassetid://907336485" TextureContent="rbxassetid://907336485"
+        }
+        Part "Part" Size=0.057,0.311,0.566 Anchored BottomSurface=Smooth CFrame=-129.169,7.006,26.519|-19.714,90,0 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+            Decal "Decal" Face=Left Texture="rbxassetid://907336624" TextureContent="rbxassetid://907336624"
+        }
+        Part "Part" Size=0.057,0.187,0.34 Anchored BottomSurface=Smooth CFrame=-128.93,6.947,26.54|-19.714,90,0 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth {
+            Decal "Decal" Face=Left Texture="rbxassetid://907336990" TextureContent="rbxassetid://907336990"
+        }
+    }
+    Part "HOT" Size=0.181,0.262,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.723,7.01,26.758|0.098,85.228,-34.209 Color=#C4281C FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    MeshPart "MeshPart" Size=5.828,4.095,5.536 Anchored CFrame=-127.976,6.513,27.757|0.017,0.042,-0.009 CanCollide=false CollisionFidelity=Default Color=#111111 Material=Grass RenderFidelity=Precise {
+        Texture "Texture" StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Left StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Bottom StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Back StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Top StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+        Texture "Texture" Face=Right StudsPerTileU=0.5 StudsPerTileV=0.5 Texture="rbxassetid://934383008" TextureContent="rbxassetid://934383008"
+    }
+    MeshPart "MeshPart" Size=5.204,3.231,3.39 Anchored CFrame=-127.992,5.785,32.078|-180,0,179.999 CanCollide=false CollisionFidelity=Default Color=#D5733D RenderFidelity=Precise
+    Model "Model" {
+        Model "Blue M-Sport Interior Trim" {
+            Part "Part" Size=0.63,0.063,0.094 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.77,6.791,26.821|-22.19,2.032,0.582 CanCollide=false Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=1,1,0.835
+            }
+            Part "Part" Size=0.48,0.063,0.054 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.934,6.801,26.805|-22.322,-4.36,-1.179 CanCollide=false Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=1,1,0.835
+            }
+            Part "Part" Size=0.71,0.063,0.094 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.389,6.794,26.818|-22.277,-2.193,-1.177 CanCollide=false Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=1,1,0.835
+            }
+            Part "Part" Size=0.568,0.063,0.054 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.406,6.799,26.758|-22.361,-6.246,-2.624 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=1,1,0.835
+            }
+            Part "Part" Size=1.04,0.063,0.094 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.988,6.775,26.76|-22.231,6.094,0.586 CanCollide=false Color=#D5733D FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=1,1,0.835
+            }
+        }
+        Model "Model" {
+            UnionOperation "Union" Size=1.473,0.2,0.429 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.674,5.772,27.856|0,72.001,180 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="81310d13e954d5f7" {
+                Texture "Texture" Face=Bottom StudsPerTileU=0.7 StudsPerTileV=0.3 Texture="rbxassetid://159738165" TextureContent="rbxassetid://159738165" Transparency=0.8
+            }
+            UnionOperation "Union" Size=0.2,0.484,0.665 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.727,5.772,27.825|0,-39.2,90 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="7c04dc3347ad48cb" {
+                Texture "Texture" Face=Right StudsPerTileU=0.7 StudsPerTileV=0.3 Texture="rbxassetid://159738165" TextureContent="rbxassetid://159738165" Transparency=0.8
+            }
+            UnionOperation "Union" Size=0.38,0.2,1.466 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.697,5.772,27.845|0,-18,0 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="c0088de4343ebe3b" {
+                Texture "Texture" Face=Top StudsPerTileU=0.7 StudsPerTileV=0.3 Texture="rbxassetid://159738165" TextureContent="rbxassetid://159738165" Transparency=0.8
+            }
+            UnionOperation "Union" Size=0.42,0.05,1.311 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.816,5.847,28.131|0,-10,0 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="f1cbba899a73b6af" {
+                Texture "Texture" Face=Top StudsPerTileU=0.7 StudsPerTileV=0.3 Texture="rbxassetid://159738165" TextureContent="rbxassetid://159738165" Transparency=0.8
+            }
+            UnionOperation "Union" Size=0.2,0.238,1.002 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.742,5.772,27.596|-180,39.2,90 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines UsePartColor $_geo="e4c2a0894b9e8915" {
+                Texture "Texture" Face=Left StudsPerTileU=0.7 StudsPerTileV=0.3 Texture="rbxassetid://159738165" TextureContent="rbxassetid://159738165" Transparency=0.8
+            }
+        }
+        Model "Model" {
+            Model "Model" {
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.667,6.795,26.548|-104.932,-74.674,-73.871 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.674,2.916
+                }
+                WedgePart "Wedge" Size=0.2,0.344,0.261 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.737,6.994,26.433|67.421,61.934,-100.026 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.141,6.917,26.517|-137.827,74.697,-74.469 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.394,2.076
+                }
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.141,6.921,26.515|75.068,74.674,-106.129 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.674,2.003
+                }
+                WedgePart "Wedge" Size=0.2,0.344,0.338 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.473,6.864,26.487|-112.579,-61.934,-79.974 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.736,6.992,26.434|42.173,-74.697,-105.531 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.394,2.123
+                }
+            }
+            Model "Model" {
+                Part "Part" Size=3.2,0.05,0.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.064,6.781,26.555|0,-4,0 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                Part "Part" Size=1.64,0.05,0.28 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.85,6.781,26.615|0,-4,0 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                Part "Part" Size=0.05,0.21,1.46 Anchored BottomSurface=Smooth CFrame=-127.823,6.785,26.654|0,86,-126.575 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+                Part "Part" Size=0.646,0.2,0.05 Anchored BottomSurface=Smooth CFrame=-126.726,6.781,26.69|90,0,175.996 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth
+                Part "Part" Size=0.276,0.2,1.32 Anchored BottomSurface=Smooth CFrame=-127.816,6.919,26.562|0,86,-126.575 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+                Part "Part" Size=0.386,0.2,1.58 Anchored BottomSurface=Smooth CFrame=-127.816,6.901,26.563|0,86,-126.575 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth
+                Part "Part" Size=2.08,0.05,0.19 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.428,6.781,26.6|0,-4,0 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                Part "Part" Size=0.931,0.2,0.05 Anchored BottomSurface=Smooth CFrame=-125.941,6.781,26.63|-90,0,4.653 CanCollide=false Color=#9FA1AC Material=SmoothPlastic TopSurface=Smooth
+                UnionOperation "Union" Size=0.614,0.202,1.18 Anchored CFrame=-127.996,6.461,26.751|-0.824,87.02,-97.7 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="92d05e4bfb16bd3c"
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.123,6.919,26.61|-179.999,-86,-143.427 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,1.38,0.35
+                }
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.51,6.919,26.513|53.494,-2.382,93.214 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.35,1.38
+                }
+                WedgePart "Wedge" Size=0.2,0.6,0.241 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.725,6.749,26.707|-125.495,19.622,-86.487 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.968,6.901,26.622|180,-86.001,36.574 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,1.93,0.6
+                }
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.634,6.901,26.505|53.493,-2.382,93.217 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.3,1.93
+                }
+                WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.657,6.904,26.597|54.505,-19.622,-93.513 CanCollide=false Color=#9FA1AC FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                    SpecialMesh "Mesh" MeshType=Wedge Scale=1,2.998,0.815
+                }
+            }
+            Part "Part" Size=0.213,0.2,0.53 Anchored BottomSurface=Smooth CFrame=-130.244,6.971,26.362|0,86,-138.816 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=3.61,0.19,0.47 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.692,7.021,26.241|0,-4,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=5.08,0.88,0.92 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.936,6.276,25.728 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.852,0.2,5.08 Anchored BottomSurface=Smooth CFrame=-127.936,6.239,26.357|-54.071,90,0 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=5.08,0.19,1.09 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.936,6.621,26.143 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.63,0.19,0.87 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.317,7.021,25.966|0,-4,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.18,0.2,1.13 Anchored BottomSurface=Smooth CFrame=-126.605,6.845,26.499|0,86,-123.695 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=1.39,0.05,0.3 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.733,6.801,26.473|0,-4,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.205,0.2,1.25 Anchored BottomSurface=Smooth CFrame=-126.537,6.973,26.393|0,86,-136.978 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.53,0.05,0.61 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.233,6.951,26.203|0,-4,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.51,0.05,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.67,6.951,26.427|0,-4,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.736,6.993,26.434|0,-84.812,-148.026 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.825,1.995
+            }
+            WedgePart "Wedge" Size=0.2,0.281,3.599 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.7,7.116,26.356|48.133,84.001,-48.127 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.281,3.599 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.7,7.116,26.356|48.133,84.001,-48.127 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.492,6.849,26.434|48.134,84.001,90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,2.654,0.439
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.696,6.761,26.554|-131.867,-84.001,106.389 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.939,23.003
+            }
+            WedgePart "Wedge" Size=0.2,0.281,1.541 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.144,6.916,26.535|-131.867,-84.001,-131.873 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.422,6.993,26.496|180,84.812,-31.974 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.825,4.893
+            }
+            WedgePart "Wedge" Size=0.2,0.205,0.38 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.724,6.973,26.45|180,-86,46.975 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-130.249,6.916,26.428|52.589,7.482,-86.776 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,2.611,0.456
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-130.248,7.028,26.422|52.589,86.344,-21.044 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.157,2.645
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.981,6.845,26.542|180,-86.001,33.692 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.901,0.6
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-130.252,6.961,26.375|48.133,84.001,73.611 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.939,2.697
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.298,6.845,26.45|56.372,-2.217,93.329 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,1.3,0.901
+            }
+            WedgePart "Wedge" Size=0.2,0.306,0.486 Anchored BottomSurface=Smooth CFrame=-130.233,6.793,26.522|-31.91,90,0 CanCollide=false Color=#111111 Material=SmoothPlastic
+            WedgePart "Wedge" Size=0.2,0.522,0.239 Anchored BottomSurface=Smooth CFrame=-130.227,6.786,26.527|-127.411,-7.482,-93.224 CanCollide=false Color=#111111 Material=SmoothPlastic
+            WedgePart "Wedge" Size=0.2,0.26,0.205 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.29,6.973,26.341|43.094,-2.923,92.731 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.281,1.541 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.144,6.916,26.535|-131.867,-84.001,-131.873 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.36,0.22 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.22,7.016,26.519|-180,4,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        }
+        Model "Model" {
+            Part "Part" Size=1.507,0.181,0.181 Anchored CFrame=-127.989,6.49,26.86|162.423,2.978,-178.314 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=0.5,0.5,0.5
+            }
+            Part "Part" Size=1.507,0.181,0.181 Anchored CFrame=-127.947,6.643,26.807|162.346,5.578,-178.221 CanCollide=false Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                BlockMesh "Mesh" Scale=0.5,0.5,0.5
+            }
+            UnionOperation "button" Size=0.181,0.181,0.181 Anchored CFrame=-127.639,6.499,26.904|-165.32,-83.21,121.049 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise $_geo="c96a3d62db215ab8"
+            UnionOperation "button" Size=0.181,0.181,0.181 Anchored CFrame=-128.335,6.502,26.834|-165.32,-83.21,121.049 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise $_geo="c96a3d62db215ab8"
+            UnionOperation "button" Size=0.181,0.137,0.126 Anchored CFrame=-128.285,6.653,26.79|-165.32,-83.21,121.049 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise $_geo="899682761cc2304e"
+            Model "button row" {
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-128.079,6.65,26.827|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-127.636,6.655,26.876|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-128.178,6.653,26.808|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-127.808,6.651,26.848|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-127.979,6.647,26.827|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-127.889,6.654,26.846|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+                Part "Part" Size=0.181,0.181,0.181 Anchored CFrame=-127.726,6.649,26.849|162.346,5.578,-178.221 CanCollide=false Color=#1B2A35 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic TopSurface=SmoothNoOutlines {
+                    BlockMesh "Mesh" Scale=0.4,0.4,0.3
+                }
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=0.2,0.95,1.11 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.387,29.163 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.72,0.28,1.08 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.052,29.408 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.43,1.62,2.33 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.752,4.982,26.863 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.17,1,1.65 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.419,5.642,26.307|-20.255,-9.012,-20.526 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.72,1,0.69 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.412,29.243 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.72,0.95,0.85 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.387,29.293 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.294,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.017,5.788,28.77|170.218,-90,0 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.721,0.2,1.66 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.551,5.032,26.528|-180,0,-66.279 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.54,0.57,1.66 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,4.457,26.528 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.17,1.45,1.55 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.333,5.827,26.199|-20.255,-9.012,-20.526 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.79,1.62,2.04 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.932,4.982,26.718 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.241,0.2,0.72 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.189,27.949|-169.324,-90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.058,0.2,0.72 Anchored BottomSurface=Smooth CFrame=-128.017,5.835,28.969|120.97,-90,0 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.721,0.2,1.66 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.484,5.032,26.528|0,0,113.721 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.287,0.2,0.57 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.487,4.457,27.936|-90,0,-71.424 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.462,0.2,1.62 Anchored BottomSurface=Smooth CFrame=-128.084,4.982,27.805|-90,0,-38.854 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.96,1.62,1.16 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,4.982,26.408 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.708,0.26,0.72 Anchored BottomSurface=Smooth CFrame=-128.017,5.485,29.71|-108.947,-90,0 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.72,0.64,3.16 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,5.232,28.138 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.368,0.2,0.95 Anchored BottomSurface=Smooth CFrame=-127.858,5.387,28.809|-90,0,135.001 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.769,0.2,1.62 Anchored BottomSurface=Smooth CFrame=-128.315,4.982,27.341|-90,0,-77.229 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.72,1,2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.017,4.672,29.578 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=1.287,0.2,0.57 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.547,4.457,27.936|90,0,108.576 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Grass RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            Part "Part" Size=0.139,0.2,0.72 Anchored BottomSurface=Smooth CFrame=-128.017,5.794,29.617|-158.963,-90,0 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            Part "Part" Size=0.461,0.2,0.3 Anchored BottomSurface=Smooth CFrame=-127.342,6.523,26.726|47.041,67.659,-168.193 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+            WedgePart "Wedge" Size=0.2,0.259,0.343 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.752,5.725,27.953|48.425,52.939,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.687,5.247,27.951|90,23.72,9.419 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,6.183,0.811
+            }
+            WedgePart "Wedge" Size=0.2,0.39,0.37 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.397,5.597,27.173|-180,0,-180 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.73,1.05 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.484,5.267,27.653|90,0,-156.595 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.558,5.616,28.05|-131.575,-52.939,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,1.296,0.713
+            }
+            WedgePart "Wedge" Size=0.2,0.398,0.361 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.402,5.576,27.151|0,12.771,168.156 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.409,0.829 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.13,5.408,28.251|-143.568,2.742,-114.916 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.73,0.57 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.484,4.457,27.653|-90,0,-23.405 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.299,0.644 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.1,5.272,28.356|-131.575,26.321,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.26,0.475 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.618,5.306,28.325|-131.575,-20.508,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.26,0.41 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.773,5.616,28.05|48.425,20.508,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.43,1.287 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.547,4.957,27.936|0,-18.576,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.244,0.296 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.487,5.259,27.663|48.425,-8.238,-164.339 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.722,5.848,28.948|160.974,-36.86,-35.555 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.23,0.179
+            }
+            WedgePart "Wedge" Size=0.2,0.299,0.28 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.895,5.582,28.08|48.425,-26.321,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.287,0.43 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.487,4.957,27.936|90,0,161.424 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.237,0.559 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.492,4.917,27.951|-90,23.72,-170.581 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.347,5.247,27.951|90,-23.72,-9.419 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,6.183,0.811
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.787,5.835,28.969|-59.025,0,90 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,1.3,0.292
+            }
+            WedgePart "Wedge" Size=0.2,0.409,0.216 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.105,5.718,27.831|36.432,-2.742,-65.084 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.211,0.205 Anchored BottomSurface=Smooth CFrame=-127.934,5.79,28.77|0,45.001,76.297 CanCollide=false Color=#111111 Material=SmoothPlastic
+            WedgePart "Wedge" Size=0.2,1.237,0.559 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.542,4.917,27.951|-90,-23.72,170.581 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.398,0.408 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.317,5.576,27.526|-180,-12.771,11.844 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.715,5.792,28.858|-109.026,-90,0 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.767,0.575
+            }
+            WedgePart "Wedge" Size=0.2,0.475,0.931 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.257,5.455,28.143|-169.323,-5.521,-162.823 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.437,5.189,27.949|100.677,90,0 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,6.207,0.6
+            }
+            WedgePart "Wedge" Size=0.2,0.39,1.29 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.397,5.597,26.343 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.787,5.835,28.969|-149.025,90,0 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.292,1.3
+            }
+            WedgePart "Wedge" Size=0.2,0.475,0.316 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.317,5.57,27.533|10.677,5.521,-17.177 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.244,0.542 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.547,4.949,27.939|-131.575,8.238,-15.661 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.597,5.189,27.949|-169.323,0,-90 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.6,6.207
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.845,5.792,28.858|-109.026,90,0 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.767,0.725
+            }
+            WedgePart "Wedge" Size=0.2,0.339,0.459 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.32,5.557,27.548|169.177,-4.679,23.108 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-127.78,5.823,28.875|-19.026,36.86,-144.445 CanCollide=false Color=#111111 Material=SmoothPlastic {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.23,0.78
+            }
+            WedgePart "Wedge" Size=0.2,0.339,1.625 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.405,5.362,26.528|-10.823,4.679,156.892 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        }
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.958,7.03,26.586|59.042,54.614,26.067 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.048,0.015
+        }
+        WedgePart "Wedge" Size=0.2,0.224,0.984 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.908,6.696,26.652|-104.932,-74.674,116.454 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.704,6.875,26.679|-120.958,-54.614,153.933 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.048,3.107
+        }
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.141,6.921,26.515|-89.41,-81.89,121.363 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.396,2.076
+        }
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.205,6.849,26.558|-167.915,84.287,-40.143 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.834,1.423
+        }
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.994,6.854,26.538|12.085,-84.287,-139.856 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.834,0.69
+        }
+        WedgePart "Wedge" Size=0.2,0.224,0.583 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.663,6.896,26.599|75.068,74.674,63.546 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-126.632,6.991,26.515|90.59,81.89,58.637 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.396,2.886
+        }
+    }
+    Part "Part" Size=0.054,0.244,0.153 Anchored BottomSurface=Smooth CFrame=-128.721,6.417,26.66|0.079,83.427,-0.063 CanCollide=false Color=#111111 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://163440677" TextureContent="rbxassetid://163440677"
+        SpecialMesh "Mesh" MeshType=Cylinder Scale=0.835,1,1
+    }
+    Part "Part" Size=1.423,0.58,0.054 Anchored CFrame=-129.342,6.964,26.5|-23.411,0.042,0.009 CanCollide=false Color=#111111 Material=SmoothPlastic {
+        BlockMesh "Mesh" Scale=1,1,0.835
+    }
+    UnionOperation "control thingy" Size=0.094,0.187,0.725 Anchored CFrame=-127.775,5.905,27.89|0.015,-14.803,-90.007 CanCollide=false Color=#111111 CustomPhysicalProperties=0.1,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.2 RenderFidelity=Precise $_geo="f83d0c5790965cdc"
+    Model "floor mats" {
+        Part "Part" Size=1.64,0.05,1.135 Anchored CFrame=-129.514,4.701,26.903|5,0.003,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.05,0.18,0.22 Anchored CFrame=-130.115,4.734,26.537|-85,90,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic Transparency=1 {
+            Decal "Decal" Face=Left Texture="rbxassetid://882177689" TextureContent="rbxassetid://882177689"
+        }
+        Part "Part" Size=0.661,0.05,0.96 Anchored BottomSurface=Smooth CFrame=-129.854,4.891,26.061|-152.816,-90,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth
+        WedgePart "Wedge" Size=0.06,0.68,0.661 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.034,4.886,26.059|27.186,0.002,-90.001 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            ManualWeld "Wedge-to-Part Strong Joint" C0=0.03,-0.34,0.33|90,0,0 C1=-0.33,0.035,-0.48|0,-0.001,89.999 Part0=@"Workspace/x6m/Body/whole int ok/floor mats/Wedge" Part1=@"Workspace/x6m/Body/whole int ok/floor mats/Part~3"
+        }
+    }
+    Model "floor mats" {
+        Part "Part" Size=0.05,0.18,0.22 Anchored CFrame=-126.968,4.679,26.531|-85,90,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic Transparency=1 {
+            Decal "Decal" Face=Left Texture="rbxassetid://882177689" TextureContent="rbxassetid://882177689"
+        }
+        Part "Part" Size=1.64,0.05,1.135 Anchored CFrame=-126.368,4.647,26.898|5,0.003,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.661,0.05,0.96 Anchored BottomSurface=Smooth CFrame=-126.708,4.836,26.056|-152.816,-90,0 CanCollide=false Color=#1B2A35 Material=SmoothPlastic TopSurface=Smooth
+        WedgePart "Wedge" Size=0.06,0.68,0.661 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.888,4.832,26.054|27.186,0.002,-90.001 CanCollide=false Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            ManualWeld "Wedge-to-Part Strong Joint" C0=0.03,-0.34,0.33|90,0,0 C1=-0.33,0.035,-0.48|0,-0.001,89.999 Part0=@"Workspace/x6m/Body/whole int ok/floor mats~2/Wedge" Part1=@"Workspace/x6m/Body/whole int ok/floor mats~2/Part~3"
+        }
+    }
+    Model "interior roof" {
+        Model "left roof part" {
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.929,8.562,30.52|172.871,-4.131,89.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.249,0.018
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.929,8.562,30.545|7.064,-2.259,89.999 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.01
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.059,8.251,28.04|-7.129,4.131,-89.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.249,0.018
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.019,8.407,29.281|-7.129,4.131,90.002 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.249,12.511
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.028,8.252,33.047|-172.936,2.259,-89.999 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.01
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.978,8.407,31.798|-172.936,2.259,90.001 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.596
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.978,8.407,31.798|7.064,-2.259,-90.001 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.596
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.969,8.407,29.281|172.871,-4.131,-90.002 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.249,12.511
+            }
+        }
+        Model "main roof" {
+            Part "Part" Size=0.97,0.13,0.34 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.946,8.284,33.246 Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.499,1.322 Anchored BottomSurface=Smooth CFrame=-126.994,8.601,30.529|8.728,39.885,-93.551 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.858,8.505,31.786|97.066,-0.002,-178.011 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,12.861,0.034
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.858,8.406,31.776|-82.934,0.002,-1.989 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,12.861,0.966
+            }
+            WedgePart "Wedge" Size=0.2,1.821,2.173 Anchored BottomSurface=Smooth CFrame=-127.991,8.506,31.918|8.728,39.885,85.542 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.743,0.936 Anchored BottomSurface=Smooth CFrame=-128.344,8.431,30.913|1.506,0.594,99.312 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,1.499,2.024 Anchored BottomSurface=Smooth CFrame=-125.921,8.406,31.798|-171.272,-39.885,-86.449 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.743,1.762 Anchored BottomSurface=Smooth CFrame=-128.33,8.396,32.262|-178.494,-0.594,80.688 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.986,8.317,33.091|-84.132,0.001,82.417 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,10.114,0.31
+            }
+            WedgePart "Wedge" Size=0.2,1.821,1.173 Anchored BottomSurface=Smooth CFrame=-126.917,8.311,33.188|-171.272,-39.885,94.458 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-126.994,8.602,30.522|-114.778,-86.829,152.61 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.032,9.99
+            }
+            WedgePart "Wedge" Size=0.2,1.487,2.099 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-129.953,8.406,31.772|-171.231,37.261,86.787 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.487,1.195 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.956,8.606,30.475|8.769,-37.261,93.213 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+            WedgePart "Wedge" Size=0.2,1.73,2.07 Anchored BottomSurface=Smooth CFrame=-127.979,8.417,31.792|4.281,-39.196,-85.669 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,1.73,1.058 Anchored BottomSurface=Smooth CFrame=-128.968,8.326,33|-175.719,39.196,-94.331 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.986,8.416,33.102|95.868,-0.001,97.583 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,10.114,0.69
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.982,8.22,33.079|-83.177,-2.555,-97.628 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,10.092,0.266
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=-128.986,8.319,33.091|96.823,2.555,-82.372 CanCollide=false Color=#111111 Material=SmoothPlastic Reflectance=0.2 {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,10.092,0.734
+            }
+        }
+        Model "right roof part" {
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.921,8.397,29.28|172.871,2.506,89.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.498
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.9,8.407,31.797|-173.388,-3.423,-89.999 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.591
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.975,8.552,30.52|172.871,2.506,-90.002 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.011
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.921,8.397,29.28|-7.129,-2.506,-89.998 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.498
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.875,8.262,33.047|-173.388,-3.423,90.001 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.015
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.866,8.241,28.039|-7.129,-2.506,90.002 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.011
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.975,8.552,30.546|6.612,3.423,-90.001 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,0.015
+            }
+            WedgePart "Wedge" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.951,8.407,31.797|6.612,3.423,89.999 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+                SpecialMesh "Mesh" MeshType=Wedge Scale=1,0.25,12.591
+            }
+        }
+    }
+    Part "vent" Size=0.181,0.253,0.374 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-125.732,7,26.662|172.519,83.956,153.653 Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://64798250" TextureContent="rbxassetid://64798250"
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    Part "vent" Size=0.181,0.353,0.614 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.024,5.634,29.797|-17.546,90,0 Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://64798250" TextureContent="rbxassetid://64798250"
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    Part "vent" Size=0.181,0.262,0.533 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-127.423,7.01,26.783|0.098,85.228,-34.209 Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://64798250" TextureContent="rbxassetid://64798250"
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    Part "vent" Size=0.181,0.262,0.543 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-128.226,7.01,26.716|0.098,85.228,-34.209 Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://64798250" TextureContent="rbxassetid://64798250"
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+    Part "vent" Size=0.181,0.253,0.354 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-130.217,6.889,26.694|-1.147,87.652,-35.719 Color=#1B2A35 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://64798250" TextureContent="rbxassetid://64798250"
+        BlockMesh "Mesh" Offset=0.09,0,0 Scale=0,0.95,0.9
+    }
+}

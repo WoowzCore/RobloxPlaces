@@ -1,0 +1,790 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Camera "Camera"
+    Folder "Crafts" {
+        Folder "asteroid" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="asteroid"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "asteroid_2" {
+            StringValue "com_1" Value="boulder"
+            StringValue "com_2" Value="space"
+            StringValue "result_1" Value="asteroid"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "asteroid_3" {
+            StringValue "com_1" Value="rock"
+            StringValue "com_2" Value="space"
+            StringValue "result_1" Value="asteroid"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "atom" {
+            StringValue "com_1" Value="nyklon"
+            StringValue "com_2" Value="electron"
+            StringValue "result_1" Value="atom"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "atom_2" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="small"
+            StringValue "result_1" Value="atom"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "atom_3" {
+            StringValue "com_1" Value="nyklon"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="atom"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "atom_3" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="small"
+            StringValue "result_1" Value="atom"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "boulder" {
+            StringValue "com_1" Value="rock"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="boulder"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "dark_matter" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="space"
+            StringValue "result_1" Value="dark_matter"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "dust" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="time"
+            StringValue "result_1" Value="stone_dust"
+            StringValue "result_2" Value="metal_dust"
+            StringValue "result_3" Value="dust"
+            StringValue "result_4" Value="steam"
+        }
+        Folder "fast" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="hot"
+            StringValue "result_1" Value="substance"
+            StringValue "result_2" Value="fast"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "lake" {
+            StringValue "com_1" Value="pond"
+            StringValue "com_2" Value="water"
+            StringValue "result_1" Value="lake"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "lake_2" {
+            StringValue "com_1" Value="pond"
+            StringValue "com_2" Value="pond"
+            StringValue "result_1" Value="lake"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "light" {
+            StringValue "com_1" Value="photon"
+            StringValue "com_2" Value="photon"
+            StringValue "result_1" Value="light"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "light_2" {
+            StringValue "com_1" Value="photon"
+            StringValue "com_2" Value="fast"
+            StringValue "result_1" Value="light"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "nyklon" {
+            StringValue "com_1" Value="proton"
+            StringValue "com_2" Value="neitron"
+            StringValue "result_1" Value="nyklon"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "ocean" {
+            StringValue "com_1" Value="sea"
+            StringValue "com_2" Value="water"
+            StringValue "result_1" Value="ocean"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "ocean_2" {
+            StringValue "com_1" Value="sea"
+            StringValue "com_2" Value="sea"
+            StringValue "result_1" Value="ocean"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "pebbles" {
+            StringValue "com_1" Value="stone_dust"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="pebbles"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "photon" {
+            StringValue "com_1" Value="light"
+            StringValue "com_2" Value="small"
+            StringValue "result_1" Value="photon"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "pond" {
+            StringValue "com_1" Value="puddle"
+            StringValue "com_2" Value="water"
+            StringValue "result_1" Value="pond"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "pond_2" {
+            StringValue "com_1" Value="puddle"
+            StringValue "com_2" Value="puddle"
+            StringValue "result_1" Value="pond"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "proton" {
+            StringValue "com_1" Value="quark"
+            StringValue "com_2" Value="quark"
+            StringValue "result_1" Value="proton"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "puddle" {
+            StringValue "com_1" Value="water"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="puddle"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "puddle_2" {
+            StringValue "com_1" Value="water"
+            StringValue "com_2" Value="water"
+            StringValue "result_1" Value="puddle"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "rock" {
+            StringValue "com_1" Value="pebbles"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="rock"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "sea" {
+            StringValue "com_1" Value="lake"
+            StringValue "com_2" Value="water"
+            StringValue "result_1" Value="sea"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "sea_2" {
+            StringValue "com_1" Value="lake"
+            StringValue "com_2" Value="lake"
+            StringValue "result_1" Value="sea"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "second" {
+            StringValue "com_1" Value="time"
+            StringValue "com_2" Value="time"
+            StringValue "result_1" Value="second"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "slow" {
+            StringValue "com_1" Value="fast"
+            StringValue "com_2" Value="time"
+            StringValue "result_1" Value="slow"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "slow_2" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="cold"
+            StringValue "result_1" Value="substance"
+            StringValue "result_2" Value="slow"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space" {
+            StringValue "com_1" Value="vacuum"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_2" {
+            StringValue "com_1" Value="dark_matter"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_3" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_4" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="dark_matter"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_5" {
+            StringValue "com_1" Value="vacuum"
+            StringValue "com_2" Value="cold"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_6" {
+            StringValue "com_1" Value="dark_matter"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_7" {
+            StringValue "com_1" Value="vacuum"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="space"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_dust" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="time"
+            StringValue "result_1" Value="space_dust"
+            StringValue "result_2" Value="dark_matter"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_dust_2" {
+            StringValue "com_1" Value="stone_dust"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space_dust"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_dust_2" {
+            StringValue "com_1" Value="substance"
+            StringValue "com_2" Value="substance"
+            StringValue "result_1" Value="space_dust"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_dust_3" {
+            StringValue "com_1" Value="metal_dust"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space_dust"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "space_dust_4" {
+            StringValue "com_1" Value="dust"
+            StringValue "com_2" Value="vacuum"
+            StringValue "result_1" Value="space_dust"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "steam_2" {
+            StringValue "com_1" Value="water"
+            StringValue "com_2" Value="small"
+            StringValue "result_1" Value="steam"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "steam_3" {
+            StringValue "com_1" Value="water_molecule"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="steam"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "steam_3" {
+            StringValue "com_1" Value="water"
+            StringValue "com_2" Value="hot"
+            StringValue "result_1" Value="steam"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "substance" {
+            StringValue "com_1" Value="atom"
+            StringValue "com_2" Value="atom"
+            StringValue "result_1" Value="substance"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "substance_2" {
+            StringValue "com_1" Value="space_dust"
+            StringValue "com_2" Value="space_dust"
+            StringValue "result_1" Value="substance"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum" {
+            StringValue "com_1" Value="space"
+            StringValue "com_2" Value="space"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="dark_matter"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum_2" {
+            StringValue "com_1" Value="dark_matter"
+            StringValue "com_2" Value="dark_matter"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum_3" {
+            StringValue "com_1" Value="dark_matter"
+            StringValue "com_2" Value="time"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum_4" {
+            StringValue "com_1" Value="cold"
+            StringValue "com_2" Value="hot"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum_5" {
+            StringValue "com_1" Value="fast"
+            StringValue "com_2" Value="slow"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "vacuum_6" {
+            StringValue "com_1" Value="quark"
+            StringValue "com_2" Value="small"
+            StringValue "result_1" Value="vacuum"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "water" {
+            StringValue "com_1" Value="steam"
+            StringValue "com_2" Value="cold"
+            StringValue "result_1" Value="water"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "water_2" {
+            StringValue "com_1" Value="steam"
+            StringValue "com_2" Value="big"
+            StringValue "result_1" Value="water"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+        Folder "water_molecule" {
+            StringValue "com_1" Value="water"
+            StringValue "com_2" Value="atom"
+            StringValue "result_1" Value="water_molecule"
+            StringValue "result_2" Value="empty"
+            StringValue "result_3" Value="empty"
+            StringValue "result_4" Value="empty"
+        }
+    }
+    Folder "Elements" {
+        Folder "asteroid" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10031744984"
+            StringValue "name_eng" Value="Asteroid"
+            StringValue "name_rus" Value="Астероид"
+            IntValue "rare"
+        }
+        Folder "atom" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023774414"
+            StringValue "name_eng" Value="Atom"
+            StringValue "name_rus" Value="Атом"
+            IntValue "rare"
+        }
+        Folder "big" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024815757"
+            StringValue "name_eng" Value="Large"
+            StringValue "name_rus" Value="Большой"
+            IntValue "rare"
+        }
+        Folder "boulder" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10031782086"
+            StringValue "name_eng" Value="Boulder"
+            StringValue "name_rus" Value="Валун"
+            IntValue "rare"
+        }
+        Folder "cold" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023328494"
+            StringValue "name_eng" Value="Cold"
+            StringValue "name_rus" Value="Холодный"
+            IntValue "rare"
+        }
+        Folder "dark_matter" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024106395"
+            StringValue "name_eng" Value="Dark Matter"
+            StringValue "name_rus" Value="Тёмная Материя"
+            IntValue "rare"
+        }
+        Folder "dust" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024333893"
+            StringValue "name_eng" Value="Dust"
+            StringValue "name_rus" Value="Пыль"
+            IntValue "rare"
+        }
+        Folder "electron" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023772516"
+            StringValue "name_eng" Value="Electron"
+            StringValue "name_rus" Value="Электрон"
+            IntValue "rare"
+        }
+        Folder "fast" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023592367"
+            StringValue "name_eng" Value="Fast"
+            StringValue "name_rus" Value="Быстрый"
+            IntValue "rare"
+        }
+        Folder "hot" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023253711"
+            StringValue "name_eng" Value="Hot"
+            StringValue "name_rus" Value="Горячий"
+            IntValue "rare"
+        }
+        Folder "lake" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210844562"
+            StringValue "name_eng" Value="Lake"
+            StringValue "name_rus" Value="Озеро"
+            IntValue "rare"
+        }
+        Folder "light" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="ы"
+            StringValue "image" Value="rbxassetid://10024216490"
+            StringValue "name_eng" Value="Light"
+            StringValue "name_rus" Value="Свет"
+            IntValue "rare"
+        }
+        Folder "metal_dust" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024335587"
+            StringValue "name_eng" Value="Metal Dust"
+            StringValue "name_rus" Value="Металлическая Пыль"
+            IntValue "rare"
+        }
+        Folder "neitron" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023770299"
+            StringValue "name_eng" Value="Neutron"
+            StringValue "name_rus" Value="Нейтрон"
+            IntValue "rare"
+        }
+        Folder "nyklon" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023768961"
+            StringValue "name_eng" Value="Nucleon"
+            StringValue "name_rus" Value="Нуклон"
+            IntValue "rare"
+        }
+        Folder "ocean" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210851330"
+            StringValue "name_eng" Value="Ocean"
+            StringValue "name_rus" Value="Океан"
+            IntValue "rare"
+        }
+        Folder "pebbles" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10031787284"
+            StringValue "name_eng" Value="Pebbles"
+            StringValue "name_rus" Value="Галька"
+            IntValue "rare"
+        }
+        Folder "photon" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="ы"
+            StringValue "image" Value="rbxassetid://10024187493"
+            StringValue "name_eng" Value="Photon"
+            StringValue "name_rus" Value="Фотон"
+            IntValue "rare"
+        }
+        Folder "pond" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210855685"
+            StringValue "name_eng" Value="Pond"
+            StringValue "name_rus" Value="Пруд"
+            IntValue "rare"
+        }
+        Folder "proton" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023767195"
+            StringValue "name_eng" Value="Proton"
+            StringValue "name_rus" Value="Протон"
+            IntValue "rare"
+        }
+        Folder "puddle" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210860038"
+            StringValue "name_eng" Value="Puddle"
+            StringValue "name_rus" Value="Лужа"
+            IntValue "rare"
+        }
+        Folder "quark" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023754159"
+            StringValue "name_eng" Value="Quark"
+            StringValue "name_rus" Value="Кварк"
+            IntValue "rare"
+        }
+        Folder "rock" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10031792614"
+            StringValue "name_eng" Value="Atom"
+            StringValue "name_rus" Value="Камень"
+            IntValue "rare"
+        }
+        Folder "sea" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210867072"
+            StringValue "name_eng" Value="Sea"
+            StringValue "name_rus" Value="Море"
+            IntValue "rare"
+        }
+        Folder "second" {
+            StringValue "desc_eng" Value="S"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024004750"
+            StringValue "name_eng" Value="Second"
+            StringValue "name_rus" Value="Секунда"
+            IntValue "rare"
+        }
+        Folder "slow" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023595718"
+            StringValue "name_eng" Value="Slow"
+            StringValue "name_rus" Value="Медленный"
+            IntValue "rare"
+        }
+        Folder "small" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023393153"
+            StringValue "name_eng" Value="Little"
+            StringValue "name_rus" Value="Маленький"
+            IntValue "rare"
+        }
+        Folder "space" {
+            StringValue "desc_eng" Value="S"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024027648"
+            StringValue "name_eng" Value="Space"
+            StringValue "name_rus" Value="Космос"
+            IntValue "rare"
+        }
+        Folder "space_dust" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024087491"
+            StringValue "name_eng" Value="Space Dust"
+            StringValue "name_rus" Value="Космическая Пыль"
+            IntValue "rare"
+        }
+        Folder "steam" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024339542"
+            StringValue "name_eng" Value="Steam"
+            StringValue "name_rus" Value="Пар"
+            IntValue "rare"
+        }
+        Folder "stone_dust" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024337384"
+            StringValue "name_eng" Value="Rock Dust"
+            StringValue "name_rus" Value="Каменная Пыль"
+            IntValue "rare"
+        }
+        Folder "substance" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10024066437"
+            StringValue "name_eng" Value="Substance"
+            StringValue "name_rus" Value="Вещество"
+            IntValue "rare"
+        }
+        Folder "time" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023865789"
+            StringValue "name_eng" Value="Time"
+            StringValue "name_rus" Value="Время"
+            IntValue "rare"
+        }
+        Folder "vacuum" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10023857080"
+            StringValue "name_eng" Value="Vacuum"
+            StringValue "name_rus" Value="Вакуум"
+            IntValue "rare"
+        }
+        Folder "water" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210824899"
+            StringValue "name_eng" Value="Water"
+            StringValue "name_rus" Value="Вода"
+            IntValue "rare"
+        }
+        Folder "water_molecule" {
+            StringValue "desc_eng" Value="Тест"
+            StringValue "desc_rus" Value="Test"
+            StringValue "image" Value="rbxassetid://10210839776"
+            StringValue "name_eng" Value="Water Molecule"
+            StringValue "name_rus" Value="Молекула Воды"
+            IntValue "rare"
+        }
+    }
+    Folder "Map" {
+        Folder "Easy Teleporter\n - Lentilkac58 - Version 1" {
+            Part "Lentilkac58-Easy-Teleport-1" Size=4,0.4,4 Anchored BottomSurface=Smooth CFrame=-89.677,4.384,-339.67 Color=#0000FF TopSurface=Smooth {
+                Script "Script" @src="Scripts/Workspace/Map/Easy Teleporter_ - Lentilkac58 - Version 1/Lentilkac58-Easy-Teleport-1/Script.luau"
+            }
+            Part "Lentilkac58-Easy-Teleport-2" Size=4,0.4,4 Anchored BottomSurface=Smooth CFrame=-48607.125,158.2,796.696 Color=#FF0000 TopSurface=Smooth {
+                Script "Script" @src="Scripts/Workspace/Map/Easy Teleporter_ - Lentilkac58 - Version 1/Lentilkac58-Easy-Teleport-2/Script.luau"
+            }
+        }
+        Part "Part" Size=1.383,17.876,26.687 Anchored BottomSurface=Smooth CFrame=-48910.988,50.938,-658.556 Material=Metal TopSurface=Smooth
+        Part "Part" Size=1.383,17.876,26.687 Anchored BottomSurface=Smooth CFrame=-48910.988,50.938,-631.087 Material=CorrodedMetal TopSurface=Smooth
+    }
+    Script "PlayerSaveData" @src="Scripts/Workspace/PlayerSaveData.luau"
+    Script "RE" @src="Scripts/Workspace/RE.luau"
+    Folder "Resulting" {
+        Script "Count" @src="Scripts/Workspace/Resulting/Count.luau"
+        Folder "StartElements" {
+            Folder "big"
+            Folder "cold"
+            Folder "electron"
+            Folder "fast"
+            Folder "hot"
+            Folder "neitron"
+            Folder "photon"
+            Folder "quark"
+            Folder "slow"
+            Folder "small"
+            Folder "time"
+            Folder "vacuum"
+        }
+        Folder "Value" {
+            IntValue "AllCrafts"
+            IntValue "AllElements"
+        }
+    }
+    SpawnLocation "SpawnLocation" Size=6,1,6 Anchored BottomSurface=Smooth CFrame=-49033.402,42.562,-620.172|1.231,0,0.559 CanCollide=false Duration=0 TopSurface=Smooth Transparency=999
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#0C545C WaterReflectance=1 WaterTransparency=0.3 WaterWaveSize=0.15 WaterWaveSpeed=10 {
+        Clouds "Clouds" Cover=0.679 Density=0.214
+    }
+}

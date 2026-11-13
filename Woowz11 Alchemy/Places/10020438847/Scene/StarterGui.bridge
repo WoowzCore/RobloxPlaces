@@ -1,0 +1,80 @@
+StarterGui "StarterGui" ScreenOrientation=LandscapeSensor ShowDevelopmentGui {
+    LocalScript "AddElements" @src="Scripts/StarterGui/AddElements.luau" Disabled {
+        IntValue "Count"
+        Folder "ElementsPlayer"
+    }
+    LocalScript "DisableScreenGui" @src="Scripts/StarterGui/DisableScreenGui.luau" Disabled
+    ScreenGui "MainScreenGui" AutoLocalize=false DisplayOrder=1 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ImageButton "ChangeScreen" Position=0.95,0,0.9,0 Size=0.05,0,0.1,0 BackgroundColor3=#FFFFFF Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png"
+    }
+    ScreenGui "NotScreenGui" AutoLocalize=false Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling
+    Folder "Presets" {
+        ImageLabel "Element_blank" Size=0,100,0,100 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated {
+            ImageButton "Button" Position=0.05,0,0.05,0 Size=0.9,0,0.9,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://10030044433" ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated {
+                LocalScript "Element_Script" @src="Scripts/StarterGui/Presets/Element_blank/Button/Element_Script.luau" Disabled
+                BoolValue "Result"
+                StringValue "id"
+            }
+        }
+        LocalScript "VisualElementButton" @src="Scripts/StarterGui/Presets/VisualElementButton.luau" Disabled
+    }
+    ScreenGui "ScreenGui" AutoLocalize=false Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Frame "Background" Size=1,0,1,0 BackgroundColor3=#474747 BackgroundTransparency=1 {
+            Frame "Description" Position=0,0,0.66,0 Size=0.25,0,0.34,0 BackgroundColor3=#FFFFFF {
+                Frame "Buttons" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                    LocalScript "ChangeLanguage" @src="Scripts/StarterGui/ScreenGui/Background/Description/Buttons/ChangeLanguage.luau" Disabled
+                    ImageButton "ChangeLanguage_b" Position=0.8,0,0.8,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10031203284" ImageContent="rbxassetid://10031203284" ResampleMode=Pixelated
+                    LocalScript "ClearAllElements" @src="Scripts/StarterGui/ScreenGui/Background/Description/Buttons/ClearAllElements.luau" Disabled
+                    ImageButton "ClearAllElements_b" Position=0.1,0,0.8,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10023865789" ImageColor3=#000000 ImageContent="rbxassetid://10023865789" ResampleMode=Pixelated
+                }
+                Frame "Desc" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                    Frame "Desc" Position=0.1,0,0.3,0 Size=0.8,0,0.6,0 BackgroundColor3=#CCCCCC {
+                        TextLabel "Description" Size=1,0,1,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="JosefinSans|Regular|Normal" Text="Description" TextColor3=#000000 TextSize=32
+                    }
+                    TextLabel "Name_s" Position=0,0,0.05,0 Size=1,0,0.2,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="JosefinSans|Regular|Normal" Text="Name" TextColor3=#000000 TextSize=57
+                }
+                LocalScript "Description" @src="Scripts/StarterGui/ScreenGui/Background/Description/Description.luau" Disabled
+            }
+            ScrollingFrame "Elements" Position=0,0,0.1,0 Size=0.25,0,0.56,0 Active BackgroundColor3=#C8C8C8 CanvasSize=0,0,4,0 ScrollBarImageColor3=#000000 ScrollBarThickness=20 ScrollingDirection=Y {
+                UIGridLayout "UIGridLayout" CellPadding=0,15,0,15 SortOrder=LayoutOrder
+            }
+            Frame "Search" Size=0.25,0,0.1,0 BackgroundColor3=#FFFFFF {
+                TextBox "search" Size=1,0,1,0 BackgroundColor3=#FFFFFF FontFace="SourceSansPro|Regular|Normal" PlaceholderColor3=#B2B2B2 Text="Search" TextColor3=#000000 TextSize=14
+                LocalScript "search_s" @src="Scripts/StarterGui/ScreenGui/Background/Search/search_s.luau" Disabled
+            }
+            LocalScript "SetMobileResizes" @src="Scripts/StarterGui/ScreenGui/Background/SetMobileResizes.luau" Disabled
+        }
+        Frame "Creator" Position=0.35,0,0.325,0 Size=0.55,0,0.3,0 BackgroundColor3=#C8C8C8 {
+            LocalScript "Creator" @src="Scripts/StarterGui/ScreenGui/Creator/Creator.luau" Disabled
+            ImageLabel "com_1" Position=0.066,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+            ImageLabel "com_2" Position=0.227,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+            ImageLabel "result_1" Position=0.454,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+            ImageLabel "result_2" Position=0.583,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+            ImageLabel "result_3" Position=0.709,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+            ImageLabel "result_4" Position=0.838,0,0.314,0 Size=0.1,0,0.39,0 BackgroundColor3=#FFFFFF Image="rbxassetid://10030044433" ImageColor3=#0A0A0A ImageContent="rbxassetid://10030044433" ResampleMode=Pixelated
+        }
+        Frame "MobileAsk" Size=1,0,1,0 BackgroundColor3=#747474 Visible=false {
+            TextLabel "ask" Size=1,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Do you have a mobile device?" TextColor3=#000000 TextSize=46 TextYAlignment=Bottom
+            TextButton "no" Position=0.3,0,0.6,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF FontFace="SourceSansPro|Regular|Normal" Text="NO" TextColor3=#000000 TextSize=48
+            TextButton "yes" Position=0.6,0,0.6,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF FontFace="SourceSansPro|Regular|Normal" Text="YES" TextColor3=#000000 TextSize=42
+        }
+    }
+    Folder "Scripts" {
+        LocalScript "DisableDead" @src="Scripts/StarterGui/Scripts/DisableDead.luau"
+        LocalScript "HightAtmosphere" @src="Scripts/StarterGui/Scripts/HightAtmosphere.luau" Disabled
+        LocalScript "RespawnWhenFalling" @src="Scripts/StarterGui/Scripts/RespawnWhenFalling.luau" Disabled
+    }
+    Folder "Values" {
+        Folder "Decoration" {
+            Color3Value "Element_background" Value=#0A0A0A
+            Color3Value "Element_background_select" Value=#4B4B4B
+        }
+        LocalScript "DetectPhone" @src="Scripts/StarterGui/Values/DetectPhone.luau"
+        BoolValue "Player_in_Phone"
+        BoolValue "Rus"
+        StringValue "Select_Element" Value="empty"
+        ObjectValue "Select_Element_Obj"
+        StringValue "com_1" Value="empty"
+        StringValue "com_2" Value="empty"
+    }
+}

@@ -1,0 +1,180 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BlurEffect "BlurWhenPlaying"
+  Sky "SkyBox"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  MaterialVariant "Asphalt"
+  MaterialVariant "Basalt"
+  MaterialVariant "Bricks"
+  MaterialVariant "Cobblestone"
+  MaterialVariant "ColdStone"
+  MaterialVariant "Concrete"
+  MaterialVariant "Dirt"
+  MaterialVariant "FoliageGrass"
+  MaterialVariant "Grass"
+  MaterialVariant "Gravel"
+  MaterialVariant "Ice"
+  MaterialVariant "Limestone"
+  MaterialVariant "Magma"
+  MaterialVariant "Metal"
+  MaterialVariant "Mud"
+  MaterialVariant "Planks"
+  MaterialVariant "Rock"
+  MaterialVariant "RustMetal"
+  MaterialVariant "Salt"
+  MaterialVariant "Sand"
+  MaterialVariant "Sandstone"
+  MaterialVariant "Snow"
+  MaterialVariant "Tiles"
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "AddElement"
+  RemoteEvent "ResetElements"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  LocalScript "AddElements"
+    IntValue "Count"
+    Folder "ElementsPlayer"
+  LocalScript "DisableScreenGui"
+  ScreenGui "MainScreenGui"
+    ImageButton "ChangeScreen"
+  ScreenGui "NotScreenGui"
+  Folder "Presets"
+    ImageLabel "Element_blank"  (+4)
+    LocalScript "VisualElementButton"
+  ScreenGui "ScreenGui"
+    Frame "Background"  (+17)
+    Frame "Creator"  (+7)
+    Frame "MobileAsk"  (+3)
+  Folder "Scripts"
+    LocalScript "DisableDead"
+    LocalScript "HightAtmosphere"
+    LocalScript "RespawnWhenFalling"
+  Folder "Values"
+    Folder "Decoration"  (+2)
+    LocalScript "DetectPhone"
+    BoolValue "Player_in_Phone"
+    BoolValue "Rus"
+    StringValue "Select_Element"
+    ObjectValue "Select_Element_Obj"
+    StringValue "com_1"
+    StringValue "com_2"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Folder "Crafts"
+    Folder "asteroid"  (+6)
+    Folder "asteroid_2"  (+6)
+    Folder "asteroid_3"  (+6)
+    Folder "atom"  (+6)
+    Folder "atom_2"  (+6)
+    Folder "atom_3"  (+6)
+    Folder "atom_3"  (+6)
+    Folder "boulder"  (+6)
+    Folder "dark_matter"  (+6)
+    Folder "dust"  (+6)
+    Folder "fast"  (+6)
+    Folder "lake"  (+6)
+    Folder "lake_2"  (+6)
+    Folder "light"  (+6)
+    Folder "light_2"  (+6)
+    Folder "nyklon"  (+6)
+    Folder "ocean"  (+6)
+    Folder "ocean_2"  (+6)
+    Folder "pebbles"  (+6)
+    Folder "photon"  (+6)
+    Folder "pond"  (+6)
+    Folder "pond_2"  (+6)
+    Folder "proton"  (+6)
+    Folder "puddle"  (+6)
+    Folder "puddle_2"  (+6)
+    Folder "rock"  (+6)
+    Folder "sea"  (+6)
+    Folder "sea_2"  (+6)
+    Folder "second"  (+6)
+    Folder "slow"  (+6)
+    Folder "slow_2"  (+6)
+    Folder "space"  (+6)
+    Folder "space_2"  (+6)
+    Folder "space_3"  (+6)
+    Folder "space_4"  (+6)
+    Folder "space_5"  (+6)
+    Folder "space_6"  (+6)
+    Folder "space_7"  (+6)
+    Folder "space_dust"  (+6)
+    Folder "space_dust_2"  (+6)
+    … ещё 17
+  Folder "Elements"
+    Folder "asteroid"  (+6)
+    Folder "atom"  (+6)
+    Folder "big"  (+6)
+    Folder "boulder"  (+6)
+    Folder "cold"  (+6)
+    Folder "dark_matter"  (+6)
+    Folder "dust"  (+6)
+    Folder "electron"  (+6)
+    Folder "fast"  (+6)
+    Folder "hot"  (+6)
+    Folder "lake"  (+6)
+    Folder "light"  (+6)
+    Folder "metal_dust"  (+6)
+    Folder "neitron"  (+6)
+    Folder "nyklon"  (+6)
+    Folder "ocean"  (+6)
+    Folder "pebbles"  (+6)
+    Folder "photon"  (+6)
+    Folder "pond"  (+6)
+    Folder "proton"  (+6)
+    Folder "puddle"  (+6)
+    Folder "quark"  (+6)
+    Folder "rock"  (+6)
+    Folder "sea"  (+6)
+    Folder "second"  (+6)
+    Folder "slow"  (+6)
+    Folder "small"  (+6)
+    Folder "space"  (+6)
+    Folder "space_dust"  (+6)
+    Folder "steam"  (+6)
+    Folder "stone_dust"  (+6)
+    Folder "substance"  (+6)
+    Folder "time"  (+6)
+    Folder "vacuum"  (+6)
+    Folder "water"  (+6)
+    Folder "water_molecule"  (+6)
+  Folder "Map"
+    Folder "Easy Teleporter\n - Lentilkac58 - Version 1"  (+4)
+    Part "Part"
+    Part "Part"
+  Script "PlayerSaveData"
+  Script "RE"
+  Folder "Resulting"
+    Script "Count"
+    Folder "StartElements"  (+12)
+    Folder "Value"  (+2)
+  SpawnLocation "SpawnLocation"
+  Terrain "Terrain"
+    Clouds "Clouds"

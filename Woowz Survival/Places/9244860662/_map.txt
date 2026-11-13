@@ -1,0 +1,37 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Lighting "Weather"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  Sky "Sky"
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+ReplicatedFirst "RF"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "RS"  [Scene/ReplicatedStorage.bridge]
+ServerScriptService "SSS"  [Scene/ServerScriptService.bridge]
+ServerStorage "SS"  [Scene/ServerStorage.bridge]
+SoundService "Player_Sounds"  [Scene/SoundService.bridge]
+StarterGui "SGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+    LocalScript "LoadCharacter"
+    Folder "Values"  (+1)
+Teams "Teams"  [Scene/Teams.bridge]
+Workspace "World"  [Scene/Workspace.bridge]
+  Folder "Map"
+    Part "Baseplate"
+    Part "Baseplate"
+    Part "Baseplate"
+    Part "Baseplate"
+    SpawnLocation "SpawnLocation"
+  Folder "Map_Values"
+    IntValue "Game_Day"
+    BoolValue "Game_Started"
+    IntValue "Game_Time"
+  Camera "Player_Camera"
+  Folder "Scripts"
+    Script "GameScript"
+    Script "Weather"
+  Terrain "Terrain"
+    Clouds "Clouds"

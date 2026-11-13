@@ -1,0 +1,4 @@
+Lighting "Weather" Ambient=#FFFFFF Brightness=3 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=1 EnvironmentSpecularScale=1 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=48 GlobalShadows LightingStyle=Soft OutdoorAmbient=#464646 PrioritizeLightingQuality ShadowSoftness=0.1 TimeOfDay="00:00:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=3 {
+    Atmosphere "Atmosphere" Color=#FFFFFF Decay=#7C9A99 Density=0.388 Glare=3.27 Haze=1.63
+    Sky "Sky" MoonAngularSize=3 SkyboxBackContent="rbxassetid://9245275733" SkyboxDownContent="rbxassetid://9245276448" SkyboxFrontContent="rbxassetid://9245275733" SkyboxLeftContent="rbxassetid://9245275733" SkyboxRightContent="rbxassetid://9245275733" SkyboxUpContent="rbxassetid://9245276942" SunAngularSize=3
+}

@@ -1,0 +1,9 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=LockFirstPerson CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower=false CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=0 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=0 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts"
+    StarterPlayerScripts "StarterPlayerScripts" {
+        LocalScript "LoadCharacter" @src="Scripts/StarterPlayer/StarterPlayerScripts/LoadCharacter.luau"
+        Folder "Values" {
+            Vector3Value "Positions"
+        }
+    }
+}

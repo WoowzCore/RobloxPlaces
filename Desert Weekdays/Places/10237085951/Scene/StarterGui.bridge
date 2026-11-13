@@ -1,0 +1,41 @@
+StarterGui "StarterGui" ScreenOrientation=LandscapeSensor ShowDevelopmentGui {
+    LocalScript "Gui" @src="Scripts/StarterGui/Gui.luau"
+    ScreenGui "Inventory" Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Frame "Background" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=0.45 BorderSizePixel=0
+        Frame "Backpack" Position=0.2,0,0.1,0 Size=0.6,0,0.5,0 BackgroundColor3=#8D8D8D
+        ImageButton "Backpack_1" Position=0.22,0,0.134,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_10" Position=0.68,0,0.364,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_2" Position=0.333,0,0.134,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_3" Position=0.563,0,0.134,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_4" Position=0.45,0,0.134,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_5" Position=0.68,0,0.134,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_6" Position=0.45,0,0.364,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_7" Position=0.333,0,0.364,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_8" Position=0.563,0,0.364,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageButton "Backpack_9" Position=0.22,0,0.364,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        TextButton "Enable_cursor_in_fisrt_person" BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Modal TextColor3=#000000 TextSize=14
+        LocalScript "Inventory" @src="Scripts/StarterGui/Inventory/Inventory.luau"
+        ImageButton "LeftArm" Position=0.1,0,0.7,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        LocalScript "LoadCell" @src="Scripts/StarterGui/Inventory/LoadCell.luau"
+        TextLabel "Money" Position=0.1,0,0,0 Size=0.5,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Money : 0" TextColor3=#FFFFFF TextSize=53 TextXAlignment=Left {
+            StringValue "Text" Value="Money :"
+        }
+        ImageButton "RightArm" Position=0.8,0,0.7,0 Size=0.1,0,0.2,0 BackgroundColor3=#FFFFFF
+        ImageLabel "TakenCell" Size=0.1,0,0.2,0 AnchorPoint=0.5,0.1 BackgroundColor3=#FFFFFF Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" Visible=false ZIndex=2
+    }
+    LocalScript "Spawn" @src="Scripts/StarterGui/Spawn.luau"
+    LocalScript "Survival" @src="Scripts/StarterGui/Survival.luau"
+    Folder "Values" {
+        ObjectValue "Cursor_on_cell"
+        Folder "Data" {
+            LocalScript "Cell_script" @src="Scripts/StarterGui/Values/Data/Cell_script.luau" Disabled
+            StringValue "Error_Texture" Value="rbxassetid://10286457701"
+            ObjectValue "LeftArm_tool"
+            StringValue "Null_Inventory_Cell"
+            ObjectValue "RightArm_tool"
+        }
+        BoolValue "InventoryOpen"
+        BoolValue "Player_pressed_mouse1"
+        ObjectValue "Player_take_cell"
+    }
+}

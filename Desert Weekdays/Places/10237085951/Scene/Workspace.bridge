@@ -1,0 +1,37 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Camera "Camera"
+    Folder "ForScripts" {
+        Script "CreateToolFunctions" @src="Scripts/Workspace/ForScripts/CreateToolFunctions.luau" Disabled
+        Script "GetTool" @src="Scripts/Workspace/ForScripts/GetTool.luau" Disabled
+        ClickDetector "GetToolDetect"
+        Script "LoadTools" @src="Scripts/Workspace/ForScripts/LoadTools.luau"
+        Folder "Values" {
+            NumberValue "GetToolDetectDistance" Value=5
+        }
+    }
+    Part "Part" Size=1.285,15.16,33.292 Anchored BottomSurface=Smooth CFrame=-267.233,25.673,-69.064 Material=Brick TopSurface=Smooth
+    Script "RS" @src="Scripts/Workspace/RS.luau"
+    SpawnLocation "SpawnLocation" Size=6,0.2,6 Anchored BottomSurface=Weld CFrame=-298.306,20.105,-84.007|-177.575,0.291,-173.157 CanCollide=false Duration=0 TopSurface=Smooth Transparency=1
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#34B39E WaterReflectance=1 WaterTransparency=0.3 WaterWaveSize=0.15 WaterWaveSpeed=10
+    Folder "TerrainCursorPart"
+    Tool "Test" CanBeDropped=false RequiresHandle=false TextureContent="rbxassetid://10243362063" TextureId="rbxassetid://10243362063" {
+        Part "Handle" Size=1.507,0.866,0.343 BottomSurface=Smooth CFrame=-273.249,19.596,-84.781 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Test/Handle" Part1=@"Workspace/Test/Part"
+        }
+        StringValue "Icon" Value="rbxassetid://10283539528"
+        Part "Part" Size=4,1,7.282 BottomSurface=Smooth CFrame=-273.16,19.906,-88.261 TopSurface=Smooth
+    }
+    Tool "Test1" CanBeDropped=false RequiresHandle=false TextureContent="rbxassetid://10243362063" TextureId="rbxassetid://10243362063" {
+        Part "Handle" Size=1.507,0.866,0.343 BottomSurface=Smooth CFrame=-273.249,19.596,-74.05 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Test1/Handle" Part1=@"Workspace/Test1/Part"
+        }
+        Part "Part" Size=4,1,7.282 BottomSurface=Smooth CFrame=-273.16,19.906,-77.53 Color=#FF0000 TopSurface=Smooth
+    }
+    Tool "Test2" CanBeDropped=false RequiresHandle=false TextureContent="rbxassetid://10243362063" TextureId="rbxassetid://10243362063" {
+        Part "Handle" Size=1.507,0.866,0.343 BottomSurface=Smooth CFrame=-272.767,18.506,-63.983|0.112,-0.002,-0.783 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Test2/Handle" Part1=@"Workspace/Test2/Part"
+        }
+        Part "Part" Size=4,1,7.282 BottomSurface=Smooth CFrame=-272.673,18.821,-67.463|0.112,-0.002,-0.783 Color=#00FF00 TopSurface=Smooth
+    }
+    Script "Weather" @src="Scripts/Workspace/Weather.luau"
+}

@@ -1,0 +1,154 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteFunction "Checkpoint"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+    Script "Checkpoint"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Model "AnimatedFlag"
+    Script "Animate"
+    Model "Flag"  (+16)
+    Model "FlagPole"  (+12)
+  MeshPart "Books 2"
+  Part "Button"
+    Script "Script"
+  Camera "Camera"
+  Model "Ceiling Lamp"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+    SpawnLocation "SpawnLocation"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Checkpoint"
+    Decal "Decal"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Damage"
+    Script "Script"
+  Part "Falls"
+    Script "Script"
+  Folder "Folder"
+    Model " "  (+276)
+  UnionOperation "Folding Chair"
+    Seat "Seat"  (+7)
+  Model "GlassDomeCeiling"
+    UnionOperation "Glass"
+    UnionOperation "MetalFrame"
+  IntersectOperation "Intersection"
+  IntersectOperation "Intersection"
+  IntersectOperation "Intersection"
+  IntersectOperation "Intersection"
+  Model "Lamp"
+    MeshPart "Bulb"  (+1)
+    UnionOperation "Cable"
+    MeshPart "Light"
+    MeshPart "Metal"
+  Model "Model"
+    MeshPart "Meshes/Grass"
+    Part "Part"
+    UnionOperation "Union"
+  Model "Model"
+    Part "Cylinder A"  (+1)
+    Model "Model"  (+24)
+  Model "Model"
+    Model "Model"  (+24)
+    Model "Model"  (+7)
+  Model "Model"
+    Model "Model"  (+24)
+    Model "Model"  (+7)
+  Model "Model"
+    Model "Model"  (+7)
+    Model "Model"  (+24)
+  Model "Model"
+    Model "Model"  (+96)
+    Model "Model"  (+7)
+  Model "Model"
+    Model "Model"  (+24)
+    Model "Model"  (+7)
+  Model "Model"
+    Part "Part"  (+1)
+    Part "Part"  (+2)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Modern Bed"
+    UnionOperation "Bed Base"
+    MeshPart "Blanket"
+    UnionOperation "Matress"
+    Model "Pillow Set"  (+3)
+  Model "Old Books"
+    Model "Model"  (+30)
+    Model "Model"  (+25)
+  Part "Part"
+  Part "Part"
+  … ещё 330

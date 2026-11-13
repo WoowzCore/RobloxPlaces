@@ -1,0 +1,220 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+  SunRaysEffect "SunRays"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+  Tool "FlyingCarpet"
+    Part "Handle"  (+1)
+    LocalScript "LocalScript"
+    LocalScript "MouseIcon"
+    Script "Script"  (+1)
+    Animation "Sit"
+    Animation "SitR15"
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Model "5mm Ammo Box"
+    MeshPart "5mm Ammo Box"  (+1)
+  Model "Abandoned security hut (By berk gedik) "
+    MeshPart "Meshes/untitled_Cube"  (+1)
+    MeshPart "Meshes/untitled_Cube.001"  (+1)
+    MeshPart "Meshes/untitled_Cube.002"  (+1)
+    MeshPart "Meshes/untitled_Cube.003"  (+1)
+    MeshPart "Meshes/untitled_Cube.004"  (+1)
+    MeshPart "Meshes/untitled_Cube.005"  (+1)
+    MeshPart "Meshes/untitled_Cube.006"  (+1)
+    MeshPart "Meshes/untitled_Cube.007"  (+1)
+    MeshPart "Meshes/untitled_Cube.008"  (+1)
+    MeshPart "Meshes/untitled_Cube.009"  (+1)
+    MeshPart "Meshes/untitled_Cube.010"  (+1)
+    MeshPart "Meshes/untitled_Cylinder.004"  (+1)
+  MeshPart "Aset_industrial_storage_M_vizqehw_LOD0"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Barrel"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Barrier"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "BaseballBat"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Big Leaves"
+    MeshPart "Plant 4"  (+1)
+  MeshPart "Briefcase"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Brush"
+    MeshPart "Plant 5"  (+1)
+  Model "CCTV"
+    MeshPart "Cube"  (+1)
+    MeshPart "Cube.001"  (+1)
+    MeshPart "Cube.002"  (+1)
+    MeshPart "Cube.003_Cube.004"  (+1)
+  Model "Cabinet With PBR"
+    MeshPart "Meshes/GothicCabinet_01_gothic_cabinet"  (+1)
+    MeshPart "Meshes/GothicCabinet_01_gothic_cabinet.door1"  (+1)
+    MeshPart "Meshes/GothicCabinet_01_gothic_cabinet.door1"  (+1)
+    MeshPart "Meshes/GothicCabinet_01_gothic_cabinet.door4"  (+1)
+    MeshPart "Meshes/GothicCabinet_01_gothic_cabinet.door4"  (+1)
+  Camera "Camera"
+  MeshPart "Carpet"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Clipboard"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Compass (by Artem Goyko)"
+    MeshPart "Meshes/Model_Circle_Circle.003"  (+1)
+    MeshPart "Meshes/Model_Cube_Cube.001"  (+1)
+    MeshPart "Meshes/Model_Cylinder"  (+1)
+    MeshPart "Meshes/Model_Sphere"  (+1)
+    MeshPart "Meshes/Model_Sphere.001"  (+1)
+    MeshPart "Meshes/Model_Torus.001"  (+1)
+  Model "Computer"
+    MeshPart "Mesh"  (+1)
+  Model "Container (PBR)"
+    Model "FLdoor"  (+4)
+    Model "FRdoor"  (+4)
+    Model "Paint"  (+10)
+    Model "RLdoor"  (+4)
+    Model "RRdoor"  (+4)
+    Model "WoodenFloor"  (+2)
+  MeshPart "Crowbar"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Curved Palm"
+    MeshPart "Palm_tree_002_v2_M_frond_03_inst_Inst1_0"  (+1)
+    MeshPart "Palm_tree_002_v2_M_palm_bark_01.1_0"  (+1)
+  Model "Dark Palm"
+    MeshPart "Palm_tree_002_v2_M_bark_hair_inst.1_0"  (+1)
+    MeshPart "Palm_tree_002_v2_M_frond_01_inst.1_0"  (+1)
+    MeshPart "Palm_tree_002_v2_M_frond_03_inst_Inst1_0"  (+1)
+    MeshPart "Palm_tree_002_v2_M_palm_bark_01.1_0"  (+1)
+    MeshPart "Palm_tree_002_v2_M_palm_bark_02.1_0"  (+1)
+  MeshPart "Fallen Tree"
+  Model "Fern"
+    MeshPart "Plant 4"  (+1)
+  Model "Fern 2"
+    MeshPart "Plant 4"  (+1)
+    Model "Wicker Basket Bin"
+  MeshPart "Flashlight"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Fnaf 1 desk (By Glitch5970)"
+    MeshPart "Meshes/Desk_Cube"  (+1)
+    MeshPart "Meshes/Desk_Cube.002"  (+1)
+    MeshPart "Meshes/Desk_Cube.005"  (+1)
+    MeshPart "Meshes/Desk_Cube.006"  (+1)
+  Model "G43"
+    MeshPart "9mmBullet"  (+1)
+    MeshPart "9mmShell"  (+1)
+    MeshPart "Barrel"  (+1)
+    MeshPart "Handle"  (+1)
+    MeshPart "Magazine"  (+1)
+    MeshPart "Slide"  (+1)
+    MeshPart "SlideStop"  (+1)
+    MeshPart "Trigger"  (+1)
+  MeshPart "Gascan"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Hammer"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Head"
+    StringValue "AvatarPartScaleType"
+    Attachment "FaceCenterAttachment"  (+1)
+    Attachment "FaceFrontAttachment"  (+1)
+    Attachment "HairAttachment"  (+1)
+    Attachment "HatAttachment"  (+1)
+    WrapTarget "Head"
+    Motor6D "Neck"
+    Attachment "NeckRigAttachment"  (+1)
+    Vector3Value "OriginalSize"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Hind Attack Helicopter"
+    MeshPart "Bellywires_low"  (+2)
+    MeshPart "cannonturretpivot_low"  (+1)
+    MeshPart "frontprobepole_low"  (+1)
+    MeshPart "helicopterbody_low"  (+1)
+    MeshPart "rotorring_low"  (+1)
+    MeshPart "sensorhousing_low"  (+1)
+    MeshPart "tailrotorblades_low"  (+1)
+    MeshPart "vents_low"  (+1)
+  Model "Huey"
+    MeshPart "MeshPart"  (+2)
+    MeshPart "MeshPart"  (+2)
+    MeshPart "MeshPart"  (+1)
+    Model "Model"  (+11)
+  Model "L96A1"
+    MeshPart "Bolt"  (+1)
+    MeshPart "Bolt_Handle"  (+1)
+    MeshPart "BulletBage"  (+1)
+    MeshPart "Handle"  (+11)
+    MeshPart "Magazine"  (+1)
+    MeshPart "Magazine_Release"  (+1)
+    MeshPart "Scope"  (+1)
+    MeshPart "Trigger"  (+1)
+    MeshPart "Tripod"  (+1)
+    MeshPart "Tripod_Left"  (+1)
+    MeshPart "Tripod_Right"  (+1)
+  Model "Leather Couch [PBR]"
+    Seat "Seat"
+    Seat "Seat"
+    MeshPart "uploads_files_733732_Couch_Norms_Var-Leather_6-15-17_02"  (+1)
+  Model "M1911"
+    MeshPart "Barrel"  (+1)
+    MeshPart "Body"  (+1)
+    MeshPart "Grip"  (+1)
+    MeshPart "Hammer"  (+1)
+    MeshPart "Mag"  (+1)
+    MeshPart "Part1"  (+1)
+    MeshPart "Part10"  (+1)
+    MeshPart "Part11"  (+1)
+    MeshPart "Part2"  (+1)
+    MeshPart "Part3"  (+1)
+    MeshPart "Part4"  (+1)
+    MeshPart "Part5"  (+1)
+    MeshPart "Part6"  (+1)
+    MeshPart "Part7"  (+1)
+    MeshPart "Part8"  (+1)
+    MeshPart "Part9"  (+1)
+    MeshPart "Parts"  (+1)
+    MeshPart "Sights"  (+1)
+    MeshPart "Slide"  (+1)
+    MeshPart "Trigger"  (+1)
+  MeshPart "Machete"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "MeshPart"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "MeshPart"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "MeshPart"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "MeshPart"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "MeshPart"
+    SurfaceAppearance "SurfaceAppearance"
+  … ещё 120

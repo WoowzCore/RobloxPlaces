@@ -1,0 +1,6 @@
+Lighting "Lighting" Ambient=#CADAC8 Brightness=2.8 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=0.03 EnvironmentSpecularScale=0.613 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=24 GlobalShadows LightingStyle=Soft OutdoorAmbient=#7C948F PrioritizeLightingQuality ShadowSoftness=0.6 TimeOfDay="12:00:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=3 $UseCurrentLighting=false {
+    Atmosphere "Atmosphere" Color=#BBD9DC Decay=#6A707D Density=0.425 Offset=0.25
+    BloomEffect "Bloom" Size=15 Intensity=1 Threshold=3.52
+    DepthOfFieldEffect "DepthOfField" Enabled=false FarIntensity=0.1 InFocusRadius=30
+    Sky "Sky" CelestialBodiesShown=false SkyboxBackContent="rbxassetid://11484215977" SkyboxBk="rbxassetid://11484215977" SkyboxDn="rbxassetid://11484218477" SkyboxDownContent="rbxassetid://11484218477" SkyboxFrontContent="rbxassetid://11484220933" SkyboxFt="rbxassetid://11484220933" SkyboxLeftContent="rbxassetid://11484223148" SkyboxLf="rbxassetid://11484223148" SkyboxRightContent="rbxassetid://11484225298" SkyboxRt="rbxassetid://11484225298" SkyboxUp="rbxassetid://11484227862" SkyboxUpContent="rbxassetid://11484227862"
+}

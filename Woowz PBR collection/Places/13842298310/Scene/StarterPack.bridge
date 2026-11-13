@@ -1,0 +1,14 @@
+StarterPack "StarterPack" {
+    Tool "FlyingCarpet" CanBeDropped=false Grip=-1.5,0,0|89.995,-90,0 TextureContent="http://www.roblox.com/asset/?id=223080070" TextureId="http://www.roblox.com/asset/?id=223080070" {
+        Part "Handle" Size=3,0.5,6.5 BottomSurface=Smooth CFrame=1622.386,0.25,-1778.226 EnableFluidForces=false TopSurface=Smooth Transparency=0.85 {
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=223079737" MeshId="http://www.roblox.com/asset/?id=223079737" MeshType=FileMesh Scale=1.125,1.125,1.125 TextureContent="http://www.roblox.com/asset/?id=223080038" TextureId="http://www.roblox.com/asset/?id=223080038"
+        }
+        LocalScript "LocalScript" @src="Scripts/StarterPack/FlyingCarpet/LocalScript.luau"
+        LocalScript "MouseIcon" @src="Scripts/StarterPack/FlyingCarpet/MouseIcon.luau"
+        Script "Script" @src="Scripts/StarterPack/FlyingCarpet/Script.luau" {
+            Script "RemovalMonitor" @src="Scripts/StarterPack/FlyingCarpet/Script/RemovalMonitor.luau" Disabled
+        }
+        Animation "Sit" AnimationContent="http://www.roblox.com/asset/?id=225279725" AnimationId="http://www.roblox.com/asset/?id=225279725"
+        Animation "SitR15" AnimationContent="rbxassetid://1239927101" AnimationId="rbxassetid://1239927101"
+    }
+}

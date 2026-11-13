@@ -1,0 +1,4 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=75 CharacterUseJumpPower CharacterWalkSpeed=20 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance=false LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled=false {
+    StarterCharacterScripts "StarterCharacterScripts"
+    StarterPlayerScripts "StarterPlayerScripts"
+}

@@ -1,0 +1,96 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  MaterialVariant "Brick"
+  MaterialVariant "Concrete"
+  MaterialVariant "Limestone"
+  MaterialVariant "Pavement"
+  MaterialVariant "Salt"
+  MaterialVariant "Sand"
+  MaterialVariant "Slate"
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "ChangeTool"
+  RemoteEvent "DropTool"
+  RemoteEvent "GetTool"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  LocalScript "Gui"
+  ScreenGui "Inventory"
+    Frame "Background"
+    Frame "Backpack"
+    ImageButton "Backpack_1"
+    ImageButton "Backpack_10"
+    ImageButton "Backpack_2"
+    ImageButton "Backpack_3"
+    ImageButton "Backpack_4"
+    ImageButton "Backpack_5"
+    ImageButton "Backpack_6"
+    ImageButton "Backpack_7"
+    ImageButton "Backpack_8"
+    ImageButton "Backpack_9"
+    TextButton "Enable_cursor_in_fisrt_person"
+    LocalScript "Inventory"
+    ImageButton "LeftArm"
+    LocalScript "LoadCell"
+    TextLabel "Money"  (+1)
+    ImageButton "RightArm"
+    ImageLabel "TakenCell"
+  LocalScript "Spawn"
+  LocalScript "Survival"
+  Folder "Values"
+    ObjectValue "Cursor_on_cell"
+    Folder "Data"  (+5)
+    BoolValue "InventoryOpen"
+    BoolValue "Player_pressed_mouse1"
+    ObjectValue "Player_take_cell"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Folder "ForScripts"
+    Script "CreateToolFunctions"
+    Script "GetTool"
+    ClickDetector "GetToolDetect"
+    Script "LoadTools"
+    Folder "Values"  (+1)
+  Part "Part"
+  Script "RS"
+  SpawnLocation "SpawnLocation"
+  Terrain "Terrain"
+  Folder "TerrainCursorPart"
+  Tool "Test"
+    Part "Handle"  (+1)
+    StringValue "Icon"
+    Part "Part"
+  Tool "Test1"
+    Part "Handle"  (+1)
+    Part "Part"
+  Tool "Test2"
+    Part "Handle"  (+1)
+    Part "Part"
+  Script "Weather"

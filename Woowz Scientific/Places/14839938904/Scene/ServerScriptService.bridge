@@ -1,0 +1,9 @@
+ServerScriptService "ServerScriptService" {
+    Script "Server" @src="Scripts/ServerScriptService/Server.luau"
+    ModuleScript "ServerBasa" @src="Scripts/ServerScriptService/ServerBasa.luau"
+    Script "Start" @code=<<<
+        local GLight = game:GetService("Lighting")
+
+        GLight.Ambient = Color3.fromRGB(0,0,0)
+    >>>
+}

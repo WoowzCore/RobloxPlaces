@@ -1,0 +1,12 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled=false CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance=false LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        LocalScript "Graphic" @src="Scripts/StarterPlayer/StarterCharacterScripts/Graphic.luau"
+        LocalScript "UpdateVelocity" @src="Scripts/StarterPlayer/StarterCharacterScripts/UpdateVelocity.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        ModuleScript "Keyboard" @src="Scripts/StarterPlayer/StarterPlayerScripts/Keyboard.luau"
+        ModuleScript "PlayerBasa" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerBasa.luau"
+        LocalScript "PlayerScript" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerScript.luau"
+        LocalScript "ShakeCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/ShakeCamera.luau"
+    }
+}

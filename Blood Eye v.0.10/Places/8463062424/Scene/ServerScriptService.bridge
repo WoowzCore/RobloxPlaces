@@ -1,0 +1,4 @@
+ServerScriptService "ServerScriptService" {
+    Script "ACS_Server" @src="Scripts/ServerScriptService/ACS_Server.luau"
+    Script "GlobalScript" @src="Scripts/ServerScriptService/GlobalScript.luau"
+}

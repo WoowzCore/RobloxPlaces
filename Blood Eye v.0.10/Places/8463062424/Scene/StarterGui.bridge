@@ -1,0 +1,11 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    LocalScript "BildingScript" @src="Scripts/StarterGui/BildingScript.luau"
+    LocalScript "First Person" @src="Scripts/StarterGui/First Person.luau"
+    LocalScript "GlobalPlayerScript" @src="Scripts/StarterGui/GlobalPlayerScript.luau"
+    LocalScript "PlayerScript" @src="Scripts/StarterGui/PlayerScript.luau"
+    ScreenGui "ScreenGui" {
+        TextLabel "TextLabel" Position=-0.001,0,0.94,0 Size=0,200,0,38 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderMode=Inset FontFace="SourceSansPro|Regular|Normal" Text="Z - Ragdoll Mode" TextColor3=#000000 TextSize=14
+        TextLabel "TextLabel" Position=-0.001,0,0.902,0 Size=0,200,0,38 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderMode=Inset FontFace="SourceSansPro|Regular|Normal" Text="C - Changes the camera" TextColor3=#000000 TextSize=14
+        TextLabel "TextLabel" Position=-0.001,0,0.868,0 Size=0,200,0,38 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderMode=Inset FontFace="SourceSansPro|Regular|Normal" Text="T, Y - Bilding" TextColor3=#000000 TextSize=14
+    }
+}

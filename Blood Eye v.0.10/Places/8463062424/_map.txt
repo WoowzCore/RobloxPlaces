@@ -1,0 +1,370 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Weather"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  BlurEffect "Blur"
+  ColorCorrectionEffect "ColorCorrection"
+  Sky "Sky"
+  SunRaysEffect "SunRays"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "CreateObject"
+  RemoteEvent "DestroyObject"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "ACS_Server"
+  Script "GlobalScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  LocalScript "BildingScript"
+  LocalScript "First Person"
+  LocalScript "GlobalPlayerScript"
+  LocalScript "PlayerScript"
+  ScreenGui "ScreenGui"
+    TextLabel "TextLabel"
+    TextLabel "TextLabel"
+    TextLabel "TextLabel"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+  Tool "Cat"
+    RemoteEvent "Bounce"
+    MeshPart "Handle"  (+3)
+    LocalScript "LocalScript"
+    Script "Script"
+  Tool "ClassicSword"
+    Part "Handle"  (+4)
+    LocalScript "MouseIcon"
+    Script "SwordScript"
+  Tool "Grenade"
+    LocalScript "ClientScript"
+    Configuration "Configurations"  (+5)
+    Part "Handle"  (+3)
+    Script "ServerScript"
+    RemoteEvent "Throw"
+    Animation "ThrowAnimation"
+  Tool "Pistol"
+    LocalScript "AssaultRifleScript"
+    Part "Handle"  (+3)
+    Animation "Recoil"
+    LocalScript "TurnScript"
+    ScreenGui "WeaponHud"  (+11)
+  Tool "Push"
+    Animation "Animation"
+    LocalScript "LocalScript"
+    RemoteEvent "Push"
+    KeyframeSequence "Push(Export Me)"  (+103)
+    Script "Script"
+  Tool "RocketLauncher"
+    LocalScript "Client"
+    Part "Handle"  (+1)
+    LocalScript "MouseIcon"
+    RemoteFunction "MouseLoc"
+    Script "Server"  (+3)
+  Tool "Shovel"
+    MeshPart "Handle"  (+3)
+    LocalScript "PlayerScript"
+    ModuleScript "Settings"
+    Script "ShovelScript"  (+3)
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    Script "AddFallDamage"  (+1)
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Model ""
+    BodyColors "Body Colors"
+    Hat "Glasses"  (+2)
+    Hat "Guy Hair"  (+2)
+    Part "Head"  (+4)
+    Humanoid "Humanoid"
+    Part "Left Arm"
+    Part "Left Leg"
+    Pants "Pants"
+    Part "Right Arm"
+    Part "Right Leg"
+    Shirt "Shirt"
+    Part "Torso"  (+2)
+  Model ""
+    VelocityMotor "4D Being"  (+3)
+    Part "Head"  (+15)
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Right Arm"  (+118)
+    Part "Right Leg"
+    Humanoid "Skeleton"  (+1)
+    CharacterMesh "Skeleton Left Arm"
+    CharacterMesh "Skeleton Left Leg"
+    CharacterMesh "Skeleton Right Arm"
+    CharacterMesh "Skeleton Right Leg"
+    CharacterMesh "Skeleton Torso"
+    Part "Torso"  (+7)
+  Model ""
+    Part "Head"  (+1)
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Right Arm"
+    Part "Right Leg"
+    Humanoid "Skeleton"
+    CharacterMesh "Skeleton Left Arm"
+    CharacterMesh "Skeleton Left Leg"
+    CharacterMesh "Skeleton Right Arm"
+    CharacterMesh "Skeleton Right Leg"
+    CharacterMesh "Skeleton Torso"
+    Part "Torso"  (+6)
+  Model "(Animated) Realistic tree"
+    MeshPart "Part"
+    MeshPart "Part"  (+2)
+  Model "(Animated) Realistic tree"
+    MeshPart "Part"
+    MeshPart "Part"  (+2)
+  Model "(HL2/Garry's Mod) Washing Machine"
+    MeshPart "Meshes/furniturewashingmachine001a"  (+1)
+  Model "1969 Ford Mustang Boss 429"  [Scene/Workspace/1969 Ford Mustang Boss 429.bridge]
+    ModuleScript "A-Chassis Tune"  (+233)
+    Model "Body"  (+214)
+    BoolValue "Damageable"
+    VehicleSeat "DriveSeat"  (+10)
+    Model "Misc"  (+30)
+    Model "Wheels"  (+64)
+  Model "AK47"
+    Part "Barrel"  (+1)
+    Part "Bolt"  (+1)
+    Part "Grip"  (+1)
+    Part "Handguard"  (+1)
+    Part "Magazine"  (+1)
+    Part "Part"  (+1)
+    Part "Receiver"  (+1)
+    Part "Receiver"  (+1)
+    Part "Sights"  (+1)
+    Part "Stock"  (+1)
+  Model "Abandoned House"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    … ещё 285
+  Part "Ammo Box"
+    Decal "Decal"
+    Decal "Decal"
+    Decal "Decal"
+    Decal "Decal"
+    Decal "Decal"
+  Model "Animated Tree"
+    MeshPart "Part"  (+1)
+    Part "TreeMeshTop"  (+1)
+  UnionOperation "Axe"
+  Model "Barricade"
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+1)
+    Part "Part"  (+4)
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+1)
+  Model "Barricade"
+    Part "Part"  (+3)
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+2)
+    Part "Part"  (+1)
+  Model "Barricade"
+    Part "Part"  (+4)
+    Part "Part"  (+2)
+    Part "Part"  (+2)
+    Part "Part"  (+4)
+    Part "Part"  (+3)
+    Part "Part"  (+2)
+    Part "Part"  (+1)
+  Model "Bleeding smile"
+    Model "Eyes"  (+15)
+    UnionOperation "Smile"  (+9)
+  MeshPart "Boat 2"
+  MeshPart "Boat 2"
+  Model "Bonfire"
+    Part "Fyre"  (+2)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  Model "Bottle trash"
+    Model "Model"  (+2)
+    Model "Model"  (+2)
+    Part "Part"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Bottle trash"
+    Model "Model"  (+2)
+    Model "Model"  (+2)
+    Part "Part"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Buggy"
+    Part "Part"  (+6)
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+  Model "Burning Corpse Pile"
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Head"  (+1)
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Left Leg"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    … ещё 47
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "Bush"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Cactus"
+    Model "Body"  (+142)
+  Model "Cactus"
+    Model "Body"  (+142)
+  Model "Cactus"
+    Model "Body"  (+142)
+  Model "Cactus"
+    Model "Body"  (+142)
+  Model "Cactus"
+    Model "Body"  (+142)
+  Model "Cactus"
+    Model "Body"  (+142)
+  … ещё 545

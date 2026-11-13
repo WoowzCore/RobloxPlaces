@@ -1,0 +1,8 @@
+Lighting "Weather" Ambient=#00769A Brightness=6.55 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=0 EnvironmentSpecularScale=0 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=0 GlobalShadows LightingStyle=Soft OutdoorAmbient=#000000 PrioritizeLightingQuality ShadowSoftness=0.08 TimeOfDay="12:00:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=3 {
+    Atmosphere "Atmosphere" Color=#D8FFFA Density=0.348 Glare=0.63 Offset=1
+    BloomEffect "Bloom" Size=56 Intensity=0.05 Threshold=0.8
+    BlurEffect "Blur" Size=3
+    ColorCorrectionEffect "ColorCorrection"
+    Sky "Sky" SkyboxBackContent="http://www.roblox.com/asset/?id=150335574" SkyboxBk="http://www.roblox.com/asset/?id=150335574" SkyboxDn="http://www.roblox.com/asset/?id=150335585" SkyboxDownContent="http://www.roblox.com/asset/?id=150335585" SkyboxFrontContent="http://www.roblox.com/asset/?id=150335628" SkyboxFt="http://www.roblox.com/asset/?id=150335628" SkyboxLeftContent="http://www.roblox.com/asset/?id=150335620" SkyboxLf="http://www.roblox.com/asset/?id=150335620" SkyboxRightContent="http://www.roblox.com/asset/?id=150335610" SkyboxRt="http://www.roblox.com/asset/?id=150335610" SkyboxUp="http://www.roblox.com/asset/?id=150335642" SkyboxUpContent="http://www.roblox.com/asset/?id=150335642" StarCount=1334
+    SunRaysEffect "SunRays" Intensity=0.17 Spread=0.156
+}

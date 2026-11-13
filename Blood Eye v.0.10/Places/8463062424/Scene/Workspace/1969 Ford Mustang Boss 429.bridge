@@ -1,0 +1,739 @@
+ModuleScript "A-Chassis Tune" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune.luau" {
+    ScreenGui "A-Chassis Interface" {
+        ObjectValue "Car"
+        BoolValue "ControlsOpen"
+        LocalScript "Drive" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/A-Chassis Interface/Drive.luau"
+        BoolValue "IsOn"
+        Folder "Values" {
+            BoolValue "ABS"
+            BoolValue "ABSActive"
+            NumberValue "APSI"
+            BoolValue "AntiLag"
+            NumberValue "Brake"
+            NumberValue "Gear"
+            NumberValue "HPadd" Value=10
+            NumberValue "Horsepower"
+            BoolValue "MouseSteerOn"
+            BoolValue "PBrake"
+            NumberValue "PSI"
+            BoolValue "PreOn"
+            NumberValue "RPM"
+            NumberValue "SteerC"
+            NumberValue "SteerT"
+            BoolValue "TCS"
+            BoolValue "TCSActive"
+            NumberValue "TPSI"
+            NumberValue "Throttle"
+            NumberValue "Torque"
+            StringValue "TransmissionMode"
+            Vector3Value "Velocity"
+        }
+    }
+    Script "Initialize" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Initialize.luau" {
+        ModuleScript "MiscWeld" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Initialize/MiscWeld.luau"
+    }
+    Folder "Plugins" {
+        Frame "AC6_Controls_Module" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+            LocalScript "Controls_AC6" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_Controls_Module/Controls_AC6.luau"
+            TextButton "Toggle" Position=0.5,-50,1,10 Size=0,100,0,18 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderColor3=#969696 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=16 TextStrokeColor3=#6A6A6A TextYAlignment=Bottom ZIndex=5
+            Frame "Window" Position=0.5,-250,0,-500 Size=0,500,0,400 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                TextLabel "//INSPARE" Position=1,-20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="A-Chassis 6 by //INSPARE" TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                Frame "Content" Position=0,0,0,60 Size=1,0,1,-60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ZIndex=3 {
+                    TextButton "Brake" Position=0,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Brake2" Position=0,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Clutch" Position=0,170,0,213 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrBrake" Position=2,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrClutch" Position=2,170,0,113 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrPBrake" Position=2,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftDown" Position=2,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrShiftUp" Position=2,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrSteer" Position=2,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrThrottle" Position=2,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleABS" Position=2,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTCS" Position=2,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ContlrToggleTMode" Position=2,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "ControlLDZone" Position=2,200,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "ControlRDZone" Position=2,200,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerDZone" Position=1,200,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextLabel "MSteerWidth" Position=1,200,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="100%" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3 {
+                        ScrollingFrame "S" Position=0,10,0,2 Size=0,260,0,3 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png" BottomImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png" CanvasSize=0,5200,0,0 ScrollBarThickness=8 ScrollingDirection=Y TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png" TopImageContent="rbxasset://textures/ui/Scroll/scroll-middle.png"
+                    }
+                    TextButton "MouseBrake" Position=1,170,0,33 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseClutch" Position=1,170,0,113 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MousePBrake" Position=1,170,0,133 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftDown" Position=1,170,0,93 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseShiftUp" Position=1,170,0,73 Size=0,300,0,15 Active=false BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "MouseSteer" Position=1,170,0,53 Size=0,300,0,15 Active=false BackgroundColor3=#282828 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Selectable=false Text="MouseMove" TextColor3=#B0B0B0 TextSize=14 ZIndex=3
+                    TextButton "MouseThrottle" Position=1,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "PBrake" Position=0,170,0,233 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftDown" Position=0,170,0,193 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ShiftUp" Position=0,170,0,173 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft" Position=0,170,0,53 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerLeft2" Position=0,170,0,133 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight" Position=0,170,0,73 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "SteerRight2" Position=0,170,0,153 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextLabel "T" Position=0,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary] SteerRight" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer Right" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]     Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,320 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Switch Mouse Control" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]        Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,280 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Secondary]   Steer Left" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,300 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,260 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=0,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Control Width" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,240 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Right Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,80 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Up" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,180 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle TCS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,220 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Left Deadzone" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,160 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Transmission Mode" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Handbrake" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Shift Down" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Clutch" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Brakes" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Throttle" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=1,150,0,60 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Steer" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextLabel "T" Position=2,150,0,200 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Toggle ABS" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Right ZIndex=3
+                    TextButton "Throttle" Position=0,170,0,13 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "Throttle2" Position=0,170,0,93 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleABS" Position=0,170,0,293 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleMouseDrive" Position=0,170,0,313 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTCS" Position=0,170,0,273 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                    TextButton "ToggleTransMode" Position=0,170,0,253 Size=0,300,0,15 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" TextColor3=#FFFFFF TextSize=14 ZIndex=3
+                }
+                TextLabel "Error" Position=0.5,0,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="Invalid Input" TextColor3=#FF0000 TextSize=18 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 Visible=false ZIndex=3
+                TextLabel "Header" Position=0,10,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Light|Normal" Text="Controls" TextColor3=#FFFFFF TextSize=32 TextStrokeColor3=#646464 TextStrokeTransparency=0.95 TextXAlignment=Left ZIndex=3
+                TextLabel "Overlay" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Italic" Text="[Press a key to assign or Enter to cancel]" TextColor3=#FFFFFF TextSize=28 TextStrokeColor3=#2F2F2F TextStrokeTransparency=0 Visible=false ZIndex=4
+                Frame "Tabs" Position=0,5,0,40 Size=0,490,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants ZIndex=3 {
+                    TextButton "Controller" Position=0,235,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Controller" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    TextButton "Keyboard" Position=0,5,0,0 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Keyboard" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                    Frame "Line" Size=1,0,0,2 BackgroundColor3=#FFFFFF BorderSizePixel=0 ZIndex=3
+                    TextButton "Mouse" Position=0,120,0,-5 Size=0,100,0,20 BackgroundColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Mouse" TextColor3=#646464 TextSize=14 TextStrokeTransparency=0.95 TextYAlignment=Bottom ZIndex=3
+                }
+            }
+        }
+        LocalScript "AC6_First_Person_Gauges" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_First_Person_Gauges.luau"
+        LocalScript "AC6_MSteer_Camera" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_MSteer_Camera.luau"
+        Frame "AC6_Stock_Gauges" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextLabel "ABS" Position=0.5,130,1,-140 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "ABS" Position=0.5,130,1,-100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="ABS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            LocalScript "Gauges_AC6" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_Stock_Gauges/Gauges_AC6.luau"
+            TextLabel "Gear" Position=0.5,-120,1,-70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1
+            TextLabel "PBrake" Position=0.5,200,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="P" TextColor3=#FF557F TextSize=24 TextStrokeColor3=#FF557F TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextButton "Speed" Position=0.5,150,1,-80 Size=0,100,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="0 SPS" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right ZIndex=2
+            Frame "Speedo" Position=0.5,150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                ImageLabel "ImageLabel" Position=0,-125,0,-125 Size=0,250,0,250 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1057672665" ImageColor3=#000000 ImageContent="rbxassetid://1057672665" ImageTransparency=0.5
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    ImageLabel "ImageLabel" Position=0,-2,0,95 Size=0,3,0,15 BackgroundColor3=#FF0000 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            TextLabel "TCS" Position=0.5,130,1,-120 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="TCS" TextColor3=#FFAA00 TextSize=18 TextStrokeColor3=#FFAA00 TextStrokeTransparency=0.9 TextTransparency=0.1 TextXAlignment=Right Visible=false
+            TextLabel "TMode" Position=0.5,-165,1,-40 Size=0,40,0,20 BackgroundColor3=#FFAA00 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Text="A/T" TextColor3=#FFE8A1 TextSize=18 TextStrokeColor3=#FFCA5E TextStrokeTransparency=0.9 TextTransparency=0.1
+            Frame "Tach" Position=0.5,-150,1,-100 BackgroundColor3=#FFFFFF BorderSizePixel=0 {
+                ImageLabel "ImageLabel" Position=0,-125,0,-125 Size=0,250,0,250 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://1057672665" ImageColor3=#000000 ImageContent="rbxassetid://1057672665" ImageTransparency=0.5
+                Frame "Needle" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 {
+                    ImageLabel "ImageLabel" Position=0,-2,0,95 Size=0,3,0,15 BackgroundColor3=#FF0000 BorderSizePixel=0 ZIndex=2
+                }
+            }
+            Frame "ln" BackgroundColor3=#FFFFFF BorderSizePixel=0 Rotation=45 Visible=false {
+                Frame "Frame" Position=0,-2,0,105 Size=0,2,0,5 BackgroundColor3=#FFFFFF BackgroundTransparency=0.1 BorderSizePixel=0
+                TextLabel "Num" Position=0,0,0,88 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Inconsolata|Regular|Normal" Rotation=-45 Text="0" TextColor3=#FFFFFF TextSize=18 TextStrokeColor3=#D5D5D5 TextStrokeTransparency=0.9 TextTransparency=0.1 Visible=false
+            }
+        }
+        LocalScript "AC6_Stock_Sound" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_Stock_Sound.luau" {
+            RemoteEvent "AC6_FE_Sounds" {
+                Script "Handler" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/AC6_Stock_Sound/AC6_FE_Sounds/Handler.luau" Disabled
+            }
+            Sound "Rev" AudioContent="rbxassetid://277649950" Looped PlaybackSpeed=0 SoundId="rbxassetid://277649950" Volume=3 {
+                NumberValue "SetPitch" Value=0.4
+                NumberValue "SetRev" Value=0.8
+            }
+        }
+        LocalScript "Aereodynamics" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Aereodynamics.luau"
+        LocalScript "Backfire [FE+]" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Backfire [FE+].luau" {
+            RemoteEvent "Backfire_FE" {
+                Script "Handler" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Backfire [FE+]/Backfire_FE/Handler.luau" Disabled
+            }
+        }
+        LocalScript "Boost Gauge In Body" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Boost Gauge In Body.luau"
+        LocalScript "Drag" @code=<<<
+            local car = script.Parent.Car.Value
+            local sound = car.Body.Drag.Wind
+            sound:Play()
+
+            while wait() do
+            	sound.Volume = car.DriveSeat.Velocity.magnitude/50
+            	car.Body.Drag.T.Force = Vector3.new(0,0,car.DriveSeat.Velocity.magnitude*1.1)
+            end
+        >>>
+        LocalScript "FirstPersonCam" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/FirstPersonCam.luau"
+        Frame "HP_TQ_Reader" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            TextButton "Button" Position=0.455,0,0.86,0 Size=0,74,0,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextSize=14
+            TextLabel "HP" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,1 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped
+            LocalScript "HP/TQ Reader [README]" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/HP_TQ_Reader/HP%2FTQ Reader [README].luau"
+            TextLabel "MAXHP" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,0 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped
+            TextLabel "MAXTQ" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,0 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped Visible=false
+            TextLabel "TQ" Position=0.5,0,0.9,0 Size=0,95,0,20 AnchorPoint=0.5,1 BackgroundColor3=#151515 BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="ʕ·ᴥ·　ʔ" TextColor3=#FFFFFF TextSize=14 TextWrapped Visible=false
+        }
+        LocalScript "Horn" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Horn.luau" {
+            Sound "Horn" AudioContent="rbxassetid://131915664" SoundId="rbxassetid://131915664" Volume=5
+        }
+        LocalScript "Ignition" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Ignition.luau" {
+            Sound "Start1" AudioContent="rbxassetid://1479057193" SoundId="rbxassetid://1479057193" Volume=2
+            Sound "Start2" AudioContent="rbxassetid://1479057193" SoundId="rbxassetid://1479057193" Volume=0.2
+        }
+        Frame "Lights" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 {
+            ImageLabel "Left" Position=0.5,-50,1,-200 Size=1.25,0,1.25,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://719866584" ImageContent="rbxassetid://719866584" Visible=false {
+                Sound "Blink" AudioContent="rbxassetid://918109768" SoundId="rbxassetid://918109768"
+                UIAspectRatioConstraint "UIAspectRatioConstraint"
+                UISizeConstraint "UISizeConstraint" MaxSize=50,50 MinSize=50,50
+            }
+            BoolValue "LightOn"
+            LocalScript "Lights" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Lights/Lights.luau"
+            ImageLabel "Right" Position=0.5,50,1,-200 Size=1.25,0,1.25,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://719866601" ImageContent="rbxassetid://719866601" Visible=false {
+                Sound "Blink" AudioContent="rbxassetid://918109768" SoundId="rbxassetid://918109768"
+                UIAspectRatioConstraint "UIAspectRatioConstraint"
+                UISizeConstraint "UISizeConstraint" MaxSize=50,50 MinSize=50,50
+            }
+            TextButton "Toggle" Position=1,-180,1,-40 Size=0,150,0,30 BackgroundColor3=#FFFFFF FontFace="SourceSansPro|Regular|Normal" Style=RobloxRoundDropdownButton Text="Lights: Auto" TextSize=18
+        }
+        LocalScript "Signal" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Signal.luau" {
+            BoolValue "HI"
+            Script "Hazards" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Signal/Hazards.luau" Disabled
+            Sound "Indicator" AudioContent="rbxassetid://156588908" RollOffMinDistance=0 SoundId="rbxassetid://156588908" Volume=1
+            BoolValue "LI"
+            Script "Left" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Signal/Left.luau" Disabled
+            BoolValue "RI"
+            Script "Right" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Signal/Right.luau" Disabled
+        }
+        LocalScript "Smoke [FE+]" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Smoke [FE+].luau" {
+            RemoteEvent "Smoke_FE" {
+                Script "Handler" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Smoke [FE+]/Smoke_FE/Handler.luau" Disabled
+                Sound "SQ" AudioContent="rbxassetid://201887209" Looped SoundId="rbxassetid://201887209" Volume=0
+                ParticleEmitter "Smoke" Size=0:3,0.149:7.861:0.583,1:9.389:0.611 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Lifetime=3,3.5 Rate=0 RotSpeed=20,100 Speed=-2,0 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=34098552" TextureContent="http://www.roblox.com/asset/?id=34098552" Transparency=0:0.75,1:1
+            }
+        }
+        LocalScript "SteeringWheel" @code=<<<
+            local car = script.Parent.Car.Value
+            script.Parent.Values.SteerC.Changed:connect(function()
+            	local ex = 1
+            	if script.Parent.Values.SteerC.Value<0 then ex=-1 end
+            	car.Misc.SW.SS.Motor.DesiredAngle = script.Parent.Values.SteerC.Value^2*math.rad(-90)*ex
+            end)
+        >>>
+        Frame "Temperature" Position=0.5,0,1,0 Size=0.4,0,0.2,0 AnchorPoint=0.5,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 SizeConstraint=RelativeXX Visible=false {
+            LocalScript "EngineOverheat" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Temperature/EngineOverheat.luau" {
+                BoolValue "Blown"
+                NumberValue "Celsius"
+            }
+            RemoteEvent "EngineOverheat" {
+                Script "Handler" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/Temperature/EngineOverheat~2/Handler.luau" Disabled
+            }
+            TextLabel "Temp" Position=0.5,0,0.55,0 Size=0.1,0,0.15,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped
+        }
+        ImageLabel "[SS6] Dynamic Friction" Position=0.045,0,0.87,0 Size=0.35,0,0.35,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageTransparency=1 {
+            Frame "Background" Size=1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ClipsDescendants {
+                ImageLabel "L" Position=0,0,1.25,0 Size=1,0,1.25,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://719863736" ImageContent="rbxassetid://719863736"
+            }
+            LocalScript "Simulated" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/Plugins/[SS6] Dynamic Friction/Simulated.luau"
+            Frame "Tires" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                Frame "FL" Position=0.119,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "FR" Position=0.697,0,0.071,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RL" Position=0.119,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+                Frame "RR" Position=0.697,0,0.525,0 Size=0.184,0,0.224,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                    Frame "First" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                        Frame "Second" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ClipsDescendants ZIndex=3 {
+                            ImageLabel "Image" Position=0,0,1,0 Size=1,0,1,0 AnchorPoint=0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://742902682" ImageColor3=#6EFF00 ImageContent="rbxassetid://742902682" ImageTransparency=0.5 ZIndex=2
+                        }
+                    }
+                }
+            }
+            UIAspectRatioConstraint "UIAspectRatioConstraint" AspectRatio=0.604
+            UISizeConstraint "UISizeConstraint" MaxSize=200,200 MinSize=150,150
+            Folder "WearData" {
+                NumberValue "FL"
+                NumberValue "FR"
+                NumberValue "RL"
+                NumberValue "RR"
+                NumberValue "STime"
+            }
+        }
+    }
+    ModuleScript "README" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/A-Chassis Tune/README.luau"
+}
+Model "Body" {
+    Model "Body" {
+        Model "Engine" {
+            MeshPart "MeshPart" Size=1.354,2.473,0.337 Anchored CFrame=-319.388,133.024,1267.39|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.15 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=3.335,1.291,1.811 Anchored CFrame=-319.421,132.49,1269.414|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.786,3.01,1.514 Anchored CFrame=-319.23,132.096,1267.631|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.15 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.772,2.38,0.631 Anchored CFrame=-319.385,132.872,1267.393|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic Reflectance=0.15 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=4.933,4.872,1.457 Anchored CFrame=-319.472,132.695,1267.969|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#181818 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.342,4.305,1.604 Anchored CFrame=-319.394,132.023,1263.974|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#635F62 Material=SmoothPlastic Reflectance=0.1 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=3.6,3.024,2.289 Anchored CFrame=-319.444,132.07,1267.626|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#1F1F1F Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.723,2.649,1.144 Anchored CFrame=-319.294,132.612,1267.801|90,-0.942,-180 CanCollide=false CollisionFidelity=Default Color=#56120F Material=SmoothPlastic RenderFidelity=Precise
+        }
+        MeshPart "Front Grills" Size=5.128,0.973,0.47 Anchored CFrame=-319.376,133.042,1270.38|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        MeshPart "Front light4" Size=6.82,0.538,0.11 Anchored CFrame=-319.377,132.986,1269.683|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#DFDFDE Material=SmoothPlastic Reflectance=0.5 RenderFidelity=Precise
+        MeshPart "Front light6 (Green)" Size=4.556,0.583,0.07 Anchored CFrame=-319.366,133.008,1270.33|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#EDEAEA Material=SmoothPlastic Reflectance=0.55 RenderFidelity=Precise
+        Model "Gas Cap" {
+            UnionOperation "Union" Size=0.424,0.417,0.086 Anchored CFrame=-319.375,133.009,1251.941|170.904,-0.148,-179.072 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="ca42c476fc028211"
+            UnionOperation "Union" Size=0.328,0.141,0.145 Anchored CFrame=-319.293,133.221,1251.988|170.904,-0.148,-179.072 CanCollide=false Color=#CDCDCD Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise UsePartColor $_geo="6d8f70c0896dfac1"
+            UnionOperation "Union" Size=0.524,0.301,0.146 Anchored CFrame=-319.394,132.872,1251.984|170.904,-0.148,-179.072 CanCollide=false Color=#CDCDCD Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise UsePartColor $_geo="2ef9dc4dfa892c9d"
+            UnionOperation "Union" Size=0.24,0.088,0.025 Anchored CFrame=-319.387,133.004,1251.929|170.904,-0.148,-179.072 CanCollide=false Color=#E5E4DF Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise UsePartColor $_geo="d124124f2f45c57a"
+            UnionOperation "Union" Size=0.492,0.384,0.168 Anchored CFrame=-319.336,133.035,1251.981|170.904,-0.148,-179.072 CanCollide=false Color=#CDCDCD Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise UsePartColor $_geo="ad8fd8240887bb19"
+            UnionOperation "Union" Size=0.22,0.344,0.169 Anchored CFrame=-319.547,133.114,1251.993|170.904,-0.148,-179.072 CanCollide=false Color=#CDCDCD Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise UsePartColor $_geo="9b8b43a64ccf1f23"
+        }
+        Model "Interior" {
+            MeshPart "MeshPart" Size=0.327,0.205,0.623 Anchored CFrame=-319.304,131.996,1263.073|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.283,3.449,3.274 Anchored CFrame=-317.655,133.089,1260.606|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=5.927,6.305,1.295 Anchored CFrame=-319.379,132.189,1261.183|90.741,-0.943,-179.988 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise {
+                Decal "Decal" Color3=#434343 Face=Top Texture="rbxassetid://999221090" TextureContent="rbxassetid://999221090"
+                Decal "Decal" Color3=#434343 Texture="rbxassetid://999221090" TextureContent="rbxassetid://999221090"
+            }
+            MeshPart "MeshPart" Size=6.558,4.134,10.142 Anchored CFrame=-319.355,133.39,1259.439|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.021,1.901,1.637 Anchored CFrame=-319.333,133.376,1263.593|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.561,1.729,4.147 Anchored CFrame=-319.344,133.145,1261.12|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.09,1.414,7.825 Anchored CFrame=-319.335,134.989,1258.47|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=2.283,3.449,3.274 Anchored CFrame=-321.023,133.153,1260.63|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.417,3.461,7.647 Anchored CFrame=-319.339,133.6,1260.31|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#CDCDCD CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise
+            MeshPart "MeshPart" Size=6.43,2.818,3.525 Anchored CFrame=-319.366,132.805,1257.843|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#191919 CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=0.3,0.3,0.3 Anchored CFrame=-319.268,133.14,1262.68|61.774,-0.83,179.555 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+            MeshPart "MeshPart" Size=5.555,2.101,7.593 Anchored CFrame=-319.344,133.102,1260.231|-178.866,-0.35,-179.048 CanCollide=false CollisionFidelity=Default Color=#694028 CustomPhysicalProperties=0.01,0.48,0.2,1,1 Material=SmoothPlastic RenderFidelity=Precise {
+                Texture "Texture" Color3=#412320 Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+                Texture "Texture" Color3=#412320 Face=Bottom Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+                Texture "Texture" Color3=#412320 Face=Top Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+                Texture "Texture" Color3=#412320 Face=Back Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+                Texture "Texture" Color3=#412320 Face=Left Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+                Texture "Texture" Color3=#412320 Face=Right Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            }
+            MeshPart "Meshes/Pedals" Size=1.567,0.932,0.84 Anchored CFrame=-317.586,132.123,1263.956|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+            Part "Part" Size=0.071,0.381,0.381 Anchored BottomSurface=Smooth CFrame=-316.775,133.69,1263.512|-89.995,-89.058,-89.282 CanCollide=false Color=#191919 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth Transparency=1 {
+                Decal "Decal" Face=Left Texture="rbxassetid://491137624" TextureContent="rbxassetid://491137624"
+            }
+            Part "Part" Size=0.079,0.381,0.381 Anchored BottomSurface=Smooth CFrame=-318.514,133.719,1263.516|-89.995,-89.058,-89.282 CanCollide=false Color=#191919 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth Transparency=1 {
+                Decal "Decal" Face=Left Texture="rbxassetid://491143404" TextureContent="rbxassetid://491143404"
+            }
+            UnionOperation "Union" Size=4.853,1.097,0.275 Anchored CFrame=-319.899,131.686,1261.92|-97.559,-83.943,-97.939 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="a0eab6c294906602"
+            UnionOperation "Union" Size=1.163,0.843,6.47 Anchored CFrame=-319.336,133.948,1263.727|-89.995,-89.058,-89.282 CanCollide=false Color=#191919 Material=SmoothPlastic RenderFidelity=Precise $_geo="75aee643f34678ed"
+            UnionOperation "Union" Size=4.848,1.081,0.275 Anchored CFrame=-318.829,131.731,1261.902|64.99,-85.549,63.6 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="b1047f1c0796a29e"
+        }
+        MeshPart "MeshPart" Size=7.306,0.297,1.982 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-319.36,132.368,1270.328|180,0,-179.058 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        MeshPart "MeshPart" Size=5.31,1.11,1.22 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-319.37,133.043,1270.638|180,0,-179.058 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.2,0.5,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        MeshPart "MeshPart" Size=6.792,1.072,0.389 Anchored CFrame=-319.362,133.243,1252.053|-0.712,0.012,-0.942 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.227,0.433,1.969 Anchored CFrame=-319.333,131.648,1269.928|1.134,0.353,-0.949 CanCollide=false CollisionFidelity=Hull Color=#111111 CustomPhysicalProperties=0.01,0.2,0.5,1,1 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.509,1.511,9.619 Anchored CFrame=-319.339,134.805,1259.357|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.165 RenderFidelity=Precise Transparency=0.1
+        MeshPart "MeshPart" Size=5.421,0.332,0.28 Anchored CFrame=-319.399,131.798,1252.406|89.325,-1.055,179.996 CanCollide=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=12.036,3.321,7.634 Anchored CFrame=-319.453,133.992,1258.481|90.005,89.058,-90.005 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.77,0.22,0.77 Anchored CFrame=-321.351,133.045,1270.335|90.005,89.058,179.282 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=2.961,2.848,1.441 Anchored CFrame=-319.42,132.166,1254.337|-90.712,0.942,-89.988 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.22,6.936,1.159 Anchored CFrame=-319.284,131.405,1266.78|-90,0.942,179.998 CanCollide=false CollisionFidelity=Default Color=#111111 CustomPhysicalProperties=0.01,0,0,0,0 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=6.939,0.319,1.289 Anchored CFrame=-319.387,132.057,1269.759|-0.712,0.012,-0.942 CanCollide=false CollisionFidelity=Default Color=#750000 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://920866770" TextureID="rbxassetid://920866770"
+        MeshPart "MeshPart" Size=0.77,0.22,0.77 Anchored CFrame=-317.391,132.98,1270.335|90.005,89.058,179.282 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        MeshPart "Meshes/Differential (1)" Size=6.324,1.215,1.804 Anchored CFrame=-319.346,132.038,1256.322|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#1B1B1B Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "Meshes/Grill" Size=5.146,1.545,0.346 Anchored CFrame=-319.359,132.763,1270.344|0,0,-0.942 CanCollide=false CollisionFidelity=Hull Color=#000000 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "Meshes/Grill" Size=5.146,0.555,0.496 Anchored CFrame=-319.368,132.218,1270.221|-1.425,0.023,179.059 CanCollide=false CollisionFidelity=Hull Color=#000000 Material=SmoothPlastic RenderFidelity=Precise Transparency=0.5
+        MeshPart "Meshes/Under" Size=7.612,2.658,17.202 Anchored CFrame=-319.4,132.384,1260.986|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#181818 Material=SmoothPlastic RenderFidelity=Precise
+        Part "Mustang" Size=0.05,0.425,0.433 Anchored BottomSurface=Smooth CFrame=-318.151,132.995,1270.458|-6.031,-79.944,-15.401 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Face=Right Texture="rbxassetid://324511863" TextureContent="rbxassetid://324511863"
+        }
+        Model "Paint" {
+            MeshPart "Front light3" Size=6.979,0.693,0.068 Anchored CFrame=-319.377,132.985,1269.712|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+            MeshPart "color" Size=7.873,4.599,19.366 Anchored CFrame=-319.364,133.513,1261.558|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic Reflectance=0.05 RenderFidelity=Precise
+        }
+        Part "Part" Size=0.05,0.34,1.87 Anchored BottomSurface=Smooth CFrame=-319.361,134.252,1268.028|-89.995,-89.058,-89.995 CanCollide=false Color=#111111 Material=SmoothPlastic TopSurface=Smooth
+        MeshPart "Rear Bumper" Size=7.13,0.73,0.567 Anchored CFrame=-319.384,132.322,1252.098|180,0,-179.058 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise
+        MeshPart "Spring" Size=0.321,0.471,3.602 Anchored CFrame=-317.834,131.584,1256.065|14.286,-0.232,-0.913 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "Spring" Size=0.321,0.471,3.602 Anchored CFrame=-321.024,131.636,1256.065|14.286,-0.232,-0.913 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+    }
+    Part "Cam" Size=0.2,0.2,0.2 Anchored CFrame=-317.728,134.783,1261.439|-178.805,0.02,-179.059 CanCollide=false Material=SmoothPlastic Transparency=1
+    MeshPart "Cover" Size=0.05,0.05,0.05 Anchored CFrame=-321.339,133.781,1266.929|-89.995,-89.058,-91.649 CanCollide=false Color=#CDCDCD Material=SmoothPlastic RenderFidelity=Precise
+    Model "Dash" {
+        Part "DashSc" Size=0.26,0.26,0.208 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.969,133.742,1263.584|99.18,88.36,-103.866 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.3 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            SurfaceGui "G" CanvasSize=100,125 Face=Right {
+                TextLabel "Gear" Position=0.5,0,0.5,20 Size=0,1,0,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="N" TextColor3=#FFFFFF TextSize=48 TextStrokeColor3=#828282 ZIndex=9
+                ImageLabel "Left" Position=-0.1,0,0.75,10 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Rotation=180 Visible=false ZIndex=2
+                ImageLabel "Light" Position=0.7,2,0.3,42 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=151673087" ImageContent="http://www.roblox.com/asset/?id=151673087" Visible=false ZIndex=2
+                ImageLabel "PBrake" Position=0.2,-10,0.5,18 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://123454312" ImageContent="rbxassetid://123454312" Visible=false ZIndex=2
+                ImageLabel "Right" Position=1.3,-35,0.75,10 Size=0,20,0,20 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://71659683" ImageColor3=#00FF00 ImageContent="rbxassetid://71659683" ImageTransparency=0.4 Visible=false ZIndex=2
+                TextLabel "Time" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#FFFFFF BorderSizePixel=0 FontFace="SourceSansPro|Bold|Normal" Text="16:20:00" TextColor3=#FFFFFF TextSize=24 TextStrokeColor3=#828282 TextWrapped TextYAlignment=Bottom ZIndex=2
+                Script "TimeScript" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/Dash/DashSc/G/TimeScript.luau"
+                TextButton "Unit" Position=0.9,0,0.1,10 Size=0,10,0,10 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="KM/H" TextColor3=#FFFFFF TextSize=22 TextStrokeColor3=#828282 ZIndex=9
+            }
+        }
+        Part "RPM" Size=0.315,0.168,0.21 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.258,133.761,1263.544|45.37,88.071,-137.245 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic Reflectance=0.1 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Spd" Size=0.519,0.208,0.519 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.97,133.74,1263.563|99.184,88.36,166.13 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SurfaceGui "G" CanvasSize=210,210 Face=Top {
+                ImageLabel "Needle" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-30 ZIndex=2 {
+                    Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=90 ZIndex=2 {
+                        Frame "Frame" Size=3,0,0,90 BackgroundColor3=#AA0000 BackgroundTransparency=0.2 BorderSizePixel=0 ZIndex=2
+                    }
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=120 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-120 Text="100" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=30 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-30 Text="40" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=180 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=180 Text="140" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=210 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-210 Text="160" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=150 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-150 Text="120" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-30 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=30 Text="0" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=90 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-90 Text="80" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Text="20" TextColor3=#FFFFFF TextSize=22
+                }
+                Frame "Orientation" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=60 {
+                    TextLabel "TextLabel" Position=0.05,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|SemiBold|Normal" Rotation=-60 Text="60" TextColor3=#FFFFFF TextSize=22
+                }
+            }
+            CylinderMesh "Mesh"
+        }
+        Part "Tac" Size=0.515,0.235,0.515 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.31,133.72,1263.575|45.37,88.071,-137.245 CanCollide=false Color=#111111 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            SurfaceGui "G" CanvasSize=210,210 Face=Top {
+                Frame "0" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-90 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=90 Text="0" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "1" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-56.25 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=56.25 Text="1" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "2" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=-22.5 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=22.5 Text="2" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "3" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=11.25 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-11.25 Text="3" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "4" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=45 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-45 Text="4" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "5" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=78.75 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-78.75 Text="5" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "6" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=112.5 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-112.5 Text="6" TextColor3=#FFFFFF TextSize=24
+                }
+                Frame "7" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=146.25 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=-146.25 Text="7" TextColor3=#FF0000 TextSize=24
+                }
+                Frame "8" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=178.25 {
+                    TextLabel "TextLabel" Position=0.07,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=182 Text="8" TextColor3=#FF0000 TextSize=24
+                }
+                Frame "9" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=206.25 {
+                    TextLabel "TextLabel" Position=0.07,0,0.43,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Regular|Normal" Rotation=155 Text="9" TextColor3=#FF0000 TextSize=24
+                }
+                Frame "Indicator" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Rotation=90 Visible=false {
+                    TextLabel "TextLabel" Position=0.3,0,0.45,0 Size=0.1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Rotation=-90 Text=">" TextColor3=#00FF00 TextSize=24
+                }
+                ImageLabel "Needle" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://386771233" ImageContent="rbxassetid://386771233" ImageTransparency=1 Rotation=-90 ZIndex=2 {
+                    Frame "Frame" Position=0.495,0,0.49,0 Size=0.01,0,0.02,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Rotation=90 ZIndex=2 {
+                        Frame "Frame" Size=3,0,0,90 BackgroundColor3=#AA0000 BackgroundTransparency=0.2 BorderSizePixel=0 ZIndex=2
+                    }
+                }
+            }
+            CylinderMesh "Mesh"
+        }
+    }
+    Model "Exhaust" {
+        Part "BFLight1" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-321.255,131.4,1252.764|57.271,-0.792,179.491 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+            SpotLight "SpotLight" Angle=120 Brightness=70 Color=#FF5500 Enabled=false Face=Top Range=7
+        }
+        Part "BFLight2" Size=0.207,0.207,0.207 Anchored BottomSurface=Smooth CFrame=-317.531,131.338,1252.764|57.271,-0.792,179.491 CanCollide=false Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+            SpecialMesh "Mesh" MeshType=Brick Scale=0.957,0.957,0.957
+            SpotLight "SpotLight" Angle=120 Brightness=70 Color=#FF5500 Enabled=false Face=Top Range=7
+        }
+        Part "Backfire1" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.734,131.455,1252.93|57.271,-0.792,179.491 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=2 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+            }
+            Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=2 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+            }
+            ParticleEmitter "Fire" Size=0:0.726:0.33,0.493:0,1:0 Color=0:#FF5500,1:#FF5500 Enabled=false Lifetime=0.13,0.2 LightEmission=0.95 LockedToPart Rate=5000 Speed=10,10 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=242102147" TextureContent="http://www.roblox.com/asset/?id=242102147"
+        }
+        Part "Backfire2" Size=0.207,0.574,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-321.246,131.512,1252.93|57.271,-0.792,179.491 CanCollide=false Color=#111111 CustomPhysicalProperties=0.7,0.2,0.05,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            Sound "Backfire1" AudioContent="rbxassetid://810616601" SoundId="rbxassetid://810616601" Volume=2 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=4
+            }
+            Sound "Backfire2" AudioContent="rbxassetid://810616772" SoundId="rbxassetid://810616772" Volume=2 {
+                ChorusSoundEffect "ChorusSoundEffect" Depth=0.58 Mix=1 Rate=8
+            }
+            ParticleEmitter "Fire" Size=0:0.726:0.33,0.493:0,1:0 Color=0:#FF5500,1:#FF5500 Enabled=false Lifetime=0.13,0.2 LightEmission=0.95 LockedToPart Rate=5000 Speed=10,10 SpreadAngle=20,20 Texture="http://www.roblox.com/asset/?id=242102147" TextureContent="http://www.roblox.com/asset/?id=242102147"
+        }
+    }
+    Part "HitBoxees" Size=0.18,1.76,7.09 Anchored BottomSurface=Smooth CFrame=-319.206,133.24,1251.915|-89.995,-89.058,-89.995 TopSurface=Smooth Transparency=1 {
+        Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=2 {
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Sound "Collide" AudioContent="rbxassetid://215550851" PlaybackSpeed=1.35 RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=2 {
+            Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees/Collide/Crash.luau"
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees/Crash.luau"
+        NumberValue "Health" Value=1000000000000
+        ParticleEmitter "Sparks" Size=0:0.062,1:0.5 Acceleration=0,-50,0 Color=0:#FF0000,0.072:#FF9D00,0.12:#FFBF00,0.176:#FFFFFF,1:#FFFFFF Enabled=false Lifetime=2,5 LightEmission=1 Rate=600 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://552389687" TextureContent="rbxassetid://552389687" Transparency=0:0,1:1
+    }
+    Part "HitBoxees" Size=0.47,1.79,7.25 Anchored BottomSurface=Smooth CFrame=-319.233,132.807,1271.06|-89.995,-89.058,-89.995 TopSurface=Smooth Transparency=1 {
+        Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=2 {
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Sound "Collide" AudioContent="rbxassetid://215550851" PlaybackSpeed=1.35 RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=2 {
+            Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees~2/Collide/Crash.luau"
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees~2/Crash.luau"
+        NumberValue "Health" Value=1000000000000
+        ParticleEmitter "Sparks" Size=0:0.062,1:0.5 Acceleration=0,-50,0 Color=0:#FF0000,0.072:#FF9D00,0.12:#FFBF00,0.176:#FFFFFF,1:#FFFFFF Enabled=false Lifetime=2,5 LightEmission=1 Rate=600 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://552389687" TextureContent="rbxassetid://552389687" Transparency=0:0,1:1
+    }
+    Part "HitBoxees" Size=7.92,0.09,5.21 Anchored BottomSurface=Smooth CFrame=-319.25,131.153,1261.783|-89.995,-89.058,-89.995 CanCollide=false TopSurface=Smooth Transparency=1 {
+        Sound "Break" AudioContent="rbxassetid://1228439088" RollOffMaxDistance=200 SoundId="rbxassetid://1228439088" Volume=2 {
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Sound "Collide" AudioContent="rbxassetid://215550851" PlaybackSpeed=1.35 RollOffMaxDistance=200 SoundId="rbxassetid://215550851" Volume=2 {
+            Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees~3/Collide/Crash.luau"
+            FlangeSoundEffect "FlangeSoundEffect"
+        }
+        Script "Crash" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/HitBoxees~3/Crash.luau"
+        NumberValue "Health" Value=1000000000000
+        ParticleEmitter "Sparks" Size=0:0.062,1:0.5 Acceleration=0,-50,0 Color=0:#FF0000,0.072:#FF9D00,0.12:#FFBF00,0.176:#FFFFFF,1:#FFFFFF Enabled=false Lifetime=2,5 LightEmission=1 Rate=600 RotSpeed=-50,50 Speed=15,15 SpreadAngle=50,-50 Texture="rbxassetid://552389687" TextureContent="rbxassetid://552389687" Transparency=0:0,1:1
+    }
+    Model "Lights" {
+        MeshPart "FL" Size=6.841,0.54,0.076 Anchored CFrame=-319.387,132.99,1269.77|180,0,-179.058 CanCollide=false CollisionFidelity=Default Color=#DFDFDE Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise Transparency=0.15 {
+            SurfaceLight "L" Angle=70 Brightness=5 Color=#FFFFD2 Enabled=false Range=40 Shadows
+        }
+        MeshPart "R" Size=1.116,0.689,0.201 Anchored CFrame=-321.869,133.108,1252.144|6.787,-0.111,-0.935 CanCollide=false CollisionFidelity=Default Color=#C4281C Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise {
+            SpotLight "L" Brightness=200 Color=#FF0000 Enabled=false Range=8
+        }
+        MeshPart "RR" Size=1.116,0.689,0.201 Anchored CFrame=-316.86,133.026,1252.144|6.787,-0.111,-0.935 CanCollide=false CollisionFidelity=Default Color=#C4281C Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise {
+            SpotLight "L" Brightness=200 Color=#FF0000 Enabled=false Range=8
+        }
+        Part "RVL" Size=0.198,0.198,0.062 Anchored BottomSurface=Smooth CFrame=-316.838,131.754,1252.272|179.288,-0.012,-179.058 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.45 TopSurface=Smooth Transparency=0.35 {
+            SurfaceLight "L" Brightness=1.5 Enabled=false Face=Back Range=15
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+        Part "RVR" Size=0.198,0.198,0.062 Anchored BottomSurface=Smooth CFrame=-321.958,131.849,1252.271|179.288,-0.012,-179.058 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic Reflectance=0.45 TopSurface=Smooth Transparency=0.35 {
+            SurfaceLight "L" Brightness=1.5 Enabled=false Face=Back Range=15
+            SpecialMesh "Mesh" MeshType=Sphere
+        }
+    }
+    Script "Motors" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Body/Motors.luau"
+    Part "PCam" Size=0.2,0.2,0.2 Anchored CFrame=-321.428,134.844,1261.439|-178.805,0.02,-179.059 CanCollide=false Material=SmoothPlastic Transparency=1
+    MeshPart "SW" Size=1.847,1.847,0.29 Anchored CFrame=-317.66,133.716,1262.149|-154.995,0.398,0.853 CanCollide=false CollisionFidelity=Default Color=#A05F35 Material=Wood RenderFidelity=Precise Transparency=1
+    Part "Smoke" Size=3.35,0.05,0.05 Anchored BottomSurface=Smooth CFrame=-319.705,133.209,1268.08|1.655,-0.027,-0.941 CanCollide=false TopSurface=Smooth Transparency=1 {
+        Beam "Antifreeze" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Body/Smoke/Attachment" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Body/Smoke/Attachment~3" Color=0:#A5DC2D,1:#A5DC2D Enabled=false FaceCamera Segments=1 Texture="rbxassetid://1230739738" TextureContent="rbxassetid://1230739738" TextureMode=Wrap TextureSpeed=-1 Transparency=0:0,1:0 Width0=0.01 Width1=0.2
+        Attachment "Attachment" CFrame=-0.8,0,0
+        Attachment "Attachment" CFrame=0,0,0.8
+        Attachment "Attachment" CFrame=-0.8,0,0
+        Attachment "Attachment" CFrame=0,0,0.8
+        Sound "Break" AudioContent="rbxassetid://132758217" SoundId="rbxassetid://132758217" Volume=2
+        Sound "Fan" AudioContent="rbxassetid://572833714" Looped SoundId="rbxassetid://572833714" Volume=0
+        Sound "Liquid" AudioContent="rbxassetid://146039135" Looped Playing SoundId="rbxassetid://146039135" Volume=0
+        Beam "Oil" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Body/Smoke/Attachment~4" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Body/Smoke/Attachment~2" Color=0:#301300,1:#301300 Enabled=false FaceCamera Segments=1 Texture="rbxassetid://1230739738" TextureContent="rbxassetid://1230739738" TextureMode=Wrap TextureSpeed=-1 Transparency=0:0,1:0 Width0=0.01 Width1=0.2
+        ParticleEmitter "Smoke" Size=0:0,0.196:0.604,0.628:1.374,1:1.703 Acceleration=0,1,0 Color=0:#969696,1:#969696 EmissionDirection=Bottom Enabled=false Lifetime=4,4 LightInfluence=1 Rate=70 RotSpeed=20,100 Speed=-2,0 SpreadAngle=50,50 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:0.5,1:0.5 VelocityInheritance=0.3
+        Sound "Steam" AudioContent="rbxassetid://291165237" Looped SoundId="rbxassetid://291165237" Volume=0
+    }
+}
+BoolValue "Damageable" Value
+VehicleSeat "DriveSeat" Size=2,1,2 Anchored BottomSurface=Smooth CFrame=-317.855,132.223,1261.199|173.289,-0.11,-179.065 CanCollide=false CustomPhysicalProperties=0.01,0.3,0,1,1 FrontSurface=Motor Material=SmoothPlastic MaxSpeed=0 TopSurface=Hinge Torque=0 Transparency=1 TurnSpeed=0 {
+    Script "Protector 2.0" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/DriveSeat/Protector 2.0.luau" {
+        Sound "ALARM" AudioContent="rbxassetid://153106968" SoundId="rbxassetid://153106968" Volume=1
+        Sound "Rekt" AudioContent="rbxassetid://153106968" SoundId="rbxassetid://153106968" Volume=1
+        ScreenGui "Rekt." {
+            Frame "BLackout" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 ZIndex=10 {
+                TextLabel "Msg" Position=0.5,0,0.5,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="wowzers u such baddie" TextColor3=#FF0000 TextSize=48 TextStrokeColor3=#FF0000 TextStrokeTransparency=0 TextTransparency=1 ZIndex=10
+                TextLabel "YourName" Position=0.5,12,0.5,70 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Nathaneil00089" TextColor3=#FFFFFF TextSize=36 TextStrokeColor3=#FF5500 TextStrokeTransparency=0 TextTransparency=1 TextXAlignment=Left ZIndex=10
+            }
+        }
+    }
+    Script "Script - Positioner" @code=<<<
+        script.Parent.ChildAdded:connect(function(child) 
+        	if child:IsA("Weld") and game.Players:GetPlayerFromCharacter(child.Part1.Parent)~=nil then 
+        		local P=game.Players:GetPlayerFromCharacter(child.Part1.Parent) 
+        		local S=script.L:Clone() S.Parent=P.PlayerGui 
+        		S.Seat.Value=script.Parent 
+        		S.Disabled=false 
+        	end 
+        end)
+    >>> {
+        LocalScript "L" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/DriveSeat/Script - Positioner/L.luau" Disabled {
+            ObjectValue "Seat"
+        }
+    }
+}
+Model "Misc" {
+    Part "Downforce" Size=0.207,0.207,0.207 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.323,130.866,1261.361|0,0,-0.942 CanCollide=false CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+        BodyThrust "Body" Force=0,0,0
+        BodyThrust "Diffuser" Force=0,0,0 Location=0,-1.2,-7
+        BodyThrust "Splitter" Force=0,0,0 Location=0,-1.4,7
+        BodyThrust "Spoiler" Force=0,0,0 Location=0,1,-7
+    }
+    Model "SW" {
+        Script "Body" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Misc/SW/Body.luau"
+        MeshPart "MeshPart" Size=1.658,1.573,0.622 Anchored CFrame=-317.659,133.752,1262.073|4.999,-0.082,-0.938 CanCollide=false CollisionFidelity=Default Color=#AA5500 Material=SmoothPlastic RenderFidelity=Precise {
+            Texture "Texture" Color3=#412320 Face=Right Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            Texture "Texture" Color3=#412320 Face=Left Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            Texture "Texture" Color3=#412320 Face=Top Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            Texture "Texture" Color3=#412320 Face=Back Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            Texture "Texture" Color3=#412320 Face=Bottom Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+            Texture "Texture" Color3=#412320 Texture="rbxassetid://1564393306" TextureContent="rbxassetid://1564393306"
+        }
+        MeshPart "MeshPart" Size=0.466,0.487,0.385 Anchored CFrame=-317.661,133.629,1262.305|4.999,-0.082,-0.938 CanCollide=false CollisionFidelity=Default Color=#111111 Material=SmoothPlastic RenderFidelity=Precise
+        MeshPart "MeshPart" Size=1.658,1.569,0.794 Anchored CFrame=-317.659,133.743,1262.184|4.999,-0.082,-0.938 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise
+        MeshPart "MeshPart" Size=0.494,0.467,0.415 Anchored CFrame=-317.661,133.593,1262.329|4.999,-0.082,-0.938 CanCollide=false CollisionFidelity=Default Material=SmoothPlastic Reflectance=0.25 RenderFidelity=Precise
+        MeshPart "SS" Size=1.847,1.847,0.29 Anchored CFrame=-317.66,133.715,1262.149|-155,0.397,0.852 CanCollide=false CollisionFidelity=Default Color=#A05F35 CustomPhysicalProperties=0.01,0,0,0,0 Material=Wood RenderFidelity=Precise Transparency=1
+    }
+    Model "Spoiler" {
+        Part "A" Size=0.207,0.207,0.207 Anchored CFrame=-317.421,133.444,1255.728|180,0,-179.058 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.23 Transparency=1 {
+            FileMesh "Mesh" MeshContent="rbxassetid://807914497" MeshId="rbxassetid://807914497"
+        }
+        Part "A1" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.217,133.741,1255.728|-89.796,-89.06,-89.797 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        Part "A2" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.217,133.741,1255.428|-89.796,-89.06,-89.797 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        Part "A3" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.217,133.741,1255.728|-89.796,-89.06,90.203 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        Part "A4" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.217,133.741,1255.728|-89.796,-89.06,90.203 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        Part "B" Size=0.207,0.207,0.207 Anchored CFrame=-317.421,133.444,1255.914|180,0,-179.058 CanCollide=false Color=#E7E7EC Material=SmoothPlastic Reflectance=0.23 Transparency=1 {
+            FileMesh "Mesh" MeshContent="rbxassetid://807914748" MeshId="rbxassetid://807914748"
+        }
+        Part "B1" Size=0.2,0.2,0.2 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=-317.217,133.741,1255.914|-89.796,-89.06,-89.797 CanCollide=false Color=#FF0000 CustomPhysicalProperties=0.01,0,0,1,1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1
+        MeshPart "Sp" Size=6.668,0.509,1.916 Anchored CFrame=-317.413,133.932,1256.021|180,0,-179.058 CanCollide=false CollisionFidelity=Default Material=Glass RenderFidelity=Precise Transparency=1
+        Script "Spoiler Guide - qaqaa" @src="Scripts/Workspace/1969 Ford Mustang Boss 429/Misc/Spoiler/Spoiler Guide - qaqaa.luau"
+    }
+}
+Model "Wheels" {
+    Part "FL" Size=2.818,2.818,2.818 Anchored BottomSurface=Smooth CFrame=-316.325,131.697,1267.331|-89.995,-89.058,-89.282 Color=#CDCDCD Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.32,1
+        Model "Parts" {
+            MeshPart "MeshPart" Size=0.625,1.714,1.714 Anchored CFrame=-316.069,131.691,1267.331|-1.039,0.009,-1.317 CanCollide=false CollisionFidelity=Default Color=#CDCDCD CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise {
+                Decal "Decal" Face=Right Texture="rbxassetid://1022904885" TextureContent="rbxassetid://1022904885" Transparency=0.1
+            }
+            UnionOperation "Union" Size=1.12,2.819,2.819 Anchored CFrame=-316.325,131.697,1267.331|178.957,-0.006,1.321 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="9b77490fa3e12c24" {
+                Decal "Decal" Face=Right Texture="rbxassetid://1025562081" TextureContent="rbxassetid://1025562081"
+            }
+        }
+        Sound "SQ" AudioContent="rbxassetid://201887209" Looped PlaybackSpeed=1.2 SoundId="rbxassetid://201887209" Volume=0
+        ParticleEmitter "Smoke" Size=0:3,0.149:7.861:0.583,1:9.389:0.611 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Lifetime=3,3.5 LightInfluence=1 Rate=0 RotSpeed=20,100 Speed=-2,0 SpreadAngle=20,20 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:0.75,1:1
+        Model "SuspensionFixed"
+        Model "WheelFixed" {
+            Part "Mark" Size=0.056,0.056,0.797 Anchored BottomSurface=Smooth CFrame=-316.342,130.364,1267.355|90.182,89.056,-90.887 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                Attachment "Attachment" CFrame=0,0,-0.503
+                Attachment "Attachment" CFrame=0,0,0.503
+                BlockMesh "Mesh" Scale=0.95,0.95,1
+                Trail "T" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Wheels/FL/WheelFixed/Mark/Attachment~2" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Wheels/FL/WheelFixed/Mark/Attachment" Enabled=false Lifetime=20 MinLength=0 Texture="rbxassetid://903161063" TextureContent="rbxassetid://903161063" TextureLength=2.5 TextureMode=Wrap Transparency=0:0,1:0
+            }
+        }
+    }
+    Part "FR" Size=2.818,2.818,2.818 Anchored BottomSurface=Smooth CFrame=-322.324,131.795,1267.33|90.005,89.058,-90.718 Color=#CDCDCD Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.32,1
+        Model "Parts" {
+            MeshPart "MeshPart" Size=0.625,1.714,1.714 Anchored CFrame=-322.58,131.798,1267.331|179.614,0.002,-179.434 CanCollide=false CollisionFidelity=Default Color=#CDCDCD CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise {
+                Decal "Decal" Face=Right Texture="rbxassetid://1022904885" TextureContent="rbxassetid://1022904885" Transparency=0.1
+            }
+            UnionOperation "Union" Size=1.12,2.819,2.819 Anchored CFrame=-322.324,131.795,1267.331|-0.382,-0.005,179.438 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="3940ff9dbc4e26e2" {
+                Decal "Decal" Face=Right Texture="rbxassetid://1025562081" TextureContent="rbxassetid://1025562081"
+            }
+        }
+        Sound "SQ" AudioContent="rbxassetid://201887209" Looped PlaybackSpeed=1.2 SoundId="rbxassetid://201887209" Volume=0
+        ParticleEmitter "Smoke" Size=0:3,0.149:7.861:0.583,1:9.389:0.611 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Lifetime=3,3.5 LightInfluence=1 Rate=0 RotSpeed=20,100 Speed=-2,0 SpreadAngle=20,20 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:0.75,1:1
+        Model "SuspensionFixed"
+        Model "WheelFixed" {
+            Part "Mark" Size=0.056,0.056,0.797 Anchored BottomSurface=Smooth CFrame=-322.351,130.463,1267.34|-89.814,-89.061,-89.095 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                Attachment "Attachment" CFrame=0,0,-0.503
+                Attachment "Attachment" CFrame=0,0,0.503
+                BlockMesh "Mesh" Scale=0.95,0.95,1
+                Trail "T" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Wheels/FR/WheelFixed/Mark/Attachment~2" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Wheels/FR/WheelFixed/Mark/Attachment" Enabled=false Lifetime=20 MinLength=0 Texture="rbxassetid://903161063" TextureContent="rbxassetid://903161063" TextureLength=2.5 TextureMode=Wrap Transparency=0:0,1:0
+            }
+        }
+    }
+    Part "RL" Size=2.918,2.918,2.918 Anchored BottomSurface=Smooth CFrame=-316.378,131.558,1256.132|-89.995,-89.058,-89.282 Color=#CDCDCD Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.32,1
+        Model "Parts" {
+            MeshPart "MeshPart" Size=0.647,1.775,1.775 Anchored CFrame=-316.112,131.552,1256.132|-1.039,0.009,-1.317 CanCollide=false CollisionFidelity=Default Color=#CDCDCD CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise {
+                Decal "Decal" Face=Right Texture="rbxassetid://1022904885" TextureContent="rbxassetid://1022904885" Transparency=0.1
+            }
+            UnionOperation "Union" Size=1.159,2.919,2.919 Anchored CFrame=-316.378,131.558,1256.132|178.957,-0.006,1.321 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="adc2345efa6678b3" {
+                Decal "Decal" Face=Right Texture="rbxassetid://1025562081" TextureContent="rbxassetid://1025562081"
+            }
+        }
+        Sound "SQ" AudioContent="rbxassetid://201887209" Looped PlaybackSpeed=1.2 SoundId="rbxassetid://201887209" Volume=0
+        ParticleEmitter "Smoke" Size=0:3,0.149:7.861:0.583,1:9.389:0.611 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Lifetime=3,3.5 LightInfluence=1 Rate=0 RotSpeed=20,100 Speed=-2,0 SpreadAngle=20,20 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:0.75,1:1
+        Model "SuspensionFixed"
+        Model "WheelFixed" {
+            Part "Mark" Size=0.058,0.058,0.825 Anchored BottomSurface=Smooth CFrame=-316.395,130.179,1256.157|90.182,89.056,-90.887 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                Attachment "Attachment" CFrame=0,0,0.521
+                Attachment "Attachment" CFrame=0,0,-0.521
+                BlockMesh "Mesh" Scale=0.95,0.95,1
+                Trail "T" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Wheels/RL/WheelFixed/Mark/Attachment" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Wheels/RL/WheelFixed/Mark/Attachment~2" Enabled=false Lifetime=20 MinLength=0 Texture="rbxassetid://903161063" TextureContent="rbxassetid://903161063" TextureLength=2.5 TextureMode=Wrap Transparency=0:0,1:0
+            }
+        }
+    }
+    Part "RR" Size=2.918,2.918,2.918 Anchored BottomSurface=Smooth CFrame=-322.577,131.66,1256.132|90.005,89.058,-90.718 Color=#CDCDCD Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1 {
+        CylinderMesh "Mesh" Scale=1,0.32,1
+        Model "Parts" {
+            MeshPart "MeshPart" Size=0.647,1.775,1.775 Anchored CFrame=-322.842,131.663,1256.132|179.614,0.002,-179.434 CanCollide=false CollisionFidelity=Default Color=#CDCDCD CustomPhysicalProperties=0.01,0.3,0.5,1,1 Material=SmoothPlastic Reflectance=0.35 RenderFidelity=Precise {
+                Decal "Decal" Face=Right Texture="rbxassetid://1022904885" TextureContent="rbxassetid://1022904885" Transparency=0.1
+            }
+            UnionOperation "Union" Size=1.159,2.919,2.919 Anchored CFrame=-322.577,131.66,1256.132|-0.382,-0.005,179.438 CanCollide=false Color=#111111 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="adc2345efa6678b3" {
+                Decal "Decal" Face=Right Texture="rbxassetid://1025562081" TextureContent="rbxassetid://1025562081"
+            }
+        }
+        Sound "SQ" AudioContent="rbxassetid://201887209" Looped PlaybackSpeed=1.2 SoundId="rbxassetid://201887209" Volume=0
+        ParticleEmitter "Smoke" Size=0:3,0.149:7.861:0.583,1:9.389:0.611 Acceleration=0,1,0 Color=0:#D3D3D3,1:#FFFFFF EmissionDirection=Bottom Lifetime=3,3.5 LightInfluence=1 Rate=0 RotSpeed=20,100 Speed=-2,0 SpreadAngle=20,20 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:0.75,1:1
+        Model "SuspensionFixed"
+        Model "WheelFixed" {
+            Part "Mark" Size=0.058,0.058,0.825 Anchored BottomSurface=Smooth CFrame=-322.604,130.281,1256.141|-89.815,-89.061,-89.095 CanCollide=false Color=#F8F8F8 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                Attachment "Attachment" CFrame=0,0,-0.521
+                Attachment "Attachment" CFrame=0,0,0.521
+                BlockMesh "Mesh" Scale=0.95,0.95,1
+                Trail "T" Attachment0=@"Workspace/1969 Ford Mustang Boss 429/Wheels/RR/WheelFixed/Mark/Attachment~2" Attachment1=@"Workspace/1969 Ford Mustang Boss 429/Wheels/RR/WheelFixed/Mark/Attachment" Enabled=false Lifetime=20 MinLength=0 Texture="rbxassetid://903161063" TextureContent="rbxassetid://903161063" TextureLength=2.5 TextureMode=Wrap Transparency=0:0,1:0
+            }
+        }
+    }
+}

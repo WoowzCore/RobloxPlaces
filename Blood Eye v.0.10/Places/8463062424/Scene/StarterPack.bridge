@@ -1,0 +1,285 @@
+StarterPack "StarterPack" {
+    Tool "Cat" Grip=0,0,0|0,-90,0 {
+        RemoteEvent "Bounce"
+        MeshPart "Handle" Size=1.788,3.437,2.31 CFrame=13.106,1.719,-0.155 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://430325596" TextureID="rbxassetid://430325596" {
+            Trail "Trail" Attachment0=@"StarterPack/Cat/Handle/trailpog" Attachment1=@"StarterPack/Cat/Handle/dasw" Color=0:#FFB22C,1:#FFB22C Lifetime=0.2 LightInfluence=1
+            Attachment "dasw" CFrame=0,-1,0
+            Attachment "trailpog" CFrame=0,1,0
+        }
+        LocalScript "LocalScript" @src="Scripts/StarterPack/Cat/LocalScript.luau"
+        Script "Script" @src="Scripts/StarterPack/Cat/Script.luau"
+    }
+    Tool "ClassicSword" Grip=0,0,-1.5|90,90,0 TextureContent="rbxasset://Textures/Sword128.png" TextureId="rbxasset://Textures/Sword128.png" {
+        Part "Handle" Size=1,0.8,4 BottomSurface=Smooth CFrame=290.621,135.887,2482.939|-54.622,27.651,84.101 Color=#635F62 Locked Reflectance=0.4 TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="rbxasset://fonts/sword.mesh" MeshId="rbxasset://fonts/sword.mesh" MeshType=FileMesh TextureContent="rbxasset://textures/SwordTexture.png" TextureId="rbxasset://textures/SwordTexture.png"
+            Sound "SwordLunge" AudioContent="http://www.roblox.com/asset/?id=12222208" SoundId="http://www.roblox.com/asset/?id=12222208" Volume=0.6
+            Sound "SwordSlash" AudioContent="http://www.roblox.com/asset/?id=12222216" SoundId="http://www.roblox.com/asset/?id=12222216" Volume=0.7
+            Sound "Unsheath" AudioContent="http://www.roblox.com/asset/?id=12222225" SoundId="http://www.roblox.com/asset/?id=12222225" Volume=1
+        }
+        LocalScript "MouseIcon" @src="Scripts/StarterPack/ClassicSword/MouseIcon.luau"
+        Script "SwordScript" @src="Scripts/StarterPack/ClassicSword/SwordScript.luau"
+    }
+    Tool "Grenade" Grip=0,0,0.2|-0.286,-26.562,-0.641 TextureContent="http://www.roblox.com/asset/?id=200845119" TextureId="http://www.roblox.com/asset/?id=200845119" ToolTip="KABOOM" {
+        LocalScript "ClientScript" @src="Scripts/StarterPack/Grenade/ClientScript.luau"
+        Configuration "Configurations" {
+            NumberValue "Cooldown" Value=3
+            BoolValue "ExplodeOnTouch" Value
+            NumberValue "ExplosionRadius" Value=5
+            NumberValue "FuseTime" Value=5
+            NumberValue "GrenadeVelocity" Value=100
+        }
+        Part "Handle" Size=0.8,0.92,0.8 BottomSurface=Smooth CFrame=328.968,130.523,54.57|0,90,0 CanCollide=false Color=#27462D Locked TopSurface=Smooth {
+            Sound "Boom" AudioContent="rbxasset://sounds/collide.wav" PlayOnRemove SoundId="rbxasset://sounds/collide.wav" Volume=1
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=166887416" MeshId="http://www.roblox.com/asset/?id=166887416" MeshType=FileMesh Scale=1.3,1.5,1.3
+            Sound "Pin" AudioContent="http://www.roblox.com/asset?id=168184001" SoundId="http://www.roblox.com/asset?id=168184001" Volume=1
+        }
+        Script "ServerScript" @src="Scripts/StarterPack/Grenade/ServerScript.luau"
+        RemoteEvent "Throw"
+        Animation "ThrowAnimation" AnimationContent="http://www.roblox.com/Asset?ID=168160500" AnimationId="http://www.roblox.com/Asset?ID=168160500"
+    }
+    Tool "Pistol" CanBeDropped=false Grip=0,-0.65,-0.3|90,0,0 {
+        LocalScript "AssaultRifleScript" @src="Scripts/StarterPack/Pistol/AssaultRifleScript.luau"
+        Part "Handle" Size=0.4,1.4,0.8 CFrame=254.734,130.7,-408.362 Color=#1B2A35 {
+            Fire "Fire" Size=2 Color=#25252A Enabled=false Heat=0 SecondaryColor=#000000
+            Sound "FireSound" AudioContent="http://roblox.com/asset/?id=10209803" PlaybackSpeed=2 SoundId="http://roblox.com/asset/?id=10209803"
+            SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=72012879" MeshId="http://www.roblox.com/asset/?id=72012879" MeshType=FileMesh Scale=1.4,1.4,1.4 TextureContent="http://www.roblox.com/asset/?id=72012859" TextureId="http://www.roblox.com/asset/?id=72012859" VertexColor=2,2,2
+        }
+        Animation "Recoil" AnimationContent="http://www.roblox.com/Asset?ID=89289443" AnimationId="http://www.roblox.com/Asset?ID=89289443"
+        LocalScript "TurnScript" @src="Scripts/StarterPack/Pistol/TurnScript.luau"
+        ScreenGui "WeaponHud" {
+            Frame "AmmoHud" Position=1,-265,1,-60 Size=0,200,0,50 BackgroundTransparency=1 BorderSizePixel=0 {
+                TextLabel "ClipAmmo" Position=0.45,0,0.5,0 BackgroundTransparency=1 BorderSizePixel=0 Text="54" TextColor3=#000000 TextSize=18 TextStrokeColor3=#00FF00 TextStrokeTransparency=0 TextXAlignment=Right
+                TextLabel "ForwardSlash" Position=0.5,0,0.5,0 BackgroundTransparency=1 BorderSizePixel=0 Text="/" TextColor3=#000000 TextSize=18 TextStrokeColor3=#00FF00 TextStrokeTransparency=0
+                TextLabel "TotalAmmo" Position=0.55,0,0.5,0 BackgroundTransparency=1 BorderSizePixel=0 Text="180" TextColor3=#000000 TextSize=18 TextStrokeColor3=#00FF00 TextStrokeTransparency=0 TextXAlignment=Left
+            }
+            Frame "Crosshair" Position=0,500,0,500 Size=0,150,0,150 BackgroundColor3=#00FF00 BackgroundTransparency=1 BorderSizePixel=0 {
+                Frame "BottomFrame" Position=0,-1,0.5,-7 Size=0,2,0,14 BackgroundColor3=#000000 BorderColor3=#00FF00
+                Frame "LeftFrame" Position=-0.5,-7,0,-1 Size=0,14,0,2 BackgroundColor3=#000000 BorderColor3=#00FF00
+                TextLabel "ReloadingLabel" Position=0,20,0,-20 BackgroundTransparency=1 BorderSizePixel=0 FontFace="Arial|Bold|Normal" Text="Reloading" TextColor3=#000000 TextSize=18 TextStrokeColor3=#00FF00 TextStrokeTransparency=0 TextXAlignment=Left TextYAlignment=Bottom Visible=false
+                Frame "RightFrame" Position=0.5,-7,0,-1 Size=0,14,0,2 BackgroundColor3=#000000 BorderColor3=#00FF00
+                ImageLabel "TargetHitImage" Position=0,-25,0,-25 Size=0,50,0,50 BackgroundTransparency=1 BorderSizePixel=0 Image="http://www.roblox.com/asset/?id=69368028" ImageContent="http://www.roblox.com/asset/?id=69368028" Visible=false
+                Frame "TopFrame" Position=0,-1,-0.5,-7 Size=0,2,0,14 BackgroundColor3=#000000 BorderColor3=#00FF00
+            }
+        }
+    }
+    Tool "Push" CanBeDropped=false RequiresHandle=false TextureContent="rbxassetid://7244966901" TextureId="rbxassetid://7244966901" ToolTip="Cooldown: 15 Seconds" {
+        Animation "Animation" AnimationContent="rbxassetid://7235378085" AnimationId="rbxassetid://7235378085"
+        LocalScript "LocalScript" @src="Scripts/StarterPack/Push/LocalScript.luau"
+        RemoteEvent "Push"
+        KeyframeSequence "Push(Export Me)" #"1628632841" Loop=false Priority=Movement {
+            Keyframe "Keyframe" {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" {
+                                Pose "LeftLowerArm" {
+                                    Pose "LeftHand"
+                                }
+                            }
+                            Pose "RightUpperArm" {
+                                Pose "RightLowerArm" {
+                                    Pose "RightHand"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.389 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0.019,-0.245,-0.341|88.577,2.616,1.196 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|-0.547,-0.031,3.254 {
+                                    Pose "LeftHand" CFrame=0,0,0|0.365,0.509,0.889
+                                }
+                            }
+                            Pose "RightUpperArm" CFrame=-0.006,-0.296,-0.235|90.932,-0.819,-0.435 {
+                                Pose "RightLowerArm" CFrame=0.001,0,0.02|-0.527,3.404,-0.634
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.5 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0.024,-0.251,-0.581|88.577,2.616,1.196 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|3.658,-0.079,2.404 {
+                                    Pose "LeftHand" CFrame=0,0,0|0.417,0.362,0.666
+                                }
+                            }
+                            Pose "RightUpperArm" CFrame=-0.007,-0.293,-0.415|90.932,-0.819,-0.435 {
+                                Pose "RightLowerArm" CFrame=0.001,0,0.014|1.699,2.475,-0.351 {
+                                    Pose "RightHand" CFrame=0,0,0|0.96,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.611 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0.02,-0.359,-0.193|55.932,1.422,1.172 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|3.49,1.049,0.382
+                            }
+                            Pose "RightUpperArm" CFrame=-0.006,-0.404,-0.087|61.551,-0.462,-0.376 {
+                                Pose "RightLowerArm" CFrame=0.001,0,0.009|2.178,1.033,-0.696
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.833 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" {
+                                Pose "LeftLowerArm" {
+                                    Pose "LeftHand"
+                                }
+                            }
+                            Pose "RightUpperArm" {
+                                Pose "RightLowerArm" {
+                                    Pose "RightHand"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.333 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0.021,-0.482,0.118|91.829,2.8,1.039 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|30.554,2.183,0.562
+                            }
+                            Pose "RightUpperArm" CFrame=-0.004,-0.467,0.3|95.741,-0.852,-0.364 {
+                                Pose "RightLowerArm" CFrame=0,0,0|36.099,-3.018,-2.198
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.222 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=-0.003,0.003,0.15|88.816,2.742,1.185 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|36.34,2.202,1.7 {
+                                    Pose "LeftHand" CFrame=0,0,0|3.651,0.559,8.692
+                                }
+                            }
+                            Pose "RightUpperArm" CFrame=0,-0.001,-0.01|86.892,-0.786,-0.491 {
+                                Pose "RightLowerArm" CFrame=0,0,0|42.831,-10.7,-5.726
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.278 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=-0.003,-0.05,0.255|101.082,2.931,0.576 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|21.709,1.953,0.591
+                            }
+                            Pose "RightUpperArm" CFrame=0.001,-0.051,0.275|100.551,-0.88,-0.292 {
+                                Pose "RightLowerArm" CFrame=0,0,0|22.099,-6.926,-3.354 {
+                                    Pose "RightHand" CFrame=0,0,0|2.406,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.111 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0,0,0|22.196,0,2.987 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|0,0,3.251 {
+                                    Pose "LeftHand" CFrame=0,0,0|0,0,8.709
+                                }
+                            }
+                            Pose "RightUpperArm" CFrame=0,0,0|28.89,0,-0.927 {
+                                Pose "RightLowerArm" CFrame=0,0,0|0,0,-12.337 {
+                                    Pose "RightHand" CFrame=0,0,0|1.396,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.167 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0,0,0|70.711,2.238,1.978 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|23.448,1.417,2.85 {
+                                    Pose "LeftHand" CFrame=0,0,0|15.99,2.416,8.37
+                                }
+                            }
+                            Pose "RightUpperArm" CFrame=0,0,0|64.871,-0.545,-0.75 {
+                                Pose "RightLowerArm" CFrame=0,0,0|42.705,-10.028,-7.067 {
+                                    Pose "RightHand" CFrame=0,0,0|10.804,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.722 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" Weight=0 {
+                                Pose "LeftLowerArm" CFrame=0,0,0|0.625,0.956,-0.28 {
+                                    Pose "LeftHand" CFrame=0,0,0|11.531,0.148,0.169
+                                }
+                            }
+                            Pose "RightUpperArm" Weight=0 {
+                                Pose "RightLowerArm" CFrame=0,0,0.004|2.858,-1.515,0.699 {
+                                    Pose "RightHand" CFrame=0,0,0|16.539,0,0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        Script "Script" @src="Scripts/StarterPack/Push/Script.luau"
+    }
+    Tool "RocketLauncher" CanBeDropped=false Grip=0.7,0,-0.5|90,-90,0 TextureContent="http://www.roblox.com/asset/?id=90021376" TextureId="http://www.roblox.com/asset/?id=90021376" {
+        LocalScript "Client" @src="Scripts/StarterPack/RocketLauncher/Client.luau"
+        Part "Handle" Size=4.92,0.74,0.84 BottomSurface=Smooth CFrame=1016.189,130.482,-1280.391|-90,0,0 CanCollide=false TopSurface=Smooth {
+            SpecialMesh "Mesh" MeshContent="rbxasset://fonts/rocketlauncher.mesh" MeshId="rbxasset://fonts/rocketlauncher.mesh" MeshType=FileMesh Scale=0.75,0.75,0.75 TextureContent="rbxasset://textures/rocketlaunchertex.png" TextureId="rbxasset://textures/rocketlaunchertex.png"
+        }
+        LocalScript "MouseIcon" @src="Scripts/StarterPack/RocketLauncher/MouseIcon.luau"
+        RemoteFunction "MouseLoc"
+        Script "Server" @src="Scripts/StarterPack/RocketLauncher/Server.luau" {
+            Sound "Boom" AudioContent="rbxasset://sounds/collide.wav" SoundId="rbxasset://sounds/collide.wav" Volume=1
+            Script "Rocket" @src="Scripts/StarterPack/RocketLauncher/Server/Rocket.luau" Disabled
+            Sound "Swoosh" AudioContent="rbxasset://sounds/Rocket whoosh 01.wav" Looped SoundId="rbxasset://sounds/Rocket whoosh 01.wav" Volume=0.7
+        }
+    }
+    Tool "Shovel" Grip=0,0.8,-0.1|0,-60,-180 TextureContent="rbxasset://Textures/Wall.png" TextureId="rbxasset://Textures/Wall.png" {
+        MeshPart "Handle" Size=1.026,4.732,0.362 CFrame=1035.171,133.308,-1358.021|-4.341,-1.016,-166.848 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://461088526" TextureID="rbxassetid://461088526" {
+            BoolValue "AllowPlacement"
+            Sound "Bonk" AudioContent="http://www.roblox.com/asset/?id=24346281" RollOffMaxDistance=100 SoundId="http://www.roblox.com/asset/?id=24346281"
+            Sound "Dig" AudioContent="rbxassetid://180163752" RollOffMaxDistance=100 SoundId="rbxassetid://180163752"
+        }
+        LocalScript "PlayerScript" @src="Scripts/StarterPack/Shovel/PlayerScript.luau"
+        ModuleScript "Settings" @src="Scripts/StarterPack/Shovel/Settings.luau"
+        Script "ShovelScript" @src="Scripts/StarterPack/Shovel/ShovelScript.luau" {
+            Smoke "DigSmoke" Size=1.5 Color=#AAAAAA Enabled=false Opacity=1 RiseVelocity=0
+            ScreenGui "SoilGUI" ZIndexBehavior=Sibling {
+                TextLabel "TextLabel" Position=0.5,0,0,50 Size=0,200,0,50 AnchorPoint=0.5,0 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Soil: 0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+        }
+    }
+}

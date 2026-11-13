@@ -1,0 +1,15 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "ui" ZIndexBehavior=Sibling {
+        TextButton "random_button" Position=0.86,0,0.902,0 Size=0,200,0,50 AutoButtonColor=false BackgroundColor3=#FFD9AB BorderColor3=#FF0000 BorderMode=Middle BorderSizePixel=3 FontFace="FredokaOne|Regular|Normal" RichText Text="Random" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+        LocalScript "ui" @code=<<<
+            local GUI = script.parent
+
+            local button_Random = GUI.random_button
+
+            button_Random.MouseButton1Up:Connect(function()
+            	print("Button Press...")
+            	game.ReplicatedStorage.Random:InvokeServer("full")
+            end)
+        >>>
+    }
+}

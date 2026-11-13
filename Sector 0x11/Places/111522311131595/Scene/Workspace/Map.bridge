@@ -1,0 +1,863 @@
+Folder "Folder" {
+    Model "Model" {
+        Part "Part" Size=1,1,1 BottomSurface=Smooth CFrame=170,-15.997,-37 Color=#FF0000 Material=Neon TopSurface=Smooth
+        Part "Part" Size=1,1,1 BottomSurface=Smooth CFrame=171,-15.997,-36 Color=#0000FF Material=Neon TopSurface=Smooth
+        Part "Part" Size=1,1,1 BottomSurface=Smooth CFrame=171,-14.997,-37 Color=#00FF00 Material=Neon TopSurface=Smooth
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=163.993,-9.5,-32|-90,0,-90 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=177.993,-9.5,-32|-90,0,-90 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=170.993,-9.5,-39|-90,0,0 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=170.993,-16.5,-32 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=170.993,-2.5,-32 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=14,0.014,14 Anchored CFrame=170.993,-9.5,-25|-90,0,0 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+    }
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=274,2,253|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=260,2,225|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.3 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=246,2,239|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=1 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=246,2,267|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.3 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=274,2,225|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=274,2,239|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.3 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=246,2,225|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=13,1,26 Anchored BottomSurface=Smooth CFrame=36.5,39.212,372.365 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,0,1000 $Move_Offset=1 $Move_Speed=0.1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=260,2,267|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=246,2,253|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=232,2,253|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.3 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=232,2,239|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=-159,2,267|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=13,1,26 Anchored BottomSurface=Smooth CFrame=23.5,39.212,372.365 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,0,1000 $Move_Speed=0.1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=260,2,253|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=1 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=232,2,267|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=232,2,225|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=1 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=274,2,267|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=1 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=260,2,239|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End_Add=0,100,0 $Move_Offset=0.6 $Move_Speed=1
+    Part "PLATFORM_MOVE" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=53,2,43|0,90,0 Material=DiamondPlate TopSurface=Smooth $Move $Move_End=53,2,-18 $Move_Speed=1
+    Part "PLATFORM_ROTATING" Size=57,15,5 Anchored BottomSurface=Smooth CFrame=185.5,9,223.5|0,90,0 Color=#CF2D2D Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=10
+    Part "PLATFORM_ROTATING" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=-10,2,-57|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Roll=1
+    Part "PLATFORM_ROTATING" Size=20,5,20 Anchored BottomSurface=Smooth CFrame=94,4,273|0,90,0 Color=#FCFAFF Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=1000
+    Part "PLATFORM_ROTATING" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=5,2,-57|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=1
+    Part "PLATFORM_ROTATING" Size=100,1,100 Anchored BottomSurface=Smooth CFrame=94,2,273|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=0.1
+    Part "PLATFORM_ROTATING" Size=40,4,40 Anchored BottomSurface=Smooth CFrame=94,3.5,273|0,90,0 Color=#E9E5EB Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=100
+    Part "PLATFORM_ROTATING" Size=100,1,100 Anchored BottomSurface=Smooth CFrame=-98.3,2,273|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=0.1
+    Part "PLATFORM_ROTATING" Size=80,2,80 Anchored BottomSurface=Smooth CFrame=94,2.5,273|0,90,0 Color=#B4B2B6 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=1
+    Part "PLATFORM_ROTATING" Size=57,15,5 Anchored BottomSurface=Smooth CFrame=185.5,9,223.5 Color=#CF2D2D Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=10
+    Part "PLATFORM_ROTATING" Size=60,3,60 Anchored BottomSurface=Smooth CFrame=94,3,273|0,90,0 Color=#CAC7CC Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=10
+    Part "PLATFORM_ROTATING" Size=15,15,2 Anchored BottomSurface=Smooth CFrame=64.5,9,-176.5|0,90,0 Color=#CF2D2D Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=5
+    Part "PLATFORM_ROTATING" Size=15,15,2 Anchored BottomSurface=Smooth CFrame=64.5,9,-176.5 Color=#CF2D2D Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=5
+    Part "PLATFORM_ROTATING" Size=7,1,269 Anchored BottomSurface=Smooth CFrame=309.5,2,-299.5|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Yaw=0.05
+    Part "PLATFORM_ROTATING" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=20,2,-57|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Pitch=1
+    Part "PLATFORM_ROTATING" Size=14,1,14 Anchored BottomSurface=Smooth CFrame=53,6,-57|0,90,0 Material=DiamondPlate TopSurface=Smooth $Rotate $Rotate_Pitch=1.1 $Rotate_Roll=1.2 $Rotate_Yaw=1
+    Model "Prikol" {
+        MeshPart "Prikol" Size=1,0.001,368 Anchored CFrame=327.999,185.5,311.5|-90,0,-90 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=1,0.001,368 Anchored CFrame=328.499,185.5,312|-90,0,0 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=1,0.001,368 Anchored CFrame=329,185.5,311.5|-90,0,-90 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+        MeshPart "Prikol" Size=1,0.001,368 Anchored CFrame=328.499,185.5,311|-90,0,0 CastShadow=false CollisionFidelity=Default Color=#FFFFFF DoubleSided Material=Glass PivotOffset=0,0,0|90,0,0 $_Color1=#A3A2A5
+    }
+    UnionOperation "Ramp" Size=42,21,21 Anchored CFrame=-80,12,178 Color=#A3A2A5 Material=DiamondPlate UsePartColor $_geo="35e5bbf7069db46c"
+    Part "Sign" Size=6.39,5,1 Anchored CFrame=-5,9,22.3 CanCollide=false CastShadow=false Color=#957977 Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=200,100 ZOffset=-3 {
+            TextLabel "SIGN" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾..." TextColor3=#0000FF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Sign" Size=6.39,5,1 Anchored CFrame=-5,9,22.1 CanCollide=false CastShadow=false Color=#957977 Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=200,100 ZOffset=-1 {
+            TextLabel "SIGN" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾..." TextColor3=#FF0000 TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Sign" Size=6.39,5,1 Anchored CFrame=-5,9,22 CanCollide=false CastShadow=false Color=#957977 Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=200,100 {
+            TextLabel "SIGN" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾..." TextColor3=#FFFFFF TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+    Part "Sign" Size=6.39,5,1 Anchored CFrame=-5,9,22.2 CanCollide=false CastShadow=false Color=#957977 Transparency=1 {
+        SurfaceGui "SurfaceGui" CanvasSize=200,100 ZOffset=-2 {
+            TextLabel "SIGN" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="SourceSansPro|Bold|Normal" Text="ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾..." TextColor3=#00FF00 TextScaled TextSize=48 TextStrokeTransparency=0 TextWrapped
+        }
+    }
+}
+Folder "Folder" {
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,2,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,2,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,2,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,2,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,2,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,2,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,2,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,2,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,11,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,11,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,11,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,11,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,11,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,11,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,11,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,11,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,11,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,9,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,9,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,9,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,9,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,9,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,9,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,9,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,9,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,9,-156 Color=#7B7B7D TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,10,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,10,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,10,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,10,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,10,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,10,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,10,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,10,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,8,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,8,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,8,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,8,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,8,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,8,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,8,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,8,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,13,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,13,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,13,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,13,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,13,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,13,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,13,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,13,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,13,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,6,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,6,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,6,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,6,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,6,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,6,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,6,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,6,-156 Color=#7B7B7D TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,4,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,4,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,4,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,4,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,4,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,4,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,4,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,4,-156 Color=#7B7B7D TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,7,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,7,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,7,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,7,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,7,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,7,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,7,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,7,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,7,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,3,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,3,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,3,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,3,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,3,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,3,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,3,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,3,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,3,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=68,5,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=56,5,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=84,5,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=72,5,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=80,5,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=60,5,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=64,5,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=76,5,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=52,5,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=74,12,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=66,12,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=54,12,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=70,12,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=82,12,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=58,12,-156 Color=#7B7B7D TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=62,12,-156 Color=#9A9A9C TopSurface=Smooth
+        Part "PHYSBOX" Size=4,1,2 BottomSurface=Smooth CFrame=78,12,-156 Color=#9A9A9C TopSurface=Smooth
+    }
+}
+Folder "Map2" {
+    Part "FLOOR" Size=20,1,31 Anchored BottomSurface=Smooth CFrame=76.911,3.92,85|90,-78.5,90 Color=#3C3C3D Material=CeramicTiles PivotOffset=0,0.5,-15.5 TopSurface=Smooth
+    Part "FLOOR" Size=29,1,56 Anchored BottomSurface=Smooth CFrame=126.5,7,47 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=17,1,157 Anchored BottomSurface=Smooth CFrame=170.5,7,-27.5|0,-90,0 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,30 Anchored BottomSurface=Smooth CFrame=222,7,-4 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=17,1,131 Anchored BottomSurface=Smooth CFrame=169.5,7,86.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=17,1,88 Anchored BottomSurface=Smooth CFrame=205,7,160.5|0,-90,0 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,32 Anchored BottomSurface=Smooth CFrame=273,7,67 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=21,1,43 Anchored BottomSurface=Smooth CFrame=151.5,7,2.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=75,1,11 Anchored BottomSurface=Smooth CFrame=199.5,7,16.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,94 Anchored BottomSurface=Smooth CFrame=102,7,28|-180,0,-180 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=21,1,48 Anchored BottomSurface=Smooth CFrame=151.5,7,71 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=29,1,10 Anchored BottomSurface=Smooth CFrame=189.5,7,-41 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,69 Anchored BottomSurface=Smooth CFrame=222,7,117.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,38 Anchored BottomSurface=Smooth CFrame=151,7,133 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,22 Anchored BottomSurface=Smooth CFrame=102,7,106 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=11,1,19 Anchored BottomSurface=Smooth CFrame=155.5,7,104.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,30 Anchored BottomSurface=Smooth CFrame=243,7,67 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,32 Anchored BottomSurface=Smooth CFrame=188,7,67 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,30 Anchored BottomSurface=Smooth CFrame=264,7,-33 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=12,1,71 Anchored BottomSurface=Smooth CFrame=243,7,16.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=29,1,39 Anchored BottomSurface=Smooth CFrame=126.5,7,114.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=9,1,19 Anchored BottomSurface=Smooth CFrame=145.5,7,104.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=45,1,30 Anchored BottomSurface=Smooth CFrame=184.5,7,-4 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=29,1,69 Anchored BottomSurface=Smooth CFrame=192.5,7,117.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,69 Anchored BottomSurface=Smooth CFrame=264,7,16.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,22 Anchored BottomSurface=Smooth CFrame=259,7,163 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,69 Anchored BottomSurface=Smooth CFrame=264,7,117.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=29,1,30 Anchored BottomSurface=Smooth CFrame=192.5,7,36 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=30,1,32 Anchored BottomSurface=Smooth CFrame=213,7,67 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=29,1,38 Anchored BottomSurface=Smooth CFrame=126.5,7,0 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=12,1,70 Anchored BottomSurface=Smooth CFrame=243,7,117 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,49 Anchored BottomSurface=Smooth CFrame=116.5,7,85|0,-90,0 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "FLOOR" Size=20,1,23 Anchored BottomSurface=Smooth CFrame=151,7,35.5 Color=#3C3C3D Material=CeramicTiles TopSurface=Smooth
+    Part "Part" Size=1,11,18 Anchored BottomSurface=Smooth CFrame=141.5,13,143 TopSurface=Smooth
+    Part "Part" Size=1,11,31 Anchored BottomSurface=Smooth CFrame=198.5,13,67.5 TopSurface=Smooth
+    Part "Part" Size=88,11,1 Anchored BottomSurface=Smooth CFrame=205,13,168.5 TopSurface=Smooth
+    Part "Part" Size=14,11,1 Anchored BottomSurface=Smooth CFrame=185,13,82.5 TopSurface=Smooth
+    Part "Part" Size=1,11,30 Anchored BottomSurface=Smooth CFrame=228.5,13,67 TopSurface=Smooth
+    Part "Part" Size=64,11,1 Anchored BottomSurface=Smooth CFrame=205,13,21.5 TopSurface=Smooth
+    Part "Part" Size=37,11,1 Anchored BottomSurface=Smooth CFrame=130.5,13,95.5 TopSurface=Smooth
+    Part "Part" Size=1,11,11 Anchored BottomSurface=Smooth CFrame=203.5,13,-40.5 TopSurface=Smooth
+    Part "Part" Size=13,11,1 Anchored BottomSurface=Smooth CFrame=154.5,13,47.5 TopSurface=Smooth
+    Part "Part" Size=10,11,1 Anchored BottomSurface=Smooth CFrame=255,13,82.5 TopSurface=Smooth
+    Part "Part" Size=1,11,54 Anchored BottomSurface=Smooth CFrame=112.5,13,47 TopSurface=Smooth
+    Part "Part" Size=1,11,29 Anchored BottomSurface=Smooth CFrame=278.5,13,-32.5 TopSurface=Smooth
+    Part "Part" Size=1,11,37 Anchored BottomSurface=Smooth CFrame=112.5,13,0.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=152,13,151.5 TopSurface=Smooth
+    Part "Part" Size=83,11,1 Anchored BottomSurface=Smooth CFrame=133.5,13,-35.5 TopSurface=Smooth
+    Part "Part" Size=9,11,5 Anchored BottomSurface=Smooth CFrame=145.5,13,21.5 TopSurface=Smooth
+    Part "Part" Size=21,11,1 Anchored BottomSurface=Smooth CFrame=259.5,13,51.5 TopSurface=Smooth
+    Part "Part" Size=10,11,1 Anchored BottomSurface=Smooth CFrame=136,13,74.5 TopSurface=Smooth
+    Part "Part" Size=1,11,30 Anchored BottomSurface=Smooth CFrame=287.5,13,67 TopSurface=Smooth
+    Part "Part" Size=74,11,1 Anchored BottomSurface=Smooth CFrame=199,13,10.5 TopSurface=Smooth
+    Part "Part" Size=29,11,1 Anchored BottomSurface=Smooth CFrame=126.5,13,133.5 TopSurface=Smooth
+    Part "Part" Size=1,11,70 Anchored BottomSurface=Smooth CFrame=249.5,13,16 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=151,13,-18.5 TopSurface=Smooth
+    Part "Part" Size=22,11,1 Anchored BottomSurface=Smooth CFrame=189,13,118.5 TopSurface=Smooth
+    Part "Part" Size=16,11,1 Anchored BottomSurface=Smooth CFrame=112.5,13,125|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=30,11,1 Anchored BottomSurface=Smooth CFrame=264,13,-47.5 TopSurface=Smooth
+    Part "Part" Size=22,11,1 Anchored BottomSurface=Smooth CFrame=189,13,151.5 TopSurface=Smooth
+    Part "Part" Size=1,11,69 Anchored BottomSurface=Smooth CFrame=278.5,13,117.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=268.5,13,163|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=1,11,32 Anchored BottomSurface=Smooth CFrame=161.5,13,-3 TopSurface=Smooth
+    Part "Part" Size=27,11,1 Anchored BottomSurface=Smooth CFrame=189.5,13,-45.5 TopSurface=Smooth
+    Part "Part" Size=1,11,16 Anchored BottomSurface=Smooth CFrame=161.5,13,160 TopSurface=Smooth
+    Part "Part" Size=1,11,23 Anchored BottomSurface=Smooth CFrame=258.5,13,70.5 TopSurface=Smooth
+    Part "Part" Size=1,11,28 Anchored BottomSurface=Smooth CFrame=249.5,13,-33 TopSurface=Smooth
+    Part "Part" Size=21,11,1 Anchored BottomSurface=Smooth CFrame=141.5,13,123.5|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=19,11,1 Anchored BottomSurface=Smooth CFrame=149.5,13,104.5|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=13,11,1 Anchored BottomSurface=Smooth CFrame=111.5,13,109.5|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=5,11,1 Anchored BottomSurface=Smooth CFrame=164.5,13,21.5 TopSurface=Smooth
+    Part "Part" Size=10,11,1 Anchored BottomSurface=Smooth CFrame=117,13,74.5 TopSurface=Smooth
+    Part "Part" Size=1,11,110 Anchored BottomSurface=Smooth CFrame=92.5,13,20 TopSurface=Smooth
+    Part "Part" Size=1,11,22 Anchored BottomSurface=Smooth CFrame=207.5,13,-8 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=92.5,13,106|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=10,11,1 Anchored BottomSurface=Smooth CFrame=118,13,47.5 TopSurface=Smooth
+    Part "Part" Size=1,11,30 Anchored BottomSurface=Smooth CFrame=207.5,13,37 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=259,13,152.5 TopSurface=Smooth
+    Part "Part" Size=39,11,1 Anchored BottomSurface=Smooth CFrame=217.5,13,51.5 TopSurface=Smooth
+    Part "Part" Size=1,11,11 Anchored BottomSurface=Smooth CFrame=175.5,13,-40.5 TopSurface=Smooth
+    Part "Part" Size=11,11,1 Anchored BottomSurface=Smooth CFrame=282.5,13,51.5 TopSurface=Smooth
+    Part "Part" Size=1,11,112 Anchored BottomSurface=Smooth CFrame=161.5,13,76 TopSurface=Smooth
+    Part "Part" Size=21,11,1 Anchored BottomSurface=Smooth CFrame=260.5,13,-18.5 TopSurface=Smooth
+    Part "Part" Size=45,11,1 Anchored BottomSurface=Smooth CFrame=226.5,13,-35.5 TopSurface=Smooth
+    Part "Part" Size=29,11,1 Anchored BottomSurface=Smooth CFrame=126.5,13,-18.5 TopSurface=Smooth
+    Part "Part" Size=45,11,1 Anchored BottomSurface=Smooth CFrame=184.5,13,-18.5 TopSurface=Smooth
+    Part "Part" Size=1,11,70 Anchored BottomSurface=Smooth CFrame=249.5,13,117 TopSurface=Smooth
+    Part "Part" Size=19,11,1 Anchored BottomSurface=Smooth CFrame=278.5,13,82.5 TopSurface=Smooth
+    Part "Part" Size=1,11,54 Anchored BottomSurface=Smooth CFrame=140.5,13,47 TopSurface=Smooth
+    Part "Part" Size=30,11,1 Anchored BottomSurface=Smooth CFrame=221,13,82.5 TopSurface=Smooth
+    Part "Part" Size=9,11,1 Anchored BottomSurface=Smooth CFrame=135.5,13,47.5 TopSurface=Smooth
+    Part "Part" Size=1,11,69 Anchored BottomSurface=Smooth CFrame=207.5,13,117.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=188,13,51.5 TopSurface=Smooth
+    Part "Part" Size=1,11,23 Anchored BottomSurface=Smooth CFrame=236.5,13,-0.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=102,13,116.5 TopSurface=Smooth
+    Part "Part" Size=13,11,1 Anchored BottomSurface=Smooth CFrame=249.5,13,166.5|0,-90,0 TopSurface=Smooth
+    Part "Part" Size=1,11,31 Anchored BottomSurface=Smooth CFrame=237.5,13,36.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=102,13,95.5 TopSurface=Smooth
+    Part "Part" Size=1,11,70 Anchored BottomSurface=Smooth CFrame=236.5,13,117 TopSurface=Smooth
+    Part "Part" Size=1,11,29 Anchored BottomSurface=Smooth CFrame=141.5,13,4.5 TopSurface=Smooth
+    Part "Part" Size=10,11,1 Anchored BottomSurface=Smooth CFrame=274,13,152.5 TopSurface=Smooth
+    Part "Part" Size=4,11,5 Anchored BottomSurface=Smooth CFrame=114,13,114.5 TopSurface=Smooth
+    Part "Part" Size=29,11,1 Anchored BottomSurface=Smooth CFrame=126.5,13,19.5 TopSurface=Smooth
+    Part "Part" Size=1,11,69 Anchored BottomSurface=Smooth CFrame=278.5,13,16.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=259,13,173.5 TopSurface=Smooth
+    Part "Part" Size=1,11,123 Anchored BottomSurface=Smooth CFrame=177.5,13,90.5 TopSurface=Smooth
+    Part "Part" Size=29,11,1 Anchored BottomSurface=Smooth CFrame=222.5,13,-18.5 TopSurface=Smooth
+    Part "Part" Size=20,11,1 Anchored BottomSurface=Smooth CFrame=151,13,24.5 TopSurface=Smooth
+    Part "Part" Size=21,11,1 Anchored BottomSurface=Smooth CFrame=225.5,13,151.5 TopSurface=Smooth
+}
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=63,2.5,-121 Color=#7B7B7D Material=DiamondPlate TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=295,2.5,-336 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=51,2.5,-121 Color=#FCFAFF Massless TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=360,2.5,-334 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=273,2.5,-275 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=310,2.5,-268 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=224,2.5,-279 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=1,1,10 BottomSurface=Smooth CFrame=44.5,2,-125 Color=#7B7B7D TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=59,2.5,-121 Color=#7B7B7D Material=Rock TopSurface=Smooth
+Part "PHYSBOX" Size=1,1,25 BottomSurface=Smooth CFrame=38.5,2,-132.5 Color=#7B7B7D TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=255,2.5,-271 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=382,2.5,-278 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=262,2.5,-324 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=364,2.5,-283 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=20,20,20 BottomSurface=Smooth CFrame=88,11.5,-122 Color=#21C134 Material=DiamondPlate TopSurface=Smooth
+Part "PHYSBOX" Size=5,5,5 BottomSurface=Smooth CFrame=69.5,4,-120.5 Color=#3644C1 Material=DiamondPlate TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=216,2.5,-320 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=334,2.5,-324 Color=#7D3A0E Material=Brick TopSurface=Smooth
+Part "PHYSBOX" Size=2,2,2 BottomSurface=Smooth CFrame=55,2.5,-121 Color=#7B7B7D TopSurface=Smooth
+Folder "Sector1" {
+    Model "Character" {
+        Part "Arm L" Size=0.326,0.868,0.326 Anchored BottomSurface=Smooth CFrame=-65.139,4.213,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Arm L D" Size=0.326,0.326,0.326 Anchored BottomSurface=Smooth CFrame=-65.139,3.616,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Arm L U" Size=0.326,0.868,0.326 Anchored BottomSurface=Smooth CFrame=-65.139,5.081,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Arm R" Size=0.326,0.868,0.326 Anchored BottomSurface=Smooth CFrame=-63.837,4.213,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Arm R D" Size=0.326,0.326,0.326 Anchored BottomSurface=Smooth CFrame=-63.837,3.616,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Arm R U" Size=0.326,0.868,0.326 Anchored BottomSurface=Smooth CFrame=-63.837,5.081,72.271|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        UnionOperation "Body D" Size=0.543,1.085,0.977 Anchored CFrame=-64.488,4.321,72.271|0,-90,0 Color=#4B4B4C $_geo="da93422ec281fd0b"
+        UnionOperation "Body U" Size=0.543,0.868,0.977 Anchored CFrame=-64.488,5.298,72.271|0,-90,0 Color=#E7E7EC UsePartColor $_geo="6882e2dd23d6077d"
+        Part "Head" Size=2.347,2.347,2.347 Anchored BottomSurface=Smooth CFrame=-64.488,6.781,72.271|0,-90,0 Color=#BCB7A1 Shape=Ball TopSurface=Smooth {
+            Decal "Decal" Face=Left Texture="rbxassetid://76498563100235" TextureContent="rbxassetid://76498563100235"
+        }
+        Part "Leg L" Size=0.434,1.085,0.326 Anchored BottomSurface=Smooth CFrame=-64.705,2.151,72.217|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Leg L D" Size=0.651,0.109,0.326 Anchored BottomSurface=Smooth CFrame=-64.705,1.554,72.109|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Leg L U" Size=0.543,1.085,0.434 Anchored BottomSurface=Smooth CFrame=-64.76,3.236,72.271|0,-90,0 Color=#4B4B4C TopSurface=Smooth
+        Part "Leg R" Size=0.434,1.085,0.326 Anchored BottomSurface=Smooth CFrame=-64.271,2.151,72.217|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Leg R D" Size=0.651,0.109,0.326 Anchored BottomSurface=Smooth CFrame=-64.271,1.554,72.109|0,-90,0 Color=#BCB7A1 TopSurface=Smooth
+        Part "Leg R U" Size=0.543,1.085,0.434 Anchored BottomSurface=Smooth CFrame=-64.217,3.236,72.271|0,-90,0 Color=#4B4B4C TopSurface=Smooth
+    }
+    Folder "Folder" {
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    }
+    Folder "Folder" {
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-199,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-194.7,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-207.6,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-203.3,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-205.4,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-196.8,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-192.5,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-201.1,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    }
+    Folder "Folder" {
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,285.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,283.2|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,287.5|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,278.9|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,281.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,291.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,289.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,276.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    }
+    Folder "Folder" {
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-175.3,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,274.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-186.1,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-190.4,4.45,270.4|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,261.8|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,259.7|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-188.2,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-179.6,4.45,266.1|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-177.5,4.45,264|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-181.8,4.45,268.3|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+        UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-183.9,4.45,272.6|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    }
+    Part "GRASS" Size=981,1,513 Anchored BottomSurface=Smooth CFrame=205.5,1,-137.5|0,90,0 Color=#85A540 Locked Material=Grass TopSurface=Smooth
+    Part "GRASS" Size=256,1,172 Anchored BottomSurface=Smooth CFrame=-137,1,225|0,90,0 Color=#85A540 Locked Material=Grass TopSurface=Smooth
+    Model "Light" {
+        Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-99.5,13,68.111 Material=Neon TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+                Script "Script" @code=<<<
+                    while true do
+                    	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                    	wait(0.01)
+                    	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                    	wait(0.01)
+                    end
+                >>>
+            }
+            Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-100.199,11.796,68.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                PointLight "PointLight" Brightness=1.22 Color=#C9FFF7 Range=24 Shadows
+            }
+            SurfaceLight "SurfaceLight" Angle=126 Brightness=6.12 Color=#C9FFF7 Face=Bottom Range=48 Shadows
+        }
+    }
+    Model "Light" {
+        Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-88.5,13,68.111 Material=Neon TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+                Script "Script" @code=<<<
+                    while true do
+                    	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                    	wait(0.01)
+                    	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                    	wait(0.01)
+                    end
+                >>>
+            }
+            Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-88.199,11.796,68.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                PointLight "PointLight" Brightness=1.22 Color=#FFEFCA Range=24 Shadows
+            }
+            SurfaceLight "SurfaceLight" Angle=126 Brightness=6.12 Color=#FFEFCA Face=Bottom Range=48 Shadows
+        }
+    }
+    Model "Light" {
+        Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-90.757,13,88.111 Material=Neon TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+                Script "Script" @code=<<<
+                    while true do
+                    	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                    	wait(0.01)
+                    	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                    	wait(0.01)
+                    end
+                >>>
+            }
+            Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-91.456,11.796,88.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                PointLight "PointLight" Brightness=1.22 Range=24 Shadows
+            }
+            SurfaceLight "SurfaceLight" Angle=126 Brightness=2.26 Face=Bottom Range=48 Shadows
+        }
+    }
+    Model "Light" {
+        Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-68.5,13,88.111 Material=Neon TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+                Script "Script" @code=<<<
+                    while true do
+                    	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                    	wait(0.01)
+                    	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                    	wait(0.01)
+                    end
+                >>>
+            }
+            Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-69.199,11.796,88.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                PointLight "PointLight" Brightness=1.22 Range=24 Shadows
+            }
+            SurfaceLight "SurfaceLight" Angle=126 Brightness=2.26 Face=Bottom Range=48 Shadows
+        }
+    }
+    Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-59.5,13,68.111 Material=Neon TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+            Script "Script" @code=<<<
+                while true do
+                	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                	wait(0.01)
+                	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                	wait(0.01)
+                end
+            >>>
+        }
+        Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-59.199,11.796,68.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+            PointLight "PointLight" Brightness=1.22 Color=#FFEFCA Range=24 Shadows
+        }
+        SurfaceLight "SurfaceLight" Angle=126 Brightness=6.12 Color=#FFEFCA Face=Bottom Range=48 Shadows
+    }
+    Part "Light" Size=5.515,1,5.499 Anchored BottomSurface=Smooth CFrame=-70.5,13,68.111 Material=Neon TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Color3=#2BC2BC2BC Face=Bottom Texture="rbxassetid://14498493178" TextureContent="rbxassetid://14498493178" {
+            Script "Script" @code=<<<
+                while true do
+                	script.Parent.Color3 = Color3.fromRGB(700,700,700)
+                	wait(0.01)
+                	script.Parent.Color3 = Color3.fromRGB(600,600,600)
+                	wait(0.01)
+                end
+            >>>
+        }
+        Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-71.199,11.796,68.127 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+            PointLight "PointLight" Brightness=1.22 Color=#C9FFF7 Range=24 Shadows
+        }
+        SurfaceLight "SurfaceLight" Angle=126 Brightness=6.12 Color=#C9FFF7 Face=Bottom Range=48 Shadows
+    }
+    Part "Part" Size=1,17,685 Anchored BottomSurface=Smooth CFrame=119.5,10,352.5|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=2.5,38.305,258.405|-22.5,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=2,17,1 Anchored BottomSurface=Smooth CFrame=-50.5,10,97|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=58,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-80,6.1,95.9|-180,0,-180 Color=#646464 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=18,18,18 Anchored BottomSurface=Smooth CFrame=76,-2.5,198 Material=DiamondPlate Shape=Ball TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=-24.5,55.161,249.395|-33.75,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=-24.5,55.161,249.395|-33.75,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=708,17,1 Anchored BottomSurface=Smooth CFrame=-50.5,10,-273|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=56,1,24 Anchored BottomSurface=Smooth CFrame=-80,19,68 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=24,7,1 Anchored BottomSurface=Smooth CFrame=-80,16,68|0,90,0 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=58,1,15 Anchored BottomSurface=Smooth CFrame=-80,19,88.5 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=18,18,18 Anchored BottomSurface=Smooth CFrame=54,0.5,198 Material=DiamondPlate Shape=Ball TopSurface=Smooth
+    Part "Part" Size=58,7,1 Anchored BottomSurface=Smooth CFrame=-80,16,80.5|-180,0,-180 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=16,11,1 Anchored BottomSurface=Smooth CFrame=-80,7,80.5|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=24,11,1 Anchored BottomSurface=Smooth CFrame=-51.5,7,68|0,90,0 Material=Concrete TopSurface=Smooth {
+        Decal "Decal" Texture="rbxassetid://76498563100235" TextureContent="rbxassetid://76498563100235"
+    }
+    Part "Part" Size=24,7,1 Anchored BottomSurface=Smooth CFrame=-51.5,16,68|0,90,0 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=15,11,1 Anchored BottomSurface=Smooth CFrame=-58.5,7,80.5|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1,17,171 Anchored BottomSurface=Smooth CFrame=-136.5,10,97.5|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=58,11,1 Anchored BottomSurface=Smooth CFrame=-80,7,55.5|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=24,11,1 Anchored BottomSurface=Smooth CFrame=-80,7,68|0,90,0 Material=Concrete TopSurface=Smooth {
+        Decal "Decal" Face=Back Texture="rbxassetid://76498563100235" TextureContent="rbxassetid://76498563100235"
+    }
+    Part "Part" Size=1,17,512 Anchored BottomSurface=Smooth CFrame=205,10,-627.5|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=255,17,1 Anchored BottomSurface=Smooth CFrame=-222.5,10,224.5|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=58,7,1 Anchored BottomSurface=Smooth CFrame=-80,16,55.5|-180,0,-180 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=2.5,38.305,258.405|-22.5,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=18,18,18 Anchored BottomSurface=Smooth CFrame=94,-5.5,198 Material=DiamondPlate Shape=Ball TopSurface=Smooth
+    Part "Part" Size=29,1,26 Anchored BottomSurface=Smooth CFrame=-65.5,1,68 Material=Marble TopSurface=Smooth
+    Part "Part" Size=58,1,41 Anchored BottomSurface=Smooth CFrame=-80,13.043,75.5 Color=#FCFAFF Material=CeramicTiles TopSurface=Smooth
+    Part "Part" Size=58,1,15 Anchored BottomSurface=Smooth CFrame=-80,1,88.5 Material=Marble TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=29.5,20.014,263.953|-11.25,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=58,7,1 Anchored BottomSurface=Smooth CFrame=-80,16,96.5|-180,0,-180 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=15,11,1 Anchored BottomSurface=Smooth CFrame=-101.5,7,80.5|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=58,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-80,12.3,95.9|-180,0,-180 Color=#646464 TopSurface=Smooth
+    Part "Part" Size=58,0.4,0.1 Anchored BottomSurface=Smooth CFrame=-80,5.7,95.95|-180,0,-180 Color=#AAC5FF Material=Concrete TopSurface=Smooth
+    Part "Part" Size=58,11,1 Anchored BottomSurface=Smooth CFrame=-80,7,96.5|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=58,2.9,0.1 Anchored BottomSurface=Smooth CFrame=-80,2.95,95.95|-180,0,-180 Color=#6E7FA5 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=58,0.7,0.1 Anchored BottomSurface=Smooth CFrame=-80,5.15,95.95|-180,0,-180 Color=#6E7FA5 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=58,0.4,0.1 Anchored BottomSurface=Smooth CFrame=-80,4.6,95.95|-180,0,-180 Color=#AAC5FF Material=Concrete TopSurface=Smooth
+    Part "Part" Size=195,1,27 Anchored BottomSurface=Smooth CFrame=29.5,20.014,263.953|-11.25,90,0 Material=DiamondPlate PivotOffset=97.5,0,0 TopSurface=Smooth
+    Part "Part" Size=24,11,1 Anchored BottomSurface=Smooth CFrame=-108.5,7,68|0,90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=29,1,26 Anchored BottomSurface=Smooth CFrame=-94.5,1,68 Material=Marble TopSurface=Smooth
+    Part "Part" Size=24,7,1 Anchored BottomSurface=Smooth CFrame=-108.5,16,68|0,90,0 Color=#59585A Material=Brick TopSurface=Smooth
+    Part "Part" Size=18,18,18 Anchored BottomSurface=Smooth CFrame=109,-6.5,198 Material=DiamondPlate Shape=Ball TopSurface=Smooth
+    Part "Part" Size=980,17,1 Anchored BottomSurface=Smooth CFrame=461.5,10,-138|0,90,0 Material=DiamondPlate TopSurface=Smooth
+    Folder "Stairs" {
+        UnionOperation "Union" Size=21,8,12 Anchored CFrame=-49,5.5,178.5|0,90,0 Color=#A3A2A5 Material=DiamondPlate $_geo="0c9185312fe20c7c"
+        UnionOperation "Union" Size=21,8,12 Anchored CFrame=-49,21.5,210.5|0,90,0 Color=#A3A2A5 Material=DiamondPlate $_geo="0c9185312fe20c7c"
+        UnionOperation "Union" Size=21,8,12 Anchored CFrame=-49,29.5,226.5|0,90,0 Color=#A3A2A5 Material=DiamondPlate $_geo="0c9185312fe20c7c"
+        UnionOperation "Union" Size=21,8,12 Anchored CFrame=-49,13.5,194.5|0,90,0 Color=#A3A2A5 Material=DiamondPlate $_geo="0c9185312fe20c7c"
+    }
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=-64.567,3.45,73.687 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=147.1,3.45,228.1 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,5.55,286|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,13.85,286|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,7.65,286.1 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,18.05,286|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,9.75,286|-180,0,-180 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,15.95,286.1 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,3.45,286.1 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+    UnionOperation "Union" Size=1.8,3.9,1.8 CFrame=153.1,11.75,286.1 Color=#FF5959 Material=Fabric UsePartColor $_geo="728e1b25c3eceec9"
+}
+Folder "WIP" {
+    Folder "Folder" {
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,50.5,-267.5|-180,0,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=44.5,50.5,-317|0,90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,50.5,-352.002|0,45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,50.5,-298.057|-180,67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,50.5,-366.5 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,50.5,-362.732|0,22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,50.5,-335.943|0,67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,50.5,-298.057|-180,-67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,50.5,-335.943|0,-67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,50.5,-352.002|0,-45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,50.5,-281.998|-180,-45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,50.5,-271.268|-180,22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,50.5,-362.732|0,-22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,50.5,-271.268|-180,-22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=143.5,50.5,-317|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,50.5,-281.998|-180,45,-180 TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,7.5,-281.998|-180,45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,7.5,-335.943|0,-67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=143.5,7.5,-317|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,7.5,-271.268|-180,22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,7.5,-281.998|-180,-45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,7.5,-366.5 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=44.5,7.5,-317|0,90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,7.5,-335.943|0,67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,7.5,-362.732|0,-22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,7.5,-267.5|-180,0,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,7.5,-352.002|0,45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,7.5,-298.057|-180,67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,7.5,-352.002|0,-45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,7.5,-271.268|-180,-22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,7.5,-298.057|-180,-67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,7.5,-362.732|0,22.5,0 TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=44.5,29.5,-317|0,90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,29.5,-271.268|-180,-22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,29.5,-298.057|-180,-67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,29.5,-281.998|-180,45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,29.5,-335.943|0,67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,29.5,-352.002|0,45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,29.5,-271.268|-180,22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,29.5,-335.943|0,-67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=143.5,29.5,-317|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,29.5,-352.002|0,-45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,29.5,-298.057|-180,67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,29.5,-362.732|0,22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,29.5,-267.5|-180,0,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,29.5,-366.5 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,29.5,-281.998|-180,-45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,29.5,-362.732|0,-22.5,0 TopSurface=Smooth
+    }
+    Folder "Folder" {
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,72.5,-335.943|0,67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,72.5,-267.5|-180,0,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,72.5,-271.268|-180,-22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,72.5,-335.943|0,-67.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,72.5,-352.002|0,-45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=44.5,72.5,-317|0,90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,72.5,-281.998|-180,45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=48.268,72.5,-298.057|-180,67.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=129.002,72.5,-281.998|-180,-45,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=143.5,72.5,-317|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,72.5,-271.268|-180,22.5,-180 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=58.998,72.5,-352.002|0,45,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=94,72.5,-366.5 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=75.057,72.5,-362.732|0,22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=112.943,72.5,-362.732|0,-22.5,0 TopSurface=Smooth
+        Part "Part" Size=21,10,1 Anchored BottomSurface=Smooth CFrame=139.732,72.5,-298.057|-180,-67.5,-180 TopSurface=Smooth
+    }
+    Part "Part" Size=100,1,100 Anchored BottomSurface=Smooth CFrame=94,2,-317 TopSurface=Smooth
+    Part "Part" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=94,3,-317 TopSurface=Smooth
+}

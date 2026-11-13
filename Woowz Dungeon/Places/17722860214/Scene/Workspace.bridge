@@ -1,0 +1,153 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-2000 GlobalWind=0,0,0 Gravity=100 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Opportunistic StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=PauseOutsideLoadedArea StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Part "Baseplate" Size=248,20,512 Anchored CFrame=250,123,0|0,0,-90 Color=#635F62 Locked
+    Part "Baseplate" Size=248,20,512 Anchored CFrame=-0.5,123,250.5|-90,90,0 Color=#635F62 Locked
+    Part "Baseplate" Size=248,20,512 Anchored CFrame=-251,123,0|0,0,-90 Color=#635F62 Locked
+    Part "Baseplate" Size=248,20,512 Anchored CFrame=-0.5,123,-250.5|-90,90,0 Color=#635F62 Locked
+    Part "Baseplate" Size=512,20,512 Anchored CFrame=0,-10,0 Color=#635F62 Locked
+    Camera "Camera"
+    Part "Part" Size=32,17.039,2 BottomSurface=Smooth CFrame=83.836,9.519,-39 Color=#69686A Material=DiamondPlate TopSurface=Smooth {
+        Attachment "Attachment" CFrame=13.952,-7.867,0|0,0,90
+        HingeConstraint "HingeConstraint" ActuatorType=Motor AngularVelocity=10 Attachment0=@"Workspace/Part/Attachment" Attachment1=@"Workspace/Part~3/Attachment" Visible
+    }
+    Part "Part" Size=32,1,2 BottomSurface=Smooth CFrame=-31,1.5,-39 TopSurface=Smooth {
+        Attachment "Attachment" CFrame=13.952,0,0|0,0,90
+        HingeConstraint "HingeConstraint" ActuatorType=Motor AngularVelocity=10 Attachment0=@"Workspace/Part~2/Attachment" Attachment1=@"Workspace/Part~7/Attachment" Visible
+    }
+    Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=97.836,0.5,-39 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth {
+        Attachment "Attachment" CFrame=0,1,0|0,0,90
+    }
+    Part "Part" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-38.5,0.5,25 Color=#FF0000 TopSurface=Smooth {
+        Attachment "Attachment"
+    }
+    Part "Part" Size=24.4,1,5.4 Anchored BottomSurface=Smooth CFrame=-0.8,0.5,21.1 TopSurface=Smooth
+    Part "Part" Size=9,1,2 BottomSurface=Smooth CFrame=-19.5,0.5,25 TopSurface=Smooth {
+        AlignOrientation "AlignOrientation" AlignType=Parallel Attachment0=@"Workspace/Part~6/Attachment"
+        Attachment "Attachment"
+    }
+    Part "Part" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-17,0.5,-39 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth {
+        Attachment "Attachment" CFrame=0,1,0|0,0,90
+    }
+    Model "Player" PrimaryPart=@"Workspace/Player/Body" {
+        MeshPart "Body" Size=2,6,2 CFrame=-35.5,4.2,36.9 CanCollide=false CastShadow=false CollisionFidelity=Default CollisionGroup="Player" Transparency=1
+        MeshPart "Eyes" Size=0.49,0.49,0.49 CFrame=-35.5,6.777,35.617 CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default CollisionGroup="Player" Transparency=1 {
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Eyes" Part1=@"Workspace/Player/Body"
+            Vector3Value "mouseDelta"
+        }
+        MeshPart "Head" Size=1.4,1.4,1.4 CFrame=-35.5,6.6,36.9 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default CollisionGroup="Player" Transparency=1 {
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Head" Part1=@"Workspace/Player/Body"
+        }
+        Part "Legs" Size=2.8,2.8,2.8 BottomSurface=Smooth CFrame=-35.5,1.4,36.9 CollisionGroup="Player" CustomPhysicalProperties=0.7,0.4,0.5,100,1 Shape=Ball TopSurface=Smooth Transparency=1 {
+            AlignOrientation "AlignOrientation" AlignType=Parallel Attachment0=@"Workspace/Player/Legs/Center" MaxTorque=12000 Mode=OneAttachment Responsiveness=50
+            Attachment "Center"
+            WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Legs" Part1=@"Workspace/Player/Body"
+        }
+        Folder "Model" {
+            MeshPart "ArmLeft" Size=1,3,1 CFrame=-36.995,4.5,36.958 CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#BE9171 Massless {
+                AlignOrientation "AlignOrientation" AlignType=Parallel Attachment0=@"Workspace/Player/Model/ArmLeft/Hand" Visible
+                Attachment "Attachment" CFrame=0,0,0|0,0,90
+                BallSocketConstraint "BallSocketConstraint" Attachment0=@"Workspace/Player/Model/ArmLeft/Attachment" Attachment1=@"Workspace/Player/Model/Torso/AttachmentLARM"
+                Attachment "Hand" CFrame=0,-1.5,0|-90,0,0
+            }
+            MeshPart "ArmRight" Size=1,3,1 CFrame=-33.995,4.5,36.958 CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#BE9171 Massless {
+                AlignOrientation "AlignOrientation" AlignType=Parallel Attachment0=@"Workspace/Player/Model/ArmRight/Hand" Mode=OneAttachment Visible
+                Attachment "Attachment" CFrame=0,0,0|0,0,90
+                BallSocketConstraint "BallSocketConstraint" Attachment0=@"Workspace/Player/Model/ArmRight/Attachment" Attachment1=@"Workspace/Player/Model/Torso/AttachmentRARM"
+                Attachment "Hand" CFrame=0,-1.5,0|-90,0,0
+                MeshPart "TestTool" Size=0.3,0.3,6.4 CFrame=-34.045,3.45,34.858 CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#888888 Massless {
+                    WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Model/ArmRight/TestTool" Part1=@"Workspace/Player/Model/ArmRight"
+                }
+            }
+            MeshPart "Head" Size=1.4,1.4,1.4 CFrame=-35.495,6.6,36.958 CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Massless Material=ForceField {
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Model/Head" Part1=@"Workspace/Player/Model/Torso"
+            }
+            MeshPart "LegLeft" Size=1,3,1 CFrame=-35.995,1.5,36.958 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#90735E Massless {
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Model/LegLeft" Part1=@"Workspace/Player/Model/Torso"
+            }
+            MeshPart "LegRight" Size=1,3,1 CFrame=-34.995,1.5,36.958 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#90735E Massless {
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Model/LegRight" Part1=@"Workspace/Player/Model/Torso"
+            }
+            MeshPart "Torso" Size=2,3,1 CFrame=-35.495,4.5,36.958 CanQuery=false CanTouch=false CollisionFidelity=Default CollisionGroup="Player" Color=#BE9171 Massless {
+                Attachment "ArmAttackPos" CFrame=0,-1,-11
+                Attachment "ArmPos" CFrame=0,2,-11 Visible
+                Attachment "AttachmentLARM" CFrame=-1.5,0,0|0,0,-90
+                Attachment "AttachmentRARM" CFrame=1.5,0,0|0,0,-90
+                Decal "Decal" Texture="rbxassetid://12980859922" TextureContent="rbxassetid://12980859922"
+                WeldConstraint "WeldConstraint" Part0=@"Workspace/Player/Model/Torso" Part1=@"Workspace/Player/Body"
+            }
+        }
+    }
+    Part "SpawnPoint" Size=4,1,4 Anchored BottomSurface=Smooth CFrame=-43.6,0.5,14 CanCollide=false CanQuery=false CanTouch=false Color=#FF00FF Material=Neon TopSurface=Smooth
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration=false EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#0C545C WaterReflectance=1 WaterTransparency=0.3 WaterWaveSize=0.15 WaterWaveSpeed=10
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,13,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-93.298,1,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-113.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,9,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,15,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-97.298,7,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-105.298,11,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-109.298,17,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-101.298,3,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-89.298,5,-25.062 CollisionFidelity=Default
+    MeshPart "part" Size=4,2,3 CFrame=-85.298,17,-25.062 CollisionFidelity=Default
+}

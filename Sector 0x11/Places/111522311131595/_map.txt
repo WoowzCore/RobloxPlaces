@@ -1,0 +1,151 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  BloomEffect "Bloom"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  Folder "ExtraBackrooms Materials"
+    MaterialVariant "Asphalt New"
+    MaterialVariant "Bad Concrete"
+    MaterialVariant "Cave Ground"
+    MaterialVariant "Cave Ground 2"
+    MaterialVariant "Cave Moss"
+    MaterialVariant "Cave Rock"
+    MaterialVariant "Cave Rock Brown"
+    MaterialVariant "Cave Rocks"
+    MaterialVariant "Cave Smooth"
+    MaterialVariant "Cobbelstone Wall"
+    MaterialVariant "Concrete Slab"
+    MaterialVariant "Gravel"
+    MaterialVariant "Humanoid"
+    MaterialVariant "Level -1 Carpet"
+    MaterialVariant "Level 0 Carpet"
+    MaterialVariant "Level 0 Carpet White"
+    MaterialVariant "Level 0 Carpret New"
+    MaterialVariant "Level 0 Ceiling"
+    MaterialVariant "Level 0 Ceiling 2"
+    MaterialVariant "Level 0 Ceiling New"
+    MaterialVariant "Level 0 Concrete"
+    MaterialVariant "Level 0 New"
+    MaterialVariant "Level 0 Paverment"
+    MaterialVariant "Level 0 WallPaper"
+    MaterialVariant "Level 0 WallPaper 2"
+    MaterialVariant "Level 0 WallPaper 3"
+    MaterialVariant "Level 0 WallPaper 4"
+    MaterialVariant "Level 0.11 Carpet"
+    MaterialVariant "Level 0.11 Ceiling"
+    MaterialVariant "Level 0.11 Ceiling 2"
+    MaterialVariant "Level 0.11 WallPaper"
+    MaterialVariant "Level 0.11 WallPaper 2"
+    MaterialVariant "Level 1.1"
+    MaterialVariant "Level 13"
+    MaterialVariant "Level 188"
+    MaterialVariant "Level 188 Floor"
+    MaterialVariant "Level 188 Grass"
+    MaterialVariant "Level 188 Wood"
+    MaterialVariant "Level 2"
+    MaterialVariant "Level 2 2"
+    … ещё 33
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  Folder "Script"
+    ModuleScript "Bootstrap"
+    ModuleScript "Character"
+    ModuleScript "Enum"
+    ModuleScript "Game"
+    ModuleScript "Gizmos"
+    ModuleScript "Info"
+    ModuleScript "Instance"
+    ModuleScript "Logger"
+    ModuleScript "Net"
+    ModuleScript "Other"
+    ModuleScript "Physic"
+    ModuleScript "Player"
+    ModuleScript "Resource"
+    ModuleScript "Sound"
+    ModuleScript "Transform"
+    ModuleScript "Value"
+  Folder "Storage"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  ModuleScript "EventsS"
+  ModuleScript "RestrictedInfo"
+  ModuleScript "Server"
+  Folder "Services_World"
+    ModuleScript "Physic"
+    ModuleScript "TransformParts"
+  ModuleScript "World"
+  Script "__Bootstrap"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+  Folder "Storage"
+    Model "Character"  (+63)
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  Folder "Storage"
+    Frame "Notification"  (+2)
+  ScreenGui "UI"
+    Frame "DebugOverlay"  (+8)
+    Frame "GameOverlay"  (+4)
+    Frame "MainMenu"  (+2)
+    Frame "Notifications"  (+2)
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+    ModuleScript "Client"
+    ModuleScript "EventsC"
+    ModuleScript "Input"
+    ModuleScript "Interface"
+    ModuleScript "Moving"
+    ModuleScript "Render"
+    ModuleScript "Translate"
+    LocalScript "__Bootstrap"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Folder "Map"  [Scene/Workspace/Map.bridge]
+    Folder "Folder"  (+63)
+    Folder "Folder"  (+114)
+    Folder "Map2"  (+109)
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Part "PHYSBOX"
+    Folder "Sector1"  (+379)
+    Folder "WIP"  (+70)
+  Terrain "Terrain"
+    Clouds "Clouds"

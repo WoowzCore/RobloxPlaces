@@ -1,0 +1,102 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "Start"
+  RemoteEvent "UpdatePhysic"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "ServerScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  ScreenGui "GameScreen"
+    TextLabel "TextLabel"
+  ScreenGui "MainMenu"
+    Frame "Background"
+    LocalScript "MainMenuScript"
+    TextLabel "PlaceName"
+    TextButton "PlayButton"  (+1)
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+    Folder "Scripts"  (+4)
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Part "Baseplate"
+  Part "Baseplate"
+  Part "Baseplate"
+  Part "Baseplate"
+  Part "Baseplate"
+  Camera "Camera"
+  Part "Part"
+    Attachment "Attachment"
+    HingeConstraint "HingeConstraint"
+  Part "Part"
+    Attachment "Attachment"
+    HingeConstraint "HingeConstraint"
+  Part "Part"
+    Attachment "Attachment"
+  Part "Part"
+    Attachment "Attachment"
+  Part "Part"
+  Part "Part"
+    AlignOrientation "AlignOrientation"
+    Attachment "Attachment"
+  Part "Part"
+    Attachment "Attachment"
+  Model "Player"
+    MeshPart "Body"
+    MeshPart "Eyes"  (+2)
+    MeshPart "Head"  (+1)
+    Part "Legs"  (+3)
+    Folder "Model"  (+25)
+  Part "SpawnPoint"
+  Terrain "Terrain"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  MeshPart "part"
+  … ещё 48

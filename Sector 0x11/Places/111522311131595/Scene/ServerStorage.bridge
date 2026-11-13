@@ -1,0 +1,82 @@
+ServerStorage "ServerStorage" {
+    Folder "Storage" {
+        Model "Character" PrimaryPart=@"ServerStorage/Storage/Character/Collider D" {
+            Part "Arm L" Size=0.25,0.8,0.3 BottomSurface=Smooth CFrame=6.525,4.1,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.4,0 TopSurface=Smooth
+            Part "Arm L D" Size=0.3,0.3,0.3 BottomSurface=Smooth CFrame=6.525,3.55,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.1,0 TopSurface=Smooth
+            Part "Arm L U" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=6.5,4.95,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.3,0 TopSurface=Smooth {
+                Motor6D "Motor Top" C1=0,-0.135,-0.005 Part0=@"ServerStorage/Storage/Character/Arm L U" Part1=@"ServerStorage/Storage/Character/Arm L U/Top"
+                Part "Top" Size=0.38,0.66,0.33 AudioCanCollide=false BottomSurface=Smooth CFrame=6.5,5.085,-1.9 CanCollide=false CanQuery=false CanTouch=false Color=#EA550A EnableFluidForces=false Massless Material=Sand PivotOffset=0,0.36,0 TopSurface=Smooth
+            }
+            Part "Arm R" Size=0.25,0.8,0.3 BottomSurface=Smooth CFrame=7.825,4.1,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.4,0 TopSurface=Smooth
+            Part "Arm R D" Size=0.3,0.3,0.3 BottomSurface=Smooth CFrame=7.825,3.55,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.1,0 TopSurface=Smooth
+            Part "Arm R U" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=7.85,4.95,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.3,0 TopSurface=Smooth {
+                Motor6D "Motor Top" C1=0,-0.14,0 Part0=@"ServerStorage/Storage/Character/Arm R U" Part1=@"ServerStorage/Storage/Character/Arm R U/Top"
+                Part "Top" Size=0.38,0.66,0.33 AudioCanCollide=false BottomSurface=Smooth CFrame=7.85,5.09,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#EA550A EnableFluidForces=false Massless Material=Sand PivotOffset=0,0.36,0 TopSurface=Smooth
+            }
+            Part "Body D" Size=0.9,1.15,0.4 BottomSurface=Smooth CFrame=7.175,4.175,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,-0.5,0 TopSurface=Smooth {
+                Motor6D "Motor Pants" C1=-0.005,0.49,0 Part0=@"ServerStorage/Storage/Character/Body D" Part1=@"ServerStorage/Storage/Character/Body D/Pants"
+                Motor6D "Motor Top" C1=0,-0.11,0 Part0=@"ServerStorage/Storage/Character/Body D" Part1=@"ServerStorage/Storage/Character/Body D/Top"
+                Part "Pants" Size=0.94,0.23,0.42 AudioCanCollide=false BottomSurface=Smooth CFrame=7.18,3.685,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#5FB5EA EnableFluidForces=false Massless Material=Carpet PivotOffset=0,0.125,0 TopSurface=Smooth
+                Part "Top" Size=0.94,0.95,0.42 AudioCanCollide=false BottomSurface=Smooth CFrame=7.175,4.285,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#EA550A EnableFluidForces=false Massless Material=Sand PivotOffset=0,0.518,0 TopSurface=Smooth
+            }
+            Part "Body U" Size=1,0.85,0.5 BottomSurface=Smooth CFrame=7.175,5.1,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,-0.4,0 TopSurface=Smooth {
+                Motor6D "Motor Top" C1=0,0.03,0 Part0=@"ServerStorage/Storage/Character/Body U" Part1=@"ServerStorage/Storage/Character/Body U/Top"
+                UnionOperation "Top" Size=1.02,0.95,0.52 AudioCanCollide=false CFrame=7.175,5.07,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#EA550A EnableFluidForces=false Massless Material=Sand UsePartColor $_geo="bf1c8dbe0c9a0e72" {
+                    Decal "DNS" Texture="rbxassetid://91928031289772" TextureContent="rbxassetid://91928031289772"
+                }
+            }
+            Part "Collider" Size=4.4,1,1 BottomSurface=Smooth CFrame=7.175,4.2,-1.905|0,0,-90 CastShadow=false Color=#FF0000 CustomPhysicalProperties=0.7,0.2,0,1,1 Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth Transparency=1 $ThatPlayer=""
+            Part "Collider D" Size=1,1,1 BottomSurface=Smooth CFrame=7.175,2,-1.905 CastShadow=false Color=#FF0000 CustomPhysicalProperties=0.7,0.2,0,1,1 Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1 $ThatPlayer="" {
+                Attachment "Center"
+                BodyGyro "Gyro"
+                Motor6D "Motor Arm L" C0=-0.65,2.5,0 C1=0,0.4,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm L"
+                Motor6D "Motor Arm L D" C0=-0.65,1.7,0 C1=0,0.15,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm L D"
+                Motor6D "Motor Arm L U" C0=-0.675,3.175,0 C1=0,0.225,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm L U"
+                Motor6D "Motor Arm R" C0=0.65,2.5,0 C1=0,0.4,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm R"
+                Motor6D "Motor Arm R D" C0=0.65,1.7,0 C1=0,0.15,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm R D"
+                Motor6D "Motor Arm R U" C0=0.675,3.175,0 C1=0,0.225,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Arm R U"
+                Motor6D "Motor Body D" C0=0,1.7,0 C1=0,-0.475,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Body D"
+                Motor6D "Motor Body U" C0=0,2.8,0 C1=0,-0.3,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Body U"
+                Motor6D "Motor Collider" C1=2.2,0,0|0,0,90 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Collider"
+                Motor6D "Motor Head" C0=0,3.7,0 C1=0,-0.35,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Head"
+                Motor6D "Motor Leg L" C0=-0.3,0.75,0 C1=-0.025,0.55,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg L"
+                Motor6D "Motor Leg L D" C0=-0.3,-0.45,0 C1=-0.025,0,0.175 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg L D"
+                Motor6D "Motor Leg L U" C0=-0.3,1.6,0 C1=-0.025,0.45,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg L U"
+                Motor6D "Motor Leg R" C0=0.3,0.75,0 C1=0.025,0.55,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg R"
+                Motor6D "Motor Leg R D" C0=0.3,-0.45,0 C1=0.025,0,0.175 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg R D"
+                Motor6D "Motor Leg R U" C0=0.25,1.6,0 C1=-0.025,0.45,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Leg R U"
+                Motor6D "Motor Neck" C0=0,3.5,0 C1=0,-0.075,0 Part0=@"ServerStorage/Storage/Character/Collider D" Part1=@"ServerStorage/Storage/Character/Neck"
+                LinearVelocity "Move Force" Attachment0=@"ServerStorage/Storage/Character/Collider D/Center"
+            }
+            Part "Head" Size=0.8,0.8,0.8 BottomSurface=Smooth CFrame=7.175,6.05,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,-0.3,0 TopSurface=Smooth {
+                Attachment "Eyes" CFrame=0,0.15,-0.4
+                Decal "Face" Texture="rbxassetid://76498563100235" TextureContent="rbxassetid://76498563100235"
+            }
+            Part "Leg L" Size=0.35,1.2,0.3 BottomSurface=Smooth CFrame=6.9,2.2,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.655,0 TopSurface=Smooth {
+                Motor6D "Motor Pants" C1=0,-0.42,0 Part0=@"ServerStorage/Storage/Character/Leg L" Part1=@"ServerStorage/Storage/Character/Leg L/Pants"
+                Part "Pants" Size=0.37,0.39,0.32 AudioCanCollide=false BottomSurface=Smooth CFrame=6.9,2.62,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#5FB5EA EnableFluidForces=false Massless Material=Carpet PivotOffset=0,0.213,0 TopSurface=Smooth
+            }
+            Part "Leg L D" Size=0.35,0.1,0.65 BottomSurface=Smooth CFrame=6.9,1.55,-2.08 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0,0.2 TopSurface=Smooth {
+                Part "Boot" Size=0.37,0.21,0.67 AudioCanCollide=false BottomSurface=Smooth CFrame=6.9,1.6,-2.08 CanCollide=false CanQuery=false CanTouch=false Color=#161616 EnableFluidForces=false Massless Material=Leather PivotOffset=0,0,0.206 TopSurface=Smooth
+                Motor6D "Motor Boot" C1=0,-0.05,0 Part0=@"ServerStorage/Storage/Character/Leg L D" Part1=@"ServerStorage/Storage/Character/Leg L D/Boot"
+            }
+            Part "Leg L U" Size=0.45,0.9,0.4 BottomSurface=Smooth CFrame=6.9,3.15,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.4,0 TopSurface=Smooth {
+                Motor6D "Motor Pants" Part0=@"ServerStorage/Storage/Character/Leg L U" Part1=@"ServerStorage/Storage/Character/Leg L U/Pants"
+                Part "Pants" Size=0.47,0.93,0.42 AudioCanCollide=false BottomSurface=Smooth CFrame=6.9,3.15,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#5FB5EA EnableFluidForces=false Massless Material=Carpet PivotOffset=0,0.507,0 TopSurface=Smooth
+            }
+            Part "Leg R" Size=0.35,1.2,0.3 BottomSurface=Smooth CFrame=7.45,2.2,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.655,0 TopSurface=Smooth {
+                Motor6D "Motor Pants" C1=0,-0.42,0 Part0=@"ServerStorage/Storage/Character/Leg R" Part1=@"ServerStorage/Storage/Character/Leg R/Pants"
+                Part "Pants" Size=0.37,0.39,0.32 AudioCanCollide=false BottomSurface=Smooth CFrame=7.45,2.62,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#5FB5EA EnableFluidForces=false Massless Material=Carpet PivotOffset=0,0.213,0 TopSurface=Smooth
+            }
+            Part "Leg R D" Size=0.35,0.1,0.65 BottomSurface=Smooth CFrame=7.45,1.55,-2.08 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0,0.2 TopSurface=Smooth {
+                Part "Boot" Size=0.37,0.21,0.67 AudioCanCollide=false BottomSurface=Smooth CFrame=7.45,1.6,-2.08 CanCollide=false CanQuery=false CanTouch=false Color=#161616 EnableFluidForces=false Massless Material=Leather PivotOffset=0,0,0.206 TopSurface=Smooth
+                Motor6D "Motor Boot" C1=0,-0.05,0 Part0=@"ServerStorage/Storage/Character/Leg R D" Part1=@"ServerStorage/Storage/Character/Leg R D/Boot"
+            }
+            Part "Leg R U" Size=0.45,0.9,0.4 BottomSurface=Smooth CFrame=7.45,3.15,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,0.4,0 TopSurface=Smooth {
+                Motor6D "Motor Pants" Part0=@"ServerStorage/Storage/Character/Leg R U" Part1=@"ServerStorage/Storage/Character/Leg R U/Pants"
+                Part "Pants" Size=0.47,0.93,0.42 AudioCanCollide=false BottomSurface=Smooth CFrame=7.45,3.15,-1.905 CanCollide=false CanQuery=false CanTouch=false Color=#5FB5EA EnableFluidForces=false Massless Material=Carpet PivotOffset=0,0.507,0 TopSurface=Smooth
+            }
+            Part "Neck" Size=0.25,0.35,0.25 BottomSurface=Smooth CFrame=7.175,5.575,-1.905 CanCollide=false Color=#EAB892 Material=Plaster PivotOffset=0,-0.1,0 TopSurface=Smooth
+        }
+    }
+}

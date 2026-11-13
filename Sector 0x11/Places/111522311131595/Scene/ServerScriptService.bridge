@@ -1,0 +1,11 @@
+ServerScriptService "ServerScriptService" {
+    ModuleScript "EventsS" @src="Scripts/ServerScriptService/EventsS.luau"
+    ModuleScript "RestrictedInfo" @src="Scripts/ServerScriptService/RestrictedInfo.luau"
+    ModuleScript "Server" @src="Scripts/ServerScriptService/Server.luau"
+    Folder "Services_World" {
+        ModuleScript "Physic" @src="Scripts/ServerScriptService/Services_World/Physic.luau"
+        ModuleScript "TransformParts" @src="Scripts/ServerScriptService/Services_World/TransformParts.luau"
+    }
+    ModuleScript "World" @src="Scripts/ServerScriptService/World.luau"
+    Script "__Bootstrap" @src="Scripts/ServerScriptService/__Bootstrap.luau"
+}

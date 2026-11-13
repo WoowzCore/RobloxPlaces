@@ -1,0 +1,21 @@
+ReplicatedStorage "ReplicatedStorage" {
+    Folder "Script" {
+        ModuleScript "Bootstrap" @src="Scripts/ReplicatedStorage/Script/Bootstrap.luau"
+        ModuleScript "Character" @src="Scripts/ReplicatedStorage/Script/Character.luau"
+        ModuleScript "Enum" @src="Scripts/ReplicatedStorage/Script/Enum.luau"
+        ModuleScript "Game" @src="Scripts/ReplicatedStorage/Script/Game.luau"
+        ModuleScript "Gizmos" @src="Scripts/ReplicatedStorage/Script/Gizmos.luau"
+        ModuleScript "Info" @src="Scripts/ReplicatedStorage/Script/Info.luau"
+        ModuleScript "Instance" @src="Scripts/ReplicatedStorage/Script/Instance.luau"
+        ModuleScript "Logger" @src="Scripts/ReplicatedStorage/Script/Logger.luau"
+        ModuleScript "Net" @src="Scripts/ReplicatedStorage/Script/Net.luau"
+        ModuleScript "Other" @src="Scripts/ReplicatedStorage/Script/Other.luau"
+        ModuleScript "Physic" @src="Scripts/ReplicatedStorage/Script/Physic.luau"
+        ModuleScript "Player" @src="Scripts/ReplicatedStorage/Script/Player.luau"
+        ModuleScript "Resource" @src="Scripts/ReplicatedStorage/Script/Resource.luau"
+        ModuleScript "Sound" @src="Scripts/ReplicatedStorage/Script/Sound.luau"
+        ModuleScript "Transform" @src="Scripts/ReplicatedStorage/Script/Transform.luau"
+        ModuleScript "Value" @src="Scripts/ReplicatedStorage/Script/Value.luau"
+    }
+    Folder "Storage"
+}

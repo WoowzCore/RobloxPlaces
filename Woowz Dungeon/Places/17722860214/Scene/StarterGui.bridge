@@ -1,0 +1,13 @@
+StarterGui "StarterGui" ScreenOrientation=LandscapeSensor ShowDevelopmentGui {
+    ScreenGui "GameScreen" Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        TextLabel "TextLabel" Position=1,0,1,0 Size=0,400,0,75 AnchorPoint=1,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GrenzeGotisch|Regular|Normal" Text="Health: 100" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
+    }
+    ScreenGui "MainMenu" Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Frame "Background" Size=1,0,1,0 BackgroundColor3=#000000 BorderColor3=#000000 BorderSizePixel=0
+        LocalScript "MainMenuScript" @src="Scripts/StarterGui/MainMenu/MainMenuScript.luau"
+        TextLabel "PlaceName" Position=0.5,0,0.25,0 Size=0.6,0,0.2,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GrenzeGotisch|Bold|Normal" Text="Woowz Dungeon" TextColor3=#FFFFFF TextScaled TextSize=1 TextWrapped
+        TextButton "PlayButton" Position=0.5,0,0.6,0 Size=0.25,0,0.1,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Fondamento|Bold|Normal" Text="Play" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+            UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+        }
+    }
+}

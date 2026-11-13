@@ -1,0 +1,599 @@
+Folder "Cabin1" {
+    Model "Bed" {
+        Part "Covers" Size=6.8,0.6,6 Anchored BottomSurface=Smooth CFrame=-34,53.113,341 Color=#966766 Material=Sand TopSurface=Smooth
+        Model "Frame" {
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-37.7,52.313,338.3|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,3,0.6 Anchored BottomSurface=Smooth CFrame=-28.3,53.313,341|0,90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-28.3,53.013,338.3|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-33,52.313,338.3 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-28.3,53.013,343.7|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-37.7,52.313,341|0,90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-37.7,52.313,343.7|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-33,52.313,343.7 Color=#957977 Material=Wood TopSurface=Smooth
+        }
+        Part "Pillow" Size=3,0.4,1.4 Anchored BottomSurface=Smooth CFrame=-29.5,53.413,340.9|0,90,0 Color=#ABA89E Material=Sand TopSurface=Smooth
+        Part "Sheets" Size=2,0.4,5.6 Anchored BottomSurface=Smooth CFrame=-29.6,53.013,341 Color=#CDCDCD Material=Sand TopSurface=Smooth
+    }
+    Model "Cabin" {
+        Model "Fireplace" {
+            Part "Ashes" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=-54,52.313,345.5 Color=#1B2A35 Material=Slate TopSurface=Smooth
+            Part "Burning Wood" Size=4,1,1 Anchored BottomSurface=Smooth CFrame=-54,53.313,345.5 Color=#6C584B Material=Wood TopSurface=Smooth {
+                Fire "Fire"
+                PointLight "PointLight" Color=#FF8000
+            }
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-57.5,53.313,344.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=-55.5,63.813,346.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=-54,63.813,347.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=-54,63.813,345.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=-52.5,63.813,346.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,2,2 Anchored BottomSurface=Smooth CFrame=-54,51.813,343 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=-54,57.313,344 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-50.5,53.313,344.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=-54,68.313,346.5 Color=#1B2A35 Material=Sand TopSurface=Smooth {
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+            }
+            Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=-54,52.313,347.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-50.5,52.313,346 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-57.5,52.313,346 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=-51,58.813,346.5|0,-90,0 Color=#69665C Material=Cobblestone
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=-57,58.813,346.5|0,90,0 Color=#69665C Material=Cobblestone
+        }
+        Model "Frame" {
+            Part "Floor" Size=34,1,22 Anchored BottomSurface=Smooth CFrame=-45,50.313,333 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Foundation" Size=36,3,24 Anchored BottomSurface=Smooth CFrame=-45,48.313,333 Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=-44.5,56.313,321.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=5,8,1 Anchored BottomSurface=Smooth CFrame=-60.5,53.813,344.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=-27.5,56.313,340 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=-30.5,56.313,321.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=-27.5,56.313,325.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=6,1,1 Anchored BottomSurface=Smooth CFrame=-51,50.313,321.5 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=-62.5,56.313,340 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=21,4,1 Anchored BottomSurface=Smooth CFrame=-37.5,51.813,321.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,22 Anchored BottomSurface=Smooth CFrame=-62.5,61.313,333 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=-62.5,51.813,333 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,5,1 Anchored BottomSurface=Smooth CFrame=-45,61.313,321.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,6,1 Anchored BottomSurface=Smooth CFrame=-45,60.813,344.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=-27.5,51.813,333 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=-62.5,56.313,325.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,22 Anchored BottomSurface=Smooth CFrame=-27.5,61.313,333 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=9,9,1 Anchored BottomSurface=Smooth CFrame=-58.5,54.313,321.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=23,8,1 Anchored BottomSurface=Smooth CFrame=-38.5,53.813,344.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-45,63.313,330.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-45,63.313,340.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-45,63.313,325.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-45,63.313,335.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=-45,66.813,327 Color=#69665C Material=Brick
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=-45,66.813,339|-180,0,-180 Color=#69665C Material=Brick
+            Part "Step" Size=6,1,4 Anchored BottomSurface=Smooth CFrame=-51,48.313,319 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=-51,49.313,319.5 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,2 Anchored BottomSurface=Smooth CFrame=-51,50.313,320 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,5 Anchored BottomSurface=Smooth CFrame=-51,47.313,318.5 Color=#958988 Material=Cobblestone TopSurface=Smooth
+        }
+        Model "Simple Door" {
+            Part "Part" Size=0.6,8,0.6 BottomSurface=Hinge CFrame=-48.3,54.813,321.5 CanCollide=false Color=#C7AC78 LeftSurface=Weld Material=Wood TopSurface=Hinge {
+                Rotate "Rotate" C0=0,4,0|-90,0,-180 C1=-3.3,-2.5,0|-90,0,-180 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin1/Cabin/Frame/Part~11"
+                Rotate "Rotate" C0=0,-4,0|90,0,0 C1=2.7,0.5,0|90,0,0 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin1/Cabin/Frame/Part~6"
+                Weld "Weld" C0=-0.3,0,0|0,-90,0 C1=2.6,0,0|0,-90,0 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part~2"
+            }
+            Part "Part" Size=5.2,8,0.6 BottomSurface=Smooth CFrame=-51.2,54.813,321.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,8,0.6 BottomSurface=Smooth CFrame=-53.9,54.813,321.5 CanCollide=false Color=#C7AC78 Material=Wood RightSurface=Weld TopSurface=Smooth {
+                Weld "Weld" C0=0.1,0,0|0,90,0 C1=-2.6,0,0|0,90,0 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part~3" Part1=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=-52.8,53.613,321 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,-0.3 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Simple Handle" Part1=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=-52.8,53.613,322|-180,0,-180 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,0.3|-180,0,-180 Part0=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Simple Handle~2" Part1=@"Workspace/Cabins/Cabin1/Cabin/Simple Door/Part~2"
+            }
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-62.5,56.313,332.5 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-62.5,53.913,332.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-62.5,58.713,332.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-62.5,56.313,329.1|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-62.5,56.313,335.9|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-37.5,56.313,321.5|0,90,0 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-37.5,53.913,321.5|-180,0,-180 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-37.5,58.713,321.5|-180,0,-180 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-40.9,56.313,321.5|-180,0,-90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-34.1,56.313,321.5|-180,0,-90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-27.5,56.313,332.5 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-27.5,53.913,332.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-27.5,58.713,332.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-27.5,56.313,329.1|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-27.5,56.313,335.9|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-57.8,52.913,335.2|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-57.8,51.513,337.8|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-57.8,52.913,337.8|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-59.7,53.213,336.5|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-58.5,53.413,337.8|-89.998,0.002,180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-58.5,53.413,335.2|-89.998,0.002,180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-57.8,51.513,335.2|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-59.7,54.013,336.5|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-59.7,52.413,336.5|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-59.8,54.813,336.5|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-59.8,53.013,337.8|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-59.8,53.013,335.2|90,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=-57.8,52.413,336.5|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=-58.9,52.413,336.5|0,-90,0 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/Cabin1/Chair/Seat" Part1=@"Workspace/Cabins/Cabin1/Chair/Part~13"
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-52.2,52.913,333.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-54.8,51.513,333.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-54.8,52.913,333.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-53.5,53.213,331.3|-179.998,0.002,-179.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-54.8,53.413,332.5|-90.002,-0.002,89.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-52.2,53.413,332.5|-90.002,-0.002,89.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-52.2,51.513,333.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-53.5,54.013,331.3|-179.998,0.002,-179.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-53.5,52.413,331.3|-179.998,0.002,-179.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-53.5,54.813,331.2|-179.998,0.002,-179.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-54.8,53.013,331.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-52.2,53.013,331.2|179.998,0,89.992 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=-53.5,52.413,333.2|-179.998,0.002,-179.998 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=-53.5,52.413,332.1|-179.998,0.002,-179.998 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/Cabin1/Chair~2/Seat" Part1=@"Workspace/Cabins/Cabin1/Chair~2/Part~13"
+        }
+    }
+    Model "Table" {
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-41.4,51.813,324.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,3 Anchored BottomSurface=Smooth CFrame=-42.5,53.013,323.5 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-41.4,51.813,322.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-43.6,51.813,322.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-43.6,51.813,324.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+    }
+}
+Folder "Cabin2" {
+    Model "Bed" {
+        Part "Covers" Size=6.8,0.6,6 Anchored BottomSurface=Smooth CFrame=-185,31.113,23|0,-90,0 Color=#966766 Material=Sand TopSurface=Smooth
+        Model "Frame" {
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-182.3,30.313,19.3|-90,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,3,0.6 Anchored BottomSurface=Smooth CFrame=-185,31.313,28.7 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-182.3,31.013,28.7|-90,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-182.3,30.313,24|0,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-187.7,31.013,28.7|-90,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-185,30.313,19.3 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=-187.7,30.313,19.3|-90,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=-187.7,30.313,24|0,-90,0 Color=#957977 Material=Wood TopSurface=Smooth
+        }
+        Part "Pillow" Size=3,0.4,1.4 Anchored BottomSurface=Smooth CFrame=-184.9,31.413,27.5 Color=#ABA89E Material=Sand TopSurface=Smooth
+        Part "Sheets" Size=2,0.4,5.6 Anchored BottomSurface=Smooth CFrame=-185,31.013,27.4|0,-90,0 Color=#CDCDCD Material=Sand TopSurface=Smooth
+    }
+    Model "Cabin" {
+        Model "Fireplace" {
+            Part "Ashes" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=-189.5,30.313,3|0,-90,0 Color=#1B2A35 Material=Slate TopSurface=Smooth
+            Part "Burning Wood" Size=4,1,1 Anchored BottomSurface=Smooth CFrame=-189.5,31.313,3|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth {
+                Fire "Fire"
+                PointLight "PointLight" Color=#FF8000
+            }
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-188.5,31.313,-0.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=-190.5,41.813,1.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=-191.5,41.813,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=-189.5,41.813,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=-190.5,41.813,4.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,2,2 Anchored BottomSurface=Smooth CFrame=-187,29.813,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=-188,35.313,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-188.5,31.313,6.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=-190.5,46.313,3|0,-90,0 Color=#1B2A35 Material=Sand TopSurface=Smooth {
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+            }
+            Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=-191.5,30.313,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-190,30.313,6.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-190,30.313,-0.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=-190.5,36.813,6|-180,0,-180 Color=#69665C Material=Cobblestone
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=-190.5,36.813,0 Color=#69665C Material=Cobblestone
+        }
+        Model "Frame" {
+            Part "Floor" Size=34,1,22 Anchored BottomSurface=Smooth CFrame=-177,28.313,12|0,-90,0 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Foundation" Size=36,3,24 Anchored BottomSurface=Smooth CFrame=-177,26.313,12|0,-90,0 Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=-165.5,34.313,12.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=5,8,1 Anchored BottomSurface=Smooth CFrame=-188.5,31.813,-3.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=-184,34.313,29.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=-165.5,34.313,26.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=-169.5,34.313,29.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=6,1,1 Anchored BottomSurface=Smooth CFrame=-165.5,28.313,6|0,-90,0 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=-184,34.313,-5.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=21,4,1 Anchored BottomSurface=Smooth CFrame=-165.5,29.813,19.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,22 Anchored BottomSurface=Smooth CFrame=-177,39.313,-5.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=-177,29.813,-5.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,5,1 Anchored BottomSurface=Smooth CFrame=-165.5,39.313,12|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,6,1 Anchored BottomSurface=Smooth CFrame=-188.5,38.813,12|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=-177,29.813,29.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=-169.5,34.313,-5.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,22 Anchored BottomSurface=Smooth CFrame=-177,39.313,29.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=9,9,1 Anchored BottomSurface=Smooth CFrame=-165.5,32.313,-1.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=23,8,1 Anchored BottomSurface=Smooth CFrame=-188.5,31.813,18.5|0,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-174.5,41.313,12|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-184.5,41.313,12|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-169.5,41.313,12|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=-179.5,41.313,12|0,-90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=-171,44.813,12|0,-90,0 Color=#69665C Material=Brick
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=-183,44.813,12|0,90,0 Color=#69665C Material=Brick
+            Part "Step" Size=6,1,4 Anchored BottomSurface=Smooth CFrame=-163,26.313,6|0,-90,0 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=-163.5,27.313,6|0,-90,0 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,2 Anchored BottomSurface=Smooth CFrame=-164,28.313,6|0,-90,0 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,5 Anchored BottomSurface=Smooth CFrame=-162.5,25.313,6|0,-90,0 Color=#958988 Material=Cobblestone TopSurface=Smooth
+        }
+        Model "Simple Door" {
+            Part "Part" Size=0.6,8,0.6 BottomSurface=Hinge CFrame=-165.5,32.813,8.7|0,-90,0 CanCollide=false Color=#C7AC78 LeftSurface=Weld Material=Wood TopSurface=Hinge {
+                Rotate "Rotate" C0=0,4,0|-90,0,-180 C1=-3.3,-2.5,0|-90,0,-180 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin2/Cabin/Frame/Part~11"
+                Rotate "Rotate" C0=0,-4,0|90,0,0 C1=2.7,0.5,0|90,0,0 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin2/Cabin/Frame/Part~6"
+                Weld "Weld" C0=-0.3,0,0|0,-90,0 C1=2.6,0,0|0,-90,0 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part~2"
+            }
+            Part "Part" Size=5.2,8,0.6 BottomSurface=Smooth CFrame=-165.5,32.813,5.8|0,-90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,8,0.6 BottomSurface=Smooth CFrame=-165.5,32.813,3.1|0,-90,0 CanCollide=false Color=#C7AC78 Material=Wood RightSurface=Weld TopSurface=Smooth {
+                Weld "Weld" C0=0.1,0,0|0,90,0 C1=-2.6,0,0|0,90,0 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part~3" Part1=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=-165,31.613,4.2|0,-90,0 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,-0.3 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Simple Handle" Part1=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=-166,31.613,4.2|0,90,0 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,0.3|-180,0,-180 Part0=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Simple Handle~2" Part1=@"Workspace/Cabins/Cabin2/Cabin/Simple Door/Part~2"
+            }
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-176.5,34.313,29.5|0,-90,0 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-176.5,31.913,29.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-176.5,36.713,29.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-173.1,34.313,29.5|0,0,90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-179.9,34.313,29.5|0,0,90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-165.5,34.313,19.5 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-165.5,31.913,19.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-165.5,36.713,19.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-165.5,34.313,16.1|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-165.5,34.313,22.9|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=-176.5,34.313,-5.5|0,-90,0 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-176.5,31.913,-5.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=-176.5,36.713,-5.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-173.1,34.313,-5.5|0,0,90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=-179.9,34.313,-5.5|0,0,90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-180.2,30.913,5.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-180.2,29.513,3.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-180.2,30.913,3.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-178.3,31.213,4.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-179.5,31.413,3.2|-90,0,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-179.5,31.413,5.8|-90,0,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-180.2,29.513,5.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-178.3,32.013,4.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-178.3,30.413,4.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-178.2,32.813,4.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-178.2,31.013,3.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-178.2,31.013,5.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=-180.2,30.413,4.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=-179.1,30.413,4.5|0,90,0 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/Cabin2/Chair/Seat" Part1=@"Workspace/Cabins/Cabin2/Chair/Part~13"
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-170.8,30.913,24.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-168.2,29.513,24.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-168.2,30.913,24.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-169.5,31.213,26.7 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-168.2,31.413,25.5|-90,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-170.8,31.413,25.5|-90,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-170.8,29.513,24.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-169.5,32.013,26.7 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-169.5,30.413,26.7 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-169.5,32.813,26.8 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-168.2,31.013,26.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-170.8,31.013,26.8|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=-169.5,30.413,24.8 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=-169.5,30.413,25.9 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/Cabin2/Chair~2/Seat" Part1=@"Workspace/Cabins/Cabin2/Chair~2/Part~13"
+        }
+    }
+    Model "Table" {
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-177.4,29.813,27.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,3 Anchored BottomSurface=Smooth CFrame=-178.5,31.013,26.5 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-177.4,29.813,25.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-179.6,29.813,25.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-179.6,29.813,27.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+    }
+}
+Folder "StarterCabin" {
+    Model "Bed" {
+        Part "Covers" Size=6.8,0.6,6 Anchored BottomSurface=Smooth CFrame=346,15.113,189 Color=#966766 Material=Sand TopSurface=Smooth
+        Model "Frame" {
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=342.3,14.313,186.3|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,3,0.6 Anchored BottomSurface=Smooth CFrame=351.7,15.313,189|0,90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=351.7,15.013,186.3|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=347,14.313,186.3 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.4,0.6,0.6 Anchored BottomSurface=Smooth CFrame=351.7,15.013,191.7|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.8,1,0.6 Anchored BottomSurface=Smooth CFrame=342.3,14.313,189|0,90,0 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=3,0.6,0.6 Anchored BottomSurface=Smooth CFrame=342.3,14.313,191.7|0,0,90 Color=#957977 Material=Wood TopSurface=Smooth
+            Part "Part" Size=8.8,1,0.6 Anchored BottomSurface=Smooth CFrame=347,14.313,191.7 Color=#957977 Material=Wood TopSurface=Smooth
+        }
+        Part "Pillow" Size=3,0.4,1.4 Anchored BottomSurface=Smooth CFrame=350.5,15.413,188.9|0,90,0 Color=#ABA89E Material=Sand TopSurface=Smooth
+        Part "Sheets" Size=2,0.4,5.6 Anchored BottomSurface=Smooth CFrame=350.4,15.013,189 Color=#CDCDCD Material=Sand TopSurface=Smooth
+    }
+    Model "Cabin" {
+        Model "Fireplace" {
+            Part "Ashes" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=326,14.313,193.5 Color=#1B2A35 Material=Slate TopSurface=Smooth
+            Part "Burning Wood" Size=4,1,1 Anchored BottomSurface=Smooth CFrame=326,15.313,193.5 Color=#6C584B Material=Wood TopSurface=Smooth {
+                Fire "Fire"
+                PointLight "PointLight" Color=#FF8000
+            }
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=322.5,15.313,192.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=324.5,25.813,194.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=326,25.813,195.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=4,12,1 Anchored BottomSurface=Smooth CFrame=326,25.813,193.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,12,1 Anchored BottomSurface=Smooth CFrame=327.5,25.813,194.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,2,2 Anchored BottomSurface=Smooth CFrame=326,13.813,191 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=326,19.313,192 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=329.5,15.313,192.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=326,30.313,194.5 Color=#1B2A35 Material=Sand TopSurface=Smooth {
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+            }
+            Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=326,14.313,195.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=329.5,14.313,194 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=322.5,14.313,194 Color=#69665C Material=Cobblestone TopSurface=Smooth
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=329,20.813,194.5|0,-90,0 Color=#69665C Material=Cobblestone
+            WedgePart "Wedge" Size=3,2,2 Anchored BottomSurface=Smooth CFrame=323,20.813,194.5|0,90,0 Color=#69665C Material=Cobblestone
+        }
+        Model "Frame" {
+            Part "Floor" Size=34,1,22 Anchored BottomSurface=Smooth CFrame=335,12.313,181 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Foundation" Size=36,3,24 Anchored BottomSurface=Smooth CFrame=335,10.313,181 Material=Cobblestone TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=335.5,18.313,169.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=5,8,1 Anchored BottomSurface=Smooth CFrame=319.5,15.813,192.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=352.5,18.313,188 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=7,5,1 Anchored BottomSurface=Smooth CFrame=349.5,18.313,169.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=352.5,18.313,173.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=6,1,1 Anchored BottomSurface=Smooth CFrame=329,12.313,169.5 Color=#C7AC78 Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,8 Anchored BottomSurface=Smooth CFrame=317.5,18.313,188 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=21,4,1 Anchored BottomSurface=Smooth CFrame=342.5,13.813,169.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,6,22 Anchored BottomSurface=Smooth CFrame=317.5,23.813,181 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=317.5,13.813,181 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,6,1 Anchored BottomSurface=Smooth CFrame=335,23.813,169.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=36,7,1 Anchored BottomSurface=Smooth CFrame=335,23.313,192.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,4,22 Anchored BottomSurface=Smooth CFrame=352.5,13.813,181 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,5,7 Anchored BottomSurface=Smooth CFrame=317.5,18.313,173.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=1,6,22 Anchored BottomSurface=Smooth CFrame=352.5,23.813,181 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=9,9,1 Anchored BottomSurface=Smooth CFrame=321.5,16.313,169.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Part" Size=23,8,1 Anchored BottomSurface=Smooth CFrame=341.5,15.813,192.5 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=335,26.313,178.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=335,26.313,188.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=335,26.313,173.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            Part "Rafter" Size=34,1,1 Anchored BottomSurface=Smooth CFrame=335,26.313,183.5 Color=#6C584B Material=Wood TopSurface=Smooth
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=335,29.813,175 Color=#69665C Material=Brick
+            WedgePart "Roof" Size=36,6,12 Anchored BottomSurface=Smooth CFrame=335,29.813,187|-180,0,-180 Color=#69665C Material=Brick
+            Part "Step" Size=6,1,4 Anchored BottomSurface=Smooth CFrame=329,10.313,167 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,3 Anchored BottomSurface=Smooth CFrame=329,11.313,167.5 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,2 Anchored BottomSurface=Smooth CFrame=329,12.313,168 Color=#958988 Material=Cobblestone TopSurface=Smooth
+            Part "Step" Size=6,1,5 Anchored BottomSurface=Smooth CFrame=329,9.313,166.5 Color=#958988 Material=Cobblestone TopSurface=Smooth
+        }
+        Model "Simple Door" {
+            Part "Part" Size=0.6,8,0.6 BottomSurface=Hinge CFrame=331.7,16.813,169.5 CanCollide=false Color=#C7AC78 LeftSurface=Weld Material=Wood TopSurface=Hinge {
+                Rotate "Rotate" C0=0,-4,0|90,0,0 C1=2.7,0.5,0|90,0,0 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Frame/Part~6"
+                Rotate "Rotate" C0=0,4,0|-90,0,-180 C1=-3.3,-3,0|-90,0,-180 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Frame/Part~11"
+                Weld "Weld" C0=-0.3,0,0|0,-90,0 C1=2.6,0,0|0,-90,0 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part~2"
+            }
+            Part "Part" Size=5.2,8,0.6 BottomSurface=Smooth CFrame=328.8,16.813,169.5 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,8,0.6 BottomSurface=Smooth CFrame=326.1,16.813,169.5 CanCollide=false Color=#C7AC78 Material=Wood RightSurface=Weld TopSurface=Smooth {
+                Weld "Weld" C0=0.1,0,0|0,90,0 C1=-2.6,0,0|0,90,0 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part~3" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=327.2,15.613,169 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,-0.3 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Simple Handle" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part~2"
+            }
+            Part "Simple Handle" Size=0.4,0.4,0.4 BackSurface=Weld BottomSurface=Smooth CFrame=327.2,15.613,170|-180,0,-180 Color=#958988 Material=Metal TopSurface=Smooth {
+                Weld "Weld" C0=0,0,0.2 C1=-1.6,-1.2,0.3|-180,0,-180 Part0=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Simple Handle~2" Part1=@"Workspace/Cabins/StarterCabin/Cabin/Simple Door/Part~2"
+            }
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=352.5,18.313,180.5 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=352.5,15.913,180.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=352.5,20.713,180.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=352.5,18.313,177.1|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=352.5,18.313,183.9|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=342.5,18.313,169.5|0,90,0 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=342.5,15.913,169.5|-180,0,-180 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=342.5,20.713,169.5|-180,0,-180 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=339.1,18.313,169.5|-180,0,-90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=345.9,18.313,169.5|-180,0,-90 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+        Model "Window" {
+            Part "Glass" Size=0.2,4.6,6.6 Anchored BottomSurface=Smooth CFrame=317.5,18.313,180.5 Color=#C7D4E4 Material=Ice TopSurface=Smooth Transparency=0.7
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=317.5,15.913,180.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=7,0.2,1 Anchored BottomSurface=Smooth CFrame=317.5,20.713,180.5|0,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=317.5,18.313,177.1|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+            Part "Part" Size=4.6,0.2,1 Anchored BottomSurface=Smooth CFrame=317.5,18.313,183.9|90,90,0 Color=#C7AC78 Material=Wood TopSurface=Smooth
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=325.8,14.913,184.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.2,13.513,184.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.2,14.913,184.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=324.5,15.213,182.3|-180,0,-180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.2,15.413,183.5|-90,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=325.8,15.413,183.5|-90,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=325.8,13.513,184.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=324.5,16.013,182.3|-180,0,-180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=324.5,14.413,182.3|-180,0,-180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=324.5,16.813,182.2|-180,0,-180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.2,15.013,182.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=325.8,15.013,182.2|180,0,90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=324.5,14.413,184.2|-180,0,-180 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=324.5,14.413,183.1|-180,0,-180 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/StarterCabin/Chair/Seat" Part1=@"Workspace/Cabins/StarterCabin/Chair/Part~13"
+        }
+    }
+    Model "Chair" {
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.8,14.913,178.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.8,13.513,176.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.8,14.913,176.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=349.7,15.213,177.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=348.5,15.413,176.2|-90,0,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=348.5,15.413,178.8|-90,0,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.8,13.513,178.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=349.7,16.013,177.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.2 Anchored BottomSurface=Smooth CFrame=349.7,14.413,177.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.8,16.813,177.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.8,15.013,176.2|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.8,15.013,178.8|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,0.8 Anchored BottomSurface=Smooth CFrame=347.8,14.413,177.5|0,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Seat "Seat" Size=3,0.4,1.4 Anchored BottomSurface=Weld CFrame=348.9,14.413,177.5|0,90,0 Color=#6C584B FrontSurface=Hinge Material=Wood TopSurface=Smooth {
+            Rotate "Rotate" C0=0,0,-0.7|-180,0,-180 C1=0,0,0.4|-180,0,-180 Part0=@"Workspace/Cabins/StarterCabin/Chair~2/Seat" Part1=@"Workspace/Cabins/StarterCabin/Chair~2/Part~13"
+        }
+    }
+    Model "Chest_Lantern" PrimaryPart=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Base/Part~14" {
+        Model "Base" {
+            Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=323.4,13.827,176.601|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=322.099,13.828,173.001|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=324.7,14.626,174.801|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=322.1,14.628,174.801|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.399,13.027,173.001|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.4,14.627,173.001|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=323.399,13.827,173.001|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=324.7,13.826,173.001|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=322.099,13.828,176.601|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=324.699,13.026,174.801|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=322.099,13.828,174.801|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=324.7,13.826,174.801|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=324.7,13.826,176.601|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=323.399,13.027,174.801|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.399,13.027,176.601|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=322.099,13.028,174.801|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.4,14.627,176.601|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        }
+        Configuration "Configurations" {
+            BoolValue "StaticObject"
+        }
+        Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=322.1,14.828,176.601|-179.984,0.009,-179.967 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+        }
+        Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=322.1,14.828,173.001|-179.984,0.009,-179.967 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+        }
+        Model "Lid" {
+            Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=322.1,14.828,174.801|-179.984,0.009,-179.967 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+                BodyGyro "BodyGyro" MaxTorque=0,0,0
+                BodyPosition "BodyPosition" MaxForce=0,0,0
+                Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/HingePoint"
+                Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/HingePoint~2"
+                Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~11"
+                Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~9"
+                Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~8"
+                Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~6"
+                Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~20"
+                Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~2"
+                Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~21"
+                Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.852 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~13"
+                Weld "Weld" C0=-2.7,0,0|44.984,-0.007,-0.003 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Lock"
+                Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~14"
+                Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.852 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~10"
+                Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~17"
+                Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~15"
+                Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~4"
+                Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~5"
+                Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~19"
+                Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.852 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~18"
+                Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.852 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~12"
+                Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~3"
+                Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~7"
+                Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part~16"
+                Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/HingePart" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Lid/Part"
+            }
+            Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=324.8,14.826,174.801|135.026,-0.004,-179.977 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+                ClickDetector "ClickDetector" MaxActivationDistance=10
+            }
+            Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=323.781,15.767,174.801|-179.974,0.009,126.904 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=323.401,15.827,173.001|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=324.62,14.867,174.801|-179.986,0.004,143.169 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=323.781,15.767,173.001|-179.974,0.009,126.904 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=324.44,15.107,173.001|-179.986,0.004,143.169 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.021,15.767,173.001|-179.986,0.004,143.169 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=323.5,15.427,173.001|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.4,15.027,176.601|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=323.5,15.427,176.601|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=322.36,15.108,173.001|-179.988,0.024,-143.108 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=324.44,15.107,176.601|-179.986,0.004,143.169 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=322.18,14.868,174.801|-179.988,0.024,-143.108 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=322.48,15.268,174.801|-179.988,0.024,-143.108 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=323.781,15.767,176.601|-179.974,0.009,126.904 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=324.32,15.267,174.801|-179.986,0.004,143.169 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=323.401,16.027,174.801|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=323.401,15.827,176.601|-179.988,0.012,-179.97 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=322.36,15.108,176.601|-179.988,0.024,-143.108 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.021,15.767,176.601|-179.986,0.004,143.169 Color=#7C5C46 Material=Wood TopSurface=Smooth
+            Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=323.021,15.767,174.801|-179.986,0.004,143.169 Color=#D7C59A Material=Wood TopSurface=Smooth
+            Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=323.4,15.027,173.001|-179.988,0.012,-179.97 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        }
+        RemoteEvent "LidToggle"
+        Folder "Reward" {
+            Tool "Lantern" {
+                ModuleScript "Configurations" @src="Scripts/Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Configurations.luau"
+                UnionOperation "Flame" Size=0.05,0.05,0.05 CFrame=323.401,13.63,174.781|0,-90,0 CanCollide=false Color=#FFFF00 Material=Neon RenderFidelity=Precise Transparency=1 UsePartColor $_geo="1d2d9710e4c40ecd" {
+                    ParticleEmitter "ParticleEmitter" Size=0:0.1,1:0.1 Color=0:#FFE85C,1:#FD9418 Lifetime=0.2,0.2 LightEmission=1 LockedToPart Rate=40 RotSpeed=-20,20 Rotation=0,360 Speed=0.5,0.5 SpreadAngle=1,1 TextureContent="http://www.roblox.com/asset/?id=11601142" Transparency=0:1,0.138:0.626,0.501:0.478,0.799:0.632,1:1
+                }
+                MeshPart "Frame" Size=0.6,1.8,0.84 CFrame=323.401,14.126,174.781 CanCollide=false CollisionFidelity=Default Color=#8F4C2A Material=Marble RenderFidelity=Precise
+                MeshPart "Glass" Size=0.467,0.8,0.467 CFrame=323.401,13.9,174.781 CanCollide=false CollisionFidelity=Hull Color=#CC8E69 Material=Ice RenderFidelity=Precise Transparency=0.5 {
+                    PointLight "PointLight" Brightness=0.7 Color=#FFD164 Range=24 Shadows
+                }
+                Part "Handle" Size=0.2,0.2,0.2 Anchored BottomSurface=Smooth CFrame=323.401,15.18,174.781 CanCollide=false TopSurface=Smooth Transparency=1 {
+                    Weld "Weld" C0=0,-1.55,0|0,-90,0 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Handle" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Flame"
+                    Weld "Weld" C0=0,-1.053,0 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Handle" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Frame"
+                    Weld "Weld" C0=0,-1.65,0 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Handle" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Wick"
+                    Weld "Weld" C0=0,-1.28,0 Part0=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Handle" Part1=@"Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Glass"
+                }
+                Script "Script" @src="Scripts/Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Script.luau"
+                Part "Wick" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=323.401,13.53,174.781 CanCollide=false Color=#1B2A35 Material=Sand TopSurface=Smooth {
+                    CylinderMesh "Mesh" Scale=0.1,1,0.1
+                }
+            }
+        }
+        Script "Script" @src="Scripts/Workspace/Cabins/StarterCabin/Chest_Lantern/Script.luau" {
+            LocalScript "ChestLocalScript" @code=<<<
+                local player = game.Players.LocalPlayer
+                local mouse = player:GetMouse()
+
+                mouse.Button1Down:connect(function() -- if the player clicks then ...
+                	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+                		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+                	end
+                end)
+            >>> {
+                ObjectValue "Chest"
+            }
+        }
+    }
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=352.5,11.5,150.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=348,11,141.5|-180,0,-180 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=352.5,11.5,159.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=352.5,11,146|-180,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=352.5,11.5,168.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=334.5,11.5,141.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=343.5,11.5,141.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=352.5,11,155|-180,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=339,11,141.5|-180,0,-180 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=352.5,11,164|-180,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=352.5,11.5,141.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
+    SpawnLocation "SpawnLocation" Size=12,0.2,12 Anchored CFrame=335,12.913,181|-0.002,90,0 Color=#564236 Material=WoodPlanks TopSurface=Smooth {
+        Decal "Decal" Face=Top TextureContent="rbxasset://Textures/SpawnLocation.png"
+    }
+    Model "Table" {
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.6,13.813,174.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=3,0.4,3 Anchored BottomSurface=Smooth CFrame=348.5,15.013,173.5 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.6,13.813,172.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.4,13.813,172.4|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=347.4,13.813,174.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth
+    }
+}

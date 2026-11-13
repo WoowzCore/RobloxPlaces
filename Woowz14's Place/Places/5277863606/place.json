@@ -1,0 +1,29 @@
+{
+  "PlaceId": 5277863606,
+  "Created": "2026-11-13T13:37:25.5676630\u002B03:00",
+  "Services": [
+    "Workspace",
+    "Lighting",
+    "MaterialService",
+    "ReplicatedFirst",
+    "ReplicatedStorage",
+    "ServerScriptService",
+    "ServerStorage",
+    "StarterGui",
+    "StarterPack",
+    "StarterPlayer",
+    "Teams",
+    "SoundService"
+  ],
+  "Ignore": [
+    "Workspace/Camera"
+  ],
+  "AutoSplit": 500,
+  "ScriptExt": "luau",
+  "InlineLines": 8,
+  "Splits": {
+    "Workspace/Cabins": "Scene/Workspace/Cabins.bridge",
+    "Workspace/Foliage": "Scene/Workspace/Foliage.bridge",
+    "Workspace/Tools": "Scene/Workspace/Tools.bridge"
+  }
+}

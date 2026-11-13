@@ -1,0 +1,783 @@
+Model "Chest_Acceleration_Coil" PrimaryPart=@"Workspace/Tools/Chest_Acceleration_Coil/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=438.8,74.758,-87|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=437.5,74.758,-90.6|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=440.1,75.558,-88.8|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=437.5,75.558,-88.8|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.8,73.958,-90.6|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.8,75.558,-90.6|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=438.8,74.758,-90.6|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=440.1,74.758,-90.6|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=437.5,74.758,-87|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=440.1,73.958,-88.8|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=437.5,74.758,-88.8|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=440.1,74.758,-88.8|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=440.1,74.758,-87|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=438.8,73.958,-88.8|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.8,73.958,-87|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=437.5,73.958,-88.8|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.8,75.558,-87|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=437.5,75.758,-87|-179.988,0.005,-179.995 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=437.5,75.758,-90.6|-179.988,0.005,-179.995 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=437.5,75.758,-88.8|-179.988,0.005,-179.995 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/HingePoint"
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/HingePoint~2"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.968,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Acceleration_Coil/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=440.201,75.758,-88.8|135.026,0.02,-179.997 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=439.181,76.698,-88.8|-179.963,0.015,126.872 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=438.801,76.758,-90.6|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=440.02,75.798,-88.8|-179.979,0.013,143.139 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=439.181,76.698,-90.6|-179.963,0.015,126.872 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=439.841,76.038,-90.6|-179.979,0.013,143.139 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.421,76.698,-90.6|-179.979,0.013,143.139 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=438.901,76.358,-90.6|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.8,75.958,-87|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=438.9,76.358,-87|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=437.76,76.038,-90.6|-179.991,0.023,-143.133 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=439.841,76.038,-87|-179.979,0.013,143.139 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=437.58,75.798,-88.8|-179.991,0.023,-143.133 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=437.88,76.198,-88.8|-179.991,0.023,-143.133 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=439.181,76.698,-87|-179.963,0.015,126.872 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=439.72,76.198,-88.8|-179.979,0.013,143.139 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=438.801,76.958,-88.8|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=438.801,76.758,-87|-179.991,0.005,-179.998 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=437.76,76.038,-87|-179.991,0.023,-143.133 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.421,76.698,-87|-179.979,0.013,143.139 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=438.421,76.698,-88.8|-179.979,0.013,143.139 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=438.801,75.958,-90.6|-179.991,0.005,-179.998 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "Acceleration Coil" Grip=0,0,-1|-0.001,0.002,134.999 TextureContent="http://www.roblox.com/asset/?id=99170415" ToolTip="Speed Up!" {
+            Part "Handle" Size=1.3,1.3,2.4 Anchored BottomSurface=Smooth CFrame=438.65,74.458,-88.85|0.002,-90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
+                Sound "CoilSound" AudioContent="http://www.roblox.com/asset/?id=99173388" SoundId="http://www.roblox.com/asset/?id=99173388" Volume=1
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=99170547"
+            }
+            Script "Script" @src="Scripts/Workspace/Tools/Chest_Acceleration_Coil/Reward/Acceleration Coil/Script.luau"
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Acceleration_Coil/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}
+Model "Chest_Cyclotron" PrimaryPart=@"Workspace/Tools/Chest_Cyclotron/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-379.699,19.001,387.199|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-378.399,19,390.799|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-380.999,19.801,388.999|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-378.399,19.801,388.999|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,18.2,390.799|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,19.8,390.799|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-379.699,19,390.799|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-380.999,19,390.799|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-378.399,19.001,387.199|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-380.999,18.2,388.999|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=-378.399,19.001,388.999|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=-380.999,19,388.999|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-380.999,19.001,387.199|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=-379.699,18.201,388.999|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,18.201,387.199|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-378.399,18.201,388.999|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,19.801,387.199|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-378.399,20.001,387.199|0.005,-0.012,0.005 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-378.399,20.001,390.799|0.005,-0.012,0.005 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=-378.399,20.001,388.999|0.005,-0.012,0.005 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/HingePoint~2"
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/HingePoint"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.968,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.838 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Cyclotron/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Cyclotron/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-381.099,20.001,388.999|44.987,-0.012,0.003 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=-380.079,20.941,388.999|-0.002,-0.009,-53.131 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-379.699,21,390.799|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-380.919,20.041,388.999|0.001,-0.002,-36.856 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-380.079,20.94,390.799|-0.002,-0.009,-53.131 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-380.739,20.28,390.799|0.001,-0.002,-36.856 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.319,20.94,390.799|0.001,-0.002,-36.856 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-379.799,20.6,390.799|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,20.201,387.199|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-379.799,20.601,387.199|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-378.659,20.28,390.799|0.007,-0.014,36.86 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-380.739,20.281,387.199|0.001,-0.002,-36.856 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-378.479,20.041,388.999|0.007,-0.014,36.86 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=-378.779,20.441,388.999|0.007,-0.014,36.86 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-380.079,20.941,387.199|-0.002,-0.009,-53.131 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=-380.619,20.441,388.999|0.001,-0.002,-36.856 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=-379.699,21.201,389|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-379.699,21.001,387.199|0.005,-0.012,0.005 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-378.659,20.281,387.199|0.007,-0.014,36.86 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.319,20.941,387.199|0.001,-0.002,-36.856 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=-379.319,20.941,389|0.001,-0.002,-36.856 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-379.699,20.2,390.799|0.005,-0.012,0.005 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "Cyclotron" Grip=0,0.5,0 TextureContent="http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=101081225" ToolTip="Speeds up time!" {
+            RemoteEvent "ChangeTime"
+            Part "Handle" Size=1,1,1 Anchored CFrame=-379.649,18.901,388.949|0.007,90,0 CanCollide=false {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=101060412    " MeshType=FileMesh Scale=2,2,2 TextureContent="http://www.roblox.com/asset/?id=101060383  "
+                ParticleEmitter "ParticleEmitter" Size=0:0.062,1:0.313:0.25 Lifetime=0.5,1 LightEmission=1 Rate=0 RotSpeed=-30,30 Rotation=-90,90 Speed=3,3 SpreadAngle=180,180 Transparency=0:1,0.043:0.306,0.665:0.1,0.871:0.444,1:1 ZOffset=2
+                PointLight "PointLight" Brightness=0 Color=#FFFF00 Range=0 Shadows
+            }
+            LocalScript "LocalScript" @src="Scripts/Workspace/Tools/Chest_Cyclotron/Reward/Cyclotron/LocalScript.luau"
+            Script "Script" @code=<<<
+                local event = script.Parent.ChangeTime
+
+                event.OnServerEvent:Connect(function(player, newTime)
+                	game.Lighting:SetMinutesAfterMidnight(newTime)
+                end)
+            >>>
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Cyclotron/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}
+Model "Chest_Firefly" PrimaryPart=@"Workspace/Tools/Chest_Firefly/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=102.05,62.437,495.85|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=98.45,62.437,497.15|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.237,494.549|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.237,497.15|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=98.45,61.637,495.85|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=98.449,63.237,495.85|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=98.45,62.437,495.85|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=98.45,62.437,494.55|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=102.05,62.437,497.15|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,61.637,494.55|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=100.25,62.437,497.15|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=100.25,62.437,494.55|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=102.05,62.437,494.55|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=100.25,61.637,495.85|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=102.05,61.637,495.85|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,61.637,497.15|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=102.05,63.237,495.85|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=102.049,63.437,497.15|-0.012,-90,0 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=98.449,63.438,497.149|-0.012,-90,0 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=100.249,63.437,497.15|-0.012,-90,0 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/HingePoint~2"
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/HingePoint"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.976,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Firefly/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Firefly/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=100.25,63.437,494.449|90.011,-45.015,90.014 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=100.25,64.377,495.469|53.121,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=98.45,64.437,495.849|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.477,494.629|36.859,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=98.45,64.377,495.469|53.121,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=98.45,63.717,494.809|36.859,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=98.45,64.377,496.229|36.859,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=98.45,64.037,495.749|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=102.05,63.637,495.849|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=102.05,64.037,495.749|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=98.45,63.717,496.889|-36.882,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=102.05,63.717,494.809|36.859,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.477,497.069|-36.882,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.877,496.769|-36.882,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=102.05,64.377,495.469|53.121,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=100.25,63.877,494.929|36.859,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=100.25,64.637,495.849|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=102.05,64.437,495.849|-0.01,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=102.05,63.717,496.889|-36.882,-90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=102.05,64.377,496.229|36.859,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=100.25,64.377,496.229|36.859,-90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=98.45,63.637,495.849|-0.01,-90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "Firefly Jar" TextureContent="http://www.roblox.com/asset/?id=115341569" ToolTip="Release some fireflies into the night!" {
+            Model "FireFlySwarm" PrimaryPart=@"Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/Center/CenterPart" {
+                Model "Center" {
+                    Part "CenterPart" Size=2,2,2 Anchored BottomSurface=Smooth CFrame=99.999,62.637,495.8|-0.012,-0.002,-0.002 CanCollide=false Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1
+                }
+                Configuration "Configuration" {
+                    IntValue "Amount" Value=6
+                    NumberValue "Brightness" Value=1
+                    Color3Value "Color" Value=#CCFF11
+                    NumberValue "FlyRange" Value=20
+                    IntValue "GlowRange" Value=6
+                    NumberValue "GlowSpeed" Value=1
+                    NumberValue "GlowTime" Value=5
+                    NumberValue "NotGlowTime" Value=3
+                }
+                Part "FireFly" Size=0.2,0.2,0.2 BottomSurface=Smooth CFrame=99.999,62.297,495.8|-0.012,-0.002,-0.002 CanCollide=false Color=#111111 TopSurface=Smooth {
+                    BodyVelocity "BodyVelocity" MaxForce=40000,40000,40000
+                    Script "GlowScript" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/FireFly/GlowScript.luau"
+                    SpecialMesh "Mesh" MeshType=Sphere Scale=0.6,0.6,0.6
+                    Script "MoveScript" @code=<<<
+                        -- Adjust the movement of the firefly, allowing them to roam around.
+
+                        local Fly = script.Parent
+
+                        while true do -- Alter the flies movement direction every once a while to make it roam around
+                        	Fly.BodyVelocity.velocity = Vector3.new(math.random(-20,20)*0.1,math.random(-20,20)*0.1,math.random(-20,20)*0.1)
+                        	wait(math.random(10,25)*0.1)
+                        end
+                    >>>
+                    PointLight "PointLight" Brightness=0 Enabled=false Range=0 Shadows
+                    Script "RemoveScript" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/FireFly/RemoveScript.luau"
+                }
+                Script "InitSpawnScript" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/InitSpawnScript.luau"
+                Script "ReadMe" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/ReadMe.luau"
+                Script "SpawnScript" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/SpawnScript.luau"
+            }
+            Part "Handle" Size=2,1,2 Anchored CFrame=99.999,62.537,495.8|-0.012,-0.002,-0.002 CanCollide=false {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=115289510" MeshType=FileMesh TextureContent="http://www.roblox.com/asset?id=115340918"
+            }
+            Script "Script" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/Script.luau"
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Firefly/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}
+Model "Chest_Gravity_Coil" PrimaryPart=@"Workspace/Tools/Chest_Gravity_Coil/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=304.05,117.423,-478.45|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=307.65,117.424,-479.75|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.223,-477.15|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.224,-479.75|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=307.65,116.623,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=307.65,118.223,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=307.65,117.423,-478.45|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=307.65,117.423,-477.15|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=304.05,117.424,-479.75|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,116.623,-477.15|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=305.85,117.424,-479.75|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=305.85,117.423,-477.15|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=304.05,117.423,-477.15|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=305.85,116.623,-478.45|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=304.05,116.623,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,116.623,-479.75|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=304.05,118.223,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=304.05,118.423,-479.75|0.012,90,0 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=307.65,118.424,-479.75|0.012,90,0 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=305.85,118.424,-479.75|0.012,90,0 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/HingePoint~2"
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/HingePoint"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.976,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Gravity_Coil/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Gravity_Coil/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=305.85,118.423,-477.05|89.998,45.013,-89.992 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=305.85,119.363,-478.07|-53.128,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=307.65,119.423,-478.449|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.463,-477.23|-36.86,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=307.65,119.363,-478.07|-53.128,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=307.65,118.703,-477.41|-36.86,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=307.65,119.363,-478.83|-36.86,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=307.65,119.023,-478.35|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=304.05,118.623,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=304.05,119.023,-478.35|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=307.65,118.703,-479.49|36.881,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=304.05,118.703,-477.41|-36.86,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.464,-479.67|36.881,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.863,-479.37|36.881,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=304.05,119.363,-478.07|-53.128,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=305.85,118.863,-477.53|-36.86,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=305.85,119.623,-478.449|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=304.05,119.423,-478.45|0.01,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=304.05,118.704,-479.49|36.881,90,0 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=304.05,119.363,-478.83|-36.86,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=305.85,119.363,-478.83|-36.86,90,0 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=307.65,118.623,-478.45|0.01,90,0 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "GravityCoil" Grip=0,0,1|-180,0,-180 TextureContent="http://www.roblox.com/asset/?id=16619617" ToolTip="Light as a feather!" {
+            Part "Handle" Size=1,1.2,2 Anchored BottomSurface=Smooth CFrame=305.8,117.423,-478.4|0.009,-0.002,0.002 CanCollide=false Color=#CDCDCD TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=16606141"
+            }
+            Script "Script" @src="Scripts/Workspace/Tools/Chest_Gravity_Coil/Reward/GravityCoil/Script.luau"
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Gravity_Coil/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}
+Model "Chest_Invisibility_Cloak" PrimaryPart=@"Workspace/Tools/Chest_Invisibility_Cloak/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=199.6,-26.659,-356.199|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=198.3,-26.659,-359.799|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=200.9,-25.86,-357.999|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=198.3,-25.859,-357.999|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-27.459,-359.799|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-25.859,-359.799|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=199.6,-26.659,-359.799|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=200.9,-26.66,-359.799|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=198.3,-26.659,-356.199|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=200.9,-27.46,-357.999|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=198.3,-26.659,-357.999|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=200.9,-26.66,-357.999|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=200.9,-26.66,-356.199|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=199.6,-27.459,-357.999|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-27.459,-356.199|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=198.3,-27.459,-357.999|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-25.859,-356.199|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=198.3,-25.659,-356.199|-179.991,0.009,-179.981 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=198.3,-25.659,-359.799|-179.991,0.009,-179.981 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=198.3,-25.659,-357.999|-179.991,0.009,-179.981 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/HingePoint~2"
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/HingePoint"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.976,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Invisibility_Cloak/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=201,-25.66,-357.999|135.007,0.003,-179.985 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=199.98,-24.719,-357.999|-179.98,0.012,126.888 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=199.6,-24.659,-359.799|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=200.82,-25.62,-357.999|-179.988,-0.002,143.155 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=199.98,-24.719,-359.799|-179.98,0.012,126.888 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=200.64,-25.38,-359.799|-179.988,-0.002,143.155 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.22,-24.719,-359.799|-179.988,-0.002,143.155 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=199.7,-25.059,-359.799|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-25.459,-356.199|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=199.7,-25.059,-356.199|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=198.56,-25.379,-359.799|-179.992,0.015,-143.117 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=200.64,-25.379,-356.199|-179.988,-0.002,143.155 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=198.38,-25.619,-357.999|-179.992,0.015,-143.117 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=198.68,-25.219,-357.999|-179.992,0.015,-143.117 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=199.98,-24.719,-356.199|-179.98,0.012,126.888 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=200.52,-25.219,-357.999|-179.988,-0.002,143.155 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=199.6,-24.459,-357.999|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=199.6,-24.659,-356.199|-179.995,0.009,-179.984 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=198.56,-25.379,-356.199|-179.992,0.015,-143.117 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.22,-24.719,-356.199|-179.988,-0.002,143.155 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=199.22,-24.719,-357.999|-179.988,-0.002,143.155 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=199.6,-25.459,-359.799|-179.995,0.009,-179.984 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "InvisibilityCloak" Grip=1.5,0.65,-1.9 TextureContent="http://www.roblox.com/asset/?id=129414426" ToolTip="Hide from your foes!" {
+            BoolValue "CanActivate" Value
+            Part "Handle" Size=1.3,1.3,2.4 Anchored BottomSurface=Smooth CFrame=199.65,-26.009,-357.999|-0.002,90,0 CanCollide=false TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=114046169" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=129317782 "
+                Sound "WooshEnd" AudioContent="http://www.roblox.com/asset/?id=129425664" SoundId="http://www.roblox.com/asset/?id=129425664"
+                Sound "WooshStart" AudioContent="http://www.roblox.com/asset/?id=129425637" SoundId="http://www.roblox.com/asset/?id=129425637"
+            }
+            Script "Script" @src="Scripts/Workspace/Tools/Chest_Invisibility_Cloak/Reward/InvisibilityCloak/Script.luau"
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Invisibility_Cloak/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}
+Model "Chest_Teleport" PrimaryPart=@"Workspace/Tools/Chest_Teleport/Base/Part~14" {
+    Model "Base" {
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-327.042,21.584,-374.437|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-328.668,21.585,-370.972|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-329.234,22.384,-374.083|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-327.396,22.385,-372.245|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-329.587,20.784,-371.891|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-329.588,22.384,-371.891|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,1.8,0.2 Anchored BottomSurface=Smooth CFrame=-329.588,21.584,-371.891|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-330.507,21.584,-372.81|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-326.123,21.585,-373.518|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-329.234,20.784,-374.083|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=-327.396,21.585,-372.245|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1.8,3.8 Anchored BottomSurface=Smooth CFrame=-329.234,21.584,-374.083|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,2,0.4 Anchored BottomSurface=Smooth CFrame=-327.961,21.584,-375.356|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.8,0.2,3.8 Anchored BottomSurface=Smooth CFrame=-328.315,20.784,-373.164|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-327.042,20.784,-374.437|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-327.395,20.785,-372.245|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-327.042,22.384,-374.437|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    Configuration "Configurations" {
+        BoolValue "StaticObject"
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-326.123,22.585,-373.518|-0.017,-45.011,0.01 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Part "HingePoint" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-328.669,22.585,-370.972|-0.017,-45.011,0.01 CanCollide=false Color=#635F62 Material=Metal TopSurface=Smooth Transparency=1 {
+        BodyGyro "BodyGyro" MaxTorque=0,0,0
+        BodyPosition "BodyPosition" MaxForce=0,0,0
+    }
+    Model "Lid" {
+        Part "HingePart" Size=0.4,0.4,3.2 Anchored BackSurface=Hinge BottomSurface=Smooth CFrame=-327.396,22.585,-372.245|-0.017,-45.011,0.01 CanCollide=false Color=#635F62 FrontSurface=Hinge Material=Metal TopSurface=Smooth Transparency=1 {
+            BodyGyro "BodyGyro" MaxTorque=0,0,0
+            BodyPosition "BodyPosition" MaxForce=0,0,0
+            Rotate "Rotate" C0=0,0,-1.6|-180,0,-180 C1=0,0,0.2|-180,0,-180 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/HingePoint"
+            Rotate "Rotate" C0=0,0,1.6 C1=0,0,-0.2 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/HingePoint~2"
+            Weld "Weld" C0=-2.34,0.28,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~11"
+            Weld "Weld" C0=-1.4,0.6,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~9"
+            Weld "Weld" C0=-1.3,0.2,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~8"
+            Weld "Weld" C0=-0.92,0.94,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~6"
+            Weld "Weld" C0=-0.92,0.94,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~20"
+            Weld "Weld" C0=-1.3,1,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~2"
+            Weld "Weld" C0=-1.3,0.2,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~21"
+            Weld "Weld" C0=-0.38,0.44,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~13"
+            Weld "Weld" C0=-2.7,0,0|44.976,-0.007,-0.003 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Lock"
+            Weld "Weld" C0=-1.68,0.94,-1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~14"
+            Weld "Weld" C0=-0.26,0.28,1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~10"
+            Weld "Weld" C0=-1.3,1,-1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~17"
+            Weld "Weld" C0=-2.22,0.44,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~15"
+            Weld "Weld" C0=-1.68,0.94,1.8|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~4"
+            Weld "Weld" C0=-2.34,0.28,1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~5"
+            Weld "Weld" C0=-0.92,0.94,-1.8|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~19"
+            Weld "Weld" C0=-0.26,0.28,-1.8|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~18"
+            Weld "Weld" C0=-0.08,0.04,0|-0.004,-0.003,36.845 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~12"
+            Weld "Weld" C0=-2.52,0.04,0|-0.006,0,-36.868 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~3"
+            Weld "Weld" C0=-1.4,0.6,1.8|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~7"
+            Weld "Weld" C0=-1.3,1.2,0|-0.002,-0.002,-0.002 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part~16"
+            Weld "Weld" C0=-1.68,0.94,0|-0.009,-0.005,-53.139 Part0=@"Workspace/Tools/Chest_Teleport/Lid/HingePart" Part1=@"Workspace/Tools/Chest_Teleport/Lid/Part"
+        }
+        Part "Lock" Size=0.4,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-329.305,22.584,-374.154|54.724,-30.01,35.271 CanCollide=false Color=#635F62 Material=Wood TopSurface=Smooth {
+            ClickDetector "ClickDetector" MaxActivationDistance=10
+        }
+        Part "Part" Size=0.2,1,3.2 Anchored BottomSurface=Smooth CFrame=-328.584,23.524,-373.433|-0.039,-45.016,-53.141 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-329.588,23.584,-371.892|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-329.178,22.624,-374.027|-0.029,-45.003,-36.863 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-329.857,23.524,-372.16|-0.039,-45.016,-53.141 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-330.323,22.864,-372.627|-0.029,-45.003,-36.863 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-329.319,23.524,-371.623|-0.029,-45.003,-36.863 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-329.659,23.184,-371.962|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-327.042,22.784,-374.437|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-327.113,23.184,-374.508|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-328.852,22.864,-371.156|-0.017,-45.024,36.879 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-327.778,22.864,-375.173|-0.029,-45.003,-36.863 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,0.4,3.2 Anchored BottomSurface=Smooth CFrame=-327.452,22.625,-372.302|-0.017,-45.024,36.879 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=-327.665,23.024,-372.514|-0.017,-45.024,36.879 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-327.311,23.524,-374.706|-0.039,-45.016,-53.141 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.6,3.2 Anchored BottomSurface=Smooth CFrame=-328.966,23.024,-373.815|-0.029,-45.003,-36.863 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,4 Anchored BottomSurface=Smooth CFrame=-328.315,23.784,-373.165|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.6,0.4,0.2 Anchored BottomSurface=Smooth CFrame=-327.042,23.584,-374.437|-0.009,-45.011,0.009 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1,0.4 Anchored BottomSurface=Smooth CFrame=-326.307,22.865,-373.702|-0.017,-45.024,36.879 CanCollide=false Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-326.774,23.524,-374.169|-0.029,-45.003,-36.863 Color=#7C5C46 Material=Wood TopSurface=Smooth
+        Part "Part" Size=1,0.2,3.2 Anchored BottomSurface=Smooth CFrame=-328.047,23.524,-372.896|-0.029,-45.003,-36.863 Color=#D7C59A Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=-329.588,22.784,-371.892|-0.009,-45.011,0.009 Color=#7C5C46 Material=Wood TopSurface=Smooth
+    }
+    RemoteEvent "LidToggle"
+    Folder "Reward" {
+        Tool "Teleport" Grip=-0.5,-0.5,-0.1|168.579,-0.019,-179.933 TextureContent="http://www.roblox.com/asset/?id=15666388" ToolTip="Results not guaranteed" {
+            Part "Handle" Size=1,1.2,1 Anchored BottomSurface=Smooth CFrame=-328.386,21.584,-373.305|-0.007,-45.011,0.014 CanCollide=false Color=#CDCDCD TopSurface=Smooth {
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=11821197" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=11820196"
+                Sound "OpenSound" AudioContent="http://www.roblox.com/asset/?id=15666462" SoundId="http://www.roblox.com/asset/?id=15666462"
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,-0.4,0.934|-179.978,86.002,-90.022
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0,0.133|-93.975,0.002,-180
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,-0.934,0.4|-89.693,86.013,-90.319
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,-0.373,-0.533|-86.005,0,-0.002
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=-0.533,0,-0.4|-90.013,4,89.981
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,-0.4,-0.133|-0.133,86.002,-89.877
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0,-0.934|-86.005,0,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0.133,0.4|89.814,86.008,-89.822
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0,-0.533|-86.025,0,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.533,0,-0.4|-0.002,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.373,-0.533|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0.533,0.373,0|-90.002,-3.997,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.934|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0.533,0,-0.4|-90.002,-3.997,-90.002
+                Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0,0|-90.002,-3.997,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0,-0.4|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.533|-0.051,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0.373,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|176.251,2.932,91.763 C1=0,0,0|176.251,2.932,91.763
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.995 C1=0,0,0|-179.998,0.002,-179.995
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.934,0.4|-90.002,0.047,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.934|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.373,-0.533|-0.051,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,-0.133|-0.002,0.049,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.133,0.4|89.998,0.033,-90.016
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.533,0,-0.4|-0.002,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.133|-179.949,0.002,-179.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.934,0.4|-90.003,0.068,-90.019
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,0.934|-180,0.052,-90.002
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,0.934|-180,0.047,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,-0.133|-0.002,0.045,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.133|-179.953,0.002,-179.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,-0.133|-0.002,0.045,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.133,0.4|89.996,0.047,-89.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.4,0.934|-180,0.047,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.373,-0.533|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,-0.934,0.4|-90.002,0.047,-90.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=-0.533,0,-0.4|-0.002,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.934|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0.373,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0,-0.4|0,-90,0
+                Weld "Weld" C0=0,0,0|-90.004,-0.058,-90.019 C1=0,0,0|-90.004,-0.058,-90.019
+                Weld "Weld" C0=0,0,0|-0.002,90,0 C1=0,0,0|-0.002,90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.533|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-90.01,-4.775,-90.021 C1=0,0,0|-90.01,-4.775,-90.021
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0.133|-179.953,0.002,-179.998
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,0,0|-90.001,3.645,-90.018
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,0,-0.533|-93.626,0,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0,-0.4|0,-90,0
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,0,-0.934|-93.626,0,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0,-0.533|-0.047,-0.002,-0.002
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0,0.133,0.4|89.996,0.047,-89.998
+                Weld "Weld" C0=0,0,0|0,-90,0 C1=0.533,0.373,0|0,-90,0
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0.533,0,-0.4|-90.001,3.645,-90.018
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=-0.533,0,-0.4|-90.016,-3.627,89.982
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,-0.934,0.4|89.609,86.385,90.379
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,0.133,0.4|-89.843,86.382,89.833
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0.533,0.373,0|-90.005,3.645,-90.021
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,-0.373,-0.533|-93.626,0,-0.002
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,-0.4,-0.133|179.889,86.373,90.1
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,-0.4,0.934|0.169,86.371,89.83
+                Weld "Weld" C0=0,0,0|-90.001,3.645,-90.018 C1=0,0,0.133|-86.375,0.002,180
+                Weld "Weld" C0=0,0,0|-179.998,0.002,-179.998 C1=0,0,0|-179.998,0.002,-179.998
+            }
+            LocalScript "LocalScript" @src="Scripts/Workspace/Tools/Chest_Teleport/Reward/Teleport/LocalScript.luau"
+            Script "Script" @code=<<<
+                script.Parent.TeleportEvent.OnServerEvent:Connect(function(player, cframe)
+                	player.character.HumanoidRootPart.CFrame = player.character.HumanoidRootPart.CFrame + cframe
+                end)
+            >>>
+            RemoteEvent "TeleportEvent"
+        }
+    }
+    Script "Script" @src="Scripts/Workspace/Tools/Chest_Teleport/Script.luau" {
+        LocalScript "ChestLocalScript" @code=<<<
+            local player = game.Players.LocalPlayer
+            local mouse = player:GetMouse()
+
+            mouse.Button1Down:connect(function() -- if the player clicks then ...
+            	if script.Chest.Value and mouse.Target and mouse.Target.Name == "Lock" and mouse.Target:IsDescendantOf(script.Chest.Value) then -- if they click the chests lock
+            		script.Chest.Value.LidToggle:FireServer() -- fire an event that the script will use
+            	end
+            end)
+        >>> {
+            ObjectValue "Chest"
+        }
+    }
+}

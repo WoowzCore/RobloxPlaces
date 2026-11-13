@@ -1,0 +1,97 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Lighting "Lighting"  [Scene/Lighting.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Folder "Billboards"
+    Model "Billboard"  (+20)
+    Model "Billboard"  (+20)
+    Model "Billboard"  (+20)
+    Model "Billboard"  (+20)
+    Model "Billboard"  (+17)
+    Model "Billboard"  (+20)
+  Folder "Cabins"  [Scene/Workspace/Cabins.bridge]
+    Folder "Cabin1"  (+132)
+    Folder "Cabin2"  (+132)
+    Folder "StarterCabin"  (+243)
+  Folder "ConstructionZone"
+    Folder "Bridge"  (+13)
+    Folder "BuildingMaterials"  (+21)
+    Folder "IncompleteHouse"  (+52)
+    Folder "Props"  (+73)
+    Folder "Room"  (+63)
+    Folder "Signs"  (+32)
+    Folder "TwoFloorHouse"  (+37)
+    Folder "Walls"  (+45)
+  Folder "Foliage"  [Scene/Workspace/Foliage.bridge]
+    Model "Bush"  (+4)
+    Model "Bush"  (+4)
+    Model "Bush"  (+3)
+    Model "Bush"  (+4)
+    Model "Bush"  (+3)
+    Model "Bush"  (+3)
+    Model "Bush"  (+4)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Maple Tree"  (+17)
+    Model "Maple Tree"  (+13)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    Model "Pine Tree"  (+8)
+    … ещё 29
+  Folder "Props"
+    Folder "Fence"  (+13)
+    Model "Simple Bridge"  (+23)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+    Model "Torch"  (+4)
+  Terrain "Terrain"
+  Folder "Tools"  [Scene/Workspace/Tools.bridge]
+    Model "Chest_Acceleration_Coil"  (+87)
+    Model "Chest_Cyclotron"  (+90)
+    Model "Chest_Firefly"  (+108)
+    Model "Chest_Gravity_Coil"  (+86)
+    Model "Chest_Invisibility_Cloak"  (+89)
+    Model "Chest_Teleport"  (+162)

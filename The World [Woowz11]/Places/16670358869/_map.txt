@@ -1,0 +1,156 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Folder "Base"
+    ModuleScript "Base"
+    Script "FromConfigurator"
+    Script "Generator"
+    PackageLink "PackageLink"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    Folder "Base"  (+3)
+    Configuration "Configuration"  (+3)
+    LocalScript "Start"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Part "Baseplate"
+  MeshPart "Bed"
+  Camera "Camera"
+  MeshPart "Carpet"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "Dummy"
+    Part "Head"  (+2)
+    Humanoid "Humanoid"
+    Part "HumanoidRootPart"  (+1)
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Right Arm"
+    Part "Right Leg"
+    Part "Torso"  (+5)
+  MeshPart "Handle"
+  Model "My Nightstand"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  Model "Old Books"
+    Model "Model"  (+30)
+    Model "Model"  (+25)
+  MeshPart "Old book"
+  MeshPart "Open book"
+  Part "Part"
+  Part "Part"
+  MeshPart "Pencil"
+  Part "Sleep"
+    ProximityPrompt "ProximityPrompt"
+  Model "Small House"  [Scene/Workspace/Small House.bridge]
+    MeshPart "Curtain"  (+3)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+1)
+    MeshPart "Curtain"  (+3)
+    MeshPart "Curtain"  (+3)
+    MeshPart "Curtain"  (+3)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+1)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+1)
+    MeshPart "Curtain"  (+1)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+3)
+    MeshPart "Curtain"  (+5)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+2)
+    MeshPart "Curtain"  (+2)
+    Model "DOOR"  (+23)
+    Model "DOOR2"  (+20)
+    Part "Kitchen Floor / Tiles 2"  (+11)
+    Model "Model"  (+3)
+    Model "Model"  (+11)
+    Model "Model"  (+7)
+    Model "Model"  (+19)
+    Model "Model"  (+19)
+    Model "Model"  (+5)
+    Model "Model"  (+29)
+    Model "Model"  (+3)
+    Model "Model"  (+3)
+    Model "Model"  (+10)
+    Model "Model"  (+6)
+    Model "Model"  (+6)
+    Model "Model"  (+7)
+    Model "Model"  (+6)
+    Model "Model"  (+6)
+    Model "Model"  (+6)
+    Model "Model"  (+3)
+    Model "Model"  (+13)
+    … ещё 299
+  SpawnLocation "SpawnLocation"
+  SpawnLocation "SpawnLocation"
+  SpawnLocation "SpawnLocation"
+  Model "TableLamp"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+3)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Terrain "Terrain"
+  Part "sound"
+    Sound "Sound"

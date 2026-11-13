@@ -1,0 +1,130 @@
+ServerScriptService "ServerScriptService" {
+    Folder "Cnovidenie_Pack_Server" {
+        Script "LoadMap" @code=<<<
+            for _, p in pairs(workspace:GetDescendants()) do
+            	if p:FindFirstChild("Chance") then
+            		if math.random(0,100)>=p:FindFirstChild("Chance").Value then
+            			p:Destroy()
+            		end
+            	end
+            end
+        >>>
+        Script "LoadPlayer" @src="Scripts/ServerScriptService/Cnovidenie_Pack_Server/LoadPlayer.luau"
+        Model "StarterCharacter" {
+            MeshPart "Head" Size=0.685,1.103,0.762 CFrame=-12.234,5.719,-7.794 CastShadow=false Color=#000000 RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "FaceCenterAttachment" CFrame=0,-0.019,0.042
+                Attachment "FaceFrontAttachment" CFrame=0,-0.019,-0.409
+                Attachment "HairAttachment" CFrame=0,0.531,0.041
+                Attachment "HatAttachment" CFrame=0,0.531,0.041
+                Motor6D "Neck" C0=0,0.676,0.045 C1=0,-0.469,0.041 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/UpperTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/Head"
+                Attachment "NeckRigAttachment" CFrame=0,-0.469,0.041
+            }
+            Humanoid "Humanoid" AutoJumpEnabled=false BreakJointsOnDeath=false HealthDisplayDistance=0 HipHeight=2.8 NameDisplayDistance=0 RequiresNeck=false RigType=R15 WalkSpeed=13
+            Part "HumanoidRootPart" Size=2,2,1 CFrame=-12.234,3.793,-8.933 Color=#E5E4DF Transparency=1 {
+                Vector3Value "OriginalSize" Value=2,2,1
+                Attachment "RootRigAttachment" CFrame=0,-0.35,0 {
+                    Vector3Value "OriginalPosition" Value=0,-0.35,0
+                }
+            }
+            MeshPart "LeftFoot" Size=0.412,0.425,0.873 CFrame=-12.564,0.212,-7.967 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftAnkle" C0=0.014,-0.744,-0.033 C1=0.005,0.199,0.214 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftLowerLeg" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftFoot"
+                Attachment "LeftAnkleRigAttachment" CFrame=0.005,0.199,0.214
+                Attachment "LeftFootAttachment" CFrame=0.004,-0.212,0.214
+            }
+            MeshPart "LeftHand" Size=0.36,0.737,0.305 CFrame=-13.267,2.76,-7.823 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftGripAttachment" CFrame=0.031,0.078,0.07|0,0,90
+                Motor6D "LeftWrist" C0=-0.036,-0.454,-0.026 C1=0.032,0.353,0.071 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftLowerArm" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftHand"
+                Attachment "LeftWristRigAttachment" CFrame=0.032,0.353,0.071
+            }
+            MeshPart "LeftLowerArm" Size=0.419,1.155,0.244 CFrame=-13.198,3.567,-7.727 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftElbow" C0=-0.202,-0.543,-0.041 C1=-0.036,0.469,-0.026 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftUpperArm" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftLowerArm"
+                Attachment "LeftElbowRigAttachment" CFrame=-0.036,0.469,-0.026
+                Attachment "LeftWristRigAttachment" CFrame=-0.036,-0.454,-0.026
+            }
+            MeshPart "LeftLowerLeg" Size=0.473,1.808,0.496 CFrame=-12.573,1.156,-7.719 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftAnkleRigAttachment" CFrame=0.014,-0.744,-0.033
+                Motor6D "LeftKnee" C0=-0.001,-0.63,0.091 C1=0.014,0.856,-0.033 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftUpperLeg" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftLowerLeg"
+                Attachment "LeftKneeRigAttachment" CFrame=0.014,0.856,-0.033
+            }
+            MeshPart "LeftUpperArm" Size=0.532,1.265,0.492 CFrame=-13.032,4.579,-7.712 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftElbowRigAttachment" CFrame=-0.202,-0.543,-0.041
+                Motor6D "LeftShoulder" C0=-0.67,0.482,0.046 C1=0.128,0.476,-0.041 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/UpperTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftUpperArm"
+                Attachment "LeftShoulderAttachment" CFrame=-0.203,0.742,-0.041|0,0,90
+                Attachment "LeftShoulderRigAttachment" CFrame=0.128,0.476,-0.041
+            }
+            MeshPart "LeftUpperLeg" Size=0.61,1.769,0.587 CFrame=-12.558,2.642,-7.844 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftHip" C0=-0.325,-0.105,0.077 C1=-0.001,0.801,0.091 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LowerTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LeftUpperLeg"
+                Attachment "LeftHipRigAttachment" CFrame=-0.001,0.801,0.091
+                Attachment "LeftKneeRigAttachment" CFrame=-0.001,-0.63,0.091
+            }
+            MeshPart "LowerTorso" Size=1.179,1.102,0.555 CFrame=-12.234,3.548,-7.83 CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftHipRigAttachment" CFrame=-0.325,-0.105,0.077
+                Attachment "RightHipRigAttachment" CFrame=0.325,-0.105,0.077
+                Motor6D "Root" C0=0,-0.35,0 C1=0,-0.105,-1.103 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/HumanoidRootPart" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LowerTorso"
+                Attachment "RootRigAttachment" CFrame=0,-0.105,0.077
+                Attachment "WaistBackAttachment" CFrame=0,-0.105,0.412
+                Attachment "WaistCenterAttachment" CFrame=0,-0.105,0.077
+                Attachment "WaistFrontAttachment" CFrame=0,-0.105,-0.258
+                Attachment "WaistRigAttachment" CFrame=0,0.384,0.077
+            }
+            MeshPart "RightFoot" Size=0.412,0.425,0.873 CFrame=-11.905,0.212,-7.967 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightAnkle" C0=-0.014,-0.744,-0.033 C1=-0.005,0.199,0.214 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightLowerLeg" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightFoot"
+                Attachment "RightAnkleRigAttachment" CFrame=-0.005,0.199,0.214
+                Attachment "RightFootAttachment" CFrame=-0.004,-0.212,0.214|-0.001,0,0
+            }
+            MeshPart "RightHand" Size=0.36,0.737,0.305 CFrame=-11.202,2.76,-7.823 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightGripAttachment" CFrame=-0.031,0.078,0.07|0,0,-90
+                Motor6D "RightWrist" C0=0.036,-0.454,-0.026 C1=-0.032,0.353,0.07 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightLowerArm" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightHand"
+                Attachment "RightWristRigAttachment" CFrame=-0.032,0.353,0.07
+            }
+            MeshPart "RightLowerArm" Size=0.419,1.155,0.244 CFrame=-11.271,3.567,-7.727 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightElbow" C0=0.202,-0.543,-0.041 C1=0.036,0.469,-0.026 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightUpperArm" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightLowerArm"
+                Attachment "RightElbowRigAttachment" CFrame=0.036,0.469,-0.026
+                Attachment "RightWristRigAttachment" CFrame=0.036,-0.454,-0.026
+            }
+            MeshPart "RightLowerLeg" Size=0.473,1.808,0.496 CFrame=-11.896,1.156,-7.719 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightAnkleRigAttachment" CFrame=-0.014,-0.744,-0.033
+                Motor6D "RightKnee" C0=0.001,-0.63,0.091 C1=-0.014,0.856,-0.033 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightUpperLeg" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightLowerLeg"
+                Attachment "RightKneeRigAttachment" CFrame=-0.014,0.856,-0.033
+            }
+            MeshPart "RightUpperArm" Size=0.532,1.265,0.492 CFrame=-11.437,4.579,-7.712 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightElbowRigAttachment" CFrame=0.202,-0.543,-0.041
+                Motor6D "RightShoulder" C0=0.67,0.482,0.045 C1=-0.128,0.476,-0.041 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/UpperTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightUpperArm"
+                Attachment "RightShoulderAttachment" CFrame=0.203,0.742,-0.041|0,0,-90
+                Attachment "RightShoulderRigAttachment" CFrame=-0.128,0.476,-0.041
+            }
+            MeshPart "RightUpperLeg" Size=0.61,1.769,0.587 CFrame=-11.911,2.642,-7.844 CanCollide=false CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightHip" C0=0.325,-0.105,0.077 C1=0.001,0.801,0.091 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LowerTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/RightUpperLeg"
+                Attachment "RightHipRigAttachment" CFrame=0.001,0.801,0.091
+                Attachment "RightKneeRigAttachment" CFrame=0.001,-0.63,0.091
+            }
+            MeshPart "UpperTorso" Size=1.471,1.625,0.651 CFrame=-12.234,4.574,-7.798 CastShadow=false Color=#000000 Material=Neon RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "BodyBackAttachment" CFrame=0,-0.148,0.381
+                Attachment "BodyFrontAttachment" CFrame=0,-0.148,-0.289
+                Attachment "LeftCollarAttachment" CFrame=-0.67,0.676,0.046
+                Attachment "LeftShoulderRigAttachment" CFrame=-0.67,0.482,0.046
+                Attachment "NeckAttachment" CFrame=0,0.676,0.046
+                Attachment "NeckRigAttachment" CFrame=0,0.676,0.045
+                Attachment "RightCollarAttachment" CFrame=0.67,0.676,0.046
+                Attachment "RightShoulderRigAttachment" CFrame=0.67,0.482,0.045
+                Motor6D "Waist" C0=0,0.384,0.077 C1=0,-0.642,0.046 Part0=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/LowerTorso" Part1=@"ServerScriptService/Cnovidenie_Pack_Server/StarterCharacter/UpperTorso"
+                Attachment "WaistRigAttachment" CFrame=0,-0.642,0.046
+            }
+        }
+    }
+}

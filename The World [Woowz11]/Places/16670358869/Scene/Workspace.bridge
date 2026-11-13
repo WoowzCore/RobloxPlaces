@@ -1,0 +1,164 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Opportunistic StreamingAdaptiveRadius=false StreamingEnabled StreamingIntegrityMode=PauseOutsideLoadedArea StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Part "Baseplate" Size=2048,32,2048 Anchored CFrame=0,-10,0 Color=#3F4C3B Locked Material=Grass
+    MeshPart "Bed" Size=4.447,7.8,3.8 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=7.436,11.067,-51.033|-90,0,137.523 CollisionFidelity=Default Color=#6A3909 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Wood RenderFidelity=Precise RightSurface=SmoothNoOutlines TextureContent="rbxassetid://473508936" TextureID="rbxassetid://473508936" TopSurface=SmoothNoOutlines
+    Camera "Camera"
+    MeshPart "Carpet" Size=13.06,0.202,7.565 Anchored CFrame=11.379,9.25,-51.925|0,48.06,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default TextureContent="rbxassetid://11365118879" TextureID="rbxassetid://11365118879" {
+        SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://11365120690" ColorMapContent="rbxassetid://11365120690" NormalMap="rbxassetid://11365120376" NormalMapContent="rbxassetid://11365120376" RoughnessMap="rbxassetid://11365119621" RoughnessMapContent="rbxassetid://11365119621"
+    }
+    Model "Dummy" PrimaryPart=@"Workspace/Dummy/HumanoidRootPart" {
+        Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=14.435,13.667,-42.596|0,-41.94,0 TopSurface=Smooth {
+            Decal "Face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        }
+        Humanoid "Humanoid"
+        Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=14.435,12.167,-42.596|0,-41.94,0 TopSurface=Smooth Transparency=0.5 {
+            Motor6D "Root Hip" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Dummy/HumanoidRootPart" Part1=@"Workspace/Dummy/Torso"
+        }
+        Part "Left Arm" Size=1,2,1 BottomSurface=Smooth CFrame=13.319,12.167,-43.599|0,-41.94,0 CanCollide=false TopSurface=Smooth
+        Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=14.063,10.167,-42.931|0,-41.94,0 CanCollide=false TopSurface=Smooth
+        Part "Right Arm" Size=1,2,1 BottomSurface=Smooth CFrame=15.551,12.167,-41.594|0,-41.94,0 CanCollide=false TopSurface=Smooth
+        Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=14.807,10.167,-42.262|0,-41.94,0 CanCollide=false TopSurface=Smooth
+        Part "Torso" Size=2,2,1 BottomSurface=Smooth CFrame=14.435,12.167,-42.596|0,-41.94,0 TopSurface=Smooth {
+            Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Dummy/Torso" Part1=@"Workspace/Dummy/Left Leg"
+            Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Dummy/Torso" Part1=@"Workspace/Dummy/Left Arm"
+            Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Dummy/Torso" Part1=@"Workspace/Dummy/Head"
+            Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Dummy/Torso" Part1=@"Workspace/Dummy/Right Leg"
+            Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Dummy/Torso" Part1=@"Workspace/Dummy/Right Arm"
+        }
+    }
+    MeshPart "Handle" Size=0.596,1.143,0.05 Anchored CFrame=7.368,12.092,-46.515|90,0,-10.383 CanCollide=false Massless RenderFidelity=Precise RootPriority=5 TextureContent="rbxassetid://6010223645" TextureID="rbxassetid://6010223645"
+    Model "My Nightstand" {
+        Part "Part" Size=0.15,0.32,0.26 Anchored BottomSurface=Smooth CFrame=8.294,12.142,-45.514|0,-37.851,90 Color=#D7C59A Material=SmoothPlastic Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=3.639,0.642,0.107 Anchored BottomSurface=Smooth CFrame=10.306,11.416,-47.817|0,-37.851,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=4,0.1,2.9 Anchored BottomSurface=Smooth CFrame=9.202,11.917,-46.396|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=4,0.7,0.1 Anchored BottomSurface=Smooth CFrame=8.343,10.517,-45.291|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.214,0.214,0.214 Anchored BottomSurface=Smooth CFrame=10.658,11.416,-47.747|0,-37.851,0 Color=#564236 Material=Wood Shape=Ball TopSurface=Smooth
+        Part "Part" Size=0.2,1,0.2 Anchored BottomSurface=Smooth CFrame=9.874,9.667,-44.164|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.8,0.9,0.1 Anchored BottomSurface=Smooth CFrame=8.343,11.417,-45.291|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.9,0.9,0.1 Anchored BottomSurface=Smooth CFrame=10.741,11.417,-45.2|180,-52.149,180 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=4.2,0.1,3 Anchored BottomSurface=Smooth CFrame=9.171,12.017,-46.357|0,-37.851,0 Color=#6C584B Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1,0.2 Anchored BottomSurface=Smooth CFrame=6.873,9.667,-46.496|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.2,1,0.2 Anchored BottomSurface=Smooth CFrame=11.408,9.667,-46.139|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.639,0.749,0.107 Anchored BottomSurface=Smooth CFrame=10.24,11.469,-47.733|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=4,0.1,2.9 Anchored BottomSurface=Smooth CFrame=9.202,10.917,-46.396|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.535,0.214,0.214 Anchored BottomSurface=Smooth CFrame=10.447,11.416,-47.911|0,-37.851,0 Color=#564236 Material=Wood Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=0.2,1,0.2 Anchored BottomSurface=Smooth CFrame=8.407,9.667,-48.47|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=4,0.7,0.1 Anchored BottomSurface=Smooth CFrame=9.938,10.517,-47.344|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.107,0.749,2.997 Anchored BottomSurface=Smooth CFrame=7.875,11.469,-47.741|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.214,0.214,0.214 Anchored BottomSurface=Smooth CFrame=10.236,11.416,-48.076|0,-37.851,0 Color=#564236 Material=Wood Shape=Ball TopSurface=Smooth
+        Part "Part" Size=3.639,0.749,0.107 Anchored BottomSurface=Smooth CFrame=8.467,11.469,-45.451|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.5,0.7,0.1 Anchored BottomSurface=Smooth CFrame=10.68,10.517,-45.121|180,-52.149,180 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,0.05,0.05 Anchored BottomSurface=Smooth CFrame=8.297,12.274,-45.512|0,-37.851,90 Color=#111111 Material=Concrete Shape=Cylinder TopSurface=Smooth
+        Part "Part" Size=2.5,0.7,0.1 Anchored BottomSurface=Smooth CFrame=7.601,10.517,-47.514|180,-52.149,180 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.107,0.749,2.997 Anchored BottomSurface=Smooth CFrame=10.833,11.469,-45.443|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.853,0.107,2.997 Anchored BottomSurface=Smooth CFrame=9.354,11.041,-46.592|0,-37.851,0 Color=#564236 Material=Wood TopSurface=Smooth
+        Part "Part" Size=2.9,0.9,0.1 Anchored BottomSurface=Smooth CFrame=7.662,11.417,-47.593|180,-52.149,180 Color=#564236 Material=Wood TopSurface=Smooth
+    }
+    Model "Old Books" {
+        Model "Model" {
+            Part "Part" Size=0.226,0.226,0.226 Anchored BottomSurface=Smooth CFrame=10.39,12.573,-46.324|0,-38.196,0 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Top Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Back Texture="rbxassetid://346795153" TextureContent="rbxassetid://346795153"
+                Decal "Decal" Face=Right Texture="rbxassetid://346795355" TextureContent="rbxassetid://346795355"
+                Decal "Decal" Face=Left Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Texture="rbxassetid://346795153" TextureContent="rbxassetid://346795153"
+                Decal "Decal" Face=Back Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                SpecialMesh "Mesh" MeshType=Brick Scale=4.198,0.175,6.296
+            }
+            Part "Part" Size=0.226,0.226,0.226 Anchored BottomSurface=Smooth CFrame=10.753,12.703,-46.038|-90,0,141.804 Color=#335882 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Back Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Left Texture="rbxassetid://346794995" TextureContent="rbxassetid://346794995"
+                Decal "Decal" Face=Right Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Top Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346795400" TextureContent="rbxassetid://346795400"
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.175,6.296,1.399
+            }
+            Part "Part" Size=0.226,0.226,0.226 Anchored BottomSurface=Smooth CFrame=10.396,12.842,-46.319|0,-38.196,0 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Back Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Top Texture="rbxassetid://346794960" TextureContent="rbxassetid://346794960"
+                Decal "Decal" Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Left Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346794894" TextureContent="rbxassetid://346794894"
+                SpecialMesh "Mesh" MeshType=Brick Scale=4.198,0.175,6.296
+            }
+            Part "Part" Size=0.868,0.237,1.342 Anchored BottomSurface=Smooth CFrame=10.396,12.703,-46.319|-180,38.196,-180 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Right Texture="rbxassetid://346794703" TextureContent="rbxassetid://346794703"
+                Decal "Decal" Texture="rbxassetid://346794774" TextureContent="rbxassetid://346794774"
+                Decal "Decal" Face=Back Texture="rbxassetid://346794774" TextureContent="rbxassetid://346794774"
+                SpecialMesh "Mesh" MeshType=Brick
+            }
+        }
+        Model "Model" {
+            Part "Part" Size=1.034,0.282,1.598 Anchored BottomSurface=Smooth CFrame=10.409,12.357,-46.35|-180,53.196,-180 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Back Texture="rbxassetid://346794774" TextureContent="rbxassetid://346794774"
+                Decal "Decal" Face=Right Texture="rbxassetid://346794703" TextureContent="rbxassetid://346794703"
+                Decal "Decal" Texture="rbxassetid://346794774" TextureContent="rbxassetid://346794774"
+                SpecialMesh "Mesh" MeshType=Brick
+            }
+            Part "Part" Size=0.269,0.269,0.269 Anchored BottomSurface=Smooth CFrame=10.404,12.201,-46.357|0,-53.196,0 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Texture="rbxassetid://346795153" TextureContent="rbxassetid://346795153"
+                Decal "Decal" Face=Back Texture="rbxassetid://346795153" TextureContent="rbxassetid://346795153"
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346795153" TextureContent="rbxassetid://346795153"
+                Decal "Decal" Face=Right Texture="rbxassetid://346795355" TextureContent="rbxassetid://346795355"
+                Decal "Decal" Face=Top Texture="rbxassetid://346795196" TextureContent="rbxassetid://346795196"
+                SpecialMesh "Mesh" MeshType=Brick Scale=4.198,0.175,6.296
+            }
+            Part "Part" Size=0.269,0.269,0.269 Anchored BottomSurface=Smooth CFrame=10.733,12.357,-45.917|-90,0,126.804 Color=#335882 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Top Texture="rbxassetid://346795400" TextureContent="rbxassetid://346795400"
+                Decal "Decal" Face=Right Texture="rbxassetid://346795400" TextureContent="rbxassetid://346795400"
+                Decal "Decal" Face=Left Texture="rbxassetid://346795400" TextureContent="rbxassetid://346795400"
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346795400" TextureContent="rbxassetid://346795400"
+                SpecialMesh "Mesh" MeshType=Brick Scale=0.175,6.296,1.399
+            }
+            Part "Part" Size=0.269,0.269,0.269 Anchored BottomSurface=Smooth CFrame=10.409,12.521,-46.35|0,-53.196,0 Material=Fabric TopSurface=Smooth {
+                Decal "Decal" Face=Bottom Texture="rbxassetid://346795196" TextureContent="rbxassetid://346795196"
+                Decal "Decal" Texture="rbxassetid://346795229" TextureContent="rbxassetid://346795229"
+                Decal "Decal" Face=Left Texture="rbxassetid://346795355" TextureContent="rbxassetid://346795355"
+                Decal "Decal" Face=Back Texture="rbxassetid://346795196" TextureContent="rbxassetid://346795196"
+                Decal "Decal" Face=Top Texture="rbxassetid://346795455" TextureContent="rbxassetid://346795455"
+                SpecialMesh "Mesh" MeshType=Brick Scale=4.198,0.175,6.296
+            }
+        }
+    }
+    MeshPart "Old book" Size=1.168,0.266,1.51 Anchored CFrame=9.164,11.228,-47.238|-180,49.575,-180 Material=SmoothPlastic RenderFidelity=Precise TextureContent="rbxassetid://1808597508" TextureID="rbxassetid://1808597508"
+    MeshPart "Open book" Size=2.002,0.253,1.56 Anchored CFrame=8.868,12.193,-47.185|0,-44.654,0 CollisionFidelity=Default TextureContent="rbxassetid://13779321406" TextureID="rbxassetid://13779321406"
+    Part "Part" Size=4.63,5.024,4.027 Anchored BottomSurface=Smooth CFrame=9.145,11.863,-46.392|0,-36.704,0 CanTouch=false TopSurface=Smooth Transparency=1
+    Part "Part" Size=4.63,5.024,8.345 Anchored BottomSurface=Smooth CFrame=7.309,11.863,-50.996|0,-41.376,0 CanTouch=false TopSurface=Smooth Transparency=1
+    MeshPart "Pencil" Size=0.048,0.046,1.15 Anchored CFrame=8.016,12.09,-46.661|0,34.721,0 CollisionFidelity=Default RenderFidelity=Precise TextureContent="rbxassetid://6761673180" TextureID="rbxassetid://6761673180"
+    Part "Sleep" Size=0.95,1,1.15 Anchored BottomSurface=Smooth CFrame=9.952,12.19,-50.271|0,-42.477,0 CanCollide=false TopSurface=Smooth Transparency=1 {
+        ProximityPrompt "ProximityPrompt" ActionText="Sleep..." AutoLocalize=false HoldDuration=10 MaxActivationDistance=5
+    }
+    Model "Small House" @file="Scene/Workspace/Small House.bridge"
+    SpawnLocation "SpawnLocation" Size=14.449,1,8.805 Anchored BottomSurface=Smooth CFrame=41.418,9.667,-58.711|-180,-48.06,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Duration=0 TopSurface=Smooth Transparency=1
+    SpawnLocation "SpawnLocation" Size=6.347,1,6.9 Anchored BottomSurface=Smooth CFrame=28.988,9.667,-57.117|-180,-48.06,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Duration=0 TopSurface=Smooth Transparency=1
+    SpawnLocation "SpawnLocation" Size=6.347,1,6.9 Anchored BottomSurface=Smooth CFrame=22.696,9.667,-51.601|-180,-48.06,-180 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Duration=0 TopSurface=Smooth Transparency=1
+    Model "TableLamp" {
+        Part "Part" Size=0.045,0.266,0.266 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.722,13.81,-45.384|0,-16.08,-90 CanCollide=false Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines {
+            SpecialMesh "Mesh" MeshType=Cylinder Scale=0.746,1,1
+        }
+        Part "Part" Size=0.089,0.111,0.111 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.722,13.749,-45.384|0,-16.08,-90 Color=#CACBD1 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines Shape=Cylinder TopSurface=SmoothNoOutlines
+        Part "Part" Size=0.111,1.162,0.111 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.722,13.091,-45.384|0,-16.08,0 Color=#ACA598 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines
+        Part "Part" Size=1.748,0.045,0.111 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.722,13.688,-45.384|0,73.92,0 CanCollide=false Color=#ACA598 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,0.746,1
+        }
+        Part "Part" Size=1.748,0.045,0.111 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.722,13.688,-45.384|0,-16.08,0 CanCollide=false Color=#ACA598 FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=SmoothPlastic RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines {
+            BlockMesh "Mesh" Scale=1,0.746,1
+        }
+        Part "Part" Size=0.255,0.537,0.267 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=9.716,13.998,-45.386|0,-16.08,0 Color=#E1C6AB FrontSurface=SmoothNoOutlines LeftSurface=SmoothNoOutlines Material=Neon Reflectance=0.2 RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=0.4 {
+            SpecialMesh "Mesh" MeshType=Sphere
+            PointLight "PointLight" Brightness=0.1 Color=#FFF6ED Range=6
+            PointLight "PointLight" Brightness=1.16 Color=#FFF6ED Range=9 Shadows
+        }
+        UnionOperation "Union" Size=0.996,1.77,1.77 Anchored CFrame=9.722,14.059,-45.384|0,-16.08,-90 Color=#FFF0D5 RenderFidelity=Precise UsePartColor $_geo="eb85f32098b6fcbc"
+        UnionOperation "Union" Size=0.022,1.815,1.815 Anchored CFrame=9.722,13.55,-45.384|0,-16.08,-90 Color=#B0A291 Material=Wood RenderFidelity=Precise $_geo="f76d61b12d4cd6de"
+        UnionOperation "Union" Size=0.022,1.815,1.815 Anchored CFrame=9.722,14.568,-45.384|0,-16.08,-90 Color=#B0A291 Material=Wood RenderFidelity=Precise $_geo="f76d61b12d4cd6de"
+        UnionOperation "Union" Size=0.719,0.443,0.719 Anchored CFrame=9.697,12.288,-45.397|0,73.92,0 Color=#ACA598 Material=SmoothPlastic RenderFidelity=Precise UsePartColor $_geo="7a4d59a2467a4923"
+    }
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration=false EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#0C545C WaterReflectance=1 WaterTransparency=0.3 WaterWaveSize=0.15 WaterWaveSpeed=10
+    Part "sound" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=50.037,9.667,-46.535|0,-41.94,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+        Sound "Sound" AudioContent="rbxassetid://390457804" Looped Playing RollOffMaxDistance=999999994495727000000000000000000 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://390457804" Volume=1
+    }
+}

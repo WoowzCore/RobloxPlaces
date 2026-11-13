@@ -1,0 +1,5 @@
+ServerStorage "ServerStorage" {
+    Folder "SS" {
+        ModuleScript "VisualData" @src="Scripts/ServerStorage/SS/VisualData.luau"
+    }
+}

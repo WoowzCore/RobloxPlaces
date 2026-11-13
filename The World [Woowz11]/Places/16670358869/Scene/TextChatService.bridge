@@ -1,0 +1,11 @@
+TextChatService "TextChatService" CreateDefaultCommands CreateDefaultTextChannels {
+    BubbleChatConfiguration "BubbleChatConfiguration" AdorneeName="HumanoidRootPart" BackgroundColor3=#FAFAFA BackgroundTransparency=0.1 BubbleDuration=15 BubblesSpacing=6 Enabled Font=GothamMedium FontFace="GothamSSm|Medium|Normal" LocalPlayerStudsOffset=0,0,0 MaxBubbles=3 MaxDistance=100 MinimizeDistance=40 TailVisible TextColor3=#393B3D TextSize=16 VerticalStudsOffset=0 {
+        ImageLabel "ImageLabel" Size=0,100,0,100 BackgroundColor3=#FFFFFF
+        UICorner "UICorner" BottomLeftRadius=0,12 BottomRightRadius=0,12 CornerRadius=0,12 TopLeftRadius=0,12 TopRightRadius=0,12
+        UIGradient "UIGradient" Enabled=false
+        UIPadding "UIPadding" PaddingBottom=0,8 PaddingLeft=0,8 PaddingRight=0,8 PaddingTop=0,8
+    }
+    ChannelTabsConfiguration "ChannelTabsConfiguration" BackgroundColor3=#191B1D BackgroundTransparency=0 Enabled=false FontFace="BuilderSans|Bold|Normal" HoverBackgroundColor3=#7D7D7D SelectedTabTextColor3=#FFFFFF TextColor3=#AFAFAF TextSize=18 TextStrokeColor3=#000000 TextStrokeTransparency=1
+    ChatInputBarConfiguration "ChatInputBarConfiguration" AutocompleteEnabled BackgroundColor3=#191B1D BackgroundTransparency=0.2 Enabled FontFace="GothamSSm|Medium|Normal" KeyboardKeyCode=Slash PlaceholderColor3=#B2B2B2 TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#000000 TextStrokeTransparency=0.5
+    ChatWindowConfiguration "ChatWindowConfiguration" BackgroundColor3=#191B1D BackgroundTransparency=0.3 Enabled FontFace="GothamSSm|Medium|Normal" HeightScale=1 HorizontalAlignment=Left TextChannelDisplayMode=AllTextChannels TextColor3=#FFFFFF TextSize=14 TextStrokeColor3=#000000 TextStrokeTransparency=0.5 VerticalAlignment=Top WidthScale=1
+}

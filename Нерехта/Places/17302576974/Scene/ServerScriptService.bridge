@@ -1,0 +1,27 @@
+ServerScriptService "ServerScriptService" {
+    Folder "DayFolder" {
+        Script "Clouds--BYDAY" @src="Scripts/ServerScriptService/DayFolder/Clouds--BYDAY.luau"
+        Script "KakahaSpawn" @src="Scripts/ServerScriptService/DayFolder/KakahaSpawn.luau" Disabled
+        Script "MINA" @src="Scripts/ServerScriptService/DayFolder/MINA.luau" Disabled
+        Script "PelmeniSpawn--BYDAY" @src="Scripts/ServerScriptService/DayFolder/PelmeniSpawn--BYDAY.luau" Disabled
+        Script "SosiskiSpawn--BYDAY" Disabled @code=<<<
+            local Sosiski = game.workspace:FindFirstChild("--Map--").Sosiski
+
+            while wait(4) do
+            	local part = workspace["--Map--"].Sosiski:Clone()
+            	part.Parent = workspace["--Map--"]
+            	part.PrimaryPart.CFrame = CFrame.new(math.random(-500,500),1000,math.random(-500,500))
+            	part.PrimaryPart.AssemblyLinearVelocity = Vector3.new(math.random(-30,30),math.random(-30,30),math.random(-30,30))
+            end
+        >>>
+    }
+    Script "Functions" @src="Scripts/ServerScriptService/Functions.luau"
+    Script "LoadMap" @src="Scripts/ServerScriptService/LoadMap.luau" {
+        Script "DespawnScript" Disabled @code=<<<
+            wait(10)
+            script.Parent:Destroy()
+        >>>
+        Script "WoowzPhysic" @src="Scripts/ServerScriptService/LoadMap/WoowzPhysic.luau" Disabled
+    }
+    Script "LoadPlayers" @src="Scripts/ServerScriptService/LoadPlayers.luau"
+}

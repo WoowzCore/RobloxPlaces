@@ -1,0 +1,15 @@
+ServerScriptService "ServerScriptService" {
+    Folder "Base" {
+        ModuleScript "Base" @src="Scripts/ServerScriptService/Base/Base.luau"
+        Script "FromConfigurator" @src="Scripts/ServerScriptService/Base/FromConfigurator.luau"
+        Script "Generator" @code=<<<
+            local base = require(script.Parent.Base)
+            base.GenerateSeed()
+
+            while wait() do
+            	base.RandomSeed = base.RandomSeed + 1
+            end
+        >>>
+        PackageLink "PackageLink"
+    }
+}

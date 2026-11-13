@@ -1,0 +1,139 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  ColorCorrectionEffect "ColorCorrection"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  MaterialVariant "Black Material"
+  MaterialVariant "Humanoid"
+  MaterialVariant "Linoluinm Planks"
+  MaterialVariant "White Wall Plastic Mega Profit"
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Folder "Cnovidenie_Pack_Server"
+    Script "LoadMap"
+    Script "LoadPlayer"
+    Model "StarterCharacter"  (+97)
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    Folder "Cnovidenie_Pack"  (+4)
+    LocalScript "graphic"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Part "Baseplate"
+  Camera "Camera"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  MeshPart "DECAL"
+    SurfaceAppearance "SurfaceAppearance"
+  Model "FireDetector"
+    Model "Body"  (+10)
+    Model "Body"  (+10)
+    Model "Body"  (+10)
+    UnionOperation "Light"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    NumberValue "Chance"
+    Model "Model"  (+1)
+    MeshPart "Union"
+    MeshPart "Union"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    NumberValue "Chance"
+    Model "Model"  (+1)
+    MeshPart "Union"
+    MeshPart "Union"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  Model "Model"
+    Part "Part"
+  … ещё 183

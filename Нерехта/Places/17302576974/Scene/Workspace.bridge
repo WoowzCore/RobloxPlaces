@@ -1,0 +1,210 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=-7.912,0,0 Gravity=35 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Opportunistic StreamingAdaptiveRadius=false StreamingEnabled StreamingIntegrityMode=Disabled StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Folder "--Map--" @file="Scene/Workspace/--Map--.bridge"
+    Part "Baseplate" Size=2048,16,2048 Anchored BottomSurface=Smooth CFrame=0,-8,0 Color=#433B31 Locked Material=Rock TopSurface=Smooth
+    Camera "Camera"
+    Model "Crate" {
+        PackageLink "PackageLink"
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=97.597,2.25,14.911|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.295,2.25,14.972|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=95.655,0.2,14.741|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=96.8,0.25,14.841|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.295,0.25,14.972|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=97.597,0.25,14.911|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=98.743,2.35,15.011|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=97.025,1.25,16.869|0,-5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=98.51,1.25,17.099|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=95.407,1.25,16.426|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=95.29,1.25,16.616|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=96.103,0.25,14.78|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=97.033,0.2,16.769|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=98.777,1.25,16.921|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,2,0.1 BottomSurface=Smooth CFrame=98.694,1.3,16.713|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=95.522,1.25,16.837|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=97.033,2.35,16.769|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=95.555,1.25,14.732|0,-5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=95.621,1.25,12.831|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=95.703,1.25,13.039|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=97.199,2.35,14.876|0,-5,0 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=97.364,0.2,12.983|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=97.364,2.35,12.983|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=95.888,1.25,12.653|-180,5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=95.655,2.35,14.741|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=96.8,2.25,14.841|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=97.199,0.15,14.876|0,-5,0 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=98.991,1.25,13.326|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=98.876,1.25,12.915|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=96.103,2.25,14.78|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=99.108,1.25,13.136|0,-5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=98.743,0.2,15.011|-180,-85,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=98.843,1.25,15.02|0,-5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=97.373,1.25,12.884|0,-5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+    }
+    Model "Crate" {
+        PackageLink "PackageLink"
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=99.6,4.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=100.3,4.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=97.65,2.7,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.8,2.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=100.3,2.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=99.6,2.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=100.75,4.85,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=99.2,3.75,15.95|0,0,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=100.7,3.75,16.05 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=97.55,3.75,15.65|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=97.45,3.75,15.85|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.1,2.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=99.2,2.7,15.85 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=100.95,3.75,15.85 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,2,0.1 BottomSurface=Smooth CFrame=100.85,3.8,15.65 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=97.7,3.75,16.05|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=99.2,4.85,15.85 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=97.55,3.75,13.95|0,0,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=97.45,3.75,12.05|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=97.55,3.75,12.25|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=99.2,4.85,13.95 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=99.2,2.7,12.05 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=99.2,4.85,12.05 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=97.7,3.75,11.85|-180,0,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=97.65,4.85,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.8,4.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=99.2,2.65,13.95 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=100.85,3.75,12.25 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=100.7,3.75,11.85 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=98.1,4.75,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=100.95,3.75,12.05 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=100.75,2.7,13.95|0,-90,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=100.85,3.75,13.95|0,0,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=99.2,3.75,11.95|0,0,-90 Color=#94876A Material=Wood TopSurface=Smooth
+    }
+    Model "Crate" {
+        PackageLink "PackageLink"
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=101.998,2.25,14.615|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=102.696,2.25,14.554|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=100.056,0.2,14.785|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=101.201,0.25,14.685|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=102.696,0.25,14.554|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=101.998,0.25,14.615|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=103.144,2.35,14.515|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=101.774,1.25,16.642|0,5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=103.277,1.25,16.611|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=100.104,1.25,16.487|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=100.022,1.25,16.695|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=100.504,0.25,14.746|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=101.766,0.2,16.543|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=103.509,1.25,16.39|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,2,0.1 BottomSurface=Smooth CFrame=103.392,1.3,16.2|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=100.289,1.25,16.873|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=101.766,2.35,16.543|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=99.956,1.25,14.794|0,5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=99.691,1.25,12.91|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=99.808,1.25,13.1|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=101.6,2.35,14.65|0,5,0 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=3.6,0.2,0.5 BottomSurface=Smooth CFrame=101.434,0.2,12.757|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.6,0.3,0.5 BottomSurface=Smooth CFrame=101.434,2.35,12.757|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=99.923,1.25,12.689|-180,-5,-180 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.3,0.5 BottomSurface=Smooth CFrame=100.056,2.35,14.785|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=101.201,2.25,14.685|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=2.6,0.1,3.3 BottomSurface=Smooth CFrame=101.6,0.15,14.65|0,5,0 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.1 BottomSurface=Smooth CFrame=103.096,1.25,12.813|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.4,1.9,0.1 BottomSurface=Smooth CFrame=102.911,1.25,12.427|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.1,0.4 BottomSurface=Smooth CFrame=100.504,2.25,14.746|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=0.1,1.9,0.5 BottomSurface=Smooth CFrame=103.178,1.25,12.605|0,5,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=3.3,0.2,0.5 BottomSurface=Smooth CFrame=103.144,0.2,14.515|0,-85,0 Color=#998C6E Material=WoodPlanks TopSurface=Smooth
+        Part "Part" Size=1.9,0.1,3.3 BottomSurface=Smooth CFrame=103.244,1.25,14.506|0,5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+        Part "Part" Size=1.9,2.6,0.1 BottomSurface=Smooth CFrame=101.426,1.25,12.658|0,5,-90 Color=#94876A Material=Wood TopSurface=Smooth
+    }
+    UnionOperation "GlassSafe_Ot_Tupogo" Size=2.053,4.941,2.1 Anchored CFrame=-66.525,2.471,-50.05 Color=#A3A2A5 Material=Glass Transparency=0.5 $_geo="fdd162a24c09baf6" {
+        Part "SafeNadpis" Size=2.049,0.865,0.1 BottomSurface=Smooth CFrame=-66.526,0.433,-48.95|180,0,-179.971 CanCollide=false CanQuery=false CanTouch=false Color=#1C1C1D Massless Material=SmoothPlastic TopSurface=Smooth {
+            SurfaceGui "SurfaceGui" ClipsDescendants LightInfluence=1 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+                TextLabel "Writes" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="Ubuntu|Regular|Italic" RichText Text="Кто сломает тому один миллион доларсов" TextColor3=#CBCBCB TextScaled TextSize=13 TextWrapped
+            }
+        }
+    }
+    Folder "PlayersInfo" {
+        UnionOperation "ItemsPlatform" Size=100,10,100 Anchored CFrame=0,-100,0 Color=#FF8800 Locked UsePartColor $_geo="1f44e487da60ae4c"
+    }
+    Model "Rig" PrimaryPart=@"Workspace/Rig/Head" {
+        ObjectValue "AnimSaves" Value=@"ServerStorage/RBX_ANIMSAVES/Rig"
+        BodyColors "Body Colors" HeadColor3=#808080 LeftArmColor3=#808080 LeftLegColor3=#808080 RightArmColor3=#808080 RightLegColor3=#808080 TorsoColor3=#808080
+        Part "Head" Size=2,1,1 CFrame=22.2,4.5,98.7 Color=#7F7F7F PivotOffset=0,-4.5,0 TopSurface=Smooth {
+            Attachment "FaceCenterAttachment"
+            Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+            Attachment "HairAttachment" CFrame=0,0.6,0
+            Attachment "HatAttachment" CFrame=0,0.6,0
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+            Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+        }
+        Humanoid "Humanoid" {
+            Animator "Animator"
+            HumanoidDescription "HumanoidDescription" BodyTypeScale=0 ProportionScale=0 {
+                BodyPartDescription "BodyPartDescription" Color=#808080
+                BodyPartDescription "BodyPartDescription" BodyPart=RightArm Color=#808080
+                BodyPartDescription "BodyPartDescription" BodyPart=RightLeg Color=#808080
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftLeg Color=#808080
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftArm Color=#808080
+                BodyPartDescription "BodyPartDescription" BodyPart=Torso Color=#808080
+            }
+        }
+        Part "HumanoidRootPart" Size=2,2,1 BottomSurface=Smooth CFrame=22.2,3,98.7 CanCollide=false Color=#CACACA TopSurface=Smooth Transparency=1 {
+            Attachment "RootAttachment"
+            Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Rig/HumanoidRootPart" Part1=@"Workspace/Rig/Torso"
+        }
+        Part "Left Arm" Size=1,2,1 CFrame=20.7,3,98.7 CanCollide=false Color=#7F7F7F {
+            Attachment "LeftGripAttachment" CFrame=0,-1,0
+            Attachment "LeftShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=21.7,1,98.7 CanCollide=false Color=#7F7F7F {
+            Attachment "LeftFootAttachment" CFrame=0,-1,0
+        }
+        Part "Right Arm" Size=1,2,1 CFrame=23.7,3,98.7 CanCollide=false Color=#7F7F7F {
+            Attachment "RightGripAttachment" CFrame=0,-1,0
+            Attachment "RightShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=22.7,1,98.7 CanCollide=false Color=#7F7F7F {
+            Attachment "RightFootAttachment" CFrame=0,-1,0
+        }
+        Part "Torso" Size=2,2,1 CFrame=22.2,3,98.7 Color=#7F7F7F LeftSurface=Weld RightSurface=Weld {
+            Attachment "BodyBackAttachment" CFrame=0,0,0.5
+            Attachment "BodyFrontAttachment" CFrame=0,0,-0.5
+            Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Rig/Torso" Part1=@"Workspace/Rig/Left Leg"
+            Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"Workspace/Rig/Torso" Part1=@"Workspace/Rig/Left Arm"
+            Attachment "LeftCollarAttachment" CFrame=-1,1,0
+            Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"Workspace/Rig/Torso" Part1=@"Workspace/Rig/Head"
+            Attachment "NeckAttachment" CFrame=0,1,0
+            Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Rig/Torso" Part1=@"Workspace/Rig/Right Leg"
+            Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"Workspace/Rig/Torso" Part1=@"Workspace/Rig/Right Arm"
+            Attachment "RightCollarAttachment" CFrame=1,1,0
+            Attachment "WaistBackAttachment" CFrame=0,-1,0.5
+            Attachment "WaistCenterAttachment" CFrame=0,-1,0
+            Attachment "WaistFrontAttachment" CFrame=0,-1,-0.5
+            Decal "roblox"
+        }
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=45.708,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=-7.092,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=-47.192,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=26.308,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=-83.963,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=-28.692,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=9.208,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    SpawnLocation "SpawnLocation" Size=12,0.1,12 Anchored BottomSurface=Smooth CFrame=-64.692,0.05,-14.9 Duration=0 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration EnableFluidForces FrontSurface=Smooth GrassLength=0.1 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#30342A WaterReflectance=0 WaterTransparency=0.05 WaterWaveSize=0.05 WaterWaveSpeed=3 {
+        Clouds "Clouds" Cover=0.67 Density=0.101
+    }
+}

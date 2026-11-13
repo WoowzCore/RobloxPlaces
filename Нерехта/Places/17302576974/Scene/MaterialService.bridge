@@ -1,0 +1,6 @@
+MaterialService "MaterialService" {
+    MaterialVariant "Grass_New" BaseMaterial=Grass ColorMap="rbxassetid://17349663308" ColorMapContent="rbxassetid://17349663308" MaterialPattern=Organic NormalMap="rbxassetid://17349215764" NormalMapContent="rbxassetid://17349215764" RoughnessMap="rbxassetid://17349215406" RoughnessMapContent="rbxassetid://17349215406"
+    MaterialVariant "Ground_New" BaseMaterial=Ground ColorMap="rbxassetid://17349798840" ColorMapContent="rbxassetid://17349798840" MaterialPattern=Organic NormalMap="rbxassetid://17349768698" NormalMapContent="rbxassetid://17349768698" RoughnessMap="rbxassetid://17349767771" RoughnessMapContent="rbxassetid://17349767771"
+    MaterialVariant "Human" CustomPhysicalProperties=0.01,0.3,0.5,1,1
+    MaterialVariant "LeafyGrass_New" BaseMaterial=LeafyGrass ColorMap="rbxassetid://17349849419" ColorMapContent="rbxassetid://17349849419" MaterialPattern=Organic NormalMap="rbxassetid://17349849563" NormalMapContent="rbxassetid://17349849563" RoughnessMap="rbxassetid://17349849098" RoughnessMapContent="rbxassetid://17349849098"
+}

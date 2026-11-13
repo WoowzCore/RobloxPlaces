@@ -1,0 +1,34 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "Backpack" AutoLocalize=false Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Frame "Background" Position=0.5,0,0.5,0 Size=0,737,0,507 AnchorPoint=0.5,0.5 BackgroundColor3=#232323 BackgroundTransparency=0.1 BorderColor3=#000000 BorderSizePixel=0 {
+            Frame "Description" Position=0.864,0,0.606,0 Size=0,176,0,212 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=0.8 BorderColor3=#000000 BorderSizePixel=0 {
+                TextLabel "ObjectName" Size=1,0,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Object Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+                UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            }
+            Frame "Image" Position=0.864,0,0.209,0 Size=0,176,0,176 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=0.8 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+                ViewportFrame "ViewportFrame" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                    Part "Part" Size=4,1,2 BottomSurface=Smooth TopSurface=Smooth
+                }
+            }
+            Frame "ListBackground" Position=0.378,0,0.501,0 Size=0,515,0,470 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=0.8 BorderColor3=#000000 BorderSizePixel=0 {
+                ScrollingFrame "List" Size=1,0,1,0 Active AutomaticCanvasSize=Y BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                    Frame "ItemPlaceholder" Size=0,100,0,100 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 {
+                        UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+                    }
+                    UIGridLayout "UIGridLayout" CellSize=0,95,0,95 SortOrder=LayoutOrder
+                }
+                UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            }
+            Frame "Other" Position=0.864,0,0.895,0 Size=0,176,0,69 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BackgroundTransparency=0.8 BorderColor3=#000000 BorderSizePixel=0 {
+                TextLabel "Size" Position=0.5,0,0,0 Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="0/0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+                UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+                TextLabel "Weight" Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="0/0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            }
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+        }
+    }
+    ScreenGui "Center" AutoLocalize=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ImageLabel "Dot" Position=0.5,0,0.5,0 Size=0,10,0,10 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://17309412673" ImageContent="rbxassetid://17309412673"
+    }
+}

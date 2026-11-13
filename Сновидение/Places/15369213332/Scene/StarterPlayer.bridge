@@ -1,0 +1,13 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower=false CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        Folder "Cnovidenie_Pack" {
+            LocalScript "HorrorCamera" @src="Scripts/StarterPlayer/StarterCharacterScripts/Cnovidenie_Pack/HorrorCamera.luau" {
+                NumberValue "Sine"
+            }
+            LocalScript "LoadPlayer" @src="Scripts/StarterPlayer/StarterCharacterScripts/Cnovidenie_Pack/LoadPlayer.luau"
+            ModuleScript "PlayerBase" @src="Scripts/StarterPlayer/StarterCharacterScripts/Cnovidenie_Pack/PlayerBase.luau"
+        }
+        LocalScript "graphic" @src="Scripts/StarterPlayer/StarterCharacterScripts/graphic.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts"
+}

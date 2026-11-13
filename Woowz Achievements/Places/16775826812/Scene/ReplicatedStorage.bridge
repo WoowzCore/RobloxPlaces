@@ -1,0 +1,8 @@
+ReplicatedStorage "ReplicatedStorage" {
+    Folder "RS" {
+        RemoteFunction "GetSaveData"
+        RemoteFunction "GetVisualData"
+        RemoteFunction "Load"
+        RemoteEvent "Save"
+    }
+}

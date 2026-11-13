@@ -1,0 +1,10 @@
+ReplicatedStorage "ReplicatedStorage" {
+    RemoteEvent "ChangeCFrame"
+    RemoteEvent "ChangeParent"
+    RemoteFunction "CheckBodyPositionAndGyro"
+    RemoteFunction "CheckBodyPositionAndGyroClient"
+    RemoteEvent "LoadPlayer"
+    RemoteEvent "MovePart"
+    RemoteEvent "SetNetworkOwner"
+    RemoteEvent "StartPlayerData"
+}

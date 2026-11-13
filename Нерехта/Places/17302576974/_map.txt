@@ -1,0 +1,283 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+  SunRaysEffect "SunRays"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  MaterialVariant "Grass_New"
+  MaterialVariant "Ground_New"
+  MaterialVariant "Human"
+  MaterialVariant "LeafyGrass_New"
+Players "Players"  [Scene/Players.bridge]
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "ChangeCFrame"
+  RemoteEvent "ChangeParent"
+  RemoteFunction "CheckBodyPositionAndGyro"
+  RemoteFunction "CheckBodyPositionAndGyroClient"
+  RemoteEvent "LoadPlayer"
+  RemoteEvent "MovePart"
+  RemoteEvent "SetNetworkOwner"
+  RemoteEvent "StartPlayerData"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Folder "DayFolder"
+    Script "Clouds--BYDAY"
+    Script "KakahaSpawn"
+    Script "MINA"
+    Script "PelmeniSpawn--BYDAY"
+    Script "SosiskiSpawn--BYDAY"
+  Script "Functions"
+  Script "LoadMap"
+    Script "DespawnScript"
+    Script "WoowzPhysic"
+  Script "LoadPlayers"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+  Model "RBX_ANIMSAVES"  [Scene/ServerStorage/RBX_ANIMSAVES.bridge]
+    ObjectValue "Crouch Anim R6 [ UPDATE ]"  (+44)
+    ObjectValue "Crouch Anims (@jordanrupert)"  [Scene/ServerStorage/RBX_ANIMSAVES/Crouch Anims (@jordanrupert).bridge]  (+474)
+    ObjectValue "Crouch Anims (@jordanrupert)"  [Scene/ServerStorage/RBX_ANIMSAVES/Crouch Anims (@jordanrupert)~2.bridge]  (+446)
+    ObjectValue "Dummy"
+    ObjectValue "Dummy"
+    ObjectValue "Dummy"
+    ObjectValue "Dummy"  (+25)
+    ObjectValue "Dummy"  (+1)
+    ObjectValue "Dummy"
+    ObjectValue "Dummy"  (+76)
+    ObjectValue "Dummy"  (+22)
+    ObjectValue "Dummy"  (+21)
+    ObjectValue "Good R6 Walk/Idle Animations (for real)"  (+113)
+    ObjectValue "Idle Animation"  (+22)
+    ObjectValue "Lay Animation"  (+42)
+    ObjectValue "Lay Animation"  (+9)
+    ObjectValue "R6 Crouch Anim"  (+30)
+    ObjectValue "R6 Walk Animations"  [Scene/ServerStorage/RBX_ANIMSAVES/R6 Walk Animations.bridge]  (+5570)
+    ObjectValue "R6 crouch walk anim"  (+105)
+    ObjectValue "R6 idle animation"  (+145)
+    ObjectValue "Rig"  (+160)
+    ObjectValue "TemplateR6"
+    ObjectValue "TemplateR6"
+    ObjectValue "TheOne"  [Scene/ServerStorage/RBX_ANIMSAVES/TheOne.bridge]  (+1733)
+    ObjectValue "idle, run and landing animation r6"  (+1051)
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  ScreenGui "Backpack"
+    Frame "Background"  (+18)
+  ScreenGui "Center"
+    ImageLabel "Dot"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    Folder "Animations"
+    LocalScript "CustomAnimations"
+    LocalScript "LoadPlayer"
+    LocalScript "PlayerBrain"
+    ModuleScript "PlayerData"  (+2)
+    LocalScript "UI"
+  StarterPlayerScripts "StarterPlayerScripts"
+    ModuleScript "PlayerModule"  (+35)
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Folder "--Map--"  [Scene/Workspace/--Map--.bridge]
+    UnionOperation "10KG"  (+2)
+    UnionOperation "10KG"  (+2)
+    UnionOperation "1KG"  (+2)
+    UnionOperation "1KG"  (+2)
+    UnionOperation "20KG"  (+2)
+    UnionOperation "20KG"  (+2)
+    UnionOperation "5KG"  (+2)
+    UnionOperation "5KG"  (+2)
+    Model "Bicycle"  (+28)
+    Model "Bicycle"  (+28)
+    UnionOperation "Bowl"  (+2)
+    UnionOperation "Bowl"  (+2)
+    Model "CardBoard"  (+6)
+    Model "CardBoard"  (+6)
+    Model "CardBoard"  (+6)
+    Model "Carpet"  (+44)
+    Model "Carpet"  (+44)
+    Model "Carpet"  (+44)
+    Model "Computer"  (+62)
+    Model "Computer"  (+62)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "Crate"  (+35)
+    Model "DayChair"  (+18)
+    Model "DayChair"  (+18)
+    … ещё 172
+  Part "Baseplate"
+  Camera "Camera"
+  Model "Crate"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  Model "Crate"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  Model "Crate"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  UnionOperation "GlassSafe_Ot_Tupogo"
+    Part "SafeNadpis"  (+2)
+  Folder "PlayersInfo"
+    UnionOperation "ItemsPlatform"
+  Model "Rig"
+    ObjectValue "AnimSaves"
+    BodyColors "Body Colors"
+    Part "Head"  (+6)
+    Humanoid "Humanoid"  (+8)
+    Part "HumanoidRootPart"  (+2)
+    Part "Left Arm"  (+2)
+    Part "Left Leg"  (+1)
+    Part "Right Arm"  (+2)
+    Part "Right Leg"  (+1)
+    Part "Torso"  (+14)
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  Terrain "Terrain"
+    Clouds "Clouds"

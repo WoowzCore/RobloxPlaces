@@ -1,0 +1,7 @@
+Lighting "Lighting" Ambient=#000000 Brightness=20 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=0 EnvironmentSpecularScale=0 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=327 GlobalShadows LightingStyle=Realistic OutdoorAmbient=#000000 PrioritizeLightingQuality ShadowSoftness=0.2 TimeOfDay="09:36:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=4 $UseCurrentLighting=false {
+    Atmosphere "Atmosphere" Color=#000000 Decay=#6A707D Density=0.8 Offset=0.25
+    BloomEffect "Bloom" Size=56 Intensity=1 Threshold=0.8
+    ColorCorrectionEffect "ColorCorrection" Brightness=0.2 Contrast=0.4 Enabled=false Saturation=-1
+    DepthOfFieldEffect "DepthOfField" FarIntensity=0.951 FocusDistance=0 InFocusRadius=18.1 NearIntensity=1
+    Sky "Sky" MoonTextureContent="rbxassetid://6444320592" MoonTextureId="rbxassetid://6444320592" SkyboxBackContent="rbxassetid://15370522343" SkyboxBk="rbxassetid://15370522343" SkyboxDn="rbxassetid://15370522343" SkyboxDownContent="rbxassetid://15370522343" SkyboxFrontContent="rbxassetid://15370522343" SkyboxFt="rbxassetid://15370522343" SkyboxLeftContent="rbxassetid://15370522343" SkyboxLf="rbxassetid://15370522343" SkyboxRightContent="rbxassetid://15370522343" SkyboxRt="rbxassetid://15370522343" SkyboxUp="rbxassetid://15370522343" SkyboxUpContent="rbxassetid://15370522343" StarCount=0 SunAngularSize=25 SunTextureContent="rbxassetid://6196665106" SunTextureId="rbxassetid://6196665106"
+}

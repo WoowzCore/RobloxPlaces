@@ -1,0 +1,19 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower=false CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption=false HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        Folder "SCS" {
+            ModuleScript "PlayerBase" @src="Scripts/StarterPlayer/StarterCharacterScripts/SCS/PlayerBase.luau"
+            LocalScript "PlayerInstall" @code=<<<
+                local base = require(script.Parent.PlayerBase)
+                base.UpdateCharacter()
+            >>>
+            LocalScript "PlayerIntell" @src="Scripts/StarterPlayer/StarterCharacterScripts/SCS/PlayerIntell.luau"
+            ModuleScript "PlayerScripts" @src="Scripts/StarterPlayer/StarterCharacterScripts/SCS/PlayerScripts.luau"
+        }
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        Folder "SPS" {
+            LocalScript "PlayerLocal" @src="Scripts/StarterPlayer/StarterPlayerScripts/SPS/PlayerLocal.luau"
+            ModuleScript "SaveData" @src="Scripts/StarterPlayer/StarterPlayerScripts/SPS/SaveData.luau"
+        }
+    }
+}

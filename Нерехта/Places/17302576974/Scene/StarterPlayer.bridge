@@ -1,0 +1,57 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=LockFirstPerson CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower CharacterWalkSpeed=0 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=KeyboardMouse DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption=false HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled=false {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        Folder "Animations"
+        LocalScript "CustomAnimations" @src="Scripts/StarterPlayer/StarterCharacterScripts/CustomAnimations.luau"
+        LocalScript "LoadPlayer" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadPlayer.luau"
+        LocalScript "PlayerBrain" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerBrain.luau"
+        ModuleScript "PlayerData" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerData.luau" {
+            BindableEvent "LoadAnimations"
+            BindableEvent "LoadBrain"
+        }
+        LocalScript "UI" @src="Scripts/StarterPlayer/StarterCharacterScripts/UI.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        ModuleScript "PlayerModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule.luau" {
+            ModuleScript "CameraModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule.luau" {
+                ModuleScript "BaseCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/BaseCamera.luau"
+                ModuleScript "BaseOcclusion" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/BaseOcclusion.luau"
+                ModuleScript "CameraInput" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraInput.luau"
+                ModuleScript "CameraToggleStateController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraToggleStateController.luau"
+                ModuleScript "CameraUI" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraUI.luau"
+                ModuleScript "CameraUtils" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraUtils.luau"
+                ModuleScript "ClassicCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ClassicCamera.luau"
+                ModuleScript "Invisicam" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/Invisicam.luau"
+                ModuleScript "LegacyCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/LegacyCamera.luau"
+                ModuleScript "MouseLockController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/MouseLockController.luau" {
+                    StringValue "BoundKeys" Value="LeftShift,RightShift"
+                }
+                ModuleScript "OrbitalCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/OrbitalCamera.luau"
+                ModuleScript "Poppercam" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/Poppercam.luau"
+                ModuleScript "TransparencyController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/TransparencyController.luau"
+                ModuleScript "VRBaseCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRBaseCamera.luau"
+                ModuleScript "VRCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRCamera.luau"
+                ModuleScript "VRVehicleCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRVehicleCamera.luau"
+                ModuleScript "VehicleCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera.luau" {
+                    ModuleScript "VehicleCameraConfig" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera/VehicleCameraConfig.luau"
+                    ModuleScript "VehicleCameraCore" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera/VehicleCameraCore.luau"
+                }
+                ModuleScript "ZoomController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ZoomController.luau" {
+                    ModuleScript "Popper" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ZoomController/Popper.luau"
+                }
+            }
+            ModuleScript "ControlModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule.luau" {
+                ModuleScript "BaseCharacterController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/BaseCharacterController.luau"
+                ModuleScript "ClickToMoveController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/ClickToMoveController.luau"
+                ModuleScript "ClickToMoveDisplay" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/ClickToMoveDisplay.luau"
+                ModuleScript "DynamicThumbstick" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/DynamicThumbstick.luau"
+                ModuleScript "Gamepad" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/Gamepad.luau"
+                ModuleScript "Keyboard" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/Keyboard.luau"
+                ModuleScript "PathDisplay" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/PathDisplay.luau"
+                ModuleScript "TouchJump" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/TouchJump.luau"
+                ModuleScript "TouchThumbstick" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/TouchThumbstick.luau"
+                ModuleScript "VRNavigation" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/VRNavigation.luau"
+                ModuleScript "VehicleController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/VehicleController.luau"
+            }
+        }
+    }
+}

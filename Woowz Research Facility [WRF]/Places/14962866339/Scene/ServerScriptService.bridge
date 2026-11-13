@@ -1,0 +1,73 @@
+ServerScriptService "ServerScriptService" {
+    Script "AdminCommands" @src="Scripts/ServerScriptService/AdminCommands.luau"
+    ModuleScript "Base" @src="Scripts/ServerScriptService/Base.luau"
+    BindableEvent "CompileScriptableObjects"
+    ModuleScript "Data" @src="Scripts/ServerScriptService/Data.luau"
+    Script "DataInvoke" @src="Scripts/ServerScriptService/DataInvoke.luau"
+    Script "DayCycle" @src="Scripts/ServerScriptService/DayCycle.luau"
+    Script "GlobalFunctions" @src="Scripts/ServerScriptService/GlobalFunctions.luau"
+    ModuleScript "Gore" @src="Scripts/ServerScriptService/Gore.luau" {
+        Texture "BLOOD" Texture="rbxassetid://15181614566" TextureContent="rbxassetid://15181614566"
+        Sound "Sound" AudioContent="rbxassetid://9114788214" RollOffMode=InverseTapered SoundId="rbxassetid://9114788214"
+    }
+    ModuleScript "HeavyObjects" @src="Scripts/ServerScriptService/HeavyObjects.luau"
+    ModuleScript "Lab" @src="Scripts/ServerScriptService/Lab.luau"
+    Script "LoadPlayer" @src="Scripts/ServerScriptService/LoadPlayer.luau"
+    Script "LoadScriptObjects" @src="Scripts/ServerScriptService/LoadScriptObjects.luau"
+    Script "PlayersData" @src="Scripts/ServerScriptService/PlayersData.luau"
+    Script "PlayersRegeneration" @src="Scripts/ServerScriptService/PlayersRegeneration.luau"
+    Script "RandomAmbients" @src="Scripts/ServerScriptService/RandomAmbients.luau"
+    Script "RandomComplex" @src="Scripts/ServerScriptService/RandomComplex.luau"
+    Folder "ServerInfo" {
+        Folder "ADDisplay" {
+            Script "ADDisplayADGenerate" @src="Scripts/ServerScriptService/ServerInfo/ADDisplay/ADDisplayADGenerate.luau"
+            StringValue "Text1"
+            StringValue "Text2"
+            NumberValue "TextPosition"
+        }
+        Folder "Data" {
+            NumberValue "Age"
+            IntValue "Day" Value=1
+            BoolValue "Emergency"
+            StringValue "Holiday"
+            IntValue "Hour"
+            IntValue "Minute"
+            IntValue "Month" Value=8
+            NumberValue "Owner"
+            StringValue "PlaceVersion" {
+                Script "GetVersion" @src="Scripts/ServerScriptService/ServerInfo/Data/PlaceVersion/GetVersion.luau"
+            }
+            StringValue "PrivateServer"
+            IntValue "Second"
+            StringValue "SirenType" Value="empty"
+            BoolValue "SirenWork"
+            IntValue "TotalHightlight"
+            IntValue "Year" Value=2028
+        }
+    }
+    Script "ServerLogs" @src="Scripts/ServerScriptService/ServerLogs.luau"
+    BindableEvent "SetHoliday"
+    Script "SurfaceGuies" @src="Scripts/ServerScriptService/SurfaceGuies.luau"
+    Folder "UglyScripts" {
+        Script "FullLight" @code=<<<
+            local light = game:GetService("Lighting")
+            if light.DisableLight.Value then
+            	light.Ambient = Color3.fromRGB(255,255,255)
+            else
+            	light.Ambient = Color3.fromRGB(8, 8, 8)
+            end
+        >>>
+        Script "PingResult" @code=<<<
+            local rs = game:GetService("ReplicatedStorage")
+
+            rs.Other.Ping.OnServerInvoke = function()
+            	return nil
+            end
+        >>>
+        Script "ShiftLock" @code=<<<
+            if game:GetService("StarterPlayer").EnableMouseLockOption then
+            	game:GetService("StarterPlayer").StarterPlayerScripts.PlayerModule.CameraModule.MouseLockController.BoundKeys.Value = "LeftControl"
+            end
+        >>>
+    }
+}

@@ -1,0 +1,649 @@
+UnionOperation "DoorL" Size=2.685,1.379,0.5 Anchored CFrame=26.251,2.44,287.973 Color=#969498 Material=Metal $_geo="1e69af5c0178090b" {
+    BoolValue "Broke_Physic" Value
+}
+UnionOperation "DoorR" Size=2.685,1.379,0.5 Anchored CFrame=29.851,2.44,287.973 Color=#969498 Material=Metal $_geo="1e69af5c0178090b" {
+    BoolValue "Broke_Physic" Value
+}
+BindableEvent "Exploded"
+Model "FIRE" LevelOfDetail=Disabled {
+    Part "Button" Size=0.136,0.162,0.126 Anchored BottomSurface=Smooth CFrame=24.374,3.716,288.19|-14.936,-90,0 Color=#BCBABF TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/FIRE/Button"
+    }
+    Part "ButtonPos" Size=0.136,0.162,0.126 Anchored BottomSurface=Smooth CFrame=24.374,3.707,288.159|-14.936,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#BCBABF TopSurface=Smooth Transparency=1
+    Part "Part" Size=0.164,0.196,0.152 Anchored BottomSurface=Smooth CFrame=24.374,3.701,288.135|-14.936,-90,0 Color=#434244 Material=Metal TopSurface=Smooth
+}
+Script "GasStoveBase" @src="Scripts/ServerStorage/SCRIPTOBJECTS/GasStove/GasStoveBase.luau" Disabled
+Model "Kamforka1" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=25.11,4.066,287.113 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=25.11,4.196,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=25.11,4.121,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=25.11,4.171,287.113|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.114,4.171,286.745|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.431,4.171,286.928|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.931,4.171,286.794|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.114,4.171,287.477|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.48,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.748,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.297,4.171,286.794|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.431,4.171,287.294|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.931,4.171,287.428|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.797,4.171,286.928|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.797,4.171,287.294|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.297,4.171,287.428|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=25.11,4.116,287.113|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka2" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=25.11,4.066,285.313 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=25.11,4.196,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=25.11,4.121,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=25.11,4.171,285.313|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.114,4.171,284.945|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.431,4.171,285.128|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.931,4.171,284.994|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.114,4.171,285.677|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.48,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.748,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.297,4.171,284.994|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.431,4.171,285.494|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.931,4.171,285.628|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.797,4.171,285.128|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=24.797,4.171,285.494|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=25.297,4.171,285.628|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=25.11,4.116,285.313|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka3" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=26.91,4.066,287.113 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=26.91,4.196,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=26.91,4.121,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=26.91,4.171,287.113|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.914,4.171,286.745|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.231,4.171,286.928|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.731,4.171,286.794|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.914,4.171,287.477|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.28,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.548,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.097,4.171,286.794|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.231,4.171,287.294|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.731,4.171,287.428|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.597,4.171,286.928|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.597,4.171,287.294|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.097,4.171,287.428|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=26.91,4.116,287.113|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka4" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=26.91,4.066,285.313 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=26.91,4.196,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=26.91,4.121,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=26.91,4.171,285.313|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.914,4.171,284.945|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.231,4.171,285.128|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.731,4.171,284.994|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.914,4.171,285.677|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.28,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.548,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.097,4.171,284.994|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.231,4.171,285.494|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.731,4.171,285.628|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.597,4.171,285.128|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=26.597,4.171,285.494|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=27.097,4.171,285.628|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=26.91,4.116,285.313|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka5" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=29.21,4.066,287.113 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=29.21,4.196,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=29.21,4.121,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=29.21,4.171,287.113|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.214,4.171,286.745|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.531,4.171,286.928|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.031,4.171,286.794|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.214,4.171,287.477|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.58,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.848,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.397,4.171,286.794|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.531,4.171,287.294|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.031,4.171,287.428|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.897,4.171,286.928|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.897,4.171,287.294|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.397,4.171,287.428|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=29.21,4.116,287.113|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka6" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=29.21,4.066,285.313 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=29.21,4.196,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=29.21,4.121,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=29.21,4.171,285.313|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.214,4.171,284.945|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.531,4.171,285.128|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.031,4.171,284.994|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.214,4.171,285.677|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.58,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.848,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.397,4.171,284.994|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.531,4.171,285.494|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.031,4.171,285.628|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.897,4.171,285.128|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=28.897,4.171,285.494|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=29.397,4.171,285.628|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=29.21,4.116,285.313|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka7" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=31.01,4.066,287.113 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=31.01,4.196,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=31.01,4.121,287.113|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=31.01,4.171,287.113|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.014,4.171,286.745|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.331,4.171,286.928|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.831,4.171,286.794|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.014,4.171,287.477|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.38,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.648,4.171,287.111|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.197,4.171,286.794|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.331,4.171,287.294|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.831,4.171,287.428|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.697,4.171,286.928|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.697,4.171,287.294|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.197,4.171,287.428|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=31.01,4.116,287.113|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Kamforka8" LevelOfDetail=Disabled {
+    Part "Part" Size=1.5,0.1,1.5 Anchored BottomSurface=Smooth CFrame=31.01,4.066,285.313 Color=#434244 Material=Metal TopSurface=Smooth
+    UnionOperation "Union" Size=0.05,1.4,1.4 Anchored CFrame=31.01,4.196,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="098ae47ea0f0cf54"
+    UnionOperation "Union" Size=0.1,1.4,1.4 Anchored CFrame=31.01,4.121,285.313|0,0,-90 CanCollide=false Color=#212121 Material=Metal UsePartColor $_geo="638ed7aa575bf6e0"
+    Part "center" Size=0.048,0.686,0.686 Anchored BottomSurface=Smooth CFrame=31.01,4.171,285.313|0,0,-90 CastShadow=false Color=#212121 Shape=Cylinder TopSurface=Smooth {
+        BoolValue "Broke_Physic" Value
+        PointLight "PointLight" Brightness=23.5 Color=#58AEFF Enabled=false Range=0.7 Shadows
+        Sound "fire" AudioContent="rbxassetid://8737370145" Looped RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://8737370145" Volume=0.05
+        Sound "gas" AudioContent="rbxassetid://329934298" Looped PlaybackSpeed=2.5 RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://329934298"
+        ParticleEmitter "gasparticle" Orientation=VelocityParallel Size=0:0,0.118:0.875,0.488:1.5,0.874:1.125,1:0 Color=0:#A6C5FF,1:#A6C5FF EmissionDirection=Left Enabled=false Lifetime=0.5,2 LockedToPart Rate=10 RotSpeed=-100,100 Rotation=-360,360 Shape=Cylinder ShapeStyle=Surface Speed=0.8,1.2 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:0.938,0.14:1,0.199:0.981:0.019,1:1
+    }
+    Part "fire1" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.014,4.171,284.945|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire10" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.331,4.171,285.128|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire11" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.831,4.171,284.994|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire12" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.014,4.171,285.677|0,0,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire2" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.38,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire3" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.648,4.171,285.311|90,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire4" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.197,4.171,284.994|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire5" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.331,4.171,285.494|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire6" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.831,4.171,285.628|0,-30,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire7" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.697,4.171,285.128|-180,-60,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire8" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=30.697,4.171,285.494|0,-60,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "fire9" Size=0.01,0.01,0.01 Anchored BottomSurface=Smooth CFrame=31.197,4.171,285.628|-180,-30,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#767156 Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+        ParticleEmitter "gasstovefireparticle" Orientation=FacingCameraWorldUp Size=0:0.05,0.187:0.1,0.361:0.12,0.489:0.15,0.608:0.074,0.738:0.123,0.837:0.147,1:0.05 EmissionDirection=Left Enabled=false Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 LockedToPart Rate=7 Rotation=-5,5 Shape=Sphere ShapeInOut=Inward Speed=0,0 Squash=0:0,0.203:0.188,0.488:-0.113,0.751:0.15,1:0 Texture="rbxassetid://15154806507" TextureContent="rbxassetid://15154806507" Transparency=0:1,0.086:0.574,0.183:0.536,0.35:0.388,0.377:0.536,0.477:0.634,0.594:0.508,0.662:0.454,0.71:0.59,0.795:0.628,0.884:0.639,1:1
+    }
+    Part "light" Size=0.1,0.667,0.667 Anchored BottomSurface=Smooth CFrame=31.01,4.116,285.313|0,0,-90 CastShadow=false Color=#767156 Material=Metal Shape=Cylinder TopSurface=Smooth
+}
+Model "Krytilka1" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=24.844,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka1/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka1/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=24.844,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=24.844,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka1/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka1/Krytilka"
+    }
+}
+Model "Krytilka2" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=25.352,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka2/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka2/Krytilka"
+    }
+    Part "Part" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=25.352,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=25.352,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka2/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka2/Krytilka"
+    }
+}
+Model "Krytilka3" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=26.601,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka3/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka3/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=26.601,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=26.601,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka3/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka3/Krytilka"
+    }
+}
+Model "Krytilka4" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=27.109,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka4/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka4/Krytilka"
+    }
+    Part "Part" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=27.109,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=27.109,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka4/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka4/Krytilka"
+    }
+}
+Model "Krytilka5" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=28.939,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka5/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka5/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=28.939,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=28.939,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka5/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka5/Krytilka"
+    }
+}
+Model "Krytilka6" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=29.447,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka6/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka6/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=29.447,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=29.447,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka6/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka6/Krytilka"
+    }
+}
+Model "Krytilka7" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=30.726,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka7/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka7/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=30.726,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=30.726,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka7/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka7/Krytilka"
+    }
+}
+Model "Krytilka8" LevelOfDetail=Disabled {
+    UnionOperation "Krytilka" Size=0.088,0.253,0.253 CFrame=31.234,3.752,288.304|-14.936,-90,0 CanCollide=false Color=#2C2B2C $_geo="e6e862363ddf9210" {
+        ObjectValue "Broke_AndItDestroy" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka8/Weld"
+        BoolValue "Broke_Physic" Value
+        ClickDetector "ClickDetector" MaxActivationDistance=5 {
+            Script "ClickDetectorScript" RunContext=Server @code=<<<
+                local base = require(game:GetService("ServerScriptService").Base)
+                local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                local cd = script.Parent
+                local event = script.Event
+
+                cd.MouseClick:Connect(function(plr)
+                	base.ClickDetector(plr,cd)
+                end)
+            >>> {
+                BindableEvent "Event"
+                PackageLink "PackageLink"
+            }
+        }
+        ObjectValue "MouseOver" Value=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka8/Krytilka"
+    }
+    Part "Part" Size=0.227,0.332,0.332 Anchored BottomSurface=Smooth CFrame=31.234,3.715,288.164|-14.936,-90,0 Color=#ABA8AD Shape=Cylinder TopSurface=Smooth
+    Part "Weld" Size=0.226,0.349,0.349 Anchored BottomSurface=Smooth CFrame=31.234,3.715,288.164|-14.936,-90,0 Color=#434244 Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Weld "Weld" C0=0.145,0,0 Part0=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka8/Weld" Part1=@"ServerStorage/SCRIPTOBJECTS/GasStove/Krytilka8/Krytilka"
+    }
+}
+Part "Part" Size=0.5,0.333,0.333 Anchored BottomSurface=Smooth CFrame=31.66,1.266,284.513|0,0,-90 Color=#98969A Material=Metal Reflectance=1 Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.5,0.333,0.333 Anchored BottomSurface=Smooth CFrame=31.66,1.266,287.713|0,0,-90 Color=#98969A Material=Metal Reflectance=1 Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.5,0.333,0.333 Anchored BottomSurface=Smooth CFrame=24.46,1.266,287.713|0,0,-90 Color=#98969A Material=Metal Reflectance=1 Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=0.5,0.333,0.333 Anchored BottomSurface=Smooth CFrame=24.46,1.266,284.513|0,0,-90 Color=#98969A Material=Metal Reflectance=1 Shape=Cylinder TopSurface=Smooth
+Part "Part" Size=8,0.6,0.2 Anchored BottomSurface=Smooth CFrame=28.06,4.316,284.213 Color=#7F7E81 Material=Metal Reflectance=0.35 TopSurface=Smooth
+Part "TRIGGER1" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=25.1,4.366,287.1 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER2" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=25.1,4.366,285.3 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER3" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=26.9,4.366,287.1 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER4" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=26.9,4.366,285.3 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER5" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=29.2,4.366,287.1 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER6" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=29.2,4.366,285.3 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER7" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=31,4.366,287.1 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+Part "TRIGGER8" Size=1.4,0.7,1.4 Anchored BottomSurface=Smooth CFrame=31,4.366,285.3 CanCollide=false CanQuery=false CastShadow=false TopSurface=Smooth Transparency=1
+UnionOperation "Union" Size=8,2.5,4.156 Anchored CFrame=28.06,2.766,286.191 Color=#7F7E81 Material=Metal Reflectance=0.35 UsePartColor $_geo="3abd61108f3a5d87"
+Part "center" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=28.058,2.828,286.199 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1
+Part "explosiondecal" Size=17.955,0.001,17.955 Anchored BottomSurface=Smooth CFrame=29.271,1.016,291.508|0,90,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+    Decal "Decal" Face=Top Texture="rbxassetid://15161743879" TextureContent="rbxassetid://15161743879" Transparency=1
+}

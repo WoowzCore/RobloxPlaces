@@ -1,0 +1,1534 @@
+Animation "AttackPose" AnimationContent="http://www.roblox.com/asset/?id=16425426367" AnimationId="http://www.roblox.com/asset/?id=16425426367"
+CurveAnimation "Automatic Save" #"1709306409" Priority=Core {
+    Folder "HumanoidRootPart" {
+        Folder "Torso" {
+            Folder "Right Arm" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+        }
+    }
+    MarkerCurve "NamedKeyframeEvent"
+}
+KeyframeSequence "IDLE NEW" #"1698041006" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingStyle=Cubic
+                Pose "Left Arm" EasingStyle=Cubic
+                Pose "Left Leg" EasingStyle=Cubic
+                Pose "Right Arm" EasingStyle=Cubic
+                Pose "Right Leg" EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingStyle=Cubic
+                Pose "Left Arm" EasingStyle=Cubic
+                Pose "Left Leg" EasingStyle=Cubic
+                Pose "Right Arm" EasingStyle=Cubic
+                Pose "Right Leg" EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-5.331,0,0 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|-3.834,0,0 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.733 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0.005,0,0.024|-3.207,2.251,-4.261 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|0,0,19.895 EasingStyle=Cubic
+                Pose "Left Arm" CFrame=0,0,0|-9.846,0,0 EasingStyle=Cubic
+                Pose "Left Leg" CFrame=0.01,0,0.049|0,4.018,0 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|-12.243,0,0 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.002,0,0.064|0,-1.54,0 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|0,0,-19.618 EasingStyle=Cubic
+            }
+        }
+    }
+}
+KeyframeSequence "IDLE NEW 2" #"1698041376" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingStyle=Cubic
+                Pose "Left Arm" EasingStyle=Cubic
+                Pose "Left Leg" EasingStyle=Cubic
+                Pose "Right Arm" EasingStyle=Cubic
+                Pose "Right Leg" EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.533 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|-7.759,0,0
+                Pose "Left Arm" CFrame=-0.027,0.154,0.033|-39.112,-67.842,-141.968
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.633 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.021,0.121,0.026|-13.853,-53.407,-50.323
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|-3.712,-3.268,6.573
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|-6.157,0,0 EasingStyle=Cubic
+                Pose "Left Arm" CFrame=-0.104,0.079,0.021|-75.057,-51.755,-168.162 EasingStyle=Cubic
+                Pose "Left Leg" CFrame=-0.005,0,0|-1.052,-0.264,6.346 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|0,-7.859,0 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0,0,0|-1.857,0,-4.512 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingStyle=Cubic
+                Pose "Left Arm" EasingStyle=Cubic
+                Pose "Left Leg" EasingStyle=Cubic
+                Pose "Right Arm" EasingStyle=Cubic
+                Pose "Right Leg" EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.8 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.011,0.066,0.014|0.33,-8.19,-20.734
+            }
+        }
+    }
+}
+KeyframeSequence "IDLE NEW 3" #"1699424479" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingDirection=InOut
+                Pose "Left Arm" EasingDirection=InOut
+                Pose "Left Leg" EasingDirection=InOut
+                Pose "Right Arm" EasingDirection=InOut
+                Pose "Right Leg" EasingDirection=InOut
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" EasingDirection=InOut
+                Pose "Left Arm" EasingDirection=InOut
+                Pose "Left Leg" EasingDirection=InOut
+                Pose "Right Arm" EasingDirection=InOut
+                Pose "Right Leg" EasingDirection=InOut
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.267 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-0.078,0,0 EasingDirection=Out EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|-4.703,0,0 EasingDirection=Out EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,-0.018,0.02|43.348,1.09,-0.392 EasingDirection=Out EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.767 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-1.644,0.759,-7.991 EasingDirection=InOut
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,-0.024,0.026|42.007,2.562,0 EasingDirection=Out EasingStyle=Cubic
+                Pose "Left Leg" CFrame=0,0,0|-2.698,1.619,-23.017 EasingDirection=Out EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.533 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-10.158,0,0 EasingDirection=Out EasingStyle=Cubic
+                Pose "Left Leg" CFrame=0,0,0|-3.006,1.953,-32.991 EasingDirection=Out EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|-12.75,0,0 EasingDirection=Out EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0,0,0|0,-7.703,0 EasingDirection=Out EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-2.356,1.323,-0.511 EasingDirection=Out EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0,0,0|0,-2.823,0 EasingDirection=Out EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.7 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,-0.013,0.015|39.413,0.115,-1.472 EasingDirection=InOut
+            }
+        }
+    }
+}
+CurveAnimation "KICK_" #"1708379026" Priority=Core {
+    Folder "HumanoidRootPart" {
+        Folder "Torso" {
+            Folder "Left Leg" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+            Folder "Right Leg" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+        }
+    }
+    MarkerCurve "NamedKeyframeEvent"
+}
+KeyframeSequence "KICK_MIRRORED" #"1708380434" Loop=false {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|0,0,0.605
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.533 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.736,0.885,-54.429
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.55 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.719,0.837,-55.436
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.567 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.695,0.764,-56.938
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.583 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.665,0.662,-59.034
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.517 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.747,0.914,-53.818
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.483 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.755,0.934,-53.389
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.753,0.929,-53.505
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.2 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.453,0.334,-8.779
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|-0.755,0.935,-53.373
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0,0,0|0,0,0.603
+                Pose "Right Leg"
+            }
+        }
+    }
+}
+KeyframeSequence "Untitled Animation Clip" #"1697805204" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.303|1.478,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=0,0,0|0,0,42.956 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0,0,0|0,0,43.461 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.733 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0.185,-0.035,0|0,0,1.993 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.7 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=0.151,-0.043,0|0,0,-2.358 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.036,0.038|6.794,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=-0.025,-0.035,0|0,0,-6.71 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0.54,0.407,0|0,0,-33.511 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.767 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.036,0.038|-0.033,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=0.107,-0.021,0|0,0,6.345 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0.54,0.407,0|0,0,-5.646 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.033 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Leg" CFrame=0,0.098,0|0,0,36.63 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.867 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.303|1.478,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=0,0,0|0,0,42.956 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0,0,0|0,0,43.461 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.067 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Leg" CFrame=0,0.217,0|0,0,29.799 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Leg" CFrame=0.041,0.283,0|0,0,22.969 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.567 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.012,-0.164|6.794,-2.423,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=-0.34,0.156,0|0,0,-6.71 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.194,0.037,0|0,0,-46.992 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.4 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=-0.227,0.043,0|0,0,-14.248 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.233 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.008,-0.191|7.995,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=-0.799,-0.001,0|0,0,47.541 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0.001,0.146,0|0,0,7.083 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.133 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.303|4.022,2.883,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=0,0,0|0,0,57.197 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=0.117,0.308,0|0,0,16.138 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.433 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.019,-0.001|-0.657,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=-0.043,0.007,0|0,0,-8.169 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.194,0.037,0|0,0,-20.651 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.267 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=-0.763,0.388,0|0,0,31.368 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.081,0.141,0|0,0,3.81 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.333 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,-0.012,-0.144|5.406,0,0 EasingStyle=Cubic {
+                Pose "Left Leg" CFrame=-0.475,0.335,0|0,0,-32.953 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.112,0.152,0|0,0,-2.736 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=-0.617,0.536,0|0,0,-8.143 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.136,0.143,0|0,0,0.537 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.367 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=-0.411,0.079,0|0,0,-28.495 EasingStyle=Cubic
+                Pose "Right Leg" CFrame=-0.175,0.119,0|0,0,-8.708 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.833 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Leg" CFrame=0.18,0.136,0|0,0,22.762 EasingStyle=Cubic
+            }
+        }
+    }
+}
+KeyframeSequence "Untitled Animation Clip idle" #"1696540119" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.633 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.052|-0.134,0,0 {
+                Pose "Left Arm" CFrame=0,0,0|-0.232,-0.001,4.196
+                Pose "Left Leg" CFrame=0,0.028,0|-0.792,4.283,0.958
+                Pose "Right Arm" CFrame=0,0,0|-0.4,0.02,1.141
+                Pose "Right Leg" CFrame=0,0.028,0|-2.325,-0.056,1.369
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.099|1.912,0,0 {
+                Pose "Head" CFrame=0,0,0|0.778,0,0
+                Pose "Left Arm" CFrame=0,0,0|-0.443,0,-1.134
+                Pose "Left Leg" CFrame=0,0.054,0|-1.626,0.043,-1.524
+                Pose "Right Arm" CFrame=0,0,0|-1.868,0,2.178
+                Pose "Right Leg" CFrame=0,0.054,0|0.028,0,2.617
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.167 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|-0.235,0,0
+                Pose "Left Arm" CFrame=0,0,0|0.911,-0.014,-0.63
+                Pose "Left Leg" CFrame=0,0.03,0|0.048,0.004,-3.572
+                Pose "Right Arm" CFrame=0,0,0|-1.038,0.009,-0.098
+                Pose "Right Leg" CFrame=0,0.03,0|0.021,-1.458,0.072
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+}
+CurveAnimation "Use [CHANNELS]" #"1708381610" Priority=Core {
+    Folder "HumanoidRootPart" {
+        Folder "Torso" {
+            Folder "Right Arm" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+        }
+    }
+    MarkerCurve "NamedKeyframeEvent"
+}
+KeyframeSequence "arm" #"1699424705" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,2.566,0 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.8 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,1.54,-3.683 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.867 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|1.356,0.968,-2.479 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|-0.556,-0.446,0.541 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.233 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,-3.949,0 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.3 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,-2.946,1 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" EasingStyle=Cubic
+            }
+        }
+    }
+}
+KeyframeSequence "arms" #"1696616177" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm"
+                Pose "Right Arm"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.857 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|5.113,-2.105,-22.316
+                Pose "Right Arm" CFrame=0,0,0|-6.415,3.571,-28.989
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.571 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm"
+                Pose "Right Arm"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.286 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-6.144,0,30.044
+                Pose "Right Arm" CFrame=0,0,0|1.648,0.923,29.255
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1.143 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm"
+                Pose "Right Arm"
+            }
+        }
+    }
+}
+KeyframeSequence "block" #"1708276893" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.966,-0.417,-0.794|-5.801,-4.163,-160.567
+                Pose "Right Arm" CFrame=0.887,-0.424,-0.666|-11.076,3.475,159.356
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.978,-0.424,-0.795|-3.661,-4.949,-154.921 EasingDirection=InOut EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0.874,-0.451,-0.669|-6.655,0.787,157.437 EasingDirection=InOut EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.966,-0.417,-0.794|-5.801,-4.163,-160.567
+                Pose "Right Arm" CFrame=0.887,-0.424,-0.666|-11.076,3.475,159.356
+            }
+        }
+    }
+}
+KeyframeSequence "camera" #"1699429411" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.319,-0.057,-0.537|7.097,-54.658,-82.948 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|0,0,90 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.276,-0.046,-0.527|4.447,-53.09,-86.148 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.233 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.325,-0.052,-0.538|5.874,-54.969,-84.442 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.319,-0.057,-0.537|7.097,-54.658,-82.948 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0,0,0|0,0,90 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.733 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.297,-0.058,-0.532|7.212,-53.795,-82.799 EasingStyle=Cubic
+            }
+        }
+    }
+}
+CurveAnimation "camera [CHANNELS]" #"1697758954" Priority=Core {
+    Folder "HumanoidRootPart" {
+        Folder "Torso" {
+            Folder "Left Arm" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+            Folder "Right Arm" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+        }
+    }
+}
+KeyframeSequence "crawl arms" #"1696760985" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.124,0.634,1.009|175.719,0,0
+                Pose "Right Arm" CFrame=0.124,0.35,0.976|175.321,0,0
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.625 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.152,0.378,0.999|175.719,0,-1.189
+                Pose "Right Arm" CFrame=0.104,0.589,0.874|175.886,-0.072,-0.925
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.089,0.126,0.988|175.719,0,-3.108
+                Pose "Right Arm" CFrame=0.089,0.829,0.772|171.757,0,-3.119
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.875 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.129,0.382,0.999|175.719,0,-1.554
+                Pose "Right Arm" CFrame=0.085,0.589,0.874|176.477,-0.104,-1.556
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.096,0.632,1.009|175.719,0,0.73
+                Pose "Right Arm" CFrame=0.096,0.348,0.976|175.321,0,1.265
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.25 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.2,0.939,0.792|165.528,0,-2.15
+                Pose "Right Arm" CFrame=0.149,-0.107,0.954|-177.215,0,-1.813
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.375 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.138,0.791,0.9|173.187,-0.096,-0.707
+                Pose "Right Arm" CFrame=0.213,0.122,0.965|179.053,0.05,-0.274
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.125 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.12,0.792,0.9|173.556,-0.103,-1.071
+                Pose "Right Arm" CFrame=0.195,0.123,0.965|179.054,0.03,-0.906
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.124,0.634,1.009|175.719,0,0
+                Pose "Right Arm" CFrame=0.124,0.35,0.976|175.321,0,0
+            }
+        }
+    }
+}
+KeyframeSequence "dead" #"1696842275" Loop=false Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+}
+KeyframeSequence "idle2" #"1696613452" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|0,0,-2.833
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=2.286 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,-0.029 {
+                Pose "Left Arm" CFrame=0,0.085,0|-3.687,0,0
+                Pose "Left Leg" CFrame=0.027,0.021,0|-1.07,0,0
+                Pose "Right Arm" CFrame=0,0.077,0|-4.406,0,0
+                Pose "Right Leg" CFrame=0.008,0.035,0|-1.258,0,0
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=3.857 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|0,0,3.318
+            }
+        }
+    }
+}
+KeyframeSequence "kick" #"1708378721" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.436,-0.536,-0.257|-9.401,-7.305,-134.374
+                Pose "Right Arm" CFrame=0.148,-0.584,-0.114|-8.87,8.784,126.733
+                Pose "Right Leg" CFrame=0,0,0|0,0,-0.603
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.436,-0.536,-0.257|-9.401,-7.305,-134.374
+                Pose "Right Arm" CFrame=0.148,-0.584,-0.114|-8.87,8.784,126.733
+                Pose "Right Leg" CFrame=0,0,0|0,0,-0.603
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.125 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.317,-0.39,-0.187|-16.796,13.347,-69.347
+                Pose "Right Arm" CFrame=0.108,-0.425,-0.083|-14.803,1.855,42.726
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.583 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-26.616,1.248,-4.642
+                Pose "Right Arm" CFrame=0,0,0|-7.76,2.531,-19.855
+                Pose "Right Leg" CFrame=0,0,0|-0.665,-0.662,59.034
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.208 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Leg" CFrame=0,0,0|-0.453,-0.334,8.779
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.458 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-23.382,0,-10.663
+                Pose "Right Arm" CFrame=0,0,0|-13.832,6.806,-25.701
+                Pose "Right Leg" CFrame=0,0,0|-0.755,-0.935,53.373 EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.109,-0.134,-0.064|-2.421,-4.499,-29.963
+                Pose "Right Arm" CFrame=0.037,-0.146,-0.028|-2.962,4.334,18.245
+            }
+        }
+    }
+}
+CurveAnimation "kick [CHANNELS]" #"1708378895" Priority=Core {
+    Folder "HumanoidRootPart" {
+        Folder "Torso" {
+            Folder "Right Leg" {
+                Vector3Curve "Position" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+                EulerRotationCurve "Rotation" {
+                    FloatCurve "X"
+                    FloatCurve "Y"
+                    FloatCurve "Z"
+                }
+            }
+        }
+    }
+    MarkerCurve "NamedKeyframeEvent"
+}
+KeyframeSequence "punch" #"1708342772" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.149,-0.775,-0.024|-9.252,-9.689,-134.063
+                Pose "Right Arm" CFrame=0.294,-0.331,-0.155|-4.89,5.034,134.273
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=1.137,-0.084,-0.154|3.409,19.706,90.431
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.8 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.656,-0.207,-0.278|3.275,34.472,111.399
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.433 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.236,-0.856,0.125|-13.237,17.404,-137.023 EasingStyle=Cubic
+                Pose "Right Arm" CFrame=0.815,-0.094,-0.039|3.536,2.585,90.406
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.233 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.46,-0.263,0.042|3.58,-3.692,114.18
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.149,-0.775,-0.024|-9.252,-9.689,-134.063
+                Pose "Right Arm" CFrame=0.294,-0.331,-0.155|-4.89,5.034,134.273
+            }
+        }
+    }
+}
+KeyframeSequence "punch_mirrored" #"1708379786" {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.294,-0.331,-0.155|-4.89,-5.034,-134.273
+                Pose "Right Arm" CFrame=0.149,-0.775,-0.024|-9.252,9.689,134.063
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.817 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.209,-0.831,0.079|-12.129,-8.996,136.292
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.833 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.205,-0.827,0.072|-11.972,-7.853,136.181
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.85 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.202,-0.824,0.066|-11.799,-6.61,136.058
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.8 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.656,-0.207,-0.278|3.275,-34.472,-111.399
+                Pose "Right Arm" CFrame=0.212,-0.834,0.084|-12.272,-10.045,136.391
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.767 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.218,-0.839,0.095|-12.517,-11.874,136.558
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.783 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.216,-0.837,0.09|-12.4,-11.003,136.48
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.221,-0.842,0.099|-12.621,-12.663,136.628
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.733 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.223,-0.844,0.103|-12.715,-13.372,136.69
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.867 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.197,-0.82,0.058|-11.609,-5.264,135.92
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.9 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.188,-0.811,0.041|-11.173,-2.246,135.595
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.967 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.164,-0.789,0|-10.017,5.2,134.69
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.983 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.157,-0.782,-0.012|-9.653,7.378,134.395
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.883 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.193,-0.815,0.05|-11.401,-3.81,135.766
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.95 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.17,-0.795,0.012|-10.348,3.152,134.955
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.917 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.182,-0.806,0.032|-10.923,-0.567,135.404
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.933 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.176,-0.8,0.022|-10.648,1.231,135.192
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.294,-0.331,-0.155|-4.89,-5.034,-134.273
+                Pose "Right Arm" CFrame=0.149,-0.775,-0.024|-9.252,9.689,134.063
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.717 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.225,-0.846,0.106|-12.798,-14.007,136.745
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.683 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.228,-0.849,0.112|-12.936,-15.07,136.834
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.236,-0.855,0.125|-13.231,-17.36,137.019
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.517 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.236,-0.855,0.124|-13.225,-17.317,137.016
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.533 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.235,-0.855,0.124|-13.217,-17.254,137.011
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.483 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.236,-0.856,0.125|-13.234,-17.385,137.021
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.45 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.236,-0.856,0.125|-13.236,-17.403,137.023
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.236,-0.856,0.125|-13.236,-17.398,137.022
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.433 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.815,-0.094,-0.039|3.536,-2.585,-90.406
+                Pose "Right Arm" CFrame=0.236,-0.856,0.125|-13.237,-17.404,137.023
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.7 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.227,-0.847,0.109|-12.871,-14.572,136.792
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.55 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.235,-0.855,0.124|-13.206,-17.167,137.004
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.583 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.234,-0.854,0.122|-13.172,-16.9,136.983
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.65 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.231,-0.851,0.117|-13.042,-15.885,136.901
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-1.137,-0.084,-0.154|3.409,-19.706,-90.431
+                Pose "Right Arm" CFrame=0.23,-0.85,0.114|-12.993,-15.507,136.87
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.567 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.235,-0.855,0.123|-13.191,-17.05,136.995
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.633 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.232,-0.852,0.118|-13.083,-16.209,136.927
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.234,-0.854,0.121|-13.148,-16.712,136.968
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.617 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0.233,-0.853,0.12|-13.119,-16.483,136.95
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.233 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=-0.46,-0.263,0.042|3.58,3.692,-114.18
+            }
+        }
+    }
+}
+KeyframeSequence "ragdoll" #"1696842130" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.667 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,-0.017,0|-2.16,0,5.213
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.25 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|-1.416,0,-3.113
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.292 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,-0.015,0|-1.721,0,4.436
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,0.01|0.528,0,0 {
+                Pose "Head" CFrame=0,0,0|-2.833,0,0
+                Pose "Left Arm" CFrame=0,-0.026,0|-3.24,0,0
+                Pose "Left Leg" CFrame=0,0.043,-0.002|-3.167,0,0
+                Pose "Right Arm" CFrame=0,-0.026,0|-2.95,0,1.92
+                Pose "Right Leg" CFrame=0,0.043,0.002|-3.074,0,-4.082
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Head"
+                Pose "Left Arm"
+                Pose "Left Leg"
+                Pose "Right Arm"
+                Pose "Right Leg"
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Head" CFrame=0,0,0|-1.416,0,3.798
+            }
+        }
+    }
+}
+KeyframeSequence "run" #"1697013422" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|10.627,-13.804,-50.56
+                Pose "Right Arm" CFrame=0,0,0|-9.152,7.211,-37.924
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|2.312,0.618,39.156
+                Pose "Right Arm" CFrame=0,0,0|7.121,12.861,42.009
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.6 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-4.119,-6.862,49.131
+                Pose "Right Arm" CFrame=0,0,0|9.619,16.413,55.449
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.367 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-4.725,-5.09,23.88
+                Pose "Right Arm" CFrame=0,0,0|0.841,7.175,23.262
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.167 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|2.18,-7.814,-36.557
+                Pose "Right Arm" CFrame=0,0,0|-3.972,5.091,-22.639
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.267 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-2.689,-4.188,-22.421
+                Pose "Right Arm" CFrame=0,0,0|-3.972,5.091,-5.549
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|10.627,-13.804,-50.56
+                Pose "Right Arm" CFrame=0,0,0|-9.152,7.211,-37.924
+            }
+        }
+    }
+}
+KeyframeSequence "sit" #"1696702372" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Left Leg" CFrame=0,0,0|-0.181,2.268,-85.439
+                Pose "Right Leg" CFrame=0,0,0|-0.628,-7.041,84.887
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" {
+                Pose "Left Leg" CFrame=0,0,0|-0.181,2.268,-85.439
+                Pose "Right Leg" CFrame=0,0,0|-0.628,-7.041,84.887
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Leg" CFrame=-0.088,-0.003,0.008|-0.299,1.152,-88.275
+                Pose "Right Leg" CFrame=0,0,0|-0.811,-6.988,88.555
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.25 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,0|1.132,0,0 {
+                Pose "Left Leg" CFrame=-0.046,-0.003,0.002|-0.239,2.284,-86.858
+                Pose "Right Leg" CFrame=0,0,0|-0.601,-5.359,86.735
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" CFrame=0,0,0|-1.298,0,0
+        }
+    }
+}
+KeyframeSequence "throw" #"1708278483" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-15.391,-4.754,-29.505
+                Pose "Right Arm" CFrame=-0.3,-0.137,0.023|-9.51,-3.733,-151.143
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-15.391,-4.754,-29.505
+                Pose "Right Arm" CFrame=-0.3,-0.137,0.023|-9.51,-3.733,-151.143
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.5 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-22.338,-0.795,-24.16 EasingDirection=InOut EasingStyle=Cubic
+                Pose "Right Arm" CFrame=-0.32,-0.101,0.016|-2.667,0.058,-150.923 EasingDirection=InOut EasingStyle=Cubic
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.25 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=-0.31,-0.119,0.019|-5.602,-1.573,-150.962
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.75 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-22.343,-0.903,-27.001
+            }
+        }
+    }
+}
+KeyframeSequence "tool" #"1697013069" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|0,0,-13.396
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|-2.376,0.566,-8.954
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Left Arm" CFrame=0,0,0|0,0,-13.396
+            }
+        }
+    }
+}
+KeyframeSequence "tool2" #"1697013870" Priority=Core {
+    Keyframe "Keyframe" {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,0,14.933
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=0.467 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|-3.987,-1.409,19.43
+            }
+        }
+    }
+    Keyframe "Keyframe" Time=1 {
+        Pose "HumanoidRootPart" Weight=0 {
+            Pose "Torso" Weight=0 {
+                Pose "Right Arm" CFrame=0,0,0|0,0,14.933
+            }
+        }
+    }
+}

@@ -1,0 +1,947 @@
+ServerStorage "ServerStorage" {
+    Folder "ADMINS" {
+        BoolValue "1734081766" Value
+    }
+    ModuleScript "COMMANDSDATA" @src="Scripts/ServerStorage/COMMANDSDATA.luau"
+    ModuleScript "Datas" @src="Scripts/ServerStorage/Datas.luau"
+    Model "Dummy" LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/Dummy/HumanoidRootPart" {
+        BodyColors "Body Colors" HeadColor3=#9FA1AC LeftArmColor3=#9FA1AC LeftLegColor3=#9FA1AC RightArmColor3=#9FA1AC RightLegColor3=#9FA1AC TorsoColor3=#9FA1AC
+        Script "Died" @src="Scripts/ServerStorage/Dummy/Died.luau"
+        Script "DummyScript" @src="Scripts/ServerStorage/Dummy/DummyScript.luau"
+        Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=18.069,5.516,365.067 CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "FaceCenterAttachment"
+            Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+            Attachment "HairAttachment" CFrame=0,0.6,0
+            Attachment "HatAttachment" CFrame=0,0.6,0
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+            Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+        }
+        Humanoid "Humanoid" AutoJumpEnabled=false AutoRotate=false BreakJointsOnDeath=false NameDisplayDistance=0 UseJumpPower=false WalkSpeed=0 {
+            Animator "Animator"
+            HumanoidDescription "HumanoidDescription" {
+                BodyPartDescription "BodyPartDescription"
+                BodyPartDescription "BodyPartDescription" BodyPart=RightArm
+                BodyPartDescription "BodyPartDescription" BodyPart=RightLeg
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftLeg
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftArm
+                BodyPartDescription "BodyPartDescription" BodyPart=Torso
+            }
+        }
+        Part "HumanoidRootPart" Size=2,2,1 Anchored BottomSurface=Smooth CFrame=18.069,4.016,365.067 CollisionGroup="IgnoreSmall" TopSurface=Smooth Transparency=1 {
+            Motor6D "Root Hip" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/HumanoidRootPart" Part1=@"ServerStorage/Dummy/Torso"
+            Attachment "RootAttachment"
+        }
+        Part "Left Arm" Size=1,2,1 BottomSurface=Smooth CFrame=16.569,4.016,365.067 CanCollide=false CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "LeftGripAttachment" CFrame=0,-1,0
+            Attachment "LeftShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=17.569,2.016,365.067 CanCollide=false CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "LeftFootAttachment" CFrame=0,-1,0
+        }
+        Script "LoadDummy" @src="Scripts/ServerStorage/Dummy/LoadDummy.luau" Disabled
+        Part "Right Arm" Size=1,2,1 BottomSurface=Smooth CFrame=19.569,4.016,365.067 CanCollide=false CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "RightGripAttachment" CFrame=0,-1,0
+            Attachment "RightShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=18.569,2.016,365.067 CanCollide=false CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "RightFootAttachment" CFrame=0,-1,0
+        }
+        BindableEvent "Scream"
+        Part "Torso" Size=2,2,1 BottomSurface=Smooth CFrame=18.069,4.016,365.067 CollisionGroup="IgnoreSmall" Color=#9FA1AC TopSurface=Smooth {
+            Attachment "BodyBackAttachment" CFrame=0,0,0.5
+            Attachment "BodyFrontAttachment" CFrame=0,0,-0.5
+            Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/Torso" Part1=@"ServerStorage/Dummy/Left Leg"
+            Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/Torso" Part1=@"ServerStorage/Dummy/Left Arm"
+            Attachment "LeftCollarAttachment" CFrame=-1,1,0
+            Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/Torso" Part1=@"ServerStorage/Dummy/Head"
+            Attachment "NeckAttachment" CFrame=0,1,0
+            Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/Torso" Part1=@"ServerStorage/Dummy/Right Leg"
+            Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"ServerStorage/Dummy/Torso" Part1=@"ServerStorage/Dummy/Right Arm"
+            Attachment "RightCollarAttachment" CFrame=1,1,0
+            Attachment "WaistBackAttachment" CFrame=0,-1,0.5
+            Attachment "WaistCenterAttachment" CFrame=0,-1,0
+            Attachment "WaistFrontAttachment" CFrame=0,-1,-0.5
+        }
+    }
+    Folder "GORE" {
+        MeshPart "Head1" Size=1.393,1.281,1.194 Anchored CFrame=22.892,1.656,384.247 CollisionFidelity=Default PivotOffset=0.076,-0.005,-0.01 {
+            MeshPart "DECAL" Size=1.394,1.282,1.195 Anchored CFrame=22.892,1.656,384.247 CollisionFidelity=Default PivotOffset=0.076,-0.005,-0.01 Transparency=0.02 {
+                SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15170701467" ColorMapContent="rbxassetid://15170701467" NormalMap="rbxassetid://15169368076" NormalMapContent="rbxassetid://15169368076" RoughnessMap="rbxassetid://15170151198" RoughnessMapContent="rbxassetid://15170151198"
+            }
+            MeshPart "MEAT" Size=1.197,0.897,1.119 Anchored CFrame=22.918,1.848,384.247 CollisionFidelity=Default Color=#919191 PivotOffset=0.05,-0.197,-0.01
+        }
+        MeshPart "Head2" Size=1.184,1.221,1.263 Anchored CFrame=19.173,5.621,394.927 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Massless PivotOffset=0.032,-0.01,0.013 {
+            MeshPart "DECAL" Size=1.185,1.222,1.264 Anchored CFrame=19.173,5.621,394.927 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Massless PivotOffset=0.032,-0.01,0.013 Transparency=0.02 {
+                SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15169339401" ColorMapContent="rbxassetid://15169339401" NormalMap="rbxassetid://15169368076" NormalMapContent="rbxassetid://15169368076" RoughnessMap="rbxassetid://15169352623" RoughnessMapContent="rbxassetid://15169352623"
+            }
+            MeshPart "MEAT" Size=0.655,0.937,1.24 Anchored CFrame=18.924,5.751,394.936 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#919191 Massless PivotOffset=0.281,-0.14,0.004
+        }
+        MeshPart "Head3" Size=1.181,1.161,1.189 Anchored CFrame=26.573,19.58,388.556 CollisionFidelity=Default PivotOffset=-0.011,-0.03,-0.044 {
+            MeshPart "DECAL" Size=1.182,1.162,1.19 CFrame=26.573,19.58,388.556 CollisionFidelity=Default PivotOffset=-0.011,-0.03,-0.044 Transparency=0.02 {
+                SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15173079460" ColorMapContent="rbxassetid://15173079460" NormalMap="rbxassetid://15169368076" NormalMapContent="rbxassetid://15169368076" RoughnessMap="rbxassetid://15173084818" RoughnessMapContent="rbxassetid://15173084818"
+            }
+            MeshPart "MEAT" Size=1.156,0.314,0.554 CFrame=26.567,20.003,388.806 CollisionFidelity=Default PivotOffset=-0.005,-0.453,-0.295
+        }
+        MeshPart "Head4" Size=1.288,1.275,1.14 Anchored CFrame=-0.608,1.638,215.6 CollisionFidelity=Default PivotOffset=-0.048,-0.107,0.005 {
+            MeshPart "DECAL" Size=1.289,1.276,1.141 Anchored CFrame=-0.608,1.638,215.6 CollisionFidelity=Default PivotOffset=-0.048,-0.107,0.005 Transparency=0.02 {
+                SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15193279730" ColorMapContent="rbxassetid://15193279730" NormalMap="rbxassetid://15169368076" NormalMapContent="rbxassetid://15169368076" RoughnessMap="rbxassetid://15188389307" RoughnessMapContent="rbxassetid://15188389307"
+            }
+            MeshPart "MEAT" Size=1.211,1.092,0.731 Anchored CFrame=-0.642,1.718,215.805 CollisionFidelity=Default PivotOffset=-0.013,-0.187,-0.2
+        }
+        MeshPart "Head5" Size=1.313,1,1.215 Anchored CFrame=31.574,1.516,359.391 CollisionFidelity=Default PivotOffset=0.04,0.031,-0.007 {
+            MeshPart "DECAL" Size=1.314,1.001,1.216 Anchored CFrame=31.574,1.516,359.391 CollisionFidelity=Default PivotOffset=0.04,0.031,-0.007 Transparency=0.02 {
+                SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15200252847" ColorMapContent="rbxassetid://15200252847" NormalMap="rbxassetid://15169368076" NormalMapContent="rbxassetid://15169368076" RoughnessMap="rbxassetid://15200248200" RoughnessMapContent="rbxassetid://15200248200"
+            }
+            MeshPart "MEAT" Size=1.313,0.583,1.205 Anchored CFrame=31.574,1.724,359.387 CollisionFidelity=Default PivotOffset=0.04,-0.177,-0.002
+        }
+        MeshPart "gib" Size=0.5,0.5,0.5 CFrame=-1.013,1.267,212.961 CollisionFidelity=Hull CollisionGroup="Gore" Color=#BAB8BC Massless RenderFidelity=Precise {
+            Attachment "Attachment" CFrame=0,0.184,0
+            Attachment "Attachment1" CFrame=0,-0.142,0
+            Trail "Trail" Attachment0=@"ServerStorage/GORE/gib/Attachment" Attachment1=@"ServerStorage/GORE/gib/Attachment1" Color=0:#B4B4B4,1:#B4B4B4 FaceCamera Lifetime=0.25 Texture="rbxassetid://15181614566" TextureContent="rbxassetid://15181614566" WidthScale=0:1,1:0
+        }
+    }
+    Folder "ITEMS" {
+        Tool "EmergencyPistol" CanBeDropped=false Grip=-0.1,-0.4,-0.1|0,90,0 LevelOfDetail=Disabled {
+            StringValue "Animation" Value="Tool"
+            BoolValue "CanUseInRagdoll" Value
+            Part "Dark" Size=0.116,0.182,0.311 BottomSurface=Smooth CFrame=17.667,20.111,177.075 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#111111 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=0.45
+            Part "Dark" Size=0.133,0.107,0.107 BottomSurface=Smooth CFrame=17.651,20.127,176.752|0,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#111111 Massless Shape=Cylinder TopSurface=Smooth
+            BoolValue "Firearm"
+            Part "Handle" Size=1.461,1.277,0.289 BottomSurface=Smooth CFrame=17.65,19.642,177.038|0,-90,0 CanQuery=false CanTouch=false CastShadow=false CollisionGroup="Items" Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~9"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~8"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~7"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~11"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/lamp1"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/lamp2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~3"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/lamp4"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/lamp3"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~6"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/lamp5"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part1"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/MeshPart"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Dark"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Dark~2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~10"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~12"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~5"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/EmergencyPistol/Handle" Part1=@"ServerStorage/ITEMS/EmergencyPistol/Part~4"
+                Attachment "hole" CFrame=-0.787,0.539,0.044|-180,0,0
+            }
+            StringValue "Icon" Value="16392828499"
+            MeshPart "MeshPart" Size=0.314,1.278,1.444 CFrame=17.648,19.639,177.042 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#C0BFC3 Massless Material=Metal RenderFidelity=Precise {
+                Sound "Sound" AudioContent="rbxassetid://6569844325" RollOffMaxDistance=300 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://6569844325" Volume=3
+            }
+            Part "Part" Size=0.031,0.06,1.053 BottomSurface=Smooth CFrame=17.527,20.083,177.087 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#AAA9AD Massless Material=Metal TopSurface=Smooth
+            Part "Part" Size=0.031,0.06,1.053 BottomSurface=Smooth CFrame=17.753,20.083,177.087 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#AAA9AD Massless Material=Metal TopSurface=Smooth
+            Part "Part" Size=0.02,0.028,0.028 BottomSurface=Smooth CFrame=17.689,20.248,177.629 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#949372 Massless Material=Neon TopSurface=Smooth
+            Part "Part" Size=0.031,0.033,1.053 BottomSurface=Smooth CFrame=17.647,20.218,176.971 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#AAA9AD Massless Material=Metal TopSurface=Smooth
+            Part "Part" Size=0.031,0.444,0.129 BottomSurface=Smooth CFrame=17.537,20.082,177.309 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.02,0.028,0.028 BottomSurface=Smooth CFrame=17.607,20.248,177.629 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#949372 Massless Material=Neon TopSurface=Smooth
+            Part "Part" Size=0.031,0.444,0.129 BottomSurface=Smooth CFrame=17.537,20.082,177.162 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.02,0.028,0.028 BottomSurface=Smooth CFrame=17.649,20.269,176.39 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#949372 Massless Material=Neon TopSurface=Smooth
+            Part "Part" Size=0.32,0.167,0.048 BottomSurface=Smooth CFrame=17.646,19.929,177.191 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.031,0.444,0.129 BottomSurface=Smooth CFrame=17.537,20.082,177.593 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.031,0.444,0.129 BottomSurface=Smooth CFrame=17.537,20.082,177.447 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.031,0.444,0.129 BottomSurface=Smooth CFrame=17.537,20.082,177.02 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#858487 Massless Material=Metal Shape=Cylinder TopSurface=Smooth
+            UnionOperation "Part1" Size=0.275,0.151,0.118 CFrame=17.682,20.149,177.067|0,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A3A2A5 Massless Material=Metal $_geo="74db73c620877d11"
+            Folder "RayFromTool" {
+                PackageLink "PackageLink"
+                LocalScript "RayFromTool" @src="Scripts/ServerStorage/ITEMS/EmergencyPistol/RayFromTool/RayFromTool.luau"
+                RemoteEvent "RayFromToolRE"
+            }
+            BoolValue "RayIgnoreGlass"
+            ObjectValue "RayObject" Value=@"ServerStorage/ITEMS/EmergencyPistol/Handle/hole"
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/EmergencyPistol/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.emergencypistol"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/EmergencyPistol/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            BindableEvent "Use"
+            Part "lamp1" Size=0.013,0.444,0.107 BottomSurface=Smooth CFrame=17.515,20.082,177.591 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#997840 Massless Material=Glass Shape=Cylinder TopSurface=Smooth
+            Part "lamp2" Size=0.013,0.444,0.107 BottomSurface=Smooth CFrame=17.515,20.082,177.445 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#997840 Massless Material=Glass Shape=Cylinder TopSurface=Smooth
+            Part "lamp3" Size=0.013,0.444,0.107 BottomSurface=Smooth CFrame=17.515,20.082,177.307 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#997840 Massless Material=Glass Shape=Cylinder TopSurface=Smooth
+            Part "lamp4" Size=0.013,0.444,0.107 BottomSurface=Smooth CFrame=17.515,20.082,177.16 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#997840 Massless Material=Glass Shape=Cylinder TopSurface=Smooth
+            Part "lamp5" Size=0.013,0.444,0.107 BottomSurface=Smooth CFrame=17.515,20.082,177.018 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#997840 Massless Material=Glass Shape=Cylinder TopSurface=Smooth
+        }
+        Tool "Flashlight" CanBeDropped=false Grip=0,-0.2,0.4 LevelOfDetail=Disabled {
+            BoolValue "CanUseInRagdoll" Value
+            MeshPart "Handle" Size=0.443,0.442,1.543 CFrame=99.115,1.552,356.827|0,90,0 CanTouch=false CastShadow=false CollisionFidelity=Default CollisionGroup="Items" Color=#FCFAFF Massless Material=Metal RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=116196497" TextureID="http://www.roblox.com/asset/?id=116196497" {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Flashlight/Handle" Part1=@"ServerStorage/ITEMS/Flashlight/Light"
+            }
+            StringValue "Icon" Value="16392815554"
+            Part "Light" Size=0.081,0.363,0.363 BottomSurface=Smooth CFrame=98.43,1.55,356.83 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless Material=Neon Shape=Cylinder TopSurface=Smooth Transparency=1 {
+                Part "LightEffect" Size=0.05,0.05,0.05 BottomSurface=Smooth CFrame=98.13,1.55,356.83 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth Transparency=1 {
+                    BillboardGui "BillboardGui" Size=10,0,10,0 Active Adornee=@"ServerStorage/ITEMS/Flashlight/Light/LightEffect" AutoLocalize=false Brightness=2 ClipsDescendants Enabled=false ZIndexBehavior=Sibling {
+                        ImageLabel "Light" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16443123800" ImageContent="rbxassetid://16443123800" ImageTransparency=0.8
+                    }
+                }
+                PointLight "PointLight" Brightness=0.2 Enabled=false Range=1.5 Shadows
+                Sound "Sound" AudioContent="rbxassetid://9066239833" RollOffMaxDistance=10 RollOffMinDistance=5 RollOffMode=Linear SoundId="rbxassetid://9066239833"
+                SpotLight "SpotLight" Angle=63 Brightness=0.8 Enabled=false Face=Left Range=42 Shadows
+                SpotLight "SpotLight2" Angle=18 Brightness=0.8 Enabled=false Face=Left Range=42 Shadows
+                Weld "Weld" C1=0.3,0,0 Part0=@"ServerStorage/ITEMS/Flashlight/Light" Part1=@"ServerStorage/ITEMS/Flashlight/Light/LightEffect"
+            }
+            BoolValue "MoveArm" Value
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/Flashlight/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.flashlight"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/Flashlight/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            BindableEvent "Use"
+        }
+        Tool "Grenade" CanBeDropped=false Grip=0.5,0.05,0|-90,0,80 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/Grenade/Handle" {
+            StringValue "Animation" Value="Tool"
+            BindableEvent "Exploded"
+            MeshPart "GrenadePart" Size=0.613,0.871,0.613 CFrame=0.994,1.488,308.006|90,89.664,-90 CanCollide=false CanQuery=false CastShadow=false Massless Material=CorrodedMetal TextureContent="http://www.roblox.com/asset/?id=8036905176" TextureID="http://www.roblox.com/asset/?id=8036905176"
+            MeshPart "GrenadePartKolco" Size=0.259,0.243,0.239 CFrame=1.155,1.75,308.06|0,90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless Material=CorrodedMetal TextureContent="http://www.roblox.com/asset/?id=8036905176" TextureID="http://www.roblox.com/asset/?id=8036905176"
+            MeshPart "GrenadePartRycoiat" Size=0.214,0.859,0.595 CFrame=1.135,1.519,308.008|90,89.664,-90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless Material=CorrodedMetal TextureContent="http://www.roblox.com/asset/?id=8036905176" TextureID="http://www.roblox.com/asset/?id=8036905176"
+            Part "Handle" Size=0.899,0.656,0.656 BottomSurface=Smooth CFrame=1,1.5,308|0,0,-90 CanTouch=false CastShadow=false CollisionGroup="Items" Massless Shape=Cylinder TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                Sound "Sound" AudioContent="rbxassetid://9116684983" RollOffMaxDistance=10 RollOffMinDistance=5 RollOffMode=Linear SoundId="rbxassetid://9116684983" Volume=1
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Grenade/Handle" Part1=@"ServerStorage/ITEMS/Grenade/GrenadePart"
+                Weld "WeldConstraintKolco" C0=-0.25,0.155,0.06|-90,0,90 Part0=@"ServerStorage/ITEMS/Grenade/Handle" Part1=@"ServerStorage/ITEMS/Grenade/GrenadePartKolco"
+                WeldConstraint "WeldConstraintRycoiat" Part0=@"ServerStorage/ITEMS/Grenade/Handle" Part1=@"ServerStorage/ITEMS/Grenade/GrenadePartRycoiat"
+            }
+            StringValue "Icon" Value="16408898245"
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/Grenade/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.grenade"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/Grenade/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            BindableEvent "Use"
+            BoolValue "UseOnlyAttackMode" Value
+        }
+        Tool "KeyAdministrator" CanBeDropped=false Grip=0.3,0.1,-0.45|90,90,0 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/KeyAdministrator/Handle" {
+            Part "Handle" Size=0.898,0.083,0.376 BottomSurface=Smooth CFrame=-4.561,1.094,329.727|0,0.001,0 CanTouch=false CastShadow=false CollisionGroup="Items" Massless TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                MeshPart "End" Size=0.54,0.164,0.036 CFrame=-4.714,1.102,329.734|90,0,-0.001 CanCollide=false CanQuery=false CastShadow=false Color=#88929F Massless Material=Metal Reflectance=0.4 RenderFidelity=Precise
+                MeshPart "Inset" Size=0.235,0.258,0.048 CFrame=-4.292,1.102,329.734|90,0,-0.001 CanCollide=false CanQuery=false CastShadow=false Color=#88929F Massless Material=Metal Reflectance=0.4 RenderFidelity=Precise
+                MeshPart "Key" Size=0.308,0.324,0.061 CFrame=-4.292,1.102,329.734|90,-0.002,-0.001 CanCollide=false CanQuery=false CastShadow=false Color=#DA3535 Massless Material=Neon RenderFidelity=Precise {
+                    PointLight "PointLight" Color=#FF0000 Range=2 Shadows
+                }
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyAdministrator/Handle" Part1=@"ServerStorage/ITEMS/KeyAdministrator/Handle/End"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyAdministrator/Handle" Part1=@"ServerStorage/ITEMS/KeyAdministrator/Handle/Key"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyAdministrator/Handle" Part1=@"ServerStorage/ITEMS/KeyAdministrator/Handle/Inset"
+            }
+            StringValue "KeyType" Value="Science"
+            BoolValue "MoveArm" Value
+            StringValue "ToolName" Value="tool.key.admin"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/KeyAdministrator/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+        }
+        Tool "KeyScience" CanBeDropped=false Grip=0.3,0.1,-0.45|90,90,0 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/KeyScience/Handle" {
+            Part "Handle" Size=0.898,0.083,0.376 BottomSurface=Smooth CFrame=4.269,23,261.72|180,0,-90 CanTouch=false CastShadow=false CollisionGroup="Items" Massless TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                MeshPart "End" Size=0.54,0.164,0.036 CFrame=4.277,22.847,261.714|-90,-90,0 CanCollide=false CanQuery=false CastShadow=false Color=#88929F Massless Material=Metal Reflectance=0.4 RenderFidelity=Precise
+                MeshPart "Inset" Size=0.235,0.258,0.048 CFrame=4.277,23.269,261.713|-90,-90,0 CanCollide=false CanQuery=false CastShadow=false Color=#88929F Massless Material=Metal Reflectance=0.4 RenderFidelity=Precise
+                MeshPart "Key" Size=0.308,0.324,0.061 CFrame=4.277,23.268,261.713|-90,-90,0 CanCollide=false CanQuery=false CastShadow=false Color=#36B0B0 Massless RenderFidelity=Precise
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyScience/Handle" Part1=@"ServerStorage/ITEMS/KeyScience/Handle/End"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyScience/Handle" Part1=@"ServerStorage/ITEMS/KeyScience/Handle/Key"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/KeyScience/Handle" Part1=@"ServerStorage/ITEMS/KeyScience/Handle/Inset"
+            }
+            StringValue "KeyType" Value="Science"
+            BoolValue "MoveArm" Value
+            StringValue "ToolName" Value="tool.key.science"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/KeyScience/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+        }
+        Tool "Laser" CanBeDropped=false Grip=0.2,-0.2,0|0,90,0 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/Laser/Handle" {
+            BoolValue "CanUseInRagdoll" Value
+            BoolValue "EnabledTool"
+            Part "Handle" Size=1,0.2,0.2 BottomSurface=Smooth CFrame=2.243,1.111,68.226|0,-90,0 CanTouch=false CastShadow=false CollisionGroup="Items" Color=#89888B Massless Material=Metal Shape=Cylinder TopSurface=Smooth {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                Sound "Sound" AudioContent="rbxassetid://9066239833" RollOffMaxDistance=10 RollOffMinDistance=5 RollOffMode=Linear SoundId="rbxassetid://9066239833"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Laser/Handle" Part1=@"ServerStorage/ITEMS/Laser/Part~2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Laser/Handle" Part1=@"ServerStorage/ITEMS/Laser/Part"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Laser/Handle" Part1=@"ServerStorage/ITEMS/Laser/laserSTART"
+            }
+            StringValue "Icon" Value="16392822885"
+            BoolValue "MoveArm" Value
+            Part "Part" Size=0.04,0.161,0.161 BottomSurface=Smooth CFrame=2.243,1.111,67.725|0,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#383839 Massless Shape=Cylinder TopSurface=Smooth
+            Part "Part" Size=0.033,0.222,0.222 BottomSurface=Smooth CFrame=2.243,1.111,67.868|0,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#383839 Massless Shape=Cylinder TopSurface=Smooth
+            Folder "RayFromTool" {
+                PackageLink "PackageLink"
+                LocalScript "RayFromTool" @src="Scripts/ServerStorage/ITEMS/Laser/RayFromTool/RayFromTool.luau"
+                RemoteEvent "RayFromToolRE"
+            }
+            BoolValue "RayIgnoreGlass" Value
+            ObjectValue "RayObject" Value=@"ServerStorage/ITEMS/Laser/laserSTART"
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/Laser/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.key.laser"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/Laser/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            BindableEvent "Use"
+            Part "laserEND" Size=0.1,0.1,0.1 Anchored BottomSurface=Smooth CFrame=10.5,1.5,65.4 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Massless Material=Neon Shape=Ball TopSurface=Smooth Transparency=1 {
+                Attachment "Attachment"
+            }
+            Part "laserSTART" Size=0.015,0.062,0.062 BottomSurface=Smooth CFrame=2.243,1.111,67.708|0,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Massless Material=Glass Shape=Cylinder TopSurface=Smooth {
+                Attachment "Attachment"
+                Beam "Beam" Attachment0=@"ServerStorage/ITEMS/Laser/laserSTART/Attachment" Attachment1=@"ServerStorage/ITEMS/Laser/laserEND/Attachment" Color=0:#FF0000,1:#FF0000 Enabled=false FaceCamera Texture="rbxassetid://15260744203" TextureContent="rbxassetid://15260744203" TextureLength=0.1 Transparency=0:0.25,0.502:1,1:0.25 Width0=0.2 Width1=0.2
+            }
+        }
+        Tool "MusicMaker" CanBeDropped=false LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/MusicMaker/Handle" {
+            StringValue "Animation" Value="Tool"
+            UnionOperation "BasePart" Size=4,1.67,0.479 CFrame=-0.505,2.081,284.45 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#C5C5C5 Massless UsePartColor $_geo="b313e83b5ced5e7d" {
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/Rychka"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/LightPart"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/LightPart2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/PianoDecal"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/Part"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/Handle"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/MusicMaker/BasePart" Part1=@"ServerStorage/ITEMS/MusicMaker/Smoke"
+            }
+            BoolValue "BlockKeys" Value
+            RemoteFunction "GetData"
+            RemoteFunction "GetSoundsPositions"
+            Part "Handle" Size=6.286,1.689,0.551 BottomSurface=Smooth CFrame=0.633,2.086,284.423 CanTouch=false CastShadow=false CollisionGroup="Items" Massless TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                Sound "Sound" Looped RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear
+            }
+            Part "LightPart" Size=3.875,1.675,0.077 BottomSurface=Smooth CFrame=-0.576,2.081,284.403 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#FFFFFF Massless Material=Neon TopSurface=Smooth {
+                PointLight "PointLight" Brightness=2 Enabled=false Range=12 Shadows
+            }
+            Part "LightPart2" Size=0.105,0.56,0.56 BottomSurface=Smooth CFrame=-1.962,2.43,284.141|0,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#444444 Massless Material=Glass Shape=Cylinder TopSurface=Smooth {
+                PointLight "PointLight" Brightness=13 Enabled=false Range=10 Shadows
+            }
+            Script "MusicMakerHeart" @src="Scripts/ServerStorage/ITEMS/MusicMaker/MusicMakerHeart.luau"
+            Part "Part" Size=3.688,1.354,0.077 BottomSurface=Smooth CFrame=-0.482,2.096,284.193 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth
+            Part "PianoDecal" Size=2.857,0.954,0.077 BottomSurface=Smooth CFrame=-0.746,1.756,284.462 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth Transparency=1 {
+                Decal "Decal" Face=Back Texture="rbxassetid://16566083721" TextureContent="rbxassetid://16566083721"
+            }
+            Part "Rychka" Size=2.314,0.57,0.302 BottomSurface=Smooth CFrame=2.614,2.631,284.362 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#C5C5C5 Massless TopSurface=Smooth
+            RemoteEvent "SetData"
+            UnionOperation "Smoke" Size=0.099,0.246,0.246 CFrame=-1.515,2.576,284.144|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#7C7C7C Massless Material=Metal UsePartColor $_geo="ed9b05b8f5854cc5" {
+                Smoke "Smoke" Size=3 Enabled=false Opacity=0.8 RiseVelocity=0
+            }
+            RemoteEvent "StopMusic"
+            StringValue "ToolName" Value="tool.key.musicmaker"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/MusicMaker/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+        }
+        Tool "PlasticCup" CanBeDropped=false Grip=0,-0.5,0 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/PlasticCup/Handle" {
+            StringValue "Animation" Value="Tool"
+            StringValue "Description"
+            Part "Handle" Size=0.55,0.955,0.605 BottomSurface=Smooth CFrame=34.267,19.493,191.373 CanTouch=false CastShadow=false CollisionGroup="Items" CustomPhysicalProperties=6,0.3,0.5,1,1 Massless TopSurface=Smooth Transparency=1 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/PlasticCup/Handle" Part1=@"ServerStorage/ITEMS/PlasticCup/Liquid"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/PlasticCup/Handle" Part1=@"ServerStorage/ITEMS/PlasticCup/soloCup"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/PlasticCup/Handle" Part1=@"ServerStorage/ITEMS/PlasticCup/Top"
+            }
+            StringValue "Icon" Value="16392807326"
+            Part "Liquid" Size=0.015,0.539,0.539 BottomSurface=Smooth CFrame=34.274,19.87,191.386|0,0,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless Shape=Cylinder TopSurface=Smooth Transparency=1 {
+                ParticleEmitter "Smoke" Size=0:0.8,1:0.8 EmissionDirection=Right Enabled=false LightInfluence=1 RotSpeed=-5,5 Rotation=-360,360 Speed=0.4,0.6 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:1,0.035:0.918,0.304:0.978,1:1
+            }
+            StringValue "LiquidInsert"
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/PlasticCup/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.key.plasticcup"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/PlasticCup/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            UnionOperation "Top" Size=0.616,0.119,0.616 CFrame=34.274,20.01,191.386 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#C8C7CB Massless $_geo="674540cf9c8f0481"
+            BindableEvent "Use"
+            MeshPart "soloCup" Size=0.612,0.966,0.614 CFrame=34.27,19.483,191.383 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#C8C7CB Massless
+        }
+        Tool "Sample" CanBeDropped=false Grip=-0.2,0,0.8|0,80,-90 LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/Sample/Handle" {
+            Part "Handle" Size=0.2,1,1 BottomSurface=Smooth CFrame=93.093,1.111,-66.576|0,0,90 CanTouch=false CastShadow=false CollisionGroup="Items" Color=#AFF4FF Massless Material=Glass Shape=Cylinder TopSurface=Smooth Transparency=0.45 {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m3"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m4"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m1_2"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m1"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m5"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/eticetka"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/ITEMS/Sample/Handle" Part1=@"ServerStorage/ITEMS/Sample/m6"
+            }
+            StringValue "Sample"
+            StringValue "Samples" Value="Onion,Cucumber,Potato,Pork,Beef,Chicken,Fish,Mold,Alien,Bug,Cancer,Virus,Bat,Rat,Monkey,Tiger,Shark,Tick,Jellyfish,Crow,Whale,Worm"
+            Script "Script" @src="Scripts/ServerStorage/ITEMS/Sample/Script.luau" Disabled
+            StringValue "ToolName" Value="tool.key.sample"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/Sample/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+            Part "eticetka" Size=0.001,0.5,0.5 BottomSurface=Smooth CFrame=93.093,1.212,-66.576|0,68.979,90 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#C4C3C7 Massless TopSurface=Smooth {
+                SurfaceGui "SurfaceGui" ClipsDescendants Face=Right LightInfluence=1 MaxDistance=1000 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+                    ImageLabel "ImageLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                        TextLabel "TextLabel" Position=0,0,0.2,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Образец" TextColor3=#000000 TextSize=20 TextWrapped
+                        TextLabel "sample" Position=0,0,0.5,0 Size=1,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="\"Чистый\"" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                    }
+                }
+            }
+            MeshPart "m1" Size=0.48,0.121,0.48 CFrame=92.927,1.117,-66.75 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless Transparency=1
+            MeshPart "m1_2" Size=0.579,0.1,0.58 CFrame=93.244,1.106,-66.477 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless Transparency=1
+            MeshPart "m2" Size=0.728,0.105,0.728 CFrame=93.135,1.107,-66.586 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF EnableFluidForces=false Massless RenderFidelity=Precise Transparency=1
+            MeshPart "m3" Size=0.876,0.606,0.142 CFrame=93.089,1.111,-66.645|90,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless RenderFidelity=Precise Transparency=1
+            MeshPart "m4" Size=0.867,0.915,0.177 CFrame=93.087,1.11,-66.605|-90,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless RenderFidelity=Precise Transparency=1
+            MeshPart "m5" Size=0.684,0.126,0.736 CFrame=93.082,1.114,-66.57 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless RenderFidelity=Precise Transparency=1
+            MeshPart "m6" Size=0.929,0.078,0.76 CFrame=93.096,1.113,-66.527 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionFidelity=Default Color=#FFFFFF Massless RenderFidelity=Precise Transparency=1
+        }
+        Tool "TestTool" CanBeDropped=false LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/ITEMS/TestTool/Handle" {
+            StringValue "Animation" Value="Tool"
+            Part "Handle" Size=2,2,2 BottomSurface=Smooth CFrame=-0.801,2.011,327.413 CanTouch=false CastShadow=false CollisionGroup="Items" Massless TopSurface=Smooth {
+                ClickDetector "ClickDetector" MaxActivationDistance=7 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                BoolValue "MouseOver" Value
+            }
+            StringValue "ToolName" Value="tool.test"
+            Script "ToolScript" @src="Scripts/ServerStorage/ITEMS/TestTool/ToolScript.luau" Disabled {
+                BoolValue "CantTake"
+                PackageLink "PackageLink"
+            }
+        }
+    }
+    ModuleScript "LIQUIDS" @src="Scripts/ServerStorage/LIQUIDS.luau"
+    Folder "LOOTTABLE" {
+        StringValue "Zone13" Value="Laser,PlasticCup,KeyScience,Grenade,Flashlight,EmergencyPistol"
+    }
+    Folder "PACKAGES" {
+        Model "Book" LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/PACKAGES/Book/Union" {
+            PackageLink "PackageLink"
+            Part "Part" Size=1.092,0.21,0.866 BottomSurface=Smooth CFrame=97.956,1.635,116.501|-90,-90,0 Color=#C6C6C6 Material=SmoothPlastic TopSurface=Smooth {
+                Decal "Decal" Face=Right Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.6
+                Decal "Decal" Face=Left Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.6
+                Decal "Decal" Face=Back Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.6
+            }
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/Book/Script.luau" Disabled
+            UnionOperation "TextHere" Size=0.001,0.68,0.42 CFrame=97.929,1.73,116.326|-90,0,90 CanCollide=false CanQuery=false CanTouch=false Color=#C5C4C8 Material=SmoothPlastic UsePartColor $_geo="43c6509dec293a1d" {
+                SurfaceGui "SurfaceGui" ClipsDescendants Face=Right LightInfluence=1 MaxDistance=1000 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+                    TextLabel "TextLabel" Position=0,-13,0,30 Size=1.3,0,0.55,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SpecialElite|Regular|Normal" Rotation=-90 Text="Astronomy of ancient times" TextColor3=#000000 TextScaled TextSize=45 TextWrapped
+                }
+            }
+            UnionOperation "Union" Size=1.157,0.35,1.03 CFrame=97.944,1.628,116.501|-90,-90,0 Color=#514C47 Material=Fabric UsePartColor $_geo="a070a7e0844cbcb4" {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Book/Union" Part1=@"ServerStorage/PACKAGES/Book/Part"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Book/Union" Part1=@"ServerStorage/PACKAGES/Book/TextHere"
+            }
+        }
+        Model "BoxTaker" PrimaryPart=@"ServerStorage/PACKAGES/BoxTaker/Trash1" {
+            UnionOperation "BoxTaker" Size=2.292,1.2,1.5 CFrame=79.255,4.886,107.486|-180,-1.783,-180 Color=#D9BC9A Material=Wood UsePartColor $_geo="ed89ac58c56028ad" {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            }
+            PackageLink "PackageLink"
+            Script "Script" Disabled @code=<<<
+                local colors = {Color3.fromRGB(226, 220, 188),Color3.fromRGB(186, 181, 155),Color3.fromRGB(183, 186, 134),Color3.fromRGB(217, 217, 217),Color3.fromRGB(217, 188, 154)}
+                script.Parent.BoxTaker.Color = colors[math.random(1,#colors)]
+                if math.random(0,100)>50 then
+                	script.Parent.Trash1:Destroy()
+                end
+                script:Destroy()
+            >>>
+            Part "Trash1" Size=1.337,1.284,2.124 BottomSurface=Smooth CFrame=79.386,5.026,107.471|0,-88.211,0 CanQuery=false CanTouch=false Color=#C59964 Massless TopSurface=Smooth {
+                Decal "Decal" Face=Top Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.55
+                Decal "Decal" Face=Right Texture="rbxassetid://16493491864" TextureContent="rbxassetid://16493491864" Transparency=0.8
+                Decal "Decal" Face=Left Texture="rbxassetid://16493491864" TextureContent="rbxassetid://16493491864" Transparency=0.8
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/BoxTaker/Trash1" Part1=@"ServerStorage/PACKAGES/BoxTaker/BoxTaker"
+            }
+        }
+        Model "Crate" PrimaryPart=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" {
+            Model "Crate1" {
+                Part "PartBase" Size=3.8,3,3 BottomSurface=Smooth CFrame=99.604,4.382,120.259|-180,89.944,0 CanCollide=false CanQuery=false CanTouch=false Color=#83714C Material=Wood TopSurface=Smooth
+                UnionOperation "PartSide" Size=4.6,4.425,0.15 CFrame=101.079,4.432,120.259|0,-89.937,-145 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Material=Wood UsePartColor $_geo="af58d31c4c2a67dc" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartSide"
+                }
+                UnionOperation "PartSide" Size=0.15,3.893,3.9 CFrame=99.604,4.382,118.384|-90,-50,-90 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="a5f25cdd1bb26607" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartSide~2"
+                }
+                UnionOperation "PartSide" Size=4.6,4.425,0.15 CFrame=98.129,4.432,120.259|-180,89.937,35 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="e1857229f116f21c" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartSide~3"
+                }
+                UnionOperation "PartSide" Size=0.15,3.893,3.9 CFrame=99.604,4.382,122.134|-90,-50,-90 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="be831e059fa2ea4c" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartSide~4"
+                }
+                UnionOperation "PartTopBottom" Size=4.6,4.582,0.15 CFrame=99.604,5.907,120.259|-90,0,130 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="0a2e141f20200faa" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartTopBottom"
+                }
+                UnionOperation "PartTopBottom" Size=4.6,4.582,0.15 CFrame=99.604,2.86,120.259|-90,0,130 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Material=Wood UsePartColor $_geo="364b4d2dee5bb93b" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/PartTopBottom~2"
+                }
+                UnionOperation "Union" Size=4,3.2,3.2 CFrame=99.604,4.382,120.259|-180,89.937,0 Color=#998C6E Material=Wood UsePartColor $_geo="8a1eee750d6ec7f9" {
+                    DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate1/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate1/Union"
+                }
+            }
+            Model "Crate2" {
+                Part "PartBase" Size=5.3,3,3 BottomSurface=Smooth CFrame=99.604,4.382,120.251|-90,89.944,-141.338 CanCollide=false CanQuery=false CanTouch=false Color=#7C7562 Material=Wood TopSurface=Smooth
+                UnionOperation "PartSide" Size=0.15,3.893,3.9 CFrame=99.604,4.432,117.626|90,-50,90 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="75dc25402cd74732" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartSide"
+                }
+                UnionOperation "PartSide" Size=5.9,4.713,0.1 CFrame=101.104,4.432,120.251|25,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Material=Wood UsePartColor $_geo="6b29fc735adb8e54" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartSide~2"
+                }
+                UnionOperation "PartSide" Size=0.15,3.893,3.9 CFrame=99.604,4.432,122.876|90,50,-90 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Material=Wood UsePartColor $_geo="dabd38606f346066" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartSide~3"
+                }
+                UnionOperation "PartSide" Size=5.9,4.712,0.1 CFrame=98.104,4.432,120.251|90,-89.941,-57.999 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="bc6df29497d711ef" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartSide~4"
+                }
+                UnionOperation "PartTopBottom" Size=5.9,5.26,0.1 CFrame=99.604,5.932,120.251|90,0,-60 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="4cd29db695836f6c" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartTopBottom"
+                }
+                UnionOperation "PartTopBottom" Size=5.9,5.26,0.1 CFrame=99.604,2.835,120.251|90,0,-60 CanCollide=false CanQuery=false CanTouch=false Color=#998C6E Massless Material=Wood UsePartColor $_geo="8ccd4a9a290275b0" {
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/PartTopBottom~2"
+                }
+                UnionOperation "Union" Size=5.5,3.2,3.2 CFrame=99.604,4.382,120.251|90,-89.941,-82.999 Color=#918873 Material=Wood UsePartColor $_geo="269b8f05ed636ecd" {
+                    DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                    WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/Crate/Crate2/PartBase" Part1=@"ServerStorage/PACKAGES/Crate/Crate2/Union"
+                }
+            }
+            PackageLink "PackageLink"
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/Crate/Script.luau" Disabled
+        }
+        Model "Cup" PrimaryPart=@"ServerStorage/PACKAGES/Cup/cup" {
+            PackageLink "PackageLink"
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/Cup/Script.luau" Disabled
+            MeshPart "cup" Size=0.928,0.64,0.631 CFrame=92.685,1.37,125.161|-180,0,-180 CollisionFidelity=PreciseConvexDecomposition Color=#59B859 Material=Glass RenderFidelity=Precise {
+                BoolValue "Broke_Destroy" Value
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            }
+        }
+        Model "MetalGrid" PrimaryPart=@"ServerStorage/PACKAGES/MetalGrid/Union" {
+            Part "MetalGrid" Size=8.4,0.001,8.4 Anchored BottomSurface=Smooth CFrame=92.815,1.15,114.314 Material=Metal TopSurface=Smooth Transparency=1 {
+                BoolValue "Broke_Physic" Value
+                Texture "Texture" Color3=#CDD1C4 Face=Bottom StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://16549041063" TextureContent="rbxassetid://16549041063"
+                Texture "Texture" Color3=#CDD1C4 Face=Top StudsPerTileU=4 StudsPerTileV=4 Texture="rbxassetid://16549041063" TextureContent="rbxassetid://16549041063"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/MetalGrid/MetalGrid" Part1=@"ServerStorage/PACKAGES/MetalGrid/Union"
+            }
+            PackageLink "PackageLink"
+            UnionOperation "Union" Size=8.4,0.201,8.4 CFrame=92.815,1.15,114.314 CanCollide=false CanQuery=false CanTouch=false Color=#8C8A79 Material=Metal $_geo="d5fea4192161bd2f"
+        }
+        Model "PlasticFolder" LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/PACKAGES/PlasticFolder/Papers" {
+            UnionOperation "Base" Size=1.68,0.16,1.081 CFrame=90.318,1.13,124.404|-180,0,-180 Color=#CCB327 UsePartColor $_geo="e16a93cfd8e0e581" {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/PlasticFolder/Base" Part1=@"ServerStorage/PACKAGES/PlasticFolder/Papers"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/PlasticFolder/Base" Part1=@"ServerStorage/PACKAGES/PlasticFolder/WhitePart"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/PlasticFolder/Base" Part1=@"ServerStorage/PACKAGES/PlasticFolder/Union"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PACKAGES/PlasticFolder/Base" Part1=@"ServerStorage/PACKAGES/PlasticFolder/Dots"
+            }
+            UnionOperation "Dots" Size=1.59,0.09,0.033 CFrame=90.323,1.13,123.87|-180,0,-180 CanCollide=false CanQuery=false CanTouch=false Color=#A3A2A5 Material=Metal UsePartColor $_geo="82ba0afd93a991c8"
+            PackageLink "PackageLink"
+            Part "Papers" Size=1.08,0.121,1.66 BottomSurface=Smooth CFrame=90.318,1.129,124.414|0,90,0 CanCollide=false CanQuery=false CanTouch=false Color=#B8B6BA Material=SmoothPlastic TopSurface=Smooth {
+                Decal "Decal" Face=Back Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.55
+                Decal "Decal" Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.55
+                Decal "Decal" Face=Left Texture="rbxassetid://15065475420" TextureContent="rbxassetid://15065475420" Transparency=0.55
+                Decal "Text" Face=Top Texture="rbxassetid://15065740485" TextureContent="rbxassetid://15065740485"
+            }
+            Script "Script" Disabled @code=<<<
+                local colors = {Color3.fromRGB(51, 88, 130),Color3.fromRGB(52, 167, 60),Color3.fromRGB(191, 57, 59),Color3.fromRGB(204, 179, 39)}
+                script.Parent.Base.Color = colors[math.random(1,#colors)]
+                if math.random(0,100)>85 then
+                	script.Parent.Papers.Text:Destroy()
+                end
+                script:Destroy()
+            >>>
+            UnionOperation "Union" Size=1.65,0.012,0.88 CFrame=90.323,1.196,124.504|-180,0,-180 CanCollide=false CanQuery=false CanTouch=false Color=#CACBD1 Material=SmoothPlastic Transparency=0.55 $_geo="7c8c9a1fb80ca6f6"
+            Part "WhitePart" Size=1.68,0.02,0.08 BottomSurface=Smooth CFrame=90.318,1.2,124.024|-180,0,-180 CanCollide=false CanQuery=false CanTouch=false Color=#CACBD1 Material=SmoothPlastic TopSurface=Smooth
+        }
+        Model "Printer" PrimaryPart=@"ServerStorage/PACKAGES/Printer/Printer" {
+            PackageLink "PackageLink"
+            MeshPart "Printer" Size=2.988,2.005,2.988 CFrame=99.181,2.052,125.061|0,90,0 CustomPhysicalProperties=0.3,0.3,0.5,1,1 Material=Rock {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://9535716935" ColorMapContent="rbxassetid://9535716935" MetalnessMap="rbxassetid://9535715074" MetalnessMapContent="rbxassetid://9535715074" NormalMap="rbxassetid://9535713522" NormalMapContent="rbxassetid://9535713522" RoughnessMap="rbxassetid://9535712660" RoughnessMapContent="rbxassetid://9535712660"
+            }
+        }
+        Model "SoapDispenser" {
+            MeshPart "Button" Size=0.214,0.29,0.061 Anchored CFrame=94.218,1.472,122.009|0,90,0 Material=Metal PivotOffset=0,0.353,-0.023|90,0,0 {
+                ClickDetector "ClickDetector" MaxActivationDistance=2.85 {
+                    Script "ClickDetectorScript" RunContext=Server @code=<<<
+                        local base = require(game:GetService("ServerScriptService").Base)
+                        local data = require(game:GetService("ServerStorage").PLAYERSDATA)
+                        local cd = script.Parent
+                        local event = script.Event
+
+                        cd.MouseClick:Connect(function(plr)
+                        	base.ClickDetector(plr,cd)
+                        end)
+                    >>> {
+                        BindableEvent "Event"
+                        PackageLink "PackageLink"
+                    }
+                }
+                ObjectValue "MouseOver" Value=@"ServerStorage/PACKAGES/SoapDispenser/Button"
+                Sound "Sound" AudioContent="rbxassetid://6042053626" RollOffMaxDistance=10 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://6042053626"
+            }
+            MeshPart "Glass" Size=0.373,0.601,0.11 Anchored CFrame=94.206,2.036,122.009|0,90,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#8AFFF5 DoubleSided Material=Glass PivotOffset=0,-0.21,-0.011|90,0,0 Transparency=0.7
+            MeshPart "GlassBack" Size=0.402,0.642,0.052 Anchored CFrame=94.177,2.036,122.009|0,90,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Material=Metal PivotOffset=0,-0.21,0.018|90,0,0
+            MeshPart "Main" Size=0.712,1.369,0.593 Anchored CFrame=93.899,1.734,122.009|0,90,0 CollisionFidelity=Default Color=#A8AAB5 PivotOffset=0,0.091,0.296|90,0,0 {
+                Attachment "Output" CFrame=0,-0.625,0.228|170,0,0 {
+                    ParticleEmitter "Soap" Size=0:0.114,1:0.114 Acceleration=0,1.14,0 Color=0:#FCA1FF,1:#FCA1FF Enabled=false Lifetime=2,2 LightInfluence=1 Rate=80 RotSpeed=-30,30 Rotation=-180,180 Speed=1.14,1.14 SpreadAngle=-10,10 Texture="rbxassetid://6201773939" TextureContent="rbxassetid://6201773939" Transparency=0:0.694,0.63:1,1:1
+                    ParticleEmitter "Soap1" Size=0:0.028,1:0.028 Acceleration=0,1.14,0 Color=0:#FCA1FF,1:#FCA1FF Enabled=false Lifetime=1.5,1.5 LightInfluence=1 Rate=80 RotSpeed=-30,30 Rotation=-180,180 Speed=1.14,1.14 SpreadAngle=-20,20 Texture="rbxassetid://6201773939" TextureContent="rbxassetid://6201773939" Transparency=0:0,1:1
+                }
+            }
+            PackageLink "PackageLink"
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/SoapDispenser/Script.luau" Disabled
+            MeshPart "Soap" Size=0.363,0.405,0.107 Anchored CFrame=94.198,1.94,122.009|0,90,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#B3C1BA Material=Ice PivotOffset=0,-0.114,-0.002|90,0,0
+        }
+        Model "Stapler" PrimaryPart=@"ServerStorage/PACKAGES/Stapler/stapler" {
+            PackageLink "PackageLink"
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/Stapler/Script.luau" Disabled
+            MeshPart "stapler" Size=0.264,0.38,1.149 CFrame=92.347,1.24,123.546|0,90,0 CanQuery=false CollisionFidelity=Default Material=Metal {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                SurfaceAppearance "SurfaceAppearance1" ColorMap="rbxassetid://9535508175" ColorMapContent="rbxassetid://9535508175" MetalnessMap="rbxassetid://9535507443" MetalnessMapContent="rbxassetid://9535507443" NormalMap="rbxassetid://9535507207" NormalMapContent="rbxassetid://9535507207" RoughnessMap="rbxassetid://9535506029" RoughnessMapContent="rbxassetid://9535506029"
+                SurfaceAppearance "SurfaceAppearance2" ColorMap="rbxassetid://16500938973" ColorMapContent="rbxassetid://16500938973" MetalnessMap="rbxassetid://9535507443" MetalnessMapContent="rbxassetid://9535507443" NormalMap="rbxassetid://9535507207" NormalMapContent="rbxassetid://9535507207" RoughnessMap="rbxassetid://9535506029" RoughnessMapContent="rbxassetid://9535506029"
+                SurfaceAppearance "SurfaceAppearance3" ColorMap="rbxassetid://16500942287" ColorMapContent="rbxassetid://16500942287" MetalnessMap="rbxassetid://9535507443" MetalnessMapContent="rbxassetid://9535507443" NormalMap="rbxassetid://9535507207" NormalMapContent="rbxassetid://9535507207" RoughnessMap="rbxassetid://9535506029" RoughnessMapContent="rbxassetid://9535506029"
+                SurfaceAppearance "SurfaceAppearance4" ColorMap="rbxassetid://16500944708" ColorMapContent="rbxassetid://16500944708" MetalnessMap="rbxassetid://9535507443" MetalnessMapContent="rbxassetid://9535507443" NormalMap="rbxassetid://9535507207" NormalMapContent="rbxassetid://9535507207" RoughnessMap="rbxassetid://9535506029" RoughnessMapContent="rbxassetid://9535506029"
+                SurfaceAppearance "SurfaceAppearance5" ColorMap="rbxassetid://16500947752" ColorMapContent="rbxassetid://16500947752" MetalnessMap="rbxassetid://9535507443" MetalnessMapContent="rbxassetid://9535507443" NormalMap="rbxassetid://9535507207" NormalMapContent="rbxassetid://9535507207" RoughnessMap="rbxassetid://9535506029" RoughnessMapContent="rbxassetid://9535506029"
+            }
+        }
+        Model "Telephone" LevelOfDetail=Disabled {
+            PackageLink "PackageLink"
+            Script "Script" @src="Scripts/ServerStorage/PACKAGES/Telephone/Script.luau" Disabled
+            MeshPart "Telephone" Size=0.273,0.296,1.082 Anchored CFrame=90.452,1.427,126.591|-164.997,-1.074,-179.712 CollisionFidelity=Default {
+                Attachment "Attachment0" CFrame=-0.009,-0.029,-0.529|8.629,90,0
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                RopeConstraint "RopeConstraint" Attachment0=@"ServerStorage/PACKAGES/Telephone/Telephone/Attachment0" Attachment1=@"ServerStorage/PACKAGES/Telephone/Telephone_Base/Attachment1" Color="Really black" Length=2 Thickness=0.05 Visible
+                Sound "Sound" AudioContent="rbxassetid://9117303221" RollOffMode=Linear SoundId="rbxassetid://9117303221"
+                SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://9536051331" ColorMapContent="rbxassetid://9536051331" MetalnessMap="rbxassetid://9536049567" MetalnessMapContent="rbxassetid://9536049567" NormalMap="rbxassetid://9536048122" NormalMapContent="rbxassetid://9536048122" RoughnessMap="rbxassetid://9536046983" RoughnessMapContent="rbxassetid://9536046983"
+            }
+            MeshPart "Telephone_Base" Size=0.936,0.519,1.177 Anchored CFrame=90.745,1.31,126.544|-180,-1.112,-180 CollisionFidelity=Default {
+                Attachment "Attachment1" CFrame=0.282,-0.177,-0.567|-6.371,90,0
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+                SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://9536027600" ColorMapContent="rbxassetid://9536027600" MetalnessMap="rbxassetid://9536027117" MetalnessMapContent="rbxassetid://9536027117" NormalMap="rbxassetid://9536026976" NormalMapContent="rbxassetid://9536026976" RoughnessMap="rbxassetid://9536026437" RoughnessMapContent="rbxassetid://9536026437"
+            }
+        }
+        MeshPart "ToiletPaper" Size=0.795,0.752,0.758 CFrame=93.809,1.426,120.519|-180,12.625,-180 CollisionFidelity=Default Color=#111111 DoubleSided RenderFidelity=Precise TextureContent="rbxassetid://2751139117" TextureID="rbxassetid://2751139117" {
+            DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            PackageLink "PackageLink"
+        }
+        MeshPart "TrashBin" Size=1.8,1.8,2.125 CFrame=91.281,2.113,121.071|90,0,-90 CollisionFidelity=PreciseConvexDecomposition RenderFidelity=Precise TextureContent="rbxassetid://3448750472" TextureID="rbxassetid://3448750472" {
+            DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=500 MaxTorque=500 Responsiveness=100
+            PackageLink "PackageLink"
+        }
+        Model "Tray" PrimaryPart=@"ServerStorage/PACKAGES/Tray/Tray" {
+            MeshPart "Fork" Size=1.484,0.103,0.187 CFrame=83.529,1.185,110.73|0,90,0 CollisionFidelity=Default Color=#6B676A Material=Metal RenderFidelity=Precise {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            }
+            PackageLink "PackageLink"
+            MeshPart "Spoon" Size=0.247,1.433,0.066 CFrame=83.779,1.166,110.725|90,0,-180 CollisionFidelity=Default Color=#6B676A Material=Metal {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            }
+            UnionOperation "Tray" Size=2.908,0.166,1.828 CFrame=82.567,1.133,110.719|-180,0,-180 Color=#818083 Material=Metal UsePartColor $_geo="33428d192bcfe8c6" {
+                DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+            }
+        }
+    }
+    Folder "PARTICLES" {
+        Part "Bleeding" Size=0.306,0.29,0.445 Anchored BottomSurface=Smooth CFrame=18.2,22.845,106.9 TopSurface=Smooth Transparency=1 {
+            ParticleEmitter "blood" Orientation=VelocityParallel Size=0:0,0.082:0.055:0.055,0.371:0.166:0.166,0.424:0.166:0.139,1:0 Acceleration=0,-100,0 Color=0:#EF1111,0.562:#FF0000,1:#550606 Lifetime=0.35,0.8 LightEmission=-1 LightInfluence=0.45 LockedToPart Rate=50 RotSpeed=-5,5 Rotation=89,89 Speed=3,5 SpreadAngle=180,-180 Squash=0:1.5,1:1.5 Texture="http://www.roblox.com/asset/?id=860143307" TextureContent="http://www.roblox.com/asset/?id=860143307" Transparency=0:0,0.144:0.669:0.309,1:0.762:0.237 VelocityInheritance=0.15 ZOffset=-1
+        }
+        Part "Blood" Size=0.1,0.1,0.1 BottomSurface=Smooth CFrame=13.7,21.463,106.4 TopSurface=Smooth Transparency=1 {
+            ParticleEmitter "Blood" Orientation=VelocityParallel Size=0:0,0.082:0.497:0.497,0.371:0.166:0.166,0.424:0.166:0.139,1:0 Acceleration=0,-35,0 Brightness=2 Color=0:#EF1111,0.562:#620707,1:#550606 Lifetime=0.35,0.8 LightEmission=-1 LightInfluence=0.25 LockedToPart Rate=400000 RotSpeed=-5,5 Rotation=90,90 Speed=6,6 SpreadAngle=360,-360 Texture="rbxassetid://419625073" TextureContent="rbxassetid://419625073" Transparency=0:0,0.144:0.669:0.309,1:0.762:0.237 VelocityInheritance=0.15 ZOffset=-1
+        }
+        Part "BloodSplash" Size=0.1,0.1,0.1 Anchored BackSurface=SmoothNoOutlines BottomSurface=SmoothNoOutlines CFrame=12.5,19.05,114.5 CanCollide=false FrontSurface=Hinge LeftSurface=SmoothNoOutlines RightSurface=SmoothNoOutlines TopSurface=SmoothNoOutlines Transparency=1 {
+            ParticleEmitter "Blood" Size=0:0,1:2.875 Acceleration=0,-30,0 Brightness=2 Color=0:#AA0000,1:#6C0000 EmissionDirection=Front Lifetime=0.3,0.5 LightEmission=-0.2 Rate=10000000 RotSpeed=-40,270 Rotation=-360,360 Speed=5,10 SpreadAngle=360,360 Texture="rbxassetid://73547327" TextureContent="rbxassetid://73547327" Transparency=0:0.1,0.397:0.144,0.503:0.494,1:1
+            ParticleEmitter "Blood2" Size=0:0.125:0.125,1:0 Acceleration=0,-20,0 Brightness=2 Color=0:#730000,1:#730000 EmissionDirection=Front Lifetime=0.5,1.5 LightEmission=-0.2 Rate=100000 Speed=5,14 SpreadAngle=360,360 Texture="http://www.roblox.com/asset/?id=134531274" TextureContent="http://www.roblox.com/asset/?id=134531274" Transparency=0:0.3,1:0.3 ZOffset=1
+            ParticleEmitter "Blood3" Size=0:0,1:2.875 Acceleration=0,-5,0 Brightness=2 Color=0:#7C0000,1:#420000 EmissionDirection=Front Lifetime=0.4,1 LightEmission=-0.2 Rate=3000 RotSpeed=-40,270 Rotation=-360,360 Speed=3,7 SpreadAngle=360,360 Texture="rbxassetid://241779220" TextureContent="rbxassetid://241779220" Transparency=0:1,0.099:0.858,0.395:0.874,1:1 ZOffset=0.5
+        }
+        Part "Dust" Size=20,20,20 Anchored BottomSurface=Smooth CFrame=240.47,10,214.146|-180,0,0 CanCollide=false CanQuery=false CanTouch=false Shape=Ball TopSurface=Smooth Transparency=1 {
+            ParticleEmitter "ParticleEmitter" Size=0:0,0.498:0.328,1:0 FlipbookFramerate=0,0 FlipbookLayout=Grid2x2 FlipbookMode=Random FlipbookStartRandom Lifetime=10,10 Rate=100 RotSpeed=10,20 Rotation=-360,360 Shape=Sphere ShapeInOut=InAndOut Speed=-0.1,0.1 Texture="rbxassetid://15460737684" TextureContent="rbxassetid://15460737684" Transparency=0:1,0.063:1,0.25:0.94,0.372:0.929,0.457:1,0.54:0.962,0.55:0.907,0.76:1,0.808:0.929,0.923:0.978,1:1 ZOffset=3
+        }
+        Part "Explosion" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-235.565,20.668,91.204 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth {
+            ParticleEmitter "fire" Size=0:0,0.172:7.705,1:6.011 Acceleration=0,12,0 Brightness=5 Color=0:#FFEA00,1:#FF0000 Drag=7.5 Lifetime=0.5,0.5 LightEmission=1 LightInfluence=1 Rate=63 RotSpeed=-90,90 Rotation=-180,180 Speed=-64,64 SpreadAngle=180,180 Squash=0:-0.1,1:-0.1 Texture="rbxassetid://7948792468" TextureContent="rbxassetid://7948792468" Transparency=0:1,0.086:0.65,1:1 ZOffset=1
+            ParticleEmitter "glare" Size=0:0,1:10 Brightness=50 Color=0:#FF8223,1:#FF8223 Lifetime=0.25,0.25 LightEmission=1 LightInfluence=1 Rotation=-180,180 Speed=10,10 SpreadAngle=180,180 Texture="rbxassetid://1084987899" TextureContent="rbxassetid://1084987899" Transparency=0:1,0.174:0.257,0.5:0,0.751:0.508,1:1 ZOffset=2
+            ParticleEmitter "glow" Size=0:20,1:20 Brightness=50 Color=0:#FF4B00,1:#FF4B00 Lifetime=0.5,0.5 LightEmission=1 Rate=4 Rotation=-180,180 Speed=0,0 Texture="rbxassetid://1454292685" TextureContent="rbxassetid://1454292685" Transparency=0:1,0.078:0.585,1:1 ZOffset=3
+            ParticleEmitter "orange" Size=0:0,0.125:6.5,1:5 Acceleration=0,12,0 Brightness=5 Color=0:#FF4B00,1:#FF4B00 Drag=7.5 Lifetime=0.75,0.75 LightEmission=1 LightInfluence=1 Rate=400 RotSpeed=-90,90 Rotation=-180,180 Speed=-64,64 SpreadAngle=180,180 Squash=0:-0.1,1:-0.1 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:1,0.195:0.738,0.406:0.831,1:1 ZOffset=1
+            ParticleEmitter "rocks" Size=0:2.678,1:4.481 Acceleration=0,-5,0 Brightness=5 Color=0:#FF5500,0.543:#FB5401,0.855:#3B3B3B,1:#4C4C4C Lifetime=1.5,1.5 LightEmission=0.85 LightInfluence=1 Rate=21 RotSpeed=-30,30 Rotation=-180,180 Speed=10,10 SpreadAngle=180,180 Texture="rbxassetid://7250560778" TextureContent="rbxassetid://7250560778" Transparency=0:0,0.826:0.153,0.928:0.426,1:1 ZOffset=1
+            ParticleEmitter "shockwave" Size=0:0,1:10 Brightness=37.5 Color=0:#FFFB82,1:#FFFB82 Lifetime=0.375,0.375 LightEmission=1 LightInfluence=1 Rate=2.5 RotSpeed=-90,90 Rotation=-180,180 Speed=0,0 Texture="rbxassetid://3916186365" TextureContent="rbxassetid://3916186365" Transparency=0:0,1:1 ZOffset=3
+            ParticleEmitter "smoke" Size=0:0,0.125:4,1:3.5 Acceleration=0,9,0 Color=0:#282828,1:#282828 Drag=2.75 Lifetime=2.875,2.875 LightInfluence=1 Rate=100 RotSpeed=-30,30 Rotation=-180,180 Speed=-20,20 SpreadAngle=180,180 Texture="rbxassetid://1084987899" TextureContent="rbxassetid://1084987899" Transparency=0:1,0.125:0.25,1:1
+            ParticleEmitter "smoke2" Orientation=VelocityParallel Size=0:20,1:20 Color=0:#702A2A,1:#702A2A Drag=2.75 Lifetime=2.875,2.875 LightInfluence=1 Rate=4 RotSpeed=-30,30 Rotation=-180,180 Speed=-20,20 SpreadAngle=180,180 Texture="rbxassetid://7216850983" TextureContent="rbxassetid://7216850983" Transparency=0:1,0.129:0.727,1:1
+            ParticleEmitter "sparks" Orientation=VelocityParallel Size=0:1,1:0 Acceleration=0,-32,0 Color=0:#F2FF00,1:#FF0000 Drag=1 Lifetime=0.75,0.75 LightEmission=1 LightInfluence=1 Rate=27 Speed=45,45 SpreadAngle=180,180 Squash=0:-4,1:-4 Texture="rbxassetid://7451822955" TextureContent="rbxassetid://7451822955" Transparency=0:0,1:1 ZOffset=-1
+        }
+        Part "GlassBroken" Size=5.313,5.686,2.096 Anchored BottomSurface=Smooth CFrame=89.616,7.087,115.738|0,-90,0 TopSurface=Smooth Transparency=1 {
+            ParticleEmitter "particle" Orientation=VelocityPerpendicular Size=0:0.7,1:0.7 Acceleration=0,-30,0 Brightness=0 Color=0:#C9FAFF,1:#FFFFFF FlipbookFramerate=0,0 FlipbookLayout=Grid2x2 FlipbookMode=PingPong FlipbookStartRandom Lifetime=0.5,0.5 LightInfluence=10 LockedToPart Rate=100 RotSpeed=-5,5 Rotation=-180,180 ShapeInOut=InAndOut Speed=0,20 SpreadAngle=180,-180 Texture="rbxassetid://16472938308" TextureContent="rbxassetid://16472938308" Transparency=0:0,1:1 VelocityInheritance=0.15
+        }
+        Part "ImpactConcrete" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=1.942,1.551,74.13 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth {
+            ParticleEmitter "color" Acceleration=0,-25,0 Brightness=5 FlipbookFramerate=0,0 FlipbookLayout=Grid2x2 FlipbookStartRandom Lifetime=10,10 LightInfluence=1 Rate=5 RotSpeed=-30,30 Rotation=-180,180 SpreadAngle=25,25 Texture="rbxassetid://15491983388" TextureContent="rbxassetid://15491983388" Transparency=0:1,0.02:0.88,0.081:0.836,0.174:1,1:1 ZOffset=1
+            ParticleEmitter "color" Orientation=VelocityParallel Size=0:0.4,1:0.4 Acceleration=0,-25,0 Brightness=5 FlipbookFramerate=0,0 FlipbookLayout=Grid2x2 FlipbookStartRandom Lifetime=10,10 LightInfluence=1 RotSpeed=-30,30 Rotation=-180,180 Speed=10,12 SpreadAngle=25,25 Texture="rbxassetid://15491983388" TextureContent="rbxassetid://15491983388" Transparency=0:1,0.01:0.279,0.067:0,0.351:0.825,1:1 ZOffset=1
+            ParticleEmitter "dust" Size=0:2,1:2 Brightness=5 Color=0:#5A5A5A,1:#5A5A5A Drag=2.75 FlipbookFramerate=0,0 FlipbookStartRandom Lifetime=10,10 LightInfluence=1 LockedToPart Rate=26 RotSpeed=-30,30 Rotation=-180,180 Speed=2,2 SpreadAngle=25,25 Texture="rbxassetid://14965465786" TextureContent="rbxassetid://14965465786" Transparency=0:1,0.083:0.896,1:1 ZOffset=1
+        }
+    }
+    ModuleScript "PLAYERSDATA" @src="Scripts/ServerStorage/PLAYERSDATA.luau"
+    Model "RBX_ANIMSAVES" {
+        ObjectValue "Animations - Night (MOVEMENT)" {
+            KeyframeSequence "Run (Script) Attack mode" #"1708962815" {
+                Keyframe "Keyframe" {
+                    Pose "HumanoidRootPart" Weight=0 {
+                        Pose "Torso" Weight=0 {
+                            Pose "Left Arm" CFrame=0.059,-0.172,0|6.731,-28.583,-81.259
+                            Pose "Right Arm" CFrame=0.136,-0.523,-0.084|-2.546,30.295,129.379
+                        }
+                    }
+                }
+                Keyframe "Keyframe" Time=0.317 {
+                    Pose "HumanoidRootPart" Weight=0 {
+                        Pose "Torso" Weight=0 {
+                            Pose "Left Arm" CFrame=-0.093,-0.432,-0.014|-14.704,-27.682,-124.723
+                            Pose "Right Arm" CFrame=-0.059,-0.516,0.064|-3.57,17.422,113.295
+                        }
+                    }
+                }
+                Keyframe "Keyframe" Time=0.667 {
+                    Pose "HumanoidRootPart" Weight=0 {
+                        Pose "Torso" Weight=0 {
+                            Pose "Left Arm" CFrame=0.059,-0.172,0|6.731,-28.583,-81.259
+                            Pose "Right Arm" CFrame=0.136,-0.523,-0.084|-2.546,30.295,129.379
+                        }
+                    }
+                }
+            }
+            CurveAnimation "Run (Script) Attack mode [CHANNELS]" #"1708963158" {
+                Folder "HumanoidRootPart" {
+                    Folder "Torso" {
+                        Folder "Left Arm" {
+                            Vector3Curve "Position" {
+                                FloatCurve "X"
+                                FloatCurve "Y"
+                                FloatCurve "Z"
+                            }
+                            EulerRotationCurve "Rotation" {
+                                FloatCurve "X"
+                                FloatCurve "Y"
+                                FloatCurve "Z"
+                            }
+                        }
+                        Folder "Right Arm" {
+                            Vector3Curve "Position" {
+                                FloatCurve "X"
+                                FloatCurve "Y"
+                                FloatCurve "Z"
+                            }
+                            EulerRotationCurve "Rotation" {
+                                FloatCurve "X"
+                                FloatCurve "Y"
+                                FloatCurve "Z"
+                            }
+                        }
+                    }
+                }
+                MarkerCurve "NamedKeyframeEvent"
+            }
+        }
+        ObjectValue "BlockDummy"
+        ObjectValue "Combat Animation"
+        ObjectValue "Dummy"
+        ObjectValue "Punch animation by PrinceDominic15"
+        ObjectValue "R6"
+        ObjectValue "WoowzAnimations" @file="Scene/ServerStorage/RBX_ANIMSAVES/WoowzAnimations.bridge" Value=@"Workspace/WoowzAnimations"
+        ObjectValue "punch aims"
+        ObjectValue "walk animation" @file="Scene/ServerStorage/RBX_ANIMSAVES/walk animation.bridge" Value=@"Workspace/walk animation"
+    }
+    Folder "SCRIPTOBJECTS" @file="Scene/ServerStorage/SCRIPTOBJECTS.bridge"
+    Folder "SCRIPTS" {
+        Script "BodyHealth" @src="Scripts/ServerStorage/SCRIPTS/BodyHealth.luau" Disabled
+        MeshPart "Bullet" Size=0.219,0.19,0.19 CFrame=-1.799,1.056,256.226|0,-90,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false CollisionGroup="Bullet" Color=#64605D Massless Material=Metal RenderFidelity=Precise {
+            Attachment "Attachment0" CFrame=0,0,0|-180,0,-180
+            Attachment "Attachment1" CFrame=-0.01,0,0
+            Attachment "Attachment2"
+            Script "Script" @src="Scripts/ServerStorage/SCRIPTS/Bullet/Script.luau" Disabled
+            Trail "Trail" Attachment0=@"ServerStorage/SCRIPTS/Bullet/Attachment1" Attachment1=@"ServerStorage/SCRIPTS/Bullet/Attachment2" Color=0:#B4B4B4,1:#B4B4B4 FaceCamera Lifetime=0.25 Texture="rbxassetid://15181614566" TextureContent="rbxassetid://15181614566" WidthScale=0:1,1:0
+            VectorForce "VectorForce" ApplyAtCenterOfMass Attachment0=@"ServerStorage/SCRIPTS/Bullet/Attachment0" Force=-30,0,0
+        }
+        NumberValue "CameraShake" $Distance=0 $FastEnd=false $FastStart=false $Position=0,0,0 $Power=0 $t=0 {
+            ObjectValue "Object" {
+                Script "Script" @src="Scripts/ServerStorage/SCRIPTS/CameraShake/Object/Script.luau" Disabled
+            }
+            Script "Script" @src="Scripts/ServerStorage/SCRIPTS/CameraShake/Script.luau" Disabled
+        }
+        Script "Corpse" @src="Scripts/ServerStorage/SCRIPTS/Corpse.luau" Disabled
+        DragDetector "DragDetector" DragFrame=12.883,-11.28,-0.097|179.971,4.175,-179.351 DragStyle=TranslateViewPlane Enabled=false KeyboardModeSwitchKeyCode=RightControl MaxActivationDistance=5 MaxForce=100 MaxTorque=100 Responsiveness=100
+        Script "DropTile" @src="Scripts/ServerStorage/SCRIPTS/DropTile.luau" Disabled
+        Model "Explosion" LevelOfDetail=Disabled PrimaryPart=@"ServerStorage/SCRIPTS/Explosion/ExplosionRange" {
+            Part "ExplosionRange" Size=18.9,18.9,18.9 BottomSurface=Smooth CFrame=-99.593,28.45,94.7 CanCollide=false CastShadow=false Shape=Ball TopSurface=Smooth Transparency=1
+            Part "ExplosionRangeBig" Size=18.9,18.9,18.9 BottomSurface=Smooth CFrame=-99.593,28.45,94.7 CanCollide=false CastShadow=false Shape=Ball TopSurface=Smooth Transparency=1
+            Part "Particles" Size=0.1,0.1,0.1 Anchored BottomSurface=Smooth CFrame=-99.593,25.184,94.7 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Shape=Ball TopSurface=Smooth Transparency=1 {
+                PointLight "PointLight" Brightness=0 Color=#FF5E00 Range=27
+                Smoke "Smoke" Size=2 Color=#302C27 Opacity=0.3 RiseVelocity=2
+                Sound "Sound" AudioContent="rbxassetid://9064888065" RollOffMaxDistance=150 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://9064888065" Volume=6
+                Sound "Sound2" AudioContent="rbxassetid://9064888065" RollOffMaxDistance=150 RollOffMinDistance=0 RollOffMode=Linear SoundId="rbxassetid://9064888065" Volume=4
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/SCRIPTS/Explosion/Particles" Part1=@"ServerStorage/SCRIPTS/Explosion/ExplosionRange"
+                WeldConstraint "WeldConstraint" Part0=@"ServerStorage/SCRIPTS/Explosion/Particles" Part1=@"ServerStorage/SCRIPTS/Explosion/ExplosionRangeBig"
+            }
+            NumberValue "Power" Value=10
+            Script "Script" @src="Scripts/ServerStorage/SCRIPTS/Explosion/Script.luau" Disabled
+        }
+        Script "LightBlink" @src="Scripts/ServerStorage/SCRIPTS/LightBlink.luau" Disabled
+        Script "ParticleScript" @src="Scripts/ServerStorage/SCRIPTS/ParticleScript.luau" Disabled $time=0
+        Part "PhysicSound" Size=1,1,1 Anchored BottomSurface=Smooth CanCollide=false CanQuery=false CanTouch=false CastShadow=false TopSurface=Smooth Transparency=1 {
+            ObjectValue "CameraShake"
+            Sound "PhysicSound" RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear
+            Script "Script" @src="Scripts/ServerStorage/SCRIPTS/PhysicSound/Script.luau" Disabled
+        }
+        Part "SmartDecal" Size=2,2,0.001 BottomSurface=Smooth CFrame=-1.432,2,73.866 CanCollide=false CanQuery=false CanTouch=false Massless Material=Metal TopSurface=Smooth Transparency=1 {
+            Decal "Decal" Texture="rbxassetid://15148822170" TextureContent="rbxassetid://15148822170"
+            WeldConstraint "WeldConstraint" Part0=@"ServerStorage/SCRIPTS/SmartDecal"
+        }
+        MeshPart "SmartDecalHD" Size=2,2,0.001 Anchored CFrame=1.289,2,74.227 CanCollide=false CanQuery=false CanTouch=false Massless Material=Metal RenderFidelity=Precise Transparency=0.05 {
+            SurfaceAppearance "SurfaceAppearance" AlphaMode=Transparency ColorMap="rbxassetid://15148822170" ColorMapContent="rbxassetid://15148822170"
+            WeldConstraint "WeldConstraint" Part0=@"ServerStorage/SCRIPTS/SmartDecalHD"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+Lighting "Lighting" Ambient=#FFFFFF Brightness=0 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=0 EnvironmentSpecularScale=0.4 ExposureCompensation=0 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=0 GlobalShadows LightingStyle=Realistic OutdoorAmbient=#000000 PrioritizeLightingQuality ShadowSoftness=0 TimeOfDay="12:00:00" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=4 $UseCurrentLighting=false {
+    Atmosphere "Atmosphere" Density=0.5
+    BloomEffect "Bloom" Intensity=1 Threshold=2
+    BloomEffect "CameraBloom" Size=56 Enabled=false Intensity=1 Threshold=0.8
+    BlurEffect "CameraBlur" Size=7 Enabled=false
+    ColorCorrectionEffect "CameraColorCorrection" Enabled=false Saturation=-0.3 TintColor=#FFFEF4
+    DepthOfFieldEffect "DepthOfField" Enabled=false FarIntensity=1 FocusDistance=23.42 InFocusRadius=21.62
+    BoolValue "DisableLight"
+    BlurEffect "Drunk" Size=0
+    ColorCorrectionEffect "Hurt" Brightness=0.5 Contrast=0.5 Enabled=false Saturation=-1 TintColor=#FF0000
+    BlurEffect "HurtBlur" Size=16 Enabled=false
+    ColorCorrectionEffect "LoadingScreen" Enabled=false TintColor=#000000
+    ColorCorrectionEffect "Poison" Contrast=5 Enabled=false Saturation=-1 TintColor=#63BE59
+    BlurEffect "SettingsBlur" Size=0
+    ColorCorrectionEffect "SettingsColorCorrection"
+    Sky "Sky" MoonTextureContent="rbxassetid://6444320592" MoonTextureId="rbxassetid://6444320592" SkyboxBackContent="rbxassetid://15017909846" SkyboxBk="rbxassetid://15017909846" SkyboxDn="rbxassetid://15017909846" SkyboxDownContent="rbxassetid://15017909846" SkyboxFrontContent="rbxassetid://15017909846" SkyboxFt="rbxassetid://15017909846" SkyboxLeftContent="rbxassetid://15017909846" SkyboxLf="rbxassetid://15017909846" SkyboxRightContent="rbxassetid://15017909846" SkyboxRt="rbxassetid://15017909846" SkyboxUp="rbxassetid://15017909846" SkyboxUpContent="rbxassetid://15017909846" StarCount=0 SunAngularSize=11 SunTextureContent="rbxassetid://6196665106" SunTextureId="rbxassetid://6196665106"
+    ColorCorrectionEffect "Stamina" Contrast=0.2 Enabled=false Saturation=-0.3
+    ObjectValue "StartItem"
+}

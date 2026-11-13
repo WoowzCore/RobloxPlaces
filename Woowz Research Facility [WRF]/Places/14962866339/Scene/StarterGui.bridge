@@ -1,0 +1,1163 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "AdminMenu" AutoLocalize=false Enabled=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Folder "Commands" {
+            Frame "BlankCommand" Size=0.93,0,0,60 BackgroundColor3=#515151 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                Frame "Title" Size=1,0,-0.01,40 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                    TextLabel "TextLabel" Position=0.033,0,0.12,0 Size=0.63,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Command Title" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeColor3=#E5E5E5 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    ImageLabel "img1" Position=1.123,-60,0.135,0 Size=0.1,0,0.95,0 AnchorPoint=1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315832291" ImageContent="rbxassetid://15315832291" Visible=false
+                    ImageLabel "img2" Position=1.123,-120,0.135,0 Size=0.1,0,0.95,0 AnchorPoint=1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15287387872" ImageContent="rbxassetid://15287387872" Visible=false
+                    ImageLabel "img3" Position=1.123,-90,0.135,0 Size=0.1,0,0.95,0 AnchorPoint=1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Visible=false
+                }
+                UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                UIListLayout "UIListLayout" Padding=0,7 SortOrder=LayoutOrder
+            }
+            Folder "Details" {
+                Frame "checkbox" Position=0.005,0,0.147,0 Size=1,0,0,40 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 LayoutOrder=1 Visible=false {
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/checkbox/LocalScript.luau" Disabled
+                    TextButton "TextButton" Position=0,16,0,6 Size=0.079,0,0.731,0 BackgroundColor3=#E5E5E5 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Bold|Normal" Text="" TextColor3=#000000 TextSize=34 TextWrapped TextYAlignment=Bottom {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIGradient "UIGradient" Color=0:#B5B5B5,1:#FFFFFF Rotation=-90
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=-0.019,60,0.156,0 Size=0.782,0,0.743,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Checkbox Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    BoolValue "Value"
+                }
+                Frame "color" Size=1,0,0,40 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/color/LocalScript.luau" Disabled
+                    TextBox "TextBox1" Position=0.027,0,0.173,0 Size=0.14,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0-255" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextBox "TextBox2" Position=0.177,0,0.173,0 Size=0.14,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0-255" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextBox "TextBox3" Position=0.333,0,0.173,0 Size=0.14,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0-255" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=0.403,60,0.113,0 Size=0.4,0,0.753,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Input Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    Color3Value "Value"
+                    ImageLabel "img" Position=0.465,0,-0.025,0 Size=0.1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16388344584" ImageColor3=#000000 ImageContent="rbxassetid://16388344584"
+                }
+                Frame "finish" Size=1,0,0,40 BackgroundColor3=#6B6B6B BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 LayoutOrder=1000000000 Visible=false ZIndex=0 {
+                    BoolValue "EnabledButton" Value
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/finish/LocalScript.luau" Disabled
+                    TextButton "TextButton" Position=0.1,0,0.1,0 Size=0.8,0,0,36 BackgroundColor3=#34DD00 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Активировать" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.64 TextWrapped {
+                        UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                        UIGradient "UIGradient" Color=0:#646464,0.74:#FFFFFF,1:#C5C5C5 Rotation=-90
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.2 Transparency=0.62
+                    }
+                }
+                Frame "input" Size=1,0,0,40 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    LocalScript "LocalScript" Disabled @code=<<<
+                        script.Parent.TextBox.Text = script.Parent.Value.Value
+
+                        script.Parent.TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+                        	script.Parent.Value.Value = script.Parent.TextBox.Text
+                        end)
+                    >>>
+                    TextBox "TextBox" Position=0.027,0,0.178,0 Size=0.455,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="..." Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=0.34,60,0.113,0 Size=0.431,0,0.753,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Input Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    StringValue "Value"
+                }
+                Frame "list" Size=1,0,0,40 AnchorPoint=0,1 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/list/LocalScript.luau" Disabled
+                    TextButton "TextButton" Position=0,6,0,7 Size=0.465,0,0.7,0 BackgroundColor3=#E5E5E5 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIGradient "UIGradient" Color=0:#B5B5B5,1:#FFFFFF Rotation=90
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=0.34,60,0.113,0 Size=0.431,0,0.737,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="List Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    StringValue "Value"
+                    Frame "list" Position=0,6,0,7 Size=0,170,0,27 BackgroundColor3=#969696 BorderColor3=#000000 BorderSizePixel=0 Visible=false ZIndex=20 {
+                        UIListLayout "UIListLayout" SortOrder=LayoutOrder
+                        LocalScript "list" @src="Scripts/StarterGui/AdminMenu/Commands/Details/list/list/list.luau" Disabled
+                    }
+                }
+                Frame "listplayer" Size=1,0,0,40 AnchorPoint=0,1 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    BoolValue "Everyones"
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/listplayer/LocalScript.luau" Disabled
+                    TextButton "TextButton" Position=0,6,0,7 Size=0.465,0,0.7,0 BackgroundColor3=#E5E5E5 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIGradient "UIGradient" Color=0:#B5B5B5,1:#FFFFFF Rotation=90
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=0.34,60,0.113,0 Size=0.455,0,0.737,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Players" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    StringValue "Value"
+                    Frame "list" Position=0,6,0,7 Size=0,170,0,27 BackgroundColor3=#969696 BorderColor3=#000000 BorderSizePixel=0 Visible=false ZIndex=20 {
+                        UIListLayout "UIListLayout" SortOrder=LayoutOrder
+                        LocalScript "list" @src="Scripts/StarterGui/AdminMenu/Commands/Details/listplayer/list/list.luau" Disabled
+                    }
+                }
+                Frame "vector3" Size=1,0,0,40 BackgroundColor3=#6B6B6B BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    LocalScript "LocalScript" @src="Scripts/StarterGui/AdminMenu/Commands/Details/vector3/LocalScript.luau" Disabled
+                    TextBox "TextBox1" Position=0.027,0,0.173,0 Size=0.15,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextBox "TextBox2" Position=0.199,0,0.173,0 Size=0.15,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextBox "TextBox3" Position=0.373,0,0.173,0 Size=0.15,0,0.7,0 BackgroundColor3=#DFDFDF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Jura|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0" Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                    }
+                    TextLabel "Title" Position=0.387,60,0.113,0 Size=0.384,0,0.753,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Input Name" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                        UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D
+                        UIStroke "UIStroke" Thickness=3.1 Transparency=0.77
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                    UIGradient "UIGradient" Color=0:#FFFFFF,1:#6D6D6D Rotation=90
+                    Vector3Value "Value"
+                }
+            }
+        }
+        LocalScript "GenerateCommands" @src="Scripts/StarterGui/AdminMenu/GenerateCommands.luau"
+        Frame "Panel" Position=1,0,0.136,0 Size=0.2,60,0.803,0 Active AnchorPoint=1,0 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 {
+            TextLabel "Console" Position=0.048,0,0.818,0 Size=0.917,0,0.17,0 BackgroundColor3=#0D260E BorderColor3=#000000 BorderSizePixel=0 FontFace="PressStart2P|Regular|Normal" Text="" TextColor3=#00DD34 TextScaled TextSize=40 TextWrapped TextYAlignment=Top {
+                LocalScript "ConsoleLight" @src="Scripts/StarterGui/AdminMenu/Panel/Console/ConsoleLight.luau"
+                UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                UIGradient "UIGradient" Color=0:#107A00,0.5:#FFFFFF,1:#107A00 Rotation=-90
+                UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.4 Transparency=0.4
+            }
+            TextBox "Search" Position=0.046,0,0.167,0 Size=0.92,0,0.075,0 AutoLocalize=false BackgroundColor3=#B1B1B1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" PlaceholderColor3=#868686 PlaceholderText="Поиск..." Text="" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left {
+                LocalScript "SearchScript" @src="Scripts/StarterGui/AdminMenu/Panel/Search/SearchScript.luau"
+                StringValue "TID" Value="otherui.search"
+                UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+                UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.4 Transparency=0.4
+            }
+            TextLabel "Title" Size=1,0,0.063,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Админ панель" TextColor3=#FFFFFF TextSize=40 TextWrapped {
+                StringValue "TID" Value="admin.title"
+                UIStroke "UIStroke" Thickness=3.5 Transparency=0.68
+            }
+            UICorner "UICorner" BottomLeftRadius=0,15 BottomRightRadius=0,15 CornerRadius=0,15 TopLeftRadius=0,15 TopRightRadius=0,15
+            UIGradient "UIGradient" Color=0:#1A1A1A,1:#2F2F2F Rotation=180
+            UIStroke "UIStroke" Thickness=5.7 Transparency=0.62
+            ScrollingFrame "Values" Position=0.963,0,0.801,0 Size=0.917,0,0.543,0 Active AnchorPoint=1,1 AutoLocalize=false BackgroundColor3=#000000 BorderColor3=#101010 BorderMode=Middle BorderSizePixel=4 CanvasSize=0,0,10,0 ScrollBarThickness=20 ScrollingDirection=Y {
+                Folder "UIList" {
+                    UIListLayout "UIListLayout" Padding=0,7 SortOrder=LayoutOrder
+                }
+            }
+        }
+    }
+    ScreenGui "CameraEffect" AutoLocalize=false DisplayOrder=-10 Enabled=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        LocalScript "LocalScript" @src="Scripts/StarterGui/CameraEffect/LocalScript.luau"
+        TextLabel "Timer" Position=0.692,0,0.893,0 Size=0,404,0,72 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Regular|Normal" Text="00:00:00" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.79 TextTransparency=0.09 TextWrapped {
+            LocalScript "LocalScript" @src="Scripts/StarterGui/CameraEffect/Timer/LocalScript.luau"
+            UIStroke "UIStroke" LineJoinMode=Miter Thickness=5.2 Transparency=0.27
+        }
+        ImageLabel "grain" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15117086866" ImageContent="rbxassetid://15117086866" ImageTransparency=0.7 ScaleType=Tile
+        TextLabel "text" Position=0.068,0,0.883,0 Size=0,133,0,72 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Regular|Normal" Text="SP" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.79 TextTransparency=0.09 TextWrapped {
+            UIStroke "UIStroke" LineJoinMode=Miter Thickness=5.2 Transparency=0.27
+        }
+        TextLabel "text" Position=0.641,0,0.898,0 Size=0,133,0,72 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Regular|Normal" Text="AVCHD" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.79 TextTransparency=0.09 TextWrapped {
+            UIStroke "UIStroke" LineJoinMode=Miter Thickness=5.2 Transparency=0.27
+        }
+        TextLabel "text" Position=0.068,0,0.084,0 Size=0,133,0,72 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Regular|Normal" Text="REC" TextColor3=#FF0000 TextScaled TextSize=14 TextStrokeTransparency=0.79 TextTransparency=0.09 TextWrapped {
+            UIStroke "UIStroke" LineJoinMode=Miter Thickness=5.2 Transparency=0.27
+        }
+    }
+    ScreenGui "Console" AutoLocalize=false DisplayOrder=100000000 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Frame "Frame" Size=1,0,1,0 BackgroundColor3=#CBCBCB BackgroundTransparency=0.25 BorderColor3=#000000 BorderSizePixel=0 ZIndex=6 {
+            ScrollingFrame "ScrollingFrame" Position=0.1,0,0.1,0 Size=0.8,0,0.8,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=0.3 BorderColor3=#000000 BorderSizePixel=0 CanvasSize=0,0,20,0 ScrollBarImageColor3=#000000 ScrollBarThickness=25 {
+                UIListLayout "UIListLayout" Padding=0,7 SortOrder=LayoutOrder VerticalAlignment=Bottom
+                UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=6.3 Transparency=0.83
+            }
+            UIGradient "UIGradient" Color=0:#FFFFFF,1:#A5A5A5 Rotation=90
+            TextLabel "prints" Position=0.1,0,0.925,0 Size=0.3,0,0.05,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="HighwayGothic|Regular|Normal" Text="Messages: ????????" TextColor3=#000000 TextScaled TextSize=14 TextTransparency=0.21 TextWrapped TextXAlignment=Left
+        }
+        LocalScript "LocalScript" @src="Scripts/StarterGui/Console/LocalScript.luau"
+        Frame "TextFrame" Size=0.983,0,0,60 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+            TextLabel "TextLabel" Position=0.025,0,0,0 Size=0.975,0,1,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ" TextColor3=#000000 TextSize=14 TextWrapped TextXAlignment=Left {
+                UITextSizeConstraint "UITextSizeConstraint" MaxTextSize=50 MinTextSize=30
+            }
+            UICorner "UICorner" BottomLeftRadius=0,40 BottomRightRadius=0,40 CornerRadius=0,40 TopLeftRadius=0,40 TopRightRadius=0,40
+            UIGradient "UIGradient" Color=0:#FFFFFF,1:#A5A5A5 Rotation=90
+            UIStroke "UIStroke" Thickness=2.3 Transparency=0.69
+            ImageLabel "client" Position=0,5,0,5 Size=0,50,0,50 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15422183470" ImageColor3=#000000 ImageContent="rbxassetid://15422183470" Visible=false
+        }
+    }
+    ScreenGui "DebugInfo" AutoLocalize=false DisplayOrder=1000000000 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        TextLabel "admin" Position=0.008,0,0.356,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Admin: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/admin/localscript.luau" Disabled
+        }
+        TextLabel "allobjects" Position=0.171,0,0.406,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="All Objects: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait(0.5) do
+                	script.Parent.Text = base.t.Get("debug.allobjects").. #game.Workspace:GetDescendants()
+                end
+            >>>
+        }
+        TextLabel "alluiobjects" Position=0.348,0,0.105,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="All UI Objects: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                local ui = plr:WaitForChild("PlayerGui")
+                while wait(0.5) do
+                	script.Parent.Text = base.t.Get("debug.allobjectsui").. #ui:GetDescendants()
+                end
+            >>>
+        }
+        Frame "background" Size=1,0,0.5,0 BackgroundColor3=#000000 BackgroundTransparency=0.5 BorderColor3=#000000 BorderSizePixel=0 ZIndex=0
+        TextLabel "camerashakes" Position=0.171,0,0.331,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Shakes: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.Get("debug.shakes").. math.max(0,#workspace.CameraShake:GetChildren()-#workspace.PhysicSounds:GetChildren()).." ("..#workspace.CameraShake:GetChildren()..")"
+                end
+            >>>
+        }
+        TextLabel "corpses" Position=0.171,0,0.281,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Corpses: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.corpses")..#workspace.Corpses:GetChildren()
+                end
+            >>>
+        }
+        TextLabel "date" Position=0.008,0,0.206,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Date: ??.??.????" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/date/localscript.luau" Disabled
+        }
+        LocalScript "debuginfo" @src="Scripts/StarterGui/DebugInfo/debuginfo.luau"
+        TextLabel "devdiscord" Position=0.822,0,0.456,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Woowz Discord: woowz11" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left
+        TextLabel "devtime" Position=0.822,0,0.431,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Woowz Time: ??:??:??:??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/devtime/localscript.luau" Disabled
+        }
+        TextLabel "died" Position=0.171,0,0.18,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Died: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/died/localscipt.luau" Disabled
+        }
+        TextLabel "firstperson" Position=0.171,0,0.23,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="First Person: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/firstperson/localscipt.luau" Disabled
+        }
+        TextLabel "fps" Position=0.008,0,0.081,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="FPS: 0" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/fps/localscript.luau" Disabled
+        }
+        TextLabel "freecamera" Position=0.348,0,0.231,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="FreeCamera: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/freecamera/localscipt.luau" Disabled
+        }
+        TextLabel "graphic" Position=0.008,0,0.181,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Graphic: Auto" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/graphic/localscript.luau" Disabled
+        }
+        TextLabel "hightlight" Position=0.348,0,0.281,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="All Hightlight: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local rs = game:GetService("ReplicatedStorage")
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.hightlights")..tostring(rs.GetServerInfoData:InvokeServer("TotalHightlight")+1).."/31"
+                end
+            >>>
+        }
+        TextLabel "holiday" Position=0.348,0,0.256,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Holiday: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/holiday/localscript.luau" Disabled
+        }
+        TextLabel "info" Position=0.221,0,0.018,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Close debug panel F6" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="debug.title"
+        }
+        TextLabel "jumppower" Position=0.171,0,0.105,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Jump Power: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local hum = chr:WaitForChild("Humanoid")
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.jumppower")..math.round(hum.JumpPower*100)/100
+                end
+            >>>
+        }
+        TextLabel "lastupdate" Position=0.171,0,0.456,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Last Update: Broken HTTP" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/lastupdate/localscipt.luau" Disabled
+        }
+        TextLabel "memory" Position=0.006,0,0.456,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Memory: ?MB" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local stat = game:GetService("Stats")
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.memory")..tostring(math.round(stat:GetTotalMemoryUsageMb()*10)/10).."MB"
+                end
+            >>>
+        }
+        TextLabel "mousepos" Position=0.008,0,0.281,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Mouse Position: ????x????" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                local m = plr:GetMouse()
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.mousepos").."("..m.X.."|"..m.Y..")"
+                end
+            >>>
+        }
+        TextLabel "name" Position=0.007,0,0.406,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Name: ???????? " TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                script.Parent.Text = base.t.g("debug.name")..plr.Name
+            >>>
+        }
+        TextLabel "nickname" Position=0.006,0,0.431,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Nickname: ???????? " TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.nickname")..plr.DisplayName
+                end
+            >>>
+        }
+        TextLabel "objects" Position=0.171,0,0.356,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Objects: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.createdobjects")..#workspace.CreatedObjects:GetChildren()
+                end
+            >>>
+        }
+        TextLabel "owner" Position=0.171,0,0.055,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Server owner: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/owner/localscript.luau" Disabled
+        }
+        TextLabel "ping" Position=0.008,0,0.331,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Ping: ?ms" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local p = game:GetService("Players").LocalPlayer
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.ping")..math.round(p:GetNetworkPing()*2000)..base.t.g("other.milliseconds")
+                end
+            >>>
+        }
+        TextLabel "placeage" Position=0.171,0,0.431,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Place Age: Broken HTTP" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/placeage/localscipt.luau" Disabled
+        }
+        TextLabel "placetime" Position=0.348,0,0.055,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Server Age: ??:??:??:??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/placetime/localscipt.luau" Disabled
+        }
+        TextLabel "players" Position=0.348,0,0.08,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Players: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local p = game:GetService("Players")
+                local plr = p.LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.players")..#p:GetPlayers()
+                end
+            >>>
+        }
+        TextLabel "premium" Position=0.348,0,0.155,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Premium: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/premium/localscipt.luau" Disabled
+        }
+        TextLabel "privateserver" Position=0.348,0,0.13,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Private Server: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/privateserver/localscript.luau" Disabled
+        }
+        TextLabel "ragdoll" Position=0.172,0,0.155,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Ragdoll: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/ragdoll/localscipt.luau" Disabled
+        }
+        TextLabel "region" Position=0.008,0,0.106,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Region: ?? 🏴‍☠️" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/region/localscript.luau" Disabled
+        }
+        TextLabel "roblox_language" Position=0.008,0,0.156,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Roblox language: ??-??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                script.Parent.Text = base.t.g("debug.robloxlanguage")..game:GetService("LocalizationService").RobloxLocaleId
+            >>>
+        }
+        TextLabel "screensize" Position=0.008,0,0.256,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Screen Size: ????x????" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.screensize").."("..workspace.CurrentCamera.ViewportSize.X.."|"..workspace.CurrentCamera.ViewportSize.Y..")"
+                end
+            >>>
+        }
+        TextLabel "selected_language" Position=0.171,0,0.381,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Russian: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.selectedlanguage")..base.t.SelectedLanguage
+                end
+            >>>
+        }
+        TextLabel "sit" Position=0.171,0,0.205,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Sit: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/sit/localscipt.luau" Disabled
+        }
+        TextLabel "sounds" Position=0.172,0,0.306,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Sounds: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.sounds")..#workspace.PhysicSounds:GetChildren()
+                end
+            >>>
+        }
+        TextLabel "system_language" Position=0.008,0,0.131,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="System language: ??-??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                script.Parent.Text = base.t.g("debug.syslanguage")..game:GetService("LocalizationService").SystemLocaleId
+            >>>
+        }
+        TextLabel "tick" Position=0.008,0,0.306,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Tick: ???????????" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.tick")..tick()
+                end
+            >>>
+        }
+        TextLabel "time" Position=0.008,0,0.231,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Time: ??:??:??:??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/time/localscript.luau" Disabled
+        }
+        TextLabel "userid" Position=0.007,0,0.381,0 Size=0.158,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="UserID: ???????? " TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local base = require(chr:WaitForChild("PlayerBase"))
+                script.Parent.Text = base.t.g("debug.userid")..plr.UserId
+            >>>
+        }
+        TextLabel "velocity" Position=0.171,0,0.13,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Velocity: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local root = chr:WaitForChild("HumanoidRootPart")
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.velocity")..tostring(math.round(root.AssemblyLinearVelocity.Magnitude*100)/100)
+                end
+            >>>
+        }
+        TextLabel "version" Position=0.008,0,0.055,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Place Version: Broken HTTP" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                script.Parent.Text = game:GetService("ReplicatedStorage").GetServerInfoData:InvokeServer("PlaceVersion").." ("..game.PlaceVersion..")"
+            >>>
+        }
+        TextLabel "visibleui" Position=0.171,0,0.256,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Visible UI: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscipt" @src="Scripts/StarterGui/DebugInfo/visibleui/localscipt.luau" Disabled
+        }
+        TextLabel "walkspeed" Position=0.172,0,0.08,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="Walk Speed: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" Disabled @code=<<<
+                local plr = game:GetService("Players").LocalPlayer
+                local chr = plr.Character or plr.CharacterAdded:Wait()
+                local hum = chr:WaitForChild("Humanoid")
+                local base = require(chr:WaitForChild("PlayerBase"))
+
+                while wait() do
+                	script.Parent.Text = base.t.g("debug.walkspeed")..math.round(hum.WalkSpeed*100)/100
+                end
+            >>>
+        }
+        TextLabel "wday" Position=0.348,0,0.181,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="WDay: ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/wday/localscript.luau" Disabled
+        }
+        TextLabel "yearday" Position=0.348,0,0.206,0 Size=0.156,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="YDay: ?/365" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            LocalScript "localscript" @src="Scripts/StarterGui/DebugInfo/yearday/localscript.luau" Disabled
+        }
+    }
+    ScreenGui "Dot" AutoLocalize=false Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ImageLabel "Center" Position=0.5,0,0.5,0 Size=0,75,0,75 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15211580521" ImageContent="rbxassetid://15211580521" ImageTransparency=0.53 ZIndex=-5
+        ImageLabel "CircleProgressBar" Position=0.5,0,0.5,0 Size=0,75,0,75 AnchorPoint=0.5,0.5 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ImageTransparency=0.38 Visible=false ZIndex=-5 {
+            ImageLabel "LeftBottom" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16405329471" ImageContent="rbxassetid://16405329471" ImageTransparency=0.38 Rotation=180 ZIndex=-5 {
+                UIGradient "UIGradient" Rotation=-180 Transparency=0:1,0.5:1,0.501:0,1:0
+            }
+            ImageLabel "LeftTop" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16405329471" ImageContent="rbxassetid://16405329471" ImageTransparency=0.38 Rotation=270 ZIndex=-5 {
+                UIGradient "UIGradient" Rotation=-180 Transparency=0:1,0.5:1,0.501:0,1:0
+            }
+            ImageLabel "RightBottom" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16405329471" ImageContent="rbxassetid://16405329471" ImageTransparency=0.38 Rotation=90 ZIndex=-5 {
+                UIGradient "UIGradient" Rotation=-180 Transparency=0:1,0.5:1,0.501:0,1:0
+            }
+            ImageLabel "RightTop" Position=0.25,0,0.25,0 Size=0.5,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16405329471" ImageContent="rbxassetid://16405329471" ImageTransparency=0.38 ZIndex=-5 {
+                UIGradient "UIGradient" Rotation=-180 Transparency=0:1,0.5:1,0.501:0,1:0
+            }
+        }
+        LocalScript "DotBase" @src="Scripts/StarterGui/Dot/DotBase.luau"
+    }
+    ScreenGui "FreecamRemake" AutoLocalize=false ScreenInsets=DeviceSafeInsets {
+        LocalScript "FreecamScript" @src="Scripts/StarterGui/FreecamRemake/FreecamScript.luau"
+    }
+    ScreenGui "Health" AutoLocalize=false DisplayOrder=9 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        LocalScript "HealthBase" @src="Scripts/StarterGui/Health/HealthBase.luau"
+        Frame "background" Position=-0.02,0,0.473,0 Size=0.108,0,0.262,0 BackgroundColor3=#191B1D BackgroundTransparency=0.1 BorderColor3=#000000 BorderSizePixel=0 ZIndex=-1 {
+            Frame "Head" Position=0.495,0,0.033,0 Size=0.171,0,0.123,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                ImageLabel "ImageLabel" Size=1,0,1,0 BackgroundColor3=#191B1D BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480571601" ImageColor3=#191B1D ImageContent="rbxassetid://15480571601"
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "Health" Position=0.233,0,0.764,0 Size=0.728,0,0.077,0 BackgroundColor3=#0C0C0C BorderColor3=#000000 BorderSizePixel=0 {
+                Frame "Health" Size=1,0,1,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                    UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+                }
+                TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="100" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0 TextWrapped
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "LeftArm" Position=0.33,0,0.178,0 Size=0.095,0,0.262,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "LeftLeg" Position=0.452,0,0.46,0 Size=0.095,0,0.262,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "RightArm" Position=0.748,0,0.178,0 Size=0.095,0,0.262,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "RightLeg" Position=0.619,0,0.46,0 Size=0.095,0,0.262,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "Stamina" Position=0.233,0,0.884,0 Size=0.728,0,0.077,0 BackgroundColor3=#0C0C0C BorderColor3=#000000 BorderSizePixel=0 {
+                Frame "Stamina" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 {
+                    UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+                }
+                TextLabel "TextLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="100" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FFFFFF TextStrokeTransparency=0 TextWrapped
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            Frame "Torso" Position=0.44,0,0.178,0 Size=0.284,0,0.262,0 BackgroundColor3=#37FF00 BorderColor3=#000000 BorderSizePixel=0 {
+                UICorner "UICorner" BottomLeftRadius=0,7 BottomRightRadius=0,7 CornerRadius=0,7 TopLeftRadius=0,7 TopRightRadius=0,7
+            }
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+        }
+    }
+    ScreenGui "Help" AutoLocalize=false DisplayOrder=11 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        TextLabel "Tip" Position=0.121,0,0.14,0 Size=0.219,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Клавиши управления (Дефолт)" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.title"
+        }
+        TextLabel "Tip" Position=0.12,0,0.383,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="G — Выкинуть Предмет" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.drop"
+        }
+        TextLabel "Tip" Position=0.121,0,0.349,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="/ — Чат" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.chat"
+        }
+        TextLabel "Tip" Position=0.121,0,0.315,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="X — Рагдол" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.ragdoll"
+        }
+        TextLabel "Tip" Position=0.119,0,0.452,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="N — Умереть" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.die"
+        }
+        TextLabel "Tip" Position=0.119,0,0.623,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F6 — Откладка" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.debug"
+        }
+        TextLabel "Tip" Position=0.119,0,0.657,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F8 — Открыть  логи" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.logs"
+        }
+        TextLabel "Tip" Position=0.119,0,0.555,0 Size=0.208,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F4 — Скрыть эту Подсказку" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.help"
+        }
+        TextLabel "Tip" Position=0.119,0,0.418,0 Size=0.184,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F — Приблизить" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.zoom"
+        }
+        TextLabel "Tip" Position=0.119,0,0.52,0 Size=0.239,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F2 — Скрыть интерфейс" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.hideui"
+        }
+        TextLabel "Tip" Position=0.121,0,0.175,0 Size=0.139,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="W, S, A, D — Ходьба" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.walking"
+        }
+        TextLabel "Tip" Position=0.119,0,0.589,0 Size=0.274,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F5 — Открыть админ панель" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.openadminpanel"
+        }
+        TextLabel "Tip" Position=0.121,0,0.21,0 Size=0.139,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="LeftShift — Бег" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.run"
+        }
+        TextLabel "Tip" Position=0.121,0,0.281,0 Size=0.139,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="С — Ползти" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.crawl"
+        }
+        TextLabel "Tip" Position=0.121,0,0.245,0 Size=0.283,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="LeftControl — Медленная ходьба" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.slow"
+        }
+        TextLabel "Tip" Position=0.119,0,0.486,0 Size=0.2,0,0.035,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="F1 — Открыть  настройки" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="help.settings"
+        }
+    }
+    ScreenGui "Hotbar" AutoLocalize=false Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ModuleScript "HotbarBase" @src="Scripts/StarterGui/Hotbar/HotbarBase.luau"
+        Frame "HotbarBaseFrame" Position=0.215,0,0.872,0 Size=0.53,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+            UIListLayout "UIListLayout" FillDirection=Horizontal Padding=0.002,0 SortOrder=LayoutOrder
+        }
+        LocalScript "HotbarBaseScript" @src="Scripts/StarterGui/Hotbar/HotbarBaseScript.luau"
+        TextLabel "ItemDescription" Position=0.486,0,0.795,0 Size=0.542,0,0.038,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+            UIStroke "UIStroke" Thickness=5
+        }
+        Folder "Source" {
+            Frame "Slot" Size=0.1,0,1,0 BackgroundColor3=#191B1D BackgroundTransparency=0.1 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                Frame "Base" Position=0.05,0,0.05,0 Size=0.9,0,0.9,0 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderColor3=#000000 BorderSizePixel=0 {
+                    ImageButton "Button" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16392607717" ImageContent="rbxassetid://16392607717" Visible=false ZIndex=0 {
+                        UIStroke "Stroke" Color=#BCBCBC Enabled=false Thickness=7.5
+                        UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                    }
+                    TextLabel "I" Position=0.5,0,0.8,0 Size=0.5,0,0.5,0 AnchorPoint=0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.28 TextWrapped {
+                        UIStroke "UIStroke" Thickness=5
+                    }
+                    TextLabel "ToolName" Position=0.5,0,-0.6,0 Size=1,0,0.45,0 AnchorPoint=0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Tool" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.28 TextWrapped {
+                        UIStroke "UIStroke" Thickness=5
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+            }
+        }
+    }
+    ScreenGui "LeftButtons" AutoLocalize=false DisplayOrder=9 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ImageButton "AttackMode" Position=0,0,0.384,0 Size=0.045,0,0.08,0 BackgroundColor3=#191B1D BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480546938" ImageContent="rbxassetid://15480546938" {
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.1 Transparency=0.84
+        }
+        ImageButton "Emotions" Position=0,0,0.296,0 Size=0.045,0,0.08,0 BackgroundColor3=#191B1D BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480548190" ImageContent="rbxassetid://15480548190" {
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.1 Transparency=0.84
+        }
+        LocalScript "LeftButtonsBase" @src="Scripts/StarterGui/LeftButtons/LeftButtonsBase.luau"
+        ImageButton "Other" Position=0,0,0.12,0 Size=0.045,0,0.08,0 BackgroundColor3=#191B1D BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480758842" ImageContent="rbxassetid://15480758842" {
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.1 Transparency=0.84
+        }
+        ImageButton "Scream" Position=0,0,0.209,0 Size=0.045,0,0.08,0 BackgroundColor3=#191B1D BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480548969" ImageContent="rbxassetid://15480548969" {
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=3.1 Transparency=0.84
+        }
+    }
+    LocalScript "LoadGuis" @src="Scripts/StarterGui/LoadGuis.luau"
+    ScreenGui "LoadingScreen" AutoLocalize=false DisplayOrder=1000000001 Enabled=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        LocalScript "LoadingScreenBase" @src="Scripts/StarterGui/LoadingScreen/LoadingScreenBase.luau"
+        Sound "Sound" AudioContent="rbxassetid://9116920889" RollOffMinDistance=10000 RollOffMode=InverseTapered SoundId="rbxassetid://9116920889"
+        Sound "SoundBeep" AudioContent="rbxassetid://9113940970" RollOffMinDistance=10000 RollOffMode=InverseTapered SoundId="rbxassetid://9113940970"
+        Sound "SoundEnd" AudioContent="rbxassetid://6228337171" RollOffMinDistance=10000 RollOffMode=InverseTapered SoundId="rbxassetid://6228337171"
+        LocalScript "TextTransparencyRandom" @src="Scripts/StarterGui/LoadingScreen/TextTransparencyRandom.luau"
+        ImageLabel "WRFIcon" Position=0.95,0,1.1,0 Size=0.246,0,0.438,0 AnchorPoint=1,1 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15428585118" ImageColor3=#678C63 ImageContent="rbxassetid://15428585118"
+        ImageLabel "background" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://14991658558" ImageContent="rbxassetid://14991658558" ImageTransparency=0.56 ScaleType=Tile TileSize=0.005,0,0.009,0 ZIndex=10
+        ImageLabel "background2" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15427794699" ImageColor3=#5F5F5F ImageContent="rbxassetid://15427794699" TileSize=0,10,0,10 ZIndex=-10
+        TextLabel "t1" Position=0.015,0,0.071,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Извvрs\\ване на изкусtвена симулак'ия на WRF [LIC: 2084-2114] VER:17.73.81b-ALPHA]" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t10" Position=0.707,0,0.924,0 Size=0.222,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Woowz Research Facility" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t2" Position=0.015,0,0.103,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Разпознаване на поtреjиtелиtе" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t3" Position=0.015,0,0.134,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="!!! Всис'ко, коеtо сtе виdели, е сtроgо секреtно !!!" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t4" Position=0.015,0,0.166,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Зареs/dане на поtреjиtелски dанни" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t5" Position=0.015,0,0.198,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Dанниtе на поtреjиtеля са кас'ени!" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t6" Position=0.014,0,0.23,0 Size=0.985,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="----------------------------------------------------------------------------------------------------------------------------------------------" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t7" Position=0.015,0,0.261,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="Симулак'ияtа е кас'ена!" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t8" Position=0.014,0,0.293,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="..." TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+        TextLabel "t9" Position=0.015,0,0.943,0 Size=0.728,0,0.032,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="GothamSSm|Regular|Italic" Text="PRESS [SPACE] TO SKIP LOADING" TextColor3=#DDFFD0 TextScaled TextSize=34 TextTransparency=0.27 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="otherui.skiploading"
+            UIStroke "UIStroke" Color=#91FF00 Thickness=2.9 Transparency=0.92
+        }
+    }
+    ScreenGui "MusicMaker" AutoLocalize=false DisplayOrder=-10 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        LocalScript "EnableFromTool" @src="Scripts/StarterGui/MusicMaker/EnableFromTool.luau" {
+            PackageLink "PackageLink"
+        }
+        LocalScript "MusicMakerGuiBase" @src="Scripts/StarterGui/MusicMaker/MusicMakerGuiBase.luau"
+        StringValue "ToolName" Value="MusicMaker"
+        ImageLabel "background" Position=0.176,0,0.156,0 Size=0.658,0,0.669,0 BackgroundColor3=#AC4343 BorderColor3=#000000 BorderSizePixel=0 ClipsDescendants ZIndex=0 {
+            TextBox "MusicID" Position=0.041,0,0.505,0 Size=0.398,0,0.089,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="ID музыки" Text="" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                StringValue "TID" Value="musicmaker.musicid"
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=1.5 Transparency=0.8
+            }
+            TextBox "MusicSpeed" Position=0.528,0,0.505,0 Size=0.077,0,0.089,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="100" Text="100" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.8
+            }
+            TextBox "MusicVolume" Position=0.446,0,0.505,0 Size=0.077,0,0.089,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="100" Text="100" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.8
+            }
+            Frame "Piano" Position=0.119,0,0.621,0 Size=0.671,0,0.378,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                UIListLayout "UIListLayout" FillDirection=Horizontal
+            }
+            ScrollingFrame "ScrollingFrame" Position=0.066,0,0.118,0 Size=0.867,0,0.36,0 Active AutomaticCanvasSize=Y BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ScrollBarImageColor3=#000000 {
+                Frame "ThatEmpty" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                    TextLabel "TextLabel" Position=0.5,0,0.5,0 Size=0.5,0,0.5,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Создайте новую строку (+)" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                        StringValue "TID" Value="musicmaker.empty"
+                        UIStroke "UIStroke" Thickness=3.9 Transparency=0.68
+                    }
+                }
+                UIListLayout "UIListLayout" Padding=0,8 SortOrder=LayoutOrder
+            }
+            TextBox "SelectKey" Position=0.041,0,0.604,0 Size=0.055,0,0.089,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="?" Text="" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.8
+            }
+            Folder "Source" {
+                Frame "LineN" Size=0.98,0,0,125 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                    TextLabel "ID" Size=0.05,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="TitilliumWeb|Bold|Normal" Text="N" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                        UIStroke "UIStroke" Thickness=8.8 Transparency=0.68
+                    }
+                    TextBox "InputText" Position=0.075,0,0,0 Size=0.825,0,1,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="Введите музыкальный код..." Text="" TextColor3=#000000 TextSize=32 TextWrapped TextXAlignment=Left {
+                        StringValue "TID" Value="musicmaker.textbox"
+                        UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                    }
+                    TextButton "RemoveButton" Position=0.055,0,0,0 Size=0.02,0,1,0 BackgroundColor3=#CB0000 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="" TextColor3=#000000 TextSize=14 {
+                        UICorner "UICorner" BottomLeftRadius=1,0 BottomRightRadius=1,0 CornerRadius=1,0 TopLeftRadius=1,0 TopRightRadius=1,0
+                    }
+                    Frame "position" Position=0.925,0,0,0 Size=0.075,0,1,0 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 {
+                        UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                        TextLabel "symbol" Size=1,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="?" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                            UIStroke "UIStroke" Thickness=6.8 Transparency=0.68
+                        }
+                        TextLabel "symbol_position" Position=0,0,0.5,0 Size=1,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="0/0" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                            UIStroke "UIStroke" Thickness=6.8 Transparency=0.68
+                        }
+                    }
+                }
+                ImageButton "PianoN" Size=0.1,0,1,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://16560863343" ImageContent="rbxassetid://16560863343" ImageTransparency=1 Visible=false {
+                    UICorner "UICorner" BottomLeftRadius=0,10 BottomRightRadius=0,10 CornerRadius=0,10 TopLeftRadius=0,10 TopRightRadius=0,10
+                    UIGradient "UIGradient" Color=0:#D3D3D3,0.419:#FEFEFE,1:#D8D8D8 Rotation=-45
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=5.3 Transparency=0.65
+                }
+            }
+            TextBox "Speed" Position=0.93,0,0.369,0 Size=0.063,0,0.12,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0" Text="0" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.8
+            }
+            TextBox "TimeEnd" Position=0.813,0,0.748,0 Size=0.088,0,0.089,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="Zekton|Bold|Normal" PlaceholderColor3=#B2B2B2 PlaceholderText="0" Text="0" TextColor3=#000000 TextScaled TextSize=52 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.8
+            }
+            UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+            UIGradient "UIGradient" Color=0:#C5C5C5,0.254:#FDFDFD,0.704:#FCFCFC,1:#C2C2C2 Rotation=90
+            UIStroke "UIStroke" Thickness=9.6 Transparency=0.47
+            TextLabel "count" Position=0.938,0,0.129,0 Size=0.055,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=8.8 Transparency=0.68
+            }
+            TextButton "create" Position=0.938,0,0.246,0 Size=0.055,0,0.101,0 BackgroundColor3=#44FF00 BorderColor3=#000000 BorderSizePixel=0 FontFace="Ubuntu|Bold|Normal" Text="+" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=1,0 BottomRightRadius=1,0 CornerRadius=1,0 TopLeftRadius=1,0 TopRightRadius=1,0
+                UIStroke "UIStroke" Thickness=7.2 Transparency=0.36
+                UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=8.8 Transparency=0.68
+            }
+            TextButton "play" Position=0.813,0,0.856,0 Size=0.165,0,0.101,0 BackgroundColor3=#44FF00 BorderColor3=#000000 BorderSizePixel=0 FontFace="Ubuntu|Bold|Normal" Text="Запустить" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.start"
+                UICorner "UICorner" BottomLeftRadius=1,0 BottomRightRadius=1,0 CornerRadius=1,0 TopLeftRadius=1,0 TopRightRadius=1,0
+                UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=8.8 Transparency=0.68
+                UIStroke "UIStroke" Thickness=3.1 Transparency=0.36
+            }
+            TextLabel "timer" Position=0.9,0,0.742,0 Size=0.085,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="0" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=8.8 Transparency=0.68
+            }
+            TextLabel "title" Position=0.284,0,0.006,0 Size=0.43,0,0.104,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Музыкальная станция" TextColor3=#FFFF00 TextScaled TextSize=14 TextStrokeTransparency=0.84 TextWrapped ZIndex=2 {
+                StringValue "TID" Value="musicmaker.title"
+                UIStroke "UIStroke" Thickness=2.8 Transparency=0.58
+            }
+            TextLabel "title0" Position=0.284,0,0.021,0 Size=0.43,0,0.104,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Музыкальная станция" TextColor3=#FF0004 TextScaled TextSize=14 TextStrokeTransparency=0.84 TextTransparency=0.4 TextWrapped {
+                StringValue "TID" Value="musicmaker.title"
+                UIStroke "UIStroke" Thickness=2.8 Transparency=0.58
+            }
+            TextLabel "title1" Position=0.284,0,-0.01,0 Size=0.43,0,0.104,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Музыкальная станция" TextColor3=#00FF00 TextScaled TextSize=14 TextStrokeTransparency=0.84 TextTransparency=0.4 TextWrapped ZIndex=0 {
+                StringValue "TID" Value="musicmaker.title"
+                UIStroke "UIStroke" Thickness=2.8 Transparency=0.58
+            }
+        }
+        ImageLabel "help" Position=0.176,0,0.156,0 Size=0.658,0,0.669,0 AutoLocalize=false BackgroundColor3=#000000 BackgroundTransparency=0.55 BorderColor3=#000000 BorderSizePixel=0 ClipsDescendants Visible=false ZIndex=0 {
+            UICorner "UICorner" BottomLeftRadius=0,25 BottomRightRadius=0,25 CornerRadius=0,25 TopLeftRadius=0,25 TopRightRadius=0,25
+            TextLabel "arrow" Position=0.15,0,0.385,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="\\/" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.53,0,0.597,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="/\\" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.095,0,0.604,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="<-" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.445,0,0.396,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="\\/" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.864,0,0.385,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="->" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.82,0,0.648,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="\\/" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.864,0,0.251,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="->" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "arrow" Position=0.864,0,0.137,0 Size=0.074,0,0.093,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="->" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help1" Position=0.604,0,0.136,0 Size=0.261,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Кол-во строк" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.lines"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help2" Position=0.604,0,0.246,0 Size=0.261,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Создать строку" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.new"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help3" Position=0.095,0,0.259,0 Size=0.195,0,0.143,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="ID музыки" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.music"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help3" Position=0.604,0,0.376,0 Size=0.261,0,0.101,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Скорость строк" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.speed"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help4" Position=0.327,0,0.289,0 Size=0.313,0,0.134,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Громкость музыки" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.volume"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help5" Position=0.408,0,0.691,0 Size=0.315,0,0.164,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text=" Скорость музыки" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.mspeed"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help6" Position=0.656,0,0.483,0 Size=0.315,0,0.164,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Когда остановить музыку" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.timer"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+            TextLabel "help7" Position=0.164,0,0.612,0 Size=0.237,0,0.164,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Выбранная нота" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+                StringValue "TID" Value="musicmaker.help.note"
+                UIStroke "UIStroke" Thickness=5.7 Transparency=0.53
+            }
+        }
+        TextButton "helpbutton" Position=0.186,0,0.166,0 Size=0.032,0,0.06,0 BackgroundColor3=#00B3FF BorderColor3=#000000 BorderSizePixel=0 FontFace="Ubuntu|Bold|Normal" Text="i" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped {
+            UICorner "UICorner" BottomLeftRadius=1,0 BottomRightRadius=1,0 CornerRadius=1,0 TopLeftRadius=1,0 TopRightRadius=1,0
+            UIStroke "UIStroke" Thickness=7.2 Transparency=0.36
+            UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=8.8 Transparency=0.68
+        }
+    }
+    ScreenGui "OtherPanel" AutoLocalize=false DisplayOrder=9 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        Folder "Objs" {
+            Frame "ObjGroup" Size=1,0,0.1,0 AutomaticSize=XY BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                Frame "Line" Position=0.05,0,0,150 Size=0.9,0,0,2 AutomaticSize=XY BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0
+                Frame "List" Position=0.05,0,0,152 Size=0.9,0,0,10 AutomaticSize=XY BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                    UIGridLayout "UIGridLayout" CellSize=0.24,0,0,50 SortOrder=LayoutOrder
+                }
+                TextLabel "Title" Position=0.05,0,0,0 Size=0.9,0,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" TextColor3=#FFFFFF TextSize=61 TextWrapped TextXAlignment=Left
+                TextLabel "TitleSmall" Position=0.05,0,0,100 Size=0.9,0,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" TextColor3=#FFFFFF TextSize=38 TextWrapped TextXAlignment=Left
+            }
+            TextLabel "People" Position=0.05,0,0,100 Size=0.9,0,0,50 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" TextColor3=#C6C6C6 TextScaled TextSize=38 TextWrapped Visible=false
+        }
+        LocalScript "OtherBase" @src="Scripts/StarterGui/OtherPanel/OtherBase.luau"
+        Frame "background" Position=0.4,0,0.25,0 Size=0.2,0,0.5,0 BackgroundColor3=#191B1D BackgroundTransparency=0.1 BorderColor3=#000000 BorderSizePixel=0 ZIndex=6 {
+            UICorner "UICorner" BottomLeftRadius=0,20 BottomRightRadius=0,20 CornerRadius=0,20 TopLeftRadius=0,20 TopRightRadius=0,20
+            Frame "list" Position=0.05,0,0.05,0 Size=0.9,0,0.9,0 BackgroundColor3=#191B1D BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ZIndex=-1 {
+                TextButton "1AdminPanel" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Админ панель" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.admin"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                TextButton "2Settings" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Настройки" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.settings"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                TextButton "3Credits" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Авторы" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.credits"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                TextButton "4Logs" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Логи" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.logs"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                TextButton "5Debug" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Откладка" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.debug"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                TextButton "6Back" Size=1,0,0.13,0 BackgroundColor3=#2D2D2D BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Bold|Normal" Text="Вернуться" TextColor3=#FFFFFF TextSize=44 TextWrapped {
+                    StringValue "TID" Value="otherui.back"
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                UIListLayout "UIListLayout" Padding=0,20
+            }
+        }
+        Frame "backgroundmain" Size=1,0,1,0 AutoLocalize=false BackgroundColor3=#000000 BackgroundTransparency=0.55 BorderColor3=#000000 BorderSizePixel=0 ZIndex=5
+        Frame "credits" Position=0.1,0,0.1,0 Size=0.8,0,0.8,0 BackgroundColor3=#191B1D BackgroundTransparency=0.1 BorderColor3=#000000 BorderSizePixel=0 Visible=false ZIndex=6 {
+            ImageButton "Close" Position=0,80,0,10 Size=0,70,0,70 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480783300" ImageContent="rbxassetid://15480783300"
+            TextLabel "Title" Position=0.25,0,0.02,0 Size=0.5,0,0.06,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Авторы" TextColor3=#FFFFFF TextScaled TextSize=34 TextWrapped {
+                StringValue "TID" Value="credit.title"
+            }
+            UICorner "UICorner" BottomLeftRadius=0,40 BottomRightRadius=0,40 CornerRadius=0,40 TopLeftRadius=0,40 TopRightRadius=0,40
+            Frame "background" Position=0.05,0,0.1,0 Size=0.9,0,0.8,0 BackgroundColor3=#000000 BackgroundTransparency=0.8 BorderColor3=#000000 BorderSizePixel=0 ClipsDescendants {
+                ScrollingFrame "ScrollingFrame" Size=0.99,0,1,0 Active AutomaticCanvasSize=XY BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ScrollBarImageColor3=#000000 {
+                    UIListLayout "UIListLayout" Padding=0,30
+                }
+                UICorner "UICorner" BottomLeftRadius=0,40 BottomRightRadius=0,40 CornerRadius=0,40 TopLeftRadius=0,40 TopRightRadius=0,40
+                UIStroke "UIStroke" Thickness=5.1 Transparency=0.62
+            }
+        }
+    }
+    ScreenGui "Settings" AutoLocalize=false DisplayOrder=10 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        BoolValue "ChangedValue"
+        LocalScript "SettingsBase" @src="Scripts/StarterGui/Settings/SettingsBase.luau"
+        Folder "Values" {
+            Frame "checkbox" Size=1,0,0,50 BackgroundColor3=#939393 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                BoolValue "ChangedValue"
+                BoolValue "DefaultValue"
+                BoolValue "FirstValue"
+                LocalScript "LocalScript" @src="Scripts/StarterGui/Settings/Values/checkbox/LocalScript.luau" Disabled
+                TextButton "TextButton" Position=0,22,0,5 Size=0,39,0,39 BackgroundColor3=#E5E5E5 BorderColor3=#000000 BorderSizePixel=0 FontFace="rbxassetid://12187371840|Bold|Normal" Text="" TextColor3=#000000 TextSize=34 TextWrapped TextYAlignment=Bottom {
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#B5B5B5,1:#FFFFFF Rotation=-90
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                }
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                BoolValue "Value"
+                StringValue "id"
+                TextButton "reset" Position=0.917,0,0.215,0 Size=0,28,0,28 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="R" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                    UICorner "UICorner" BottomLeftRadius=0,10 BottomRightRadius=0,10 CornerRadius=0,10 TopLeftRadius=0,10 TopRightRadius=0,10
+                    UIGradient "UIGradient" Color=0:#B94400,1:#FFAA00 Rotation=-90
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=1.9 Transparency=0.58
+                }
+                TextLabel "value_name" Position=0.143,0,0,0 Size=0.762,0,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Название настройки" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left
+                StringValue "valueid"
+            }
+            Frame "keycode" Size=1,0,0,50 BackgroundColor3=#939393 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                BoolValue "ChangedValue"
+                StringValue "DefaultValue"
+                StringValue "FirstValue"
+                LocalScript "LocalScript" @src="Scripts/StarterGui/Settings/Values/keycode/LocalScript.luau" Disabled
+                TextButton "TextButton" Position=0,22,0,5 Size=0.2,0,0,39 BackgroundColor3=#161616 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="W" TextColor3=#FFFFFF TextScaled TextSize=34 TextWrapped {
+                    UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+                    UIGradient "UIGradient" Color=0:#5B5B5B,1:#FFFFFF
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=2.5 Transparency=0.71
+                }
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                StringValue "Value" Value="A"
+                StringValue "id"
+                TextButton "reset" Position=0.917,0,0.215,0 Size=0,28,0,28 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="R" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                    UICorner "UICorner" BottomLeftRadius=0,10 BottomRightRadius=0,10 CornerRadius=0,10 TopLeftRadius=0,10 TopRightRadius=0,10
+                    UIGradient "UIGradient" Color=0:#B94400,1:#FFAA00 Rotation=-90
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=1.9 Transparency=0.58
+                }
+                TextLabel "value_name" Position=0.252,0,0,0 Size=0.653,0,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Название настройки" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left
+                StringValue "valueid"
+            }
+            Frame "setting" Size=0.95,0,0,50 BackgroundColor3=#939393 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                UIListLayout "UIListLayout" Padding=0,3 SortOrder=LayoutOrder
+                StringValue "category"
+                StringValue "id"
+                Frame "setting_name" Size=1,0,0,50 BackgroundColor3=#ABABAB BorderColor3=#000000 BorderSizePixel=0 {
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                    TextButton "reset" Position=0.917,0,0.215,0 Size=0,28,0,28 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="R" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                        UICorner "UICorner" BottomLeftRadius=0,10 BottomRightRadius=0,10 CornerRadius=0,10 TopLeftRadius=0,10 TopRightRadius=0,10
+                        UIGradient "UIGradient" Color=0:#B94400,1:#FFAA00 Rotation=-90
+                        UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=1.9 Transparency=0.58
+                    }
+                    TextLabel "setting_name" Size=0.905,0,0,50 BackgroundColor3=#ABABAB BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Название настройки" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                }
+            }
+            Frame "slider" Size=1,0,0,100 BackgroundColor3=#939393 BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+                BoolValue "ChangedValue"
+                NumberValue "DefaultValue"
+                NumberValue "FirstValue"
+                TextLabel "Left" Position=0.02,0,0.521,0 Size=0,49,0,40 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="?" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                LocalScript "LocalScript" @src="Scripts/StarterGui/Settings/Values/slider/LocalScript.luau" Disabled
+                BindableEvent "Reset"
+                TextLabel "Right" Position=0.869,0,0.521,0 Size=0,54,0,40 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="?" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                NumberValue "Value"
+                NumberValue "ValueDel" Value=1
+                NumberValue "ValueLeft"
+                NumberValue "ValueRight"
+                Frame "background_slider" Position=0.109,0,0.7,0 Size=0.76,0,0,6 BackgroundColor3=#000000 BackgroundTransparency=0.75 BorderColor3=#000000 BorderSizePixel=0 ZIndex=2 {
+                    ImageButton "ImageButton" Position=0.5,0,0,0 Size=0,50,0,50 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15317497467" ImageContent="rbxassetid://15317497467" {
+                        TextLabel "TextLabel" Position=0.119,0,0.091,0 Size=0.763,0,0.763,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" SelectionOrder=-1 Text="?" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                    }
+                    UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                }
+                StringValue "id"
+                TextButton "reset" Position=0.917,0,0.215,0 Size=0,28,0,28 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="R" TextColor3=#000000 TextScaled TextSize=14 TextWrapped {
+                    UICorner "UICorner" BottomLeftRadius=0,10 BottomRightRadius=0,10 CornerRadius=0,10 TopLeftRadius=0,10 TopRightRadius=0,10
+                    UIGradient "UIGradient" Color=0:#B94400,1:#FFAA00 Rotation=-90
+                    UIStroke "UIStroke" ApplyStrokeMode=Border Thickness=1.9 Transparency=0.58
+                }
+                TextLabel "value_name" Position=0.039,0,0,0 Size=0.866,0,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Название настройки" TextColor3=#000000 TextScaled TextSize=14 TextWrapped TextXAlignment=Left
+                StringValue "valueid"
+            }
+        }
+        ImageLabel "background" Position=-0.007,0,0,0 Size=0.4,0,1,0 BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 Visible=false {
+            UIGradient "UIGradient" Color=0:#1A1A1A,1:#2F2F2F Rotation=-90
+            UIStroke "UIStroke" Thickness=3.6 Transparency=0.58
+            ImageLabel "background_background" Position=0.146,0,0.09,0 Size=0.83,0,0.82,0 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 ClipsDescendants ZIndex=0 {
+                ScrollingFrame "ScrollingFrame" Size=0.983,0,1,0 Active BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ScrollBarImageColor3=#000000 ScrollBarThickness=20 ScrollingDirection=Y {
+                    Folder "Settings" {
+                        UIListLayout "UIListLayout" Padding=0,10 SortOrder=LayoutOrder
+                    }
+                }
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                UIGradient "UIGradient" Color=0:#3D3D3D,1:#8F8F8F Rotation=90
+                UIStroke "UIStroke" Thickness=3.6 Transparency=0.58
+            }
+            TextLabel "category" Position=0.2,0,0.015,0 Size=0.75,0,0.06,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Настройки" TextColor3=#FFFFFF TextScaled TextSize=14 TextWrapped
+            ImageButton "category_button" Position=0.032,0,0.522,0 Size=0,62,0,62 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315847715" ImageContent="rbxassetid://15315847715" {
+                StringValue "Value" Value="optimization"
+            }
+            ImageButton "category_button" Position=0.037,0,0.464,0 Size=0,54,0,54 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315832291" ImageContent="rbxassetid://15315832291" {
+                StringValue "Value" Value="private"
+            }
+            ImageButton "category_button" Position=0.031,0,0.573,0 Size=0,63,0,63 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315828533" ImageContent="rbxassetid://15315828533" {
+                StringValue "Value" Value="keys"
+            }
+            ImageButton "category_button" Position=0.038,0,0.632,0 Size=0,53,0,53 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315826974" ImageContent="rbxassetid://15315826974" {
+                StringValue "Value" Value="debug"
+            }
+            ImageButton "category_button" Position=0.033,0,0.69,0 Size=0,63,0,63 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15316118779" ImageContent="rbxassetid://15316118779" {
+                StringValue "Value" Value="other"
+            }
+            ImageButton "category_button" Position=0.035,0,0.344,0 Size=0,57,0,57 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315836645" ImageContent="rbxassetid://15315836645" {
+                StringValue "Value" Value="gameplay"
+            }
+            ImageButton "category_button" Position=0.03,0,0.398,0 Size=0,64,0,64 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15315834463" ImageContent="rbxassetid://15315834463" {
+                StringValue "Value" Value="graphic"
+            }
+            ImageButton "closesettings" Position=0.03,0,0.052,0 Size=0,63,0,63 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15480783300" ImageContent="rbxassetid://15480783300"
+            TextButton "save" Position=0.146,0,0.929,0 Size=0.83,0,0.05,0 BackgroundColor3=#6A6A6A BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Нечего сохранять" TextColor3=#464646 TextScaled TextSize=14 TextWrapped {
+                UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                UIGradient "UIGradient" Color=0:#A6A6A6,1:#FFFFFF Rotation=-90
+            }
+        }
+    }
+    ScreenGui "SettingsLoading" AutoLocalize=false DisplayOrder=10 Enabled=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        TextLabel "TextLabel" Position=0.048,0,0.13,0 Size=0.232,0,0.06,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Jura|Bold|Normal" Text="Settings loading..." TextColor3=#FFFFFF TextSize=34 TextWrapped TextXAlignment=Left {
+            StringValue "TID" Value="otherui.settingsloading"
+            UIStroke "UIStroke" Thickness=1.7 Transparency=0.49
+        }
+    }
+    ScreenGui "SmallInfo" AutoLocalize=false DisplayOrder=1 ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        ImageLabel "admin" Position=0.965,0,0.889,0 Size=0.031,0,0.055,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" Visible=false {
+            LocalScript "LocalScript" @src="Scripts/StarterGui/SmallInfo/admin/LocalScript.luau"
+        }
+        TextLabel "fps" Position=0.944,0,0.95,0 Size=0.056,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="0 FPS" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Right {
+            LocalScript "fps" @src="Scripts/StarterGui/SmallInfo/fps/fps.luau"
+        }
+        TextLabel "region" Position=0.887,0,0.95,0 Size=0.056,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="🏴‍☠️ ??" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped TextXAlignment=Right {
+            LocalScript "region" @src="Scripts/StarterGui/SmallInfo/region/region.luau"
+        }
+        TextLabel "version" Position=0.893,0,0.975,0 Size=0.107,0,0.025,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="AccanthisADFStd|Regular|Normal" Text="CAN'T LOAD VERSION" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.27 TextWrapped {
+            LocalScript "version" @src="Scripts/StarterGui/SmallInfo/version/version.luau"
+        }
+    }
+    ScreenGui "Splash" AutoLocalize=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+        TextLabel "TextLabel" Position=0.5,0,0.661,0 Size=0.543,0,0.05,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" TextColor3=#FFFFFF TextScaled TextSize=14 TextTransparency=1 TextWrapped {
+            UIStroke "UIStroke" Thickness=5 Transparency=1
+        }
+    }
+    Folder "SurfaceGuis" {
+        SurfaceGui "DispenserChemicalLiquid" AutoLocalize=false ClipsDescendants Face=Right LightInfluence=1 MaxDistance=1000 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+            StringValue "AdorneePart" Value="Monitor"
+            Frame "Frame" Size=1,0,1,0 BackgroundColor3=#101010 BorderColor3=#000000 BorderSizePixel=0 ZIndex=-10
+            TextBox "Liquid" Position=0.5,0,0.35,0 Size=0.8,0,0.15,0 AnchorPoint=0.5,0.5 BackgroundColor3=#000000 BorderColor3=#000000 BorderSizePixel=0 FontFace="PressStart2P|Regular|Normal" PlaceholderColor3=#003A00 PlaceholderText="Введите название химиката" Text="" TextColor3=#00FF00 TextSize=21 TextWrapped {
+                BoolValue "NoFilter" Value
+                LocalScript "PublicText" @src="Scripts/StarterGui/SurfaceGuis/DispenserChemicalLiquid/Liquid/PublicText.luau" Disabled {
+                    PackageLink "PackageLink"
+                }
+            }
+            LocalScript "LocalScript" @src="Scripts/StarterGui/SurfaceGuis/DispenserChemicalLiquid/LocalScript.luau" Disabled {
+                BoolValue "EnableThis" Value
+            }
+            TextLabel "TextLabel" Position=0.5,0,0.13,0 Size=0.9,0,0.2,0 AnchorPoint=0.5,0.5 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="PressStart2P|Regular|Normal" Text="Установка выдачи химикатов" TextColor3=#00FF00 TextScaled TextSize=14 TextWrapped
+            TextLabel "TextLabel1" Position=0.5,0,0.7,0 Size=0.9,0,0.4,0 AnchorPoint=0.5,0.5 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="PressStart2P|Regular|Normal" Text="Использовать бережно, стерильно, следовать инструкциям" TextColor3=#00FF00 TextSize=28 TextWrapped
+            NumberValue "gID" Value=-1
+        }
+        SurfaceGui "MagneticBoard" AutoLocalize=false ClipsDescendants Face=Left LightInfluence=1 MaxDistance=1000 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+            StringValue "AdorneePart" Value="THEREGUI"
+            BoolValue "GuiLeft"
+            TextBox "Line1" Position=0.52,0,0.02,0 Size=0.5,0,0.2,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="PermanentMarker|Regular|Normal" MultiLine PlaceholderColor3=#B2B2B2 Text="Click to change" TextColor3=#000000 TextSize=77 TextStrokeTransparency=0.58 TextTransparency=0.35 TextWrapped TextXAlignment=Left TextYAlignment=Top {
+                LocalScript "PublicText" @src="Scripts/StarterGui/SurfaceGuis/MagneticBoard/Line1/PublicText.luau" Disabled {
+                    PackageLink "PackageLink"
+                }
+            }
+            TextBox "Line2" Position=0.51,0,0.2,0 Size=0.5,0,0.2,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="PermanentMarker|Regular|Normal" MultiLine PlaceholderColor3=#B2B2B2 Text="Click to change" TextColor3=#000000 TextSize=77 TextStrokeTransparency=0.58 TextTransparency=0.35 TextWrapped TextXAlignment=Left TextYAlignment=Top {
+                LocalScript "PublicText" @src="Scripts/StarterGui/SurfaceGuis/MagneticBoard/Line2/PublicText.luau" Disabled {
+                    PackageLink "PackageLink"
+                }
+            }
+            TextBox "Line3" Position=0.51,0,0.4,0 Size=0.5,0,0.55,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ClearTextOnFocus=false FontFace="PermanentMarker|Regular|Normal" MultiLine PlaceholderColor3=#B2B2B2 Text="Click to change" TextColor3=#000000 TextSize=77 TextStrokeTransparency=0.58 TextTransparency=0.35 TextWrapped TextXAlignment=Left TextYAlignment=Top {
+                LocalScript "PublicText" @src="Scripts/StarterGui/SurfaceGuis/MagneticBoard/Line3/PublicText.luau" Disabled {
+                    PackageLink "PackageLink"
+                }
+            }
+            LocalScript "LocalScript" @src="Scripts/StarterGui/SurfaceGuis/MagneticBoard/LocalScript.luau" Disabled {
+                BoolValue "EnableThis" Value
+            }
+            StringValue "TypeData"
+            NumberValue "gID" Value=-1
+            ImageLabel "image" Size=0.5,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15228678881" ImageColor3=#B9B9B9 ImageContent="rbxassetid://15228678881"
+        }
+        SurfaceGui "Mirror" AutoLocalize=false ClipsDescendants LightInfluence=1 MaxDistance=1000 PixelsPerStud=200 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+            StringValue "AdorneePart" Value="THEREGUI"
+            LocalScript "Mirror" @src="Scripts/StarterGui/SurfaceGuis/Mirror/Mirror.luau" Disabled {
+                BoolValue "EnableThis" Value
+            }
+            ImageLabel "Texture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15267081384" ImageContent="rbxassetid://15267081384" ZIndex=2
+            ViewportFrame "ViewportFrame" Size=1,0,1,0 Ambient=#4F6063 AutoLocalize=false BackgroundColor3=#FFFFFF BorderColor3=#000000 BorderSizePixel=0 LightColor=#FFFFFF LightDirection=-1,-90,-1
+            NumberValue "gID" Value=-1
+        }
+    }
+}

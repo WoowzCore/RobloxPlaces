@@ -1,0 +1,133 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled=false CameraMaxZoomDistance=20 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=3.21 CharacterJumpPower=0 CharacterMaxSlopeAngle=70 CharacterUseJumpPower CharacterWalkSpeed=0 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=KeyboardMouse DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption=false HealthDisplayDistance=0 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=0 UserEmotesEnabled=false {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        ModuleScript "GuiFunctions" @src="Scripts/StarterPlayer/StarterCharacterScripts/GuiFunctions.luau"
+        LocalScript "LoadPlayer" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadPlayer.luau"
+        Folder "LoadScripts" {
+            LocalScript "AttackMode" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/AttackMode.luau" Disabled {
+                BindableEvent "LoadTriggers"
+            }
+            LocalScript "CameraMovement" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/CameraMovement.luau" Disabled
+            LocalScript "Controlls" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/Controlls.luau" Disabled
+            LocalScript "Drink" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/Drink.luau" Disabled
+            LocalScript "ExtraAnimations" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/ExtraAnimations.luau" Disabled
+            LocalScript "Footsteps" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/Footsteps.luau" Disabled
+            LocalScript "GetPing" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/GetPing.luau" Disabled
+            LocalScript "Graphic" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/Graphic.luau" Disabled
+            LocalScript "HightlightMouse" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/HightlightMouse.luau" Disabled
+            LocalScript "PlayerAnimations" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/PlayerAnimations.luau" Disabled
+            LocalScript "PlayerData" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/PlayerData.luau" Disabled
+            LocalScript "PlayerNicknameData" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/PlayerNicknameData.luau" Disabled
+            LocalScript "PlayerPhysics" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/PlayerPhysics.luau" Disabled
+            LocalScript "SkyGraphic" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/SkyGraphic.luau" Disabled
+            LocalScript "TriggerZones" @src="Scripts/StarterPlayer/StarterCharacterScripts/LoadScripts/TriggerZones.luau" Disabled
+        }
+        ModuleScript "PlayerBase" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerBase.luau"
+        LocalScript "PlayerGuiElements" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerGuiElements.luau"
+        LocalScript "PlayerReplicatedStorage" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerReplicatedStorage.luau"
+        ModuleScript "PlayerScript" @src="Scripts/StarterPlayer/StarterCharacterScripts/PlayerScript.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        LocalScript "LoadSettings" @code=<<<
+            local plr = script.Parent.Parent
+            local setting = require(script.Parent:WaitForChild("Settings"))
+            local rs = game:GetService("ReplicatedStorage")
+            local savedsettings = rs.DataStorage.GetSettings:InvokeServer(setting)
+
+            setting.Update(savedsettings)
+            setting.Loaded = true
+        >>>
+        ModuleScript "PlayerBaseDontDestroy" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerBaseDontDestroy.luau"
+        ModuleScript "PlayerModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule.luau" {
+            ModuleScript "CameraModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule.luau" {
+                ModuleScript "BaseCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/BaseCamera.luau"
+                ModuleScript "BaseOcclusion" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/BaseOcclusion.luau"
+                ModuleScript "CameraInput" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraInput.luau"
+                ModuleScript "CameraToggleStateController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraToggleStateController.luau"
+                ModuleScript "CameraUI" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraUI.luau"
+                ModuleScript "CameraUtils" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/CameraUtils.luau"
+                ModuleScript "ClassicCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ClassicCamera.luau"
+                ModuleScript "Invisicam" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/Invisicam.luau"
+                ModuleScript "LegacyCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/LegacyCamera.luau"
+                ModuleScript "MouseLockController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/MouseLockController.luau" {
+                    StringValue "BoundKeys" Value="LeftShift,RightShift"
+                }
+                ModuleScript "OrbitalCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/OrbitalCamera.luau"
+                ModuleScript "Poppercam" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/Poppercam.luau"
+                ModuleScript "TransparencyController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/TransparencyController.luau"
+                ModuleScript "VRBaseCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRBaseCamera.luau"
+                ModuleScript "VRCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRCamera.luau"
+                ModuleScript "VRVehicleCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VRVehicleCamera.luau"
+                ModuleScript "VehicleCamera" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera.luau" {
+                    ModuleScript "VehicleCameraConfig" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera/VehicleCameraConfig.luau"
+                    ModuleScript "VehicleCameraCore" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/VehicleCamera/VehicleCameraCore.luau"
+                }
+                ModuleScript "ZoomController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ZoomController.luau" {
+                    ModuleScript "Popper" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/CameraModule/ZoomController/Popper.luau"
+                }
+            }
+            ModuleScript "ControlModule" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule.luau" {
+                ModuleScript "BaseCharacterController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/BaseCharacterController.luau"
+                ModuleScript "ClickToMoveController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/ClickToMoveController.luau"
+                ModuleScript "ClickToMoveDisplay" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/ClickToMoveDisplay.luau"
+                ModuleScript "DynamicThumbstick" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/DynamicThumbstick.luau"
+                ModuleScript "Gamepad" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/Gamepad.luau"
+                ModuleScript "Keyboard" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/Keyboard.luau"
+                ModuleScript "PathDisplay" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/PathDisplay.luau"
+                ModuleScript "TouchJump" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/TouchJump.luau"
+                ModuleScript "TouchThumbstick" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/TouchThumbstick.luau"
+                ModuleScript "VRNavigation" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/VRNavigation.luau"
+                ModuleScript "VehicleController" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerModule/ControlModule/VehicleController.luau"
+            }
+        }
+        Folder "SCRIPTS" {
+            Sound "Breathing" AudioContent="rbxassetid://261839712" Looped PlaybackSpeed=0.95 RollOffMinDistance=10000 SoundId="rbxassetid://261839712" Volume=0
+            PointLight "DarknessLight" Brightness=0.025 Range=15
+            Model "Nicname_Data_Guis" LevelOfDetail=Disabled {
+                StringValue "Admin" Value="nope"
+                BillboardGui "Advanced" Size=5,0,1.5,0 Active AlwaysOnTop ClipsDescendants Enabled=false ExtentsOffsetWorldSpace=0,-16,0 MaxDistance=20 ZIndexBehavior=Sibling {
+                    Frame "Background" Size=1,0,1,0 BackgroundColor3=#000000 BorderColor3=#000000 BorderSizePixel=0 {
+                        UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                        UIGradient "UIGradient" Color=0:#000000,1:#000000 Rotation=-90 Transparency=0:0.381,0.65:0.637,1:0.381
+                    }
+                    TextLabel "FPS" Position=0,0,0.4,0 Size=0.225,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text=" ?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
+                    Frame "Frame" Position=0,0,0.4,0 Size=1,0,0.02,0 BackgroundColor3=#000000 BackgroundTransparency=0.45 BorderColor3=#000000 BorderSizePixel=0
+                    TextLabel "Graphics" Position=0.5,0,0.4,0 Size=0.5,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped
+                    TextLabel "Id" Position=0.5,0,0.7,0 Size=0.5,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped
+                    TextLabel "NameText" Position=0,0,0.7,0 Size=0.45,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped
+                    TextLabel "PING" Position=0.25,0,0.4,0 Size=0.225,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="?" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
+                    Frame "Top" Size=1,0,0.4,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                        TextLabel "Flag" Size=0.12,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="🏁" TextColor3=#FFFFFF TextScaled TextSize=72 TextStrokeTransparency=0 TextWrapped
+                        ImageLabel "Icon1" Position=0.82,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" Visible=false
+                        ImageLabel "Icon2" Position=0.66,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15148837240" ImageContent="rbxassetid://15148837240" Visible=false
+                        ImageLabel "Icon3" Position=0.02,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15148837240" ImageContent="rbxassetid://15148837240" Visible=false
+                        TextLabel "Nickname" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Loading..." TextColor3=#FFFFFF TextScaled TextSize=100 TextStrokeTransparency=0 TextWrapped
+                    }
+                }
+                NumberValue "FPS" Value=60
+                BoolValue "FirstPerson"
+                BoolValue "Friend"
+                NumberValue "Graphics" Value=5
+                NumberValue "PING"
+                BillboardGui "Short" Size=5,0,0.6,0 Active ClipsDescendants Enabled=false ExtentsOffsetWorldSpace=0,-16,0 MaxDistance=10 ZIndexBehavior=Sibling {
+                    Frame "Background" Size=1,0,1,0 BackgroundColor3=#000000 BorderColor3=#000000 BorderSizePixel=0 {
+                        UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                        UIGradient "UIGradient" Color=0:#000000,1:#000000 Rotation=-90 Transparency=0:0.381,0.65:0.637,1:0.381
+                    }
+                    Frame "Top" Size=1,0,1,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                        TextLabel "Flag" Size=0.12,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="🏁" TextColor3=#FFFFFF TextScaled TextSize=72 TextStrokeTransparency=0 TextWrapped
+                        ImageLabel "Icon1" Position=0.88,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" Visible=false
+                        ImageLabel "Icon2" Position=0.76,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15148837240" ImageContent="rbxassetid://15148837240" Visible=false
+                        ImageLabel "Icon3" Position=0.025,0,0.1,0 Size=0.1,0,0.8,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://15148837240" ImageContent="rbxassetid://15148837240" Visible=false
+                        TextLabel "Nickname" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Loading..." TextColor3=#FFFFFF TextScaled TextSize=100 TextStrokeTransparency=0 TextWrapped
+                    }
+                }
+            }
+            Sound "ShakeSound" AudioContent="rbxassetid://9085909202" Looped RollOffMinDistance=10000 SoundId="rbxassetid://9085909202" Volume=0
+            Sound "Siren" AudioContent="rbxassetid://1211986303" Looped RollOffMinDistance=10000 SoundId="rbxassetid://1211986303" Volume=0
+            Sound "Tinnitus" AudioContent="rbxassetid://3338882015" Looped RollOffMinDistance=10000 SoundId="rbxassetid://3338882015" Volume=0
+        }
+        ModuleScript "Settings" @src="Scripts/StarterPlayer/StarterPlayerScripts/Settings.luau"
+        LocalScript "Translate" @src="Scripts/StarterPlayer/StarterPlayerScripts/Translate.luau"
+        ModuleScript "Translation" @src="Scripts/StarterPlayer/StarterPlayerScripts/Translation.luau"
+    }
+}

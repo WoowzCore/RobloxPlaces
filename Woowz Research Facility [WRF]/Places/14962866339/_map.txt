@@ -1,0 +1,682 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  BloomEffect "CameraBloom"
+  BlurEffect "CameraBlur"
+  ColorCorrectionEffect "CameraColorCorrection"
+  DepthOfFieldEffect "DepthOfField"
+  BoolValue "DisableLight"
+  BlurEffect "Drunk"
+  ColorCorrectionEffect "Hurt"
+  BlurEffect "HurtBlur"
+  ColorCorrectionEffect "LoadingScreen"
+  ColorCorrectionEffect "Poison"
+  BlurEffect "SettingsBlur"
+  ColorCorrectionEffect "SettingsColorCorrection"
+  Sky "Sky"
+  ColorCorrectionEffect "Stamina"
+  ObjectValue "StartItem"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  MaterialVariant "Bad Floor"
+  MaterialVariant "Brick_New"
+  MaterialVariant "Cave"
+  MaterialVariant "Ceiling"
+  MaterialVariant "Ceiling Top"
+  MaterialVariant "Concrete_New"
+  MaterialVariant "Diamond Plate New"
+  MaterialVariant "Fabric_New"
+  MaterialVariant "Humanoid"
+  MaterialVariant "Japanise Planks"
+  MaterialVariant "Leather"
+  MaterialVariant "Marble Dark"
+  MaterialVariant "Marble New"
+  MaterialVariant "Meat"
+  MaterialVariant "Metal Burned"
+  MaterialVariant "Metal NoReflectance"
+  MaterialVariant "Metal Panels"
+  MaterialVariant "Metal_New"
+  MaterialVariant "MossyRock"
+  MaterialVariant "New Glass"
+  MaterialVariant "Organic"
+  MaterialVariant "Planks"
+  MaterialVariant "Plastic Wall 1"
+  MaterialVariant "Plastic_New"
+  MaterialVariant "Quartz"
+  MaterialVariant "Terrazzo"
+  MaterialVariant "Tiles"
+  MaterialVariant "Tiles BlackMarble"
+  MaterialVariant "Wood_New"
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "ActivateClickDetector"
+  BindableEvent "ApplyCharacter"
+  RemoteEvent "ChangeTextGui"
+  RemoteEvent "ChangeTextGuiUpdate"
+  Folder "DataStorage"
+    RemoteFunction "GetSettings"
+    BindableEvent "Set"
+    BindableEvent "Update"
+    RemoteEvent "UpdateSettings"
+  RemoteEvent "DropItem"
+  BindableEvent "DropItemSERVER"
+  RemoteEvent "Explode"
+  RemoteFunction "GetCommand"
+  RemoteEvent "GetHumanoidHealths"
+  RemoteFunction "GetPlayerDataClient"
+  RemoteFunction "GetServerInfoData"
+  RemoteFunction "GetWorkspace"
+  RemoteFunction "GiveLog"
+  Folder "Gore"
+    BindableEvent "AccessoryPhysicate"
+    BindableEvent "Gibs"
+  RemoteEvent "Hurt"
+  RemoteEvent "ItemToArm"
+  Folder "Other"
+    RemoteFunction "Ping"
+  BindableEvent "PlaceParticle"
+  RemoteFunction "PlayCommand"
+  RemoteEvent "PlaySound"
+  Folder "Player"
+    RemoteEvent "Drink"
+    RemoteFunction "GetPlayerData"
+    RemoteEvent "GunRecoil"
+    RemoteEvent "PlayAnimationOnce"
+    RemoteEvent "SetValue"
+    RemoteEvent "Tinnitus"
+  RemoteEvent "PlayerSeat"
+  RemoteEvent "PrintResult"
+  RemoteEvent "Punch"
+  RemoteEvent "Ragdollize"
+  BindableEvent "RagdollizeSERVER"
+  BindableEvent "RandScene"
+  RemoteFunction "RotateHead"
+  RemoteEvent "Scream"
+  RemoteEvent "SetHealth"
+  RemoteEvent "SetPlayerData"
+  RemoteFunction "SetPlayerDataValue"
+  RemoteEvent "SetSirensToPlayers"
+  RemoteEvent "ShakeCamera"
+  BindableEvent "SpawnPrefab"
+  RemoteEvent "ThrowItem"
+  RemoteEvent "ToArmOrBackpack"
+  RemoteEvent "UpdateAdmin"
+  RemoteEvent "UpdateCharacter"
+  … ещё 1
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "AdminCommands"
+  ModuleScript "Base"
+  BindableEvent "CompileScriptableObjects"
+  ModuleScript "Data"
+  Script "DataInvoke"
+  Script "DayCycle"
+  Script "GlobalFunctions"
+  ModuleScript "Gore"
+    Texture "BLOOD"
+    Sound "Sound"
+  ModuleScript "HeavyObjects"
+  ModuleScript "Lab"
+  Script "LoadPlayer"
+  Script "LoadScriptObjects"
+  Script "PlayersData"
+  Script "PlayersRegeneration"
+  Script "RandomAmbients"
+  Script "RandomComplex"
+  Folder "ServerInfo"
+    Folder "ADDisplay"  (+4)
+    Folder "Data"  (+16)
+  Script "ServerLogs"
+  BindableEvent "SetHoliday"
+  Script "SurfaceGuies"
+  Folder "UglyScripts"
+    Script "FullLight"
+    Script "PingResult"
+    Script "ShiftLock"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+  Folder "ADMINS"
+    BoolValue "1734081766"
+  ModuleScript "COMMANDSDATA"
+  ModuleScript "Datas"
+  Model "Dummy"
+    BodyColors "Body Colors"
+    Script "Died"
+    Script "DummyScript"
+    Part "Head"  (+6)
+    Humanoid "Humanoid"  (+8)
+    Part "HumanoidRootPart"  (+2)
+    Part "Left Arm"  (+2)
+    Part "Left Leg"  (+1)
+    Script "LoadDummy"
+    Part "Right Arm"  (+2)
+    Part "Right Leg"  (+1)
+    BindableEvent "Scream"
+    Part "Torso"  (+13)
+  Folder "GORE"
+    MeshPart "Head1"  (+3)
+    MeshPart "Head2"  (+3)
+    MeshPart "Head3"  (+3)
+    MeshPart "Head4"  (+3)
+    MeshPart "Head5"  (+3)
+    MeshPart "gib"  (+3)
+  Folder "ITEMS"
+    Tool "EmergencyPistol"  (+66)
+    Tool "Flashlight"  (+25)
+    Tool "Grenade"  (+23)
+    Tool "KeyAdministrator"  (+19)
+    Tool "KeyScience"  (+18)
+    Tool "Laser"  (+33)
+    Tool "MusicMaker"  (+36)
+    Tool "PlasticCup"  (+23)
+    Tool "Sample"  (+33)
+    Tool "TestTool"  (+11)
+  ModuleScript "LIQUIDS"
+  Folder "LOOTTABLE"
+    StringValue "Zone13"
+  Folder "PACKAGES"
+    Model "Book"  (+13)
+    Model "BoxTaker"  (+10)
+    Model "Crate"  (+36)
+    Model "Cup"  (+5)
+    Model "MetalGrid"  (+7)
+    Model "PlasticFolder"  (+16)
+    Model "Printer"  (+4)
+    Model "SoapDispenser"  (+16)
+    Model "Stapler"  (+9)
+    Model "Telephone"  (+12)
+    MeshPart "ToiletPaper"  (+2)
+    MeshPart "TrashBin"  (+2)
+    Model "Tray"  (+7)
+  Folder "PARTICLES"
+    Part "Bleeding"  (+1)
+    Part "Blood"  (+1)
+    Part "BloodSplash"  (+3)
+    Part "Dust"  (+1)
+    Part "Explosion"  (+9)
+    Part "GlassBroken"  (+1)
+    Part "ImpactConcrete"  (+3)
+  ModuleScript "PLAYERSDATA"
+  Model "RBX_ANIMSAVES"
+    ObjectValue "Animations - Night (MOVEMENT)"  (+38)
+    ObjectValue "BlockDummy"
+    ObjectValue "Combat Animation"
+    ObjectValue "Dummy"
+    ObjectValue "Punch animation by PrinceDominic15"
+    ObjectValue "R6"
+    ObjectValue "WoowzAnimations"  [Scene/ServerStorage/RBX_ANIMSAVES/WoowzAnimations.bridge]  (+2666)
+    ObjectValue "punch aims"
+    ObjectValue "walk animation"  [Scene/ServerStorage/RBX_ANIMSAVES/walk animation.bridge]  (+955)
+  Folder "SCRIPTOBJECTS"  [Scene/ServerStorage/SCRIPTOBJECTS.bridge]
+    Model "ADDisplay"  (+54)
+    Model "AngleLamp"  (+7)
+    Model "Bench"  (+25)
+    Model "BigMetalDoor"  (+39)
+    Model "BigPot"  (+21)
+    Model "Chair"  (+13)
+    Model "Clock"  (+24)
+    Model "CodePanel"  (+114)
+    Model "CoffeTable"  (+6)
+    Model "DateDisplay"  (+158)
+    Part "DiscLamp"  (+7)
+    Model "EmergencyLamp"  (+7)
+    Model "ExitSign"  (+7)
+    Model "FileCabinet"  (+69)
+    Model "GasStove"  [Scene/ServerStorage/SCRIPTOBJECTS/GasStove.bridge]  (+409)
+    Model "GlassTransparency"  (+10)
+    Model "HolidayDecorations"  (+120)
+    Model "LabInfoScreen"  (+10)
+    Model "LightSwitch"  (+22)
+    Model "MagneticBoard"  (+34)
+    Model "MetalDoors"  (+76)
+    Model "MetalShelf"  (+21)
+    Model "Mirror"  (+13)
+    Model "OfficeChair"  (+18)
+    Model "OfficeSofa"  (+23)
+    Model "OfficeTable"  (+36)
+    Model "OfficeTable2"  (+12)
+    Model "PC"  (+41)
+    Model "PCKeyboard"  (+9)
+    Model "PCMonitor"  (+49)
+    Model "PlasticDoor"  (+31)
+    Model "Portrait"  (+23)
+    Model "Sink"  (+27)
+    Model "Siren"  (+14)
+    Model "SirenLamp"  (+16)
+    Model "SirensController"  (+195)
+    Model "StandFlag"  (+5)
+    Model "StolbLamp"  (+6)
+    Model "TableLamp"  (+16)
+    Model "Toilet"  (+34)
+    … ещё 8
+  Folder "SCRIPTS"
+    Script "BodyHealth"
+    MeshPart "Bullet"  (+6)
+    NumberValue "CameraShake"  (+3)
+    Script "Corpse"
+    DragDetector "DragDetector"
+    Script "DropTile"
+    Model "Explosion"  (+11)
+    Script "LightBlink"
+    Script "ParticleScript"
+    Part "PhysicSound"  (+3)
+    Part "SmartDecal"  (+2)
+    MeshPart "SmartDecalHD"  (+2)
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  ScreenGui "AdminMenu"
+    Folder "Commands"  (+108)
+    LocalScript "GenerateCommands"
+    Frame "Panel"  (+19)
+  ScreenGui "CameraEffect"
+    LocalScript "LocalScript"
+    TextLabel "Timer"  (+2)
+    ImageLabel "grain"
+    TextLabel "text"  (+1)
+    TextLabel "text"  (+1)
+    TextLabel "text"  (+1)
+  ScreenGui "Console"
+    Frame "Frame"  (+5)
+    LocalScript "LocalScript"
+    Frame "TextFrame"  (+6)
+  ScreenGui "DebugInfo"
+    TextLabel "admin"  (+1)
+    TextLabel "allobjects"  (+1)
+    TextLabel "alluiobjects"  (+1)
+    Frame "background"
+    TextLabel "camerashakes"  (+1)
+    TextLabel "corpses"  (+1)
+    TextLabel "date"  (+1)
+    LocalScript "debuginfo"
+    TextLabel "devdiscord"
+    TextLabel "devtime"  (+1)
+    TextLabel "died"  (+1)
+    TextLabel "firstperson"  (+1)
+    TextLabel "fps"  (+1)
+    TextLabel "freecamera"  (+1)
+    TextLabel "graphic"  (+1)
+    TextLabel "hightlight"  (+1)
+    TextLabel "holiday"  (+1)
+    TextLabel "info"  (+1)
+    TextLabel "jumppower"  (+1)
+    TextLabel "lastupdate"  (+1)
+    TextLabel "memory"  (+1)
+    TextLabel "mousepos"  (+1)
+    TextLabel "name"  (+1)
+    TextLabel "nickname"  (+1)
+    TextLabel "objects"  (+1)
+    TextLabel "owner"  (+1)
+    TextLabel "ping"  (+1)
+    TextLabel "placeage"  (+1)
+    TextLabel "placetime"  (+1)
+    TextLabel "players"  (+1)
+    TextLabel "premium"  (+1)
+    TextLabel "privateserver"  (+1)
+    TextLabel "ragdoll"  (+1)
+    TextLabel "region"  (+1)
+    TextLabel "roblox_language"  (+1)
+    TextLabel "screensize"  (+1)
+    TextLabel "selected_language"  (+1)
+    TextLabel "sit"  (+1)
+    TextLabel "sounds"  (+1)
+    TextLabel "system_language"  (+1)
+    … ещё 9
+  ScreenGui "Dot"
+    ImageLabel "Center"
+    ImageLabel "CircleProgressBar"  (+8)
+    LocalScript "DotBase"
+  ScreenGui "FreecamRemake"
+    LocalScript "FreecamScript"
+  ScreenGui "Health"
+    LocalScript "HealthBase"
+    Frame "background"  (+24)
+  ScreenGui "Help"
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+    TextLabel "Tip"  (+1)
+  ScreenGui "Hotbar"
+    ModuleScript "HotbarBase"
+    Frame "HotbarBaseFrame"  (+1)
+    LocalScript "HotbarBaseScript"
+    TextLabel "ItemDescription"  (+1)
+    Folder "Source"  (+11)
+  ScreenGui "LeftButtons"
+    ImageButton "AttackMode"  (+2)
+    ImageButton "Emotions"  (+2)
+    LocalScript "LeftButtonsBase"
+    ImageButton "Other"  (+2)
+    ImageButton "Scream"  (+2)
+  LocalScript "LoadGuis"
+  ScreenGui "LoadingScreen"
+    LocalScript "LoadingScreenBase"
+    Sound "Sound"
+    Sound "SoundBeep"
+    Sound "SoundEnd"
+    LocalScript "TextTransparencyRandom"
+    ImageLabel "WRFIcon"
+    ImageLabel "background"
+    ImageLabel "background2"
+    TextLabel "t1"  (+1)
+    TextLabel "t10"  (+1)
+    TextLabel "t2"  (+1)
+    TextLabel "t3"  (+1)
+    TextLabel "t4"  (+1)
+    TextLabel "t5"  (+1)
+    TextLabel "t6"  (+1)
+    TextLabel "t7"  (+1)
+    TextLabel "t8"  (+1)
+    TextLabel "t9"  (+2)
+  ScreenGui "MusicMaker"
+    LocalScript "EnableFromTool"  (+1)
+    LocalScript "MusicMakerGuiBase"
+    StringValue "ToolName"
+    ImageLabel "background"  (+71)
+    ImageLabel "help"  (+41)
+    TextButton "helpbutton"  (+3)
+  ScreenGui "OtherPanel"
+    Folder "Objs"  (+7)
+    LocalScript "OtherBase"
+    Frame "background"  (+21)
+    Frame "backgroundmain"
+    Frame "credits"  (+9)
+  ScreenGui "Settings"
+    BoolValue "ChangedValue"
+    LocalScript "SettingsBase"
+    Folder "Values"  (+72)
+    ImageLabel "background"  (+28)
+  ScreenGui "SettingsLoading"
+    TextLabel "TextLabel"  (+2)
+  ScreenGui "SmallInfo"
+    ImageLabel "admin"  (+1)
+    TextLabel "fps"  (+1)
+    TextLabel "region"  (+1)
+    TextLabel "version"  (+1)
+  ScreenGui "Splash"
+    TextLabel "TextLabel"  (+1)
+  Folder "SurfaceGuis"
+    SurfaceGui "DispenserChemicalLiquid"  (+11)
+    SurfaceGui "MagneticBoard"  (+16)
+    SurfaceGui "Mirror"  (+6)
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    ModuleScript "GuiFunctions"
+    LocalScript "LoadPlayer"
+    Folder "LoadScripts"  (+16)
+    ModuleScript "PlayerBase"
+    LocalScript "PlayerGuiElements"
+    LocalScript "PlayerReplicatedStorage"
+    ModuleScript "PlayerScript"
+  StarterPlayerScripts "StarterPlayerScripts"
+    LocalScript "LoadSettings"
+    ModuleScript "PlayerBaseDontDestroy"
+    ModuleScript "PlayerModule"  (+35)
+    Folder "SCRIPTS"  (+38)
+    ModuleScript "Settings"
+    LocalScript "Translate"
+    ModuleScript "Translation"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+    UIPadding "UIPadding"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Model "Big Office Mesh pack (PBR"
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+  Model "Bingus Particle Pack"  [Scene/Workspace/Bingus Particle Pack.bridge]
+    Part "Big 4 Pointed star "  (+1)
+    Part "Big bubble"  (+1)
+    Part "Big fog"  (+1)
+    Part "Big gradient circle"  (+1)
+    Part "Bubble"  (+1)
+    Part "Burst light"  (+1)
+    Part "Colorless Leaf"  (+1)
+    Part "Comet"  (+1)
+    Part "Condensed burst"  (+1)
+    Part "Dense fog"  (+1)
+    Part "Dim burst light"  (+1)
+    Part "Even Shine"  (+1)
+    Part "Fireworks"  (+1)
+    Part "Fog cluster"  (+1)
+    Part "Glow"  (+1)
+    Part "Gradient square"  (+1)
+    Part "Heavy odd shine"  (+1)
+    Part "Idk what this is but it looks cool"  (+1)
+    Part "Leaf"  (+1)
+    Part "Leaf"  (+1)
+    Part "Light odd shine"  (+1)
+    Part "Lightingbolt"  (+1)
+    Part "Magma"  (+1)
+    Part "Nebula"  (+1)
+    Part "Oval gradient"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    Part "Part"  (+1)
+    … ещё 200
+  MeshPart "Blackhole"
+    BillboardGui "BlackholeGui"  (+1)
+    Highlight "Highlight"
+  Camera "Camera"
+  Folder "CameraShake"
+  Folder "Corpses"
+  Folder "CreatedObjects"
+  Model "DispenserChemicalLiquid"
+    Part "Button"  (+7)
+    Part "ButtonBase"
+    Script "DispenserChemicalLiquidBase"
+    IntValue "GuiID"
+    Part "LightBase"  (+1)
+    StringValue "Liquid"
+    Part "Monitor"  (+2)
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Particles"  (+1)
+    Part "Platform"  (+8)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    BoolValue "Worked"
+    MeshPart "keys"  (+2)
+  NegateOperation "NegativePart"
+  Folder "Objects"
+  Model "PCMonitorOLD"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    UnionOperation "Union"
+    Part "center"
+    Part "screen"
+  Model "PCMonitorOLD"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    UnionOperation "Union"
+    Part "center"
+    Part "screen"
+  Model "PCMonitorOLD"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    UnionOperation "Union"
+    Part "center"
+    Part "screen"
+  Model "PCMonitorOLD"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    UnionOperation "Union"
+    Part "center"
+    Part "screen"
+  Model "PCMonitorOLD"
+    PackageLink "PackageLink"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    UnionOperation "Union"
+    Part "center"
+    Part "screen"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Model "PCOLD"
+    UnionOperation "Base"  (+5)
+    PackageLink "PackageLink"
+    Part "Part_light"
+    Part "button"
+    Part "center"
+    UnionOperation "vent"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  … ещё 249

@@ -1,0 +1,11 @@
+TextChatService "TextChatService" CreateDefaultCommands=false CreateDefaultTextChannels {
+    BubbleChatConfiguration "BubbleChatConfiguration" AdorneeName="Nickname_Data" BackgroundColor3=#272A2D BackgroundTransparency=0 BubbleDuration=20 BubblesSpacing=9.3 Enabled Font=Unknown FontFace="Jura|SemiBold|Normal" LocalPlayerStudsOffset=0,0,0 MaxBubbles=5 MaxDistance=20 MinimizeDistance=20 TailVisible TextColor3=#FFFFFF TextSize=21 VerticalStudsOffset=0 {
+        ImageLabel "ImageLabel" Size=0,100,0,100 BackgroundColor3=#FFFFFF
+        UICorner "UICorner" BottomLeftRadius=0,5 BottomRightRadius=0,5 CornerRadius=0,5 TopLeftRadius=0,5 TopRightRadius=0,5
+        UIGradient "UIGradient" Color=0:#9D9D9D,1:#FFFFFF Rotation=-90
+        UIPadding "UIPadding" PaddingBottom=0,8 PaddingLeft=0,8 PaddingRight=0,8 PaddingTop=0,8
+    }
+    ChannelTabsConfiguration "ChannelTabsConfiguration" BackgroundColor3=#191B1D BackgroundTransparency=0 Enabled=false FontFace="BuilderSans|Bold|Normal" HoverBackgroundColor3=#7D7D7D SelectedTabTextColor3=#FFFFFF TextColor3=#AFAFAF TextSize=18 TextStrokeColor3=#000000 TextStrokeTransparency=1
+    ChatInputBarConfiguration "ChatInputBarConfiguration" AutocompleteEnabled=false BackgroundColor3=#191B1D BackgroundTransparency=0 Enabled FontFace="Jura|SemiBold|Normal" KeyboardKeyCode=Slash PlaceholderColor3=#B2B2B2 TextColor3=#FFFFFF TextSize=23 TextStrokeColor3=#000000 TextStrokeTransparency=0.33
+    ChatWindowConfiguration "ChatWindowConfiguration" BackgroundColor3=#191B1D BackgroundTransparency=0.1 Enabled FontFace="Jura|SemiBold|Normal" HeightScale=0.75 HorizontalAlignment=Left TextChannelDisplayMode=AllTextChannels TextColor3=#FFFFFF TextSize=23 TextStrokeColor3=#000000 TextStrokeTransparency=0.66 VerticalAlignment=Bottom WidthScale=0.52
+}

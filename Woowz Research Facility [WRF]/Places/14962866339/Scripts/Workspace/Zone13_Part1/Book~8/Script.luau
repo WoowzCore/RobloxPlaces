@@ -1,0 +1,3 @@
+local texts = {"Alchemy","Necromancy","Substance theory","Incantations","English dictionary","Magnetism","Astronomy of ancient times","Ancient World","Bytes and numbers","Google's secrets","Hacker tips","Difficulties of translation","All the mysterious deaths from 1980-2000","Mysteries of Egypt","Tungsten","الأدب السري","纸张的历史","Illuminati history","Servers of large companies","C# or C++","Creating antimatter","Multiverse"}
+
+script.Parent.TextHere.SurfaceGui.TextLabel.Text = texts[math.random(1,#texts)]

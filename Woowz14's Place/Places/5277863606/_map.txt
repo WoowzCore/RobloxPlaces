@@ -1,8 +1,12 @@
 # Карта сцены (создаётся приложением, не править)
 # Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
 
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
 Lighting "Lighting"  [Scene/Lighting.bridge]
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
 MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
 ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
 ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
 ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
@@ -14,6 +18,12 @@ StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
   StarterCharacterScripts "StarterCharacterScripts"
   StarterPlayerScripts "StarterPlayerScripts"
 Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
 Workspace "Workspace"  [Scene/Workspace.bridge]
   Folder "Billboards"
     Model "Billboard"  (+20)
@@ -26,6 +36,7 @@ Workspace "Workspace"  [Scene/Workspace.bridge]
     Folder "Cabin1"  (+132)
     Folder "Cabin2"  (+132)
     Folder "StarterCabin"  (+243)
+  Camera "Camera"
   Folder "ConstructionZone"
     Folder "Bridge"  (+13)
     Folder "BuildingMaterials"  (+21)

@@ -11,7 +11,7 @@ Workspace "World" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales
         BoolValue "Game_Started"
         IntValue "Game_Time"
     }
-    Camera "Player_Camera" CFrame=1577.592,4.61,822.502|133.437,-35.963,148.193 Focus=1578.766,5.785,823.615
+    Camera "Player_Camera"
     Folder "Scripts" {
         Script "GameScript" @src="Scripts/Workspace/Scripts/GameScript.luau"
         Script "Weather" @src="Scripts/Workspace/Scripts/Weather.luau"

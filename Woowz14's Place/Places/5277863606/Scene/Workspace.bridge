@@ -1,4 +1,4 @@
-Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default DistributedGameTime=126.983 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=126.983 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
     Folder "Billboards" {
         Model "Billboard" {
             Part "Board" Size=14,10,0.2 Anchored BottomSurface=Smooth CFrame=97.495,23,176.905|-179.994,45.001,179.999 Color=#BBB3B2 Material=Metal TopSurface=Smooth {
@@ -143,6 +143,7 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
         }
     }
     Folder "Cabins" @file="Scene/Workspace/Cabins.bridge"
+    Camera "Camera"
     Folder "ConstructionZone" {
         Folder "Bridge" {
             Part "Part" Size=8,0.6,16 Anchored BottomSurface=Smooth CFrame=74,12.5,174 Color=#957977 Material=WoodPlanks TopSurface=Smooth

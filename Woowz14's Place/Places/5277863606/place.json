@@ -1,6 +1,6 @@
 {
   "PlaceId": 5277863606,
-  "Created": "2026-11-13T13:37:25.5676630\u002B03:00",
+  "Created": "2026-11-13T14:35:16.1227604\u002B03:00",
   "Services": [
     "Workspace",
     "Lighting",
@@ -13,14 +13,21 @@
     "StarterPack",
     "StarterPlayer",
     "Teams",
-    "SoundService"
+    "SoundService",
+    "Players",
+    "Chat",
+    "TextChatService",
+    "LocalizationService",
+    "TestService",
+    "HttpService",
+    "ProximityPromptService",
+    "VoiceChatService"
   ],
-  "Ignore": [
-    "Workspace/Camera"
-  ],
+  "Ignore": [],
   "AutoSplit": 500,
   "ScriptExt": "luau",
   "InlineLines": 8,
+  "TerrainFile": "Terrain.voxels",
   "Splits": {
     "Workspace/Cabins": "Scene/Workspace/Cabins.bridge",
     "Workspace/Foliage": "Scene/Workspace/Foliage.bridge",

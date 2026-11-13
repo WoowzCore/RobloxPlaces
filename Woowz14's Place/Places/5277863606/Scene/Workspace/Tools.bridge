@@ -85,10 +85,10 @@ Model "Chest_Acceleration_Coil" PrimaryPart=@"Workspace/Tools/Chest_Acceleration
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "Acceleration Coil" Grip=0,0,-1|-0.001,0.002,134.999 TextureContent="http://www.roblox.com/asset/?id=99170415" ToolTip="Speed Up!" {
+        Tool "Acceleration Coil" Grip=0,0,-1|-0.001,0.002,134.999 TextureContent="http://www.roblox.com/asset/?id=99170415" TextureId="http://www.roblox.com/asset/?id=99170415" ToolTip="Speed Up!" {
             Part "Handle" Size=1.3,1.3,2.4 Anchored BottomSurface=Smooth CFrame=438.65,74.458,-88.85|0.002,-90,0 CanCollide=false Color=#C4281C TopSurface=Smooth {
                 Sound "CoilSound" AudioContent="http://www.roblox.com/asset/?id=99173388" SoundId="http://www.roblox.com/asset/?id=99173388" Volume=1
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=99170547"
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshId="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=99170547" TextureId="http://www.roblox.com/asset/?id=99170547"
             }
             Script "Script" @src="Scripts/Workspace/Tools/Chest_Acceleration_Coil/Reward/Acceleration Coil/Script.luau"
         }
@@ -195,10 +195,10 @@ Model "Chest_Cyclotron" PrimaryPart=@"Workspace/Tools/Chest_Cyclotron/Base/Part~
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "Cyclotron" Grip=0,0.5,0 TextureContent="http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=101081225" ToolTip="Speeds up time!" {
+        Tool "Cyclotron" Grip=0,0.5,0 TextureContent="http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=101081225" TextureId="http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=101081225" ToolTip="Speeds up time!" {
             RemoteEvent "ChangeTime"
             Part "Handle" Size=1,1,1 Anchored CFrame=-379.649,18.901,388.949|0.007,90,0 CanCollide=false {
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=101060412    " MeshType=FileMesh Scale=2,2,2 TextureContent="http://www.roblox.com/asset/?id=101060383  "
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=101060412    " MeshId="http://www.roblox.com/asset/?id=101060412    " MeshType=FileMesh Scale=2,2,2 TextureContent="http://www.roblox.com/asset/?id=101060383  " TextureId="http://www.roblox.com/asset/?id=101060383  "
                 ParticleEmitter "ParticleEmitter" Size=0:0.062,1:0.313:0.25 Lifetime=0.5,1 LightEmission=1 Rate=0 RotSpeed=-30,30 Rotation=-90,90 Speed=3,3 SpreadAngle=180,180 Transparency=0:1,0.043:0.306,0.665:0.1,0.871:0.444,1:1 ZOffset=2
                 PointLight "PointLight" Brightness=0 Color=#FFFF00 Range=0 Shadows
             }
@@ -314,7 +314,7 @@ Model "Chest_Firefly" PrimaryPart=@"Workspace/Tools/Chest_Firefly/Base/Part~14" 
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "Firefly Jar" TextureContent="http://www.roblox.com/asset/?id=115341569" ToolTip="Release some fireflies into the night!" {
+        Tool "Firefly Jar" TextureContent="http://www.roblox.com/asset/?id=115341569" TextureId="http://www.roblox.com/asset/?id=115341569" ToolTip="Release some fireflies into the night!" {
             Model "FireFlySwarm" PrimaryPart=@"Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/Center/CenterPart" {
                 Model "Center" {
                     Part "CenterPart" Size=2,2,2 Anchored BottomSurface=Smooth CFrame=99.999,62.637,495.8|-0.012,-0.002,-0.002 CanCollide=false Material=SmoothPlastic Shape=Ball TopSurface=Smooth Transparency=1
@@ -351,7 +351,7 @@ Model "Chest_Firefly" PrimaryPart=@"Workspace/Tools/Chest_Firefly/Base/Part~14" 
                 Script "SpawnScript" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/FireFlySwarm/SpawnScript.luau"
             }
             Part "Handle" Size=2,1,2 Anchored CFrame=99.999,62.537,495.8|-0.012,-0.002,-0.002 CanCollide=false {
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=115289510" MeshType=FileMesh TextureContent="http://www.roblox.com/asset?id=115340918"
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=115289510" MeshId="http://www.roblox.com/asset/?id=115289510" MeshType=FileMesh TextureContent="http://www.roblox.com/asset?id=115340918" TextureId="http://www.roblox.com/asset?id=115340918"
             }
             Script "Script" @src="Scripts/Workspace/Tools/Chest_Firefly/Reward/Firefly Jar/Script.luau"
         }
@@ -458,9 +458,9 @@ Model "Chest_Gravity_Coil" PrimaryPart=@"Workspace/Tools/Chest_Gravity_Coil/Base
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "GravityCoil" Grip=0,0,1|-180,0,-180 TextureContent="http://www.roblox.com/asset/?id=16619617" ToolTip="Light as a feather!" {
+        Tool "GravityCoil" Grip=0,0,1|-180,0,-180 TextureContent="http://www.roblox.com/asset/?id=16619617" TextureId="http://www.roblox.com/asset/?id=16619617" ToolTip="Light as a feather!" {
             Part "Handle" Size=1,1.2,2 Anchored BottomSurface=Smooth CFrame=305.8,117.423,-478.4|0.009,-0.002,0.002 CanCollide=false Color=#CDCDCD TopSurface=Smooth {
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=16606141"
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=16606212" MeshId="http://www.roblox.com/asset/?id=16606212" MeshType=FileMesh Scale=0.7,0.7,0.7 TextureContent="http://www.roblox.com/asset/?id=16606141" TextureId="http://www.roblox.com/asset/?id=16606141"
             }
             Script "Script" @src="Scripts/Workspace/Tools/Chest_Gravity_Coil/Reward/GravityCoil/Script.luau"
         }
@@ -567,10 +567,10 @@ Model "Chest_Invisibility_Cloak" PrimaryPart=@"Workspace/Tools/Chest_Invisibilit
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "InvisibilityCloak" Grip=1.5,0.65,-1.9 TextureContent="http://www.roblox.com/asset/?id=129414426" ToolTip="Hide from your foes!" {
+        Tool "InvisibilityCloak" Grip=1.5,0.65,-1.9 TextureContent="http://www.roblox.com/asset/?id=129414426" TextureId="http://www.roblox.com/asset/?id=129414426" ToolTip="Hide from your foes!" {
             BoolValue "CanActivate" Value
             Part "Handle" Size=1.3,1.3,2.4 Anchored BottomSurface=Smooth CFrame=199.65,-26.009,-357.999|-0.002,90,0 CanCollide=false TopSurface=Smooth {
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=114046169" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=129317782 "
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=114046169" MeshId="http://www.roblox.com/asset/?id=114046169" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=129317782 " TextureId="http://www.roblox.com/asset/?id=129317782 "
                 Sound "WooshEnd" AudioContent="http://www.roblox.com/asset/?id=129425664" SoundId="http://www.roblox.com/asset/?id=129425664"
                 Sound "WooshStart" AudioContent="http://www.roblox.com/asset/?id=129425637" SoundId="http://www.roblox.com/asset/?id=129425637"
             }
@@ -679,9 +679,9 @@ Model "Chest_Teleport" PrimaryPart=@"Workspace/Tools/Chest_Teleport/Base/Part~14
     }
     RemoteEvent "LidToggle"
     Folder "Reward" {
-        Tool "Teleport" Grip=-0.5,-0.5,-0.1|168.579,-0.019,-179.933 TextureContent="http://www.roblox.com/asset/?id=15666388" ToolTip="Results not guaranteed" {
+        Tool "Teleport" Grip=-0.5,-0.5,-0.1|168.579,-0.019,-179.933 TextureContent="http://www.roblox.com/asset/?id=15666388" TextureId="http://www.roblox.com/asset/?id=15666388" ToolTip="Results not guaranteed" {
             Part "Handle" Size=1,1.2,1 Anchored BottomSurface=Smooth CFrame=-328.386,21.584,-373.305|-0.007,-45.011,0.014 CanCollide=false Color=#CDCDCD TopSurface=Smooth {
-                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=11821197" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=11820196"
+                SpecialMesh "Mesh" MeshContent="http://www.roblox.com/asset/?id=11821197" MeshId="http://www.roblox.com/asset/?id=11821197" MeshType=FileMesh Scale=1.3,1.3,1.3 TextureContent="http://www.roblox.com/asset/?id=11820196" TextureId="http://www.roblox.com/asset/?id=11820196"
                 Sound "OpenSound" AudioContent="http://www.roblox.com/asset/?id=15666462" SoundId="http://www.roblox.com/asset/?id=15666462"
                 Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,-0.4,0.934|-179.978,86.002,-90.022
                 Weld "Weld" C0=0,0,0|-90.002,-3.997,-90.002 C1=0,0,0.133|-93.975,0.002,-180

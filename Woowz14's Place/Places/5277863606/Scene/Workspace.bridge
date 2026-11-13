@@ -5,8 +5,8 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
                 SurfaceGui "SurfaceGui" CanvasSize=2400,1200 Face=Back {
                     TextLabel "AdText" Position=0.025,0,0.83,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="to stretch parts to the size you need!" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left ZIndex=2
                     TextLabel "AdText" Position=0.025,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Try using the Scale tool in Studio" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left ZIndex=2
-                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageContent="rbxassetid://379110590" ImageTransparency=0.1
-                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ImageContent="rbxassetid://379063843" ImageTransparency=0.2 ZIndex=2
+                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://379110590" ImageContent="rbxassetid://379110590" ImageTransparency=0.1
+                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://379063843" ImageContent="rbxassetid://379063843" ImageTransparency=0.2 ZIndex=2
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=92.616,20,172.875|-179.994,45.005,-90.005 Color=#958988 Material=Metal TopSurface=Smooth
@@ -29,8 +29,8 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
                 SurfaceGui "SurfaceGui" CanvasSize=2400,1200 Face=Back {
                     TextLabel "AdText" Position=0.025,0,0.73,0 Size=0.62,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Studio to carve out paths!" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
                     TextLabel "AdText" Position=0.025,0,0.6,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Try using the Erode tool in" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
-                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageContent="rbxassetid://379048405" ImageTransparency=0.1
-                    ImageLabel "ToolPic" Position=0.75,0,0.5,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ImageContent="rbxassetid://376615239" ImageTransparency=0.2
+                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://379048405" ImageContent="rbxassetid://379048405" ImageTransparency=0.1
+                    ImageLabel "ToolPic" Position=0.75,0,0.5,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://376615239" ImageContent="rbxassetid://376615239" ImageTransparency=0.2
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=20.237,21,124.994|0.004,59.997,89.994 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
@@ -53,8 +53,8 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
                 SurfaceGui "SurfaceGui" CanvasSize=2400,1200 Face=Back {
                     TextLabel "AdText" Position=0.025,0,0.83,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="add terrain materials with precision!" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
                     TextLabel "AdText" Position=0.025,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Try using the Paint tool in Studio to" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
-                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageContent="rbxassetid://379029235" ImageTransparency=0.1
-                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ImageContent="rbxassetid://376628068" ImageTransparency=0.2 ZIndex=2
+                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://379029235" ImageContent="rbxassetid://379029235" ImageTransparency=0.1
+                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://376628068" ImageContent="rbxassetid://376628068" ImageTransparency=0.2 ZIndex=2
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=265.9,17.453,-41.3|-90,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
@@ -77,8 +77,8 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
                 SurfaceGui "SurfaceGui" CanvasSize=2400,1200 Face=Back {
                     TextLabel "AdText" Position=0.025,0,0.83,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="to precisely position parts!" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left ZIndex=2
                     TextLabel "AdText" Position=0.025,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Try using the Move tool in Studio" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left ZIndex=2
-                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageContent="rbxassetid://379114385" ImageTransparency=0.1
-                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ImageContent="rbxassetid://379063742" ImageTransparency=0.2 ZIndex=2
+                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://379114385" ImageContent="rbxassetid://379114385" ImageTransparency=0.1
+                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://379063742" ImageContent="rbxassetid://379063742" ImageTransparency=0.2 ZIndex=2
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=140.475,20,198.784|-180,-44.998,-90 Color=#958988 Material=Metal TopSurface=Smooth
@@ -99,7 +99,7 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
         Model "Billboard" {
             Part "Board" Size=14,10,0.2 Anchored BottomSurface=Smooth CFrame=311.895,19.438,146.495|-0.006,44.987,0.001 Color=#BC9B5D Material=WoodPlanks TopSurface=Smooth {
                 SurfaceGui "SurfaceGui" CanvasSize=1400,1000 Face=Back {
-                    ImageLabel "ImageLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 ImageContent="rbxassetid://658230641"
+                    ImageLabel "ImageLabel" Size=1,0,1,0 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxassetid://658230641" ImageContent="rbxassetid://658230641"
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=315.926,16.438,141.616|0.005,44.994,89.991 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
@@ -122,8 +122,8 @@ Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartyS
                 SurfaceGui "SurfaceGui" CanvasSize=2400,1200 Face=Back {
                     TextLabel "AdText" Position=0.025,0,0.83,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="to create hills and mountains!" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
                     TextLabel "AdText" Position=0.025,0,0.7,0 Size=1,0,0.1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Text="Try using the Grow tool in Studio" TextColor3=#FFFFFF TextSize=96 TextStrokeTransparency=0 TextWrapped TextXAlignment=Left
-                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 ImageContent="rbxassetid://379044993" ImageTransparency=0.1
-                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 ImageContent="rbxassetid://376909202" ImageTransparency=0.2 ZIndex=2
+                    ImageLabel "MainPicture" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://379044993" ImageContent="rbxassetid://379044993" ImageTransparency=0.1
+                    ImageLabel "ToolPic" Position=0.75,0,0.25,0 Size=0.135,0,0.3,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxassetid://376909202" ImageContent="rbxassetid://376909202" ImageTransparency=0.2 ZIndex=2
                 }
             }
             Part "Part" Size=16,1,1 Anchored BottomSurface=Smooth CFrame=190.3,18.302,-36.5|0,0,90 Color=#6C584B Material=WoodPlanks TopSurface=Smooth

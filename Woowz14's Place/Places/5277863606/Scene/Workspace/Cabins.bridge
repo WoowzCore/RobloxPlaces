@@ -30,7 +30,7 @@ Folder "Cabin1" {
             Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=-54,57.313,344 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-50.5,53.313,344.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=-54,68.313,346.5 Color=#1B2A35 Material=Sand TopSurface=Smooth {
-                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
             }
             Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=-54,52.313,347.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-50.5,52.313,346 Color=#69665C Material=Cobblestone TopSurface=Smooth
@@ -184,7 +184,7 @@ Folder "Cabin2" {
             Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=-188,35.313,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=-188.5,31.313,6.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=-190.5,46.313,3|0,-90,0 Color=#1B2A35 Material=Sand TopSurface=Smooth {
-                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
             }
             Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=-191.5,30.313,3|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=-190,30.313,6.5|0,-90,0 Color=#69665C Material=Cobblestone TopSurface=Smooth
@@ -338,7 +338,7 @@ Folder "StarterCabin" {
             Part "Part" Size=8,1,2 Anchored BottomSurface=Smooth CFrame=326,19.313,192 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,7,1 Anchored BottomSurface=Smooth CFrame=329.5,15.313,192.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=2,1,1 Anchored BottomSurface=Smooth CFrame=326,30.313,194.5 Color=#1B2A35 Material=Sand TopSurface=Smooth {
-                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
+                ParticleEmitter "ChimneySmokeParticleEmitter" Size=0:1,0.23:2.438,0.721:4.125,1:6.875 Acceleration=1,0,0 Color=0:#7F7F7F,1:#4C4C4C Lifetime=8,10 SpreadAngle=10,10 Texture="rbxasset://textures/particles/smoke_main.dds" TextureContent="rbxasset://textures/particles/smoke_main.dds" Transparency=0:1,0.08:0.85,0.203:0.769,0.597:0.825,0.848:0.919,1:1
             }
             Part "Part" Size=8,11,1 Anchored BottomSurface=Smooth CFrame=326,14.313,195.5 Color=#69665C Material=Cobblestone TopSurface=Smooth
             Part "Part" Size=1,11,2 Anchored BottomSurface=Smooth CFrame=329.5,14.313,194 Color=#69665C Material=Cobblestone TopSurface=Smooth
@@ -542,7 +542,7 @@ Folder "StarterCabin" {
             Tool "Lantern" {
                 ModuleScript "Configurations" @src="Scripts/Workspace/Cabins/StarterCabin/Chest_Lantern/Reward/Lantern/Configurations.luau"
                 UnionOperation "Flame" Size=0.05,0.05,0.05 CFrame=323.401,13.63,174.781|0,-90,0 CanCollide=false Color=#FFFF00 Material=Neon RenderFidelity=Precise Transparency=1 UsePartColor $_geo="1d2d9710e4c40ecd" {
-                    ParticleEmitter "ParticleEmitter" Size=0:0.1,1:0.1 Color=0:#FFE85C,1:#FD9418 Lifetime=0.2,0.2 LightEmission=1 LockedToPart Rate=40 RotSpeed=-20,20 Rotation=0,360 Speed=0.5,0.5 SpreadAngle=1,1 TextureContent="http://www.roblox.com/asset/?id=11601142" Transparency=0:1,0.138:0.626,0.501:0.478,0.799:0.632,1:1
+                    ParticleEmitter "ParticleEmitter" Size=0:0.1,1:0.1 Color=0:#FFE85C,1:#FD9418 Lifetime=0.2,0.2 LightEmission=1 LockedToPart Rate=40 RotSpeed=-20,20 Rotation=0,360 Speed=0.5,0.5 SpreadAngle=1,1 Texture="http://www.roblox.com/asset/?id=11601142" TextureContent="http://www.roblox.com/asset/?id=11601142" Transparency=0:1,0.138:0.626,0.501:0.478,0.799:0.632,1:1
                 }
                 MeshPart "Frame" Size=0.6,1.8,0.84 CFrame=323.401,14.126,174.781 CanCollide=false CollisionFidelity=Default Color=#8F4C2A Material=Marble RenderFidelity=Precise
                 MeshPart "Glass" Size=0.467,0.8,0.467 CFrame=323.401,13.9,174.781 CanCollide=false CollisionFidelity=Hull Color=#CC8E69 Material=Ice RenderFidelity=Precise Transparency=0.5 {
@@ -587,7 +587,7 @@ Folder "StarterCabin" {
     Part "Part" Size=8,4,0.6 Anchored BottomSurface=Smooth CFrame=352.5,11,164|-180,-90,0 Color=#6C584B Material=WoodPlanks TopSurface=Smooth
     Part "Part" Size=5,1,1 Anchored BottomSurface=Smooth CFrame=352.5,11.5,141.5|-90,90,0 Color=#6C584B Material=Wood TopSurface=Smooth
     SpawnLocation "SpawnLocation" Size=12,0.2,12 Anchored CFrame=335,12.913,181|-0.002,90,0 Color=#564236 Material=WoodPlanks TopSurface=Smooth {
-        Decal "Decal" Face=Top TextureContent="rbxasset://Textures/SpawnLocation.png"
+        Decal "Decal" Face=Top Texture="rbxasset://Textures/SpawnLocation.png" TextureContent="rbxasset://Textures/SpawnLocation.png"
     }
     Model "Table" {
         Part "Part" Size=2,0.4,0.4 Anchored BottomSurface=Smooth CFrame=349.6,13.813,174.6|0,0,-90 Color=#6C584B Material=Wood TopSurface=Smooth

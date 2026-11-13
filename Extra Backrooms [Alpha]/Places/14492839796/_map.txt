@@ -1,0 +1,473 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+  Folder "ExtraBackrooms Materials"
+    MaterialVariant "Asphalt New"
+    MaterialVariant "Bad Concrete"
+    MaterialVariant "Cave Ground"
+    MaterialVariant "Cave Ground 2"
+    MaterialVariant "Cave Moss"
+    MaterialVariant "Cave Rock"
+    MaterialVariant "Cave Rock Brown"
+    MaterialVariant "Cave Rocks"
+    MaterialVariant "Cave Smooth"
+    MaterialVariant "Cobbelstone Wall"
+    MaterialVariant "Concrete Level 1"
+    MaterialVariant "Concrete Slab"
+    MaterialVariant "Gravel"
+    MaterialVariant "Humanoid"
+    MaterialVariant "Level -1 Carpet"
+    MaterialVariant "Level 0 Carpet"
+    MaterialVariant "Level 0 Carpet White"
+    MaterialVariant "Level 0 Carpret New"
+    MaterialVariant "Level 0 Ceiling"
+    MaterialVariant "Level 0 Ceiling 2"
+    MaterialVariant "Level 0 Ceiling New"
+    MaterialVariant "Level 0 Concrete"
+    MaterialVariant "Level 0 New"
+    MaterialVariant "Level 0 Paverment"
+    MaterialVariant "Level 0 WallPaper"
+    MaterialVariant "Level 0 WallPaper 2"
+    MaterialVariant "Level 0 WallPaper 3"
+    MaterialVariant "Level 0 WallPaper 4"
+    MaterialVariant "Level 0.11 Carpet"
+    MaterialVariant "Level 0.11 Ceiling"
+    MaterialVariant "Level 0.11 Ceiling 2"
+    MaterialVariant "Level 0.11 WallPaper"
+    MaterialVariant "Level 0.11 WallPaper 2"
+    MaterialVariant "Level 1.1"
+    MaterialVariant "Level 13"
+    MaterialVariant "Level 188"
+    MaterialVariant "Level 188 Floor"
+    MaterialVariant "Level 188 Grass"
+    MaterialVariant "Level 188 Wood"
+    MaterialVariant "Level 2"
+    … ещё 41
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "InstallPlayerData"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "LoadPlayers"
+  Script "MapGenerate"
+  ModuleScript "ServerModule"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+  Folder "DevChatData"
+    StringValue "conversation"
+  Model "PlayerModel"
+    MeshPart "HeadShadow"  (+1)
+    Model "PlayerModel"  (+106)
+  Model "RBX_ANIMSAVES"
+    ObjectValue "SIZEREF"  [Scene/ServerStorage/RBX_ANIMSAVES/SIZEREF.bridge]  (+425)
+    ObjectValue "SIZEREF"
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  LocalScript "MainGui"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    LocalScript "Animations"
+    LocalScript "Camera"
+    LocalScript "Mouse"
+    LocalScript "Movement"
+    LocalScript "Render"
+  StarterPlayerScripts "StarterPlayerScripts"
+    ModuleScript "PlayerData"
+    LocalScript "PlayerReplicated"
+    ModuleScript "PlayerScript"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+    ImageLabel "ImageLabel"
+    UICorner "UICorner"
+    UIGradient "UIGradient"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+  Folder "TextChannels"
+    TextChannel "RBXGeneral"
+    TextChannel "RBXSystem"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Folder "Lights"  [Scene/Workspace/Lights.bridge]
+    Folder "LightPart"  (+6)
+    Folder "LightPart"  (+44)
+    Folder "LightPart"  (+70)
+    Folder "LightPart"  (+24)
+    Folder "LightPart"  (+4)
+    Folder "LightPart"  (+126)
+    Folder "LightPart"
+    Folder "LightPart"  (+40)
+    Folder "LightPart"  (+20)
+    Folder "LightPart"  (+66)
+    Folder "LightPart"  (+30)
+    Folder "LightPart"  (+54)
+    Folder "LightPart"  (+16)
+    Folder "LightPart"  (+40)
+    Folder "LightPart"  (+40)
+    Folder "LightPart"  (+26)
+    Folder "LightPart"  (+18)
+    Folder "LightPart"  (+36)
+    Folder "LightPart"  (+8)
+    Folder "LightPart"  (+22)
+    Folder "LightPart"  (+30)
+    Folder "LightPart"  (+20)
+    Folder "LightPart"  (+31)
+    Folder "LightPart"  (+10)
+    Folder "LightPart"  (+20)
+    Folder "LightPart"  (+124)
+    Folder "LightPart"  (+10)
+    Folder "LightPart"  (+31)
+    Folder "LightPart"  (+76)
+    Folder "LightPart"  (+4)
+    Folder "LightPart"  (+73)
+    Folder "LightPart"  (+22)
+    Folder "LightPart"  (+8)
+    Folder "LightPart"  (+109)
+    Folder "LightPart"  (+20)
+    Folder "LightPart"  (+16)
+    Folder "LightPart"  (+122)
+    Folder "LightPart"  (+10)
+    Folder "LightPart"  (+11)
+    Folder "LightPart"  (+6)
+    … ещё 31
+  Model "Model"
+    MeshPart "Meshes/vkgrchzga_LOD3_Aset_props_storage_M_vkgrchzga_00_LOD3"  (+1)
+    MeshPart "Meshes/vkgrchzga_LOD3_Aset_props_storage_M_vkgrchzga_01_LOD3"  (+1)
+  Folder "Objects"
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/meshPart"  (+1)
+    MeshPart "Meshes/tkwmdexva_LOD3_Aset_paper_cardboard_S_tkwmdexva_01_LOD3"  (+1)
+    MeshPart "Meshes/tkwmdexva_LOD3_Aset_paper_cardboard_S_tkwmdexva_01_LOD3"  (+1)
+    MeshPart "Meshes/tlzkdilva_LOD3_Aset_plastic__S_tlzkdilva_02_LOD3"  (+1)
+    MeshPart "Meshes/tlzkdilva_LOD3_Aset_plastic__S_tlzkdilva_03_LOD3"  (+1)
+    MeshPart "Meshes/ubjhdfgva_LOD3_Aset_metal_rusty_S_ubjhdfgva_02_LOD3"  (+1)
+    MeshPart "Meshes/vimrdhl_LOD3"  (+1)
+    MeshPart "Meshes/vimrdhl_LOD3"  (+1)
+    MeshPart "Meshes/vimrdhl_LOD3"  (+1)
+    MeshPart "Meshes/vimrdhl_LOD3"  (+1)
+  Folder "Other"
+    Folder "Players"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Folder "Part1"  [Scene/Workspace/Part1.bridge]
+    Model "Door"  (+17)
+    Folder "Folder"
+    Folder "Folder"  (+4)
+    Folder "Folder"
+    Folder "Folder"
+    Part "Light"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    MeshPart "Meshes/round"
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+3)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+2)
+    Model "Model"  (+15)
+    Model "Model"  (+2)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"  (+15)
+    Model "Model"
+    Model "Model"  (+15)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    … ещё 4396
+  Folder "Part2"  [Scene/Workspace/Part2.bridge]
+    MeshPart "Aircon"
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    Part "AmbientSound"  (+1)
+    MeshPart "Composite Garbage 1a"
+    MeshPart "Composite Garbage 1a"
+    MeshPart "Composite Garbage 1a"
+    Model "Desk Fan 1"  (+4)
+    Model "Exit Sign"  (+8)
+    Model "Exit sign"  (+3)
+    MeshPart "Fast Food Container"
+    UnionOperation "Folding Chair"
+    UnionOperation "Folding Chair"
+    Part "Glitchs"  (+1)
+    Part "Glitchs"  (+1)
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"
+    MeshPart "Ground"  (+1)
+    MeshPart "Ground"  (+1)
+    MeshPart "Ground"
+    MeshPart "Ground"
+    … ещё 191
+  Folder "Part3"
+    MeshPart "Box 1"
+    MeshPart "Box 2"
+    MeshPart "Box 2"
+    MeshPart "Box 2"
+    MeshPart "Box 3"
+    MeshPart "Fire Extinguisher"
+    Model "Garage"  (+2)
+    MeshPart "Garage Door"
+    MeshPart "Garage Door"
+    MeshPart "Global map"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    MeshPart "MeshPart"  (+1)
+    … ещё 155
+  Folder "Part4"  [Scene/Workspace/Part4.bridge]
+    Folder "Folder"  (+1)
+    MeshPart "Meshes/table clotthhhh"
+    Model "Model"  (+30)
+    Model "Model"  (+9)
+    Model "Oleja"  (+25)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "P2"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    … ещё 426
+  Folder "Part5"  [Scene/Workspace/Part5.bridge]
+    Model "Fern"  (+16)
+    Model "GlassDomeCeiling"  (+2)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    … ещё 494
+  Folder "Plastic Chairs"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    MeshPart "Plastic Chair"
+    … ещё 152
+  Model "SIZEREF"
+    ObjectValue "AnimSaves"
+    MeshPart "Head"  (+8)
+    Humanoid "Humanoid"  (+1)
+    Part "HumanoidRootPart"  (+3)
+    MeshPart "LeftFoot"  (+4)
+    MeshPart "LeftHand"  (+4)
+    MeshPart "LeftLowerArm"  (+4)
+    MeshPart "LeftLowerLeg"  (+4)
+    MeshPart "LeftUpperArm"  (+5)
+    MeshPart "LeftUpperLeg"  (+4)
+    MeshPart "LowerTorso"  (+9)
+    MeshPart "RightFoot"  (+4)
+    MeshPart "RightHand"  (+4)
+    MeshPart "RightLowerArm"  (+4)
+    MeshPart "RightLowerLeg"  (+4)
+    MeshPart "RightUpperArm"  (+5)
+    MeshPart "RightUpperLeg"  (+4)
+    MeshPart "UpperTorso"  (+11)
+  Model "SIZEREF (DONT DELETE (HAS ANIMATIONS))"
+    ObjectValue "AnimSaves"
+    MeshPart "Head"  (+8)
+    Humanoid "Humanoid"  (+1)
+    Part "HumanoidRootPart"  (+3)
+    MeshPart "LeftFoot"  (+4)
+    MeshPart "LeftHand"  (+4)
+    MeshPart "LeftLowerArm"  (+4)
+    MeshPart "LeftLowerLeg"  (+4)
+    MeshPart "LeftUpperArm"  (+5)
+    MeshPart "LeftUpperLeg"  (+4)
+    MeshPart "LowerTorso"  (+9)
+    MeshPart "RightFoot"  (+4)
+    MeshPart "RightHand"  (+4)
+    MeshPart "RightLowerArm"  (+4)
+    MeshPart "RightLowerLeg"  (+4)
+    MeshPart "RightUpperArm"  (+5)
+    MeshPart "RightUpperLeg"  (+4)
+    MeshPart "UpperTorso"  (+11)
+  Folder "SpawnLocations"
+    SpawnLocation "SpawnLocation"
+  Terrain "Terrain"

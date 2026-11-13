@@ -1,0 +1,141 @@
+ServerStorage "ServerStorage" {
+    Folder "DevChatData" {
+        StringValue "conversation"
+    }
+    Model "PlayerModel" {
+        MeshPart "HeadShadow" Size=0.849,1.367,0.944 CFrame=-612.101,7.541,48.042 CanCollide=false CanQuery=false CanTouch=false Color=#FF0000 Massless Material=ForceField RenderFidelity=Precise {
+            WeldConstraint "WeldConstraint" Part0=@"ServerStorage/PlayerModel/HeadShadow" Part1=@"ServerStorage/PlayerModel/PlayerModel/Head"
+        }
+        Model "PlayerModel" {
+            MeshPart "Head" Size=0.849,1.367,0.944 CFrame=-612.101,7.541,48.042 CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Part "Eyes" Size=0.1,0.1,0.1 BottomSurface=Smooth CFrame=-612.101,7.784,47.245 CanQuery=false CanTouch=false CastShadow=false CollisionGroup="PlayerDetails" Massless TopSurface=Smooth Transparency=1 {
+                    Attachment "EyesAttachment" CFrame=0,0,0.05|0,90,0
+                    VectorForce "EyesForce" ApplyAtCenterOfMass Attachment0=@"ServerStorage/PlayerModel/PlayerModel/Head/Eyes/EyesAttachment" Force=1,0,0
+                }
+                Attachment "EyesAttachment" CFrame=-0.003,0.219,-0.472|0,90,0
+                PrismaticConstraint "EyesConstraint" Attachment0=@"ServerStorage/PlayerModel/PlayerModel/Head/EyesAttachment" Attachment1=@"ServerStorage/PlayerModel/PlayerModel/Head/Eyes/EyesAttachment" LimitsEnabled LowerLimit=-0.5 MotorMaxForce=10000 ServoMaxForce=10000 Speed=1 UpperLimit=0.3
+                Decal "Face" Texture="rbxassetid://3319263180" TextureContent="rbxassetid://3319263180"
+                Attachment "FaceCenterAttachment" CFrame=0,-0.023,0.051
+                Attachment "FaceFrontAttachment" CFrame=0,-0.023,-0.507
+                Attachment "HairAttachment" CFrame=0,0.658,0.051
+                Attachment "HatAttachment" CFrame=0,0.658,0.051
+                Motor6D "Neck" C0=0,0.838,0.056 C1=0,-0.581,0.051 Part0=@"ServerStorage/PlayerModel/PlayerModel/UpperTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/Head"
+                Attachment "NeckRigAttachment" CFrame=0,-0.581,0.051
+            }
+            NumberValue "Health"
+            Humanoid "Humanoid" AutoJumpEnabled=false AutomaticScalingEnabled=false BreakJointsOnDeath=false HealthDisplayDistance=0 HipHeight=3.46 JumpHeight=8.922 JumpPower=62 NameDisplayDistance=0 RequiresNeck=false RigType=R15 WalkSpeed=15 {
+                Animator "Animator"
+            }
+            Part "HumanoidRootPart" Size=2.478,2.478,1.239 CFrame=-612.101,5.155,48.093 CastShadow=false CollisionGroup="Player" Color=#E5E4DF Material=SmoothPlastic Transparency=1 {
+                Vector3Value "OriginalSize" Value=2,2,1
+                Attachment "RootRigAttachment" CFrame=0,-0.434,0 {
+                    Vector3Value "OriginalPosition" Value=0,-0.35,0
+                }
+            }
+            MeshPart "LeftFoot" Size=0.51,0.526,1.329 CFrame=-612.509,0.717,47.828 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftAnkle" C0=0.017,-0.923,-0.041 C1=0.006,0.247,0.265 Part0=@"ServerStorage/PlayerModel/PlayerModel/LeftLowerLeg" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftFoot"
+                Attachment "LeftAnkleRigAttachment" CFrame=0.006,0.247,0.265
+                Attachment "LeftFootAttachment" CFrame=0.005,-0.263,0.265
+            }
+            MeshPart "LeftHand" Size=0.446,0.914,0.501 CFrame=-613.38,3.874,48.006 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftGripAttachment" CFrame=0.038,0.097,0.087|0,0,90
+                Motor6D "LeftWrist" C0=-0.045,-0.563,-0.032 C1=0.04,0.437,0.087 Part0=@"ServerStorage/PlayerModel/PlayerModel/LeftLowerArm" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftHand"
+                Attachment "LeftWristRigAttachment" CFrame=0.04,0.437,0.087
+            }
+            MeshPart "LeftLowerArm" Size=0.52,1.431,0.426 CFrame=-613.295,4.874,48.125 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftElbow" C0=-0.251,-0.673,-0.051 C1=-0.045,0.582,-0.032 Part0=@"ServerStorage/PlayerModel/PlayerModel/LeftUpperArm" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftLowerArm"
+                Attachment "LeftElbowRigAttachment" CFrame=-0.045,0.582,-0.032
+                Attachment "LeftWristRigAttachment" CFrame=-0.045,-0.563,-0.032
+            }
+            MeshPart "LeftLowerLeg" Size=0.586,2.24,0.863 CFrame=-612.519,1.887,48.134 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftAnkleRigAttachment" CFrame=0.017,-0.923,-0.041
+                Motor6D "LeftKnee" C0=-0.001,-0.781,0.113 C1=0.017,1.061,-0.041 Part0=@"ServerStorage/PlayerModel/PlayerModel/LeftUpperLeg" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftLowerLeg"
+                Attachment "LeftKneeRigAttachment" CFrame=0.017,1.061,-0.041
+            }
+            MeshPart "LeftUpperArm" Size=0.66,1.567,0.733 CFrame=-613.089,6.129,48.144 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftElbowRigAttachment" CFrame=-0.251,-0.673,-0.051
+                Motor6D "LeftShoulder" C0=-0.83,0.597,0.057 C1=0.158,0.59,-0.051 Part0=@"ServerStorage/PlayerModel/PlayerModel/UpperTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftUpperArm"
+                Attachment "LeftShoulderAttachment" CFrame=-0.251,0.919,-0.051|0,0,90
+                Attachment "LeftShoulderRigAttachment" CFrame=0.158,0.59,-0.051
+            }
+            MeshPart "LeftUpperLeg" Size=0.756,2.192,0.975 CFrame=-612.501,3.728,47.98 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "LeftHip" C0=-0.402,-0.13,0.095 C1=-0.001,0.993,0.113 Part0=@"ServerStorage/PlayerModel/PlayerModel/LowerTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/LeftUpperLeg"
+                Attachment "LeftHipRigAttachment" CFrame=-0.001,0.993,0.113
+                Attachment "LeftKneeRigAttachment" CFrame=-0.001,-0.781,0.113
+            }
+            Folder "LocalScripts"
+            MeshPart "LowerTorso" Size=1.461,1.365,1.059 CFrame=-612.101,4.851,47.998 CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "LeftHipRigAttachment" CFrame=-0.402,-0.13,0.095
+                Attachment "RightHipRigAttachment" CFrame=0.402,-0.13,0.095
+                Motor6D "Root" C0=0,-0.434,0 C1=0,-0.13,0.095 Part0=@"ServerStorage/PlayerModel/PlayerModel/HumanoidRootPart" Part1=@"ServerStorage/PlayerModel/PlayerModel/LowerTorso"
+                Attachment "RootRigAttachment" CFrame=0,-0.13,0.095
+                Attachment "WaistBackAttachment" CFrame=0,-0.13,0.51
+                Attachment "WaistCenterAttachment" CFrame=0,-0.13,0.095
+                Attachment "WaistFrontAttachment" CFrame=0,-0.13,-0.32
+                Attachment "WaistRigAttachment" CFrame=0,0.475,0.095
+            }
+            MeshPart "RightFoot" Size=0.51,0.526,1.329 CFrame=-611.692,0.717,47.828 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightAnkle" C0=-0.017,-0.923,-0.041 C1=-0.006,0.247,0.265 Part0=@"ServerStorage/PlayerModel/PlayerModel/RightLowerLeg" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightFoot"
+                Attachment "RightAnkleRigAttachment" CFrame=-0.006,0.247,0.265
+                Attachment "RightFootAttachment" CFrame=-0.005,-0.263,0.265|-0.001,0,0
+            }
+            MeshPart "RightHand" Size=0.446,0.914,0.501 CFrame=-610.821,3.874,48.006 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightGripAttachment" CFrame=-0.038,0.097,0.087|0,0,-90
+                Motor6D "RightWrist" C0=0.045,-0.563,-0.032 C1=-0.04,0.437,0.087 Part0=@"ServerStorage/PlayerModel/PlayerModel/RightLowerArm" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightHand"
+                Attachment "RightWristRigAttachment" CFrame=-0.04,0.437,0.087
+            }
+            MeshPart "RightLowerArm" Size=0.52,1.431,0.426 CFrame=-610.906,4.874,48.125 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightElbow" C0=0.251,-0.673,-0.051 C1=0.045,0.582,-0.032 Part0=@"ServerStorage/PlayerModel/PlayerModel/RightUpperArm" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightLowerArm"
+                Attachment "RightElbowRigAttachment" CFrame=0.045,0.582,-0.032
+                Attachment "RightWristRigAttachment" CFrame=0.045,-0.563,-0.032
+            }
+            MeshPart "RightLowerLeg" Size=0.586,2.24,0.863 CFrame=-611.682,1.887,48.134 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightAnkleRigAttachment" CFrame=-0.017,-0.923,-0.041
+                Motor6D "RightKnee" C0=0.001,-0.781,0.113 C1=-0.017,1.061,-0.041 Part0=@"ServerStorage/PlayerModel/PlayerModel/RightUpperLeg" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightLowerLeg"
+                Attachment "RightKneeRigAttachment" CFrame=-0.017,1.061,-0.041
+            }
+            MeshPart "RightUpperArm" Size=0.66,1.567,0.733 CFrame=-611.112,6.129,48.144 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "RightElbowRigAttachment" CFrame=0.251,-0.673,-0.051
+                Motor6D "RightShoulder" C0=0.83,0.597,0.056 C1=-0.158,0.59,-0.051 Part0=@"ServerStorage/PlayerModel/PlayerModel/UpperTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightUpperArm"
+                Attachment "RightShoulderAttachment" CFrame=0.251,0.919,-0.051|0,0,-90
+                Attachment "RightShoulderRigAttachment" CFrame=-0.158,0.59,-0.051
+            }
+            MeshPart "RightUpperLeg" Size=0.756,2.192,0.975 CFrame=-611.7,3.728,47.98 CanCollide=false CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Motor6D "RightHip" C0=0.402,-0.13,0.095 C1=0.001,0.993,0.113 Part0=@"ServerStorage/PlayerModel/PlayerModel/LowerTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/RightUpperLeg"
+                Attachment "RightHipRigAttachment" CFrame=0.001,0.993,0.113
+                Attachment "RightKneeRigAttachment" CFrame=0.001,-0.781,0.113
+            }
+            MeshPart "UpperTorso" Size=1.823,2.013,1.179 CFrame=-612.101,6.122,48.037 CollisionGroup="Player" Color=#FFFFFF Material=Wood RenderFidelity=Precise {
+                StringValue "AvatarPartScaleType" Value="ProportionsNormal"
+                Attachment "BodyBackAttachment" CFrame=0,-0.183,0.472
+                Attachment "BodyFrontAttachment" CFrame=0,-0.183,-0.359
+                Attachment "LeftCollarAttachment" CFrame=-0.83,0.838,0.056
+                Attachment "LeftShoulderRigAttachment" CFrame=-0.83,0.597,0.057
+                Attachment "NeckAttachment" CFrame=0,0.838,0.056
+                Attachment "NeckRigAttachment" CFrame=0,0.838,0.056
+                Attachment "RightCollarAttachment" CFrame=0.83,0.838,0.056
+                Attachment "RightShoulderRigAttachment" CFrame=0.83,0.597,0.056
+                Motor6D "Waist" C0=0,0.475,0.095 C1=0,-0.796,0.056 Part0=@"ServerStorage/PlayerModel/PlayerModel/LowerTorso" Part1=@"ServerStorage/PlayerModel/PlayerModel/UpperTorso"
+                Attachment "WaistRigAttachment" CFrame=0,-0.796,0.056
+            }
+        }
+    }
+    Model "RBX_ANIMSAVES" {
+        ObjectValue "SIZEREF" @file="Scene/ServerStorage/RBX_ANIMSAVES/SIZEREF.bridge" Value=@"Workspace/SIZEREF (DONT DELETE (HAS ANIMATIONS))"
+        ObjectValue "SIZEREF" Value=@"Workspace/SIZEREF"
+    }
+}

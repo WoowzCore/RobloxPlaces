@@ -1,0 +1,29 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled=false CameraMaxZoomDistance=0.5 CameraMinZoomDistance=0.5 CameraMode=LockFirstPerson CharacterBreakJointsOnDeath CharacterJumpHeight=1.5 CharacterJumpPower=10.961 CharacterMaxSlopeAngle=39 CharacterUseJumpPower=false CharacterWalkSpeed=13 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=Classic DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=Classic DevTouchMovementMode=UserChoice EnableMouseLockOption=false HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=0 UserEmotesEnabled=false {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        LocalScript "Animations" @src="Scripts/StarterPlayer/StarterCharacterScripts/Animations.luau"
+        LocalScript "Camera" @src="Scripts/StarterPlayer/StarterCharacterScripts/Camera.luau"
+        LocalScript "Mouse" @src="Scripts/StarterPlayer/StarterCharacterScripts/Mouse.luau"
+        LocalScript "Movement" @src="Scripts/StarterPlayer/StarterCharacterScripts/Movement.luau"
+        LocalScript "Render" @code=<<<
+            local uis = game:GetService("UserInputService")
+            local plrdata = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerData)
+            local s = require(plrdata.Script)
+
+            wait(1)
+
+            plrdata.Character.Head.Transparency = 1
+            plrdata.Character.Head.Face.Transparency = 1
+        >>>
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        ModuleScript "PlayerData" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerData.luau"
+        LocalScript "PlayerReplicated" @code=<<<
+            wait(1)
+            local plrdata = require(script.Parent.PlayerData)
+            local rs = game:GetService("ReplicatedStorage")
+
+            rs.InstallPlayerData.OnClientEvent:Connect(plrdata.Install)
+        >>>
+        ModuleScript "PlayerScript" @src="Scripts/StarterPlayer/StarterPlayerScripts/PlayerScript.luau"
+    }
+}

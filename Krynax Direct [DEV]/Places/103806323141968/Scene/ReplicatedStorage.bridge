@@ -1,0 +1,21 @@
+ReplicatedStorage "ReplicatedStorage" {
+    Folder "TS" {
+        ModuleScript "module" @src="Scripts/ReplicatedStorage/TS/module.luau"
+    }
+    Folder "rbxts_include" {
+        ModuleScript "Promise" @src="Scripts/ReplicatedStorage/rbxts_include/Promise.luau"
+        ModuleScript "RuntimeLib" @src="Scripts/ReplicatedStorage/rbxts_include/RuntimeLib.luau"
+        Folder "node_modules" {
+            Folder "@rbxts" {
+                Folder "compiler-types" {
+                    Folder "types"
+                }
+                Folder "types" {
+                    Folder "include" {
+                        Folder "generated"
+                    }
+                }
+            }
+        }
+    }
+}

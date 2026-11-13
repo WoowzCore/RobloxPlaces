@@ -1,0 +1,325 @@
+ServerStorage "ServerStorage" {
+    Folder "MultiplyPlacer" {
+        Folder "Extra Backrooms" {
+            Folder "Map Hints" {
+                Part "AmbientSound" Size=4,1,2 Anchored BottomSurface=Smooth CFrame=-228.738,-54.501,234.984 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                    Sound "Loop" AudioContent="rbxassetid://9126176185" Looped PlaybackSpeed=0.25 Playing RollOffMaxDistance=140 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9126176185" TimePosition=4
+                }
+                Part "EntitySpawn" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=91,4.959,-114 CanCollide=false CanQuery=false CanTouch=false Color=#0003A5 Material=Neon TopSurface=Smooth {
+                    IntValue "Randomization" Value=15
+                    StringValue "Type" Value="Level 0 Dark"
+                }
+                Part "Looting" Size=0.5,0.5,0.5 Anchored BottomSurface=Smooth CFrame=-191.353,-17.277,464.963|-180,-87.757,-180 CanQuery=false CanTouch=false CastShadow=false Color=#FF0000 Material=Neon TopSurface=Smooth {
+                    ProximityPrompt "Interact" ActionText="Looting" AutoLocalize=false HoldDuration=15 {
+                        Sound "Sound" AudioContent="rbxassetid://8490359201" RollOffMaxDistance=12 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://8490359201" Volume=1
+                        StringValue "Type" Value="Car"
+                    }
+                }
+                Part "Part" Size=13,15,2 Anchored BottomSurface=Smooth CFrame=-314.994,6.385,208.398 CastShadow=false Material=Concrete TopSurface=Smooth Transparency=0.6 {
+                    NumberValue "ChanceDelete" Value=50
+                }
+            }
+        }
+        PackageLink "PackageLink"
+        Folder "ReplicatedStorage" {
+            RemoteEvent "ADMINchangeLighting"
+            RemoteFunction "ChangeArmsPosition"
+            RemoteEvent "ChangeCharacter"
+            RemoteFunction "ChangeHeadRotation"
+            RemoteEvent "ChangeStat"
+            RemoteEvent "DetectHurt"
+            RemoteEvent "DropTool"
+            Folder "Entities" {
+                Model "Entity 10" PrimaryPart=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/HumanoidRootPart" {
+                    Script "AI" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/AI.luau" Disabled
+                    Script "Animate" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Animate.luau" {
+                        NumberValue "ScaleDampeningPercent" Value=0.4
+                        StringValue "climb" {
+                            Animation "ClimbAnim" AnimationContent="http://www.roblox.com/asset/?id=180436334" AnimationId="http://www.roblox.com/asset/?id=180436334"
+                        }
+                        StringValue "fall" {
+                            Animation "FallAnim" AnimationContent="http://www.roblox.com/asset/?id=180436148" AnimationId="http://www.roblox.com/asset/?id=180436148"
+                        }
+                        StringValue "idle" {
+                            Animation "Animation1" AnimationContent="http://www.roblox.com/asset/?id=180435571" AnimationId="http://www.roblox.com/asset/?id=180435571" {
+                                NumberValue "Weight" Value=9
+                            }
+                            Animation "Animation2" AnimationContent="http://www.roblox.com/asset/?id=180435792" AnimationId="http://www.roblox.com/asset/?id=180435792" {
+                                NumberValue "Weight" Value=1
+                            }
+                        }
+                        StringValue "jump" {
+                            Animation "JumpAnim" AnimationContent="http://www.roblox.com/asset/?id=125750702" AnimationId="http://www.roblox.com/asset/?id=125750702"
+                        }
+                        StringValue "run" {
+                            Animation "RunAnim" AnimationContent="http://www.roblox.com/asset/?id=180426354" AnimationId="http://www.roblox.com/asset/?id=180426354"
+                        }
+                        StringValue "sit" {
+                            Animation "SitAnim" AnimationContent="http://www.roblox.com/asset/?id=178130996" AnimationId="http://www.roblox.com/asset/?id=178130996"
+                        }
+                        StringValue "toolnone" {
+                            Animation "ToolNoneAnim" AnimationContent="http://www.roblox.com/asset/?id=182393478" AnimationId="http://www.roblox.com/asset/?id=182393478"
+                        }
+                        StringValue "walk" {
+                            Animation "WalkAnim" AnimationContent="http://www.roblox.com/asset/?id=180426354" AnimationId="http://www.roblox.com/asset/?id=180426354"
+                        }
+                    }
+                    MeshPart "Head" Size=1.227,1.222,1.209 CFrame=-198.884,32.385,57.931 CollisionFidelity=Default Color=#C5AA75 Material=Wood RenderFidelity=Precise {
+                        Attachment "FaceCenterAttachment"
+                        Attachment "FaceCenterAttachment"
+                        Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+                        Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+                        Attachment "HairAttachment" CFrame=0,0.6,0
+                        Attachment "HairAttachment" CFrame=0,0.6,0
+                        Attachment "HatAttachment" CFrame=0,0.6,0
+                        Attachment "HatAttachment" CFrame=0,0.6,0
+                        Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+                    }
+                    Humanoid "Humanoid" BreakJointsOnDeath=false DisplayDistanceType=None Health=999999995904 HealthDisplayDistance=0 HealthDisplayType=AlwaysOff MaxHealth=999999995904 MaxSlopeAngle=65 NameDisplayDistance=0
+                    Part "HumanoidRootPart" Size=2,2,1 BottomSurface=Smooth CFrame=-198.884,30.885,57.931 TopSurface=Smooth Transparency=1 {
+                        Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/HumanoidRootPart" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso"
+                    }
+                    Part "Left Arm" Size=1,2,1 CFrame=-200.384,30.885,57.931 CanCollide=false Color=#C5AA75 Material=Wood {
+                        Attachment "LeftShoulderAttachment" CFrame=0,1,0
+                    }
+                    Part "Left Leg" Size=1,3,1 BottomSurface=Smooth CFrame=-199.384,28.385,57.931 CanCollide=false Color=#C5AA75 Material=Wood
+                    BoolValue "NPC" Value
+                    Part "Right Arm" Size=1,2,1 CFrame=-197.384,30.885,57.931 CanCollide=false Color=#C5AA75 Material=Wood {
+                        Attachment "RightShoulderAttachment" CFrame=0,1,0
+                    }
+                    Part "Right Leg" Size=1,3,1 BottomSurface=Smooth CFrame=-198.384,28.385,57.931 CanCollide=false Color=#C5AA75 Material=Wood
+                    Part "Torso" Size=2,2,1 CFrame=-198.884,30.885,57.931 Color=#C5AA75 LeftSurface=Weld Material=Wood RightSurface=Weld {
+                        Attachment "BodyBackAttachment" CFrame=0,0,0.5
+                        Attachment "BodyFrontAttachment" CFrame=0,0,-0.5
+                        Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Left Leg"
+                        Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Left Arm"
+                        Attachment "LeftCollarAttachment" CFrame=-1,1,0
+                        Motor6D "Neck" C0=0,1,0|-90,0,180 C1=0,-0.5,0|-90,0,-180 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Head"
+                        Attachment "NeckAttachment" CFrame=0,1,0
+                        Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1.5,0|0,90,0 MaxVelocity=0.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Right Leg"
+                        Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Torso" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 10/Right Arm"
+                        Attachment "RightCollarAttachment" CFrame=1,1,0
+                        Attachment "WaistBackAttachment" CFrame=0,-1,0.5
+                        Attachment "WaistCenterAttachment" CFrame=0,-1,0
+                        Attachment "WaistFrontAttachment" CFrame=0,-1,-0.5
+                    }
+                }
+                Part "Entity 3" Size=6,8,6 Anchored BottomSurface=Smooth CFrame=33.429,4.459,11.555 CanCollide=false CanQuery=false Color=#0800FF Massless Material=Neon TopSurface=Smooth Transparency=1 {
+                    BillboardGui "3DImage" Size=12,0,12,0 Active AutoLocalize=false ClipsDescendants ZIndexBehavior=Sibling {
+                        ImageLabel "Face" Position=0.1,0,0.05,0 Size=0.8,0,0.8,0 AutoLocalize=false AutomaticSize=X BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://14589888141" ImageContent="rbxassetid://14589888141"
+                    }
+                    Script "AI" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Entities/Entity 3/AI.luau" Disabled
+                    Sound "Attack" AudioContent="rbxassetid://14588517681" RollOffMaxDistance=60 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://14588517681" Volume=2
+                    ParticleEmitter "Dark" Size=0:3,1:3 Drag=1 EmissionDirection=Bottom Lifetime=4,4 LightInfluence=1 RotSpeed=-50,50 Rotation=-180,180 Speed=0.01,2 SpreadAngle=-0.1,0.1 Texture="rbxassetid://14638383139" TextureContent="rbxassetid://14638383139" Transparency=0:1,0.018:0.538,0.099:0.113,0.499:0,0.805:0.406,1:1 ZOffset=-1
+                    BoolValue "Invisible"
+                    Sound "Loop" AudioContent="rbxassetid://2162238374" Looped Playing RollOffMaxDistance=50 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://2162238374" Volume=0.25
+                    Sound "LoopAttack" AudioContent="rbxassetid://3069932807" Looped PlaybackSpeed=2 RollOffMaxDistance=50 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://3069932807" Volume=2
+                }
+            }
+            RemoteFunction "GetAdmins"
+            RemoteFunction "GetGraphic"
+            RemoteFunction "GetGui"
+            RemoteFunction "GetInventory"
+            RemoteFunction "GetSetting"
+            RemoteFunction "GetSurvivalStat"
+            Folder "Items" {
+                Tool "Almond Water" CanBeDropped=false Grip=0,-0.5,0.1 {
+                    MeshPart "Base" Size=0.676,1.104,0.676 CFrame=64.346,1.089,43.318 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#7C7463 DoubleSided Massless Material=Metal RenderFidelity=Precise {
+                        Decal "Decal" Texture="rbxassetid://14556923514" TextureContent="rbxassetid://14556923514"
+                        Decal "Decal" Face=Back Texture="rbxassetid://14556923514" TextureContent="rbxassetid://14556923514"
+                    }
+                    MeshPart "Bottom" Size=0.669,0.077,0.669 CFrame=64.346,0.498,43.318 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#545454 DoubleSided Massless Material=Metal RenderFidelity=Precise
+                    MeshPart "Circle" Size=0.552,0.025,0.552 CFrame=64.346,1.652,43.318 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#545454 DoubleSided Massless Material=Metal RenderFidelity=Precise
+                    Sound "Drink" AudioContent="rbxassetid://8260212770" RollOffMaxDistance=6 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://8260212770"
+                    BoolValue "Empty"
+                    Part "Handle" Size=0.684,1.206,0.7 BottomSurface=Smooth CFrame=64.345,1.062,43.322 CanTouch=false Massless TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Circle"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Bottom"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Lid"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Opener"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Base"
+                    }
+                    MeshPart "Lid" Size=0.281,0.001,0.199 CFrame=64.349,1.642,43.43 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#4D4D4D DoubleSided Massless Material=Metal RenderFidelity=Precise
+                    Sound "Open" AudioContent="rbxassetid://7868423042" RollOffMaxDistance=6 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://7868423042"
+                    MeshPart "Opener" Size=0.188,0.003,0.293 CFrame=64.341,1.644,43.264 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#666666 DoubleSided Massless Material=Metal RenderFidelity=Precise
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Almond Water/Script.luau"
+                }
+                Tool "Candy" CanBeDropped=false Grip=0,0,-0.5|90,0,0 {
+                    MeshPart "Base" Size=0.307,1.068,0.365 CFrame=79.987,0.724,43.3|-90,0,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#FFEA00 DoubleSided Massless Material=Metal RenderFidelity=Precise TextureContent="rbxassetid://2682037631" TextureID="rbxassetid://2682037631"
+                    Part "Handle" Size=0.281,0.304,0.577 BottomSurface=Smooth CFrame=79.989,0.723,43.307 CanTouch=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Candy/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Candy/Base"
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Candy/Script.luau"
+                }
+                Tool "Chips" CanBeDropped=false Grip=0.3,-0.1,0|0,90,0 {
+                    MeshPart "Base" Size=1.429,0.866,1.995 CFrame=64.346,1.664,43.3|-90,0,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#FFEA00 DoubleSided Massless Material=Metal RenderFidelity=Precise {
+                        Decal "Decal" Face=Top Texture="rbxassetid://14623405036" TextureContent="rbxassetid://14623405036"
+                        Decal "Decal" Face=Bottom Texture="rbxassetid://14623405036" TextureContent="rbxassetid://14623405036"
+                    }
+                    Part "Handle" Size=1.33,1.918,0.577 BottomSurface=Smooth CFrame=64.33,1.654,43.307 CanTouch=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chips/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chips/Base"
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chips/Script.luau"
+                }
+                Tool "Chocolate Bar" CanBeDropped=false Grip=0.4,0,-0.05|0,0,90 {
+                    MeshPart "Base" Size=1.509,0.42,0.217 CFrame=88.268,2.181,48.988|-90,0,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#432C1C DoubleSided Massless Material=Metal RenderFidelity=Precise {
+                        Decal "Decal" Face=Back Texture="rbxassetid://14648532238" TextureContent="rbxassetid://14648532238"
+                        Decal "Decal" Texture="rbxassetid://14648623669" TextureContent="rbxassetid://14648623669"
+                    }
+                    Part "Handle" Size=1.519,0.219,0.406 BottomSurface=Smooth CFrame=88.246,2.182,48.977 CanTouch=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chocolate Bar/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chocolate Bar/Base"
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Chocolate Bar/Script.luau"
+                }
+                Tool "Flashlight" CanBeDropped=false Grip=0.1,-0.1,0.1 {
+                    Part "Front" Size=0.275,0.326,0.05 BottomSurface=Smooth CFrame=-144.388,-327.689,-135.102|-180,0,0 CanCollide=false CanQuery=false CanTouch=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                        SurfaceLight "SurfaceLight" Angle=99 Brightness=13.5 Enabled=false Face=Back Range=0.1
+                    }
+                    MeshPart "Handle" Size=0.522,0.522,2.2 CFrame=-144.388,-327.689,-136.172|-180,0,0 CanQuery=false CanTouch=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=186494927" TextureID="http://www.roblox.com/asset/?id=186494927" {
+                        Weld "Dust" C1=0,0,4 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/dust"
+                        Weld "Front" C1=0,0,1.07 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Front"
+                        Weld "Light" C1=0,0,0.6|-180,0,0 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Light"
+                        Sound "Off" AudioContent="rbxassetid://9120101530" RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120101530"
+                        Sound "On" AudioContent="rbxassetid://9120100456" RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120100456"
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/LightTrigger"
+                    }
+                    Part "Light" Size=0.05,0.05,0.05 BottomSurface=Smooth CFrame=-144.388,-327.689,-136.772 CanCollide=false CanQuery=false CanTouch=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                        SpotLight "Shadow" Angle=108 Brightness=2.46 Enabled=false Face=Back Range=60 Shadows
+                        SpotLight "Shadow2" Angle=27 Brightness=1.02 Color=#FFFA72 Enabled=false Face=Back Range=60 Shadows
+                    }
+                    Part "LightTrigger" Size=26.959,16.727,48.821 BottomSurface=Smooth CFrame=-144.8,-327.689,-107.672|-180,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#A59200 Massless Material=Neon TopSurface=Smooth Transparency=1
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Flashlight/Script.luau"
+                    Part "dust" Size=1.959,1.727,3.821 BottomSurface=Smooth CFrame=-144.388,-327.689,-132.172|-180,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth Transparency=1 {
+                        ParticleEmitter "P" Size=0:1.5:1,1:1.5:0.875 Acceleration=0,-0.05,0 Brightness=2.31 Color=0:#E7FFFF,1:#E7FFFF EmissionDirection=Bottom Enabled=false Lifetime=5,5 LightEmission=1 RotSpeed=0,5 Rotation=-180,180 ShapeInOut=InAndOut Speed=0.4,0.4 SpreadAngle=90.9,90.9 Texture="rbxassetid://14522580480" TextureContent="rbxassetid://14522580480" Transparency=0:1,0.501:0.863,1:1 ZOffset=3
+                    }
+                }
+                Tool "Knife" CanBeDropped=false Grip=-1,-0.1,0|0,-90,0 {
+                    Part "Handle" Size=2.167,0.42,0.116 BottomSurface=Smooth CFrame=86.486,0.663,8.304 CanTouch=false Massless TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        Weld "Weld" C1=0,0,0|0,90,0 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Knife/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Knife/Knife"
+                    }
+                    MeshPart "Knife" Size=0.055,0.409,2.672 CFrame=86.486,0.663,8.304|0,-90,0 CanCollide=false CanQuery=false CanTouch=false Color=#CAD3D5 CustomPhysicalProperties=0.01,0.4,0.25,1,1 Material=Metal RenderFidelity=Precise
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Knife/Script.luau"
+                }
+                Tool "Old Flashlight" CanBeDropped=false {
+                    Part "Front" Size=0.242,0.287,0.044 BottomSurface=Smooth CFrame=80.434,15.611,43.747|-180,0,0 CanCollide=false CanQuery=false CanTouch=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                        SurfaceLight "SurfaceLight" Angle=99 Brightness=13.5 Color=#FFDA83 Enabled=false Face=Back Range=0.1
+                    }
+                    MeshPart "Handle" Size=0.696,0.695,2.201 CFrame=80.434,15.611,42.647|-180,0,0 CanQuery=false CanTouch=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.3,0.5,1,1 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset?id=115984370" TextureID="http://www.roblox.com/asset?id=115984370" {
+                        Weld "Dust" C1=0,0,3.5 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/dust"
+                        Weld "Front" C1=0,0,1.1 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Front"
+                        Weld "Light" C1=0,0,0.3|-180,0,0 Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Light"
+                        Sound "Off" AudioContent="rbxassetid://9120101530" RollOffMaxDistance=20.982 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120101530"
+                        Sound "On" AudioContent="rbxassetid://9120100456" RollOffMaxDistance=20.982 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120100456"
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/LightTrigger"
+                    }
+                    Part "Light" Size=0.044,0.044,0.044 BottomSurface=Smooth CFrame=80.434,15.611,42.347 CanCollide=false CanQuery=false CanTouch=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                        SpotLight "Shadow" Angle=81 Brightness=2 Color=#FFDA83 Enabled=false Face=Back Range=60 Shadows
+                    }
+                    Part "LightTrigger" Size=26.959,16.727,23.81 BottomSurface=Smooth CFrame=80.434,15.611,58.141|-180,0,0 CanCollide=false CanQuery=false CastShadow=false Color=#A59200 Massless Material=Neon TopSurface=Smooth Transparency=1
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Old Flashlight/Script.luau"
+                    Part "dust" Size=1.959,1.727,3.821 BottomSurface=Smooth CFrame=80.434,15.611,46.147|-180,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth Transparency=1 {
+                        ParticleEmitter "P" Size=0:1.5:1,1:1.5:0.875 Acceleration=0,-0.05,0 Color=0:#FFD87E,1:#FFD87E EmissionDirection=Bottom Enabled=false Lifetime=5,5 LightEmission=1 RotSpeed=0,5 Rotation=-180,180 ShapeInOut=InAndOut Speed=0.4,0.4 SpreadAngle=90.9,90.9 Texture="rbxassetid://14522580480" TextureContent="rbxassetid://14522580480" Transparency=0:1,0.501:0.863,1:1 ZOffset=3
+                    }
+                }
+                Tool "Pill" CanBeDropped=false Grip=0,-0.6,0 {
+                    StringValue "EffectBottom" Value="unwater"
+                    StringValue "EffectTop" Value="heal"
+                    StringValue "Effects" Value="water food unwater unfood unmental mental stamina hurt heal poison unpoison kill nil all unall"
+                    Part "Handle" Size=0.106,0.253,0.127 BottomSurface=Smooth CFrame=88.846,1.745,41.76 CanTouch=false CustomPhysicalProperties=0.01,0.3,0.5,1,1 TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Pill/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Pill/PillTopPart"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Pill/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Pill/PillBottomPart"
+                    }
+                    Part "PillBottomPart" Size=0.131,0.177,0.355 BottomSurface=Smooth CFrame=88.844,1.693,41.768 CanCollide=false CanQuery=false CanTouch=false Color=#FF0000 Massless Material=Concrete TopSurface=Smooth {
+                        SpecialMesh "Mesh"
+                    }
+                    Part "PillTopPart" Size=0.134,0.18,0.361 BottomSurface=Smooth CFrame=88.844,1.79,41.768 CanCollide=false CanQuery=false CanTouch=false Color=#0000FF Massless Material=Concrete TopSurface=Smooth {
+                        SpecialMesh "Mesh"
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Pill/Script.luau"
+                }
+                Tool "UV Flashlight" CanBeDropped=false Grip=0.1,-0.1,0.1 {
+                    Part "Front" Size=0.275,0.326,0.05 BottomSurface=Smooth CFrame=53.846,2.611,43.291|-180,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth Transparency=1 {
+                        SurfaceLight "SurfaceLight" Angle=99 Brightness=40 Color=#B846FF Enabled=false Face=Back Range=0.1
+                    }
+                    MeshPart "Handle" Size=0.448,0.448,2.307 CFrame=53.846,2.607,42.048|-180,0,0 CanQuery=false CanTouch=false CollisionFidelity=Default CustomPhysicalProperties=0.01,0.3,0.5,1,1 RenderFidelity=Precise TextureContent="http://www.roblox.com/asset/?id=186494927" TextureID="http://www.roblox.com/asset/?id=186494927" {
+                        Sound "Off" AudioContent="rbxassetid://9120101530" RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120101530"
+                        Sound "On" AudioContent="rbxassetid://9120100456" RollOffMaxDistance=30 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://9120100456"
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://11330932710" ColorMapContent="rbxassetid://11330932710" MetalnessMap="rbxassetid://11330932531" MetalnessMapContent="rbxassetid://11330932531" NormalMap="rbxassetid://11330932665" NormalMapContent="rbxassetid://11330932665" RoughnessMap="rbxassetid://11330932636" RoughnessMapContent="rbxassetid://11330932636"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Front"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Light"
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/dust"
+                    }
+                    Part "Light" Size=0.05,0.05,0.05 BottomSurface=Smooth CFrame=53.846,2.611,41.337 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Color=#F8F8F8 Massless Material=SmoothPlastic TopSurface=Smooth {
+                        SpotLight "Shadow" Angle=108 Brightness=10.32 Color=#B846FF Enabled=false Face=Back Range=60 Shadows
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/UV Flashlight/Script.luau"
+                    Part "dust" Size=1.959,1.727,3.821 BottomSurface=Smooth CFrame=53.846,2.611,45.812|-180,0,0 CanCollide=false CanQuery=false CanTouch=false CastShadow=false Massless TopSurface=Smooth Transparency=1 {
+                        ParticleEmitter "P" Size=0:1.5:1,1:1.5:0.875 Acceleration=0,-0.05,0 Brightness=2.31 Color=0:#9500FF,1:#9500FF EmissionDirection=Bottom Enabled=false Lifetime=5,5 LightEmission=1 RotSpeed=0,5 Rotation=-180,180 ShapeInOut=InAndOut Speed=0.4,0.4 SpreadAngle=90.9,90.9 Texture="rbxassetid://14522580480" TextureContent="rbxassetid://14522580480" Transparency=0:1,0.501:0.863,1:1 ZOffset=3
+                    }
+                }
+                Tool "Water" CanBeDropped=false Grip=0,-0.5,0.1 {
+                    MeshPart "Base" Size=0.691,1.951,0.691 CFrame=65.279,1.39,43.318|0,42.106,0 CanCollide=false CanQuery=false CanTouch=false CollisionFidelity=Default Color=#7C7463 DoubleSided Massless Material=Metal RenderFidelity=Precise {
+                        SurfaceAppearance "SurfaceAppearance" ColorMap="rbxassetid://11443827023" ColorMapContent="rbxassetid://11443827023" MetalnessMap="rbxassetid://11443827029" MetalnessMapContent="rbxassetid://11443827029" NormalMap="rbxassetid://11443827426" NormalMapContent="rbxassetid://11443827426" RoughnessMap="rbxassetid://11443827014" RoughnessMapContent="rbxassetid://11443827014"
+                    }
+                    Sound "Drink" AudioContent="rbxassetid://8260212770" RollOffMaxDistance=6 RollOffMinDistance=0 RollOffMode=Linear SoundGroup=@"ServerStorage/MultiplyPlacer/SoundService/Basa" SoundId="rbxassetid://8260212770"
+                    BoolValue "Empty"
+                    Part "Handle" Size=0.518,1.894,0.53 BottomSurface=Smooth CFrame=65.278,1.406,43.322 CanTouch=false Massless TopSurface=Smooth Transparency=1 {
+                        ProximityPrompt "Pickup" ActionText="Pickup" AutoLocalize=false HoldDuration=1 MaxActivationDistance=5
+                        WeldConstraint "WeldConstraint" Part0=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Water/Handle" Part1=@"ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Water/Base"
+                    }
+                    Script "Script" @src="Scripts/ServerStorage/MultiplyPlacer/ReplicatedStorage/Items/Water/Script.luau"
+                }
+            }
+            RemoteEvent "PlaySound"
+            RemoteEvent "SetSurvivalStat"
+            RemoteEvent "UpdateIgnoreListCamera"
+        }
+        Folder "ServerScriptService" {
+            Script "Admin" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Admin.luau"
+            Folder "Data" {
+                Script "DeletePartChance" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Data/DeletePartChance.luau" Disabled
+                Script "EntitySpawn" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Data/EntitySpawn.luau" Disabled
+                Script "Interact" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Data/Interact.luau" Disabled
+                Script "Looting" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Data/Looting.luau" Disabled
+                Script "ToolPhysic" Disabled @code=<<<
+                    local handle = script.Parent
+                    local sound = script:FindFirstChild("PhysicSound")
+
+                    --[[handle.Touched:Connect(function(hit)
+                    	sound:Play()
+                    end)]]
+                >>>
+            }
+            ModuleScript "EBLibbary" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/EBLibbary.luau"
+            Script "LoadingDataScripts" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/LoadingDataScripts.luau"
+            Script "PES" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/PES.luau"
+            Script "PlayersCollision" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/PlayersCollision.luau"
+            Script "ScarySounds" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/ScarySounds.luau"
+            Script "ServerFunctions" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/ServerFunctions.luau"
+            Script "Start" @src="Scripts/ServerStorage/MultiplyPlacer/ServerScriptService/Start.luau"
+        }
+        Folder "ServerStorage" {
+            Folder "Admins" {
+                StringValue "Davi_Gamer3" Value="156739689"
+                StringValue "Woowz14" Value="1734081766"
+            }
+        }
+        Folder "SoundService" {
+            SoundGroup "Basa" Volume=1 {
+                EchoSoundEffect "LowMental" Enabled=false Feedback=0.1
+            }
+        }
+        Folder "Teams" {
+            Team "Survivalists" TeamColor="Cool yellow"
+        }
+    }
+}

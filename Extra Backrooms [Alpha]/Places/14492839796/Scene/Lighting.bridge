@@ -1,0 +1,6 @@
+Lighting "Lighting" Ambient=#FFFFFF Brightness=0 ColorShift_Bottom=#000000 ColorShift_Top=#000000 EnvironmentDiffuseScale=0 EnvironmentSpecularScale=0 ExposureCompensation=-0.5 FogColor=#C0C0C0 FogEnd=100000 FogStart=0 GeographicLatitude=48.86 GlobalShadows=false LightingStyle=Realistic OutdoorAmbient=#1A1C1E PrioritizeLightingQuality ShadowSoftness=0 TimeOfDay="01:09:48" $RBX_LightingTechnologyUnifiedMigration $RBX_OriginalTechnologyOnFileLoad=4 $UseCurrentLighting=false {
+    Atmosphere "Atmosphere" Color=#000000 Decay=#000000 Density=0 Offset=0.25
+    BloomEffect "Bloom" Size=56 Intensity=0.5 Threshold=1
+    DepthOfFieldEffect "DepthOfField" Enabled=false FarIntensity=0.363 FocusDistance=36.26 InFocusRadius=32.165 NearIntensity=0.281
+    Sky "Sky" MoonAngularSize=0 StarCount=0 SunAngularSize=0
+}

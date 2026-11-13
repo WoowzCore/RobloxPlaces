@@ -1,0 +1,112 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=LockFirstPerson CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50.145 CharacterMaxSlopeAngle=89 CharacterUseJumpPower=false CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        LocalScript "LevelGraphics" @src="Scripts/StarterPlayer/StarterCharacterScripts/LevelGraphics.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        LocalScript "MultiplyPlacer" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacer.luau" {
+            PackageLink "PackageLink"
+        }
+        Folder "MultiplyPlacerClient" {
+            PackageLink "PackageLink"
+            Folder "StarterGui" {
+                ScreenGui "Base" AutoLocalize=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+                    TextLabel "AlphaTest" Position=0.5,0,0,0 Size=0.2,0,0.04,0 AnchorPoint=0.5,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Warning! Place is in a very early alpha test!" TextColor3=#D0AD44 TextScaled TextSize=20 TextStrokeTransparency=0.86 TextWrapped
+                    TextLabel "QualityWarning" Position=0.5,0,0.065,0 Size=0.3,0,0.02,0 AnchorPoint=0.5,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Low Quality! Please make the graphics above the 7th value! For the best expirence!" TextColor3=#FF0000 TextSize=19 TextStrokeTransparency=0.69 TextTransparency=0.51 TextWrapped {
+                        LocalScript "QWARNING" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/Base/QualityWarning/QWARNING.luau"
+                    }
+                    TextLabel "Version" Position=0.5,0,0.01,0 Size=0,93,0.075,0 AnchorPoint=0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="Loading..." TextColor3=#FFFFFF TextSize=18 TextStrokeTransparency=0.48 {
+                        LocalScript "VERSION" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/Base/Version/VERSION.luau"
+                    }
+                }
+                ScreenGui "CameraOverlay" AutoLocalize=false DisplayOrder=-1 Enabled=false ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+                    ImageLabel "Cam" Size=1,0,1,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://14637357629" ImageContent="rbxassetid://14637357629" ScaleType=Tile ZIndex=-100
+                    ImageLabel "Noise" Size=1,0,1,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://14589950476" ImageContent="rbxassetid://14589950476" ImageTransparency=0.93 ScaleType=Tile ZIndex=-100 {
+                        LocalScript "NOISE" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/CameraOverlay/Noise/NOISE.luau"
+                    }
+                }
+                ScreenGui "Death" AutoLocalize=false DisplayOrder=1001 ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+                    ImageLabel "Death" Size=1,0,1,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 Image="rbxassetid://17827627784" ImageContent="rbxassetid://17827627784" ImageTransparency=1 ScaleType=Tile ZIndex=100 {
+                        LocalScript "DEATH" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/Death/Death/DEATH.luau"
+                    }
+                }
+                ScreenGui "Debug" AutoLocalize=false DisplayOrder=1000 ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+                    TextLabel "FPS" Position=0.795,0,0.66,0 Size=0.03,0,0.03,0 AnchorPoint=0.5,0.5 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="SourceSansPro|Regular|Normal" Text="0 FPS" TextColor3=#FFFFFF TextSize=27 TextStrokeTransparency=0.48 {
+                        LocalScript "FPS" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/Debug/FPS/FPS.luau"
+                    }
+                    Frame "Stats Background" Position=0.87,0,0.98,0 Size=0.15,0,0.3,0 AnchorPoint=1,1 BackgroundColor3=#000000 BackgroundTransparency=0.7 BorderColor3=#000000 BorderSizePixel=0 ZIndex=-30 {
+                        Frame "List" Position=0.05,0,0.05,0 Size=0.9,0,0.9,0 BackgroundColor3=#000000 BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 ZIndex=-30 {
+                            TextLabel "Food" Position=0.822,0,0.614,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" LayoutOrder=3 Text="#FOOD#" TextColor3=#FFB078 TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                            TextLabel "Health" Position=0.822,0,0.706,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" Text="#HEALTH#" TextColor3=#FF5C5C TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                            TextLabel "Mental" Position=0.822,0,0.755,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" LayoutOrder=5 Text="#MENTAL#" TextColor3=#FFABF0 TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                            TextLabel "Oxygen" Position=0.822,0,0.804,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" LayoutOrder=4 Text="#OXYGEN#" TextColor3=#B2FFFF TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                            TextLabel "Stamina" Position=0.822,0,0.66,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" LayoutOrder=1 Text="#STAMINA#" TextColor3=#FFFC9B TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                            UIListLayout "UIListLayout" SortOrder=LayoutOrder
+                            TextLabel "Water" Position=0.822,0,0.569,0 Size=1,0,0.15,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="RomanAntique|Regular|Normal" LayoutOrder=2 Text="#WATER#" TextColor3=#878FFF TextScaled TextSize=30 TextStrokeTransparency=0.48 TextWrapped TextXAlignment=Left
+                        }
+                        UICorner "UICorner" BottomLeftRadius=0,30 BottomRightRadius=0,30 CornerRadius=0,30 TopLeftRadius=0,30 TopRightRadius=0,30
+                    }
+                }
+                ScreenGui "FreecamCustom" ScreenInsets=DeviceSafeInsets {
+                    LocalScript "FreecamScript" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/FreecamCustom/FreecamScript.luau"
+                    LocalScript "ReplaceFreeCam" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterGui/FreecamCustom/ReplaceFreeCam.luau"
+                }
+                ScreenGui "KeyCodes" AutoLocalize=false DisplayOrder=1 ResetOnSpawn=false ScreenInsets=DeviceSafeInsets ZIndexBehavior=Sibling {
+                    LocalScript "KeyCodesGUI" @code=<<<
+                        script.Parent.Enabled = true
+                        game:GetService("UserInputService").InputBegan:Connect(function(key,chat)
+                        	if chat then return end
+
+                        	if key.KeyCode == Enum.KeyCode.F2 then
+                        		script.Parent.Enabled = not script.Parent.Enabled
+                        	end
+                        end)
+                    >>>
+                    Frame "List" Position=0.01,0,0.23,0 Size=0.3,0,0.5,0 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 {
+                        TextLabel "KeyCode" Position=0.014,0,0.385,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[LShift] - Running" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=-0.023,0,0.297,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[C]        - Crawl" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=-0.023,0,0.339,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[F]        - Zoom" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=-0.009,0,0.252,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[X]        - Drop item" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=-0.014,0,0.208,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[Z]        - Sit" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=0.037,0,0.611,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[F5]      - Show stats overlay" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=-0.009,0,0.477,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[F1]      - Toggle all GUI" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=0.014,0,0.433,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[LCtrl]   - Sneak" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=0.042,0,0.566,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[F3]      - Toggle VHS overlay" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        TextLabel "KeyCode" Position=0.043,0,0.525,0 Size=1,0,0.075,0 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="[F2]      - Toggle that panel" TextColor3=#FFFFFF TextSize=28 TextStrokeTransparency=0 TextTransparency=0.13 TextWrapped TextXAlignment=Left
+                        UIListLayout "UIListLayout" SortOrder=LayoutOrder
+                    }
+                    TextLabel "Title" Position=0.014,0,0.167,0 Size=0,375,0,60 AutoLocalize=false BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderColor3=#000000 BorderSizePixel=0 FontFace="Arial|Regular|Normal" Text="Control Buttons" TextColor3=#FFFFFF TextSize=39 TextStrokeTransparency=0 TextTransparency=0.13
+                }
+            }
+            Folder "StarterPlayer" {
+                Folder "StarterCharacterScripts" {
+                    LocalScript "ArmsMovement" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/ArmsMovement.luau" Disabled
+                    LocalScript "CameraBobbing" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/CameraBobbing.luau" Disabled
+                    LocalScript "CharacterExtraMovement" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/CharacterExtraMovement.luau" Disabled
+                    BoolValue "Crawl"
+                    LocalScript "CustomMovement" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/CustomMovement.luau" Disabled
+                    ModuleScript "Data" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/Data.luau"
+                    LocalScript "DebugGui" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/DebugGui.luau" Disabled
+                    ModuleScript "EBLibbary" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/EBLibbary.luau"
+                    LocalScript "Graphics" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/Graphics.luau" Disabled
+                    LocalScript "Gui" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/Gui.luau" Disabled
+                    ModuleScript "KeyBoard" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/KeyBoard.luau"
+                    LocalScript "Survival" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/Survival.luau" Disabled
+                    LocalScript "Tools" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterCharacterScripts/Tools.luau" Disabled
+                }
+                Folder "StarterPlayerScripts" {
+                    LocalScript "CharacterStart" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterPlayerScripts/CharacterStart.luau" Disabled
+                    LocalScript "LocalAdmin" @src="Scripts/StarterPlayer/StarterPlayerScripts/MultiplyPlacerClient/StarterPlayer/StarterPlayerScripts/LocalAdmin.luau" Disabled
+                    LocalScript "PlayerStart" Disabled @code=<<<
+                        local plr = game.Players.LocalPlayer
+
+                        local UserInputService = game:GetService("UserInputService")
+                        UserInputService.MouseIconEnabled = false
+
+                        plr.Team = game:GetService("Teams")["Survivalists"]
+                    >>>
+                }
+            }
+        }
+        LocalScript "Wind" @src="Scripts/StarterPlayer/StarterPlayerScripts/Wind.luau"
+    }
+}

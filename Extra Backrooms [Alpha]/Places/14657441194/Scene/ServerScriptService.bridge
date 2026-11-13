@@ -1,0 +1,5 @@
+ServerScriptService "ServerScriptService" {
+    Script "MultiplyPlacer" @src="Scripts/ServerScriptService/MultiplyPlacer.luau" RunContext=Server {
+        PackageLink "PackageLink"
+    }
+}

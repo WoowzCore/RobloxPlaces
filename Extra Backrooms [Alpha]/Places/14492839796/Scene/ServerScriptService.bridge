@@ -1,0 +1,13 @@
+ServerScriptService "ServerScriptService" {
+    Script "LoadPlayers" @code=<<<
+        local plrser = game:GetService("Players")
+        local ss = game:GetService("ServerStorage")
+        local sm = require(script.Parent.ServerModule)
+
+        plrser.PlayerAdded:Connect(function(plr)
+        	sm.CreatePlayerCharacter(plr)
+        end)
+    >>>
+    Script "MapGenerate" @src="Scripts/ServerScriptService/MapGenerate.luau"
+    ModuleScript "ServerModule" @src="Scripts/ServerScriptService/ServerModule.luau"
+}

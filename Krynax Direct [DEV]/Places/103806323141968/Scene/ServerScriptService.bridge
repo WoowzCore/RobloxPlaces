@@ -1,0 +1,5 @@
+ServerScriptService "ServerScriptService" {
+    Folder "TS" {
+        Script "main" @src="Scripts/ServerScriptService/TS/main.luau"
+    }
+}

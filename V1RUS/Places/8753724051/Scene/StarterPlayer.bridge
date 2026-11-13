@@ -1,0 +1,77 @@
+StarterPlayer "PlayerStart" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=LockFirstPerson CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower=false CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption=false HealthDisplayDistance=0 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=0 UserEmotesEnabled=false {
+    Model "StarterCharacter" PrimaryPart=@"StarterPlayer/StarterCharacter/HumanoidRootPart" {
+        BodyColors "Body Colors" HeadColor3=#D7C59A LeftArmColor3=#D7C59A LeftLegColor3=#D7C59A RightArmColor3=#D7C59A RightLegColor3=#D7C59A TorsoColor3=#D7C59A
+        Part "Head" Size=2,1,1 CFrame=13,4.561,-28 Color=#D7C59A TopSurface=Smooth {
+            Attachment "FaceCenterAttachment"
+            Attachment "FaceFrontAttachment" CFrame=0,0,-0.6
+            Attachment "HairAttachment" CFrame=0,0.6,0
+            Attachment "HatAttachment" CFrame=0,0.6,0
+            SpecialMesh "Mesh" MeshContent="https://www.roblox.com/asset/?id=5560742512" MeshId="https://www.roblox.com/asset/?id=5560742512" MeshType=FileMesh {
+                StringValue "AvatarPartScaleType" Value="Classic"
+                Vector3Value "FaceCenterAttachment"
+                Vector3Value "FaceFrontAttachment" Value=0,0,-0.59
+                Vector3Value "HairAttachment" Value=0,0.59,0
+                Vector3Value "HatAttachment" Value=0,0.59,0
+                Vector3Value "NeckRigAttachment" Value=0,-0.491,0
+            }
+            Decal "face" Texture="rbxassetid://144080495 " TextureContent="rbxassetid://144080495 "
+        }
+        Humanoid "Humanoid" DisplayDistanceType=None {
+            Animator "Animator"
+            HumanoidDescription "HumanoidDescription" BodyTypeScale=1 Face=144075659 Pants=144076760 ProportionScale=0 Shirt=3670737444 {
+                BodyPartDescription "BodyPartDescription" AssetId=6340101 Color=#F8F8F8
+                BodyPartDescription "BodyPartDescription" BodyPart=RightArm Color=#F8F8F8
+                BodyPartDescription "BodyPartDescription" BodyPart=RightLeg Color=#F8F8F8
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftLeg Color=#F8F8F8
+                BodyPartDescription "BodyPartDescription" BodyPart=LeftArm Color=#F8F8F8
+                BodyPartDescription "BodyPartDescription" BodyPart=Torso Color=#F8F8F8
+            }
+        }
+        Part "HumanoidRootPart" Size=2,2,1 BottomSurface=Smooth CFrame=13,3.061,-28 CanCollide=false TopSurface=Smooth Transparency=1 {
+            Attachment "RootAttachment"
+            Motor6D "RootJoint" C0=0,0,0|-90,0,-180 C1=0,0,0|-90,0,-180 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/HumanoidRootPart" Part1=@"StarterPlayer/StarterCharacter/Torso"
+        }
+        Part "Left Arm" Size=1,2,1 CFrame=11.5,3.061,-28 CanCollide=false Color=#D7C59A {
+            Motor6D "ArmCollision" Part0=@"StarterPlayer/StarterCharacter/Left Arm" Part1=@"StarterPlayer/StarterCharacter/Left Arm/ArmCollision~2"
+            Part "ArmCollision" Size=1,2,1 CFrame=11.5,3.061,-28 Color=#D7C59A Transparency=1
+            Attachment "LeftGripAttachment" CFrame=0,-1,0
+            Attachment "LeftShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Left Leg" Size=1,2,1 BottomSurface=Smooth CFrame=12.5,1.061,-28 CanCollide=false Color=#D7C59A {
+            Attachment "LeftFootAttachment" CFrame=0,-1,0
+        }
+        Part "Right Arm" Size=1,2,1 CFrame=14.5,3.061,-28 CanCollide=false Color=#D7C59A {
+            Motor6D "ArmCollision" Part0=@"StarterPlayer/StarterCharacter/Right Arm" Part1=@"StarterPlayer/StarterCharacter/Right Arm/ArmCollision~2"
+            Part "ArmCollision" Size=1,2,1 CFrame=14.5,3.061,-28 Color=#D7C59A Transparency=1
+            Attachment "RightGripAttachment" CFrame=0,-1,0
+            Attachment "RightShoulderAttachment" CFrame=0,1,0
+        }
+        Part "Right Leg" Size=1,2,1 BottomSurface=Smooth CFrame=13.5,1.061,-28 CanCollide=false Color=#D7C59A {
+            Attachment "RightFootAttachment" CFrame=0,-1,0
+        }
+        Part "Torso" Size=2,2,1 CFrame=13,3.061,-28 Color=#D7C59A LeftSurface=Weld RightSurface=Weld {
+            Attachment "BodyBackAttachment" CFrame=0,0,0.5
+            Attachment "BodyFrontAttachment" CFrame=0,0,-0.5
+            Motor6D "Left Hip" C0=-1,-1,0|0,-90,0 C1=-0.5,1,0|0,-90,0 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/Torso" Part1=@"StarterPlayer/StarterCharacter/Left Leg"
+            Motor6D "Left Shoulder" C0=-1,0.5,0|0,-90,0 C1=0.5,0.5,0|0,-90,0 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/Torso" Part1=@"StarterPlayer/StarterCharacter/Left Arm"
+            Attachment "LeftCollarAttachment" CFrame=-1,1,0
+            Motor6D "Neck" C0=0,1,0|-90,0,-180 C1=0,-0.5,0|-90,0,-180 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/Torso" Part1=@"StarterPlayer/StarterCharacter/Head"
+            Attachment "NeckAttachment" CFrame=0,1,0
+            Motor6D "Right Hip" C0=1,-1,0|0,90,0 C1=0.5,1,0|0,90,0 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/Torso" Part1=@"StarterPlayer/StarterCharacter/Right Leg"
+            Motor6D "Right Shoulder" C0=1,0.5,0|0,90,0 C1=-0.5,0.5,0|0,90,0 MaxVelocity=0.1 Part0=@"StarterPlayer/StarterCharacter/Torso" Part1=@"StarterPlayer/StarterCharacter/Right Arm"
+            Attachment "RightCollarAttachment" CFrame=1,1,0
+            Attachment "WaistBackAttachment" CFrame=0,-1,0.5
+            Attachment "WaistCenterAttachment" CFrame=0,-1,0
+            Attachment "WaistFrontAttachment" CFrame=0,-1,-0.5
+            Decal "roblox"
+        }
+    }
+    StarterCharacterScripts "StarterCharacterScripts" {
+        LocalScript "Body" @src="Scripts/StarterPlayer/StarterCharacterScripts/Body.luau"
+        LocalScript "CharacterGraphic" @src="Scripts/StarterPlayer/StarterCharacterScripts/CharacterGraphic.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts" {
+        LocalScript "GameSystemStats" @src="Scripts/StarterPlayer/StarterPlayerScripts/GameSystemStats.luau"
+        LocalScript "Movement" @src="Scripts/StarterPlayer/StarterPlayerScripts/Movement.luau"
+    }
+}

@@ -1,0 +1,32 @@
+StarterGui "GUI" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "Screen" ZIndexBehavior=Sibling {
+        LocalScript "Camera" @src="Scripts/StarterGui/Screen/Camera.luau"
+        Folder "Debug" {
+            Frame "Background" Position=0,0,0.216,0 Size=0,318,0,423 BackgroundColor3=#000000 BackgroundTransparency=0.25 BorderSizePixel=0 Visible=false {
+                UIGridLayout "UIGridLayout" CellSize=0,317,0,24
+            }
+            LocalScript "DebugMode" @src="Scripts/StarterGui/Screen/Debug/DebugMode.luau"
+            Folder "Saved" {
+                TextLabel "String" Size=0,317,0,24 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 FontFace="PressStart2P|Regular|Normal" Text="ERROR == { NIL TEXT } == ERROR" TextColor3=#FFFFFF TextScaled TextSize=9 TextStrokeTransparency=0.79 TextWrapped TextXAlignment=Left Visible=false
+            }
+        }
+        Folder "Inventory" {
+            Frame "GRIDS_Humanoid" Position=0.748,0,0.388,0 Size=0,350,0,336 BackgroundColor3=#FFFFFF Visible=false {
+                Folder "Items" {
+                    UIGridLayout "UIGridLayout" SortOrder=LayoutOrder
+                }
+            }
+            LocalScript "Inventory" @src="Scripts/StarterGui/Screen/Inventory/Inventory.luau"
+            Folder "Saved" {
+                Frame "GRID" Size=0,100,0,100 BackgroundColor3=#FFFFFF Visible=false {
+                    ImageButton "ItemButton" Size=0,100,0,100 BackgroundColor3=#FFFFFF Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png"
+                }
+            }
+        }
+        Folder "UI" {
+            TextLabel "Arm" Position=0.012,0,0.891,0 Size=0,57,0,55 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="Sarpanch|Regular|Normal" Text="R" TextColor3=#FF0000 TextScaled TextSize=14 TextStrokeTransparency=0.59 TextWrapped
+            LocalScript "UI" @src="Scripts/StarterGui/Screen/UI/UI.luau"
+        }
+        ImageButton "UnLockMouse" Size=0,2000,0,1000 Active=false AutoButtonColor=false AutomaticSize=XY BackgroundColor3=#FFFFFF BackgroundTransparency=1 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageTransparency=1 Modal ScaleType=Slice Selectable=false Visible=false
+    }
+}

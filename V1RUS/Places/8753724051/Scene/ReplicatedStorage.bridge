@@ -1,0 +1,17 @@
+ReplicatedStorage "RStorage" {
+    RemoteEvent "ActivateObject"
+    BindableEvent "ActiveObjectServer"
+    RemoteEvent "GetAllObjects"
+    RemoteEvent "MakeObjectInPlayerData"
+    RemoteEvent "MakeObjectInServerData"
+    BindableEvent "MakeThisHumanoidHuman"
+    BindableEvent "MakeThisHumanoidNormal"
+    RemoteEvent "PickUpObjectServer"
+    RemoteEvent "PickUpThis"
+    RemoteEvent "RotateHead"
+    RemoteEvent "SetDebug"
+    RemoteEvent "SetObjectInArm"
+    RemoteEvent "SetPlayerValue"
+    RemoteEvent "Switch_Debug_Mode"
+    RemoteEvent "UpdateDebug"
+}

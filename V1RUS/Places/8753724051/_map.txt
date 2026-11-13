@@ -1,0 +1,105 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Weather"  [Scene/Lighting.bridge]
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "RStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "ActivateObject"
+  BindableEvent "ActiveObjectServer"
+  RemoteEvent "GetAllObjects"
+  RemoteEvent "MakeObjectInPlayerData"
+  RemoteEvent "MakeObjectInServerData"
+  BindableEvent "MakeThisHumanoidHuman"
+  BindableEvent "MakeThisHumanoidNormal"
+  RemoteEvent "PickUpObjectServer"
+  RemoteEvent "PickUpThis"
+  RemoteEvent "RotateHead"
+  RemoteEvent "SetDebug"
+  RemoteEvent "SetObjectInArm"
+  RemoteEvent "SetPlayerValue"
+  RemoteEvent "Switch_Debug_Mode"
+  RemoteEvent "UpdateDebug"
+ServerScriptService "SSS"  [Scene/ServerScriptService.bridge]
+  BindableEvent "MakeThisHumanoidNormal"
+  Folder "Scripts"
+    BindableEvent "BodyScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "PlayerSounds"  [Scene/SoundService.bridge]
+StarterGui "GUI"  [Scene/StarterGui.bridge]
+  ScreenGui "Screen"
+    LocalScript "Camera"
+    Folder "Debug"  (+5)
+    Folder "Inventory"  (+7)
+    Folder "UI"  (+2)
+    ImageButton "UnLockMouse"
+StarterPack "PlayerStartTools"  [Scene/StarterPack.bridge]
+StarterPlayer "PlayerStart"  [Scene/StarterPlayer.bridge]
+  Model "StarterCharacter"
+    BodyColors "Body Colors"
+    Part "Head"  (+12)
+    Humanoid "Humanoid"  (+8)
+    Part "HumanoidRootPart"  (+2)
+    Part "Left Arm"  (+4)
+    Part "Left Leg"  (+1)
+    Part "Right Arm"  (+4)
+    Part "Right Leg"  (+1)
+    Part "Torso"  (+14)
+  StarterCharacterScripts "StarterCharacterScripts"
+    LocalScript "Body"
+    LocalScript "CharacterGraphic"
+  StarterPlayerScripts "StarterPlayerScripts"
+    LocalScript "GameSystemStats"
+    LocalScript "Movement"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Scene"  [Scene/Workspace.bridge]
+  Camera "Cam"
+  Folder "Main"
+    Script "AllPlayers"
+    Script "Body"
+    Script "DamageScript"
+    Folder "GlobalValues"  (+1)
+    Folder "Inventorys"
+    Script "PlayerValues"
+    Script "ServerFunctions"
+    Folder "StarterPlayerValues"  (+14)
+    Folder "Zombie"  (+57)
+  Folder "Map"
+    Part "Baseplate"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Folder "Saved"  (+257)
+    SpawnLocation "SpawnLocation"
+    Folder "Zombies"
+  Terrain "Terrain"

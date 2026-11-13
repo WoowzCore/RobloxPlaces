@@ -1,0 +1,364 @@
+Workspace "Scene" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=5.593,-29.078,-9.159 Gravity=98 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Camera "Camera"
+    Model "Dummy" PrimaryPart=@"Workspace/Dummy/HumanoidRootPart" {
+        Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=98.7,145.891,3143.2 TopSurface=Smooth {
+            Attachment "FaceCenterAttachment" {
+                Vector3Value "OriginalPosition"
+            }
+            Attachment "FaceFrontAttachment" CFrame=0,0,-0.6 {
+                Vector3Value "OriginalPosition" Value=0,0,-0.6
+            }
+            Attachment "HairAttachment" CFrame=0,0.6,0 {
+                Vector3Value "OriginalPosition" Value=0,0.6,0
+            }
+            Attachment "HatAttachment" CFrame=0,0.6,0 {
+                Vector3Value "OriginalPosition" Value=0,0.6,0
+            }
+            SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+            Motor6D "Neck" C0=0,0.8,0 C1=0,-0.5,0 Part0=@"Workspace/Dummy/UpperTorso" Part1=@"Workspace/Dummy/Head"
+            Attachment "NeckRigAttachment" CFrame=0,-0.5,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.5,0
+            }
+            Vector3Value "OriginalSize" Value=2,1,1
+            Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+            Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+        }
+        Humanoid "Humanoid" HipHeight=2 RigType=R15
+        Part "HumanoidRootPart" Size=2,2,1 Anchored CFrame=98.7,144.391,3143.2 Transparency=1 {
+            Vector3Value "OriginalSize" Value=2,2,1
+            Attachment "RootRigAttachment" CFrame=0,-1,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.35,0
+            }
+        }
+        MeshPart "LeftFoot" Size=1,0.3,1 CFrame=98.2,141.541,3143.2 CanCollide=false RenderFidelity=Precise {
+            Motor6D "LeftAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/Dummy/LeftLowerLeg" Part1=@"Workspace/Dummy/LeftFoot"
+            Attachment "LeftAnkleRigAttachment" CFrame=0,0.102,0 {
+                Vector3Value "OriginalPosition" Value=0,0.102,0
+            }
+            Vector3Value "OriginalSize" Value=1,0.3,1
+        }
+        MeshPart "LeftHand" Size=1,0.3,1 CFrame=97.2,143.541,3143.2 CanCollide=false RenderFidelity=Precise {
+            Attachment "LeftGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.15,0
+            }
+            Motor6D "LeftWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/Dummy/LeftLowerArm" Part1=@"Workspace/Dummy/LeftHand"
+            Attachment "LeftWristRigAttachment" CFrame=0,0.125,0 {
+                Vector3Value "OriginalPosition" Value=0,0.125,0
+            }
+            Vector3Value "OriginalSize" Value=1,0.3,1
+        }
+        MeshPart "LeftLowerArm" Size=1,1.052,1 CFrame=97.2,144.167,3143.2 CanCollide=false RenderFidelity=Precise {
+            Motor6D "LeftElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/Dummy/LeftUpperArm" Part1=@"Workspace/Dummy/LeftLowerArm"
+            Attachment "LeftElbowRigAttachment" CFrame=0,0.259,0 {
+                Vector3Value "OriginalPosition" Value=0,0.259,0
+            }
+            Attachment "LeftWristRigAttachment" CFrame=0,-0.501,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.501,0
+            }
+            Vector3Value "OriginalSize" Value=1,1.052,1
+        }
+        MeshPart "LeftLowerLeg" Size=1,1.193,1 CFrame=98.2,142.19,3143.2 CanCollide=false RenderFidelity=Precise {
+            Attachment "LeftAnkleRigAttachment" CFrame=0,-0.547,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.547,0
+            }
+            Motor6D "LeftKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/Dummy/LeftUpperLeg" Part1=@"Workspace/Dummy/LeftLowerLeg"
+            Attachment "LeftKneeRigAttachment" CFrame=0,0.379,0 {
+                Vector3Value "OriginalPosition" Value=0,0.379,0
+            }
+            Vector3Value "OriginalSize" Value=1,1.193,1
+        }
+        MeshPart "LeftUpperArm" Size=1,1.169,1 CFrame=97.2,144.759,3143.2 CanCollide=false RenderFidelity=Precise {
+            Attachment "LeftElbowRigAttachment" CFrame=0,-0.334,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.334,0
+            }
+            Motor6D "LeftShoulder" C0=-1,0.563,0 C1=0.5,0.394,0 Part0=@"Workspace/Dummy/UpperTorso" Part1=@"Workspace/Dummy/LeftUpperArm"
+            Attachment "LeftShoulderAttachment" CFrame=0,0.584,0 {
+                Vector3Value "OriginalPosition" Value=0,0.584,0
+            }
+            Attachment "LeftShoulderRigAttachment" CFrame=0.5,0.394,0 {
+                Vector3Value "OriginalPosition" Value=0.5,0.394,0
+            }
+            Vector3Value "OriginalSize" Value=1,1.169,1
+        }
+        MeshPart "LeftUpperLeg" Size=1,1.217,1 CFrame=98.2,142.97,3143.2 CanCollide=false RenderFidelity=Precise {
+            Motor6D "LeftHip" C0=-0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/Dummy/LowerTorso" Part1=@"Workspace/Dummy/LeftUpperLeg"
+            Attachment "LeftHipRigAttachment" CFrame=0,0.421,0 {
+                Vector3Value "OriginalPosition" Value=0,0.421,0
+            }
+            Attachment "LeftKneeRigAttachment" CFrame=0,-0.401,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.401,0
+            }
+            Vector3Value "OriginalSize" Value=1,1.217,1
+        }
+        MeshPart "LowerTorso" Size=2,0.4,1 CFrame=98.7,143.591,3143.2 RenderFidelity=Precise {
+            Attachment "LeftHipRigAttachment" CFrame=-0.5,-0.2,0 {
+                Vector3Value "OriginalPosition" Value=-0.5,-0.2,0
+            }
+            Vector3Value "OriginalSize" Value=2,0.4,1
+            Attachment "RightHipRigAttachment" CFrame=0.5,-0.2,0 {
+                Vector3Value "OriginalPosition" Value=0.5,-0.2,0
+            }
+            Motor6D "Root" C0=0,-1,0 C1=0,-0.2,0 Part0=@"Workspace/Dummy/HumanoidRootPart" Part1=@"Workspace/Dummy/LowerTorso"
+            Attachment "RootRigAttachment" CFrame=0,-0.2,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,0
+            }
+            Attachment "WaistBackAttachment" CFrame=0,-0.2,0.5 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+            }
+            Attachment "WaistCenterAttachment" CFrame=0,-0.2,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,0
+            }
+            Attachment "WaistFrontAttachment" CFrame=0,-0.2,-0.5 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+            }
+            Attachment "WaistRigAttachment" CFrame=0,0.2,0 {
+                Vector3Value "OriginalPosition" Value=0,0.2,0
+            }
+        }
+        MeshPart "RightFoot" Size=1,0.3,1 CFrame=99.2,141.541,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,0.3,1
+            Motor6D "RightAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/Dummy/RightLowerLeg" Part1=@"Workspace/Dummy/RightFoot"
+            Attachment "RightAnkleRigAttachment" CFrame=0,0.102,0 {
+                Vector3Value "OriginalPosition" Value=0,0.102,0
+            }
+        }
+        MeshPart "RightHand" Size=1,0.3,1 CFrame=100.2,143.541,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,0.3,1
+            Attachment "RightGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.15,0
+            }
+            Motor6D "RightWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/Dummy/RightLowerArm" Part1=@"Workspace/Dummy/RightHand"
+            Attachment "RightWristRigAttachment" CFrame=0,0.125,0 {
+                Vector3Value "OriginalPosition" Value=0,0.125,0
+            }
+        }
+        MeshPart "RightLowerArm" Size=1,1.052,1 CFrame=100.2,144.167,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,1.052,1
+            Motor6D "RightElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/Dummy/RightUpperArm" Part1=@"Workspace/Dummy/RightLowerArm"
+            Attachment "RightElbowRigAttachment" CFrame=0,0.259,0 {
+                Vector3Value "OriginalPosition" Value=0,0.259,0
+            }
+            Attachment "RightWristRigAttachment" CFrame=0,-0.501,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.501,0
+            }
+        }
+        MeshPart "RightLowerLeg" Size=1,1.193,1 CFrame=99.2,142.19,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,1.193,1
+            Attachment "RightAnkleRigAttachment" CFrame=0,-0.547,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.547,0
+            }
+            Motor6D "RightKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/Dummy/RightUpperLeg" Part1=@"Workspace/Dummy/RightLowerLeg"
+            Attachment "RightKneeRigAttachment" CFrame=0,0.379,0 {
+                Vector3Value "OriginalPosition" Value=0,0.379,0
+            }
+        }
+        MeshPart "RightUpperArm" Size=1,1.169,1 CFrame=100.2,144.759,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,1.169,1
+            Attachment "RightElbowRigAttachment" CFrame=0,-0.334,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.334,0
+            }
+            Motor6D "RightShoulder" C0=1,0.563,0 C1=-0.5,0.394,0 Part0=@"Workspace/Dummy/UpperTorso" Part1=@"Workspace/Dummy/RightUpperArm"
+            Attachment "RightShoulderAttachment" CFrame=0,0.584,0 {
+                Vector3Value "OriginalPosition" Value=0,0.584,0
+            }
+            Attachment "RightShoulderRigAttachment" CFrame=-0.5,0.394,0 {
+                Vector3Value "OriginalPosition" Value=-0.5,0.394,0
+            }
+        }
+        MeshPart "RightUpperLeg" Size=1,1.217,1 CFrame=99.2,142.97,3143.2 CanCollide=false RenderFidelity=Precise {
+            Vector3Value "OriginalSize" Value=1,1.217,1
+            Motor6D "RightHip" C0=0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/Dummy/LowerTorso" Part1=@"Workspace/Dummy/RightUpperLeg"
+            Attachment "RightHipRigAttachment" CFrame=0,0.421,0 {
+                Vector3Value "OriginalPosition" Value=0,0.421,0
+            }
+            Attachment "RightKneeRigAttachment" CFrame=0,-0.401,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.401,0
+            }
+        }
+        MeshPart "UpperTorso" Size=2,1.6,1 CFrame=98.7,144.591,3143.2 RenderFidelity=Precise {
+            Attachment "BodyBackAttachment" CFrame=0,-0.2,0.5 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+            }
+            Attachment "BodyFrontAttachment" CFrame=0,-0.2,-0.5 {
+                Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+            }
+            Attachment "LeftCollarAttachment" CFrame=-1,0.8,0 {
+                Vector3Value "OriginalPosition" Value=-1,0.8,0
+            }
+            Attachment "LeftShoulderRigAttachment" CFrame=-1,0.563,0 {
+                Vector3Value "OriginalPosition" Value=-1,0.563,0
+            }
+            Attachment "NeckAttachment" CFrame=0,0.8,0 {
+                Vector3Value "OriginalPosition" Value=0,0.8,0
+            }
+            Attachment "NeckRigAttachment" CFrame=0,0.8,0 {
+                Vector3Value "OriginalPosition" Value=0,0.8,0
+            }
+            Vector3Value "OriginalSize" Value=2,1.6,1
+            Attachment "RightCollarAttachment" CFrame=1,0.8,0 {
+                Vector3Value "OriginalPosition" Value=1,0.8,0
+            }
+            Attachment "RightShoulderRigAttachment" CFrame=1,0.563,0 {
+                Vector3Value "OriginalPosition" Value=1,0.563,0
+            }
+            Motor6D "Waist" C0=0,0.2,0 C1=0,-0.8,0 Part0=@"Workspace/Dummy/LowerTorso" Part1=@"Workspace/Dummy/UpperTorso"
+            Attachment "WaistRigAttachment" CFrame=0,-0.8,0 {
+                Vector3Value "OriginalPosition" Value=0,-0.8,0
+            }
+        }
+    }
+    Folder "Easy Teleporter\n - Lentilkac58 - Version 1" {
+        Part "Lentilkac58-Easy-Teleport-1" Size=4,0.4,4 Anchored BottomSurface=Smooth CFrame=873.9,338.359,3096.75 Color=#0000FF TopSurface=Smooth Transparency=1 {
+            PointLight "PointLight" Color=#0000FF Shadows
+            Script "Script" @src="Scripts/Workspace/Easy Teleporter_ - Lentilkac58 - Version 1/Lentilkac58-Easy-Teleport-1/Script.luau"
+        }
+        Part "Lentilkac58-Easy-Teleport-2" Size=4,0.4,4 Anchored BottomSurface=Smooth CFrame=-2402.8,343.009,-158.45 Color=#FF0000 TopSurface=Smooth Transparency=1 {
+            PointLight "PointLight" Color=#FF0000 Shadows
+            Script "Script" @src="Scripts/Workspace/Easy Teleporter_ - Lentilkac58 - Version 1/Lentilkac58-Easy-Teleport-2/Script.luau"
+        }
+    }
+    Folder "Main" {
+        Folder "Debug" {
+            Sound "ObjectHit" AudioContent="rbxassetid://6153835670" RollOffMaxDistance=100 RollOffMinDistance=30 SoundGroup=@"SoundService/Player" SoundId="rbxassetid://6153835670"
+            Folder "Objects" {
+                Folder "PlayerCharacter" {
+                    Part "Weather" Size=10,10,10 Anchored BottomSurface=Smooth CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                        Sound "CaveSound" AudioContent="rbxassetid://2705020461" Looped RollOffMaxDistance=10000000 RollOffMinDistance=10000000 RollOffMode=InverseTapered SoundId="rbxassetid://2705020461" Volume=0
+                        Sound "CricketsSound" AudioContent="rbxassetid://6365061456" Looped RollOffMaxDistance=10000000 RollOffMinDistance=10000000 SoundId="rbxassetid://6365061456"
+                        Sound "DeadSound" AudioContent="rbxassetid://172905796" SoundId="rbxassetid://172905796"
+                        Part "ObjectDescription" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=499.15,0.5,782.3 CanCollide=false CanQuery=false CanTouch=false CastShadow=false TopSurface=Smooth Transparency=1 {
+                            BillboardGui "Gui" Size=0,500,0,500 Active AlwaysOnTop ClipsDescendants LightInfluence=1 MaxDistance=100 ZIndexBehavior=Sibling {
+                                ImageLabel "Background" Size=0,500,0,500 BackgroundColor3=#FFFFFF BackgroundTransparency=0.6 BorderSizePixel=0 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageTransparency=1
+                                ImageLabel "Color" Position=0,440,0,440 Size=0,50,0,50 BackgroundColor3=#FFFFFF BorderSizePixel=0 Image="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageContent="rbxasset://textures/ui/GuiImagePlaceholder.png" ImageTransparency=1
+                                TextLabel "Info" Position=0,0,0,150 Size=0,500,0,350 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="GothamSSm|Regular|Normal" Text="Name = {Chair} ; Polygons* = {0} ;        Author = {Woowz14} ;                             Time Created = {16.09.98 23:48:10}" TextColor3=#FFFFFF TextSize=24 TextStrokeTransparency=0.27 TextWrapped TextYAlignment=Top
+                                TextLabel "TopMainText" Position=0,150,0,20 Size=0,200,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="GothamSSm|Regular|Normal" Text="Object Info" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+                            }
+                        }
+                        PointLight "PointLight" Brightness=0.3 Range=20 Shadows
+                        Part "Precipitation" Size=50,10,50 Anchored BottomSurface=Smooth CFrame=0,80,0|0,0,-180 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                            ParticleEmitter "AcidRain" Orientation=VelocityParallel Size=0:2,1:2 Brightness=5 Color=0:#579536,1:#579536 Enabled=false Lifetime=10,10 LightEmission=1 Rate=1000 Rotation=90,90 Speed=100,100 SpreadAngle=20,20 Squash=0:1,1:1 Texture="rbxassetid://8544707799" TextureContent="rbxassetid://8544707799" Transparency=0:0.4,1:0.4
+                            ParticleEmitter "Ashes" Orientation=VelocityPerpendicular Size=0:10,0.274:5.063,0.522:4.5,0.753:5.375,1:10 Color=0:#0F0D0B,1:#0F0D0B Enabled=false Lifetime=20,20 LightInfluence=1 LockedToPart Rate=50 RotSpeed=1,1 SpreadAngle=20,20 Texture="rbxassetid://8557150114" TextureContent="rbxassetid://8557150114" Transparency=0:1,0.292:0.956,0.451:0.894,0.583:0.656,0.831:0.225,0.944:0,0.984:0.162,1:1
+                            ParticleEmitter "Birds" Orientation=VelocityPerpendicular Acceleration=-2,0,0 Color=0:#2A353F,1:#2A353F Enabled=false Lifetime=20,20 LightInfluence=1 Rate=0.1 RotSpeed=1,1 Speed=0.01,0.01 SpreadAngle=100,100 Texture="rbxassetid://8700650859" TextureContent="rbxassetid://8700650859" Transparency=0:1,0.506:0,1:1
+                            ParticleEmitter "Glow" Size=0:0.25,1:0.25 Color=0:#FF7300,1:#FF7300 Enabled=false Lifetime=20,20 LightInfluence=1 Rate=1000 RotSpeed=100,100 Speed=5,30 SpreadAngle=50,50 Texture="rbxassetid://8559129549" TextureContent="rbxassetid://8559129549"
+                            ParticleEmitter "Rain" Orientation=VelocityParallel Color=0:#73A9FF,1:#73A9FF Enabled=false Lifetime=10,10 Rate=1000 Rotation=90,90 Speed=100,100 SpreadAngle=20,20 Squash=0:1,1:1 Texture="rbxassetid://8544707799" TextureContent="rbxassetid://8544707799" Transparency=0:0.4,1:0.4
+                            ParticleEmitter "Snow" Size=0:0.1,1:0.1 Enabled=false Lifetime=20,20 LightInfluence=1 LockedToPart Rate=100 RotSpeed=100,100 SpreadAngle=20,20 Texture="rbxassetid://8554943717" TextureContent="rbxassetid://8554943717" Transparency=0:1,0.096:0.788,0.173:0.444,0.228:0.1,0.282:0,0.75:0,0.792:0.1,0.854:0.481,0.936:0.837,1:1
+                        }
+                        Part "PrecipitationWater" Size=130,7.9,130 Anchored BottomSurface=Smooth CFrame=0,-30,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                            ParticleEmitter "Bubbles" Size=0:0.1,1:0.1 Enabled=false Lifetime=15,15 LightInfluence=1 LockedToPart Rate=50 Speed=2,2 Texture="rbxassetid://8697388116" TextureContent="rbxassetid://8697388116" Transparency=0:1,0.073:0.344,0.248:0,0.768:0,0.947:0.331,1:1
+                        }
+                        Sound "UnderwaterSound" AudioContent="rbxassetid://179476986" Looped RollOffMaxDistance=10000000 RollOffMinDistance=10000000 SoundId="rbxassetid://179476986"
+                        Sound "WindSound" AudioContent="rbxassetid://3308152153" Looped RollOffMaxDistance=10000000 RollOffMinDistance=10000000 SoundId="rbxassetid://3308152153" Volume=2
+                    }
+                }
+                Folder "PlayerObjects" {
+                    Part "PlayerGlobalObj" Size=5,5,5 Anchored BottomSurface=Smooth CFrame=835.65,379.25,0 CanCollide=false CanQuery=false CanTouch=false TopSurface=Smooth Transparency=1 {
+                        Sound "NedoVoice" AudioContent="rbxassetid://6366573120" RollOffMinDistance=100 SoundId="rbxassetid://6366573120"
+                        BillboardGui "PlayerNickname" Size=0,100,0,100 Active ClipsDescendants LightInfluence=1 MaxDistance=100 ZIndexBehavior=Sibling {
+                            ImageLabel "Background" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://8717362587" ImageColor3=#000000 ImageContent="rbxassetid://8717362587" ImageTransparency=0.8 ZIndex=-1
+                            TextLabel "NickName" Position=0,0,0,37 Size=0,100,0,25 BackgroundColor3=#000000 BackgroundTransparency=1 BorderSizePixel=0 FontFace="TitilliumWeb|Regular|Normal" Text="PlayerName" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.54 TextWrapped
+                            ImageLabel "Rank" Size=0,100,0,100 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 Image="rbxassetid://8702159497" ImageColor3=#000000 ImageContent="rbxassetid://8702159497" ZIndex=0
+                        }
+                    }
+                }
+            }
+            Script "PartPhysic" @src="Scripts/Workspace/Main/Debug/PartPhysic.luau" Disabled
+            Folder "PlayerFiles" {
+                Folder "Values" {
+                    NumberValue "BodyWet"
+                    BoolValue "CameraInWater"
+                    BoolValue "CameraInWaterOld"
+                    BoolValue "CanSpawnObjectDistance"
+                    IntValue "Credentials"
+                    ObjectValue "CursorInObject"
+                    BoolValue "Dead"
+                    StringValue "DeadType" Value="Unknown"
+                    BoolValue "FirstFaceCamera"
+                    IntValue "FloorAngle"
+                    Vector3Value "FloorAngleVector"
+                    StringValue "FloorMaterial"
+                    NumberValue "Friction"
+                    BoolValue "HaveRoof"
+                    BoolValue "HeadInWater"
+                    BoolValue "InWater"
+                    NumberValue "LAnkleY"
+                    NumberValue "MapTempirature" Value=30
+                    NumberValue "MaxFloorAngle"
+                    NumberValue "MaxHealth" Value=200
+                    NumberValue "MaxOxygen" Value=500
+                    NumberValue "MaxStamina" Value=1000
+                    NumberValue "MouseDistance"
+                    Vector3Value "MousePosition"
+                    CFrameValue "NeckCFrame"
+                    NumberValue "NeckY"
+                    StringValue "ObjectSpawn" Value="TestObject"
+                    Vector3Value "ObjectSpawnOffsetOrientation"
+                    NumberValue "Oxygen" Value=500
+                    BrickColorValue "PlayerColor"
+                    StringValue "PlayerFace"
+                    BoolValue "PlayerPressAnyButton"
+                    NumberValue "PlayerSpeed" Value=10
+                    NumberValue "PlayerTempirature" Value=36
+                    BoolValue "PlayerWalk"
+                    BoolValue "PressRespawn"
+                    BoolValue "Ragdoll"
+                    IntValue "RagdollCount"
+                    IntValue "RagdollWait"
+                    StringValue "Rank"
+                    StringValue "Room"
+                    BoolValue "Running"
+                    NumberValue "RunningSpeed" Value=2
+                    NumberValue "SavingTemperature" Value=25
+                    BoolValue "ShowObjectDesc"
+                    BoolValue "SpawnFroozenObjects"
+                    NumberValue "SpawnObjectsWait"
+                    NumberValue "Stamina" Value=1000
+                    NumberValue "TempiratureOffSet" Value=100
+                    NumberValue "WaterDeepnes"
+                    NumberValue "WaterDeepnesOne"
+                    NumberValue "WaterYposition"
+                }
+            }
+        }
+        Script "GlobalScript" @src="Scripts/Workspace/Main/GlobalScript.luau"
+        Folder "GlobalValue" {
+            NumberValue "CloudsDensity"
+            NumberValue "CloudsPower"
+            IntValue "Day"
+            NumberValue "MapTime" Value=12
+            NumberValue "MaxPlayerVelocity" Value=60
+            IntValue "MoonPhase"
+            BoolValue "NowDay" Value
+            BoolValue "NowNight"
+            NumberValue "WaterAlpha"
+            NumberValue "WaterAlphaNew"
+            Color3Value "WaterColor"
+            NumberValue "WaterRef"
+            StringValue "Weather" Value="Sunny"
+            StringValue "WeekDay" Value="Monday"
+            NumberValue "WindPower"
+        }
+        Script "LoadObjectGLOBAL" @src="Scripts/Workspace/Main/LoadObjectGLOBAL.luau"
+        Script "LongWeather" @src="Scripts/Workspace/Main/LongWeather.luau"
+        Folder "PlayerList" {
+            NumberValue "BlackList" Value=676401438
+            NumberValue "Dev" Value=1734081766
+            NumberValue "DevHelp" Value=937790194
+            NumberValue "Friend2" Value=581778328
+            NumberValue "Friend5" Value=647350598
+        }
+        Script "PlayersNickname" @src="Scripts/Workspace/Main/PlayersNickname.luau"
+        Script "WeatherScript" @src="Scripts/Workspace/Main/WeatherScript.luau"
+    }
+    Part "Map" @file="Scene/Workspace/Map.bridge" Size=1,1,1 Anchored BottomSurface=Smooth CFrame=-55.3,-566.9,-218.1 TopSurface=Smooth
+    Part "SavedObjects" @file="Scene/Workspace/SavedObjects.bridge" Size=124.2,1,152.1 Anchored BottomSurface=Smooth CFrame=502.2,525.35,355.85 Locked TopSurface=Smooth
+    SpawnLocation "SpawnLocation" Size=12,1,12 Anchored BottomSurface=Smooth CFrame=125.8,142,3197.65 CanCollide=false CanQuery=false CanTouch=false Duration=0 TopSurface=Smooth Transparency=1
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#746550 WaterReflectance=0.25 WaterTransparency=0.35 WaterWaveSize=1 WaterWaveSpeed=10 {
+        Clouds "Clouds" Cover=0.542 Density=1
+    }
+    MeshPart "Tree Wood" Size=27.442,29.564,24.71 Anchored CFrame=264,156.173,3141.8|-180,0,-180 CollisionFidelity=Default Color=#4B3D34 Material=Slate RenderFidelity=Precise
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=454.85,215.535,3383.85 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=454.85,153.634,3383.85 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=454.85,277.486,3383.85 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=454.85,193.234,3385.75 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,30.15,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=454.85,322.585,3383.85 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+}

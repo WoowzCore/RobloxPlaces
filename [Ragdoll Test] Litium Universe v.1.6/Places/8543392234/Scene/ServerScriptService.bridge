@@ -1,0 +1,33 @@
+ServerScriptService "ServerScriptService" {
+    BindableEvent "Explosive"
+    BindableEvent "LoadObject"
+    Script "cooler explosions" @src="Scripts/ServerScriptService/cooler explosions.luau" {
+        ParticleEmitter "Debris" Size=0:0.07:0.07,1:0.07:0.07 Acceleration=-3,-90,5 Color=0:#221F1E,1:#221F1E Drag=2 Enabled=false Lifetime=10,10 LightInfluence=1 Rate=150 RotSpeed=-20,20 Rotation=-45,360 Speed=50,500 SpreadAngle=15,15 Texture="http://www.roblox.com/asset/?id=972187391" TextureContent="http://www.roblox.com/asset/?id=972187391"
+        ParticleEmitter "Debris2" Size=0:0.07:0.07,1:0.07:0.07 Acceleration=-3,-30,5 Color=0:#221F1E,1:#221F1E Drag=2 EmissionDirection=Left Enabled=false Lifetime=5,5 LightInfluence=1 Rate=900 RotSpeed=-20,20 Rotation=-45,360 Speed=70,145 SpreadAngle=50,360 Texture="http://www.roblox.com/asset/?id=972187391" TextureContent="http://www.roblox.com/asset/?id=972187391" ZOffset=2
+        ParticleEmitter "Explosion" Size=0:22,1:22 Color=0:#AA0000,0.654:#FFC259,1:#FFFF00 Drag=2 Enabled=false Lifetime=0.05,0.15 LightEmission=1 Rate=150 RotSpeed=-20,20 Rotation=-45,360 Speed=5,35 SpreadAngle=90,90 Texture="http://www.roblox.com/asset/?id=5867184007" TextureContent="http://www.roblox.com/asset/?id=5867184007" Transparency=0:0.262:0.225,0.791:0.825:0.175,1:1
+        Folder "Explosions" {
+            Folder "Close" {
+                Sound "gren_expl1_near" AudioContent="rbxassetid://9114086455" RollOffMaxDistance=500 RollOffMinDistance=20 RollOffMode=Linear SoundId="rbxassetid://9114086455" Volume=5
+                Sound "gren_expl2_near" AudioContent="rbxassetid://9114086455" RollOffMaxDistance=500 RollOffMinDistance=20 RollOffMode=Linear SoundId="rbxassetid://9114086455" Volume=5
+                Sound "gren_expl3_near" AudioContent="rbxassetid://6463338635" RollOffMaxDistance=500 RollOffMinDistance=20 RollOffMode=Linear SoundId="rbxassetid://6463338635" Volume=5
+            }
+            Folder "Distant" {
+                Sound "gren_expl1_distant" AudioContent="rbxassetid://9114362389" RollOffMaxDistance=850 RollOffMinDistance=40 RollOffMode=Linear SoundId="rbxassetid://9114362389" Volume=4
+                Sound "gren_expl2_dist1" AudioContent="rbxassetid://9114362389" RollOffMaxDistance=850 RollOffMinDistance=40 RollOffMode=Linear SoundId="rbxassetid://9114362389" Volume=4
+                Sound "gren_expl3_distant" AudioContent="rbxassetid://9114362389" RollOffMaxDistance=850 RollOffMinDistance=40 RollOffMode=Linear SoundId="rbxassetid://9114362389" Volume=4
+            }
+            Folder "Far" {
+                Sound "gren_expl1_far" AudioContent="rbxassetid://6463354153" RollOffMaxDistance=4500 RollOffMinDistance=400 RollOffMode=Linear SoundId="rbxassetid://6463354153" Volume=3
+                Sound "gren_expl2_far" AudioContent="rbxassetid://6463354897" RollOffMaxDistance=4500 RollOffMinDistance=400 RollOffMode=Linear SoundId="rbxassetid://6463354897" Volume=3
+                Sound "gren_expl2_far2" AudioContent="rbxassetid://6463355488" RollOffMaxDistance=4500 RollOffMinDistance=400 RollOffMode=Linear SoundId="rbxassetid://6463355488" Volume=3
+                Sound "gren_expl3_far" AudioContent="rbxassetid://6463354153" PlaybackSpeed=0.8 RollOffMaxDistance=4500 RollOffMinDistance=400 RollOffMode=Linear SoundId="rbxassetid://6463354153" Volume=3
+                Sound "gren_expl3_far2" AudioContent="rbxassetid://9114362264" RollOffMaxDistance=4500 RollOffMinDistance=400 RollOffMode=Linear SoundId="rbxassetid://9114362264" Volume=3
+            }
+        }
+        ParticleEmitter "Flare" Size=0:30,1:30 Color=0:#8C0000,1:#FFA64C Enabled=false Lifetime=0.1,0.1 LightEmission=1 LockedToPart Rate=0 Speed=25,25 Texture="rbxassetid://1125516477" TextureContent="rbxassetid://1125516477" Transparency=0:0,0.5:0.5:0.5,1:1 VelocityInheritance=1
+        ParticleEmitter "Smoke1" Size=0:3.187:0.75,0.787:7.125:1.062,1:7.25:1.375 Acceleration=0,3.5,0 Color=0:#DCCEC6,1:#665F5E Drag=7.5 EmissionDirection=Left Enabled=false Lifetime=1.5,7 LightInfluence=1 Rate=350 RotSpeed=-15,15 Rotation=-15,360 Speed=35,100 SpreadAngle=35,360 Texture="http://www.roblox.com/asset/?id=5867184622" TextureContent="http://www.roblox.com/asset/?id=5867184622" Transparency=0:0.863:0.094,0.905:0.975:0.025,1:1 VelocityInheritance=0.25 ZOffset=-1
+        ParticleEmitter "Smoke2" Size=0:3.187:0.75,0.787:7.125:1.062,1:7.25:1.375 Acceleration=0,3.5,0 Drag=7.5 EmissionDirection=Front Enabled=false Lifetime=1.5,5 LightEmission=0.05 LightInfluence=1 Rate=350 RotSpeed=-15,15 Rotation=-15,360 Speed=25,70 SpreadAngle=90,360 Texture="http://www.roblox.com/asset/?id=5867183191" TextureContent="http://www.roblox.com/asset/?id=5867183191" Transparency=0:0.906:0.094,0.905:0.975:0.025,1:1 VelocityInheritance=0.25 ZOffset=-1
+        ParticleEmitter "Smoke3" Size=0:3.187:0.75,0.805:8.188:1.062,1:8.375:1.375 Acceleration=2.5,3.5,2 Color=0:#FFEFE6,1:#766F6B Drag=5 Enabled=false Lifetime=1.5,9 LightInfluence=1 Rate=350 RotSpeed=-15,15 Rotation=-15,360 Speed=25,120 SpreadAngle=25,25 Texture="http://www.roblox.com/asset/?id=5867184622" TextureContent="http://www.roblox.com/asset/?id=5867184622" Transparency=0:0.863:0.094,0.905:0.975:0.025,1:1 VelocityInheritance=0.25 ZOffset=-1
+        ParticleEmitter "Smoke4" Size=0:35,1:35 Acceleration=1,4.5,1 Drag=7.5 Enabled=false Lifetime=0.75,3.5 LightInfluence=1 Rate=100 RotSpeed=-5,5 Rotation=-10,15 Speed=70,150 SpreadAngle=40,40 Texture="http://www.roblox.com/asset/?id=5867182655" TextureContent="http://www.roblox.com/asset/?id=5867182655" Transparency=0:0.856:0.144,0.908:0.962:0.031,1:1 ZOffset=-1
+    }
+}

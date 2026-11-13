@@ -1,0 +1,666 @@
+Folder "Background" {
+    Model "Model" @file="Scene/Workspace/Map/Background/Model.bridge"
+    Model "Model" @file="Scene/Workspace/Map/Background/Model~2.bridge"
+    Model "Model" @file="Scene/Workspace/Map/Background/Model~3.bridge"
+    Model "Model" {
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,326.707,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,360.909,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,435.706,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,409.409,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=89,6.6,80 Anchored BottomSurface=Smooth CFrame=751.225,470.809,3576.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,331.906,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,398.706,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=69.4,6.6,16.2 Anchored BottomSurface=Smooth CFrame=556.925,322.009,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,448.507,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,430.507,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,331.906,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=88.4,6.6,80 Anchored BottomSurface=Smooth CFrame=604.825,322.009,3576.726|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,326.707,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,448.507,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,365.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,430.507,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,417.106,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,453.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,398.706,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,327.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,398.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,343.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,382.506,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,382.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,343.509,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,382.506,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,326.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,360.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,331.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,447.409,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,398.706,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,430.507,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,411.907,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,377.307,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,360.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,348.506,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,348.506,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,343.307,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,365.706,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,348.506,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,377.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,448.507,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,360.507,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,398.706,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,365.706,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,331.906,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=54.6,142.2,16 Anchored BottomSurface=Smooth CFrame=652.825,396.409,3532.625|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,348.506,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,360.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,360.507,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,377.307,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,417.106,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,417.106,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,448.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,448.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=54.6,142.2,16 Anchored BottomSurface=Smooth CFrame=703.425,396.409,3532.625|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,430.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,331.906,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,435.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=4,143.8,35.8 Anchored BottomSurface=Smooth CFrame=677.525,397.209,3512.926|0,-90,0 Color=#635F62 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,435.706,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,435.706,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,430.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,365.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,448.507,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,348.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,417.106,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,343.307,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,448.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,393.507,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,453.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,453.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,393.507,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,448.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,331.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,411.907,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=69.4,6.8,15.8 Anchored BottomSurface=Smooth CFrame=799.125,322.109,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,411.907,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,453.706,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,360.507,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,393.507,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,326.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,435.706,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,348.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,326.707,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,393.507,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,326.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,447.409,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,328.209,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,393.507,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,398.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,331.906,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,360.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,448.507,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,342.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,382.506,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,348.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,326.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,348.506,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=26,142.2,16 Anchored BottomSurface=Smooth CFrame=556.825,396.409,3600.325|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,382.506,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,409.209,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,365.706,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,326.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,343.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,417.106,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,348.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,377.307,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,348.506,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,331.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,382.506,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,382.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,382.506,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,348.506,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,382.506,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=89,142.2,226.8 Anchored BottomSurface=Smooth CFrame=677.825,396.409,3576.426|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,411.907,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,393.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,398.706,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,435.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,411.907,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,398.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,365.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,377.307,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,411.907,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.125,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,398.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,435.706,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,331.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,377.307,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,398.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,365.706,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,360.507,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,326.707,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=88.8,6.6,80 Anchored BottomSurface=Smooth CFrame=751.225,322.009,3576.926|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,393.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,327.309,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,331.906,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,429.209,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,359.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,377.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,377.307,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,365.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,326.707,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,453.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,343.307,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,326.707,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=115.8,6.6,66.6 Anchored BottomSurface=Smooth CFrame=678.125,322.009,3563.226|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,394.709,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=89,6.6,80.4 Anchored BottomSurface=Smooth CFrame=604.625,470.809,3576.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,393.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,348.506,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,393.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,348.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,417.106,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,398.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,398.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,430.507,3593.025|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,393.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,453.706,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,326.707,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,377.307,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,417.106,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,398.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,377.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=115.6,6.6,66.6 Anchored BottomSurface=Smooth CFrame=678.125,470.809,3563.125|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=69.4,6.6,16.2 Anchored BottomSurface=Smooth CFrame=556.925,470.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=26,142.2,16 Anchored BottomSurface=Smooth CFrame=799.025,396.409,3556.926|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,382.506,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,377.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,343.307,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,343.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,392.009,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,382.506,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,398.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,411.907,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=799.124,365.706,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,411.907,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,359.609,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,393.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,393.507,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=26,142.2,16 Anchored BottomSurface=Smooth CFrame=556.825,396.409,3556.926|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,382.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,429.209,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,398.906,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,448.507,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,343.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,343.307,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,377.307,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,343.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,342.209,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,453.706,3563.825|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,435.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,430.507,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=748.324,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,393.707,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,343.307,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,326.707,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=26,142.2,16 Anchored BottomSurface=Smooth CFrame=799.025,396.409,3600.325|0,-90,0 TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,379.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,412.109,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,348.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=711.524,331.906,3513.226|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=585.924,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=608.924,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,3.6 Anchored BottomSurface=Smooth CFrame=806.825,375.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,365.706,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,365.706,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,343.307,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=652.724,435.706,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=771.124,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,382.506,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,453.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,326.707,3593.026 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=585.924,363.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,331.906,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,348.506,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,327.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=703.524,331.906,3505.226|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,428.909,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=652.724,430.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,343.307,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,398.706,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,360.507,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,326.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=799.124,393.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=807.125,360.507,3563.825|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=556.724,417.106,3543.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,342.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=711.524,343.307,3513.225|-180,0,-180 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=620.524,373.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=644.724,430.507,3513.226 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,446.309,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,331.906,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,331.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=736.724,377.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,393.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,453.706,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=759.724,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,382.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=748.324,331.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,411.907,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,343.307,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,417.106,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=725.124,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,358.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=644.724,453.706,3513.225 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,382.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=574.524,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,360.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=597.324,347.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,411.907,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=782.524,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=807.125,435.706,3593.025|-180,0,-180 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,343.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=703.524,430.507,3505.226|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=69.4,6.8,15.8 Anchored BottomSurface=Smooth CFrame=799.125,470.909,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,377.307,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,448.307,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=548.725,326.707,3563.825 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=782.524,411.907,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,377.307,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,448.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,435.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=759.724,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=574.524,397.706,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=631.924,430.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,417.106,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,391.809,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,453.706,3593.025 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=597.324,392.507,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=608.924,453.506,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=771.124,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=736.724,382.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=17.4,2.6,20.4 Anchored BottomSurface=Smooth CFrame=557.625,375.609,3578.625|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=631.924,332.306,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=620.524,417.106,3531.825|0,-90,0 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,10,5.8 Anchored BottomSurface=Smooth CFrame=548.725,348.506,3563.825 Color=#74869D Material=Metal TopSurface=Smooth
+        Part "Part" Size=7,2.8,34.6 Anchored BottomSurface=Smooth CFrame=678.125,377.909,3507.426|0,-90,0 Color=#957977 Material=Concrete TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=725.124,377.107,3531.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+        Part "Part" Size=0.2,0.4,5.8 Anchored BottomSurface=Smooth CFrame=556.724,393.507,3543.825|0,-90,0 Color=#635F62 Material=Metal TopSurface=Smooth
+    }
+    Model "Model" @file="Scene/Workspace/Map/Background/Model~5.bridge"
+    Model "Model" @file="Scene/Workspace/Map/Background/Model~6.bridge"
+    Model "Model" @file="Scene/Workspace/Map/Background/Model~7.bridge"
+    MeshPart "radio_tower001" Size=73.778,274.467,67.06 Anchored CFrame=189.607,511.743,3516.782|-180,0,-180 CollisionFidelity=Default Material=CorrodedMetal RenderFidelity=Precise TextureContent="rbxassetid://2900061806" TextureID="rbxassetid://2900061806"
+}
+Part "GM_CONSTRUCT" Size=111.15,26.45,98.8 Anchored BottomSurface=Smooth CFrame=879.575,108.584,3080.95 Color=#B8C9E3 Material=Slate TopSurface=Smooth {
+    Model "Model" @file="Scene/Workspace/Map/GM_CONSTRUCT/Model.bridge"
+    Model "Model" @file="Scene/Workspace/Map/GM_CONSTRUCT/Model~2.bridge"
+    Model "Model" {
+        Part "Part" Size=74.05,209.9,14.4 Anchored BottomSurface=Smooth CFrame=494.425,227.009,3422.399 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    }
+    Model "Model" @file="Scene/Workspace/Map/GM_CONSTRUCT/Model~4.bridge"
+    Part "Part" Size=32.95,82.75,638.95 Anchored BottomSurface=Smooth CFrame=652.025,127.034,3446.175|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1.95,14.25,14.15 Anchored BottomSurface=Smooth CFrame=495.475,127.784,3365.225|0,-90,0 Material=CorrodedMetal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=636.325,127.234,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=192.15,26.45,17.15 Anchored BottomSurface=Smooth CFrame=460.075,128.834,3025.925 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=81.75,0.55,58.15 Anchored BottomSurface=Smooth CFrame=496.325,337.884,3393.324 Color=#5A5A5A Material=Metal TopSurface=Smooth
+    Part "Part" Size=4.05,1.65,4.1 Anchored BottomSurface=Smooth CFrame=478.175,137.384,3253.4|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=20.5,3.45,4.45 Anchored BottomSurface=Smooth CFrame=686,135.534,3361.175|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,126.709,3337.325|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=75.65,5.9,58.15 Anchored BottomSurface=Smooth CFrame=880.275,334.759,3079.925 Color=#9F9F9F Material=Marble TopSurface=Smooth
+    Part "Part" Size=81.95,5.9,58.15 Anchored BottomSurface=Smooth CFrame=496.425,334.759,3393.324 Color=#9F9F9F Material=Marble TopSurface=Smooth
+    Part "Part" Size=49.5,1.95,11.25 Anchored BottomSurface=Smooth CFrame=468.35,127.113,3272.03|27,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=7.25,1.65,4.1 Anchored BottomSurface=Smooth CFrame=478.175,135.734,3255|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=46.15,26.45,17.1 Anchored BottomSurface=Smooth CFrame=549.9,126.684,3423.025|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=32.85,66.2,42.8 Anchored BottomSurface=Smooth CFrame=975.513,135.159,3438.401|-180,45,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1,1.25,4.1 Anchored BottomSurface=Smooth CFrame=478.175,138.834,3251.875|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,3.15,0.5 Anchored BottomSurface=Smooth CFrame=588.45,131.684,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,16.65,45.45 Anchored BottomSurface=Smooth CFrame=714.725,125.534,3394.125|0,-90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,14.45 Anchored BottomSurface=Smooth CFrame=629.225,136.984,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,21.45 Anchored BottomSurface=Smooth CFrame=602.175,133.534,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,127.334,3272.9|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=10.6,1.65,4.1 Anchored BottomSurface=Smooth CFrame=478.175,134.084,3256.676|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=75.65,0.55,58.15 Anchored BottomSurface=Smooth CFrame=880.275,337.884,3079.925 Color=#5A5A5A Material=Metal TopSurface=Smooth
+    Part "Part" Size=4.7,10.4,4.1 Anchored BottomSurface=Smooth CFrame=478.175,135.009,3249.075|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=48,1.2,17.15 Anchored BottomSurface=Smooth CFrame=549.875,121.624,3207.303|14,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,118.459,3297.925|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=8.555,1.528,17.318 Anchored BottomSurface=Smooth CFrame=863.232,133.284,3322.305|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=29.75,1.5,2.65 Anchored BottomSurface=Smooth CFrame=741.625,135.409,3410.925|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=14.75,239.85,15.45 Anchored BottomSurface=Smooth CFrame=534.025,215.434,3363.625 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=14.35,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,121.934,3278.1|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=77.6,0.15,86.9 Anchored BottomSurface=Smooth CFrame=601.7,139.084,3391.25|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=6.8,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,125.984,3274.325|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=85.5,3.45,63.2 Anchored BottomSurface=Smooth CFrame=590.025,135.534,3395.225|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=621.875,127.234,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,20.85 Anchored BottomSurface=Smooth CFrame=665.225,136.984,3360.775|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=60.95,26.45,17.15 Anchored BottomSurface=Smooth CFrame=549.875,128.834,3064.875|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=14.933,1.478,34.429 Anchored BottomSurface=Smooth CFrame=863.283,133.309,3334.049|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=60.65,26.45,17.1 Anchored BottomSurface=Smooth CFrame=549.9,117.074,3376.067|-20,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=694.275,127.234,3363.575|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=10.45,16.65,8.8 Anchored BottomSurface=Smooth CFrame=640.775,125.534,3357.65|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=17.6,26.45,61.05 Anchored BottomSurface=Smooth CFrame=411.35,107.484,3421.425|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,117.159,3291.425|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=45.7,236.45,24.6 Anchored BottomSurface=Smooth CFrame=468.2,213.734,3393.4|0,-90,0 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=144.5,26.45,15.65 Anchored BottomSurface=Smooth CFrame=434.05,107.484,3375.675|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=4.85,8.9,3.35 Anchored BottomSurface=Smooth CFrame=869.025,342.059,3100.175 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,263.45 Anchored BottomSurface=Smooth CFrame=839.775,101.334,3411.65|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=4.25,7.35,3.6 Anchored BottomSurface=Smooth CFrame=868.725,341.834,3096.699 Color=#989D79 Material=Brick TopSurface=Smooth {
+        Decal "Decal" Face=Right Texture="rbxassetid://8692753815" TextureContent="rbxassetid://8692753815"
+    }
+    Part "Part" Size=14.75,239.75,15.45 Anchored BottomSurface=Smooth CFrame=454.075,215.384,3363.625 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,115.759,3284.775|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=13.6,1.65,4.1 Anchored BottomSurface=Smooth CFrame=478.175,132.434,3258.176|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=45.7,236.45,7 Anchored BottomSurface=Smooth CFrame=914.5,213.734,3080|0,-90,0 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=79.85,16.65,8.8 Anchored BottomSurface=Smooth CFrame=562.825,125.534,3392.35|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,121.409,3311.225|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=6.25,1.6,1.1 Anchored BottomSurface=Smooth CFrame=480.225,139.539,3248.437|0,-90,0 Color=#3A3A3A Material=Granite TopSurface=Smooth
+    Part "Part" Size=61.75,13.15,5.2 Anchored BottomSurface=Smooth CFrame=968.9,126.884,3369.725|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=2.4,16,20.65 Anchored BottomSurface=Smooth CFrame=693.5,128.959,3374.075|-180,0,-180 Material=CorrodedMetal TopSurface=Smooth {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=32.85,82.5,480.6 Anchored BottomSurface=Smooth CFrame=348.9,126.909,3226.775|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=87.5,2.096,233.45 Anchored BottomSurface=Smooth CFrame=854.775,133.309,3384.45|0,-90,0 Color=#635F62 Material=Asphalt TopSurface=Smooth
+    Part "Part" Size=14.75,240.1,15.45 Anchored BottomSurface=Smooth CFrame=452.425,215.559,3422.725 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=18.6,0.5,5.6 Anchored BottomSurface=Smooth CFrame=856.6,134.859,3111.25 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=29.75,0.15,2.65 Anchored BottomSurface=Smooth CFrame=739.075,137.734,3410.925|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=16.7,59.2,3.05 Anchored BottomSurface=Smooth CFrame=539.925,98.409,3164.95|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=10.6,3.45,4.45 Anchored BottomSurface=Smooth CFrame=649.15,135.534,3361.175|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=32.85,82.7,453.8 Anchored BottomSurface=Smooth CFrame=986.05,127.009,3240.175|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=45.7,236.45,24.6 Anchored BottomSurface=Smooth CFrame=855.2,213.734,3080|0,-90,0 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.8,0.5,4 Anchored BottomSurface=Smooth CFrame=865.65,137.059,3111.2|-90,0,-90 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,122.059,3314.575|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=4.25,0.15,7.7 Anchored BottomSurface=Smooth CFrame=741.7,139.084,3427.925|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=19.9,0.3,10.2 Anchored BottomSurface=Smooth CFrame=857.763,342.286,3096.7|0,0,26 Color=#5A5A5A Material=Metal TopSurface=Smooth
+    Part "Part" Size=29.75,1.5,2.65 Anchored BottomSurface=Smooth CFrame=739.075,136.909,3410.925|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=14.75,241.7,15.45 Anchored BottomSurface=Smooth CFrame=534.025,214.534,3422.725 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,20.85 Anchored BottomSurface=Smooth CFrame=694.275,136.984,3374.075|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,124.459,3327.575|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=75.35,1.8,26.2 Anchored BottomSurface=Smooth CFrame=658.575,138.109,3372|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=71.15,0.15,51.1 Anchored BottomSurface=Smooth CFrame=670.7,139.084,3394.475|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=3.45,13.2,5.2 Anchored BottomSurface=Smooth CFrame=968.9,117.709,3294.675|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,263.45 Anchored BottomSurface=Smooth CFrame=839.775,105.284,3446.1|0,-90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=29.75,1.5,2.65 Anchored BottomSurface=Smooth CFrame=736.525,138.259,3410.925|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,5.2,53.5 Anchored BottomSurface=Smooth CFrame=718.8,136.409,3394.125|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=675.525,127.234,3360.775|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,3.15,0.5 Anchored BottomSurface=Smooth CFrame=591.7,131.684,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=14.9,26.45,54.45 Anchored BottomSurface=Smooth CFrame=453.45,107.484,3296.075|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=99.95,1.6,1.1 Anchored BottomSurface=Smooth CFrame=480.225,116.887,3295.713|27,-90,0 Color=#3A3A3A Material=Granite TopSurface=Smooth
+    Part "Part" Size=66.8,12.75,18.35 Anchored BottomSurface=Smooth CFrame=978.625,125.142,3307.146|-11,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=10.45,12.35,45.95 Anchored BottomSurface=Smooth CFrame=590,123.384,3357.65|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=92.439,1.428,238.041 Anchored BottomSurface=Smooth CFrame=856.623,133.334,3385.827|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.95,3.15,0.5 Anchored BottomSurface=Smooth CFrame=612.65,131.684,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=64.05,2.1,74.7 Anchored BottomSurface=Smooth CFrame=704.114,118.799,3372.725|90,-67,90 Color=#635F62 Material=Asphalt TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,227.1 Anchored BottomSurface=Smooth CFrame=349.275,113.184,3110.975|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=62.45,26.45,17.15 Anchored BottomSurface=Smooth CFrame=372.775,128.834,3065.625|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=29.75,0.15,2.65 Anchored BottomSurface=Smooth CFrame=741.625,136.234,3410.925|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=37.95,0.15,41.8 Anchored BottomSurface=Smooth CFrame=717,139.084,3411.075|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=100.4,2.15,16.65 Anchored BottomSurface=Smooth CFrame=372.55,126.504,3259.833|17,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=24.1,16.65,8.8 Anchored BottomSurface=Smooth CFrame=475.875,121.534,3258.875|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,111.95 Anchored BottomSurface=Smooth CFrame=985.925,105.284,3394.6|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,263.45 Anchored BottomSurface=Smooth CFrame=985.925,92.484,3144.85|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.95,5.2,37.5 Anchored BottomSurface=Smooth CFrame=726.8,136.409,3427.775|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=150.55,0.15,61.9 Anchored BottomSurface=Smooth CFrame=510.5,140.334,3171.625|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=3.95,16.65,8.7 Anchored BottomSurface=Smooth CFrame=694.275,125.534,3388.95|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=16.95,1.8,4.1 Anchored BottomSurface=Smooth CFrame=478.175,130.709,3259.85|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,5.2,8 Anchored BottomSurface=Smooth CFrame=694.275,136.409,3388.65|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=5,13.3,5.2 Anchored BottomSurface=Smooth CFrame=968.9,115.059,3280.75|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=17.05,8.05,8.8 Anchored BottomSurface=Smooth CFrame=475.875,117.234,3279.45|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=109,26.45,96.55 Anchored BottomSurface=Smooth CFrame=879.55,108.734,3081.175 Color=#635F62 Material=Asphalt TopSurface=Smooth
+    Part "Part" Size=133.3,1.5,99.15 Anchored BottomSurface=Smooth CFrame=492.175,119.909,3370.75|0,-90,0 Color=#8B8C77 Material=Pavement TopSurface=Smooth
+    Part "Part" Size=78.85,26.45,17.15 Anchored BottomSurface=Smooth CFrame=502.125,128.834,3087.675 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,116.7 Anchored BottomSurface=Smooth CFrame=349.275,95.2,3268.18|-160,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=62.55,71.45,3.05 Anchored BottomSurface=Smooth CFrame=539.925,104.534,3126.325|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=1.95,14.25,14.15 Anchored BottomSurface=Smooth CFrame=480.375,127.125,3225.672|-180,0,-180 Material=CorrodedMetal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=694.275,127.234,3384.375|-180,0,-180 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=86.55,1.799,82.199 Anchored BottomSurface=Smooth CFrame=601.7,138.109,3393.575|-180,0,-180 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1.95,14.25,14.15 Anchored BottomSurface=Smooth CFrame=480.375,127.125,3191.172|-180,0,-180 Material=CorrodedMetal TopSurface=Smooth Transparency=1 {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=10.45,16.65,8.8 Anchored BottomSurface=Smooth CFrame=617.275,125.534,3357.65|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=1.95,15.6,20.3 Anchored BottomSurface=Smooth CFrame=665.1,128.959,3361.775|0,-90,0 Material=CorrodedMetal TopSurface=Smooth {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=87.3,62.4,5.25 Anchored BottomSurface=Smooth CFrame=733.875,99.559,3384.55|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=1.95,15.75,14.15 Anchored BottomSurface=Smooth CFrame=629.075,129.034,3355.275|0,-90,0 Material=CorrodedMetal TopSurface=Smooth {
+        Decal "Decal" Face=Left Texture="rbxassetid://8689025902" TextureContent="rbxassetid://8689025902"
+    }
+    Part "Part" Size=23.35,21.45,62.45 Anchored BottomSurface=Smooth CFrame=510.225,129.534,3131.325|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=32.55,1.4,17.15 Anchored BottomSurface=Smooth CFrame=549.875,127.343,3168.012|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=191,4.85,17.1 Anchored BottomSurface=Smooth CFrame=549.9,119.034,3305.6|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=14.1,2,3.05 Anchored BottomSurface=Smooth CFrame=539.925,139.259,3164.6|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=4.25,7.35,3.6 Anchored BottomSurface=Smooth CFrame=512.375,123.675,3171.197|0,-90,0 Color=#FFFFFF Material=Metal TopSurface=Smooth {
+        Decal "Decal" Face=Right Texture="rbxassetid://8692753815" TextureContent="rbxassetid://8692753815"
+    }
+    Part "Part" Size=14.75,240.1,15.45 Anchored BottomSurface=Smooth CFrame=839.425,215.559,3109.325 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,21.45 Anchored BottomSurface=Smooth CFrame=577.975,129.884,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=45.4,9.5,57.15 Anchored BottomSurface=Smooth CFrame=509.775,124.459,3150.6|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=10.4,5.25,8.75 Anchored BottomSurface=Smooth CFrame=640.75,136.434,3357.675|0,90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=19.7,71.45,3.05 Anchored BottomSurface=Smooth CFrame=539.925,104.534,3237|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=87.5,2.1,150.05 Anchored BottomSurface=Smooth CFrame=632.675,120.209,3384.45|0,-90,0 Color=#8B8C77 Material=Pavement TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,21.45 Anchored BottomSurface=Smooth CFrame=602.175,129.884,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=3.95,20.05,0.55 Anchored BottomSurface=Smooth CFrame=654.725,127.234,3360.775|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=10.578,1.528,12.133 Anchored BottomSurface=Smooth CFrame=872.477,133.284,3326.024|-180,-45,-180 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=172.1,26.45,14.75 Anchored BottomSurface=Smooth CFrame=373.5,104.784,3343.975|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,47.45 Anchored BottomSurface=Smooth CFrame=975.336,105.334,3438.401|-180,45,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=4,0.15,7.7 Anchored BottomSurface=Smooth CFrame=741.7,139.084,3394.1|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=3.1,4.35,33.25 Anchored BottomSurface=Smooth CFrame=508.975,138.084,3245.3|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=135.15,26.25,17.15 Anchored BottomSurface=Smooth CFrame=620.396,117.386,3025.925|0,0,-10 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=121.6,65.05,13.95 Anchored BottomSurface=Smooth CFrame=611.781,103.077,3012.774|0,0,-10 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=81.05,26.45,96.55 Anchored BottomSurface=Smooth CFrame=421.275,129.084,3162.975 Color=#635F62 Material=Asphalt TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,125.759,3334.075|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.1,20.95,13 Anchored BottomSurface=Smooth CFrame=531.9,129.784,3245.3|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=10.45,4.35,2.85 Anchored BottomSurface=Smooth CFrame=590.05,131.684,3357.65|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=98.8,26.45,98.8 Anchored BottomSurface=Smooth CFrame=413.4,128.934,3162.75 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,119.159,3301.475|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=99.25,26.45,17.15 Anchored BottomSurface=Smooth CFrame=413.625,128.834,3105.425 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,123.359,3321.075|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=1.95,15.75,45.95 Anchored BottomSurface=Smooth CFrame=589.975,129.034,3355.275|0,-90,0 Color=#000000 Material=Neon TopSurface=Smooth
+    Part "Part" Size=17.15,2.1,115.35 Anchored BottomSurface=Smooth CFrame=616.075,120.209,3332.175|0,-90,0 Color=#8B8C77 Material=Pavement TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,227.1 Anchored BottomSurface=Smooth CFrame=349.275,91.684,3397.275|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=100.4,2.15,17.95 Anchored BottomSurface=Smooth CFrame=471.7,117.341,3295.615|27,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=87.3,63.65,10.1 Anchored BottomSurface=Smooth CFrame=740.1,100.634,3384.55|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=4.25,7.35,3.6 Anchored BottomSurface=Smooth CFrame=865.625,125.484,3062.349 Color=#FFFFFF Material=Metal TopSurface=Smooth {
+        Decal "Decal" Face=Right Texture="rbxassetid://8692753815" TextureContent="rbxassetid://8692753815"
+    }
+    Part "Part" Size=150.6,1.85,17.95 Anchored BottomSurface=Smooth CFrame=471.7,141.135,3171.525|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=41.8,71.45,3.05 Anchored BottomSurface=Smooth CFrame=539.925,104.534,3192.4|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=14.75,239.75,15.45 Anchored BottomSurface=Smooth CFrame=841.075,215.384,3050.225 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=32.85,82.7,638.75 Anchored BottomSurface=Smooth CFrame=683.325,127.009,3003.125|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,193.7 Anchored BottomSurface=Smooth CFrame=460.75,113.084,3003.25|0,-90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=20.45,16.65,4.4 Anchored BottomSurface=Smooth CFrame=686.025,125.534,3361.1|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,123.009,3317.825|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=1,4.05,34.6 Anchored BottomSurface=Smooth CFrame=690.95,119.434,3340.202|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=29.75,0.15,2.65 Anchored BottomSurface=Smooth CFrame=744.225,134.984,3410.925|0,-90,0 Color=#3A3A3A Material=Concrete TopSurface=Smooth {
+        Texture "Texture" Color3=#000000 Face=Top StudsPerTileU=5 StudsPerTileV=5 Texture="rbxassetid://13522770294" TextureContent="rbxassetid://13522770294" Transparency=0.4
+    }
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,124.309,3324.325|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=74.752,189.65,56.342 Anchored BottomSurface=Smooth CFrame=880.45,231.434,3080.1 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1.2,4.05,115.3 Anchored BottomSurface=Smooth CFrame=616.1,119.434,3323|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,120.109,3304.725|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=14.75,241.7,15.45 Anchored BottomSurface=Smooth CFrame=921.025,214.534,3109.325 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=159.1,20.95,1.8 Anchored BottomSurface=Smooth CFrame=480.45,129.784,3167.297|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=64.4,2.6,138.4 Anchored BottomSurface=Smooth CFrame=509,118.7,3171.097 Color=#9FA1AC Material=Concrete TopSurface=Smooth
+    Part "Part" Size=1.45,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,128.634,3271.65|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=4.85,8.9,3.35 Anchored BottomSurface=Smooth CFrame=869.025,342.059,3093.225 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=11.8,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,123.284,3276.825|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=254.4,51.6,5.35 Anchored BottomSurface=Smooth CFrame=968.825,94.609,3273.4|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.95,3.15,0.5 Anchored BottomSurface=Smooth CFrame=567.5,131.684,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=4.85,0.3,10.3 Anchored BottomSurface=Smooth CFrame=869.025,346.659,3096.7 Color=#5A5A5A Material=Metal TopSurface=Smooth
+    Part "Part" Size=19.9,8.9,10.2 Anchored BottomSurface=Smooth CFrame=859.648,338.121,3096.7|0,0,26 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.45,13.25,5.2 Anchored BottomSurface=Smooth CFrame=968.9,116.434,3288.175|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=18,1.05,2.5 Anchored BottomSurface=Smooth CFrame=471.7,141.538,3248.05|-180,0,-180 Color=#B8C9E3 Material=Slate Shape=Wedge TopSurface=Smooth
+    Part "Part" Size=29.75,1.5,2.65 Anchored BottomSurface=Smooth CFrame=744.225,134.159,3410.925|0,-90,0 Color=#C8C097 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=430.85,26.45,17.15 Anchored BottomSurface=Smooth CFrame=754.975,108.384,3025.925 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=14,1.4,3 Anchored BottomSurface=Smooth CFrame=539.9,120.7,3220.197|0,90,0 Color=#9FA1AC Material=Concrete Shape=Wedge TopSurface=Smooth
+    Part "Part" Size=3.95,0.55,21.45 Anchored BottomSurface=Smooth CFrame=577.975,133.534,3354.325|0,-90,0 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=18.3,4.05,1 Anchored BottomSurface=Smooth CFrame=674.15,119.434,3331.552|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=10.578,1.528,12.133 Anchored BottomSurface=Smooth CFrame=854.072,133.284,3326.097|0,-45,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=1.95,15.75,45.95 Anchored BottomSurface=Smooth CFrame=589.975,129.034,3353.925|0,-90,0 Color=#4E7857 Material=Glass TopSurface=Smooth Transparency=0.4
+    Part "Part" Size=14.4,1.2,3 Anchored BottomSurface=Smooth CFrame=539.85,128.609,3164.8|0,-90,0 Color=#B8C9E3 Material=Slate Shape=Wedge TopSurface=Smooth
+    Part "Part" Size=0.6,4.05,38.7 Anchored BottomSurface=Smooth CFrame=461.403,118.634,3303.799|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=65.1,1.4,74.15 Anchored BottomSurface=Smooth CFrame=703.763,118.922,3372.15|90,-67,90 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=0.6,4.05,60.9 Anchored BottomSurface=Smooth CFrame=511.1,118.634,3303.8|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=252.9,1.55,17.15 Anchored BottomSurface=Smooth CFrame=961.325,120.834,3149.35|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=66.5,1.55,17.15 Anchored BottomSurface=Smooth CFrame=961.325,127.18,3308.253|-11,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=4.85,1.05,3.65 Anchored BottomSurface=Smooth CFrame=869.025,345.984,3096.675 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,125.409,3330.825|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=9.4,1.35,8.8 Anchored BottomSurface=Smooth CFrame=475.875,124.634,3275.625|0,90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=14.75,239.85,15.45 Anchored BottomSurface=Smooth CFrame=921.025,215.434,3050.225 Color=#989D79 Material=Brick TopSurface=Smooth
+    Part "Part" Size=30.65,0.1,58.65 Anchored BottomSurface=Smooth CFrame=509.025,129.193,3157.962|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.1,20.95,13 Anchored BottomSurface=Smooth CFrame=486.05,129.784,3245.3|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=17.2,2.7,5.9 Anchored BottomSurface=Smooth CFrame=377.925,119.359,3421.125|0,90,0 Color=#B8C9E3 Material=Slate Shape=Wedge TopSurface=Smooth
+    Part "Part" Size=45.7,236.45,17.3 Anchored BottomSurface=Smooth CFrame=532.65,213.734,3393.4|0,-90,0 Color=#D1D6CA Material=Concrete TopSurface=Smooth
+    Part "Part" Size=23.6,1.6,17.95 Anchored BottomSurface=Smooth CFrame=471.7,140.284,3239.575|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=58.7,1.2,17.15 Anchored BottomSurface=Smooth CFrame=549.875,134.341,3123.645|14,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=33.1,65.05,327.7 Anchored BottomSurface=Smooth CFrame=812.05,92.484,3003.25|0,-90,0 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=10.6,16.65,4.4 Anchored BottomSurface=Smooth CFrame=649.1,125.534,3361.1|-180,0,-180 Color=#915F60 Material=Slate TopSurface=Smooth
+    Part "Part" Size=14.1,8.35,3.05 Anchored BottomSurface=Smooth CFrame=539.925,136.084,3220.15|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    Part "Part" Size=127.6,4.05,0.8 Anchored BottomSurface=Smooth CFrame=442.253,118.634,3367.206|0,-90,0 Color=#B8C9E3 Material=Slate TopSurface=Smooth
+    Part "Part" Size=3.45,12.8,5.2 Anchored BottomSurface=Smooth CFrame=968.9,120.459,3307.975|0,-90,0 Color=#7A451F Material=Brick TopSurface=Smooth
+    TrussPart "Truss" Size=2,9.65,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,290.678,3064.55 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,30.15,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,169.828,3064.55 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,30.15,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,241.028,3064.55 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,277.728,3062.45 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,30.15,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,322.828,3062.45 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,153.878,3062.45 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,63.95,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,215.778,3062.45 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    TrussPart "Truss" Size=2,30.15,2 Anchored BackSurface=Smooth BottomSurface=Smooth CFrame=841.85,322.828,3064.55 Color=#AF9483 FrontSurface=Smooth LeftSurface=Smooth Material=Metal RightSurface=Smooth TopSurface=Smooth
+    UnionOperation "Union" Size=22.681,2.1,33.234 Anchored CFrame=863.142,133.309,3329.559|0,-90,0 Color=#635F62 Material=Asphalt RenderFidelity=Precise $_geo="bec9e5f286cd4ff6"
+}
+Part "Part" Size=3.9,1.4,1 Anchored BottomSurface=Smooth CFrame=-1421.924,1161.2,530.213|90,0,-170 Color=#635F62 Material=Rock TopSurface=Smooth {
+    SurfaceGui "SurfaceGui" ClipsDescendants LightInfluence=1 SizingMode=PixelsPerStud ZIndexBehavior=Sibling {
+        TextLabel "TextLabel" Size=0,200,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 FontFace="RobotoMono|Regular|Normal" Text="You've wasted your time, haven't you?" TextColor3=#000000 TextScaled TextSize=14 TextWrapped
+    }
+}
+Part "Ragdoll_Test" @file="Scene/Workspace/Map/Ragdoll_Test.bridge" Size=31.05,0.85,2 Anchored BottomSurface=Smooth CFrame=94.125,142.366,3138.35 Color=#6F6E70 Material=Concrete TopSurface=Smooth

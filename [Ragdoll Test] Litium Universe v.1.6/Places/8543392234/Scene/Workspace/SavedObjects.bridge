@@ -1,0 +1,780 @@
+Model "C4" PrimaryPart=@"Workspace/SavedObjects/C4/Base" {
+    Part "Base" Size=1.8,0.5,0.75 BottomSurface=Smooth CFrame=517.15,526.4,281.725 Color=#FDEA8D Material=Slate TopSurface=Smooth {
+        Part "Block" Size=0.8,0.1,0.5 BottomSurface=Smooth CFrame=517.45,526.7,281.7 Color=#69665C Material=Metal TopSurface=Smooth {
+            ClickDetector "ClickDet" MaxActivationDistance=15
+            Decal "Decal" Face=Top Texture="rbxassetid://8709537385" TextureContent="rbxassetid://8709537385"
+            Script "Mechanism" @src="Scripts/Workspace/SavedObjects/C4/Base/Block/Mechanism.luau"
+        }
+        Decal "DecalColor" Face=Top Texture="rbxassetid://8709300217" TextureContent="rbxassetid://8709300217"
+        Motor6D "Unbrk" C0=0.3,0.3,-0.025 Part0=@"Workspace/SavedObjects/C4/Base" Part1=@"Workspace/SavedObjects/C4/Base/Block"
+    }
+}
+Model "Chair" PrimaryPart=@"Workspace/SavedObjects/Chair/Base" {
+    Part "Base" Size=2.7,0.2,2.85 BottomSurface=Smooth CFrame=535.35,527.05,282.775 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth {
+        Motor6D "Base" C0=-1.25,1.925,0 Part0=@"Workspace/SavedObjects/Chair/Base" Part1=@"Workspace/SavedObjects/Chair/Base/BlockColor~2"
+        Motor6D "Base" C0=-1.025,-0.2,0 Part0=@"Workspace/SavedObjects/Chair/Base" Part1=@"Workspace/SavedObjects/Chair/Base/Block~2"
+        Motor6D "Base" C0=0.925,-0.2,0 Part0=@"Workspace/SavedObjects/Chair/Base" Part1=@"Workspace/SavedObjects/Chair/Base/Block"
+        Part "Block" Size=0.35,0.2,2.85 BottomSurface=Smooth CFrame=536.275,526.85,282.775 Color=#6F4F34 Material=WoodPlanks TopSurface=Smooth {
+            Motor6D "Base" C0=0,-0.55,1.275 Part0=@"Workspace/SavedObjects/Chair/Base/Block" Part1=@"Workspace/SavedObjects/Chair/Base/Block/Block"
+            Motor6D "Base" C0=0,-0.55,-1.275 Part0=@"Workspace/SavedObjects/Chair/Base/Block" Part1=@"Workspace/SavedObjects/Chair/Base/Block/Block~2"
+            Part "Block" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=536.275,526.3,284.05 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth
+            Part "Block" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=536.275,526.3,281.5 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth
+        }
+        Part "Block" Size=0.35,0.2,2.85 BottomSurface=Smooth CFrame=534.325,526.85,282.775 Color=#6F4F34 Material=WoodPlanks TopSurface=Smooth {
+            Motor6D "Base" C0=0,-0.55,-1.275 Part0=@"Workspace/SavedObjects/Chair/Base/Block~2" Part1=@"Workspace/SavedObjects/Chair/Base/Block~2/Block"
+            Motor6D "Base" C0=0,-0.55,1.275 Part0=@"Workspace/SavedObjects/Chair/Base/Block~2" Part1=@"Workspace/SavedObjects/Chair/Base/Block~2/Block~2"
+            Part "Block" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=534.325,526.3,281.5 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth
+            Part "Block" Size=0.35,0.9,0.3 BottomSurface=Smooth CFrame=534.325,526.3,284.05 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth
+        }
+        Motor6D "BlockColor" C0=0,0.15,0 Part0=@"Workspace/SavedObjects/Chair/Base" Part1=@"Workspace/SavedObjects/Chair/Base/BlockColor~3"
+        Part "BlockColor" Size=0.2,1.65,2.85 BottomSurface=Smooth CFrame=534.1,528.975,282.775 Color=#F8F8F8 Material=Fabric TopSurface=Smooth {
+            Motor6D "Base" C0=-0.2,-0.725,-1.025 Part0=@"Workspace/SavedObjects/Chair/Base/BlockColor~2" Part1=@"Workspace/SavedObjects/Chair/Base/BlockColor~2/Block~2"
+            Motor6D "Base" C0=-0.2,-0.725,0.925 Part0=@"Workspace/SavedObjects/Chair/Base/BlockColor~2" Part1=@"Workspace/SavedObjects/Chair/Base/BlockColor~2/Block"
+            Part "Block" Size=0.2,2.6,0.2 BottomSurface=Smooth CFrame=533.9,528.25,283.7 Color=#6F4F34 Material=WoodPlanks TopSurface=Smooth
+            Part "Block" Size=0.2,2.6,0.2 BottomSurface=Smooth CFrame=533.9,528.25,281.75 Color=#6F4F34 Material=WoodPlanks TopSurface=Smooth
+        }
+        Part "BlockColor" Size=2.7,0.1,2.85 BottomSurface=Smooth CFrame=535.35,527.2,282.775 Color=#F8F8F8 Material=Fabric TopSurface=Smooth
+    }
+}
+UnionOperation "Cinderblock" Size=2.5,0.8,1.1 CFrame=502.35,526.25,282.25 Color=#8B8A8D Material=Concrete RenderFidelity=Precise UsePartColor $_geo="9afb2f859bf7be68"
+Model "Dummy" PrimaryPart=@"Workspace/SavedObjects/Dummy/HumanoidRootPart" {
+    Model "AnimSaves" {
+        KeyframeSequence "walk" #"1643482647" Loop=false Priority=Core {
+            Keyframe "Keyframe" Time=0.367 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "LeftUpperLeg" CFrame=0,0,0|45,0,0
+                        Pose "RightUpperLeg" CFrame=0,0,0|-45,0,0
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0,0,0|-45,0,0
+                            Pose "RightUpperArm" CFrame=0,0,0|45,0,0
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=1 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "LeftUpperLeg" CFrame=0,0,0|-45,0,0
+                        Pose "RightUpperLeg" CFrame=0,0,0|45,0,0
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm" CFrame=0,0,0|45,0,0
+                            Pose "RightUpperArm" CFrame=0,0,0|-45,0,0
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "LeftUpperLeg"
+                        Pose "RightUpperLeg"
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm"
+                            Pose "RightUpperArm"
+                        }
+                    }
+                }
+            }
+            Keyframe "Keyframe" Time=0.733 {
+                Pose "HumanoidRootPart" Weight=0 {
+                    Pose "LowerTorso" Weight=0 {
+                        Pose "LeftUpperLeg"
+                        Pose "RightUpperLeg"
+                        Pose "UpperTorso" Weight=0 {
+                            Pose "LeftUpperArm"
+                            Pose "RightUpperArm"
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Part "Head" Size=2,1,1 BottomSurface=Smooth CFrame=549.77,530.377,282.552 TopSurface=Smooth {
+        Attachment "FaceCenterAttachment" {
+            Vector3Value "OriginalPosition"
+        }
+        Attachment "FaceFrontAttachment" CFrame=0,0,-0.6 {
+            Vector3Value "OriginalPosition" Value=0,0,-0.6
+        }
+        Attachment "HairAttachment" CFrame=0,0.6,0 {
+            Vector3Value "OriginalPosition" Value=0,0.6,0
+        }
+        Attachment "HatAttachment" CFrame=0,0.6,0 {
+            Vector3Value "OriginalPosition" Value=0,0.6,0
+        }
+        SpecialMesh "Mesh" Scale=1.25,1.25,1.25
+        Motor6D "Neck" C0=0,0.8,0 C1=0,-0.5,0 Part0=@"Workspace/SavedObjects/Dummy/UpperTorso" Part1=@"Workspace/SavedObjects/Dummy/Head"
+        Attachment "NeckRigAttachment" CFrame=0,-0.5,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.5,0
+        }
+        Vector3Value "OriginalSize" Value=2,1,1
+        Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+        Decal "face" Texture="rbxasset://textures/face.png" TextureContent="rbxasset://textures/face.png"
+    }
+    Humanoid "Humanoid" HipHeight=2 RigType=R15 {
+        Animator "Animator"
+    }
+    Part "HumanoidRootPart" Size=2,2,1 Anchored CFrame=549.77,528.877,282.551 Transparency=1 {
+        Vector3Value "OriginalSize" Value=2,2,1
+        Attachment "RootRigAttachment" CFrame=0,-1,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.35,0
+        }
+    }
+    MeshPart "LeftFoot" Size=1,0.3,1 CFrame=549.27,526.027,282.551 CanCollide=false RenderFidelity=Precise {
+        Motor6D "LeftAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/SavedObjects/Dummy/LeftLowerLeg" Part1=@"Workspace/SavedObjects/Dummy/LeftFoot"
+        Attachment "LeftAnkleRigAttachment" CFrame=0,0.102,0 {
+            Vector3Value "OriginalPosition" Value=0,0.102,0
+        }
+        Vector3Value "OriginalSize" Value=1,0.3,1
+    }
+    MeshPart "LeftHand" Size=1,0.3,1 CFrame=548.27,528.027,282.551 CanCollide=false RenderFidelity=Precise {
+        Attachment "LeftGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.15,0
+        }
+        Motor6D "LeftWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/SavedObjects/Dummy/LeftLowerArm" Part1=@"Workspace/SavedObjects/Dummy/LeftHand"
+        Attachment "LeftWristRigAttachment" CFrame=0,0.125,0 {
+            Vector3Value "OriginalPosition" Value=0,0.125,0
+        }
+        Vector3Value "OriginalSize" Value=1,0.3,1
+    }
+    MeshPart "LeftLowerArm" Size=1,1.052,1 CFrame=548.27,528.653,282.551 CanCollide=false RenderFidelity=Precise {
+        Motor6D "LeftElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/SavedObjects/Dummy/LeftUpperArm" Part1=@"Workspace/SavedObjects/Dummy/LeftLowerArm"
+        Attachment "LeftElbowRigAttachment" CFrame=0,0.259,0 {
+            Vector3Value "OriginalPosition" Value=0,0.259,0
+        }
+        Attachment "LeftWristRigAttachment" CFrame=0,-0.501,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.501,0
+        }
+        Vector3Value "OriginalSize" Value=1,1.052,1
+    }
+    MeshPart "LeftLowerLeg" Size=1,1.193,1 CFrame=549.27,526.676,282.551 CanCollide=false RenderFidelity=Precise {
+        Attachment "LeftAnkleRigAttachment" CFrame=0,-0.547,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.547,0
+        }
+        Motor6D "LeftKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/SavedObjects/Dummy/LeftUpperLeg" Part1=@"Workspace/SavedObjects/Dummy/LeftLowerLeg"
+        Attachment "LeftKneeRigAttachment" CFrame=0,0.379,0 {
+            Vector3Value "OriginalPosition" Value=0,0.379,0
+        }
+        Vector3Value "OriginalSize" Value=1,1.193,1
+    }
+    MeshPart "LeftUpperArm" Size=1,1.169,1 CFrame=548.27,529.245,282.551 CanCollide=false RenderFidelity=Precise {
+        Attachment "LeftElbowRigAttachment" CFrame=0,-0.334,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.334,0
+        }
+        Motor6D "LeftShoulder" C0=-1,0.563,0 C1=0.5,0.394,0 Part0=@"Workspace/SavedObjects/Dummy/UpperTorso" Part1=@"Workspace/SavedObjects/Dummy/LeftUpperArm"
+        Attachment "LeftShoulderAttachment" CFrame=0,0.584,0 {
+            Vector3Value "OriginalPosition" Value=0,0.584,0
+        }
+        Attachment "LeftShoulderRigAttachment" CFrame=0.5,0.394,0 {
+            Vector3Value "OriginalPosition" Value=0.5,0.394,0
+        }
+        Vector3Value "OriginalSize" Value=1,1.169,1
+    }
+    MeshPart "LeftUpperLeg" Size=1,1.217,1 CFrame=549.27,527.456,282.551 CanCollide=false RenderFidelity=Precise {
+        Motor6D "LeftHip" C0=-0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/SavedObjects/Dummy/LowerTorso" Part1=@"Workspace/SavedObjects/Dummy/LeftUpperLeg"
+        Attachment "LeftHipRigAttachment" CFrame=0,0.421,0 {
+            Vector3Value "OriginalPosition" Value=0,0.421,0
+        }
+        Attachment "LeftKneeRigAttachment" CFrame=0,-0.401,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.401,0
+        }
+        Vector3Value "OriginalSize" Value=1,1.217,1
+    }
+    MeshPart "LowerTorso" Size=2,0.4,1 CFrame=549.77,528.077,282.551 RenderFidelity=Precise {
+        Attachment "LeftHipRigAttachment" CFrame=-0.5,-0.2,0 {
+            Vector3Value "OriginalPosition" Value=-0.5,-0.2,0
+        }
+        Vector3Value "OriginalSize" Value=2,0.4,1
+        Attachment "RightHipRigAttachment" CFrame=0.5,-0.2,0 {
+            Vector3Value "OriginalPosition" Value=0.5,-0.2,0
+        }
+        Motor6D "Root" C0=0,-1,0 C1=0,-0.2,0 Part0=@"Workspace/SavedObjects/Dummy/HumanoidRootPart" Part1=@"Workspace/SavedObjects/Dummy/LowerTorso"
+        Attachment "RootRigAttachment" CFrame=0,-0.2,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,0
+        }
+        Attachment "WaistBackAttachment" CFrame=0,-0.2,0.5 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+        }
+        Attachment "WaistCenterAttachment" CFrame=0,-0.2,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,0
+        }
+        Attachment "WaistFrontAttachment" CFrame=0,-0.2,-0.5 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+        }
+        Attachment "WaistRigAttachment" CFrame=0,0.2,0 {
+            Vector3Value "OriginalPosition" Value=0,0.2,0
+        }
+    }
+    MeshPart "RightFoot" Size=1,0.3,1 CFrame=550.27,526.027,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,0.3,1
+        Motor6D "RightAnkle" C0=0,-0.547,0 C1=0,0.102,0 Part0=@"Workspace/SavedObjects/Dummy/RightLowerLeg" Part1=@"Workspace/SavedObjects/Dummy/RightFoot"
+        Attachment "RightAnkleRigAttachment" CFrame=0,0.102,0 {
+            Vector3Value "OriginalPosition" Value=0,0.102,0
+        }
+    }
+    MeshPart "RightHand" Size=1,0.3,1 CFrame=551.27,528.027,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,0.3,1
+        Attachment "RightGripAttachment" CFrame=0,-0.15,0|-90,0,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.15,0
+        }
+        Motor6D "RightWrist" C0=0,-0.501,0 C1=0,0.125,0 Part0=@"Workspace/SavedObjects/Dummy/RightLowerArm" Part1=@"Workspace/SavedObjects/Dummy/RightHand"
+        Attachment "RightWristRigAttachment" CFrame=0,0.125,0 {
+            Vector3Value "OriginalPosition" Value=0,0.125,0
+        }
+    }
+    MeshPart "RightLowerArm" Size=1,1.052,1 CFrame=551.27,528.653,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,1.052,1
+        Motor6D "RightElbow" C0=0,-0.334,0 C1=0,0.259,0 Part0=@"Workspace/SavedObjects/Dummy/RightUpperArm" Part1=@"Workspace/SavedObjects/Dummy/RightLowerArm"
+        Attachment "RightElbowRigAttachment" CFrame=0,0.259,0 {
+            Vector3Value "OriginalPosition" Value=0,0.259,0
+        }
+        Attachment "RightWristRigAttachment" CFrame=0,-0.501,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.501,0
+        }
+    }
+    MeshPart "RightLowerLeg" Size=1,1.193,1 CFrame=550.27,526.676,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,1.193,1
+        Attachment "RightAnkleRigAttachment" CFrame=0,-0.547,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.547,0
+        }
+        Motor6D "RightKnee" C0=0,-0.401,0 C1=0,0.379,0 Part0=@"Workspace/SavedObjects/Dummy/RightUpperLeg" Part1=@"Workspace/SavedObjects/Dummy/RightLowerLeg"
+        Attachment "RightKneeRigAttachment" CFrame=0,0.379,0 {
+            Vector3Value "OriginalPosition" Value=0,0.379,0
+        }
+    }
+    MeshPart "RightUpperArm" Size=1,1.169,1 CFrame=551.27,529.245,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,1.169,1
+        Attachment "RightElbowRigAttachment" CFrame=0,-0.334,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.334,0
+        }
+        Motor6D "RightShoulder" C0=1,0.563,0 C1=-0.5,0.394,0 Part0=@"Workspace/SavedObjects/Dummy/UpperTorso" Part1=@"Workspace/SavedObjects/Dummy/RightUpperArm"
+        Attachment "RightShoulderAttachment" CFrame=0,0.584,0 {
+            Vector3Value "OriginalPosition" Value=0,0.584,0
+        }
+        Attachment "RightShoulderRigAttachment" CFrame=-0.5,0.394,0 {
+            Vector3Value "OriginalPosition" Value=-0.5,0.394,0
+        }
+    }
+    MeshPart "RightUpperLeg" Size=1,1.217,1 CFrame=550.27,527.456,282.551 CanCollide=false RenderFidelity=Precise {
+        Vector3Value "OriginalSize" Value=1,1.217,1
+        Motor6D "RightHip" C0=0.5,-0.2,0 C1=0,0.421,0 Part0=@"Workspace/SavedObjects/Dummy/LowerTorso" Part1=@"Workspace/SavedObjects/Dummy/RightUpperLeg"
+        Attachment "RightHipRigAttachment" CFrame=0,0.421,0 {
+            Vector3Value "OriginalPosition" Value=0,0.421,0
+        }
+        Attachment "RightKneeRigAttachment" CFrame=0,-0.401,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.401,0
+        }
+    }
+    MeshPart "UpperTorso" Size=2,1.6,1 CFrame=549.77,529.077,282.551 RenderFidelity=Precise {
+        Attachment "BodyBackAttachment" CFrame=0,-0.2,0.5 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,0.5
+        }
+        Attachment "BodyFrontAttachment" CFrame=0,-0.2,-0.5 {
+            Vector3Value "OriginalPosition" Value=0,-0.2,-0.5
+        }
+        Attachment "LeftCollarAttachment" CFrame=-1,0.8,0 {
+            Vector3Value "OriginalPosition" Value=-1,0.8,0
+        }
+        Attachment "LeftShoulderRigAttachment" CFrame=-1,0.563,0 {
+            Vector3Value "OriginalPosition" Value=-1,0.563,0
+        }
+        Attachment "NeckAttachment" CFrame=0,0.8,0 {
+            Vector3Value "OriginalPosition" Value=0,0.8,0
+        }
+        Attachment "NeckRigAttachment" CFrame=0,0.8,0 {
+            Vector3Value "OriginalPosition" Value=0,0.8,0
+        }
+        Vector3Value "OriginalSize" Value=2,1.6,1
+        Attachment "RightCollarAttachment" CFrame=1,0.8,0 {
+            Vector3Value "OriginalPosition" Value=1,0.8,0
+        }
+        Attachment "RightShoulderRigAttachment" CFrame=1,0.563,0 {
+            Vector3Value "OriginalPosition" Value=1,0.563,0
+        }
+        Motor6D "Waist" C0=0,0.2,0 C1=0,-0.8,0 Part0=@"Workspace/SavedObjects/Dummy/LowerTorso" Part1=@"Workspace/SavedObjects/Dummy/UpperTorso"
+        Attachment "WaistRigAttachment" CFrame=0,-0.8,0 {
+            Vector3Value "OriginalPosition" Value=0,-0.8,0
+        }
+    }
+}
+Part "Info" Size=2,2,2 Anchored BottomSurface=Smooth CFrame=561.5,527.45,297.8 CanCollide=false CanQuery=false CanTouch=false Color=#FF0000 Material=Neon TopSurface=Smooth Transparency=1 {
+    LocalScript "DestroyScript" @src="Scripts/Workspace/SavedObjects/Info/DestroyScript.luau" Disabled
+    NumberValue "DestroyWait"
+    NumberValue "FlySpeed" Value=0.1
+    BillboardGui "Gui" Size=0,200,0,50 Active AlwaysOnTop ClipsDescendants LightInfluence=1 MaxDistance=50 ZIndexBehavior=Sibling {
+        TextLabel "Text" Size=0,200,0,50 BackgroundColor3=#FFFFFF BackgroundTransparency=1 BorderSizePixel=0 FontFace="ComicNeueAngular|Regular|Normal" Text="" TextColor3=#FFFFFF TextScaled TextSize=14 TextStrokeTransparency=0.5 TextWrapped
+    }
+    StringValue "Text"
+    Color3Value "TextColor" Value=#FFFFFF
+    NumberValue "TextDistance" Value=50
+    NumberValue "TransparencyWait" Value=0.01
+}
+Model "Lamp" PrimaryPart=@"Workspace/SavedObjects/Lamp/Base" {
+    Part "Base" Size=2.55,0.317,0.317 BottomSurface=Smooth CFrame=521.409,527.234,282.775|0,0,90 Color=#FDEA8D Material=Metal Shape=Cylinder TopSurface=Smooth {
+        Motor6D "Block" C0=2.55,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4"
+        Motor6D "Block" C0=-1.325,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~3"
+        Part "Block" Size=0.1,1.9,1.9 BottomSurface=Smooth CFrame=521.409,525.909,282.775|0,0,90 Color=#FDEA8D Material=Metal Shape=Cylinder TopSurface=Smooth
+        Part "Block" Size=2.55,0.217,0.217 BottomSurface=Smooth CFrame=521.409,529.784,282.775|0,0,90 Color=#FDEA8D Material=Metal Shape=Cylinder TopSurface=Smooth {
+            Part "Block" Size=0.2,0.29,0.29 BottomSurface=Smooth CFrame=521.409,531.159,282.775|0,0,90 Color=#CDCDCD Material=Metal Shape=Cylinder TopSurface=Smooth {
+                Part "Block" Size=0.4,0.4,0.4 BottomSurface=Smooth CFrame=521.409,531.359,282.775|0,0,90 Color=#F8D96D Material=Glass Shape=Ball TopSurface=Smooth Transparency=0.2 {
+                    ClickDetector "ClickDet" MaxActivationDistance=15
+                    PointLight "ElectrLight" Brightness=8.28 Color=#FFFDAF Range=6
+                    Script "Mechanism" @code=<<<
+                        local lightbulb = script.Parent
+                        local light = lightbulb.ElectrLight
+                        local clickdet = lightbulb.ClickDet
+
+                        clickdet.RightMouseClick:Connect(function()
+                        	light.Enabled = not light.Enabled
+                        end)
+                    >>>
+                }
+                Motor6D "Part" C0=0.2,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block/Block"
+            }
+            Part "Block" Size=0.2,1.79,0.09 BottomSurface=Smooth CFrame=521.409,530.959,282.775|-90,-90,0 Color=#CDCDCD Material=Metal TopSurface=Smooth
+            Part "Block" Size=0.2,1.79,0.09 BottomSurface=Smooth CFrame=521.409,530.959,282.775|0,0,90 Color=#CDCDCD Material=Metal TopSurface=Smooth {
+                Part "BlockColor" Size=1.85,0.14,0.44 BottomSurface=Smooth CFrame=521.379,531.084,283.732|90,90,0 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=520.52,531.084,283.098|0,22.5,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=520.738,531.084,283.426|0,45,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=522.056,531.084,283.435|-180,45,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=520.517,531.084,282.393|0,-22.5,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=521.727,531.084,283.653|-180,67.5,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=522.28,531.084,282.427|-180,-22.5,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=521.409,531.084,281.8|-90,-90,0 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.44 BottomSurface=Smooth CFrame=522.359,531.084,282.775|-180,0,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=521.072,531.084,281.871|0,-67.5,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=522.062,531.084,282.098|-180,-45,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=522.282,531.084,283.132|-180,22.5,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=520.744,531.084,282.09|0,-45,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=521.041,531.084,283.653|0,67.5,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.44 BottomSurface=Smooth CFrame=520.44,531.084,282.75|0,0,90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Part "BlockColor" Size=1.85,0.14,0.39 BottomSurface=Smooth CFrame=521.758,531.084,281.871|-180,-67.5,-90 CastShadow=false Color=#F8F8F8 Material=Fabric TopSurface=Smooth Transparency=0.1
+                Motor6D "Part" C0=0.125,-0.318,0.878|112.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~6"
+                Motor6D "Part" C0=0.125,0.892,-0.382|-22.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~5"
+                Motor6D "Part" C0=0.125,0.665,-0.685|-45,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~13"
+                Motor6D "Part" C0=0.125,0.368,0.878|67.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~14"
+                Motor6D "Part" C0=0.125,-0.95,0|-180,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~9"
+                Motor6D "Part" C0=0.125,-0.349,-0.904|-112.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~16"
+                Motor6D "Part" C0=0.125,0.337,-0.904|-67.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~10"
+                Motor6D "Part" C0=0.125,0.03,0.957|90,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor"
+                Motor6D "Part" C0=0.125,-0.653,-0.677|-135,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~11"
+                Motor6D "Part" C0=0.125,0,-0.975|-90,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~8"
+                Motor6D "Part" C0=0.125,0.969,-0.025 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~15"
+                Motor6D "Part" C0=0.125,-0.873,0.357|157.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~12"
+                Motor6D "Part" C0=0.125,-0.871,-0.348|-157.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~7"
+                Motor6D "Part" C0=0.125,0.671,0.651|45,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~3"
+                Motor6D "Part" C0=0.125,-0.646,0.66|135,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~4"
+                Motor6D "Part" C0=0.125,0.89,0.323|22.5,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3/BlockColor~2"
+            }
+            Motor6D "Part" C0=1.175,0,0|-90,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~2"
+            Motor6D "Part" C0=1.375,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block"
+            Motor6D "Part" C0=1.175,0,0 Part0=@"Workspace/SavedObjects/Lamp/Base/Block~4" Part1=@"Workspace/SavedObjects/Lamp/Base/Block~4/Block~3"
+        }
+    }
+}
+Part "LoadObject" Size=2,2,2 Anchored BottomSurface=Smooth CFrame=561.5,527.45,287.8 CanCollide=false CanQuery=false CanTouch=false Color=#FF0000 Material=Neon TopSurface=Smooth {
+    Script "LoadObject" @code=<<<
+        wait(0.05)
+        game.ServerScriptService.LoadObject:Fire(script.Parent,script.Parent.LoadThis.Value,script.Parent.Random.Value)
+    >>>
+    StringValue "LoadThis" Value="TestObject"
+    BoolValue "Random"
+}
+Model "Shelf" PrimaryPart=@"Workspace/SavedObjects/Shelf/Base" {
+    Part "Base" Size=5.8,0.2,3.3 BottomSurface=Smooth CFrame=528.4,526.25,283 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth {
+        Motor6D "Base" C0=0,3.4,1.55 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~3"
+        Motor6D "Base" C0=-2.8,3.4,0 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~6"
+        Motor6D "Base" C0=-2.65,-0.25,1.425 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block"
+        Motor6D "Base" C0=-2.65,-0.25,-1.425 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~7"
+        Motor6D "Base" C0=2.8,3.4,0 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~5"
+        Motor6D "Base" C0=2.65,-0.25,1.425 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~2"
+        Motor6D "Base" C0=2.65,-0.25,-1.425 Part0=@"Workspace/SavedObjects/Shelf/Base" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~4"
+        Part "Block" Size=0.2,0.3,0.45 BottomSurface=Smooth CFrame=525.75,526,284.425 Color=#9FA1AC Material=Metal TopSurface=Smooth
+        Part "Block" Size=0.2,0.3,0.45 BottomSurface=Smooth CFrame=531.05,526,284.425 Color=#9FA1AC Material=Metal TopSurface=Smooth
+        Part "Block" Size=5.4,6.6,0.2 BottomSurface=Smooth CFrame=528.4,529.65,284.55 Color=#AC8A60 Material=Wood TopSurface=Smooth {
+            Motor6D "Base" C0=0,3.4,-1.55 Part0=@"Workspace/SavedObjects/Shelf/Base/Block~3" Part1=@"Workspace/SavedObjects/Shelf/Base/Block~3/Block"
+            Part "Block" Size=5.8,0.2,3.3 BottomSurface=Smooth CFrame=528.4,533.05,283 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth
+        }
+        Part "Block" Size=0.2,0.3,0.45 BottomSurface=Smooth CFrame=531.05,526,281.575 Color=#9FA1AC Material=Metal TopSurface=Smooth
+        Part "Block" Size=0.2,6.6,3.3 BottomSurface=Smooth CFrame=531.2,529.65,283 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth {
+            Attachment "Attachment1" CFrame=-0.1,0.1,-1.65|-90,90,0
+        }
+        Part "Block" Size=0.2,6.6,3.3 BottomSurface=Smooth CFrame=525.6,529.65,283 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth {
+            Attachment "Attachment1" CFrame=0.1,0.25,-1.65|-90,90,0
+        }
+        Part "Block" Size=0.2,0.3,0.45 BottomSurface=Smooth CFrame=525.75,526,281.575 Color=#9FA1AC Material=Metal TopSurface=Smooth
+        Part "BlockColor" Size=2.7,6.6,0.15 BottomSurface=Smooth CFrame=529.75,529.65,281.425 Color=#F8F8F8 Material=Wood TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=1.35,0.1,-0.075|-90,90,0
+            Motor6D "Base" C0=-1.1,-0.55,-0.175 Part0=@"Workspace/SavedObjects/Shelf/Base/BlockColor" Part1=@"Workspace/SavedObjects/Shelf/Base/BlockColor/Block"
+            Part "Block" Size=0.1,0.7,0.2 BottomSurface=Smooth CFrame=528.65,529.1,281.25 Material=Metal TopSurface=Smooth
+            Decal "Decal" Texture="rbxassetid://8688837204" TextureContent="rbxassetid://8688837204"
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/SavedObjects/Shelf/Base/BlockColor/Attachment0" Attachment1=@"Workspace/SavedObjects/Shelf/Base/Block~5/Attachment1" LimitsEnabled LowerAngle=-90 UpperAngle=0
+        }
+        Part "BlockColor" Size=2.7,6.6,0.15 BottomSurface=Smooth CFrame=527.05,529.65,281.425 Color=#F8F8F8 Material=Wood TopSurface=Smooth {
+            Attachment "Attachment0" CFrame=-1.35,0.25,-0.075|-90,90,0
+            Motor6D "Base" C0=1.15,-0.55,-0.175 Part0=@"Workspace/SavedObjects/Shelf/Base/BlockColor~2" Part1=@"Workspace/SavedObjects/Shelf/Base/BlockColor~2/Block"
+            Part "Block" Size=0.1,0.7,0.2 BottomSurface=Smooth CFrame=528.2,529.1,281.25 Material=Metal TopSurface=Smooth
+            Decal "Decal" Texture="rbxassetid://8688842046" TextureContent="rbxassetid://8688842046"
+            HingeConstraint "HingeConstraint" Attachment0=@"Workspace/SavedObjects/Shelf/Base/BlockColor~2/Attachment0" Attachment1=@"Workspace/SavedObjects/Shelf/Base/Block~6/Attachment1" LimitsEnabled LowerAngle=0 UpperAngle=90
+        }
+    }
+}
+Model "Table" PrimaryPart=@"Workspace/SavedObjects/Table/Base" {
+    Part "Base" Size=9.1,0.2,5.4 BottomSurface=Smooth CFrame=541.85,528.45,283 Color=#7D4D2A Material=WoodPlanks TopSurface=Smooth {
+        Motor6D "Base" C0=-3.65,-0.2,0 C1=0.25,0,0 Part0=@"Workspace/SavedObjects/Table/Base" Part1=@"Workspace/SavedObjects/Table/Base/Block~2"
+        Motor6D "Base" C0=3.8,-0.2,0 Part0=@"Workspace/SavedObjects/Table/Base" Part1=@"Workspace/SavedObjects/Table/Base/Block"
+        Part "Block" Size=0.8,0.2,5.4 BottomSurface=Smooth CFrame=545.65,528.25,283 Color=#6F4F34 Material=Wood TopSurface=Smooth {
+            Motor6D "Base" C0=0.025,-1.25,-2.35 Part0=@"Workspace/SavedObjects/Table/Base/Block" Part1=@"Workspace/SavedObjects/Table/Base/Block/Block"
+            Motor6D "Base" C0=0.025,-1.25,2.2 Part0=@"Workspace/SavedObjects/Table/Base/Block" Part1=@"Workspace/SavedObjects/Table/Base/Block/Block~2"
+            Part "Block" Size=0.35,2.306,0.262 BottomSurface=Smooth CFrame=545.675,527,280.65 Color=#7D4D2A Material=Wood TopSurface=Smooth
+            Part "Block" Size=0.35,2.306,0.262 BottomSurface=Smooth CFrame=545.675,527,285.2 Color=#7D4D2A Material=Wood TopSurface=Smooth
+        }
+        Part "Block" Size=0.8,0.2,5.4 BottomSurface=Smooth CFrame=537.95,528.25,283 Color=#6F4F34 Material=Wood TopSurface=Smooth {
+            Motor6D "Base" C0=0.025,-1.25,2.2 Part0=@"Workspace/SavedObjects/Table/Base/Block~2" Part1=@"Workspace/SavedObjects/Table/Base/Block~2/Block"
+            Motor6D "Base" C0=0.025,-1.25,-2.35 Part0=@"Workspace/SavedObjects/Table/Base/Block~2" Part1=@"Workspace/SavedObjects/Table/Base/Block~2/Block~2"
+            Part "Block" Size=0.35,2.306,0.262 BottomSurface=Smooth CFrame=537.975,527,285.2 Color=#7D4D2A Material=Wood TopSurface=Smooth
+            Part "Block" Size=0.35,2.306,0.262 BottomSurface=Smooth CFrame=537.975,527,280.65 Color=#7D4D2A Material=Wood TopSurface=Smooth
+        }
+        Motor6D "BlockColor" C0=0,0.15,0 Part0=@"Workspace/SavedObjects/Table/Base" Part1=@"Workspace/SavedObjects/Table/Base/BlockColor~2"
+        Part "BlockColor" Size=9.1,0.1,5.4 BottomSurface=Smooth CFrame=541.85,528.6,283 Color=#F8F8F8 Material=Fabric TopSurface=Smooth {
+            Decal "Decal" Color3=#7C7C7C Face=Top Texture="rbxassetid://8688833259" TextureContent="rbxassetid://8688833259"
+        }
+    }
+}
+Model "TestObject" PrimaryPart=@"Workspace/SavedObjects/TestObject/Base" {
+    Part "Base" Size=4,4,4 BottomSurface=Smooth CFrame=561.8,527.85,282.3 Color=#9FA1AC Material=DiamondPlate TopSurface=Smooth {
+        Decal "DecalColor" Face=Back Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+        Decal "DecalColor" Face=Bottom Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+        Decal "DecalColor" Face=Right Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+        Decal "DecalColor" Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+        Decal "DecalColor" Face=Left Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+        Decal "DecalColor" Face=Top Texture="rbxassetid://8705434899" TextureContent="rbxassetid://8705434899"
+    }
+}
+Model "Window" PrimaryPart=@"Workspace/SavedObjects/Window/Base" {
+    Part "Base" Size=6.8,0.25,0.45 BottomSurface=Smooth CFrame=510.95,526.275,281.875 Color=#966766 Material=Wood TopSurface=Smooth {
+        Motor6D "Block" C0=3.275,2.875,0 Part0=@"Workspace/SavedObjects/Window/Base" Part1=@"Workspace/SavedObjects/Window/Base/Block~4"
+        Motor6D "Block" C0=0.175,2.875,0 Part0=@"Workspace/SavedObjects/Window/Base" Part1=@"Workspace/SavedObjects/Window/Base/Block~6"
+        Motor6D "Block" C0=-3.275,2.875,0 Part0=@"Workspace/SavedObjects/Window/Base" Part1=@"Workspace/SavedObjects/Window/Base/Block~5"
+        Part "Block" Size=0.25,5.5,0.45 BottomSurface=Smooth CFrame=514.225,529.15,281.875 Color=#966766 Material=Wood TopSurface=Smooth
+        Part "Block" Size=0.25,5.5,0.45 BottomSurface=Smooth CFrame=507.675,529.15,281.875 Color=#966766 Material=Wood TopSurface=Smooth {
+            Motor6D "Block" C0=3.275,2.875,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~5" Part1=@"Workspace/SavedObjects/Window/Base/Block~5/Block~4"
+            Motor6D "Block" C0=1.725,1,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~5" Part1=@"Workspace/SavedObjects/Window/Base/Block~5/Block~3"
+            Part "Block" Size=3.2,0.2,0.05 BottomSurface=Smooth CFrame=509.4,530.15,281.875 Color=#966766 Material=Wood TopSurface=Smooth
+            Part "Block" Size=6.8,0.25,0.45 BottomSurface=Smooth CFrame=510.95,532.025,281.875 Color=#966766 Material=Wood TopSurface=Smooth
+        }
+        Part "Block" Size=0.25,5.5,0.05 BottomSurface=Smooth CFrame=511.125,529.15,281.875 Color=#966766 Material=Wood TopSurface=Smooth {
+            Motor6D "BlockColor" C0=0.4,-0.825,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28"
+            Motor6D "BlockColor" C0=-0.4,-2.475,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39"
+            Motor6D "BlockColor" C0=0.4,1.925,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24"
+            Motor6D "BlockColor" C0=0.4,-0.275,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38"
+            Motor6D "BlockColor" C0=0.4,2.475,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23"
+            Motor6D "BlockColor" C0=0.4,0.275,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25"
+            Motor6D "BlockColor" C0=-0.4,-1.375,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36"
+            Motor6D "BlockColor" C0=-0.4,-0.275,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32"
+            Motor6D "BlockColor" C0=-0.4,0.725,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40"
+            Motor6D "BlockColor" C0=-0.4,-1.925,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35"
+            Motor6D "BlockColor" C0=0.4,-2.475,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27"
+            Motor6D "BlockColor" C0=-0.4,-0.825,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37"
+            Motor6D "BlockColor" C0=0.4,0.825,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33"
+            Motor6D "BlockColor" C0=-0.4,0.275,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26"
+            Motor6D "BlockColor" C0=0.4,1.375,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30"
+            Motor6D "BlockColor" C0=-0.4,1.925,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29"
+            Motor6D "BlockColor" C0=-0.4,1.375,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31"
+            Motor6D "BlockColor" C0=-0.4,2.475,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34"
+            Motor6D "BlockColor" C0=0.4,-1.375,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21"
+            Motor6D "BlockColor" C0=0.4,-1.925,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22"
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~21/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~22/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~23/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~24/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~25/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~26/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,529.425,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~27/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~28/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~29/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,531.075,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~30/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~31/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,530.525,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~32/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,529.975,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,529.975,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,529.975,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,529.975,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~33/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,529.975,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~34/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,531.625,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~35/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,527.225,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~36/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,527.775,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~37/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,528.325,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=511.525,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.075,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=512.625,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=513.175,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=0.6,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~38/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.65,0.55,0.05 BottomSurface=Smooth CFrame=513.775,528.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.725,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=510.175,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.625,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=509.075,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.55,0.05 BottomSurface=Smooth CFrame=508.525,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~39/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.55,0.05 BottomSurface=Smooth CFrame=508.025,526.675,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+            Part "BlockColor" Size=0.55,0.35,0.05 BottomSurface=Smooth CFrame=510.725,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2"
+                Part "BlockColor" Size=0.55,0.35,0.05 BottomSurface=Smooth CFrame=510.175,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                    Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2"
+                    Part "BlockColor" Size=0.55,0.35,0.05 BottomSurface=Smooth CFrame=509.625,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                        Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2/BlockColor~2"
+                        Part "BlockColor" Size=0.55,0.35,0.05 BottomSurface=Smooth CFrame=509.075,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                            Motor6D "BlockColor" C0=-0.55,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                            Part "BlockColor" Size=0.55,0.35,0.05 BottomSurface=Smooth CFrame=508.525,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4 {
+                                Motor6D "BlockColor" C0=-0.5,0,0 Part0=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2" Part1=@"Workspace/SavedObjects/Window/Base/Block~6/BlockColor~40/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2/BlockColor~2"
+                                Part "BlockColor" Size=0.45,0.35,0.05 BottomSurface=Smooth CFrame=508.025,529.875,281.875 Color=#F8F8F8 Material=Glass TopSurface=Smooth Transparency=0.4
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

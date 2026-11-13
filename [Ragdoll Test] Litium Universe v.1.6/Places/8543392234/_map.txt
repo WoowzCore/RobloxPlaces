@@ -1,0 +1,137 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Weather"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  ColorCorrectionEffect "ColorCorrection"
+  DepthOfFieldEffect "DOF"
+  Sky "Sky"
+  SunRaysEffect "SunRays"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "ClearAllObjects"
+  RemoteEvent "CreateObject"
+  RemoteEvent "DestroyObject"
+  RemoteEvent "MakeText"
+  RemoteEvent "PlayGlobalSound"
+  RemoteEvent "SetPValue"
+  RemoteEvent "SetPosition"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  BindableEvent "Explosive"
+  BindableEvent "LoadObject"
+  Script "cooler explosions"
+    ParticleEmitter "Debris"
+    ParticleEmitter "Debris2"
+    ParticleEmitter "Explosion"
+    Folder "Explosions"  (+14)
+    ParticleEmitter "Flare"
+    ParticleEmitter "Smoke1"
+    ParticleEmitter "Smoke2"
+    ParticleEmitter "Smoke3"
+    ParticleEmitter "Smoke4"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+  SoundGroup "Player"
+StarterGui "PlayerGui"  [Scene/StarterGui.bridge]
+  ScreenGui "GUI"
+    TextLabel "DeadText"
+    TextLabel "DeadText2"
+    TextLabel "DeadText3"
+    TextLabel "Id"
+    ImageLabel "InWater"
+    TextLabel "Info"
+    TextLabel "PlayerColor"
+    TextLabel "PlayerInfo"
+    TextLabel "SpawnThis"
+  LocalScript "GUIscript"
+  LocalScript "LocalWeather"
+  LocalScript "Player"
+  ScreenGui "Vignette"
+    ImageLabel "ImageLabel"
+  Folder "ragdoll"
+    Folder "events"  (+2)
+    Folder "functions"  (+3)
+    LocalScript "ragdollclient"
+    Script "ragdollserver"
+    Folder "variables"  (+2)
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+    LocalScript "RbxCharacterSounds"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Scene"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Model "Dummy"
+    Part "Head"  (+15)
+    Humanoid "Humanoid"
+    Part "HumanoidRootPart"  (+3)
+    MeshPart "LeftFoot"  (+4)
+    MeshPart "LeftHand"  (+6)
+    MeshPart "LeftLowerArm"  (+6)
+    MeshPart "LeftLowerLeg"  (+6)
+    MeshPart "LeftUpperArm"  (+8)
+    MeshPart "LeftUpperLeg"  (+6)
+    MeshPart "LowerTorso"  (+16)
+    MeshPart "RightFoot"  (+4)
+    MeshPart "RightHand"  (+6)
+    MeshPart "RightLowerArm"  (+6)
+    MeshPart "RightLowerLeg"  (+6)
+    MeshPart "RightUpperArm"  (+8)
+    MeshPart "RightUpperLeg"  (+6)
+    MeshPart "UpperTorso"  (+20)
+  Folder "Easy Teleporter\n - Lentilkac58 - Version 1"
+    Part "Lentilkac58-Easy-Teleport-1"  (+2)
+    Part "Lentilkac58-Easy-Teleport-2"  (+2)
+  Folder "Main"
+    Folder "Debug"  (+87)
+    Script "GlobalScript"
+    Folder "GlobalValue"  (+15)
+    Script "LoadObjectGLOBAL"
+    Script "LongWeather"
+    Folder "PlayerList"  (+5)
+    Script "PlayersNickname"
+    Script "WeatherScript"
+  Part "Map"  [Scene/Workspace/Map.bridge]
+    Folder "Background"  (+7284)
+    Part "GM_CONSTRUCT"  (+1499)
+    Part "Part"  (+2)
+    Part "Ragdoll_Test"  [Scene/Workspace/Map/Ragdoll_Test.bridge]  (+1329)
+  Part "SavedObjects"  [Scene/Workspace/SavedObjects.bridge]
+    Model "C4"  (+7)
+    Model "Chair"  (+21)
+    UnionOperation "Cinderblock"
+    Model "Dummy"  (+178)
+    Part "Info"  (+9)
+    Model "Lamp"  (+48)
+    Part "LoadObject"  (+3)
+    Model "Shelf"  (+31)
+    Model "Table"  (+16)
+    Model "TestObject"  (+7)
+    Model "Window"  (+231)
+  SpawnLocation "SpawnLocation"
+  Terrain "Terrain"
+    Clouds "Clouds"
+  MeshPart "Tree Wood"
+  TrussPart "Truss"
+  TrussPart "Truss"
+  TrussPart "Truss"
+  TrussPart "Truss"
+  TrussPart "Truss"

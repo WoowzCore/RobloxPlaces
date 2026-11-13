@@ -1,0 +1,30 @@
+StarterPlayer "StarterPlayer" AutoJumpEnabled CameraMaxZoomDistance=128 CameraMinZoomDistance=0.5 CameraMode=Classic CharacterBreakJointsOnDeath CharacterJumpHeight=7.2 CharacterJumpPower=50 CharacterMaxSlopeAngle=89 CharacterUseJumpPower CharacterWalkSpeed=16 ClassicDeath CreateDefaultPlayerModule DevCameraOcclusionMode=Zoom DevComputerCameraMovementMode=UserChoice DevComputerMovementMode=UserChoice DevTouchCameraMovementMode=UserChoice DevTouchMovementMode=UserChoice EnableMouseLockOption HealthDisplayDistance=100 LoadCharacterAppearance LuaCharacterController=Default NameDisplayDistance=100 UserEmotesEnabled {
+    StarterCharacterScripts "StarterCharacterScripts" {
+        LocalScript "ActiveRagdoll" @src="Scripts/StarterPlayer/StarterCharacterScripts/ActiveRagdoll.luau"
+        Model "Constraint" {
+            ParticleEmitter "Blood" Size=0:0.3,1:0.3 Enabled=false Lifetime=0.2,0.2 LightInfluence=1 Speed=16,16 SpreadAngle=1000,1000 Texture="rbxassetid://2078208894" TextureContent="rbxassetid://2078208894" Transparency=0:0,1:1
+            SpringConstraint "ConstraintHand" Coils=8 Damping=10 FreeLength=0.1 LimitsEnabled MaxLength=0.35 MinLength=0.1
+            BallSocketConstraint "ConstraintHead" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-10 TwistUpperAngle=10 UpperAngle=20
+            BallSocketConstraint "ConstraintLeftFoot" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-30 TwistUpperAngle=30 UpperAngle=20
+            BallSocketConstraint "ConstraintLeftHand" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-30 TwistUpperAngle=30 UpperAngle=10
+            HingeConstraint "ConstraintLeftLowerArm" LimitsEnabled LowerAngle=0 UpperAngle=180
+            HingeConstraint "ConstraintLeftLowerLeg" AngularSpeed=10 AngularVelocity=-600 LimitsEnabled LowerAngle=-180 MotorMaxTorque=600 TargetAngle=100 UpperAngle=0
+            SpringConstraint "ConstraintLeftUpperArm" Damping=10 FreeLength=0.3 LimitsEnabled MaxLength=0.2
+            SpringConstraint "ConstraintLeftUpperLeg" Coils=8 Damping=10 FreeLength=0.1 LimitsEnabled MaxLength=0.35 MinLength=0.1
+            BallSocketConstraint "ConstraintRightFoot" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-30 TwistUpperAngle=30 UpperAngle=20
+            BallSocketConstraint "ConstraintRightHand" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-30 TwistUpperAngle=30 UpperAngle=10
+            HingeConstraint "ConstraintRightLowerArm" LimitsEnabled LowerAngle=0 UpperAngle=180
+            HingeConstraint "ConstraintRightLowerLeg" AngularSpeed=10 AngularVelocity=-600 LimitsEnabled LowerAngle=-180 MotorMaxTorque=600 TargetAngle=100 UpperAngle=0
+            SpringConstraint "ConstraintRightUpperArm" Damping=10 FreeLength=0.3 LimitsEnabled MaxLength=0.2
+            SpringConstraint "ConstraintRightUpperLeg" Coils=8 Damping=10 FreeLength=0.1 LimitsEnabled MaxLength=0.35 MinLength=0.1
+            BallSocketConstraint "ConstraintUpperTorso" LimitsEnabled TwistLimitsEnabled TwistLowerAngle=-20 TwistUpperAngle=20 UpperAngle=60
+            Sound "Damage" AudioContent="rbxassetid://7432007910" PlaybackSpeed=0.8 SoundId="rbxassetid://7432007910" Volume=1
+        }
+        LocalScript "DeleteFallBloodDamage-Died" @src="Scripts/StarterPlayer/StarterCharacterScripts/DeleteFallBloodDamage-Died.luau"
+        LocalScript "Fall^BloodDamage" @src="Scripts/StarterPlayer/StarterCharacterScripts/Fall^BloodDamage.luau"
+        LocalScript "RagdollFall-FreeFalling" @src="Scripts/StarterPlayer/StarterCharacterScripts/RagdollFall-FreeFalling.luau"
+        LocalScript "SetupWithRagdoll&Physics" @src="Scripts/StarterPlayer/StarterCharacterScripts/SetupWithRagdoll&Physics.luau"
+        LocalScript "UnactivateRagdoll-Swimming" @src="Scripts/StarterPlayer/StarterCharacterScripts/UnactivateRagdoll-Swimming.luau"
+    }
+    StarterPlayerScripts "StarterPlayerScripts"
+}

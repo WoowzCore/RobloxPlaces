@@ -1,0 +1,9 @@
+StarterGui "StarterGui" ScreenOrientation=LandscapeSensor ShowDevelopmentGui {
+    LocalScript "LoadPlayer" @code=<<<
+        --Script Creator {Woowz11 (In ROBLOX "Woowz14")}
+        local NeedCopy = game.Workspace["Game Files"].PlayerStarting
+        local Copy = NeedCopy:Clone()
+        Copy.Parent = script.Parent
+    >>>
+    LocalScript "PlayerScript" @src="Scripts/StarterGui/PlayerScript.luau"
+}

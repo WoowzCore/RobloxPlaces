@@ -1,0 +1,16 @@
+StarterGui "StarterGui" ScreenOrientation=Sensor ShowDevelopmentGui {
+    ScreenGui "GUI" {
+        TextLabel "BonusInfo" Position=0.026,0,0.837,0 Size=0,224,0,42 BackgroundColor3=#FFFFFF BorderColor3=#FF0000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Bonus Info : text" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FF0004 TextWrapped
+        Folder "GameStartInfo" {
+            TextLabel "GameInfo" Position=0.46,0,0.287,0 Size=0,145,0,25 BackgroundColor3=#FFFFFF BorderColor3=#FF0000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Game Info" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FF0004 TextWrapped Visible=false
+            TextLabel "GameType" Position=0.441,0,0.33,0 Size=0,197,0,39 BackgroundColor3=#FFFFFF BorderColor3=#FF0000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Type : text" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FF0004 TextWrapped Visible=false
+            TextLabel "GameVariant" Position=0.441,0,0.398,0 Size=0,196,0,42 BackgroundColor3=#FFFFFF BorderColor3=#FF0000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Variant : text" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FF0004 TextWrapped Visible=false
+        }
+        TextLabel "RunType" Position=0.026,0,0.908,0 Size=0,224,0,43 BackgroundColor3=#FFFFFF BorderColor3=#FF0000 BorderSizePixel=0 FontFace="Zekton|Regular|Normal" Text="Run Type : text , text" TextColor3=#000000 TextScaled TextSize=14 TextStrokeColor3=#FF0004 TextWrapped
+    }
+    Folder "Game" {
+        LocalScript "ExtrasWalk" @src="Scripts/StarterGui/Game/ExtrasWalk.luau"
+        LocalScript "WalkNoMaterial" @src="Scripts/StarterGui/Game/WalkNoMaterial.luau"
+    }
+    LocalScript "PlayerScript" @src="Scripts/StarterGui/PlayerScript.luau"
+}

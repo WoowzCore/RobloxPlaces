@@ -1,0 +1,199 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Lighting"  [Scene/Lighting.bridge]
+  Atmosphere "Atmosphere"
+  BloomEffect "Bloom"
+  DepthOfFieldEffect "DepthOfField"
+  Sky "Sky"
+  SunRaysEffect "SunRays"
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "StartRandomPlayerEvent"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "GlobalScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  ScreenGui "GUI"
+    TextLabel "BonusInfo"
+    Folder "GameStartInfo"  (+3)
+    TextLabel "RunType"
+  Folder "Game"
+    LocalScript "ExtrasWalk"
+    LocalScript "WalkNoMaterial"
+  LocalScript "PlayerScript"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Model "Couch"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Couch"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Part"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Couch"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Model "Couch"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Foot"
+    Part "Part"  (+1)
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    Seat "Seat"  (+1)
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+    UnionOperation "Union"
+  Folder "Files"
+    Sound "GameMusic"
+    Folder "GlobalValue"  (+2)
+    Folder "PlayerStarter"  (+17)
+  Model "Light"
+    Part "Light"  (+2)
+    Part "Part"  (+1)
+  Model "Lobby"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+    Part "Part"
+  Folder "Map1"
+    Folder "Spawners"  (+64)
+  Model "Model"
+    Part "Part"  (+2)
+    Part "Part"  (+1)
+  Model "Model"
+    MeshPart "MeshPart"
+    Part "Part"
+    Part "Poster"  (+5)
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Model "Skeleton"
+    Part "Head"  (+1)
+    Part "HumanoidRootPart"  (+1)
+    Part "Left Arm"
+    Part "Left Leg"
+    Part "Right Arm"
+    Part "Right Leg"
+    Humanoid "Skeleton"
+    CharacterMesh "Skeleton Left Arm"
+    CharacterMesh "Skeleton Left Leg"
+    CharacterMesh "Skeleton Right Arm"
+    CharacterMesh "Skeleton Right Leg"
+    CharacterMesh "Skeleton Torso"
+    Part "Torso"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  Terrain "Terrain"
+  Model "houseInteriorBookshelf"
+    Part "Part"  (+1)
+    Part "Part"  (+3)
+    Part "Part"  (+3)
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"  (+8)
+    Part "Part"  (+3)
+    Part "Part"  (+3)
+    Part "Part"  (+1)
+  Model "houseInteriorEndTable"
+    Part "Part"
+    Part "Part"  (+4)
+    Part "Part"
+    Part "Part"  (+1)
+    Part "Part"  (+2)
+    Part "Part"  (+1)
+    Part "Part"  (+1)

@@ -1,0 +1,101 @@
+# Карта сцены (создаётся приложением, не править)
+# Класс "Имя"  [файл]  (+N — скрытых объектов внутри)
+
+Chat "Chat"  [Scene/Chat.bridge]
+HttpService "HttpService"  [Scene/HttpService.bridge]
+Lighting "Weather"  [Scene/Lighting.bridge]
+LocalizationService "LocalizationService"  [Scene/LocalizationService.bridge]
+MaterialService "MaterialService"  [Scene/MaterialService.bridge]
+Players "Players"  [Scene/Players.bridge]
+  Player "Woowz14"
+    Backpack "Backpack"
+    PlayerScripts "PlayerScripts"
+ProximityPromptService "ProximityPromptService"  [Scene/ProximityPromptService.bridge]
+ReplicatedFirst "ReplicatedFirst"  [Scene/ReplicatedFirst.bridge]
+ReplicatedStorage "ReplicatedStorage"  [Scene/ReplicatedStorage.bridge]
+  RemoteEvent "PushObject"
+ServerScriptService "ServerScriptService"  [Scene/ServerScriptService.bridge]
+  Script "GlobalScript"
+ServerStorage "ServerStorage"  [Scene/ServerStorage.bridge]
+SoundService "SoundService"  [Scene/SoundService.bridge]
+StarterGui "StarterGui"  [Scene/StarterGui.bridge]
+  LocalScript "LoadPlayer"
+  LocalScript "PlayerScript"
+StarterPack "StarterPack"  [Scene/StarterPack.bridge]
+StarterPlayer "StarterPlayer"  [Scene/StarterPlayer.bridge]
+  StarterCharacterScripts "StarterCharacterScripts"
+    LocalScript "ActiveRagdoll"
+    Model "Constraint"  (+17)
+    LocalScript "DeleteFallBloodDamage-Died"
+    LocalScript "Fall^BloodDamage"
+    LocalScript "RagdollFall-FreeFalling"
+    LocalScript "SetupWithRagdoll&Physics"
+    LocalScript "UnactivateRagdoll-Swimming"
+  StarterPlayerScripts "StarterPlayerScripts"
+Teams "Teams"  [Scene/Teams.bridge]
+TestService "TestService"  [Scene/TestService.bridge]
+TextChatService "TextChatService"  [Scene/TextChatService.bridge]
+  BubbleChatConfiguration "BubbleChatConfiguration"
+  ChannelTabsConfiguration "ChannelTabsConfiguration"
+  ChatInputBarConfiguration "ChatInputBarConfiguration"
+  ChatWindowConfiguration "ChatWindowConfiguration"
+VoiceChatService "VoiceChatService"  [Scene/VoiceChatService.bridge]
+Workspace "Workspace"  [Scene/Workspace.bridge]
+  Camera "Camera"
+  Model "Euphoria Ragdoll"
+  Folder "Game Files"
+    Script "GlobalScript"
+    Folder "PlayerStarting"  (+30)
+    Folder "WorldVariables"  (+2)
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Part "Part"
+  Folder "RagdollSystem"
+    Script "RagdollScriptMover"
+    Folder "ragdoll"  (+12)
+  Part "SavedObjects"
+    Script "ObjectsSettingsLoad"
+    Part "TestCube"  (+6)
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  Part "SpawnBlock"
+    Script "Script"
+    StringValue "SpawnThis"
+  SpawnLocation "SpawnLocation"
+    Decal "Decal"
+  Terrain "Terrain"

@@ -1,0 +1,140 @@
+Workspace "Workspace" AirDensity=0.001 AirTurbulenceIntensity=0 AllowThirdPartySales=false AuthorityMode=Automatic ClientAnimatorThrottling=Default CurrentCamera=@"Workspace/Camera" DistributedGameTime=0 ExplorerIconContent="" FallHeightEnabled FallenPartsDestroyHeight=-500 GlobalWind=0,0,0 Gravity=196.2 LevelOfDetail=Automatic LuauTypeCheckMode=Default ModelStreamingMode=Default NextGenerationPhysicsSolver=Default PredictiveStreamingMode=Default ReplicationFrequency=Automatic ReplicationThroughput=Automatic Retargeting=Default StreamOutBehavior=Default StreamingAdaptiveRadius=false StreamingEnabled=false StreamingIntegrityMode=Default StreamingMinRadius=64 StreamingTargetRadius=1024 {
+    Camera "Camera"
+    Model "Euphoria Ragdoll"
+    Folder "Game Files" {
+        Script "GlobalScript" @code=<<<
+            --(Тип)-Название-Значение
+
+            --(Number)-Gravity-Гравитация на карте
+            --(Number)-PlayersSpeed-Скорость перемещения игроков
+        >>>
+        Folder "PlayerStarting" {
+            Folder "PlayerVariables" {
+                ObjectValue "DraggedObject"
+                NumberValue "PlayerArmsLength" Value=30
+                BoolValue "PlayerDead"
+                NumberValue "PlayerDistanceMouse"
+                BoolValue "PlayerDraggedObjects"
+                BoolValue "PlayerFalling"
+                StringValue "PlayerFloorMaterial"
+                BoolValue "PlayerFly"
+                NumberValue "PlayerFlySpeedNormal" Value=40
+                NumberValue "PlayerFlySpeedRun" Value=100
+                Vector3Value "PlayerHeadPosition"
+                Vector3Value "PlayerHeadRotate"
+                NumberValue "PlayerHealth"
+                BoolValue "PlayerInFloor"
+                BoolValue "PlayerInWater"
+                BoolValue "PlayerLookInObject"
+                ObjectValue "PlayerLookingObject"
+                Vector3Value "PlayerMousePosition"
+                BoolValue "PlayerMoving"
+                Vector3Value "PlayerPosition"
+                BoolValue "PlayerRising"
+                Vector3Value "PlayerRotate"
+                BoolValue "PlayerRunning"
+                BoolValue "PlayerSit"
+                BoolValue "PlayerSitDriver"
+                BoolValue "PlayerUnreached"
+                NumberValue "PlayerUnreachedValue" Value=30
+                NumberValue "PlayerVelocity"
+                Vector3Value "PlayerVelocityVector"
+            }
+        }
+        Folder "WorldVariables" {
+            NumberValue "Gravity" Value=120
+            NumberValue "PlayersSpeed" Value=20
+        }
+    }
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=401,0.4,664.05 Color=#BE6862 Material=Brick TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=214.9,0.4,664.05 Color=#B8944D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=307.7,0.4,664.05 Color=#FF0000 Material=Fabric TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=122.1,0.4,664.05 Color=#957977 Material=Pebble TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=28.9,0.4,664.05 Color=#BC9B5D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=103.6,0.4,664.05 Color=#102ADC TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=177.7,0.4,664.05 Color=#EDEAEA Material=Marble TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=326.3,0.4,664.05 Material=DiamondPlate TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=196.3,0.4,664.05 Color=#9FF3E9 Material=Ice TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=270.5,0.4,664.05 Color=#B8944D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=345,0.4,664.05 Color=#AA5500 Material=CorrodedMetal TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=84.9,0.4,664.05 Color=#7E683F Material=Sand TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=251.9,0.4,664.05 Color=#B8944D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=159.2,0.4,664.05 Color=#B4D2E4 Material=Metal TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=233.3,0.4,664.05 Color=#B8944D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=140.6,0.4,664.05 Color=#FFFF00 Material=Neon TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=10.3,0.4,664.05 Color=#A0844F Material=WoodPlanks TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=363.7,0.4,664.05 Material=Concrete TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=382.3,0.4,664.05 Color=#E2DCBC Material=Cobblestone TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=289.1,0.4,664.05 Color=#B8944D Material=Wood TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=66.3,0.4,664.05 Color=#957977 Material=Slate TopSurface=Smooth
+    Part "Part" Size=18.691,1.123,18.5 Anchored BottomSurface=Smooth CFrame=47.6,0.4,664.05 Color=#FF98DC Material=SmoothPlastic TopSurface=Smooth
+    Folder "RagdollSystem" {
+        Script "RagdollScriptMover" @code=<<<
+            -- This Script moves the ragdoll Folder to StarterGui
+
+            script.Parent:FindFirstChild("ragdoll").Parent = game.StarterGui
+            wait()
+            script.Parent:Destroy()
+        >>>
+        Folder "ragdoll" {
+            Folder "events" {
+                BindableEvent "resetclient"
+                RemoteEvent "variableserver"
+            }
+            Folder "functions" {
+                BindableFunction "ragdoll"
+                RemoteFunction "remoteragdoll"
+                RemoteFunction "remoteragdollvelocity"
+            }
+            LocalScript "ragdollclient" @src="Scripts/Workspace/RagdollSystem/ragdoll/ragdollclient.luau"
+            Script "ragdollserver" @src="Scripts/Workspace/RagdollSystem/ragdoll/ragdollserver.luau"
+            Folder "variables" {
+                BoolValue "ragdoll"
+                BoolValue "ragdollonclient"
+            }
+        }
+    }
+    Part "SavedObjects" Size=38.2,1,37.1 BottomSurface=Smooth CFrame=272.7,314.2,506.25 CastShadow=false Color=#EDEAEA Material=SmoothPlastic TopSurface=Smooth {
+        Script "ObjectsSettingsLoad" @src="Scripts/Workspace/SavedObjects/ObjectsSettingsLoad.luau"
+        Part "TestCube" Size=5,5,5 BottomSurface=Smooth CFrame=283,317.2,495.7 Color=#EDEAEA Material=Metal TopSurface=Smooth {
+            Decal "Texture" Face=Bottom Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+            Decal "Texture" Face=Left Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+            Decal "Texture" Face=Right Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+            Decal "Texture" Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+            Decal "Texture" Face=Back Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+            Decal "Texture" Face=Top Texture="rbxassetid://8504980596" TextureContent="rbxassetid://8504980596"
+        }
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=280.1,141.7,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=283.9,147.5,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~2/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=292.6,135.1,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~3/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=283.9,135.1,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~4/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=275.7,318.6,495.7 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~5/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=275.7,135.1,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~6/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    Part "SpawnBlock" Size=2,2,2 BottomSurface=Smooth CFrame=288.1,141.7,397.1 Color=#ED0003 Material=Neon TopSurface=Smooth {
+        Script "Script" @src="Scripts/Workspace/SpawnBlock~7/Script.luau"
+        StringValue "SpawnThis" Value="TestCube"
+    }
+    SpawnLocation "SpawnLocation" Size=12,1,12 Anchored BottomSurface=Smooth CFrame=315.9,130.563,245.3 TopSurface=Smooth {
+        Decal "Decal" Face=Top Texture="rbxasset://textures/SpawnLocation.png" TextureContent="rbxasset://textures/SpawnLocation.png"
+    }
+    Terrain "Terrain" Size=2044,252,2044 Anchored AudioCanCollide BackSurface=Smooth BottomSurface=Inlet CFrame=0,0,0 CanCollide CanQuery CanTouch CastShadow CollisionGroup="Default" Color=#A3A2A5 Decoration=false EnableFluidForces FrontSurface=Smooth GrassLength=0.7 LeftSurface=Smooth Locked Massless=false Material=Plastic PivotOffset=0,0,0 Reflectance=0 RightSurface=Smooth RootPriority=0 TopSurface=Studs Transparency=0 WaterColor=#0C545C WaterReflectance=1 WaterTransparency=0.3 WaterWaveSize=0.15 WaterWaveSpeed=10
+}

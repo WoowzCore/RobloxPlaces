@@ -1,0 +1,77 @@
+local character = script.Parent
+local humanoid = character:FindFirstChild("Humanoid")
+local stateType = Enum.HumanoidStateType
+
+character.Humanoid.FallingDown:connect(function()
+	humanoid:SetStateEnabled(stateType.GettingUp, true)
+	    local UTJoint = character:FindFirstChild("UpperTorso")
+		local LTJoint = character:FindFirstChild("LowerTorso")
+		local RUA = character:FindFirstChild("RightUpperArm")
+		local LUA = character:FindFirstChild("LeftUpperArm")
+		local RUL = character:FindFirstChild("RightUpperLeg")
+		local LUL = character:FindFirstChild("LeftUpperLeg")
+		local RLA = character:FindFirstChild("RightLowerArm")
+		local LLA = character:FindFirstChild("LeftLowerArm")
+		local RLL = character:FindFirstChild("RightLowerLeg")
+		local LLL = character:FindFirstChild("LeftLowerLeg")
+		local RH = character:FindFirstChild("RightHand")
+		local LH = character:FindFirstChild("LeftHand")
+		local RF = character:FindFirstChild("RightFoot")
+		local LF = character:FindFirstChild("LeftFoot")
+		local HRP = character:FindFirstChild("HumanoidRootPart")
+        local Torso character.UpperTorso.Waist.Part0 = UTJoint
+        local Torso2 character.UpperTorso.Waist.Part1 = UTJoint
+        local RUAJoint character.RightUpperArm.RightShoulder.Part0 = RUA
+        local RUAJoint2 character.RightUpperArm.RightShoulder.Part1 = RUA
+        local LUAJoint character.LeftUpperArm.LeftShoulder.Part0 = LUA
+        local LUAJoint2 character.LeftUpperArm.LeftShoulder.Part1 = LUA
+        local RULJoint character.RightUpperLeg.RightHip.Part0 = RUL
+        local RULJoint2 character.RightUpperLeg.RightHip.Part1 = RUL
+        local LULJoint character.LeftUpperLeg.LeftHip.Part0 = LUL
+        local LULJoint2 character.LeftUpperLeg.LeftHip.Part1 = LUL
+        local RLAJoint character.RightLowerArm.RightElbow.Part0 = RLA
+        local RLAJoint2 character.RightLowerArm.RightElbow.Part1 = RLA
+        local LLAJoint character.LeftLowerArm.LeftElbow.Part0 = LLA
+        local LLAJoint2 character.LeftLowerArm.LeftElbow.Part1 = LLA
+        local RLLJoint character.RightLowerLeg.RightKnee.Part0 = RLL
+        local RLLJoint2 character.RightLowerLeg.RightKnee.Part1 = RLL
+        local LLLJoint character.LeftLowerLeg.LeftKnee.Part0 = LLL
+        local LLLJoint2 character.LeftLowerLeg.LeftKnee.Part1 = LLL
+        local RHJoint character.RightHand.RightWrist.Part0 = RH
+        local RHJoint2 character.RightHand.RightWrist.Part1 = RH
+        local LHJoint character.LeftHand.LeftWrist.Part0 = LH
+        local LHJoint2 character.LeftHand.LeftWrist.Part1 = LH
+        local RFJoint character.RightFoot.RightAnkle.Part0 = RF
+        local RFJoint2 character.RightFoot.RightAnkle.Part1 = RF
+        local LFJoint character.LeftFoot.LeftAnkle.Part0 = LF
+        local LFJoint2 character.LeftFoot.LeftAnkle.Part1 = LF
+character.Humanoid.GettingUp:connect(function()
+	    local Torso character.UpperTorso.Waist.Part0 = LTJoint
+        local Torso2 character.UpperTorso.Waist.Part1 = UTJoint
+        local LUAJoint character.RightUpperArm.RightShoulder.Part0 = UTJoint
+        local LUAJoint2 character.RightUpperArm.RightShoulder.Part1 = RUA
+        local LUAJoint character.LeftUpperArm.LeftShoulder.Part0 = UTJoint
+        local LUAJoint2 character.LeftUpperArm.LeftShoulder.Part1 = LUA
+        local RULJoint character.RightUpperLeg.RightHip.Part0 = LTJoint
+        local RULJoint2 character.RightUpperLeg.RightHip.Part1 = RUL
+        local LULJoint character.LeftUpperLeg.LeftHip.Part0 = LTJoint
+        local LULJoint2 character.LeftUpperLeg.LeftHip.Part1 = LUL
+        local RLAJoint character.RightLowerArm.RightElbow.Part0 = RUA
+        local RLAJoint2 character.RightLowerArm.RightElbow.Part1 = RLA
+        local LLAJoint character.LeftLowerArm.LeftElbow.Part0 = LUA
+        local LLAJoint2 character.LeftLowerArm.LeftElbow.Part1 = LLA
+        local RLLJoint character.RightLowerLeg.RightKnee.Part0 = RUL
+        local RLLJoint2 character.RightLowerLeg.RightKnee.Part1 = RLL
+        local LLLJoint character.LeftLowerLeg.LeftKnee.Part0 = LUL
+        local LLLJoint2 character.LeftLowerLeg.LeftKnee.Part1 = LLL
+        local RHJoint character.RightHand.RightWrist.Part0 = RLA
+        local RHJoint2 character.RightHand.RightWrist.Part1 = RH
+        local LHJoint character.LeftHand.LeftWrist.Part0 = LLA
+        local LHJoint2 character.LeftHand.LeftWrist.Part1 = LH
+        local RFJoint character.RightFoot.RightAnkle.Part0 = RLL
+        local RFJoint2 character.RightFoot.RightAnkle.Part1 = RF
+        local LFJoint character.LeftFoot.LeftAnkle.Part0 = LLL
+        local LFJoint2 character.LeftFoot.LeftAnkle.Part1 = LF
+        HRP.CanCollide = false
+end)
+end)
